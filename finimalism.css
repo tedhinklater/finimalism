@@ -13,7 +13,7 @@
 	margin: 0;
 }
 .itemProgressBarForeground {
-    background-color: rgba(var(--accent), 0.35);
+    background-color: rgba(var(--accent), 0.2);
 }
 
 /*Alternate itempage*/
