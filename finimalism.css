@@ -1550,7 +1550,7 @@ transform:scale(1.05)!important
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-left: 5px; /* Adjust as needed */
+  padding-left: 0px; /* Adjust as needed */
 }
 
 /* Hide Genres and Writers */
@@ -1562,4 +1562,26 @@ transform:scale(1.05)!important
 /* Hide Tags */
 .itemTags {
     display: none;
+}
+
+.nextUpSection h2.sectionTitle {
+    text-align: center !important;
+    margin: 0 auto !important;
+}
+
+
+.verticalSection-extrabottompadding .emby-button .listItem {
+  height: 20px; /* Adjust the height as needed */
+}
+
+.verticalSection-extrabottompadding .emby-button .listItemIcon {
+  font-size: 15px; /* Adjust the icon size as needed */
+}
+
+.verticalSection-extrabottompadding .emby-button .listItemBody {
+  line-height: 20px; /* Adjust the line height as needed */
+}
+
+.verticalSection-extrabottompadding .emby-button .listItemBodyText {
+  margin-top: 2px; /* Adjust the top margin of the text as needed */
 }
