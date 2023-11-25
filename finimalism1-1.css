@@ -1460,17 +1460,23 @@ progress::-webkit-progress-value {
 }
 
 /*smaller Continue & Up Next*/
-.section2 .card.overflowBackdropCard.card-hoverable.card-withuserdata {
-width:15vw
-}
 
+/*Continue Watching cards*/
 .section1 .card.overflowBackdropCard.card-hoverable.card-withuserdata {
-width:15vw
+width:18vw
 }
 
-#childrenCollapsible .card.overflowPortraitCard.card-hoverable.card-withuserdata {
-width:6vw
+/*Next Up cards*/
+.section2 .card.overflowBackdropCard.card-hoverable.card-withuserdata {
+width:13vw
 }
+
+/*Series cards*/
+#childrenCollapsible .card.overflowPortraitCard.card-hoverable.card-withuserdata {
+width:9vw
+}
+
+
 
 .section1 .emby-scrollbuttons.padded-right {
     margin-top: -1.5vh;
@@ -1585,3 +1591,5 @@ transform:scale(1.05)!important
 .verticalSection-extrabottompadding .emby-button .listItemBodyText {
   margin-top: 2px; /* Adjust the top margin of the text as needed */
 }
+
+
