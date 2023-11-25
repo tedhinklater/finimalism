@@ -4,7 +4,7 @@ Minimalist Jellyfin Theme CSS
 Import to your CSS with
 
 ```css
-@import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/finimalism1-6.css");
+@import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/finimalism1-7.css");
 
 ```
 As far as Client / Web UI settings go, under "Display", Backdrops are enabled. Under "Home", the order is My Media (small), Continue Watching, Next Up.
