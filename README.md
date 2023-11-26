@@ -13,8 +13,8 @@ The accent color is set to [168,94,198] to match the Jellyfin logo.
 
 Other than that, everything is just an alteration of the amazing work already put into Ultrachromic by CTalvio.
 
-![Screenshot 2023-11-25 221750](https://github.com/tedhinklater/finimalism/assets/66086488/f6c0d5d1-131e-4482-a7f3-bd1308079eb1)
-![Screenshot 2023-11-25 221923](https://github.com/tedhinklater/finimalism/assets/66086488/5db98439-5f88-4ad2-9e1f-9b697384f5df)
-![Screenshot 2023-11-25 221956](https://github.com/tedhinklater/finimalism/assets/66086488/739b4a32-9930-45f5-b5df-42ef46369ce0)
-![Screenshot 2023-11-25 222034](https://github.com/tedhinklater/finimalism/assets/66086488/21610379-0589-4253-87ac-b4e209e540d8)
-![Screenshot 2023-11-25 222118](https://github.com/tedhinklater/finimalism/assets/66086488/e7a5d9f1-3134-4589-a9e8-d67e37f6d987)
+![Screenshot 2023-11-26 161917](https://github.com/tedhinklater/finimalism/assets/66086488/4e0397c0-55ea-44fc-b623-8367de78dd80)
+![Screenshot 2023-11-26 161945](https://github.com/tedhinklater/finimalism/assets/66086488/554ab0e0-a044-43d2-a74f-a5e389b7d401)
+![Screenshot 2023-11-26 162006](https://github.com/tedhinklater/finimalism/assets/66086488/c6f59088-4af1-48c6-8771-be360f6b9e51)
+![Screenshot 2023-11-26 162031](https://github.com/tedhinklater/finimalism/assets/66086488/a8b58a78-c10e-42c3-82d7-a088f6e29380)
+![Screenshot 2023-11-26 162048](https://github.com/tedhinklater/finimalism/assets/66086488/dec1e7dc-343d-4b71-bab8-be33ba484a53)
