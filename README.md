@@ -9,7 +9,7 @@ Import to your CSS with
 ```
 As far as Client / Web UI settings go, under "Display", Backdrops are enabled. Under "Home", the order is My Media (small), Continue Watching, Next Up.
 
-The accent color is set to [123,108,198] to match the Jellyfin logo.
+The accent color is set to [168,94,198] to match the Jellyfin logo.
 
 Other than that, everything is just an alteration of the amazing work already put into Ultrachromic by CTalvio.
 
