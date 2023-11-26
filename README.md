@@ -7,7 +7,7 @@ Import to your CSS with
 @import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/finimalism2-0.css");
 
 ```
-As far as Client / Web UI settings go, under "Display", Backdrops are enabled. Under "Home", the order is My Media (small), Continue Watching, Next Up.
+As far as Client / Web UI settings go, under "Display", Backdrops are enabled. Under "Home", the order is My Media (small), Continue Watching, Next Up. In the Movies/TV Shows gallery, Select View is set to Poster.
 
 The accent color is set to [168,94,198] to match the Jellyfin logo.
 
