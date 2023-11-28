@@ -25,6 +25,8 @@ Also fixed some bugs such as Live TV cards being blurred by the progress overlay
 ![jf5](https://github.com/tedhinklater/finimalism/assets/66086488/a567145b-75bf-4bf8-8178-678a5ee7e2af)
 ![jf6](https://github.com/tedhinklater/finimalism/assets/66086488/a39cc6a6-f931-4e80-b3f4-7837f32a22f3)
 ![jf7](https://github.com/tedhinklater/finimalism/assets/66086488/977eaf28-75a6-46d8-b482-be12105d2b87)
+![jf8](https://github.com/tedhinklater/finimalism/assets/66086488/85f74370-ad4c-44f3-86b2-1e8b5e983c59)
+
 
 I'm going to leave the css box alone now.
 
