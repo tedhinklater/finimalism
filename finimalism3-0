@@ -23,8 +23,6 @@ span.homeLibraryText {
     font-size: 14pt;
 }
 
-
-
 /* Overlay Progress Bar */
 #itemDetailPage .itemProgressBar,
 #indexPage .itemProgressBar {
@@ -44,11 +42,6 @@ span.homeLibraryText {
 .itemProgressBarForeground {
     background: linear-gradient(to right, rgba(163, 95, 198, 0.7) 0%, rgba(6, 161, 217, 0.2) 100%);
 }
-
-
-
-
-
 
 /*Alternate itempage*/
 
@@ -166,7 +159,6 @@ fieldset {
   background: rgba(0,0,0,.5) !important;
 }
 
-
 /*Homepage modifications, transparent footerplayer and fixed sectiontitles*/
 .appfooter {
 	background: rgba(0,0,0,0.9);
@@ -221,7 +213,6 @@ progress::-webkit-progress-value {
 .countIndicator {
   box-shadow: none;
 }
-
 
 /*Modify subtitle settings page*/
 .subtitleappearance-preview {
@@ -507,7 +498,6 @@ progress::-webkit-progress-value {
 * {
   scrollbar-color: rgba(var(--accent),0.8) #0000 !important;
 }
-
 
 /* Syncplay theming*/
 .syncPlayIconCircle {
@@ -996,8 +986,6 @@ div[data-role="controlgroup"] a[data-role="button"] {
     margin-right: .2em;
 }
 
-
-
 /*Remove background on some icons*/
 .listItemIcon {
     background: #0000 !important;
@@ -1467,10 +1455,6 @@ progress::-webkit-progress-value {
     padding: 1.8em;
 }
 
-
-
-
-
 /* Display the new sections */
 .homeLibraryButton {
     display: inline-block;
@@ -1487,8 +1471,6 @@ progress::-webkit-progress-value {
     text-align: center; /* Center the content inside the container */
 }
 
-
-
 /*hover zoom*/
 .homeLibraryButton:hover,
 .homeLibraryButton:focus,
@@ -1500,8 +1482,6 @@ progress::-webkit-progress-value {
     transform: scale(1.05);
     transition: transform 1s ease; /* Add a 1-second transition with ease timing function */
 }
-
-
 
 /* Custom CSS to show only the channel name without the channel number */
 .channelsContainer .guide-channelHeaderCell::after {
@@ -1516,7 +1496,6 @@ progress::-webkit-progress-value {
 .channelsContainer .guide-channelHeaderCell .guideChannelNumber {
     display: none; /* Hide the channel number */
 }
-
 
 /*Style backdrop*/
 .backdropImage {filter: blur(2px) saturate(120%) contrast(130%) brightness(40%);}
@@ -1541,9 +1520,6 @@ progress::-webkit-progress-value {
 .listItem {
     padding: 10px;
 }
-
-
-
 
 /* Hide Genres and Writers */
 .detailsGroupItem.genresGroup,
@@ -1607,7 +1583,6 @@ progress::-webkit-progress-value {
     height: 3.2em;
 }
 
-
 /* Hide specific Live TV buttons */
 a[href="#!/livetv.html?tab=0&serverId=67303d06cb7c4c16b5be3492dafb9cae"],
 a[href="#!/livetv.html?tab=1&serverId=67303d06cb7c4c16b5be3492dafb9cae"],
@@ -1623,14 +1598,9 @@ a[href="#!/livetv.html?tab=5&serverId=67303d06cb7c4c16b5be3492dafb9cae"] {
     width: 80px; /* Adjust this value as needed */
 }
 
-
 .verticalSection-extrabottompadding > .sectionTitle-cards:not(#similarCollapsible .sectionTitle-cards) {
   display: none;
 }
-
-
-
-
 
 /* Adjusted size for cards in the "Next Up" section */
 @media all and (min-width: 131.25em) {
@@ -1690,8 +1660,6 @@ a[href="#!/livetv.html?tab=5&serverId=67303d06cb7c4c16b5be3492dafb9cae"] {
         width: 80vw !important; /* Set a larger width for smaller screens */
     }
 }
-
-
 
 /* Gradient for buttons on hover */
 .mainDrawer-scrollContainer.scrollContainer .navMenuOption:hover,
