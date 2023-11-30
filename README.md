@@ -18,6 +18,7 @@ Other than that, everything is just an alteration of the amazing work already pu
 Also fixed some bugs such as Live TV cards being blurred by the progress overlay.
 
 ![Screenshot_2023-11-30T16-51-16 636Z](https://github.com/tedhinklater/finimalism/assets/66086488/b8697d5f-0f37-4fe1-bf10-a56994696f3a)
+![Screenshot 2023-11-30 171625](https://github.com/tedhinklater/finimalism/assets/66086488/f86a4008-45a4-4e9d-9933-ae758086f40e)
 ![Screenshot_2023-11-30T16-54-07 345Z](https://github.com/tedhinklater/finimalism/assets/66086488/457c6368-400b-4ad5-9b38-31a5d7c0fcff)
 ![Screenshot_2023-11-30T16-54-34 365Z](https://github.com/tedhinklater/finimalism/assets/66086488/7f0e0d74-7bf1-4d19-9006-bc8f76625994)
 ![Screenshot_2023-11-30T16-55-18Z](https://github.com/tedhinklater/finimalism/assets/66086488/5adc2a5d-e4b5-4a48-88f7-e079f0c086ba)
