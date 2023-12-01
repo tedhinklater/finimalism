@@ -1597,26 +1597,15 @@ a[href="#!/livetv.html?tab=5&serverId=67303d06cb7c4c16b5be3492dafb9cae"] {
 .verticalSection-extrabottompadding > .sectionTitle-cards:not(#similarCollapsible .sectionTitle-cards) {
   display: none;
 }
-
-/* Adjusted size for cards in the "Next Up" section */
-@media all and (min-width: 131.25em) {
-  .verticalSection.section2 .card.overflowBackdropCard {
-    width: 8vw !important; /* Adjust the width as needed */
-    font-size: 90% !important;
-  }
+.verticalSection.section2 .card.overflowBackdropCard {
+  width: 200px !important; /* Adjust the width as needed */
+  font-size: 90% !important;
 }
 
-@media all and (min-width: 120em) and (max-width: 131.25em) {
+/* Adjust font size for smaller screens if needed */
+@media all and (max-width: 767px) {
   .verticalSection.section2 .card.overflowBackdropCard {
-    width: 8.2vw !important; /* Adjust the width as needed */
-    font-size: 90% !important;
-  }
-}
-
-@media all and (min-width: 100em) and (max-width: 120em) {
-  .verticalSection.section2 .card.overflowBackdropCard {
-    width: 9.5vw !important; /* Adjust the width as needed */
-    font-size: 90% !important;
+    font-size: 80% !important;
   }
 }
 
@@ -1689,12 +1678,13 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 .homePage .section1.verticalSection {
     display: flex;
     flex-direction: row;
-    align-items: flex-start; /* Align items at the start (top) of the container */
+    align-items: center; /* Center items vertically */
 }
 
 /* Push "Continue Watching" header to the left */
 .homePage .section1.verticalSection .sectionTitle-cards {
     margin-right: 10px; /* Adjust the margin as needed */
+    margin-left: 10px; /* Adjust the margin as needed */
 }
 
 /* Push scroll buttons to the right */
@@ -1703,10 +1693,18 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 }
 
 /* Adjust alignment for the cards within the Continue Watching section */
-.homePage .section1.verticalSection .itemsContainer {
-    justify-content: flex-start; /* Align cards at the start (left) of the container */
+.homePage .section1.verticalSection .itemsContainer .card.overflowBackdropCard {
+    width: 350px !important; /* Set the width to 300px */
+    font-size: 90% !important;
 }
 
+/* Adjust the card size for smaller screens if needed */
+@media all and (max-width: 767px) {
+    .homePage .section1.verticalSection .itemsContainer .card.overflowBackdropCard {
+        width: 250px !important; /* Adjust the width as needed for smaller screens */
+        font-size: 80% !important;
+    }
+}
 
 /* Adjust the size of the card image */
 .verticalSection .card img {
