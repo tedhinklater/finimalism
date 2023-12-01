@@ -1609,6 +1609,7 @@ a[href="#!/livetv.html?tab=5&serverId=67303d06cb7c4c16b5be3492dafb9cae"] {
   }
 }
 
+
 /* Add more media queries for other screen sizes as needed */
 
 /* Mobile or smaller screens */
@@ -1705,6 +1706,7 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
         font-size: 80% !important;
     }
 }
+
 
 /* Adjust the size of the card image */
 .verticalSection .card img {
