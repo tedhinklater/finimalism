@@ -1499,20 +1499,12 @@ progress::-webkit-progress-value {
 /* Center the listItem content */
 .listItem {
     text-align: center;
-}
-
-/* Optionally, add some padding for better visual appearance */
-.listItem {
     padding: 10px;
 }
 
 /* Hide the listItemIcon */
 .listItemIcon {
     display: none;
-}
-
-/* Optionally, add some padding for better visual appearance */
-.listItem {
     padding: 10px;
 }
 
@@ -1707,7 +1699,6 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
     }
 }
 
-
 /* Adjust the size of the card image */
 .verticalSection .card img {
     width: 100%; /* Make the image fill the card container */
@@ -1722,4 +1713,15 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 
 .detailVerticalSection .nextUpItems {
     margin-top: -5px; /* Adjust the negative margin to bring the cards closer */
+}
+
+#txtCustomCss {
+    height: 400px !important; /* Adjust the height as needed */
+    max-height: none !important;
+    overflow-y: scroll !important;
+    resize: vertical !important;
+}
+
+.customCssContainer textarea {
+    height: auto !important;
 }
