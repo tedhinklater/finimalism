@@ -1,33 +1,32 @@
 # finimalism
-Minimalist Jellyfin Theme CSS (final as of 4.0)
+Minimalist Jellyfin Theme CSS (final as of 5.0)
 
 Import to your CSS with
 
 ```css
-@import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/finimalism4.css");
+@import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/finimalism5.css");
 
 ```
-As far as Client / Web UI settings go, under "Display", Backdrops are enabled. Under "Home", the order is My Media (small), Continue Watching, Next Up. In the Movies/TV Shows gallery, Select View is set to Poster.
+As far as Client / Web UI settings go, under "Display", the Theme is set to Dark and Backdrops are enabled. In the Movies/TV Shows gallery, Select View is set to Poster.
+
+Go to Program Files\Jellyfin\Server\jellyfin-web\themes\dark\ and rename theme.css "theme_orig.css" and drop my theme.css and bg.jpg into that folder.
 
 The accent color is set to 6, 161, 217 to match the Jellyfin logo.
 
 The side panels and overlay progress bar as well as video playback bar are gradients to match the JF logo.
 
-Other than that, everything is just an alteration of the amazing work already put into Ultrachromic by CTalvio.
+Other than that, everything is just an alteration of the amazing work already put into [Ultrachromic by CTalvio](https://github.com/CTalvio/Ultrachromic).
 
 Also fixed some bugs such as Live TV cards being blurred by the progress overlay.
 
-![Screenshot_2023-12-01T16-03-16](https://github.com/tedhinklater/finimalism/assets/66086488/352b4fd5-0a01-4b2e-b669-19a9e0b2592b)
-![Screenshot 2023-11-30 171625](https://github.com/tedhinklater/finimalism/assets/66086488/f86a4008-45a4-4e9d-9933-ae758086f40e)
-![Screenshot_2023-11-30T16-54-07 345Z](https://github.com/tedhinklater/finimalism/assets/66086488/457c6368-400b-4ad5-9b38-31a5d7c0fcff)
-![Screenshot_2023-11-30T16-54-34 365Z](https://github.com/tedhinklater/finimalism/assets/66086488/7f0e0d74-7bf1-4d19-9006-bc8f76625994)
-![Screenshot_2023-11-30T16-55-18Z](https://github.com/tedhinklater/finimalism/assets/66086488/5adc2a5d-e4b5-4a48-88f7-e079f0c086ba)
-![Screenshot_2023-11-30T16-56-07](https://github.com/tedhinklater/finimalism/assets/66086488/560c5fdb-440d-4077-8016-c1d1793a8ca6)
-![Screenshot_2023-11-30T16-57-42](https://github.com/tedhinklater/finimalism/assets/66086488/f881de92-e9d6-4426-96fc-15f781110d53)
-
-
-
-
-I'm going to leave the css box alone now.
+![Screenshot 2024-04-10 092758](https://github.com/tedhinklater/finimalism/assets/66086488/65438b6d-c5d9-4c9c-85d0-9f47b0096812)
+![Screenshot 2024-04-10 094614](https://github.com/tedhinklater/finimalism/assets/66086488/6170f7a4-d37a-43f0-8f5c-3564fec98a6f)
+![Screenshot 2024-04-10 094650](https://github.com/tedhinklater/finimalism/assets/66086488/262c1209-2ece-4a8e-919c-e5647541e747)
+![Screenshot 2024-04-10 094723](https://github.com/tedhinklater/finimalism/assets/66086488/a4a91591-9558-4ea9-b09d-c9844ac68480)
+![Screenshot 2024-04-10 094835](https://github.com/tedhinklater/finimalism/assets/66086488/0789e684-a103-46ec-838b-ccf1e2539b41)
+![Screenshot 2024-04-10 094917](https://github.com/tedhinklater/finimalism/assets/66086488/0e4cb786-dd1d-4f27-a6fe-7bb965621339)
+![Screenshot 2024-04-10 095033](https://github.com/tedhinklater/finimalism/assets/66086488/8f91619f-acca-415b-b90b-1a1f340ebebc)
+![Screenshot 2024-04-10 095058](https://github.com/tedhinklater/finimalism/assets/66086488/361ef2a4-7779-4eee-8503-3109e1271140)
+![Screenshot 2024-04-10 095353](https://github.com/tedhinklater/finimalism/assets/66086488/ef0a3dfa-cd7d-41db-ad57-0c746e4ff3a4)
 
 
