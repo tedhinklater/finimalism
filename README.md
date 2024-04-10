@@ -7,17 +7,13 @@ Import to your CSS with
 @import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/finimalism5.css");
 
 ```
-As far as Client / Web UI settings go, under "Display", the Theme is set to Dark and Backdrops are enabled. In the Movies/TV Shows gallery, Select View is set to Poster.
 
 Go to Program Files\Jellyfin\Server\jellyfin-web\themes\dark\ and rename theme.css "theme_orig.css" and drop my theme.css and bg.jpg into that folder.
+If you use Jellyfin Media Player, repeat for Program Files\Jellyfin\Jellyfin Media Player\web-client\desktop\themes\dark
 
-The accent color is set to 6, 161, 217 to match the Jellyfin logo.
+As far as Client / Web UI settings go, under "Display", the Theme is set to Dark and Backdrops are enabled. In the Movies/TV Shows gallery, Select View is set to Poster. The accent color is set to 6, 161, 217 to match the Jellyfin logo. The side panels and overlay progress bar as well as video playback bar are gradients to match the JF logo.
 
-The side panels and overlay progress bar as well as video playback bar are gradients to match the JF logo.
-
-Other than that, everything is just an alteration of the amazing work already put into [Ultrachromic by CTalvio](https://github.com/CTalvio/Ultrachromic).
-
-Also fixed some bugs such as Live TV cards being blurred by the progress overlay.
+Other than that, everything is just an alteration of the amazing work already put into [Ultrachromic by CTalvio](https://github.com/CTalvio/Ultrachromic). Also fixed some bugs such as Live TV cards being blurred by the progress overlay.
 
 ![Screenshot 2024-04-10 092758](https://github.com/tedhinklater/finimalism/assets/66086488/65438b6d-c5d9-4c9c-85d0-9f47b0096812)
 ![Screenshot 2024-04-10 094614](https://github.com/tedhinklater/finimalism/assets/66086488/6170f7a4-d37a-43f0-8f5c-3564fec98a6f)
