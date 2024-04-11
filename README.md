@@ -1,17 +1,19 @@
 # finimalism
 Minimalist Jellyfin Theme CSS (final as of 5.0)
 
-Import to your CSS with
+Step 1: Import to your CSS with
 
 ```css
 @import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/finimalism5.css");
 
 ```
 
-Go to Program Files\Jellyfin\Server\jellyfin-web\themes\dark\ and rename theme.css "theme_orig.css" and drop my theme.css and bg.jpg into that folder.
+Step 2: Go to Program Files\Jellyfin\Server\jellyfin-web\themes\dark\ and rename theme.css "theme_orig.css" and drop my theme.css and bg.jpg into that folder.
 If you use Jellyfin Media Player, repeat for Program Files\Jellyfin\Jellyfin Media Player\web-client\desktop\themes\dark
 
-As far as Client / Web UI settings go, under "Display", the Theme is set to Dark and Backdrops are enabled. In the Movies/TV Shows gallery, Select View is set to Poster. The accent color is set to 6, 161, 217 to match the Jellyfin logo. The side panels and overlay progress bar as well as video playback bar are gradients to match the JF logo.
+Step 3: In Jellyfin Client / Web UI settings, under "Display", the Theme is set to Dark and Backdrops are enabled. 
+
+The accent color is set to 6, 161, 217 to match the Jellyfin logo. The side panels and overlay progress bar as well as video playback bar are gradients to match the JF logo.
 
 Other than that, everything is just an alteration of the amazing work already put into [Ultrachromic by CTalvio](https://github.com/CTalvio/Ultrachromic). Also fixed some bugs such as Live TV cards being blurred by the progress overlay.
 
