@@ -1544,14 +1544,6 @@ progress::-webkit-progress-value {
     display: none;
 }
 
-/* Centre Library buttons such as Movies, TV Shows and Live TV */
-
-.verticalSection.verticalSection-extrabottompadding {
-    display: flex;
-    align-items: center;
-    justify-content: center; /* Center horizontally */
-}
-
 .sectionTitle.sectionTitle-cards {
     margin-right: 10px; /* Adjust the margin as needed */
 }
