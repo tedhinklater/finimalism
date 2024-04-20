@@ -1771,15 +1771,7 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
   min-width: 7em;
 }
 
-.padded-left {
-  padding-left: 1.5%;
-}
-
-.padded-right {
-  padding-right: 1.5%;
-}
-
-.emby-scroller {
-  margin-left: 0.5%;
-  margin-right: 0.5%;
+.alphaPickerRow {
+    position: relative;
+    top: 4em;
 }
