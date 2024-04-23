@@ -1634,7 +1634,7 @@ a[href="#!/livetv.html?tab=5&serverId=67303d06cb7c4c16b5be3492dafb9cae"] {
 /* Mobile or smaller screens */
 @media all and (max-width: 48em) {
     .verticalSection.detailVerticalSection .overflowPortraitCard {
-        width: 80vw !important; /* Set a larger width for smaller screens */
+        width: 48vw !important; /* Set a larger width for smaller screens */
     }
 }
 
