@@ -1,10 +1,10 @@
 # finimalism
-Minimalist Jellyfin Theme CSS (final as of 5.0)
+Minimalist Jellyfin Theme CSS (final as of 5.2)
 
 Step 1: Import to your CSS with
 
 ```css
-@import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/finimalism5.css");
+@import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/finimalism5-2.css");
 
 ```
 
