@@ -1775,3 +1775,10 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
     position: relative;
     top: 4em;
 }
+
+.cardOverlayFab-primary {
+  background-color: rgba(0,0,0,.7);
+  font-size: 80%;
+  height: 3em;
+  left: 50%;
+}
