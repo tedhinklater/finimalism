@@ -65,7 +65,7 @@ html {
     height: 100%;
     background: url(bg.jpg) center top no-repeat #030322;
     background-size: cover;
-    opacity: 0.86;
+    opacity: 0.95;
     z-index: -1;
 }
 
@@ -101,7 +101,7 @@ html {
     height: 100%;
     background: url(bg.jpg) center top no-repeat #030322;
     background-size: cover;
-    opacity: 0.4;
+    opacity: 0.6;
     z-index: -1;
 }
 
@@ -119,13 +119,15 @@ html {
     height: 100%;
     background: url(bg.jpg) center top no-repeat #030322;
     background-size: cover;
-    opacity: 0.4;
+    opacity: 0.55;
     z-index: -1;
 }
 
 .flex.align-items-center.justify-content-center.flex-wrap-wrap.padded-top.padded-left.padded-right.padded-bottom.focuscontainer-x {
     position: relative;
     z-index: 1;
+	padding-bottom: 0;
+	padding-top: 0;
 }
 
 .flex.align-items-center.justify-content-center.flex-wrap-wrap.padded-top.padded-left.padded-right.padded-bottom.focuscontainer-x::before {
@@ -137,7 +139,7 @@ html {
     height: 100%;
     background: url(bg.jpg) center top no-repeat #030322;
     background-size: cover;
-    opacity: 0.4;
+    opacity: 0.86;
     z-index: -1;
 }
 
