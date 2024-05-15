@@ -1214,7 +1214,7 @@ progress::-webkit-progress-value {
 
 /*Fix weird shevron off centering*/
 .layout-mobile :not(.sectionTitleContainer-cards)>.sectionTitle-cards {
- padding-top:0em;
+ padding-top:1em;
 }
 .sectionTitle {
 	margin-left: .4em !important;
@@ -1222,10 +1222,10 @@ progress::-webkit-progress-value {
 	margin-bottom: .2em !important;
 }
 .sectionTitleTextButton > .material-icons {
-    margin: 0;
+    padding-top: 0.5em;
 }
 .layout-mobile .sectionTitleTextButton > .material-icons {
-    padding-top: .2em;
+    padding-top: 1.1em;
 }
 
 /*Fix the UI shifting around*/
