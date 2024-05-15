@@ -156,7 +156,7 @@ span.homeLibraryText {
   border-color: rgba(255, 255, 255, 0) !important; 
 }
 fieldset {
-  border: 1px solid rgba(40, 40, 40, 0.8); 
+  border: 1px solid rgba(4, 4, 4, 0.8); 
   border-radius: 0.4em;
 }
 
@@ -244,7 +244,7 @@ progress::-webkit-progress-value {
 .raised,
 .fab,
 a[data-role="button"] {
-  background: rgba(40, 40, 40, 0.8) !important;
+  background: rgba(4, 4, 4, 0.8) !important;
 	transition: all 0.2s !important;
 }
 .raised:hover,
@@ -381,7 +381,7 @@ progress {
 /*Colors for loading spinner, placeholders, scroll bars*/
 .mdl-spinner__layer-1 {border-color: rgba(255, 255, 255, 1);}
 .mdl-spinner__layer-2 {border-color: rgba(128, 128, 128, 1);}
-.mdl-spinner__layer-3 {border-color: rgba(40, 40, 40, 1);}
+.mdl-spinner__layer-3 {border-color: rgba(4, 4, 4, 1);}
 .mdl-spinner__layer-4 {border-color: rgba(0, 0, 0, 1);}
 
 ::-webkit-scrollbar-track-piece {
