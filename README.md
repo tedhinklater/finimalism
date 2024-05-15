@@ -1,15 +1,16 @@
 # finimalism
-Minimalist Jellyfin Theme CSS (final as of 5.2)
+Minimalist Jellyfin Theme CSS (final as of v6)
 
 Step 1: Import to your CSS with
 
 ```css
-@import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/finimalism5-2.css");
+@import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/finimalism6-0.css");
 
 ```
 
 Step 2: Go to **Program Files\Jellyfin\Server\jellyfin-web\themes\dark** and rename theme.css "theme_orig.css" and drop my theme.css and bg.jpg into that folder.<br>
 If you use Jellyfin Media Player, repeat for **Program Files\Jellyfin\Jellyfin Media Player\web-client\desktop\themes\dark**
+Reminder: If you update Jellyfin, it'll replace theme.css so repeat step 2 when updating.
 
 Step 3: In Jellyfin Client / Web UI settings, under "Display", the Theme is set to Dark and Backdrops are enabled. 
 
