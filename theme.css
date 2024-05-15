@@ -55,8 +55,28 @@ html {
 }
 
 .backgroundContainer.withBackdrop {
-    opacity: 0.86;
+    opacity: 0.7;
 }
+
+/* Apply bg to detailPage content */
+.detailPageSecondaryContainer {
+    position: relative;
+    z-index: 1;
+}
+
+.detailPageSecondaryContainer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(bg.jpg) center top no-repeat #030322;
+    background-size: cover;
+    opacity: 0.7;
+    z-index: -1;
+}
+
 
 @media (hover: hover) and (pointer: fine) {
     .paper-icon-button-light:hover:not(:disabled) {
@@ -525,4 +545,8 @@ html {
 #dialogToc .toc li a:active,
 #dialogToc .toc li a:hover {
     color: #00a4dc;
+}
+
+.itemBackdrop {
+    background-image: none !important;
 }
