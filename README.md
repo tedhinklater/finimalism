@@ -18,11 +18,8 @@ Everything is just an alteration of the amazing work already put into [Ultrachro
 
 
 ![Screenshot 2024-05-15 174055](https://github.com/tedhinklater/finimalism/assets/66086488/5a67d4ec-e0fe-4bc4-a150-f5c081f193a2)
-
 ![Screenshot 2024-05-15 174134](https://github.com/tedhinklater/finimalism/assets/66086488/da9fe24e-f2d9-41f9-9240-71061ee95e14)
-
 ![Screenshot 2024-05-15 174154](https://github.com/tedhinklater/finimalism/assets/66086488/74056ff7-9af7-4ca9-a76d-5c8ec3d6a8d9)
-
 ![Screenshot 2024-05-15 174626](https://github.com/tedhinklater/finimalism/assets/66086488/40164dc2-6843-4507-9a9d-b125f6730dee)
 ![Screenshot 2024-05-15 174644](https://github.com/tedhinklater/finimalism/assets/66086488/3a225945-6d84-432e-9794-2d9fdfbfe703)
 ![Screenshot 2024-05-15 174802](https://github.com/tedhinklater/finimalism/assets/66086488/e75ccb00-e50b-4568-a224-6c0221ab2be3)
