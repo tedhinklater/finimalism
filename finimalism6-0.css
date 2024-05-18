@@ -28,6 +28,10 @@ div.itemMiscInfo.itemMiscInfo-primary {
     font-size: 14pt;
 }
 
+.layout-mobile div.itemMiscInfo.itemMiscInfo-primary {
+    font-size: 10pt;
+}
+
 p.overview.detail-clamp-text {
     font-size: 13pt; /* Font size for the description */
 }
@@ -829,9 +833,14 @@ div[data-role="controlgroup"] a[data-role="button"] {
     position: fixed !important;
     top: 10% !important;
 }
-.layout-mobile .detailImageContainer .card {
-    position: absolute !important;
+
+@media (orientation: landscape) {
+    .layout-mobile .detailImageContainer .card {
+        position: fixed !important;
+        top: 15% !important;
+    }
 }
+
 /*Top "task bar" enlarge text*/
 .headerTabs.sectionTabs {
   text-size-adjust: 110%;
@@ -1151,7 +1160,7 @@ progress::-webkit-progress-value {
 }
 @media all and (max-width: 100em){
   .mainDetailButtons {
-    font-size: 155%;
+    font-size: 100%;
   }
   .detailButton {
     max-width: 15vw !important;
