@@ -55,12 +55,12 @@ html {
 	opacity: 0.2;
 }
 
-.itemsContainer.padded-left.padded-right {
+.itemsContainer.padded-left.padded-right.vertical-wrap {
     position: top;
     z-index: 1;
 }
 
-.itemsContainer.padded-left.padded-right::before {
+.itemsContainer.padded-left.padded-right.vertical-wrap::before {
     content: '';
     position: fixed;
     top: 0;
