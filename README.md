@@ -11,7 +11,7 @@ Step 1: Import to your CSS with
 Step 2: Go to **Program Files\Jellyfin\Server\jellyfin-web\themes\dark** and rename theme.css "theme_orig.css" and drop my theme.css and bg.jpg into that folder.<br>
 If you use Jellyfin Media Player, repeat for **Program Files\Jellyfin\Jellyfin Media Player\web-client\desktop\themes\dark**
 
-Reminder: If you update Jellyfin, it'll replace theme.css so repeat step 2 when updating.
+**Reminder**: If you update Jellyfin, it'll replace theme.css so repeat step 2 when updating.
 
 Step 3: In Jellyfin Client / Web UI settings, under "Display", the Theme is set to Dark and Backdrops are enabled. 
 
