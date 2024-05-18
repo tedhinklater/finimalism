@@ -1,5 +1,5 @@
 # finimalism
-Minimalist Jellyfin Theme CSS (6-0 updated for jellyfin server 10.9.1)
+Minimalist Jellyfin Theme CSS (6-0 updated for jellyfin server 10.9.2)
 
 Step 1: Import to your CSS with
 
