@@ -821,7 +821,7 @@ div[data-role="controlgroup"] a[data-role="button"] {
     border-bottom: none;
 }
 .layout-mobile .itemBackdrop {
-    margin-top: 4rem;
+    margin-top: -2rem;
 }
 
 /*Stop covers from being scrolled on desktop*/
