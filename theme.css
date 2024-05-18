@@ -108,7 +108,7 @@ html {
     height: 100%;
     background: url(bg.jpg) center top no-repeat #030322;
     background-size: cover;
-    opacity: 0.86;
+    opacity: 0.8;
     z-index: -1;
 }
 
