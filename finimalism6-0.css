@@ -1212,7 +1212,7 @@ progress::-webkit-progress-value {
 
 @media (orientation: landscape) {
     .layout-mobile .detailPagePrimaryContainer {
-        padding-right: 4em;
+        padding-right: 7em;
     }
 }
 
