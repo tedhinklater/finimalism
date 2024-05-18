@@ -33,7 +33,7 @@ div.itemMiscInfo.itemMiscInfo-primary {
 }
 
 p.overview.detail-clamp-text {
-    font-size: 13pt; /* Font size for the description */
+    font-size: 12pt; /* Font size for the description */
 }
 
 /* Font for the Movies, TV and Live TV buttons */
@@ -819,6 +819,7 @@ div[data-role="controlgroup"] a[data-role="button"] {
     background: transparent;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
+    padding-left: 
 
 }
 .layout-mobile .adminDrawerLogo {
@@ -1209,6 +1210,13 @@ progress::-webkit-progress-value {
   }
 }
 
+@media (orientation: landscape) {
+    .layout-mobile .detailPagePrimaryContainer {
+        padding-right: 4em;
+    }
+}
+
+
 /*Tweak entry field padding and alignment/sizes*/
 .emby-input,
 .emby-textarea {
@@ -1277,7 +1285,7 @@ progress::-webkit-progress-value {
 
 /*Shrink and square (or round) cast thumnails*/
 @media all and (min-width: 131.25em){
-  #castContent .card.overflowPortraitCard {
+  #castContent .card.overflowoPortraitCard {
     width: 6.3vw !important; 
     font-size: 90% !important;
   }
@@ -1395,6 +1403,14 @@ progress::-webkit-progress-value {
 @media (min-width: 120em) {
   .portraitCard, .squareCard {
     width: 9.1111111111%;
+  }
+}
+
+
+
+@media (max-width: 768px) and (orientation: landscape) {
+  .portraitCard, .squareCard {
+    width: 20%; /* Adjust the percentage as needed */
   }
 }
 
@@ -1620,6 +1636,8 @@ a[href="#!/livetv.html?tab=5&serverId=67303d06cb7c4c16b5be3492dafb9cae"] {
   }
 }
 
+
+
 /* Adjust the size of cards in the "Series" section */
 .verticalSection.detailVerticalSection .overflowPortraitCard {
     width: 30vw !important; /* Set the desired width for larger screens */
@@ -1645,6 +1663,24 @@ a[href="#!/livetv.html?tab=5&serverId=67303d06cb7c4c16b5be3492dafb9cae"] {
     .verticalSection.detailVerticalSection .overflowPortraitCard {
         width: 48vw !important; /* Set a larger width for smaller screens */
     }
+}
+
+@media (max-width: 768px) and (orientation: landscape) {
+  .verticalSection.detailVerticalSection .overflowPortraitCard {
+    width: 19vw !important;
+  }
+}
+
+@media (max-width: 930px) and (orientation: landscape) {
+  .verticalSection.detailVerticalSection .overflowPortraitCard {
+    width: 19vw !important;
+  }
+}
+
+@media (max-width: 720px) and (orientation: landscape) {
+  .detailPageContent {
+    padding-left: 36.45vw !important;
+  }
 }
 
 /* Gradient for buttons on hover */
@@ -1803,4 +1839,13 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 
 .content-primary, .padded-bottom-page, .page, .pageWithAbsoluteTabs .pageTabContent {
   padding-bottom: 0 !important;
+}
+
+
+/* For mobile devices with a maximum width of 426px (portrait orientation) */
+@media only screen and (max-width: 426px) {
+  .homePage .section1.verticalSection .sectionTitle-cards {
+    margin-right: -3.5em;
+    margin-left: 10px;
+  }
 }
