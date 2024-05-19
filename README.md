@@ -13,7 +13,7 @@ If you use Jellyfin Media Player, repeat for **Program Files\Jellyfin\Jellyfin M
 
 **IMPORTANT**: If you update Jellyfin, it'll replace theme.css so repeat step 2 when updating.
 
-Step 3: In Jellyfin Client / Web UI Settings, under "Home", Home Screen Section 1 is "My Media (Small),  under "Display", the Theme is set to Dark and Backdrops are enabled. 
+Step 3: **REQUIRED** : In Jellyfin Client / Web UI Settings, under "Home", Home Screen Section 1 is "My Media (Small),  under "Display", the Theme is set to Dark and Backdrops are enabled. 
 
 Everything is just an alteration of the amazing work already put into [Ultrachromic by CTalvio](https://github.com/CTalvio/Ultrachromic). Also fixed some bugs such as Live TV cards being blurred by the progress overlay.
 
