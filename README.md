@@ -20,7 +20,7 @@ Everything is just an alteration of the amazing work already put into [Ultrachro
 My Media (Small)
 ![Screenshot 2024-05-16 223301](https://github.com/tedhinklater/finimalism/assets/66086488/e2db2569-4dc2-4493-907c-9fbb2f6ebc35)
 My Media (Full cards)
-![unknown_2024 05 19-17 54_3](https://github.com/tedhinklater/finimalism/assets/66086488/54eb4654-f4dd-4174-b2b5-600d3255dd60)
+![unknown_2024 05 19-17 54_4](https://github.com/tedhinklater/finimalism/assets/66086488/4422ad0b-f4fd-41af-9e8c-b819157355f0)
 ![Screenshot 2024-05-16 223306](https://github.com/tedhinklater/finimalism/assets/66086488/897838db-b276-412e-9836-7d0ad2ddb108)
 ![Screenshot 2024-05-16 223442](https://github.com/tedhinklater/finimalism/assets/66086488/6264e61a-f45d-435a-8a46-7c98cebb6094)
 ![Screenshot 2024-05-18 102939](https://github.com/tedhinklater/finimalism/assets/66086488/64fa40f8-5c56-4d9c-bf3c-ef54c06c42b6)
