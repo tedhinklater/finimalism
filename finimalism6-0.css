@@ -43,7 +43,7 @@ span.homeLibraryText {
     font-size: 12pt;
 }
 
-
+/*Moves card progress bar to the top */
 .innerCardFooter.fullInnerCardFooter.innerCardFooterClear {
     background: rgba(0, 0, 0, 0);
     right: 0;
