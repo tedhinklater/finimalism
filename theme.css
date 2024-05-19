@@ -69,8 +69,27 @@ html {
     height: 100vh;
     background: url(bg.jpg) center top no-repeat #030322;
     background-size: cover;
-    opacity: 0.86;
+    opacity: 0.7;
     z-index: -1;
+    background-attachment: fixed;
+}
+
+.sectionTitle.sectionTitle-cards.padded-left {
+    position: top;
+    z-index: -1;
+}
+
+.sectionTitle.sectionTitle-cards.padded-left::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: url(bg.jpg) center top no-repeat #030322;
+    background-size: cover;
+    opacity: 0.7;
+    z-index: -2;
     background-attachment: fixed;
 }
 
