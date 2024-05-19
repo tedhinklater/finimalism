@@ -10,6 +10,7 @@
     margin-right: 10px; /* Adjust the margin as needed */
 }
 
+/* Remove My Media text on browsers */
 .verticalSection-extrabottompadding > .sectionTitle-cards:not(#similarCollapsible .sectionTitle-cards) {
   display: none;
 }
