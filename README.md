@@ -33,7 +33,7 @@ Player
 
 Mobile Screenshots
 
-![Screenshot 2024-05-20 211511](https://github.com/tedhinklater/finimalism/assets/66086488/19149d39-c3b3-4547-bd75-255c8b4bd261)
+![Screenshot 2024-05-20 211511](https://github.com/tedhinklater/finimalism/assets/66086488/19149d39-c3b3-4547-bd75-255c8b4bd261 width=50% height=50%)
 ![Screenshot 2024-05-20 211519](https://github.com/tedhinklater/finimalism/assets/66086488/995632c9-9903-4e45-bb94-1e7c3afaf7cb)
 ![Screenshot 2024-05-20 211548](https://github.com/tedhinklater/finimalism/assets/66086488/19743df8-4f0e-4575-867a-a366bba4aebb)
 ![Screenshot 2024-05-20 211602](https://github.com/tedhinklater/finimalism/assets/66086488/98dc12b5-83d7-42dd-9689-9d260a5488e9)
