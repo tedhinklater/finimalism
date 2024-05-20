@@ -105,7 +105,7 @@ span.homeLibraryText {
 /* Content logo position */
 #itemDetailPage .detailLogo {
     position: static;
-    margin-left: 50%;
+    margin-left: 48%;
     display: block;
     -webkit-filter: drop-shadow(0 0 10px rgba(2, 2, 2, 0.75));
     /*! filter: drop-shadow(0 0 10px rgba(2, 2, 2, 0.75)); */
@@ -1861,8 +1861,8 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 
 @media (orientation: portrait) {
 .layout-mobile .detailButton {
-    padding-left: 1.8em !important;
-    padding-right: 1.8em !important;
+    padding-left: 1em !important;
+    padding-right: 1em !important;
   }
 }
 
@@ -1877,6 +1877,7 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
   .layout-mobile [dir="ltr"] .mainDetailButtons {
     margin-bottom: 0;
     padding-left: 14em;
+    padding-right: 3em;
     font-size: 85%;
   }
 }
@@ -1903,6 +1904,8 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
   overflow: hidden;
   }
 }
+
+
 
 @media (max-width: 1000px)  and (orientation: landscape) {
     .layout-mobile .itemBackdrop {
