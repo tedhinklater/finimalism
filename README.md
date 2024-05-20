@@ -24,12 +24,4 @@ Everything is just an alteration of the amazing work already put into [Ultrachro
 ![Screenshot 2024-05-20 204638](https://github.com/tedhinklater/finimalism/assets/66086488/d6d2f02a-90c2-492b-b325-75f908e86d23)
 ![Screenshot 2024-05-20 204645](https://github.com/tedhinklater/finimalism/assets/66086488/aaa90ae7-4977-4056-bb32-0ea655a50f04)
 ![Screenshot 2024-05-20 204706](https://github.com/tedhinklater/finimalism/assets/66086488/7df3e781-0a85-4b59-8351-f0a05369b7c3)
-
-Mobile
-
-![Screenshot 2024-05-20 204921](https://github.com/tedhinklater/finimalism/assets/66086488/1ce312bb-344c-405c-8923-0cf7283b29cb)
-![Screenshot 2024-05-20 204933](https://github.com/tedhinklater/finimalism/assets/66086488/0940e7d2-92c7-411a-95ac-6e070b6cc00f)
-![Screenshot 2024-05-20 205014](https://github.com/tedhinklater/finimalism/assets/66086488/2a034aeb-2094-4737-9665-196d3b9ecc53)
-![Screenshot 2024-05-20 205021](https://github.com/tedhinklater/finimalism/assets/66086488/27fa634d-5f47-4831-bcc1-de995ccb3088)
-
 ![Screenshot 2024-05-15 174936](https://github.com/tedhinklater/finimalism/assets/66086488/976319a8-09eb-4bb8-be4d-1ebbc53e9180)
