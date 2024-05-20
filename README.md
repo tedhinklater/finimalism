@@ -19,8 +19,8 @@ Everything is just an alteration of the amazing work already put into [Ultrachro
 
 Desktop Screenshots
 
-<img src="https://github.com/tedhinklater/finimalism/assets/66086488/632d0aed-4e79-4dd1-89c7-87d4b4d44d03" alt="Screenshot 1" style="width: 45%;">
-<img src="https://github.com/tedhinklater/finimalism/assets/66086488/5d917c17-04e9-4439-893f-676c03709a9f" alt="Screenshot 2" style="width: 45%;">
+<img src="https://github.com/tedhinklater/finimalism/assets/66086488/632d0aed-4e79-4dd1-89c7-87d4b4d44d03" alt="Screenshot 1" style="width: 50%;">
+<img src="https://github.com/tedhinklater/finimalism/assets/66086488/5d917c17-04e9-4439-893f-676c03709a9f" alt="Screenshot 2" style="width: 50%;">
 <img src="https://github.com/tedhinklater/finimalism/assets/66086488/d022ad82-e27b-4585-81e9-bf8abbac13bd" alt="Screenshot 3" style="width: 45%;">
 <img src="https://github.com/tedhinklater/finimalism/assets/66086488/653104b1-3b58-4649-88eb-6f1bd4446fd8" alt="Screenshot 4" style="width: 45%;">
 <img src="https://github.com/tedhinklater/finimalism/assets/66086488/d6d2f02a-90c2-492b-b325-75f908e86d23" alt="Screenshot 5" style="width: 45%;">
