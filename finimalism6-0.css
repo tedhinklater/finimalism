@@ -22,13 +22,27 @@ body {
     font-size: 12pt; /* Default font size for the body */
 }
 
+.layout-mobile body {
+    font-size: 10pt;
+}
+
+/* Movies / Shows gallery titles */
+.layout-desktop .card {
+    font-size: 10pt !important;
+}
+
+/* Movies / Shows gallery titles */
+.layout-mobile .card {
+    font-size: 8pt !important;
+}
+
 /* Font size for release year, ratings */
 div.itemMiscInfo.itemMiscInfo-primary {
     font-size: 14pt;
 }
 
 .layout-mobile div.itemMiscInfo.itemMiscInfo-primary {
-    font-size: 10pt;
+    font-size: 8pt;
 }
 
 /* Font size for the description */
@@ -36,10 +50,21 @@ p.overview.detail-clamp-text {
     font-size: 12pt; 
 }
 
+/* Font size for the description */
+.layout-mobile p.overview.detail-clamp-text {
+    font-size: 10pt; 
+}
+
+
+
 /* Font for the Movies, TV and Live TV buttons */
 span.homeLibraryText {
     font-family: "Nunito", sans-serif;
     font-size: 12pt;
+}
+
+.layout-mobile span.homeLibraryText {
+    font-size: 8pt;
 }
 
 /* Position card progress bar */
@@ -57,6 +82,7 @@ span.homeLibraryText {
     background: linear-gradient(to right, rgba(163, 95, 198, 1) 0%, rgba(6, 161, 217, 1) 100%);
 }
 
+
 /*Raise detailPage detailRibbon */
 
 .itemBackdrop {
@@ -73,6 +99,8 @@ span.homeLibraryText {
 .layout-desktop .detailImageContainer .card {
   top: 18vh;
 }
+
+
 
 /* Content logo position */
 #itemDetailPage .detailLogo {
@@ -102,6 +130,7 @@ span.homeLibraryText {
 
 .layout-mobile #itemDetailPage .itemName.infoText.parentNameLast {
     display: block;
+    font-size: 1.3em;
 }
 
 /* Color and style changes for the dark theme type*/
@@ -822,7 +851,7 @@ div[data-role="controlgroup"] a[data-role="button"] {
     border-bottom: none;
 }
 .layout-mobile .itemBackdrop {
-    margin-top: 2rem;
+    margin-top: 0rem;
 }
 
 /*Stop covers from being scrolled on desktop*/
@@ -834,7 +863,7 @@ div[data-role="controlgroup"] a[data-role="button"] {
 @media (orientation: landscape) {
     .layout-mobile .detailImageContainer .card {
         position: fixed !important;
-        top: 15% !important;
+        top: 20% !important;
     }
 }
 
@@ -1208,7 +1237,13 @@ progress::-webkit-progress-value {
 
 @media (orientation: landscape) {
     .layout-mobile .detailPagePrimaryContainer {
-        padding-right: 7em;
+        padding-right: 11em;
+    }
+}
+
+@media (max-width: 750px)  and (orientation: landscape) {
+    .layout-mobile .detailPagePrimaryContainer {
+        padding-right: 11vw;
     }
 }
 
@@ -1428,7 +1463,7 @@ progress::-webkit-progress-value {
   #moviesPage,
   #tvRecommendedPage,
   #musicRecommendedPage {
-    margin-top: 130px;
+    margin-top: 9em;
     padding-top: 0.5em !important;
     overflow-y: scroll;
   }
@@ -1523,6 +1558,7 @@ progress::-webkit-progress-value {
 .listItem {
     text-align: center;
     padding: 10px;
+    font-size: 10pt;
 }
 
 /* Hide the listItemIcon */
@@ -1599,13 +1635,14 @@ progress::-webkit-progress-value {
 
 /* Smaller Next Up cards */
 .verticalSection.section2 .card.overflowBackdropCard {
-  width: 200px !important; /* Adjust the width as needed */
+  width: 13.88em !important; /* Adjust the width as needed */
   font-size: 90% !important;
 }
 
 /* Adjust font size for smaller screens if needed */
 @media all and (max-width: 767px) {
   .verticalSection.section2 .card.overflowBackdropCard {
+    width: 13.88em !important;
     font-size: 80% !important;
   }
 }
@@ -1659,7 +1696,7 @@ progress::-webkit-progress-value {
 
 @media (max-width: 720px) and (orientation: landscape) {
   .detailPageContent {
-    padding-left: 36.45vw !important;
+    padding-left: 30vw !important;
   }
 }
 
@@ -1811,6 +1848,74 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 .infoWrapper {
   min-width: 52%;
   max-width: 100%;
+}
+
+/* Padding on detailPage action buttons */
+
+@media (orientation: landscape) {
+.layout-mobile .detailButton {
+    padding-left: 2.8em !important;
+    padding-right: 2.8em !important;
+  }
+}
+
+@media (orientation: portrait) {
+.layout-mobile .detailButton {
+    padding-left: 1.8em !important;
+    padding-right: 1.8em !important;
+  }
+}
+
+@media (max-width: 768px) and (orientation: portrait) {
+    .mainDetailButtons.focuscontainer-x {
+        margin-bottom: 0em;
+        margin-top: 0em;
+    }
+}
+
+@media (max-width: 32em) {
+  .layout-mobile [dir="ltr"] .mainDetailButtons {
+    margin-bottom: 0;
+    padding-left: 14em;
+    font-size: 85%;
+  }
+}
+
+@media (min-width: 50em) {
+  .layout-mobile [dir="ltr"] .mainDetailButtons {
+    font-size: 85%;
+    margin-bottom: 0em;
+    margin-top: 0em;
+  }
+}
+
+/* Resize video audio info on mobile */
+@media (max-width: 32em) {
+.trackSelections .selectContainer {
+  font-size: 8pt;
+  overflow: hidden;
+  }
+}
+
+@media (max-width: 50em) {
+.trackSelections .selectContainer {
+  font-size: 8pt;
+  overflow: hidden;
+  }
+}
+
+@media (max-width: 1000px)  and (orientation: landscape) {
+    .layout-mobile .itemBackdrop {
+        margin-bottom: 0 !important;
+        background-attachment: scroll !important;
+        background-position: top !important;
+        height: 75vh !important; /* Increase this value to make the backdrop larger */
+    }
+}
+
+.layout-mobile .verticalSection-extrabottompadding {
+  margin-bottom: 1em;
+  margin-top: 0em;
 }
 
 /* Remove empty space at bottom of page */
