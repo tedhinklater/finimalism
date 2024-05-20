@@ -1,4 +1,4 @@
-![Screenshot 2024-05-20 204232](https://github.com/tedhinklater/finimalism/assets/66086488/c8e4655d-7632-454e-9d0e-2f3d1c529a01)# finimalism
+# finimalism
 Minimalist Jellyfin Theme CSS (6-0 updated for jellyfin server 10.9.2)
 
 Step 1: Import to your CSS with
