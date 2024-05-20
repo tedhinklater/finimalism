@@ -33,10 +33,6 @@ Player
 
 Mobile Screenshots
 
-![Screenshot 2024-05-20 221317](https://github.com/tedhinklater/finimalism/assets/66086488/bbc0b983-3e0f-47e3-90d1-360eb38ede83)
-![Screenshot 2024-05-20 221718](https://github.com/tedhinklater/finimalism/assets/66086488/1d578a82-5d8e-410f-9d27-8f18a34e9a1d)
-![Screenshot 2024-05-20 221741](https://github.com/tedhinklater/finimalism/assets/66086488/f9b0dd48-ad04-4e9e-92cd-f610c43bf377)
-![Screenshot 2024-05-20 221807](https://github.com/tedhinklater/finimalism/assets/66086488/8553f1f6-57d7-4a4c-af49-705b514b23ba)
-![Screenshot 2024-05-20 221816](https://github.com/tedhinklater/finimalism/assets/66086488/b7941a6c-8624-4435-9f2b-8e523005234e)
+![Screenshot 2024-05-20 221317](https://github.com/tedhinklater/finimalism/assets/66086488/bbc0b983-3e0f-47e3-90d1-360eb38ede83)![Screenshot 2024-05-20 221718](https://github.com/tedhinklater/finimalism/assets/66086488/1d578a82-5d8e-410f-9d27-8f18a34e9a1d)![Screenshot 2024-05-20 221741](https://github.com/tedhinklater/finimalism/assets/66086488/f9b0dd48-ad04-4e9e-92cd-f610c43bf377)![Screenshot 2024-05-20 221807](https://github.com/tedhinklater/finimalism/assets/66086488/8553f1f6-57d7-4a4c-af49-705b514b23ba)![Screenshot 2024-05-20 221816](https://github.com/tedhinklater/finimalism/assets/66086488/b7941a6c-8624-4435-9f2b-8e523005234e)
 
 
