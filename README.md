@@ -17,12 +17,11 @@ Step 3: In Jellyfin Client / Web UI Settings, under "Display", the Theme is set 
 
 Everything is just an alteration of the amazing work already put into [Ultrachromic by CTalvio](https://github.com/CTalvio/Ultrachromic). Also fixed some bugs such as Live TV cards being blurred by the progress overlay.
 
-My Media (Small)
-![Screenshot 2024-05-16 223301](https://github.com/tedhinklater/finimalism/assets/66086488/e2db2569-4dc2-4493-907c-9fbb2f6ebc35)
-![Screenshot 2024-05-16 223306](https://github.com/tedhinklater/finimalism/assets/66086488/897838db-b276-412e-9836-7d0ad2ddb108)
-![Screenshot 2024-05-16 223442](https://github.com/tedhinklater/finimalism/assets/66086488/6264e61a-f45d-435a-8a46-7c98cebb6094)
-![Screenshot 2024-05-18 102939](https://github.com/tedhinklater/finimalism/assets/66086488/64fa40f8-5c56-4d9c-bf3c-ef54c06c42b6)
-![Screenshot 2024-05-18 102959](https://github.com/tedhinklater/finimalism/assets/66086488/3a0c3af3-0f23-45ff-b0f6-26a25b8c1f88)
-![Screenshot 2024-05-18 103006](https://github.com/tedhinklater/finimalism/assets/66086488/90b36de4-e751-4e5d-b233-79892d81c553)
-![Screenshot 2024-05-18 103031](https://github.com/tedhinklater/finimalism/assets/66086488/031aa8fe-6be7-49a6-9280-da31a58a2e52)
+![Screenshot 2024-05-20 015404](https://github.com/tedhinklater/finimalism/assets/66086488/72a1c62f-7662-44dc-b1df-2d5f64f40e5c)
+![Screenshot 2024-05-20 015409](https://github.com/tedhinklater/finimalism/assets/66086488/25214a98-0a12-4857-baf1-b8cfa23b1880)
+![Screenshot 2024-05-20 014647](https://github.com/tedhinklater/finimalism/assets/66086488/0944cb7f-ce8d-43ac-9e08-cd689f358ad7)
+![Screenshot 2024-05-20 014733](https://github.com/tedhinklater/finimalism/assets/66086488/0e68be41-6cf0-4fa6-89fa-b21aa24203db)
+![Screenshot 2024-05-20 014757](https://github.com/tedhinklater/finimalism/assets/66086488/7bf9dfb3-eb67-4d2e-80ef-68898e344b62)
+![Screenshot 2024-05-20 014803](https://github.com/tedhinklater/finimalism/assets/66086488/20023407-db77-4288-b9f5-583e2908289a)
+![Screenshot 2024-05-20 014813](https://github.com/tedhinklater/finimalism/assets/66086488/936c142a-ed80-49eb-b3ee-9615e21ed924)
 ![Screenshot 2024-05-15 174936](https://github.com/tedhinklater/finimalism/assets/66086488/976319a8-09eb-4bb8-be4d-1ebbc53e9180)
