@@ -18,6 +18,7 @@ Step 3: In Jellyfin Client / Web UI Settings, under "Display", the Theme is set 
 Everything is just an alteration of the amazing work already put into [Ultrachromic by CTalvio](https://github.com/CTalvio/Ultrachromic). Also fixed some bugs such as Live TV cards being blurred by the progress overlay.
 
 Desktop Screenshots
+
 <img src="https://github.com/tedhinklater/finimalism/assets/66086488/632d0aed-4e79-4dd1-89c7-87d4b4d44d03" alt="Screenshot 1" style="width: 45%;">
 <img src="https://github.com/tedhinklater/finimalism/assets/66086488/5d917c17-04e9-4439-893f-676c03709a9f" alt="Screenshot 2" style="width: 45%;">
 <img src="https://github.com/tedhinklater/finimalism/assets/66086488/d022ad82-e27b-4585-81e9-bf8abbac13bd" alt="Screenshot 3" style="width: 45%;">
