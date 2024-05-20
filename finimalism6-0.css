@@ -1,23 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
+/* Limit Custom CSS code box size */
+#txtCustomCss {
+    height: 400px !important; /* Adjust the height as needed */
+    max-height: none !important;
+    overflow-y: scroll !important;
+    resize: vertical !important;
+}
+
+.customCssContainer textarea {
+    height: auto !important;
+}
+
+/* Resize navbar */
 .headerTop {
     padding: 0.95em;
-}
-
-/* Display the new sections */
-.homeLibraryButton {
-    display: inline-block;
-    margin-right: 10px; /* Adjust the margin as needed */
-}
-
-/* Remove My Media text on browsers */
-.verticalSection-extrabottompadding > .sectionTitle-cards:not(#similarCollapsible .sectionTitle-cards) {
-  display: none;
-}
-
-.emby-itemscontainer {
-    margin: 0 auto; /* Set left and right margins to auto */
-    text-align: center; /* Center the content inside the container */
 }
 
 body {
@@ -25,6 +22,7 @@ body {
     font-size: 12pt; /* Default font size for the body */
 }
 
+/* Font size for release year, ratings */
 div.itemMiscInfo.itemMiscInfo-primary {
     font-size: 14pt;
 }
@@ -33,8 +31,9 @@ div.itemMiscInfo.itemMiscInfo-primary {
     font-size: 10pt;
 }
 
+/* Font size for the description */
 p.overview.detail-clamp-text {
-    font-size: 12pt; /* Font size for the description */
+    font-size: 12pt; 
 }
 
 /* Font for the Movies, TV and Live TV buttons */
@@ -43,7 +42,7 @@ span.homeLibraryText {
     font-size: 12pt;
 }
 
-/*Moves card progress bar to the top */
+/* Position card progress bar */
 .innerCardFooter.fullInnerCardFooter.innerCardFooterClear {
     background: rgba(0, 0, 0, 0);
     right: 0;
@@ -53,19 +52,18 @@ span.homeLibraryText {
     margin: 0;
 }
 
+/* Apply progress bar gradient */
 .itemProgressBarForeground {
     background: linear-gradient(to right, rgba(163, 95, 198, 1) 0%, rgba(6, 161, 217, 1) 100%);
 }
 
-/*Alternate itempage*/
+/*Raise detailPage detailRibbon */
 
 .itemBackdrop {
   height: 31vh !important;
   display: inherit;
 }
-.detailLogo {
-  display: none;
-}
+
 .layout-desktop .detailRibbon {
   margin-top: 0;
   padding-top: 0em;
@@ -76,7 +74,7 @@ span.homeLibraryText {
   top: 18vh;
 }
 
-/* Title Banner Logo */
+/* Content logo position */
 #itemDetailPage .detailLogo {
     position: static;
     margin-left: 50%;
@@ -89,10 +87,7 @@ span.homeLibraryText {
     margin-bottom: 2vh;
 }
 
-.layout-mobile .detailLogo {
-    display: none !important;
-}
-
+/* Remove content title on desktop (redundant with logo) */
 #itemDetailPage .itemName.infoText.parentNameLast {
     display: none;
 }
@@ -109,14 +104,14 @@ span.homeLibraryText {
     display: block;
 }
 
-/*This file contains color and style changes for the dark theme type*/
+/* Color and style changes for the dark theme type*/
 :root {--selection: 170, 95, 200;}
 
 .backgroundContainer.withBackdrop {
     background-color: rgba(0, 0, 0, 0);
 }
 
-/*Some themeing for the dashboard*/
+/* Dashboard*/
 
 #user_usage_report_table,
 .detailTable {
@@ -165,7 +160,7 @@ fieldset {
   border-radius: 0.4em;
 }
 
-/*Colors for title_2*/
+/* detailRibbon transparency*/
 .layout-desktop .detailRibbon {
   background: rgba(255,255,255,.1) !important;
   height: 6em;
@@ -1153,7 +1148,7 @@ progress::-webkit-progress-value {
 	font-size: 120%;
 }
 
-/*Add fixes, start of file*/
+/* Fixes */
 @media all and (min-width: 100em){
   .button-flat {
     margin: .2em !important;
@@ -1407,8 +1402,6 @@ progress::-webkit-progress-value {
   }
 }
 
-
-
 @media (max-width: 768px) and (orientation: landscape) {
   .portraitCard, .squareCard {
     width: 20%; /* Adjust the percentage as needed */
@@ -1419,7 +1412,6 @@ progress::-webkit-progress-value {
     background-color: transparent !important;
 }
 
-/*Pages the have single unit height taskbar*/
 @media all and (min-width: 100em){
   #indexPage,
   #moviesPage,
@@ -1431,7 +1423,6 @@ progress::-webkit-progress-value {
   }
 }
 
-/*Pages the have two unit height taskbar*/
 @media all and (max-width: 100em){
   #indexPage,
   #moviesPage,
@@ -1510,7 +1501,7 @@ progress::-webkit-progress-value {
     transition: transform 1s ease; /* Add a 1-second transition with ease timing function */
 }
 
-/* Custom CSS to show only the channel name without the channel number */
+/* Show only the channel name without the channel number */
 .channelsContainer .guide-channelHeaderCell::after {
     content: attr(title);
     display: block;
@@ -1571,18 +1562,18 @@ progress::-webkit-progress-value {
 }
 
 .sectionTitle.sectionTitle-cards {
-    margin-right: 10px; /* Adjust the margin as needed */
+    margin-right: 10px;
 }
 
 .itemsContainer.padded-left {
     flex: 1;
-    display: flex; /* Add this line */
-    justify-content: center; /* Center the items within the container */
+    display: flex; 
+    justify-content: center;
 
 }
 
 .sectionTitle.sectionTitle-cards {
-    margin-right: 10px; /* Adjust the margin as needed */
+    margin-right: 10px;
 }
 
 .itemsContainer.padded-left {
@@ -1595,25 +1586,18 @@ progress::-webkit-progress-value {
     height: 3.2em;
 }
 
-/* Hide specific Live TV buttons */
-a[href="#!/livetv.html?tab=0&serverId=67303d06cb7c4c16b5be3492dafb9cae"],
-a[href="#!/livetv.html?tab=1&serverId=67303d06cb7c4c16b5be3492dafb9cae"],
-a[href="#!/livetv.html?tab=2&serverId=67303d06cb7c4c16b5be3492dafb9cae"],
-a[href="#!/livetv.html?tab=3&serverId=67303d06cb7c4c16b5be3492dafb9cae"],
-a[href="#!/livetv.html?tab=4&serverId=67303d06cb7c4c16b5be3492dafb9cae"],
-a[href="#!/livetv.html?tab=5&serverId=67303d06cb7c4c16b5be3492dafb9cae"] {
-    display: none;
-}
-
+/* Position home tab buttons */
 .headerTabs .emby-tab-button {
-    /* Set your desired width */
-    width: 160px; /* Adjust this value as needed */
+    width: 160px;
     padding-top: 0.5em;
 }
 
-.verticalSection-extrabottompadding > .sectionTitle-cards:not(#similarCollapsible .sectionTitle-cards) {
+/* Hide My Media text on desktop */
+/* .verticalSection-extrabottompadding > .sectionTitle-cards:not(#similarCollapsible .sectionTitle-cards) {
   display: none;
-}
+} */
+
+/* Smaller Next Up cards */
 .verticalSection.section2 .card.overflowBackdropCard {
   width: 200px !important; /* Adjust the width as needed */
   font-size: 90% !important;
@@ -1626,43 +1610,38 @@ a[href="#!/livetv.html?tab=5&serverId=67303d06cb7c4c16b5be3492dafb9cae"] {
   }
 }
 
-
-/* Add more media queries for other screen sizes as needed */
-
 /* Mobile or smaller screens */
 @media all and (max-width: 25em) {
   .verticalSection.section2 .card.overflowBackdropCard {
-    width: 48vw !important; /* Adjust the width as needed */
+    width: 48vw !important;
     font-size: 90% !important;
   }
 }
 
-
-
 /* Adjust the size of cards in the "Series" section */
 .verticalSection.detailVerticalSection .overflowPortraitCard {
-    width: 30vw !important; /* Set the desired width for larger screens */
-    font-size: 90% !important; /* Adjust the font size if needed */
+    width: 30vw !important;
+    font-size: 90% !important; 
 }
 
 /* Larger screens */
 @media all and (min-width: 58em) and (max-width: 64em) {
     .verticalSection.detailVerticalSection .overflowPortraitCard {
-        width: 15vw !important; /* Set a different width for larger screens */
+        width: 15vw !important;
     }
 }
 
 /* Extra-large screens */
 @media all and (min-width: 64em) {
     .verticalSection.detailVerticalSection .overflowPortraitCard {
-        width: 10vw !important; /* Set an even smaller width for extra-large screens */
+        width: 10vw !important;
     }
 }
 
 /* Mobile or smaller screens */
 @media all and (max-width: 48em) {
     .verticalSection.detailVerticalSection .overflowPortraitCard {
-        width: 48vw !important; /* Set a larger width for smaller screens */
+        width: 48vw !important;
     }
 }
 
@@ -1716,13 +1695,13 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 .homePage .section1.verticalSection {
     display: flex;
     flex-direction: row;
-    align-items: center; /* Center items vertically */
+    align-items: center;
 }
 
 /* Push "Continue Watching" header to the left */
 .homePage .section1.verticalSection .sectionTitle-cards {
-    margin-right: 10px; /* Adjust the margin as needed */
-    margin-left: 10px; /* Adjust the margin as needed */
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 /* Push scroll buttons to the right */
@@ -1732,7 +1711,7 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 
 /* Adjust alignment for the cards within the Continue Watching section */
 .homePage .section1.verticalSection .itemsContainer .card.overflowBackdropCard {
-    width: 350px !important; /* Set the width to 300px */
+    width: 350px !important;
     margin-top: 4em;
     font-size: 90% !important;
 }
@@ -1740,57 +1719,43 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 /* Adjust the card size for smaller screens if needed */
 @media all and (max-width: 767px) {
     .homePage .section1.verticalSection .itemsContainer .card.overflowBackdropCard {
-        width: 250px !important; /* Adjust the width as needed for smaller screens */
+        width: 250px !important;
         font-size: 80% !important;
     }
 }
 
-
-
 /* Adjust the size of the card image */
 .verticalSection .card img {
-    width: 100%; /* Make the image fill the card container */
-    height: auto; /* Maintain the aspect ratio */
-}
-
-
-/* Adjust the space between Next Up header and card */
-.detailVerticalSection .sectionTitle {
-    margin-bottom: 5px; /* Adjust the margin to your preference */
+    width: 100%;
+    height: auto;
 }
 
 .detailVerticalSection .nextUpItems {
-    margin-top: -5px; /* Adjust the negative margin to bring the cards closer */
+    margin-top: -5px;
 }
 
-#txtCustomCss {
-    height: 400px !important; /* Adjust the height as needed */
-    max-height: none !important;
-    overflow-y: scroll !important;
-    resize: vertical !important;
-}
-
-.customCssContainer textarea {
-    height: auto !important;
-}
-
+/* hide Live TV text on Homepage */
 .sectionTitleContainer.sectionTitleContainer-cards.padded-left > .sectionTitle.sectionTitle-cards {
     display: none;
 }
 
+/* hide Live TV shortcuts on Homepage */
 .padded-top.padded-bottom.scrollSlider.focuscontainer-x {
     display: none;
 }
 
+/* Reduce space between My Media buttons and Continue Watching */
 .sectionTitle.sectionTitle-cards.padded-left + .itemsContainer {
     margin-bottom: -2.6em;
     padding-top: 0.5em;
 }
 
+/* Position release year, ratings */
 .mediaInfoItem {
   margin-top: 0.6em !important;
 }
 
+/* Raise Next Up cards on homepage */
 .sectionTitleContainer-cards {
   margin: 0;
   padding-top: 0em;
@@ -1810,21 +1775,31 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
   padding-left: 0em;
 }
 
+/* For mobile devices with a maximum width of 426px (portrait orientation) */
+@media only screen and (max-width: 426px) {
+  .homePage .section1.verticalSection .sectionTitle-cards {
+    margin-right: -3.5em;
+    margin-left: 10px;
+  }
+}
+
+/*Position Continue Watching card */
 .homePage .section1.verticalSection .sectionTitle-cards {
   margin-right: 0.5em;
   margin-left: 10px;
 }
 
+/* Tighter My Media buttons */
 .homeLibraryButton {
   margin-left: 1em !important;
   margin-right: 1em !important;
   min-width: 7em;
 }
 
+/* Reposition A-Z */
 .alphaPickerRow {
     top: 4em;
 }
-
 
 .cardOverlayFab-primary {
   background-color: rgba(0,0,0,.7);
@@ -1838,15 +1813,7 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
   max-width: 100%;
 }
 
+/* Remove empty space at bottom of page */
 .content-primary, .padded-bottom-page, .page, .pageWithAbsoluteTabs .pageTabContent {
   padding-bottom: 0 !important;
-}
-
-
-/* For mobile devices with a maximum width of 426px (portrait orientation) */
-@media only screen and (max-width: 426px) {
-  .homePage .section1.verticalSection .sectionTitle-cards {
-    margin-right: -3.5em;
-    margin-left: 10px;
-  }
 }
