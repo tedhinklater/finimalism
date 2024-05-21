@@ -1352,9 +1352,10 @@ progress::-webkit-progress-value {
 }
 
 @media (orientation: landscape) {
-    .layout-mobile .detailPagePrimaryContainer {
-        padding-right: 11em;
-    }
+    .layout-mobile .detailPageContent {
+        padding-left: 27%;
+        padding-right: 0%;
+}
 }
 
 @media (max-width: 750px)  and (orientation: landscape) {
@@ -1363,6 +1364,11 @@ progress::-webkit-progress-value {
     }
 }
 
+@media (orientation: landscape) {
+    .layout-mobile  .detailPagePrimaryContainer {
+        padding-left: 28.45vw !important;
+  }
+}
 
 /*Tweak entry field padding and alignment/sizes*/
 .emby-input,
