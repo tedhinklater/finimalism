@@ -38,7 +38,7 @@ body {
 
 @media (min-height: 31.25em) {
   [dir="ltr"] .padded-right-withalphapicker {
-    padding-left: max(env(safe-area-inset-left),4.5%);
+    padding-left: max(env(safe-area-inset-left),3.7%);
     padding-right: 7.5%;
     padding-right: max(env(safe-area-inset-right),3.5%);
   }
