@@ -19,17 +19,17 @@ Everything is just an alteration of the amazing work already put into [Ultrachro
 
 Desktop Screenshots
 
-<img src="https://github.com/tedhinklater/finimalism/assets/66086488/9b35cd00-9369-4418-99da-e6e8d07f5f26" alt="Screenshot 1" style="width: 49%;">
-<img src="https://github.com/tedhinklater/finimalism/assets/66086488/b4fbae01-b838-4a6f-afe8-6728c6f467ce" alt="Screenshot 2" style="width: 49%;">
-<img src="https://github.com/tedhinklater/finimalism/assets/66086488/d022ad82-e27b-4585-81e9-bf8abbac13bd" alt="Screenshot 3" style="width: 49%;">
-<img src="https://github.com/tedhinklater/finimalism/assets/66086488/653104b1-3b58-4649-88eb-6f1bd4446fd8" alt="Screenshot 4" style="width: 49%;">
-<img src="https://github.com/tedhinklater/finimalism/assets/66086488/d6d2f02a-90c2-492b-b325-75f908e86d23" alt="Screenshot 5" style="width: 49%;">
-<img src="https://github.com/tedhinklater/finimalism/assets/66086488/aaa90ae7-4977-4056-bb32-0ea655a50f04" alt="Screenshot 6" style="width: 49%;">
-<img src="https://github.com/tedhinklater/finimalism/assets/66086488/7df3e781-0a85-4b59-8351-f0a05369b7c3" alt="Screenshot 7" style="width: 49%;">
+![Screenshot 2024-05-21 184612](https://github.com/tedhinklater/finimalism/assets/66086488/078d7a58-e33d-40c5-8d64-b4ebb5570ed6)
+![Screenshot 2024-05-21 184619](https://github.com/tedhinklater/finimalism/assets/66086488/2c336cc3-c9bd-45c0-ada2-81b11f34455d)
+![Screenshot 2024-05-21 184720](https://github.com/tedhinklater/finimalism/assets/66086488/2f58792d-0a8a-429e-bc99-ab0ce6ccb4eb)
+![Screenshot 2024-05-21 184732](https://github.com/tedhinklater/finimalism/assets/66086488/1fa4d56f-2c9b-44b2-83b2-3612e7502dcf)
+![Screenshot 2024-05-21 184753](https://github.com/tedhinklater/finimalism/assets/66086488/b6a178b7-d015-4220-8f55-e7d8911e27f8)
+![Screenshot 2024-05-21 184759](https://github.com/tedhinklater/finimalism/assets/66086488/72229b13-e838-40db-9243-f86675576ae1)
+![Screenshot 2024-05-21 184813](https://github.com/tedhinklater/finimalism/assets/66086488/a2a5379e-905b-43a2-9006-6adfe77da2ed)
 
 Player
+<img src="https://github.com/tedhinklater/finimalism/assets/66086488/976319a8-09eb-4bb8-be4d-1ebbc53e9180" alt="Screenshot 8">
 
-<img src="https://github.com/tedhinklater/finimalism/assets/66086488/976319a8-09eb-4bb8-be4d-1ebbc53e9180" alt="Screenshot 8" style="width: 49%;">
 
 Mobile Screenshots
 
@@ -39,3 +39,5 @@ Mobile Screenshots
 <img src="https://github.com/tedhinklater/finimalism/assets/66086488/e1b7be2e-b256-4489-ab64-4c1cec763197" style="width: 49%;">
 <img src="https://github.com/tedhinklater/finimalism/assets/66086488/3985136d-f4d7-480b-a944-986a3eb56f81" alt="Screenshot 13" style="width: 49%;"><br>
 <img src="https://github.com/tedhinklater/finimalism/assets/66086488/85988d51-497a-4375-8577-d95c41129517" alt="Screenshot 9" style="width: 25%;">
+
+
