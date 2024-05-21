@@ -44,6 +44,11 @@ body {
   }
 }
 
+.parentName {
+  display: none;
+  margin: 0 0 0;
+}
+
 /* Font size for release year, ratings */
 div.itemMiscInfo.itemMiscInfo-primary {
     font-size: 14pt;
