@@ -1271,10 +1271,18 @@ progress::-webkit-progress-value {
 /* Fixes */
 @media all and (min-width: 100em){
   .button-flat {
-    margin: .2em !important;
+    margin-right: 3.2em !important;
+    padding: 0em !important;
+  }
+}
+
+@media (orientation: landscape){
+  .layout-mobile .button-flat {
+    margin: 0.2em !important;
     padding: .85em !important;
   }
 }
+
 @media all and (max-width: 100em){
   .mainDetailButtons {
     font-size: 100%;
@@ -1959,8 +1967,8 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 
 @media (orientation: landscape) {
 .layout-mobile .detailButton {
-    padding-left: 2.8em !important;
-    padding-right: 2.8em !important;
+    padding-left: 1.8em !important;
+    padding-right: 1.8em !important;
   }
 }
 
