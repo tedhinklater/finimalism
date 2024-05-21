@@ -49,6 +49,10 @@ body {
   margin: 0 0 0;
 }
 
+.hide + .detailPageWrapperContainer .itemName {
+  display: none !important;
+}
+
 /* Font size for release year, ratings */
 div.itemMiscInfo.itemMiscInfo-primary {
     font-size: 14pt;
