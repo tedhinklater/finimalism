@@ -100,7 +100,10 @@ span.homeLibraryText {
   top: 18vh;
 }
 
-
+[dir="ltr"] .detailPageContent {
+  padding-left: 32.45vw;
+  padding-right: 0%;
+}
 
 /* Content logo position */
 #itemDetailPage .detailLogo {
@@ -854,6 +857,11 @@ div[data-role="controlgroup"] a[data-role="button"] {
     margin-top: 0rem;
 }
 
+.layout-mobile .detailPageContent {
+  padding-left: 5%;
+  padding-right: 0%;
+}
+
 /* Portrait orientation styles */
 @media (orientation: portrait) {
   .layout-mobile .itemBackdrop {
@@ -1514,6 +1522,15 @@ progress::-webkit-progress-value {
   }
 }
 
+.cardText {
+  overflow: hidden;
+  padding: 0;
+  padding-top: 0.1em;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-left: 1em;
+}
+
 @media (min-width: 120em) {
   .portraitCard, .squareCard {
     width: 9.1111111111%;
@@ -1673,6 +1690,11 @@ progress::-webkit-progress-value {
 
 .trackSelections {
   max-width: 60em !important;
+}
+
+.trackSelections .selectContainer .detailTrackSelect {
+  font-size: inherit;
+  padding-left: 0.5em;
 }
 
 /* Hide Upcoming On TV section */
