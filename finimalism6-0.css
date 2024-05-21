@@ -36,6 +36,14 @@ body {
     font-size: 8pt !important;
 }
 
+@media (min-height: 31.25em) {
+  [dir="ltr"] .padded-right-withalphapicker {
+    padding-left: max(env(safe-area-inset-left),4.5%);
+    padding-right: 7.5%;
+    padding-right: max(env(safe-area-inset-right),3.5%);
+  }
+}
+
 /* Font size for release year, ratings */
 div.itemMiscInfo.itemMiscInfo-primary {
     font-size: 14pt;
@@ -1541,7 +1549,7 @@ progress::-webkit-progress-value {
 
 @media (min-width: 120em) {
   .portraitCard, .squareCard {
-    width: 9.1111111111%;
+    width: 12%;
   }
 }
 
