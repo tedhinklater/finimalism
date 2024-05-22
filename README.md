@@ -25,7 +25,7 @@ Desktop Screenshots
 ![Screenshot 2024-05-22 181704](https://github.com/tedhinklater/finimalism/assets/66086488/087692bd-4875-428d-aa90-0563d5f30f89)
 ![Screenshot 2024-05-22 181730](https://github.com/tedhinklater/finimalism/assets/66086488/a61c9ed9-2d6b-4daf-856f-56256c32f5bf)
 ![Screenshot 2024-05-21 200920](https://github.com/tedhinklater/finimalism/assets/66086488/777af77f-27e6-463b-95a2-f476347e363c)
-![Screenshot 2024-05-22 181756](https://github.com/tedhinklater/finimalism/assets/66086488/756a8bc0-2743-4403-97c4-b2b3cebddc8e)
+![Screenshot 2024-05-22 192214](https://github.com/tedhinklater/finimalism/assets/66086488/693fe0d3-0e44-423f-9b33-1f8db2e36021)
 
 Player
 <img src="https://github.com/tedhinklater/finimalism/assets/66086488/976319a8-09eb-4bb8-be4d-1ebbc53e9180" alt="Screenshot 8">
