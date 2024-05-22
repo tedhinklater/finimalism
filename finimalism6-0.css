@@ -1673,20 +1673,6 @@ progress::-webkit-progress-value {
     transition: transform 1s ease; /* Add a 1-second transition with ease timing function */
 }
 
-/* Show only the channel name without the channel number */
-.channelsContainer .guide-channelHeaderCell::after {
-    content: attr(title);
-    display: block;
-    text-align: center;
-    font-size: 16px;
-    color: #ffffff; /* You can customize the color */
-    margin-top: 10px; /* Adjust the spacing as needed */
-}
-
-.channelsContainer .guide-channelHeaderCell .guideChannelNumber {
-    display: none; /* Hide the channel number */
-}
-
 /*Style backdrop*/
 .backdropImage {filter: blur(0px) saturate(120%) contrast(130%) brightness(100%);}
 
@@ -2045,6 +2031,32 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
   font-size: 8pt;
   overflow: hidden;
   }
+}
+
+/* Live TV Guide */
+
+.programCell {
+  background: transparent !important;
+}
+
+.programCell-active {
+  background: rgba(6, 161, 217, 0.05) !important;
+}
+
+.programCell-movie {
+  background: transparent !important;
+}
+
+.guideProgramNameText {
+  font-weight: 400;
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 80%;
+}
+
+.channelPrograms {
+  white-space: wrap;
 }
 
 .layout-mobile .verticalSection-extrabottompadding {
