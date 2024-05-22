@@ -940,7 +940,24 @@ div[data-role="controlgroup"] a[data-role="button"] {
     flex-shrink: 0;
     background-position: 0 70%;
     margin: 0;
-    width: 60vw; !important;
+    width: 60vw !important;
+    height: 30vh !important;
+  }
+}
+
+@media (orientation: landscape) {
+  .layout-mobile .detailLogo {
+    position: absolute;
+    left: 65%;
+    top: 26%;
+    transform: translate(-50%, -50%);
+    display: block;
+    -webkit-filter: drop-shadow(0 0 10px rgba(2, 2, 2, 0.75));
+    filter: drop-shadow(0 0 10px rgba(2, 2, 2, 0.75));
+    flex-shrink: 0;
+    background-position: 0 70%;
+    margin: 0;
+    width: 50vw !important;
     height: 30vh !important;
   }
 }
@@ -1355,7 +1372,7 @@ progress::-webkit-progress-value {
 
 @media (orientation: landscape) {
     .layout-mobile  .detailPagePrimaryContainer {
-        padding-left: 28.45vw !important;
+        padding-left: 1.45vw !important;
   }
 }
 
