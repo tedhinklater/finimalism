@@ -122,19 +122,6 @@ span.homeLibraryText {
   padding-right: 0%;
 }
 
-/* Content logo position */
-#itemDetailPage .detailLogo {
-    position: static;
-    margin-left: 48%;
-    display: block;
-    -webkit-filter: drop-shadow(0 0 10px rgba(2, 2, 2, 0.75));
-    /*! filter: drop-shadow(0 0 10px rgba(2, 2, 2, 0.75)); */
-    flex-shrink: 0;
-    background-position: 0 50%;
-    margin-top: -18vh;
-    margin-bottom: 2vh;
-}
-
 /* Remove content title on desktop (redundant with logo) */
 #itemDetailPage .itemName.infoText.parentNameLast {
     display: none;
@@ -942,17 +929,19 @@ div[data-role="controlgroup"] a[data-role="button"] {
 }
 
 @media (orientation: landscape) {
-  #itemDetailPage .detailLogo {
-    position: static;
-    margin-left: 50%;
+  .layout-desktop .detailLogo {
+    position: absolute;
+    left: 65%;
+    top: 35%;
+    transform: translate(-50%, -50%);
     display: block;
     -webkit-filter: drop-shadow(0 0 10px rgba(2, 2, 2, 0.75));
     filter: drop-shadow(0 0 10px rgba(2, 2, 2, 0.75));
     flex-shrink: 0;
     background-position: 0 70%;
-    margin-top: -18vh;
-    margin-bottom: 1vh;
-    width: 45vw; /* Adjust as needed */
+    margin: 0;
+    width: 60vw; !important;
+    height: 30vh !important;
   }
 }
 
