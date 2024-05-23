@@ -1,6 +1,6 @@
 # finimalism
 
-![mockup](https://github.com/tedhinklater/finimalism/assets/66086488/5b3276fd-382f-425c-93bd-c22647d240ea)
+![mockup](https://github.com/tedhinklater/finimalism/assets/66086488/3ae2e569-9cda-4a7a-9119-232e663b5df0)
 
 Step 1: Import to your CSS with
 
