@@ -1,5 +1,6 @@
 # finimalism
-![mockup](https://github.com/tedhinklater/finimalism/assets/66086488/02d0decb-ca08-4c03-9904-09cc64b10382)
+
+![mockup](https://github.com/tedhinklater/finimalism/assets/66086488/5b3276fd-382f-425c-93bd-c22647d240ea)
 
 Step 1: Import to your CSS with
 
@@ -23,13 +24,13 @@ Everything is just an alteration of the amazing work already put into [Ultrachro
 
 Desktop Screenshots
 
-![Screenshot 2024-05-22 115512](https://github.com/tedhinklater/finimalism/assets/66086488/522ee759-3758-4927-b596-4d0aa566eeee)
-![Screenshot 2024-05-22 115529](https://github.com/tedhinklater/finimalism/assets/66086488/c10e6363-2953-4df3-8f58-cb24e691a8fb)
-![Screenshot 2024-05-22 000304](https://github.com/tedhinklater/finimalism/assets/66086488/9e79dc9f-588f-457b-9b54-9db36167022d)
-![Screenshot 2024-05-22 181704](https://github.com/tedhinklater/finimalism/assets/66086488/087692bd-4875-428d-aa90-0563d5f30f89)
-![Screenshot 2024-05-22 181730](https://github.com/tedhinklater/finimalism/assets/66086488/a61c9ed9-2d6b-4daf-856f-56256c32f5bf)
-![Screenshot 2024-05-21 200920](https://github.com/tedhinklater/finimalism/assets/66086488/777af77f-27e6-463b-95a2-f476347e363c)
-![Screenshot 2024-05-22 192214](https://github.com/tedhinklater/finimalism/assets/66086488/693fe0d3-0e44-423f-9b33-1f8db2e36021)
+![1](https://github.com/tedhinklater/finimalism/assets/66086488/e4e8ad3c-2db3-4067-8a56-e21140de5c55)
+![2](https://github.com/tedhinklater/finimalism/assets/66086488/2b7896cf-c15f-4722-929e-4ae9a7c4b036)
+![3](https://github.com/tedhinklater/finimalism/assets/66086488/7e8ed3cf-eff4-402e-ac74-dda65ca04d87)
+![4](https://github.com/tedhinklater/finimalism/assets/66086488/c5e4d1c5-da92-4ddd-b2d6-fbec9cfeaa58)
+![5](https://github.com/tedhinklater/finimalism/assets/66086488/bd9815e8-a404-4309-9cd6-476e89adb972)
+![6](https://github.com/tedhinklater/finimalism/assets/66086488/bedbcb10-515c-493f-8076-6862ba9e313e)
+![7](https://github.com/tedhinklater/finimalism/assets/66086488/d423d167-23b3-41c9-ac88-98c11ba77807)
 
 Player
 
@@ -38,9 +39,5 @@ Player
 
 Mobile Screenshots
 ![Screenshot 2024-05-22 234315](https://github.com/tedhinklater/finimalism/assets/66086488/4ae944c4-1272-4cdd-ac44-0ba24c3de8ee)
-![Screenshot 2024-05-22 234325](https://github.com/tedhinklater/finimalism/assets/66086488/11e0d1f6-51c3-498f-9316-02be7784d142)
-![Screenshot 2024-05-22 234334](https://github.com/tedhinklater/finimalism/assets/66086488/eeacd685-d884-49eb-bbdf-071977ae7bc6)
-![Screenshot 2024-05-22 234341](https://github.com/tedhinklater/finimalism/assets/66086488/635de280-69ab-4b4d-8ab0-07fa42e2cf19)
-![Screenshot 2024-05-22 234354](https://github.com/tedhinklater/finimalism/assets/66086488/86ccc5cb-21c3-4a6b-b9e6-01bc373dc8bf)
-
+![9](https://github.com/tedhinklater/finimalism/assets/66086488/39c46511-682d-478a-9b1e-8e3a61453b76)
 
