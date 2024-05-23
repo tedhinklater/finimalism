@@ -14,8 +14,8 @@ Step 1: Import to your CSS with
 Step 2: Go to **Program Files\Jellyfin\Server\jellyfin-web\themes\dark** and rename theme.css "theme_orig.css" and drop my theme.css and bg.jpg into that folder.<br>
 If you use Jellyfin Media Player, repeat for **Program Files\Jellyfin\Jellyfin Media Player\web-client\desktop\themes\dark**
 
-![Screenshot 2024-05-23 142336](https://github.com/tedhinklater/finimalism/assets/66086488/8ea6388c-f4d5-4043-b68a-75e067d38362)
-
+<img src="https://github.com/tedhinklater/finimalism/assets/66086488/38eef263-460c-4994-b214-e9b07cf051fb" width=49%>
+<img src="https://github.com/tedhinklater/finimalism/assets/66086488/8ea6388c-f4d5-4043-b68a-75e067d38362" width=49%>
 
 **IMPORTANT**: If you update Jellyfin, it'll replace theme.css so repeat step 2 when updating.
 
