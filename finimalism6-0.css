@@ -1752,7 +1752,7 @@ progress::-webkit-progress-value {
 .mainDrawer-scrollContainer.scrollContainer .navMenuOption:hover,
 .mainDrawer-scrollContainer.scrollContainer .navMenuOption:hover emby-button,
 button.is-emby-button:hover emby-button {
-    background: linear-gradient(to right, rgba(163, 95, 198, 1), rgba(6, 161, 217, 1)) !important;
+    background: linear-gradient(to right, rgba(168, 6, 217 , 0.3), rgba(6, 161, 217, 0.6)) !important;
     transition: background 0.3s ease; /* Add transition for smooth effect */
 }
 
