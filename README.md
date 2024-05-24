@@ -25,7 +25,7 @@ Everything is just an alteration of the amazing work already put into [Ultrachro
 Desktop Screenshots
 
 ![1](https://github.com/tedhinklater/finimalism/assets/66086488/e4e8ad3c-2db3-4067-8a56-e21140de5c55)
-![2](https://github.com/tedhinklater/finimalism/assets/66086488/2b7896cf-c15f-4722-929e-4ae9a7c4b036)
+![2](https://github.com/tedhinklater/finimalism/assets/66086488/6e95c0e9-aff1-42eb-8919-7a652cdca6d4)
 ![3](https://github.com/tedhinklater/finimalism/assets/66086488/7e8ed3cf-eff4-402e-ac74-dda65ca04d87)
 ![4](https://github.com/tedhinklater/finimalism/assets/66086488/c5e4d1c5-da92-4ddd-b2d6-fbec9cfeaa58)
 ![5](https://github.com/tedhinklater/finimalism/assets/66086488/bd9815e8-a404-4309-9cd6-476e89adb972)
