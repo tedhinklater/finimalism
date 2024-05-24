@@ -16,7 +16,7 @@ If you use Jellyfin Media Player, repeat for **Program Files\Jellyfin\Jellyfin M
 <img src="https://github.com/tedhinklater/finimalism/assets/66086488/38eef263-460c-4994-b214-e9b07cf051fb" width=45%>
 <img src="https://github.com/tedhinklater/finimalism/assets/66086488/584196c3-8adc-4d92-866f-5dd75cfa2872" width=54%>
 
-**IMPORTANT**: If you update Jellyfin, it'll replace theme.css so repeat step 2 when updating.
+**IMPORTANT**: If you update your Jellyfin's version, it'll replace theme.css so repeat step 2 when updating.
 
 Step 3: In Jellyfin Client / Web UI Settings, under "Display", the Theme is set to Dark and Backdrops are enabled. 
 
