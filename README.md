@@ -23,20 +23,22 @@ Everything is just an alteration of the amazing work already put into [Ultrachro
 
 Desktop Screenshots
 
-![1](https://github.com/tedhinklater/finimalism/assets/66086488/e4e8ad3c-2db3-4067-8a56-e21140de5c55)
-![2](https://github.com/tedhinklater/finimalism/assets/66086488/6e95c0e9-aff1-42eb-8919-7a652cdca6d4)
-![3](https://github.com/tedhinklater/finimalism/assets/66086488/7e8ed3cf-eff4-402e-ac74-dda65ca04d87)
-![4](https://github.com/tedhinklater/finimalism/assets/66086488/c5e4d1c5-da92-4ddd-b2d6-fbec9cfeaa58)
-![5](https://github.com/tedhinklater/finimalism/assets/66086488/bd9815e8-a404-4309-9cd6-476e89adb972)
-![6](https://github.com/tedhinklater/finimalism/assets/66086488/bedbcb10-515c-493f-8076-6862ba9e313e)
-![7](https://github.com/tedhinklater/finimalism/assets/66086488/d423d167-23b3-41c9-ac88-98c11ba77807)
+![1](https://github.com/tedhinklater/finimalism/assets/66086488/57705b77-5571-4324-a7fa-a195ba7894e3)
+![2](https://github.com/tedhinklater/finimalism/assets/66086488/7a121bb5-73ef-4f7a-8146-6544158d0f02)
+![3](https://github.com/tedhinklater/finimalism/assets/66086488/1ec4105a-1c88-4d79-8e5f-e8b45f1fe034)
+![4](https://github.com/tedhinklater/finimalism/assets/66086488/bdff4271-a585-4478-95a8-e80c669ecfd8)
+![5](https://github.com/tedhinklater/finimalism/assets/66086488/8e873940-61c3-4264-8681-8f1704e7ae7b)
+![6](https://github.com/tedhinklater/finimalism/assets/66086488/694d275f-e178-4931-a01c-4e3447f4be18)
+![7](https://github.com/tedhinklater/finimalism/assets/66086488/51ec33b9-e678-4f23-8675-0094a72d75b2)
+![8](https://github.com/tedhinklater/finimalism/assets/66086488/96756973-1315-4584-99cd-64aa5d384f1d)
 
 Player
 
 <img src="https://github.com/tedhinklater/finimalism/assets/66086488/976319a8-09eb-4bb8-be4d-1ebbc53e9180" alt="Screenshot 8">
 
-
 Mobile Screenshots
-![Screenshot 2024-05-22 234315](https://github.com/tedhinklater/finimalism/assets/66086488/4ae944c4-1272-4cdd-ac44-0ba24c3de8ee)
-![9](https://github.com/tedhinklater/finimalism/assets/66086488/39c46511-682d-478a-9b1e-8e3a61453b76)
+
+![Screenshot 2024-05-24 203516](https://github.com/tedhinklater/finimalism/assets/66086488/c9c88f6b-5ecf-43c6-b34b-09142516e870)
+![Screenshot 2024-05-24 213117](https://github.com/tedhinklater/finimalism/assets/66086488/00f2a31a-9d47-47a6-80c9-23167ce7c8b8)
+![Screenshot 2024-05-24 203459](https://github.com/tedhinklater/finimalism/assets/66086488/bb222f92-e349-4373-bc1b-d3870c80158d)
 
