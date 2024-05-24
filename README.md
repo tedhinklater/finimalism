@@ -23,22 +23,21 @@ Everything is just an alteration of the amazing work already put into [Ultrachro
 
 Desktop Screenshots
 
-![1](https://github.com/tedhinklater/finimalism/assets/66086488/57705b77-5571-4324-a7fa-a195ba7894e3)
-![2](https://github.com/tedhinklater/finimalism/assets/66086488/7a121bb5-73ef-4f7a-8146-6544158d0f02)
-![3](https://github.com/tedhinklater/finimalism/assets/66086488/1ec4105a-1c88-4d79-8e5f-e8b45f1fe034)
-![4](https://github.com/tedhinklater/finimalism/assets/66086488/bdff4271-a585-4478-95a8-e80c669ecfd8)
-![5](https://github.com/tedhinklater/finimalism/assets/66086488/8e873940-61c3-4264-8681-8f1704e7ae7b)
-![6](https://github.com/tedhinklater/finimalism/assets/66086488/694d275f-e178-4931-a01c-4e3447f4be18)
-![7](https://github.com/tedhinklater/finimalism/assets/66086488/51ec33b9-e678-4f23-8675-0094a72d75b2)
-![8](https://github.com/tedhinklater/finimalism/assets/66086488/96756973-1315-4584-99cd-64aa5d384f1d)
+![1](https://i.imgur.com/jlbuF33.png)
+![2](https://i.imgur.com/yyBuMZg.png)
+![3](https://i.imgur.com/n7v9N1C.png)
+![4](https://i.imgur.com/D29mr8K.png)
+![5](https://i.imgur.com/euBq5DZ.png)
+![6](https://i.imgur.com/3NgAvcV.png)
+![7](https://i.imgur.com/Kq3Cnrj.png)
+![8](https://i.imgur.com/zeas4mq.png)
 
 Player
 
-<img src="https://github.com/tedhinklater/finimalism/assets/66086488/976319a8-09eb-4bb8-be4d-1ebbc53e9180" alt="Screenshot 8">
+![9](https://i.imgur.com/0S4Be6w.png)
 
 Mobile Screenshots
 
-![Screenshot 2024-05-24 203516](https://github.com/tedhinklater/finimalism/assets/66086488/c9c88f6b-5ecf-43c6-b34b-09142516e870)
-![Screenshot 2024-05-24 213117](https://github.com/tedhinklater/finimalism/assets/66086488/00f2a31a-9d47-47a6-80c9-23167ce7c8b8)
-![Screenshot 2024-05-24 203459](https://github.com/tedhinklater/finimalism/assets/66086488/bb222f92-e349-4373-bc1b-d3870c80158d)
-
+![Mobile1](https://i.imgur.com/HU11urb.png)
+![Mobile2](https://i.imgur.com/IcPYLJ6.png)
+![Mobile3](https://i.imgur.com/V3J69YR.png)
