@@ -962,6 +962,25 @@ div[data-role="controlgroup"] a[data-role="button"] {
   }
 }
 
+/* Fix logo position on iPad / Kindle */
+
+@media (orientation: landscape) and (min-width:1000px) and (min-width:800px) {
+  .layout-mobile .detailLogo {
+    position: absolute;
+    left: 65%;
+    top: 8%;
+    transform: translate(-50%, -50%);
+    display: block;
+    -webkit-filter: drop-shadow(0 0 10px rgba(2, 2, 2, 0.75));
+    filter: drop-shadow(0 0 10px rgba(2, 2, 2, 0.75));
+    flex-shrink: 0;
+    background-position: 0 70%;
+    margin: 0;
+    width: 50vw !important;
+    height: 30vh !important;
+  }
+}
+
 @media (orientation: landscape) {
   .itemDetailPage {
     padding-top: 13em !important;
@@ -1932,8 +1951,19 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 }
 
 /* Reposition A-Z */
-.alphaPickerRow {
-    top: 4em;
+
+.layout-desktop .alphaPickerButton-vertical {
+    width: 3vw;
+}
+
+.layout-desktop .alphaPickerButton {
+    padding: .2em .4em;
+}
+
+.layout-desktop .alphaPicker-fixed {
+    top: 17vh;
+    top: max(env(safe-area-inset-top),17vh);
+
 }
 
 .cardOverlayFab-primary {
