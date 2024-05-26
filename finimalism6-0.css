@@ -2,7 +2,7 @@
 
 /* Limit Custom CSS code box size */
 #txtCustomCss {
-    height: 400px !important; /* Adjust the height as needed */
+    height: 400px !important;
     max-height: none !important;
     overflow-y: scroll !important;
     resize: vertical !important;
@@ -19,7 +19,7 @@
 
 body {
     font-family: "Nunito", sans-serif;
-    font-size: 12pt; /* Default font size for the body */
+    font-size: 12pt;
 }
 
 .layout-mobile body {
@@ -290,7 +290,7 @@ a[data-role="button"] {
   background: rgba(80, 80, 80, 0.8) !important;
 }
 .paper-icon-button-light:hover {
-  background-color: rgba(0, 0, 0, 0.4) !important;
+  background-color: rgba(0, 0, 0, 0) !important;
 }
 .navMenuOption-selected,
 .selectionCommandsPanel {
@@ -1045,7 +1045,7 @@ div[data-role="controlgroup"] a[data-role="button"] {
     background-color: #00000000 !important;
   }
   .cardOverlayContainer {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.5);
   }
 }
 /* Play button hovering (for low width windows) */
@@ -1057,7 +1057,7 @@ div[data-role="controlgroup"] a[data-role="button"] {
     background-color: #00000000 !important;
   }
   .cardOverlayContainer {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.5);
   }
   .cardOverlayButton {
     padding: 0.25em;
@@ -1596,6 +1596,42 @@ progress::-webkit-progress-value {
   }
 }
 
+
+/* Position watched/heart/menu container on cards */
+.cardOverlayButton-br {
+  top: 0;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  align-self: flex-end;
+  padding: 0 2%;
+  border-radius: 10px;
+}
+
+.cardOverlayButtonIcon {
+  font-size: 1.5em !important;
+  height: 1.5em !important;
+  -webkit-justify-content: center;
+  justify-content: center;
+  width: 1em !important;
+}
+
+.cardOverlayContainer > .cardOverlayFab-primary {
+  background-color: rgba(0,0,0,0);
+  font-size: 130%;
+  height: 3em;
+  left: 50%;
+  margin-left: -1.5em;
+  margin-top: -1.5em;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  width: 3.1em;
+}
+
 :root {--accent: 6, 161, 217;}
 
 :root {--rounding: 12px;}
@@ -1609,7 +1645,7 @@ progress::-webkit-progress-value {
     box-shadow: 0 0 5px 0, 255, 222;
     filter: none !important;
     transform: scale(1.05);
-    transition: transform 1s ease; /* Add a 1-second transition with ease timing function */
+    transition: transform 1s ease;
 }
 
 /*Style backdrop*/
@@ -1702,7 +1738,7 @@ progress::-webkit-progress-value {
 
 /* Smaller Next Up cards */
 .verticalSection.section2 .card.overflowBackdropCard {
-  width: 13.88em !important; /* Adjust the width as needed */
+  width: 13.88em !important;
   font-size: 90% !important;
 }
 
@@ -1777,7 +1813,7 @@ progress::-webkit-progress-value {
 .mainDrawer-scrollContainer.scrollContainer .navMenuOption:hover emby-button,
 button.is-emby-button:hover emby-button {
     background: linear-gradient(to right, rgba(168, 6, 217 , 0.3), rgba(6, 161, 217, 0.6)) !important;
-    transition: background 0.3s ease; /* Add transition for smooth effect */
+    transition: background 0.3s ease;
 }
 
 .navMenuOption,
@@ -1792,51 +1828,51 @@ button.is-emby-button:hover emby-button {
 .mainDrawer-scrollContainer.scrollContainer .navMenuOption,
 .mainDrawer-scrollContainer.scrollContainer .navMenuOption emby-button,
 button.is-emby-button emby-button {
-    background-color: transparent !important; /* Set background color to transparent */
-    transition: background 0.3s ease; /* Add transition for smooth effect */
+    background-color: transparent !important;
+    transition: background 0.3s ease;
 }
 
 /* Ensure the text color remains white when hovered */
 .mainDrawer-scrollContainer.scrollContainer .navMenuOption:hover .navMenuOptionText,
 button.is-emby-button:hover emby-button .navMenuOptionText {
-    color: white !important; /* Set the text color */
+    color: white !important; 
 }
 
 /* Gradient for buttons on hover in the Settings section */
 #myPreferencesMenuPage .verticalSection-extrabottompadding .emby-button:hover {
     background: linear-gradient(to right, rgba(168, 6, 217, 0.3), rgba(6, 161, 217, 0.6)) !important;
-    transition: background 0.3s ease; /* Add transition for smooth effect */
+    transition: background 0.3s ease;
 }
 
 /* Adjust width, margin, and text alignment for buttons in the Settings section */
 #myPreferencesMenuPage .verticalSection-extrabottompadding {
-    display: flex; /* Use flexbox for centering */
-    flex-direction: column; /* Stack elements vertically */
-    align-items: center; /* Center items horizontally */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #myPreferencesMenuPage .verticalSection-extrabottompadding .emby-button {
-    width: 30% !important; /* Set width to 30% */
-    margin-left: 0 !important; /* Reset margin to 0 for centering */
-    margin-bottom: 1em; /* Add some space between buttons */
+    width: 30% !important;
+    margin-left: 0 !important;
+    margin-bottom: 1em;
     border-radius: var(--rounding) !important;
-    background-color: transparent !important; /* Set background color to transparent */
-    transition: background 0.3s ease; /* Add transition for smooth effect */
-    display: flex; /* Use flexbox for centering */
-    align-items: center; /* Center items vertically */
-    justify-content: center; /* Center items horizontally */
-    text-align: center; /* Ensure text is centered */
+    background-color: transparent !important;
+    transition: background 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 /* Ensure the text is centered in the Settings section */
 #myPreferencesMenuPage .verticalSection-extrabottompadding .emby-button .listItemBodyText {
-    text-align: center; /* Ensure text is centered */
-    width: 100%; /* Make sure text container takes full width */
+    text-align: center;
+    width: 100%;
 }
 
 /* Ensure the text color remains white when hovered in the Settings section */
 #myPreferencesMenuPage .verticalSection-extrabottompadding .emby-button:hover .listItemBodyText {
-    color: white !important; /* Set the text color */
+    color: white !important;
 }
 
 /* Video Playback Progress Bar */
