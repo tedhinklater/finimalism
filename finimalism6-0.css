@@ -586,7 +586,7 @@ progress::-webkit-progress-value {
 .emby-input,
 .emby-textarea,
 .emby-select-withcolor {
-  background: rgba(0, 0, 0, 0.2); 
+  background: rgba(0, 0, ); 
   border: 0.01em solid rgba(255, 255, 255, 0.22);
 }
 .emby-input:focus,
@@ -1045,7 +1045,7 @@ div[data-role="controlgroup"] a[data-role="button"] {
     background-color: #00000000 !important;
   }
   .cardOverlayContainer {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.5);
   }
 }
 /* Play button hovering (for low width windows) */
@@ -1057,7 +1057,7 @@ div[data-role="controlgroup"] a[data-role="button"] {
     background-color: #00000000 !important;
   }
   .cardOverlayContainer {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.5);
   }
   .cardOverlayButton {
     padding: 0.25em;
