@@ -1612,7 +1612,7 @@ progress::-webkit-progress-value {
 }
 
 .cardOverlayButtonIcon {
-  font-size: 1.5em !important;
+  font-size: 1.2em !important;
   height: 1.5em !important;
   -webkit-justify-content: center;
   justify-content: center;
