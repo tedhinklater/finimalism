@@ -1045,7 +1045,7 @@ div[data-role="controlgroup"] a[data-role="button"] {
     background-color: #00000000 !important;
   }
   .cardOverlayContainer {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.2);
   }
 }
 /* Play button hovering (for low width windows) */
@@ -1057,7 +1057,7 @@ div[data-role="controlgroup"] a[data-role="button"] {
     background-color: #00000000 !important;
   }
   .cardOverlayContainer {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.2);
   }
   .cardOverlayButton {
     padding: 0.25em;
