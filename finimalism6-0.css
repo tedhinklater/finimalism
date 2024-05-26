@@ -586,7 +586,7 @@ progress::-webkit-progress-value {
 .emby-input,
 .emby-textarea,
 .emby-select-withcolor {
-  background: rgba(0, 0, ); 
+  background: rgba(0, 0, 0, 0.2); 
   border: 0.01em solid rgba(255, 255, 255, 0.22);
 }
 .emby-input:focus,
@@ -1596,7 +1596,6 @@ progress::-webkit-progress-value {
   }
 }
 
-
 /* Position watched/heart/menu container on cards */
 .cardOverlayButton-br {
   top: 0;
@@ -1619,9 +1618,10 @@ progress::-webkit-progress-value {
   width: 1em !important;
 }
 
+
 .cardOverlayContainer > .cardOverlayFab-primary {
   background-color: rgba(0,0,0,0);
-  font-size: 130%;
+  font-size: 180%;
   height: 3em;
   left: 50%;
   margin-left: -1.5em;
