@@ -44,12 +44,6 @@ body {
   }
 }
 
-.playedIndicator, .innerCardFooter {
-  background: rgba(0,0,0,0.4);
-  box-shadow: none;
-  display: none;
-}
-
 .parentName {
   display: none;
   margin: 0 0 0;
