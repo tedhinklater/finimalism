@@ -2100,6 +2100,24 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
   white-space: wrap;
 }
 
+/* TV Mode */
+
+.layout-tv .noHeaderRight .headerRight, .noHomeButtonHeader .headerHomeButton {
+  display: inline-flex !important;
+}
+
+.layout-tv .paper-icon-button-light {
+  display: inline-flex !important;
+}
+
+.layout-tv .mainDrawer.hide.transition.touch-menu-la.drawer-open {
+  display: block !important;
+}
+
+.layout-tv .portraitCard {
+  width: 12.5%;
+}
+
 .layout-mobile .verticalSection-extrabottompadding {
   margin-bottom: 1em;
   margin-top: 0em;
