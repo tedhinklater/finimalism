@@ -1642,10 +1642,10 @@ progress::-webkit-progress-value {
 :root {--rounding: 12px;}
 
 /*hover zoom*/
-.homeLibraryButton:hover,
-.homeLibraryButton:focus,
-.card:hover,
-.card:focus {
+.layout-desktop .homeLibraryButton:hover,
+.layout-desktop .homeLibraryButton:focus,
+.layout-desktop .card:hover,
+.layout-desktop .card:focus {
     -webkit-filter: none !important;
     box-shadow: 0 0 5px 0, 255, 222;
     filter: none !important;
