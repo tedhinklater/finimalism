@@ -869,7 +869,7 @@ div[data-role="controlgroup"] a[data-role="button"] {
 /* Portrait orientation styles */
 @media (orientation: portrait) {
   .layout-mobile .itemBackdrop {
-    display: block; /* Display in portrait mode */
+    display: block;
     -webkit-animation: backdrop-fadein .8s ease-in normal both;
     animation: backdrop-fadein .8s ease-in normal both;
     background-attachment: fixed;
@@ -897,7 +897,7 @@ div[data-role="controlgroup"] a[data-role="button"] {
     background-position: 0 70%;
     margin-top: -18vh;
     margin-bottom: 1vh;
-    width: 50vw; /* Adjust as needed */
+    width: 50vw;
   }
 }
 
@@ -911,7 +911,7 @@ div[data-role="controlgroup"] a[data-role="button"] {
 /* Landscape orientation styles */
 @media (orientation: landscape) {
   .layout-mobile .itemBackdrop {
-    display: block; /* Display in portrait mode */
+    display: block;
     -webkit-animation: backdrop-fadein .8s ease-in normal both;
     animation: backdrop-fadein .8s ease-in normal both;
     background-attachment: fixed;
@@ -1141,8 +1141,8 @@ div[data-role="controlgroup"] a[data-role="button"] {
   height: .5em;
   position: absolute;
   bottom: 0em;
-  left: 0; /* You may adjust the left position if needed */
-  width: 100%; /* Ensures it spans the full width of the container */
+  left: 0;
+  width: 100%;
 }
 #divRunningTasks span {
     color: rgba(255,255,255,0.75) !important;
@@ -1515,7 +1515,7 @@ progress::-webkit-progress-value {
 
 @media (max-width: 768px) and (orientation: landscape) {
   .portraitCard, .squareCard {
-    width: 20%; /* Adjust the percentage as needed */
+    width: 20%;
   }
 }
 
@@ -1592,25 +1592,31 @@ progress::-webkit-progress-value {
 
 /* Position watched/heart/menu container on cards */
 .cardOverlayButton-br {
-  top: 0;
   position: absolute;
-  width: 100%;
+  top: 0;
+  right: 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: flex-end;
-  align-self: flex-end;
-  padding: 0 2%;
+  width: auto;
+  padding: 0em;
+  gap: 1em;
   border-radius: 10px;
 }
 
+/* Style individual icons */
 .cardOverlayButtonIcon {
-  font-size: 1.3em !important;
+  font-size: 1.5em !important;
+  width: 1.1em !important;
   height: 1.5em !important;
-  -webkit-justify-content: center;
+  display: flex;
   justify-content: center;
-  width: 1em !important;
-  height: 5em !important;
+  align-items: center;
+}
+
+.cardOverlayButton {
+  position: relative;
 }
 
 
