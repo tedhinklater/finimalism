@@ -19,7 +19,7 @@ If you use Jellyfin Media Player, repeat for **Program Files\Jellyfin\Jellyfin M
 
 Step 3: In Jellyfin Client / Web UI Settings, under "Display", the Theme is set to Dark and Backdrops are enabled. 
 
-Everything is just an alteration of the amazing work already put into [Ultrachromic by CTalvio](https://github.com/CTalvio/Ultrachromic). 6-0 updated for jellyfin server 10.9.2
+Everything is just an alteration of the amazing work already put into [Ultrachromic by CTalvio](https://github.com/CTalvio/Ultrachromic). 6-0 updated for jellyfin server 10.9.3
 
 Desktop Screenshots
 
