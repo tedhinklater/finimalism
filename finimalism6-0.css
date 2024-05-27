@@ -123,7 +123,7 @@ span.homeLibraryText {
 }
 
 /* Remove content title on desktop (redundant with logo) */
-#itemDetailPage .itemName.infoText.parentNameLast {
+.layout-desktop .itemName.infoText.parentNameLast {
     display: none;
 }
 
@@ -135,7 +135,7 @@ span.homeLibraryText {
     margin: .5em 0 !important;
 }
 
-.layout-mobile #itemDetailPage .itemName.infoText.parentNameLast {
+.layout-mobile .itemName.infoText.parentNameLast {
     display: block;
     font-size: 1.3em;
 }
@@ -2116,6 +2116,33 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 
 .layout-tv .portraitCard {
   width: 12.5%;
+}
+
+.layout-tv .detailPageWrapperContainer {
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-top: 27em;
+}
+
+.layout-tv .detailLogo {
+    position: absolute;
+    left: 65%;
+    top: 8%;
+    transform: translate(-50%, -50%);
+    display: block;
+    -webkit-filter: drop-shadow(0 0 10px rgba(2, 2, 2, 0.75));
+    filter: drop-shadow(0 0 10px rgba(2, 2, 2, 0.75));
+    flex-shrink: 0;
+    background-position: 0 70%;
+    margin: 0;
+    width: 50vw !important;
+    height: 30vh !important;
+  }
+}
+
+.layout-tv .itemName.infoText.parentNameLast {
+    display: block;
+    font-size: 1.3em;
 }
 
 .layout-mobile .verticalSection-extrabottompadding {
