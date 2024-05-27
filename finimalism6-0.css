@@ -1585,14 +1585,8 @@ progress::-webkit-progress-value {
   }
   @media all and (max-width: 70em){
     .cardOverlayButtonIcon {
-      background-color: rgba(0, 0, 0, 0.35) !important;
+      background-color: rgba(0, 0, 0, 0) !important;
     }
-    .cardOverlayButtonIcon {
-    backdrop-filter: blur(4px);
-    }
-  }
-  .indicator {
-    backdrop-filter: blur(2px);
   }
 }
 
