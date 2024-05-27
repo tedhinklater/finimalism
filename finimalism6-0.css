@@ -1590,6 +1590,10 @@ progress::-webkit-progress-value {
   }
 }
 
+.layout-mobile .cardOverlayButtonIcon {
+    display: none !important;
+}
+
 /* Position watched/heart/menu container on cards */
 .cardOverlayButton-br {
   position: absolute;
