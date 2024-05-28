@@ -7,7 +7,7 @@ Step 1: Import to your CSS with
 @import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/finimalism6-0.css");
 
 ```
-![Screenshot 2024-05-23 142248](https://github.com/tedhinklater/finimalism/assets/66086488/9491a9d6-76b5-4aaf-a5cd-d81fce677d30)
+![css](https://i.imgur.com/5ih5O1f.png)
 
 Step 2: Go to **Program Files\Jellyfin\Server\jellyfin-web\themes\dark** and rename theme.css "theme_orig.css" and drop my theme.css and bg.jpg into that folder.<br>
 If you use Jellyfin Media Player, repeat for **Program Files\Jellyfin\Jellyfin Media Player\web-client\desktop\themes\dark**
