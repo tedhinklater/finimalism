@@ -23,7 +23,7 @@ body {
 }
 
 .layout-mobile body {
-    font-size: 10pt;
+    font-size: 12pt;
 }
 
 /* Movies / Shows gallery titles */
@@ -31,9 +31,13 @@ body {
     font-size: 14pt !important;
 }
 
+.layout-mobile .textActionButton {
+    font-size: 12pt
+}
+
 /* Movies / Shows gallery titles */
 .layout-mobile .card {
-    font-size: 8pt !important;
+    font-size: 12pt !important;
 }
 
 @media (min-height: 31.25em) {
@@ -59,7 +63,7 @@ div.itemMiscInfo.itemMiscInfo-primary {
 }
 
 .layout-mobile div.itemMiscInfo.itemMiscInfo-primary {
-    font-size: 8pt;
+    font-size: 12pt;
 }
 
 /* Font size for the description */
@@ -69,10 +73,8 @@ p.overview.detail-clamp-text {
 
 /* Font size for the description */
 .layout-mobile p.overview.detail-clamp-text {
-    font-size: 10pt; 
+    font-size: 12pt; 
 }
-
-
 
 /* Font for the Movies, TV and Live TV buttons */
 span.homeLibraryText {
@@ -81,7 +83,7 @@ span.homeLibraryText {
 }
 
 .layout-mobile span.homeLibraryText {
-    font-size: 8pt;
+    font-size: 12pt;
 }
 
 /* Position card progress bar */
