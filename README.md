@@ -27,12 +27,12 @@ Desktop Screenshots
 
 ![1](https://i.imgur.com/R4S9BjR.png)
 ![2](https://i.imgur.com/JMjskVo.png)
-![3](https://i.imgur.com/vQTRS9L.png)
-![4](https://i.imgur.com/D29mr8K.png)
-![5](https://i.imgur.com/euBq5DZ.png)
-![6](https://i.imgur.com/3NgAvcV.png)
-![7](https://i.imgur.com/Kq3Cnrj.png)
-![8](https://i.imgur.com/zeas4mq.png)
+![3](https://i.imgur.com/iq1FptJ.png)
+![4](https://i.imgur.com/HR5zb2t.png)
+![5](https://i.imgur.com/R9rFmO6.png)
+![6](https://i.imgur.com/CkS36Op.png)
+![7](https://i.imgur.com/FJVQOL1.png)
+![8](https://i.imgur.com/VhkLPLY.png)
 
 Player
 
