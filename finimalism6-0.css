@@ -28,10 +28,10 @@ body {
 
 /* Movies / Shows gallery titles */
 .layout-desktop .card {
-    font-size: 14pt !important;
+    font-size: 12pt !important;
 }
 
-.layout-mobile .textActionButton {
+.textActionButton {
     font-size: 12pt
 }
 
