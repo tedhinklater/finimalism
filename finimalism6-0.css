@@ -1994,6 +1994,13 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
   margin-left: 10px;
 }
 
+.layout-desktop .homePage .section1.verticalSection {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: -4em !important;
+}
+
 .layout-mobile .homePage .section1.verticalSection .sectionTitle-cards {
   margin-top: 2em !important;
   margin-left: 10px;
