@@ -25,8 +25,8 @@ Everything is just an alteration of the amazing work already put into [Ultrachro
 
 Desktop Screenshots
 
-![1](https://i.imgur.com/jlbuF33.png)
-![2](https://i.imgur.com/yyBuMZg.png)
+![1](https://i.imgur.com/R4S9BjR.png)
+![2](https://i.imgur.com/JMjskVo.png)
 ![3](https://i.imgur.com/vQTRS9L.png)
 ![4](https://i.imgur.com/D29mr8K.png)
 ![5](https://i.imgur.com/euBq5DZ.png)
