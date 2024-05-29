@@ -1320,7 +1320,7 @@ progress::-webkit-progress-value {
 
 @media (orientation: landscape){
   .layout-mobile .button-flat {
-    margin: 0.2em !important;
+    margin-top: -1em !important;
     padding: .85em !important;
   }
 }
@@ -1886,18 +1886,26 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
     background: linear-gradient(to right, rgba(163, 95, 198, 0.5) 0%, rgba(6, 161, 217, 0.5) 100%);
 }
 
-/* Apply flex display style only to the Continue Watching section in the home page */
-.homePage .section1.verticalSection {
+/* Apply flex display style only to the Continue Watching section in the home page on desktop */
+.layout-desktop .homePage .section1.verticalSection {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-/* Push "Continue Watching" header to the left */
-.homePage .section1.verticalSection .sectionTitle-cards {
+/* Push "Continue Watching" header to the left on desktop */
+.layout-desktop .homePage .section1.verticalSection .sectionTitle-cards {
     margin-right: 10px;
     margin-left: 10px;
 }
+
+.layout-mobile .homePage .section1.verticalSection .itemsContainer .card.overflowBackdropCard {
+  width: 27.76em !important;
+  margin-top: 0em;
+  margin-bottom: 0em;
+}
+
+
 
 /* Push scroll buttons to the right */
 .homePage .section1.verticalSection .sectionTitle-cards + .emby-scrollbuttons {
@@ -1981,6 +1989,11 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 /*Position Continue Watching card */
 .homePage .section1.verticalSection .sectionTitle-cards {
   margin-right: 0.5em;
+  margin-left: 10px;
+}
+
+.layout-mobile .homePage .section1.verticalSection .sectionTitle-cards {
+  margin-top: 2em !important;
   margin-left: 10px;
 }
 
