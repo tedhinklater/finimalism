@@ -1902,7 +1902,7 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 }
 
 .layout-mobile .homePage .section1.verticalSection .itemsContainer .card.overflowBackdropCard {
-  width: 13.88em !important;
+  width: 48vw !important;
   margin-top: 0em;
   margin-bottom: 0em;
 }
