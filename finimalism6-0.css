@@ -1951,8 +1951,14 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 }
 
 /* Reduce space between My Media buttons and Continue Watching */
-.sectionTitle.sectionTitle-cards.padded-left + .itemsContainer {
+.layout-desktop .sectionTitle.sectionTitle-cards.padded-left + .itemsContainer {
     margin-bottom: -2.6em;
+    padding-top: 0.5em;
+}
+
+/* Reduce space between My Media buttons and Continue Watching */
+.layout-mobile .sectionTitle.sectionTitle-cards.padded-left + .itemsContainer {
+    margin-bottom: 0em;
     padding-top: 0.5em;
 }
 
