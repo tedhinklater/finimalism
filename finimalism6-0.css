@@ -1480,7 +1480,7 @@ progress::-webkit-progress-value {
 /* Mobile or smaller screens */
 @media all and (max-width: 48em) {
   #castContent .card.overflowPortraitCard {
-        width: 48vw !important;
+        width: 13.88em !important;
   }
 }
 
@@ -1760,7 +1760,7 @@ progress::-webkit-progress-value {
 /* Mobile or smaller screens */
 @media all and (max-width: 25em) {
   .verticalSection.section2 .card.overflowBackdropCard {
-    width: 48vw !important;
+    width: 13.88em !important;
     font-size: 90% !important;
   }
 }
@@ -1788,7 +1788,7 @@ progress::-webkit-progress-value {
 /* Mobile or smaller screens */
 @media all and (max-width: 48em) {
     .verticalSection.detailVerticalSection .overflowPortraitCard {
-        width: 48vw !important;
+        width: 13.88em !important;
     }
 }
 
@@ -1902,7 +1902,7 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 }
 
 .layout-mobile .homePage .section1.verticalSection .itemsContainer .card.overflowBackdropCard {
-  width: 48vw !important;
+  width: 13.88em !important;
   margin-top: 0em;
   margin-bottom: 0em;
 }
