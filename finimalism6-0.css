@@ -1902,11 +1902,10 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 }
 
 .layout-mobile .homePage .section1.verticalSection .itemsContainer .card.overflowBackdropCard {
-  width: 27.76em !important;
+  width: 13.88em !important;
   margin-top: 0em;
   margin-bottom: 0em;
 }
-
 
 
 /* Push scroll buttons to the right */
@@ -1916,17 +1915,9 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 
 /* Adjust alignment for the cards within the Continue Watching section */
 .homePage .section1.verticalSection .itemsContainer .card.overflowBackdropCard {
-    width: 350px !important;
+    width: 20.792em !important;
     margin-top: 4em;
     font-size: 90% !important;
-}
-
-/* Adjust the card size for smaller screens if needed */
-@media all and (max-width: 767px) {
-    .homePage .section1.verticalSection .itemsContainer .card.overflowBackdropCard {
-        width: 250px !important;
-        font-size: 80% !important;
-    }
 }
 
 /* Adjust the size of the card image */
@@ -1988,10 +1979,9 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
   }
 }
 
-/*Position Continue Watching card */
-.homePage .section1.verticalSection .sectionTitle-cards {
-  margin-right: 0.5em;
-  margin-left: 10px;
+.layout-desktop .homePage .section1.verticalSection .sectionTitle-cards {
+  margin-right: 1.95em !important;
+  margin-left: 3.5em !important;
 }
 
 .layout-desktop .homePage .section1.verticalSection {
