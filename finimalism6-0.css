@@ -19,7 +19,7 @@
 
 body {
     font-family: "Nunito", sans-serif;
-    font-size: 12pt;
+    font-size: 13pt;
 }
 
 .layout-mobile body {
@@ -28,7 +28,7 @@ body {
 
 /* Movies / Shows gallery titles */
 .layout-desktop .card {
-    font-size: 10pt !important;
+    font-size: 14pt !important;
 }
 
 /* Movies / Shows gallery titles */
