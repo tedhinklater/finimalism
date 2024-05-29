@@ -40,6 +40,6 @@ Player
 
 Mobile Screenshots
 
-![Mobile1](https://i.imgur.com/HU11urb.png)
-![Mobile2](https://i.imgur.com/IcPYLJ6.png)
-![Mobile3](https://i.imgur.com/V3J69YR.png)
+![10](https://i.imgur.com/rl9bayt.png)
+![11](https://i.imgur.com/jgjHbtE.png)
+![12](https://i.imgur.com/y2s3XNz.png)
