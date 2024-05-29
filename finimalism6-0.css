@@ -19,7 +19,7 @@
 
 body {
     font-family: "Nunito", sans-serif;
-    font-size: 13pt;
+    font-size: 12pt;
 }
 
 .layout-mobile body {
@@ -59,10 +59,10 @@ body {
 
 /* Font size for release year, ratings */
 div.itemMiscInfo.itemMiscInfo-primary {
-    font-size: 14pt;
+    font-size: 12pt;
 }
 
-.layout-mobile div.itemMiscInfo.itemMiscInfo-primary {
+.layout-desktop div.itemMiscInfo.itemMiscInfo-primary {
     font-size: 12pt;
 }
 
@@ -829,7 +829,7 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 
 .emby-textarea {
   font-family: monospace;
-  font-size: 10pt;
+  font-size: 12pt;
 }
 
 .card.show-animation:focus>.cardBox {
@@ -1663,7 +1663,7 @@ progress::-webkit-progress-value {
 .listItem {
     text-align: center;
     padding: 10px;
-    font-size: 10pt;
+    font-size: 12pt;
 }
 
 /* Hide the listItemIcon */
@@ -2074,10 +2074,8 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
   }
 }
 
-/* Resize video audio info on mobile */
-@media (max-width: 32em) {
 .trackSelections .selectContainer {
-  font-size: 8pt;
+  font-size: 10pt;
   overflow: hidden;
   }
 }
