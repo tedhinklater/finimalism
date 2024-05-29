@@ -1709,6 +1709,7 @@ progress::-webkit-progress-value {
 
 .sectionTitle.sectionTitle-cards {
     margin-right: 10px;
+    margin-left: 0em !important;
 }
 
 .itemsContainer.padded-left {
@@ -1908,6 +1909,7 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 }
 
 
+
 /* Push scroll buttons to the right */
 .homePage .section1.verticalSection .sectionTitle-cards + .emby-scrollbuttons {
     margin-left: auto;
@@ -1918,6 +1920,14 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
     width: 20.792em !important;
     margin-top: 4em;
     font-size: 90% !important;
+}
+
+/* Adjust the card size for smaller screens if needed */
+@media all and (max-width: 767px) {
+    .homePage .section1.verticalSection .itemsContainer .card.overflowBackdropCard {
+        width: 250px !important;
+        font-size: 80% !important;
+    }
 }
 
 /* Adjust the size of the card image */
@@ -1982,6 +1992,12 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 .layout-desktop .homePage .section1.verticalSection .sectionTitle-cards {
   margin-right: 1.95em !important;
   margin-left: 3.5em !important;
+}
+
+/*Position Continue Watching card */
+.layout-mobile .homePage .section1.verticalSection .sectionTitle-cards {
+  margin-right: 0.5em;
+  margin-left: 10px;
 }
 
 .layout-desktop .homePage .section1.verticalSection {
