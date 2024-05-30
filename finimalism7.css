@@ -20,7 +20,6 @@
 	opacity: 0.2;
 }
 
-
 .itemsContainer.padded-left {
     position: top;
     z-index: 1;
@@ -39,7 +38,6 @@
     z-index: -1;
     background-attachment: fixed;
 }
-
 
 .sectionTitleContainer.sectionTitleContainer-cards.padded-left::before {
     content: '';
@@ -181,7 +179,6 @@ span.homeLibraryText {
 .itemProgressBarForeground {
     background: linear-gradient(to right, rgba(163, 95, 198, 1) 0%, rgba(6, 161, 217, 1) 100%);
 }
-
 
 /*Raise detailPage detailRibbon */
 
@@ -2033,7 +2030,7 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 
 /* Reduce space between My Media buttons and Continue Watching */
 .layout-desktop .sectionTitle.sectionTitle-cards.padded-left + .itemsContainer {
-    margin-bottom: -2.6em;
+    margin-bottom: -5em;
     padding-top: 0.5em;
 }
 
