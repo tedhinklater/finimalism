@@ -2007,7 +2007,7 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 
 /* Adjust alignment for the cards within the Continue Watching section */
 .homePage .section1.verticalSection .itemsContainer .card.overflowBackdropCard {
-    width: 27.7em !important;
+    width: 27.8em !important;
     margin-top: 4em;
     font-size: 90% !important;
 }
