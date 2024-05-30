@@ -1837,6 +1837,7 @@ progress::-webkit-progress-value {
   font-size: 90% !important;
 }
 
+
 /* Adjust font size for smaller screens if needed */
 @media all and (max-width: 767px) {
   .verticalSection.section2 .card.overflowBackdropCard {
@@ -1990,7 +1991,7 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 }
 
 .layout-mobile .homePage .section1.verticalSection .itemsContainer .card.overflowBackdropCard {
-  width: 15.5em !important;
+  width: 13.88em !important;
   margin-top: 0em;
   margin-bottom: 0em;
 }
