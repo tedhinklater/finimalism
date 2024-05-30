@@ -1628,7 +1628,7 @@ progress::-webkit-progress-value {
   #moviesPage,
   #tvRecommendedPage,
   #musicRecommendedPage {
-    margin-top: 9em;
+    margin-top: 6em;
     padding-top: 0.5em !important;
     overflow-y: scroll;
   }
@@ -1820,10 +1820,16 @@ progress::-webkit-progress-value {
     height: 3.2em;
 }
 
+/* Top bar padding 1px */
+.layout-mobile .flex.align-items-center.flex-grow.headerTop {
+    padding-bottom: 0em;
+    height: 3.2em;
+}
+
 /* Position home tab buttons */
 .headerTabs .emby-tab-button {
     width: 160px;
-    padding-top: 1em;
+    padding-top: 0em;
 }
 
 /* Hide My Media text on desktop */
