@@ -27,6 +27,7 @@ Desktop Screenshots
 
 ![1](https://i.imgur.com/Z2AN2RK.png)
 ![2](https://i.imgur.com/GVRiadF.png)
+![my media](https://i.imgur.com/aTbvBDL.gif)
 ![3](https://i.imgur.com/iq1FptJ.png)
 ![4](https://i.imgur.com/HR5zb2t.png)
 ![5](https://i.imgur.com/R9rFmO6.png)
