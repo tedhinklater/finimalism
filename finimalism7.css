@@ -1715,7 +1715,7 @@ progress::-webkit-progress-value {
 
 .cardOverlayContainer > .cardOverlayFab-primary {
   background-color: rgba(0,0,0,0);
-  font-size: 180%;
+  font-size: 100%;
   height: 3em;
   left: 50%;
   margin-left: -1.5em;
@@ -2028,7 +2028,7 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 }
 
 .layout-desktop .overflowBackdropCard {
-   width: 18.7em;
+   width: 24.2em;
 }
 
 /* Adjust the size of the card image */
@@ -2144,8 +2144,8 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 }
 
 .cardOverlayFab-primary {
-  background-color: rgba(0,0,0,.7);
-  font-size: 80%;
+  background-color: rgba(0,0,0,0);
+  font-size: 100%;
   height: 3em;
   left: 50%;
 }
