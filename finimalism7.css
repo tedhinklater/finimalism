@@ -2091,7 +2091,8 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-top: -4em !important;
+  margin-top: -2em !important;
+  margin-bottom: -2em;
 }
 
 .layout-mobile .homePage .section1.verticalSection .sectionTitle-cards {
