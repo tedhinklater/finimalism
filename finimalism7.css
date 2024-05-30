@@ -2009,7 +2009,7 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 /* Adjust alignment for the cards within the Continue Watching section */
 .homePage .section1.verticalSection .itemsContainer .card.overflowBackdropCard {
     width: 27.8em !important;
-    margin-top: 4em;
+    margin-top: 0em;
     font-size: 90% !important;
 }
 
@@ -2047,8 +2047,8 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 
 /* Reduce space between My Media buttons and Continue Watching */
 .layout-desktop .sectionTitle.sectionTitle-cards.padded-left + .itemsContainer {
-    margin-bottom: 0em;
-    padding-top: 0.5em;
+    margin-bottom: 6em;
+    padding-top: 0em;
 }
 
 /* Reduce space between My Media buttons and Continue Watching */
