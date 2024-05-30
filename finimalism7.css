@@ -1566,7 +1566,7 @@ progress::-webkit-progress-value {
 /* Extra-large screens */
 @media all and (min-width: 64em) {
   #castContent .card.overflowPortraitCard {
-        width: 13.88em !important;
+        width: 10.4vw !important;
   }
 }
 
@@ -1585,7 +1585,7 @@ progress::-webkit-progress-value {
 
 @media (max-width: 930px) and (orientation: landscape) {
   #castContent .card.overflowPortraitCard {
-    width: 13.88em !important;
+    width: 19vw !important;
   }
 }
 
@@ -1800,9 +1800,9 @@ progress::-webkit-progress-value {
     display: none;
 }
 
-.sectionTitle.sectionTitle-cards {
+#detailPage .sectionTitle.sectionTitle-cards {
     margin-right: 10px;
-    margin-left: 2.2em !important;
+    margin-left: 1.2em !important;
 }
 
 .layout-mobile .sectionTitle.sectionTitle-cards {
