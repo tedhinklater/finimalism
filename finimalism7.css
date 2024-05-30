@@ -1841,7 +1841,7 @@ progress::-webkit-progress-value {
 @media all and (max-width: 767px) {
   .verticalSection.section2 .card.overflowBackdropCard {
     width: 13.88em !important;
-    font-size: 80% !important;
+    font-size: 90% !important;
   }
 }
 
