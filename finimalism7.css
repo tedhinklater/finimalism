@@ -1496,10 +1496,16 @@ progress::-webkit-progress-value {
 .layout-mobile :not(.sectionTitleContainer-cards)>.sectionTitle-cards {
  padding-top: 0em;
 }
+
+.sectionTitleTextButton > .material-icons {
+  font-size: 1.5em;
+  margin-bottom: -0.1em;
+ }
+ 
 .sectionTitle {
 	margin-left: .4em !important;
 	margin-top: 0.5em !important;
-	margin-bottom: .2em !important;
+	margin-bottom: -0.3em !important;
 }
 .sectionTitleTextButton > .material-icons {
     padding-top: 0.7em;
@@ -1796,7 +1802,7 @@ progress::-webkit-progress-value {
 
 .sectionTitle.sectionTitle-cards {
     margin-right: 10px;
-    margin-left: 2em !important;
+    margin-left: 2.2em !important;
 }
 
 .layout-mobile .sectionTitle.sectionTitle-cards {
