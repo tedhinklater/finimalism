@@ -1507,8 +1507,15 @@ progress::-webkit-progress-value {
 	margin-top: 0.5em !important;
 	margin-bottom: -0.3em !important;
 }
+
+.layout-desktop .sectionTitle {
+    margin-left: 2.4em !important;
+	margin-top: 0.5em !important;
+	margin-bottom: -0.3em !important;
+}
+
 .sectionTitleTextButton > .material-icons {
-    padding-top: 0.7em;
+    padding-top: 0.6em;
 }
 .layout-mobile .sectionTitleTextButton > .material-icons {
     padding-top: 0.4em;
@@ -1819,7 +1826,7 @@ progress::-webkit-progress-value {
 }
 
 .sectionTitle.sectionTitle-cards {
-    margin-right: 10px;
+    margin-right: 0.1em;
 }
 
 .itemsContainer.padded-left {
@@ -1859,7 +1866,7 @@ progress::-webkit-progress-value {
 /* Adjust font size for smaller screens if needed */
 @media all and (max-width: 767px) {
   .verticalSection.section2 .card.overflowBackdropCard {
-    width: 13.88em !important;
+    width: 14.3em !important;
     font-size: 90% !important;
   }
 }
@@ -1963,6 +1970,10 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+#myPreferencesMenuPage .sectionTitle {
+    margin-left: 0em !important;
 }
 
 #myPreferencesMenuPage .verticalSection-extrabottompadding .emby-button {
@@ -2071,7 +2082,7 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 
 /* Reduce space between My Media buttons and Continue Watching */
 .layout-desktop .sectionTitle.sectionTitle-cards.padded-left + .itemsContainer {
-    margin-bottom: 6em;
+    margin-bottom: 0em;
     padding-top: 0em;
 }
 
@@ -2250,6 +2261,10 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 
 .channelPrograms {
   white-space: wrap;
+}
+
+#detailPage .layout-mobile .card.overflowBackdropCard.card-withuserdata {
+    width: 18.15em !important; 
 }
 
 /* TV Mode */
