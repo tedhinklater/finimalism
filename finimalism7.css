@@ -1796,7 +1796,7 @@ progress::-webkit-progress-value {
 
 .sectionTitle.sectionTitle-cards {
     margin-right: 10px;
-    margin-left: 1em !important;
+    margin-left: 2em !important;
 }
 
 .itemsContainer.padded-left {
@@ -2111,7 +2111,7 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-top: 4em !important;
+  margin-top: 5em !important;
   margin-bottom: 4em;
   height: 7em;
 
