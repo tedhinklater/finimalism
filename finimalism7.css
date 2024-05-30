@@ -20,7 +20,6 @@
 	opacity: 0.2;
 }
 
-
 .itemsContainer.padded-left {
     position: top;
     z-index: 1;
@@ -39,7 +38,6 @@
     z-index: -1;
     background-attachment: fixed;
 }
-
 
 .sectionTitleContainer.sectionTitleContainer-cards.padded-left::before {
     content: '';
@@ -107,13 +105,17 @@ body {
     font-size: 12pt;
 }
 
+h2 {
+  font-size: 1.3em;
+}
+
 /* Movies / Shows gallery titles */
 .layout-desktop .card {
     font-size: 12pt !important;
 }
 
 .textActionButton {
-    font-size: 12pt
+    font-size: 11pt
 }
 
 /* Movies / Shows gallery titles */
@@ -1496,14 +1498,14 @@ progress::-webkit-progress-value {
 }
 .sectionTitle {
 	margin-left: .4em !important;
-	margin-top: .2em !important;
+	margin-top: 0.5em !important;
 	margin-bottom: .2em !important;
 }
 .sectionTitleTextButton > .material-icons {
-    padding-top: 0.5em;
+    padding-top: 0.7em;
 }
 .layout-mobile .sectionTitleTextButton > .material-icons {
-    padding-top: 0.1em;
+    padding-top: 0.4em;
 }
 
 /*Fix the UI shifting around*/
@@ -1542,6 +1544,10 @@ progress::-webkit-progress-value {
 }
 .listItem {
   padding-left: 1em;
+}
+
+.layout-mobile .overflowPortraitCard {
+	width: 12.88em;
 }
 
 /* Larger screens */
@@ -1790,7 +1796,7 @@ progress::-webkit-progress-value {
 
 .sectionTitle.sectionTitle-cards {
     margin-right: 10px;
-    margin-left: 0em !important;
+    margin-left: 1em !important;
 }
 
 .itemsContainer.padded-left {
@@ -1817,7 +1823,7 @@ progress::-webkit-progress-value {
 /* Position home tab buttons */
 .headerTabs .emby-tab-button {
     width: 160px;
-    padding-top: 0.5em;
+    padding-top: 1em;
 }
 
 /* Hide My Media text on desktop */
@@ -1984,13 +1990,14 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 }
 
 .layout-mobile .homePage .section1.verticalSection .itemsContainer .card.overflowBackdropCard {
-  width: 13.88em !important;
+  width: 15.5em !important;
   margin-top: 0em;
   margin-bottom: 0em;
 }
 
 .layout-mobile #indexPage .overflowBackdropCard, .overflowSmallBackdropCard {
-  width: 11.5em;
+  width: 12.6em;
+  margin: 0em !important;
 }
 
 /* Push scroll buttons to the right */
@@ -2000,7 +2007,7 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 
 /* Adjust alignment for the cards within the Continue Watching section */
 .homePage .section1.verticalSection .itemsContainer .card.overflowBackdropCard {
-    width: 20.792em !important;
+    width: 27.7em !important;
     margin-top: 4em;
     font-size: 90% !important;
 }
@@ -2011,6 +2018,10 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
         width: 250px !important;
         font-size: 80% !important;
     }
+}
+
+.layout-desktop .overflowBackdropCard {
+   width: 18.7em;
 }
 
 /* Adjust the size of the card image */
@@ -2035,7 +2046,7 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 
 /* Reduce space between My Media buttons and Continue Watching */
 .layout-desktop .sectionTitle.sectionTitle-cards.padded-left + .itemsContainer {
-    margin-bottom: -5em;
+    margin-bottom: 0em;
     padding-top: 0.5em;
 }
 
@@ -2079,8 +2090,8 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 }
 
 .layout-desktop .homePage .section1.verticalSection .sectionTitle-cards {
-  margin-right: 1.95em !important;
-  margin-left: 3.5em !important;
+  margin-right: 2.5em !important;
+  margin-left: 5em !important;
 }
 
 /*Position Continue Watching card */
@@ -2093,9 +2104,9 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-top: -2em !important;
-  margin-bottom: -2em;
-}
+  margin-top: 4em !important;
+  margin-bottom: 4em;
+  height: 7em;
 
 .layout-mobile .homePage .section1.verticalSection .sectionTitle-cards {
   margin-top: 0.5em !important;
