@@ -2017,7 +2017,7 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 @media all and (max-width: 767px) {
     .homePage .section1.verticalSection .itemsContainer .card.overflowBackdropCard {
         width: 250px !important;
-        font-size: 80% !important;
+        font-size: 90% !important;
     }
 }
 
