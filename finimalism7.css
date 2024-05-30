@@ -1406,7 +1406,7 @@ progress::-webkit-progress-value {
 @media (orientation: landscape){
   .layout-mobile .button-flat {
     margin-top: -1em !important;
-    padding: .85em !important;
+    padding-top: .85em !important;
   }
 }
 
@@ -1799,6 +1799,12 @@ progress::-webkit-progress-value {
     margin-left: 2em !important;
 }
 
+.layout-mobile .sectionTitle.sectionTitle-cards {
+    margin-left: 1em !important;
+    margin-bottom: 0em !important;
+    font-size: 110%;
+}
+
 .itemsContainer.padded-left {
     flex: 1;
     display: flex; 
@@ -1996,6 +2002,12 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
     margin-left: 10px;
 }
 
+.layout-desktop div:not(.sectionTitleContainer-cards) > .sectionTitle-cards {
+  margin: 0;
+  padding-bottom: 1.2em;
+  padding-top: .5em;
+}
+
 .layout-mobile .homePage .section1.verticalSection .itemsContainer .card.overflowBackdropCard {
   width: 13.88em !important;
   margin-top: 0em;
@@ -2003,7 +2015,7 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 }
 
 .layout-mobile #indexPage .overflowBackdropCard, .overflowSmallBackdropCard {
-  width: 12.6em;
+  width: 12.5em;
   margin: 0em !important;
 }
 
