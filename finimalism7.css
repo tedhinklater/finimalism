@@ -1851,6 +1851,12 @@ progress::-webkit-progress-value {
     padding-top: 1em;
 }
 
+/* Position home tab buttons on mobile */
+.layout-mobile .headerTabs .emby-tab-button {
+    width: 160px;
+    padding-top: 0.1em;
+}
+
 /* Hide My Media text on desktop */
 /* .verticalSection-extrabottompadding > .sectionTitle-cards:not(#similarCollapsible .sectionTitle-cards) {
   display: none;
