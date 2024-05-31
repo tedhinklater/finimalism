@@ -2174,7 +2174,7 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-top: 5em !important;
+  margin-top: 6em !important;
   margin-bottom: 4em;
   height: 7em;
 
@@ -2349,6 +2349,11 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 .layout-mobile .verticalSection-extrabottompadding {
   margin-bottom: 1em;
   margin-top: 0em;
+}
+
+.layout-desktop .overflowBackdropCard {
+    width: 27.8em !important;
+    font-size: 90% !important;
 }
 
 .dialog-fixedSize {
