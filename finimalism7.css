@@ -2021,7 +2021,7 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 
 .layout-desktop div:not(.sectionTitleContainer-cards) > .sectionTitle-cards {
   margin: 0;
-  padding-bottom: 1.2em;
+  padding-bottom: 0.2em;
   padding-top: .5em;
 }
 
@@ -2041,6 +2041,13 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
     margin-left: auto;
 }
 
+.emby-scrollbuttons-button > .material-icons {
+  display: block;
+  min-height: 24px;
+  min-width: 24px;
+  margin-top: -0.3em;
+}
+
 /* Adjust alignment for the cards within the Continue Watching section */
 .homePage .section1.verticalSection .itemsContainer .card.overflowBackdropCard {
     width: 27.8em !important;
@@ -2054,6 +2061,19 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
         width: 250px !important;
         font-size: 90% !important;
     }
+}
+
+/* Seasons carousel */
+
+.layout-desktop #childrenContent .childrenItemsContainer.itemsContainer {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 0.5em;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 .layout-desktop .overflowBackdropCard {
