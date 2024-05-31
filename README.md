@@ -19,6 +19,6 @@ Everything is just an alteration of the amazing work already put into [Ultrachro
 ![3](https://i.imgur.com/3ooKB4Q.png)
 ![4](https://i.imgur.com/OqBUudU.png)
 ![5](https://i.imgur.com/0hPxnsM.png)
-![6](https://i.imgur.com/p8W4TKK.png)
+![6](https://i.imgur.com/DlSW8wC.png)
 ![7](https://i.imgur.com/77MGals.png)
 ![8](https://i.imgur.com/ROZPie7.png)
