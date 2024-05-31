@@ -1862,16 +1862,12 @@ progress::-webkit-progress-value {
   display: none;
 } */
 
-.layout-desktop .overflowBackdropCard, .overflowSmallBackdropCard {
-    width: 20.85vw;
-  }
-}
-
 /* Smaller Next Up cards */
 .verticalSection.section2 .card.overflowBackdropCard {
   width: 13.88em !important;
   font-size: 90% !important;
 }
+
 
 /* Adjust font size for smaller screens if needed */
 @media all and (max-width: 767px) {
