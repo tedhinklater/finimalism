@@ -1848,7 +1848,7 @@ progress::-webkit-progress-value {
 /* Position home tab buttons */
 .headerTabs .emby-tab-button {
     width: 160px;
-    padding-top: 0em;
+    padding-top: 1em;
 }
 
 /* Hide My Media text on desktop */
