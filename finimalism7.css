@@ -1606,7 +1606,7 @@ progress::-webkit-progress-value {
   padding-top: 0.1em;
   text-overflow: ellipsis;
   white-space: nowrap;
-  margin-left: 1em;
+  margin-left: 0em;
 }
 
 @media (min-width: 120em) {
@@ -2074,6 +2074,14 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
     scroll-behavior: smooth;
     max-width: 100%;
     box-sizing: border-box;
+    scroll-snap-type: x mandatory; /* Enable mandatory snapping along the x-axis */
+	padding-right: 6em !important;
+}
+
+/* Optionally, you can define how the items should align when snapped */
+.layout-desktop #childrenContent .childrenItemsContainer.itemsContainer > * {
+    scroll-snap-align: center; /* Or any other value as per your preference */
+}
 }
 
 .layout-desktop .overflowBackdropCard {
