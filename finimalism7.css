@@ -783,7 +783,7 @@ progress::-webkit-progress-value {
     height: 115px;
   }
   .secondary.listItem-overview.listItemBodyText {
-    height: 4em; 
+    height: 3.5em; 
     margin: 0;
   }
 }
@@ -792,6 +792,7 @@ progress::-webkit-progress-value {
   .listItem-content {height: 85px;}
   .secondary.listItem-overview.listItemBodyText {height: 2.5em; margin: 0;}
 }
+
 
 .missingIndicator, .unairedIndicator {
     background: #ae3030eb;
