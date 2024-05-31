@@ -14,8 +14,6 @@ Step 2: In Jellyfin Client / Web UI Settings, under "Display", the Theme is set 
 Everything is just an alteration of the amazing work already put into [Ultrachromic by CTalvio](https://github.com/CTalvio/Ultrachromic). Updated for jellyfin server 10.9.3
 
 ![unknown_2024 05 31-23 50_clip_1_1](https://github.com/tedhinklater/finimalism/assets/66086488/877edb26-9cea-4111-a126-c0a741aa274f)
-![1](https://i.imgur.com/2nCypMM.png)
-![1b](https://i.imgur.com/Mix5gfG.png)
 ![2](https://i.imgur.com/7mmGeW4.png)
 ![3](https://i.imgur.com/3ooKB4Q.png)
 ![4](https://i.imgur.com/OqBUudU.png)
