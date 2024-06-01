@@ -1,5 +1,5 @@
 # finimalism
-![mockup](https://i.imgur.com/AP4oQ0b.jpeg)
+![mockup](https://i.imgur.com/5e2cmxQ.jpeg)
 
 Step 1: Import to your CSS with
 
