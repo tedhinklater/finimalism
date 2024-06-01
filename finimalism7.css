@@ -337,7 +337,7 @@ progress::-webkit-progress-value {
 .innerCardFooter,
 .countIndicator, 
 .playedIndicator {
-  background: linear-gradient(to right, rgba(163, 95, 198, 0.5) 0%, rgba(6, 161, 217, 0.5) 100%);
+  background: linear-gradient(to right, rgba(163, 95, 198, 0.7) 0%, rgba(6, 161, 217, 0.7) 100%);
   box-shadow: none;
   color: rgb(--accent);
 }
