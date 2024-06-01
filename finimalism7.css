@@ -339,6 +339,7 @@ progress::-webkit-progress-value {
 .playedIndicator {
   background: linear-gradient(to right, rgba(163, 95, 198, 0.5) 0%, rgba(6, 161, 217, 0.5) 100%);
   box-shadow: none;
+  color: rgb(--accent);
 }
 
 .countIndicator {
@@ -643,10 +644,6 @@ progress::-webkit-progress-value {
 
 .countIndicator {
   background: rgba(var(--indicator),0.8);
-  box-shadow: none;
-}
-.playedIndicator, .innerCardFooter {
-  background: rgba(0,0,0,0.4);
   box-shadow: none;
 }
 
@@ -1510,7 +1507,7 @@ progress::-webkit-progress-value {
 }
 
 .layout-desktop .sectionTitle {
-    margin-left: 2.4em !important;
+    margin-left: 1em !important;
 	margin-top: 0.5em !important;
 	margin-bottom: -0.3em !important;
 }
@@ -2013,19 +2010,6 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
     background: linear-gradient(to right, rgba(163, 95, 198, 0.5) 0%, rgba(6, 161, 217, 0.5) 100%);
 }
 
-/* Apply flex display style only to the Continue Watching section in the home page on desktop */
-.layout-desktop .homePage .section1.verticalSection {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-/* Push "Continue Watching" header to the left on desktop */
-.layout-desktop .homePage .section1.verticalSection .sectionTitle-cards {
-    margin-right: 10px;
-    margin-left: 10px;
-}
-
 .layout-desktop div:not(.sectionTitleContainer-cards) > .sectionTitle-cards {
   margin: 0;
   padding-bottom: 0.2em;
@@ -2159,24 +2143,11 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
   }
 }
 
-.layout-desktop .homePage .section1.verticalSection .sectionTitle-cards {
-  margin-right: 2.5em !important;
-  margin-left: 5em !important;
-}
-
 /*Position Continue Watching card */
 .layout-mobile .homePage .section1.verticalSection .sectionTitle-cards {
   margin-right: 0.5em;
   margin-left: 10px;
 }
-
-.layout-desktop .homePage .section1.verticalSection {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-top: 6em !important;
-  margin-bottom: 4em;
-  height: 7em;
 
 .layout-mobile .homePage .section1.verticalSection .sectionTitle-cards {
   margin-top: 0.5em !important;
@@ -2349,6 +2320,10 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 .layout-mobile .verticalSection-extrabottompadding {
   margin-bottom: 1em;
   margin-top: 0em;
+}
+
+.layout-desktop.verticalSection-extrabottompadding {
+  margin-bottom: 0em;
 }
 
 .layout-desktop .overflowBackdropCard {
