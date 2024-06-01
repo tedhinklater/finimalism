@@ -2331,13 +2331,6 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
     font-size: 90% !important;
 }
 
-.dialog-fixedSize {
-  border-radius: 0;
-  contain: layout style paint;
-  max-height: 80vh;
-  max-width: 80vw;
-}
-
 /* Remove empty space at bottom of page */
 .content-primary, .padded-bottom-page, .page, .pageWithAbsoluteTabs .pageTabContent {
   padding-bottom: 0 !important;
