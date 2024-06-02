@@ -2041,6 +2041,7 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 
 #myPreferencesMenuPage .sectionTitle {
     margin-left: 0em !important;
+	margin-bottom: 0em !important;
 }
 
 #myPreferencesMenuPage .verticalSection-extrabottompadding .emby-button {
