@@ -1557,6 +1557,14 @@ progress::-webkit-progress-value {
   padding-left: 1em;
 }
 
+.layout-desktop .overflowPortraitCard {
+    width: 12.51em;
+}
+
+.layout-desktop .overflowSquareCard {
+    width: 12.51em;
+}
+
 .layout-mobile .overflowPortraitCard {
 	width: 12.88em;
 }
