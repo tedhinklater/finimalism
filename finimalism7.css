@@ -1863,6 +1863,61 @@ progress::-webkit-progress-value {
     padding-top: 0.1em;
 }
 
+/* Index Page header */
+
+@media (min-width:45em) {
+.layout-desktop .headerTop {
+    padding:.8em .8em
+  }
+  .headerTabs {
+    -webkit-align-items:center;
+    align-items:center;
+    -webkit-align-self:center;
+    align-self:center;
+    -webkit-justify-content:center;
+    justify-content:center;
+    margin-top:-4.3em;
+    position:relative;
+    width:auto;
+  }
+}
+
+@media (max-width:45em) {
+.layout-desktop .headerTop {
+    padding:.8em .8em
+  }
+  .headerTabs {
+    -webkit-align-items:center;
+    align-items:center;
+    -webkit-align-self:center;
+    align-self:center;
+    -webkit-justify-content:center;
+    justify-content:center;
+    margin-top:-1.3em;
+    position:relative;
+    width:auto;
+  }
+}
+
+/* Movies / Shows page header tabs */
+@media (max-width:85em) {
+#moviesTab .layout-desktop .headerTop {
+    padding:.8em .8em
+  }
+  .headerTabs {
+    -webkit-align-items:center;
+    align-items:center;
+    -webkit-align-self:center;
+    align-self:center;
+    -webkit-justify-content:center;
+    justify-content:center;
+    margin-top:-1.3em;
+    position:relative;
+    width:auto;
+  }
+
+}
+
 /* Hide My Media text on desktop */
 /* .verticalSection-extrabottompadding > .sectionTitle-cards:not(#similarCollapsible .sectionTitle-cards) {
   display: none;
