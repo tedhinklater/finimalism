@@ -1569,6 +1569,10 @@ progress::-webkit-progress-value {
 	width: 12.88em;
 }
 
+.layout-mobile .overflowSquareCard {
+    width: 12.88em;
+}
+
 /* Larger screens */
 @media all and (min-width: 58em) and (max-width: 64em) {
   #castContent .card.overflowPortraitCard {
@@ -1893,7 +1897,7 @@ progress::-webkit-progress-value {
     align-self:center;
     -webkit-justify-content:center;
     justify-content:center;
-    margin-top:-1.3em;
+    margin-top:-2em;
     position:relative;
     width:auto;
   }
@@ -2099,8 +2103,9 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 }
 
 .layout-mobile #indexPage .overflowBackdropCard, .overflowSmallBackdropCard {
-  width: 12.5em;
+  width: 12.88em;
   margin: 0em !important;
+  margin-right: -0.5em !important;
 }
 
 /* Push scroll buttons to the right */
@@ -2393,6 +2398,17 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
     font-size: 1.3em;
 }
 
+
+.layout-desktop .overflowBackdropCard {
+    width: 27.8em !important;
+    font-size: 90% !important;
+}
+
+.layout-desktop .verticalSection.section2 .card.overflowBackdropCard {
+  width: 13.88em !important;
+  font-size: 90% !important;
+}
+
 .layout-mobile .verticalSection-extrabottompadding {
   margin-bottom: 1em;
   margin-top: 0em;
@@ -2400,11 +2416,6 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 
 .layout-desktop.verticalSection-extrabottompadding {
   margin-bottom: 0em;
-}
-
-.layout-desktop .overflowBackdropCard {
-    width: 27.8em !important;
-    font-size: 90% !important;
 }
 
 /* Remove empty space at bottom of page */
