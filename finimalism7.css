@@ -2293,12 +2293,11 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
     }
 }
 
-@media (max-width: 32em) {
+@media (max-width: 32em) and (orientation: portrait) {
   .layout-mobile [dir="ltr"] .mainDetailButtons {
     margin-bottom: 0;
-    padding-left: 14em;
-    padding-right: 3em;
-    font-size: 85%;
+    padding-left: 9em;
+    font-size: 73%;
   }
 }
 
