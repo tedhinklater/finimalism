@@ -2408,6 +2408,10 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
   font-size: 90% !important;
 }
 
+.verticalSection.section0 .textActionButton {
+  display: none;
+}
+
 .layout-mobile .verticalSection-extrabottompadding {
   margin-bottom: 1em;
   margin-top: 0em;
