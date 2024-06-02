@@ -1915,7 +1915,19 @@ progress::-webkit-progress-value {
     position:relative;
     width:auto;
   }
+}
 
+.layout-mobile .headerTabs {
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-align-self: center;
+    align-self: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    margin-top: 0em;
+    position: relative;
+    width: auto;
+  }
 }
 
 /* Hide My Media text on desktop */
