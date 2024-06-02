@@ -2414,8 +2414,8 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
   margin-top: 0em;
 }
 
-.layout-desktop.verticalSection-extrabottompadding {
-  margin-bottom: 0em;
+.layout-desktop .verticalSection-extrabottompadding {
+  margin-bottom: 1em !important;
 }
 
 /* Remove empty space at bottom of page */
