@@ -1,5 +1,5 @@
 # finimalism
-![mockup](https://i.imgur.com/VSGZZmd.jpeg)
+![mockup](https://i.imgur.com/U77RqMb.jpeg)
 
 Step 1: Import to your CSS with
 
@@ -13,7 +13,7 @@ Step 2: In Jellyfin Client / Web UI Settings, under "Display", the Theme is set 
 
 Everything is just an alteration of the amazing work already put into [Ultrachromic by CTalvio](https://github.com/CTalvio/Ultrachromic). Updated for jellyfin server 10.9.4
 
-![1](https://i.imgur.com/8866xHT.png)
+![1](https://i.imgur.com/YLy6pYW.png)
 ![2](https://i.imgur.com/MYBUHEH.png)
 ![3](https://i.imgur.com/ts13B1n.png)
 ![4](https://i.imgur.com/xPTC9s0.png)
