@@ -7,6 +7,14 @@ Step 1: Import to your CSS with
 @import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/finimalism7.css");
 
 ```
+
+or if you don't want all the lovely colours... 
+
+```css
+@import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/finimalism-just-black.css");
+
+```
+
 ![css](https://i.imgur.com/LHPUxqk.png)
 
 Step 2: In Jellyfin Client / Web UI Settings, under "Display", the Theme is set to Dark and Backdrops are enabled.
