@@ -1,0 +1,78 @@
+/* Backdrop */
+.backgroundContainer {
+    background: url(https://i.imgur.com/WWjKc6E.jpeg) center top no-repeat #030322;
+    -webkit-background-size: cover;
+    background-size: cover;
+	opacity: 0.2;
+}
+
+.itemsContainer.padded-left {
+    position: top;
+    z-index: 1;
+}
+
+.itemsContainer.padded-left::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: url(https://i.imgur.com/WWjKc6E.jpeg) center top no-repeat #030322;
+    background-size: cover;
+    opacity: 0.7;
+    z-index: -1;
+    background-attachment: fixed;
+}
+
+.sectionTitleContainer.sectionTitleContainer-cards.padded-left::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: url(https://i.imgur.com/WWjKc6E.jpeg) center top no-repeat #030322;
+    background-size: cover;
+    opacity: 0.2;
+    z-index: -1;
+    background-attachment: fixed;
+}
+
+/*Apply bg to detail Ribbon */
+.detailPagePrimaryContainer {
+    position: relative;
+    z-index: 2;
+}
+
+.detailPagePrimaryContainer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(https://i.imgur.com/WWjKc6E.jpeg) center top no-repeat #030322;
+    background-size: cover;
+    opacity: 0.6;
+    z-index: -1;
+}
+
+/* Apply bg to detailPage content */
+.detailPageSecondaryContainer {
+    position: relative;
+    z-index: 1;
+}
+
+.detailPageSecondaryContainer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(https://i.imgur.com/WWjKc6E.jpeg) center top no-repeat #030322;
+    background-size: cover;
+    opacity: 0.8;
+    z-index: -1;
+}
