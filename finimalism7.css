@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 /* Limit Custom CSS code box size */
-#txtCustomCss {
+#txtCustomCss, #txtLocalCustomCss {
     height: 400px !important;
     max-height: none !important;
     overflow-y: scroll !important;
