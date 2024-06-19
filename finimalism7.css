@@ -1013,18 +1013,17 @@ div[data-role="controlgroup"] a[data-role="button"] {
 
 @media (orientation: landscape) {
   .layout-desktop .detailLogo {
-    position: absolute;
-    left: 65%;
-    top: 35%;
-    transform: translate(-50%, -50%);
+    position: static;
+    margin-left: 32.5%;
+    margin-right: 10%;
     display: block;
     -webkit-filter: drop-shadow(0 0 10px rgba(2, 2, 2, 0.75));
     filter: drop-shadow(0 0 10px rgba(2, 2, 2, 0.75));
-    flex-shrink: 0;
-    background-position: 0 70%;
-    margin: 0;
-    width: 60vw !important;
-    height: 30vh !important;
+    width: 64vw;
+    max-height: 21em;
+    height: 26vw;
+    margin-top: -23.95em;
+    margin-bottom: 3em;
   }
 }
 
@@ -2377,19 +2376,17 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 }
 
 .layout-tv .detailLogo {
-    position: absolute;
-    left: 65%;
-    top: 8%;
-    transform: translate(-50%, -50%);
+    position: static;
+    margin-left: 32.5%;
+    margin-right: 10%;
     display: block;
     -webkit-filter: drop-shadow(0 0 10px rgba(2, 2, 2, 0.75));
     filter: drop-shadow(0 0 10px rgba(2, 2, 2, 0.75));
-    flex-shrink: 0;
-    background-position: 0 70%;
-    margin: 0;
-    width: 50vw !important;
-    height: 30vh !important;
-  }
+    width: 64vw;
+    max-height: 21em;
+    height: 26vw;
+    margin-top: -23.95em;
+    margin-bottom: 3em;
 }
 
 .layout-tv .itemName.infoText.parentNameLast {
