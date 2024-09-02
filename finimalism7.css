@@ -2422,3 +2422,7 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 .content-primary, .padded-bottom-page, .page, .pageWithAbsoluteTabs .pageTabContent {
   padding-bottom: 0 !important;
 }
+
+.collectionItems .itemsContainer.padded-left::before {
+	opacity: 0;
+}
