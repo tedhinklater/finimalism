@@ -2120,8 +2120,8 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 }
 
 /* Adjust alignment for the cards within the Continue Watching section */
-.homePage .section1.verticalSection .itemsContainer .card.overflowBackdropCard {
-    width: 27.8em !important;
+.layout-desktop .homePage .section1.verticalSection .itemsContainer .card.overflowBackdropCard {
+    width: 27.8em;
     margin-top: 0em;
     font-size: 90% !important;
 }
@@ -2396,7 +2396,7 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 
 
 .layout-desktop .overflowBackdropCard {
-    width: 27.8em !important;
+    width: 27.8em;
     font-size: 90% !important;
 }
 
