@@ -1,4 +1,8 @@
 # finimalism
+
+Also: Turn it up to 11 with the new ![Featured Content Bar](https://github.com/tedhinklater/Jellyfin-Featured-Content-Bar) 
+![feat16](https://github.com/user-attachments/assets/767dcd73-460b-43f9-8feb-6b0d7fbd703b)
+
 ![mockup](https://i.imgur.com/fnEPSIc.jpeg)
 
 Step 1: Import to your CSS with
