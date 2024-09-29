@@ -522,19 +522,19 @@ progress {
 }
 
 .defaultCardBackground1 {
-	background-color: #0a0a0a;
+	background-color: #51347929;
 }
 .defaultCardBackground2 {
-	background-color: #141414;
+	background-color: #343f7929;
 }
 .defaultCardBackground3 {
-	background-color: #212121;
+	background-color: #28203329;
 }
 .defaultCardBackground4 {
-	background-color: #333333;
+	background-color: #131c4d29;
 }
 .defaultCardBackground5 {
-	background-color: #666666;
+	background-color: #260c4429;
 }
 
 .raised:hover, 
@@ -756,40 +756,14 @@ progress::-webkit-progress-value {
   background-size: cover !important;
 }
 
-
-/*Size episode preview images in a more compact way*/
-.listItemImage.listItemImage-large.itemAction.lazy {
-  transition: filter 0.2s
-}
-.listItemImageButton-icon {
-  padding: 0;
-}
-.secondary.listItem-overview.listItemBodyText {
-  height: 61px; 
-  margin: 0;
-}
 .listItemImageButton {
   margin: auto; 
   font-size: 1.6em !important;
 }
-@media all and (min-width: 100em){
-  .listItemImage.listItemImage-large.itemAction.lazy {
-    height: 110px;
-  }
-  .listItem-content {
-    height: 115px;
-  }
-  .secondary.listItem-overview.listItemBodyText {
-    height: 3.5em; 
-    margin: 0;
-  }
-}
-@media all and (max-width: 100em){
-  .listItemImage.listItemImage-large.itemAction.lazy {height: 80px;}
-  .listItem-content {height: 85px;}
-  .secondary.listItem-overview.listItemBodyText {height: 2.5em; margin: 0;}
-}
 
+#childrenContent .starRatingContainer {
+	display: none;
+}
 
 .missingIndicator, .unairedIndicator {
     background: #ae3030eb;
@@ -1666,6 +1640,11 @@ progress::-webkit-progress-value {
     box-shadow: 0px 0px 5px rgba(var(--accent), 0) !important;
     border: solid 1px rgba(var(--accent),0) !important;
 }
+
+#homeTab .itemsContainer.padded-left.padded-right.vertical-wrap.focuscontainer-x .raised.homeLibraryButton.emby-button .material-icons.homeLibraryIcon {
+	margin-left:0.05em;
+}
+
 .cardOverlayContainer:hover,
 .dialog,
 .toast,
@@ -1781,6 +1760,20 @@ progress::-webkit-progress-value {
     padding: 10px;
 }
 
+#childrenContent .childrenItemsContainer.itemsContainer.padded-right.vertical-list .listItem.listItem-largeImage.listItem-withContentWrapper .listItem-content .listItemImage.listItemImage-large.itemAction.lazy.non-blurhashable.lazy-image-fadein-fast {
+	height: 11vw;
+}
+
+#childrenContent .childrenItemsContainer.itemsContainer.padded-right.vertical-list .listItem.listItem-largeImage.listItem-withContentWrapper .listItem-content {
+	height: 11vw;
+	min-height: 10em;
+}
+
+#childrenContent .childrenItemsContainer.itemsContainer.padded-right.vertical-list .listItem.listItem-largeImage.listItem-withContentWrapper .itemProgressBarForeground {
+	border-bottom-left-radius: 1em;
+	border-bottom-right-radius: 1em;
+}
+
 /* Hide Genres and Writers */
 .detailsGroupItem.genresGroup,
 .detailsGroupItem.writersGroup {
@@ -1798,7 +1791,7 @@ progress::-webkit-progress-value {
   display: -webkit-flex;
   display: flex;
   margin: 0 0 .5em !important;
-  max-width: 60em !important;
+  max-width: 100vw;
   font-size: 13px;
 }
 
@@ -2134,24 +2127,8 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
     }
 }
 
-/* Seasons carousel */
-
-.layout-desktop #childrenContent .childrenItemsContainer.itemsContainer {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    padding-bottom: 0.5em;
-    -webkit-overflow-scrolling: touch;
-    scroll-behavior: smooth;
-    max-width: 100%;
-    box-sizing: border-box;
-    scroll-snap-type: x mandatory;
-    padding-right: 6em !important;
-}
-
 .layout-desktop #childrenContent .childrenItemsContainer.itemsContainer > * {
     scroll-snap-align: center; 
-}
 }
 
 .layout-desktop .overflowBackdropCard {
