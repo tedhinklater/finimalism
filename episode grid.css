@@ -1,13 +1,13 @@
 #childrenCollapsible .childrenItemsContainer.itemsContainer.padded-right.vertical-list .listItemBody.itemAction {
 	position: absolute;
-	bottom: 0.25em;
+	bottom: 0.15em;
 	background: linear-gradient(90deg, rgb(4.314% 1.176% 11.373% / 0.92) 0%, rgb(4.314% 1.176% 11.373% / 0.9199859619140626) 6.25%, rgb(4.313% 1.177% 11.375% / 0.919775390625) 12.5%, rgb(4.309% 1.177% 11.384% / 0.9188629150390626) 18.75%, rgb(4.3% 1.18% 11.408% / 0.9164062500000001) 25%, rgb(4.28% 1.184% 11.459% / 0.9112261962890625) 31.25%, rgb(4.244% 1.192% 11.551% / 0.901806640625) 37.5%, rgb(4.184% 1.205% 11.703% / 0.8862945556640626) 43.75%, rgb(4.093% 1.225% 11.936% / 0.8625) 50%, rgb(3.96% 1.255% 12.276% / 0.8278961181640625) 56.25%, rgb(3.775% 1.296% 12.749% / 0.779619140625) 62.5%, rgb(3.525% 1.352% 13.388% / 0.7144683837890625) 68.75%, rgb(3.197% 1.425% 14.226% / 0.62890625) 75%, rgb(2.776% 1.518% 15.303% / 0.5190582275390625) 81.25%, rgb(2.245% 1.636% 16.66% / 0.380712890625) 87.5%, rgb(1.587% 1.782% 18.34% / 0.20932189941406254) 93.75%, rgb(0.784% 1.961% 20.392% / 0) 100% );
 	width: 18vw;
 	z-index: 1;
 	pointer-events: none;
 	height: 1.75em;
-	border-bottom-right-radius: 0.75em;
-	border-bottom-left-radius: 0.75em;
+	border-bottom-right-radius: 0.5em;
+	border-bottom-left-radius: 0.5em;
 }
 
 #childrenCollapsible .childrenItemsContainer.itemsContainer.padded-right.vertical-list .listItemBodyText {
@@ -20,10 +20,8 @@
 	left: -21em;
 	position: relative;
 	justify-content: space-between;
-	bottom: -9.4em;
-	font-size: 0.6em;
-	border-top-right-radius: 0.75em;
-	border-top-left-radius: 0.75em;
+	bottom: -9.6em;
+	font-size: 0.5vw;
 	z-index: 2;
 }
 
@@ -42,7 +40,7 @@
 }
 
 .layout-desktop #childrenContent .childrenItemsContainer.itemsContainer > * {
-	width: 24em;
+	width: 20vw;
 }
 
 #childrenContent .childrenItemsContainer.itemsContainer.padded-right.vertical-list .listItem:hover {
@@ -71,3 +69,5 @@
 	padding-left: 0em;
 	z-index: 3;
 }
+
+@media (min-width:2000px) { #childrenContent .childrenItemsContainer.itemsContainer.padded-right.vertical-list .listItem.listItem-largeImage.listItem-withContentWrapper .listItem-content { font-size: 142%; }}
