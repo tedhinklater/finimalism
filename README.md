@@ -30,13 +30,13 @@ Everything is just an alteration of the amazing work already put into [Ultrachro
 ![3](https://i.imgur.com/ts13B1n.png)
 ![4](https://i.imgur.com/xPTC9s0.png)
 ![5](https://i.imgur.com/261AqYj.png)
-![6](https://i.imgur.com/IXTxQEO.png)
+![6](https://i.imgur.com/oya7eQK.png)
 ![8](https://i.imgur.com/ROZPie7.png)
 
 # Episode Grid
 ![grid](https://github.com/user-attachments/assets/af279d2a-85ac-44e6-a2cf-99b5074be191)
 
-add this to your import lines (if you don't want the Compact Episodes style)
+add this to your import lines
 ```css
 @import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/episode%20grid.css");
 ```
