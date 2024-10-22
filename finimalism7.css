@@ -643,7 +643,7 @@ progress::-webkit-progress-value {
 }
 
 .countIndicator {
-  background: linear-gradient(to right, rgba(163, 95, 198, 0.7) 0%, rgba(6, 161, 217, 0.7) 100%);
+  background: rgba(var(--indicator),0.8);
   box-shadow: none;
 }
 
