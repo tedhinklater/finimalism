@@ -2416,3 +2416,8 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 	filter: blur(0px);
 	opacity: 1;
 }
+
+.cardOverlayButtonIcon, .cardOverlayButtonIcon.material-icons {
+  display: flex;
+  filter: drop-shadow(1px -1px 1px rgba(2, 2, 2, 0.8));
+}
