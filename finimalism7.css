@@ -1689,7 +1689,7 @@ progress::-webkit-progress-value {
   position: absolute;
   top: 0;
   right: 0;
-  display: none;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-end;
