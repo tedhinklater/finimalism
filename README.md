@@ -23,7 +23,7 @@ or if you don't want all the lovely colours...
 
 Step 2: In Jellyfin Client / Web UI Settings, under "Display", the Theme is set to Dark and Backdrops are enabled.
 
-Everything is just an alteration of the amazing work already put into [Ultrachromic by CTalvio](https://github.com/CTalvio/Ultrachromic). Updated for jellyfin server 10.9.X
+Everything is just an alteration of the amazing work already put into [Ultrachromic by CTalvio](https://github.com/CTalvio/Ultrachromic). Updated for jellyfin server 10.10.X
 
 ![1](https://i.imgur.com/hRUk1VN.png)
 ![2](https://i.imgur.com/MYBUHEH.png)
