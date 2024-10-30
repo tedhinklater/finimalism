@@ -35,9 +35,9 @@ Everything is just an alteration of the amazing work already put into [Ultrachro
 # Episode Grid
 ![grid](https://github.com/user-attachments/assets/af279d2a-85ac-44e6-a2cf-99b5074be191)
 
-<a href="https://github.com/tedhinklater/finality"><img src="https://i.imgur.com/54wZsvH.png" alt="Finality" width="500"/></a> <a href="https://github.com/tedhinklater/Jellypane"><img src="https://i.imgur.com/RHFcIA9.png" alt="Jellypane" width="500"/></a>
-
 add this to your import lines
 ```css
 @import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/episode%20grid.css");
 ```
+
+<a href="https://github.com/tedhinklater/finality"><img src="https://i.imgur.com/54wZsvH.png" alt="Finality" width="500"/></a> <a href="https://github.com/tedhinklater/Jellypane"><img src="https://i.imgur.com/RHFcIA9.png" alt="Jellypane" width="500"/></a>
