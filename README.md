@@ -40,4 +40,4 @@ add this to your import lines
 @import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/episode%20grid.css");
 ```
 
-<a href="https://github.com/tedhinklater/finality"><img src="https://i.imgur.com/54wZsvH.png" alt="Finality" width="500"/></a> <a href="https://github.com/tedhinklater/Jellypane"><img src="https://i.imgur.com/RHFcIA9.png" alt="Jellypane" width="500"/></a>
+<a href="https://github.com/tedhinklater/finality"><img src="https://i.imgur.com/54wZsvH.png" alt="Finality" width="300"/></a> <a href="https://github.com/tedhinklater/Jellypane"><img src="https://i.imgur.com/RHFcIA9.png" alt="Jellypane" width="300"/></a>
