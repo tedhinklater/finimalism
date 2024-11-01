@@ -2406,8 +2406,8 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 
 .layout-desktop #childrenContent .listItemBodyText.secondary.listItem-overview.listItemBodyText {
   transition: filter 0.8s, opacity 0.8s;
-  filter: blur(3px);
-  opacity: 0.7;
+  filter: blur(0px);
+  opacity: 1;
   max-height: 9em;
   overflow-y: auto;
 }
