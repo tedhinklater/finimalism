@@ -99,3 +99,9 @@
   box-shadow: none;
   color: rgb(--accent);
 }
+
+/*Login background*/
+#loginPage {
+  background: url(https://i.imgur.com/gpe0jJc.jpeg) !important; 
+  background-size: cover !important;
+}
