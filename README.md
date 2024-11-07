@@ -27,8 +27,8 @@ Everything is just an alteration of the amazing work already put into [Ultrachro
 ![1](https://i.imgur.com/hRUk1VN.png)
 ![Screenshot 2024-11-07 210134](https://github.com/user-attachments/assets/c9622546-b2a0-4c53-8996-15af6814a6e1)
 ![3](https://i.imgur.com/ts13B1n.png)
-![4](https://i.imgur.com/xPTC9s0.png)
-![5](https://i.imgur.com/261AqYj.png)
+![Screenshot 2024-11-07 210224](https://github.com/user-attachments/assets/0fc27a33-b4e9-43d1-a062-4e3f96e9286b)
+![Screenshot 2024-11-07 210252](https://github.com/user-attachments/assets/a820bf07-2c66-4e27-931d-25d99de89ccc)
 ![Screenshot 2024-11-07 205812](https://github.com/user-attachments/assets/0063c545-8805-48db-a904-9d1fc3f6ae92)
 ![Screenshot 2024-11-07 205648](https://github.com/user-attachments/assets/5bf2321f-206e-42c8-9750-051f8489d138)
 
