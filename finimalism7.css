@@ -2490,11 +2490,32 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 	top: 45vh;
 	left: 30vw;
 	font-size: 2vw;
+	transition: font-size 0.1s ease-in-out;
+	transform: translateX(-50%) translateY(-50%);
+}
+
+.videoOsdBottom .btnPreviousTrack:hover,
+.videoOsdBottom .btnPreviousChapter:hover,
+.videoOsdBottom .btnRewind:hover,
+.videoOsdBottom .btnPause:hover,
+.videoOsdBottom .btnFastForward:hover,
+.videoOsdBottom .btnNextChapter:hover,
+.videoOsdBottom .btnNextTrack:hover {
+	font-size: 2.2vw !important;
 }
 
 @media (max-width: 33.75em) {
-  .videoOsdBottom .paper-icon-button-light {
-    font-size: 3vw !important;
+	.videoOsdBottom .paper-icon-button-light {
+		font-size: 3vw !important;
+	}
+  .videoOsdBottom .paper-icon-button-light:hover {
+		font-size: 3.2vw !important;
+	}
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .videoOsdBottom .paper-icon-button-light:hover:not(:disabled) {
+    background-color: #0009 !important;
   }
 }
 
@@ -2521,4 +2542,10 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 }
 .osdTimeText {
 	margin-left: 3.9em;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .paper-icon-button-light:hover:not(:disabled) {
+    background-color: #0009;
+  }
 }
