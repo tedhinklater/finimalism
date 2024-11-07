@@ -30,7 +30,7 @@ Everything is just an alteration of the amazing work already put into [Ultrachro
 ![4](https://i.imgur.com/xPTC9s0.png)
 ![5](https://i.imgur.com/261AqYj.png)
 ![6](https://i.imgur.com/oya7eQK.png)
-![8](https://i.imgur.com/ROZPie7.png)
+![Screenshot 2024-11-07 205648](https://github.com/user-attachments/assets/5bf2321f-206e-42c8-9750-051f8489d138)
 
 # Episode Grid
 ![grid](https://github.com/user-attachments/assets/af279d2a-85ac-44e6-a2cf-99b5074be191)
