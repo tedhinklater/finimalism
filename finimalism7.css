@@ -2484,3 +2484,41 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
     max-width: 16.4vw;
   }
 }
+
+.videoOsdBottom .osdControls [dir="ltr"] .paper-icon-button-light {
+	position: fixed;
+	top: 45vh;
+	left: 30vw;
+	font-size: 2vw;
+}
+
+@media (max-width: 33.75em) {
+  .videoOsdBottom .paper-icon-button-light {
+    font-size: 3vw !important;
+  }
+}
+
+.osdControls .btnPreviousTrack {
+	left: 24% !important;
+}
+.osdControls .btnPreviousChapter {
+	left: 24% !important;
+}
+.osdControls .btnRewind {
+	left: 35% !important;
+}
+.osdControls .btnPause {
+	left: 47% !important;
+}
+.osdControls .btnFastForward  {
+	left: 59% !important;
+}
+.osdControls .btnNextChapter {
+	left: 69% !important;
+}
+.osdControls .btnNextTrack {
+	left: 69% !important;
+}
+.osdTimeText {
+	margin-left: 3.9em;
+}
