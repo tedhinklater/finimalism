@@ -33,7 +33,7 @@ Everything is just an alteration of the amazing work already put into [Ultrachro
 ![Screenshot 2024-11-07 205648](https://github.com/user-attachments/assets/5bf2321f-206e-42c8-9750-051f8489d138)
 
 # Episode Grid
-![grid](https://github.com/user-attachments/assets/af279d2a-85ac-44e6-a2cf-99b5074be191)
+![Screenshot 2024-11-07 210450](https://github.com/user-attachments/assets/e927b3ba-283e-4dad-bce9-dbd39e8c4938)
 
 add this to your import lines
 ```css
