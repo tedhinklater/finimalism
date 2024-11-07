@@ -2543,9 +2543,3 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 .osdTimeText {
 	margin-left: 3.9em;
 }
-
-@media (hover: hover) and (pointer: fine) {
-  .paper-icon-button-light:hover:not(:disabled) {
-    background-color: #0009;
-  }
-}
