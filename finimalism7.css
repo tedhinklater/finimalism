@@ -2521,24 +2521,31 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 
 .osdControls .btnPreviousTrack {
 	left: 24% !important;
+	filter: drop-shadow(-3px 0px 2px rgba(2, 2, 2, 0.8));
 }
 .osdControls .btnPreviousChapter {
 	left: 31% !important;
+	filter: drop-shadow(-3px 0px 2px rgba(2, 2, 2, 0.8));
 }
 .osdControls .btnRewind {
 	left: 39% !important;
+	filter: drop-shadow(-3px 0px 2px rgba(2, 2, 2, 0.8));
 }
 .osdControls .btnPause {
 	left: 47% !important;
+	filter: drop-shadow(0px 0px 3px rgba(2, 2, 2, 0.8));
 }
 .osdControls .btnFastForward  {
 	left: 56% !important;
+	filter: drop-shadow(3px 0px 2px rgba(2, 2, 2, 0.8));
 }
 .osdControls .btnNextChapter {
 	left: 63% !important;
+	filter: drop-shadow(3px 0px 2px rgba(2, 2, 2, 0.8));
 }
 .osdControls .btnNextTrack {
 	left: 69% !important;
+	filter: drop-shadow(3px 0px 2px rgba(2, 2, 2, 0.8));
 }
 .osdTimeText {
 	margin-left: 3.9em;
