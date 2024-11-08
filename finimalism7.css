@@ -2487,7 +2487,7 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 
 .videoOsdBottom .osdControls [dir="ltr"] .paper-icon-button-light {
 	position: fixed;
-	top: 45vh;
+	top: 49vh;
 	left: 30vw;
 	font-size: 2vw;
 	transition: font-size 0.1s ease-in-out;
