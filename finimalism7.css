@@ -12,6 +12,11 @@
     height: auto !important;
 }
 
+html {
+  color: #fff;
+  color: rgba(255, 255, 255, 1);
+}
+
 /* Backdrop */
 .backgroundContainer {
     background: url(https://i.imgur.com/dGBenC7.jpeg) center top no-repeat #030322;
@@ -152,6 +157,8 @@ div.itemMiscInfo.itemMiscInfo-primary {
 /* Font size for the description */
 p.overview.detail-clamp-text {
     font-size: 12pt; 
+	color: #fff;
+	font-weight: 600;
 }
 
 /* Font size for the description */
@@ -2416,6 +2423,16 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
   overflow-y: auto;
 }
 
+#childrenContent .listItem-content .listItemBodyText {
+	color: #fff;
+	font-weight: 600;
+}
+
+#childrenContent .listItem-content .secondary.listItemBodyText {
+	color: #fff;
+	font-weight: 300;
+}
+
 .layout-desktop #childrenContent .listItemBodyText.secondary.listItem-overview.listItemBodyText:hover {
 	filter: blur(0px);
 	opacity: 1;
@@ -2491,3 +2508,4 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 .osdControls {
   font-size: 1.5em;
 }
+
