@@ -2509,3 +2509,8 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
   font-size: 1.25em;
 }
 
+.css-4yt2of, .css-139vfv2 {
+	background-color: rgb(20, 16, 28);
+	color: rgb(255, 255, 255);
+	background-image: none;
+}
