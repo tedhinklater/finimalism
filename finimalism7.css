@@ -2444,22 +2444,15 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 }
 
 #skipIntro .emby-button:hover, #skipIntro .emby-button:focus {
-  background: linear-gradient(to right, rgb(103, 16, 130), rgb(4, 130, 175)) !important;
-  transform: scale(1.05);
+
 }
 
 #skipIntro {
-  position: absolute;
-  bottom: 7em;
-  right: 7em;
-  background-color: transparent;
+
 }
 
 #skipIntro .emby-button {
-  color: #ffffff;
-  font-size: 100%;
-  background: rgb(0, 0, 0);
-  border: 0px solid #2c4177;
+
 }
 
 .skip-button {
@@ -2467,15 +2460,11 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 }
 
 .upNextContainer {
-  bottom: 5em;
+
 }
 
 .raised.raised-mini.btnHide.upNextDialog-button.emby-button:hover {
-  background: linear-gradient(to right, rgb(103, 16, 130), rgb(4, 130, 175)) !important;
-  box-shadow: 0 0 8px rgba(var(--accent), 0.6);
-  filter: brightness(1.2);
-  background-color: #041331;
-  transform: scale(1.05);
+
 }
 
 /*Iskelderon's cleaner Scenes & Specials grid */
