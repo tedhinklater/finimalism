@@ -19,10 +19,6 @@ html {
 
 /* Backdrop */
 .backgroundContainer {
-    background: url(https://i.imgur.com/dGBenC7.jpeg) center top no-repeat #030322;
-    -webkit-background-size: cover;
-    background-size: cover;
-	opacity: 0.2;
 }
 
 .itemsContainer.padded-left {
@@ -30,7 +26,7 @@ html {
     z-index: 1;
 }
 
-.itemsContainer.padded-left::before {
+.sections.homeSectionsContainer::before {
     content: '';
     position: fixed;
     top: 0;
@@ -39,12 +35,12 @@ html {
     height: 100vh;
     background: url(https://i.imgur.com/dGBenC7.jpeg) center top no-repeat #030322;
     background-size: cover;
-    opacity: 0.7;
+    opacity: 0;
     z-index: -1;
     background-attachment: fixed;
 }
 
-.sectionTitleContainer.sectionTitleContainer-cards.padded-left::before {
+.pageTabContent.is-active::before {
     content: '';
     position: fixed;
     top: 0;
@@ -53,7 +49,7 @@ html {
     height: 100vh;
     background: url(https://i.imgur.com/dGBenC7.jpeg) center top no-repeat #030322;
     background-size: cover;
-    opacity: 0.2;
+    opacity: 0.75;
     z-index: -1;
     background-attachment: fixed;
 }
