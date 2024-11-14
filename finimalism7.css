@@ -210,9 +210,9 @@ span.homeLibraryText {
   padding-right: 0%;
 }
 
-/* Remove content title on desktop (redundant with logo) */
+
 .layout-desktop .itemName.infoText.parentNameLast {
-    display: none;
+    display: block;
 }
 
 .hide+.detailPageWrapperContainer .itemName {
