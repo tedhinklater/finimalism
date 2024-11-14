@@ -2339,73 +2339,73 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 /* TV Mode */
 
 .layout-tv .noHeaderRight .headerRight, .noHomeButtonHeader .headerHomeButton {
-  display: inline-flex !important;
+	display: inline-flex !important;
 }
 
 .layout-tv .paper-icon-button-light {
-  display: inline-flex !important;
+	display: inline-flex !important;
 }
 
 .layout-tv .mainDrawer.hide.transition.touch-menu-la.drawer-open {
-  display: block !important;
+	display: block !important;
 }
 
 .layout-tv .portraitCard {
-  width: 12.5%;
+	width: 12.5%;
 }
 
 .layout-tv .detailPageWrapperContainer {
-  border-collapse: collapse;
-  border-spacing: 0;
-  margin-top: 27em;
+	border-collapse: collapse;
+	border-spacing: 0;
+	margin-top: 27em;
 }
 
 .layout-tv .detailLogo {
-    position: static;
-    margin-left: 32.5%;
-    margin-right: 10%;
-    display: block;
-    -webkit-filter: drop-shadow(0 0 10px rgba(2, 2, 2, 0.75));
-    filter: drop-shadow(0 0 10px rgba(2, 2, 2, 0.75));
-    width: 64vw;
-    max-height: 21em;
-    height: 26vw;
-    margin-top: -23.95em;
-    margin-bottom: 3em;
+	position: static;
+	margin-left: 32.5%;
+	margin-right: 10%;
+	display: block;
+	-webkit-filter: drop-shadow(0 0 10px rgba(2, 2, 2, 0.75));
+	filter: drop-shadow(0 0 10px rgba(2, 2, 2, 0.75));
+	width: 64vw;
+	max-height: 21em;
+	height: 26vw;
+	margin-top: -23.95em;
+	margin-bottom: 3em;
 }
 
 .layout-tv .itemName.infoText.parentNameLast {
-    display: block;
-    font-size: 1.3em;
+	display: block;
+	font-size: 1.3em;
 }
 
 
 .layout-desktop .overflowBackdropCard {
-    width: 27.8em;
-    font-size: 90% !important;
+	width: 27.8em;
+	font-size: 90% !important;
 }
 
 .layout-desktop .verticalSection.section2 .card.overflowBackdropCard {
-  width: 13.88em !important;
-  font-size: 90% !important;
+	width: 13.88em !important;
+	font-size: 90% !important;
 }
 
 .verticalSection.section0 .textActionButton {
-  display: none;
+	display: none;
 }
 
 .layout-mobile .verticalSection-extrabottompadding {
-  margin-bottom: 1em;
-  margin-top: 0em;
+	margin-bottom: 1em;
+	margin-top: 0em;
 }
 
 .layout-desktop .verticalSection-extrabottompadding {
-  margin-bottom: 1em !important;
+	margin-bottom: 1em !important;
 }
 
 /* Remove empty space at bottom of page */
 .content-primary, .padded-bottom-page, .page, .pageWithAbsoluteTabs .pageTabContent {
-  padding-bottom: 0 !important;
+	padding-bottom: 0 !important;
 }
 
 .collectionItems .itemsContainer.padded-left::before {
@@ -2413,11 +2413,11 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 }
 
 .layout-desktop #childrenContent .listItemBodyText.secondary.listItem-overview.listItemBodyText {
-  transition: filter 0.8s, opacity 0.8s;
-  filter: blur(0px);
-  opacity: 1;
-  max-height: 9em;
-  overflow-y: auto;
+	transition: filter 0.8s, opacity 0.8s;
+	filter: blur(0px);
+	opacity: 1;
+	max-height: 9em;
+	overflow-y: auto;
 }
 
 #childrenContent .listItem-content .listItemBodyText {
@@ -2436,8 +2436,8 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 }
 
 .cardOverlayButtonIcon, .cardOverlayButtonIcon.material-icons {
-  display: flex;
-  filter: drop-shadow(1px -1px 1px rgba(2, 2, 2, 0.8));
+	display: flex;
+	filter: drop-shadow(1px -1px 1px rgba(2, 2, 2, 0.8));
 }
 
 #skipIntro .emby-button:hover, #skipIntro .emby-button:focus {
@@ -2465,30 +2465,30 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
   #specialsCollapsible .emby-scroller,
   #musicVideosCollapsible.emby-scroller,
   #scenesCollapsible.emby-scroller {
-    margin-right: 0;
+	margin-right: 0;
   }
 
   #specialsCollapsible .emby-scrollbuttons,
   #musicVideosCollapsible .emby-scrollbuttons,
   #scenesCollapsible .emby-scrollbuttons  {
-    display: none;
+	display: none;
   }
 
   #specialsCollapsible .itemsContainer,
   #musicVideosCollapsible .itemsContainer,
   #scenesCollapsible .itemsContainer {
-    flex-wrap: wrap;
+	flex-wrap: wrap;
   }
 
   #specialsCollapsible .overflowBackdropCard,
   #musicVideosCollapsible .overflowBackdropCard,
   #scenesCollapsible .overflowBackdropCard {
-    max-width: 16.4vw;
-  }
+	max-width: 16.4vw;
+	}
 }
 
 .osdControls {
-  font-size: 1.25em;
+	font-size: 1.25em;
 }
 
 .css-4yt2of, .css-139vfv2 {
@@ -2501,10 +2501,12 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 /*Change Intro Skip Color*/
 .skip-button:hover,
 .skip-button:focus {
-    background: linear-gradient(90deg, rgb(40.392% 6.275% 50.98%) 0%, rgb(40.023% 6.794% 51.27%) 6.25%, rgb(38.929% 8.334% 52.13%) 12.5%, rgb(37.154% 10.835% 53.525%) 18.75%, rgb(34.764% 14.2% 55.403%) 25%, rgb(31.852% 18.3% 57.69%) 31.25%, rgb(28.53% 22.978% 60.301%) 37.5%, rgb(24.925% 28.054% 63.133%) 43.75%, rgb(21.176% 33.333% 66.078%) 50%, rgb(17.428% 38.612% 69.024%) 56.25%, rgb(13.823% 43.688% 71.856%) 62.5%, rgb(10.501% 48.366% 74.466%) 68.75%, rgb(7.589% 52.467% 76.754%) 75%, rgb(5.199% 55.832% 78.632%) 81.25%, rgb(3.423% 58.332% 80.027%) 87.5%, rgb(2.33% 59.872% 80.886%) 93.75%, rgb(1.961% 60.392% 81.176%) 100% );
-    color: #fff;
+	background: linear-gradient(90deg, rgb(40.392% 6.275% 50.98%) 0%, rgb(40.023% 6.794% 51.27%) 6.25%, rgb(38.929% 8.334% 52.13%) 12.5%, rgb(37.154% 10.835% 53.525%) 18.75%, rgb(34.764% 14.2% 55.403%) 25%, rgb(31.852% 18.3% 57.69%) 31.25%, rgb(28.53% 22.978% 60.301%) 37.5%, rgb(24.925% 28.054% 63.133%) 43.75%, rgb(21.176% 33.333% 66.078%) 50%, rgb(17.428% 38.612% 69.024%) 56.25%, rgb(13.823% 43.688% 71.856%) 62.5%, rgb(10.501% 48.366% 74.466%) 68.75%, rgb(7.589% 52.467% 76.754%) 75%, rgb(5.199% 55.832% 78.632%) 81.25%, rgb(3.423% 58.332% 80.027%) 87.5%, rgb(2.33% 59.872% 80.886%) 93.75%, rgb(1.961% 60.392% 81.176%) 100% );
+	color: #fff;
 }
 
 .skip-button {
-    transition: scale 0.5s ease-in, background 0.5s ease-in, color 0.1s ease-in;
+	transition: scale 0.5s ease-in, background 0.5s ease-in, color 0.1s ease-in;
+	bottom: 8em;
+	right: 9.35em;
 }
