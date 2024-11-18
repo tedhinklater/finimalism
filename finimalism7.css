@@ -2179,7 +2179,7 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 
 /* Position release year, ratings */
 .mediaInfoItem {
-  margin-top: 0.6em !important;
+  margin-top: 0.2em !important;
 }
 
 /* Raise Next Up cards on homepage */
@@ -2254,6 +2254,7 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 .infoWrapper {
   min-width: 52%;
   max-width: 100%;
+  max-height: 5.5em;
 }
 
 /* Padding on detailPage action buttons */
@@ -2552,4 +2553,8 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 
 .layout-mobile [dir="ltr"] .pageTitle {
   margin: 0;
+}
+
+.layout-desktop div.itemMiscInfo.itemMiscInfo-primary {
+  margin-bottom: 0em !important;
 }
