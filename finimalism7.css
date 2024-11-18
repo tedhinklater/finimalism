@@ -1897,7 +1897,6 @@ progress::-webkit-progress-value {
     justify-content:center;
     margin-top:-2em;
     position:relative;
-    width:auto;
   }
 }
 
@@ -1915,7 +1914,6 @@ progress::-webkit-progress-value {
     justify-content:center;
     margin-top:-1.3em;
     position:relative;
-    width:auto;
   }
 }
 
@@ -1928,7 +1926,6 @@ progress::-webkit-progress-value {
     justify-content: center;
     margin-top: 0em;
     position: relative;
-    width: auto;
   }
 }
 
