@@ -2542,3 +2542,8 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 #myPreferencesMenuPage .verticalSection-extrabottompadding .emby-button .listItemBodyText {
 	text-overflow: visible !important;
 }
+
+.layout-mobile .flex.align-items-center.flex-grow.headerTop {
+  width: 100vw;
+  padding-left: 0;
+}
