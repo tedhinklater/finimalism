@@ -2547,3 +2547,7 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
   width: 100vw;
   padding-left: 0;
 }
+
+.layout-mobile [dir="ltr"] .pageTitle {
+  margin: 0;
+}
