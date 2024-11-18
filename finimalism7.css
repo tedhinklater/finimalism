@@ -2483,7 +2483,7 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
   #specialsCollapsible .overflowBackdropCard,
   #musicVideosCollapsible .overflowBackdropCard,
   #scenesCollapsible .overflowBackdropCard {
-	max-width: 16.4vw;
+	max-width: 15.4vw;
 	}
 }
 
