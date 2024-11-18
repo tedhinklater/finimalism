@@ -18,7 +18,8 @@ html {
 }
 
 /* Backdrop */
-.backgroundContainer {
+.backgroundContainer, .preload {
+  background-color: #080210;
 }
 
 .itemsContainer.padded-left {
