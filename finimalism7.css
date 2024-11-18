@@ -1384,7 +1384,6 @@ progress::-webkit-progress-value {
 @media (orientation: landscape){
   .layout-mobile .button-flat {
     margin-top: -1em !important;
-    padding-top: .85em !important;
   }
 }
 
@@ -2178,8 +2177,12 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 }
 
 /* Position release year, ratings */
-.mediaInfoItem {
-  margin-top: 0.2em !important;
+.layout-desktop .mediaInfoItem {
+	margin-top: 0.2em !important;
+}
+
+.layout-mobile .mediaInfoItem {
+	margin-top: 0.6em !important;
 }
 
 /* Raise Next Up cards on homepage */
@@ -2283,17 +2286,24 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 @media (max-width: 32em) and (orientation: portrait) {
   .layout-mobile [dir="ltr"] .mainDetailButtons {
     margin-bottom: 0;
-    padding-left: 9em;
+    padding-left: 0em;
     font-size: 73%;
-  }
+	margin-top: 2em;
+	width: 100vw;
+    justify-content: space-around;
+	}
 }
 
 @media (min-width: 50em) {
   .layout-mobile [dir="ltr"] .mainDetailButtons {
     font-size: 85%;
     margin-bottom: 0em;
-    margin-top: 0em;
+    margin-top: 2em;
   }
+}
+
+.layout-mobile .mediaInfoOfficialRating {
+	position: relative;
 }
 
 .trackSelections .selectContainer {
@@ -2557,4 +2567,9 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 
 .layout-desktop div.itemMiscInfo.itemMiscInfo-primary {
   margin-bottom: 0em !important;
+}
+
+.layout-mobile .itemMiscInfo, .layout-mobile .itemName, .layout-mobile .mainDetailButtons, .layout-mobile .parentName {
+  justify-content: center;
+  text-align: center;
 }
