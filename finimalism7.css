@@ -2517,3 +2517,28 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
+.layout-mobile .backgroundContainer { background-color: transparent;}
+
+#myPreferencesMenuPage .sectionTitle {
+	text-decoration: underline;
+}
+
+#myPreferencesPage .readOnlycontent {
+	font-size: 90%;
+}
+
+#myPreferencesMenuPage .verticalSection-extrabottompadding .emby-button .listItem {
+	justify-content: center;
+}
+
+
+#myPreferencesMenuPage .verticalSection-extrabottompadding .emby-button .listItemBody {
+	overflow: visible;
+	text-overflow: unset;
+	white-space: wrap;
+	padding-right: 0.75em;
+}
+
+#myPreferencesMenuPage .verticalSection-extrabottompadding .emby-button .listItemBodyText {
+	text-overflow: visible !important;
+}
