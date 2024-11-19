@@ -2463,7 +2463,8 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 }
 
 .upNextContainer {
-
+  background: #000;
+  z-index: 50;
 }
 
 .raised.raised-mini.btnHide.upNextDialog-button.emby-button:hover {
