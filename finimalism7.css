@@ -237,6 +237,11 @@ span.homeLibraryText {
     background-color: rgba(0, 0, 0, 0);
 }
 
+.emby-select-withcolor > option {
+  color: inherit;
+  background: #11091d;
+}
+
 /* Dashboard*/
 
 #user_usage_report_table,
