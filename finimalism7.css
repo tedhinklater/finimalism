@@ -1722,6 +1722,7 @@ progress::-webkit-progress-value {
 
 .cardOverlayButton {
   position: relative;
+  color: #fff;
 }
 
 
@@ -2575,4 +2576,17 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 .layout-mobile .itemMiscInfo, .layout-mobile .itemName, .layout-mobile .mainDetailButtons, .layout-mobile .parentName {
   justify-content: center;
   text-align: center;
+}
+
+button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.itemAction.paper-icon-button-light.cardOverlayFab-primary[data-action="resume"] {
+  background-color: rgba(0, 0, 0, 0.7);
+  font-size: 130%;
+  height: 3em;
+  left: 50%;
+  margin-left: -1.5em;
+  margin-top: -1.5em;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  width: 3em;
 }
