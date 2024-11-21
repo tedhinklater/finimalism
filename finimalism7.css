@@ -2610,99 +2610,101 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
   margin-bottom: 0em;
 }
 
-.headerTabs.sectionTabs .tabs-viewmenubar.emby-tabs.focusable.scrollX .emby-tab-button.emby-button.emby-tab-button-active {
-	background: #fff;
-	color: #000 !important;
-	border-radius: 2em;
-	height: 2em;
-	width: auto;
-	transform: translateY(-11%);
-        transition: 0s;
-}
+@media (min-width: 60em) {
+	.headerTabs.sectionTabs .tabs-viewmenubar.emby-tabs.focusable.scrollX .emby-tab-button.emby-button.emby-tab-button-active {
+		background: #fff;
+		color: #000 !important;
+		border-radius: 2em;
+		height: 2em;
+		width: auto;
+		transform: translateY(-11%);
+			transition: 0s;
+	}
 
-.headerTabs.sectionTabs .tabs-viewmenubar.emby-tabs.focusable.scrollX .emby-tab-button.emby-button.emby-tab-button-active .emby-button-foreground {
-	transform: translateY(-33%);
-}
+	.headerTabs.sectionTabs .tabs-viewmenubar.emby-tabs.focusable.scrollX .emby-tab-button.emby-button.emby-tab-button-active .emby-button-foreground {
+		transform: translateY(-33%);
+	}
 
-.headerTabs .emby-tab-button {
-    transition: 0s !important;
-	width: auto;
-	color: #fff;
-}
+	.headerTabs .emby-tab-button {
+		transition: 0s !important;
+		width: auto;
+		color: #fff;
+	}
 
-[dir="ltr"] .pageTitle {
-	display: none;
-}
+	[dir="ltr"] .pageTitle {
+		display: none;
+	}
 
-#moviesTab .listItem {
-	font-size: 1.15em;
-}
+	#moviesTab .listItem {
+		font-size: 1.15em;
+	}
 
-#moviesTab .listItemBody.itemAction {
-	max-width: 60vw;
-}
+	#moviesTab .listItemBody.itemAction {
+		max-width: 60vw;
+	}
 
-#moviesTab .secondary.listItemMediaInfo {
-	width: 13vw;
-}
+	#moviesTab .secondary.listItemMediaInfo {
+		width: 13vw;
+	}
 
-#moviesTab .secondary.listItemMediaInfo .mediaInfoItem {
-	transform: translateX(-50%);
-	min-width: 4vw;
-}
+	#moviesTab .secondary.listItemMediaInfo .mediaInfoItem {
+		transform: translateX(-50%);
+		min-width: 4vw;
+	}
 
-#moviesTab .secondary.listItemMediaInfo .starRatingContainer.mediaInfoItem {
-	transform: translateX(-50%);
-	min-width: 4vw;
-	margin-right: 2vw;
-}
+	#moviesTab .secondary.listItemMediaInfo .starRatingContainer.mediaInfoItem {
+		transform: translateX(-50%);
+		min-width: 4vw;
+		margin-right: 2vw;
+	}
 
-#moviesTab .secondary.listItemMediaInfo .mediaInfoItem.mediaInfoText.closedCaptionMediaInfoText {
-	transform: translateX(-50%);
-	min-width: 4vw;
-	justify-content: center;
-}
+	#moviesTab .secondary.listItemMediaInfo .mediaInfoItem.mediaInfoText.closedCaptionMediaInfoText {
+		transform: translateX(-50%);
+		min-width: 4vw;
+		justify-content: center;
+	}
 
-#moviesTab .listViewUserDataButtons {
-	width: 13vw;
-	justify-content: space-around;
-}
+	#moviesTab .listViewUserDataButtons {
+		width: 13vw;
+		justify-content: space-around;
+	}
 
-#seriesTab .listItem {
-	font-size: 1.15em;
-}
+	#seriesTab .listItem {
+		font-size: 1.15em;
+	}
 
-#seriesTab .listItemBody.itemAction {
-	max-width: 60vw;
-}
+	#seriesTab .listItemBody.itemAction {
+		max-width: 60vw;
+	}
 
-#seriesTab .secondary.listItemMediaInfo {
-	width: 3vw;
-}
+	#seriesTab .secondary.listItemMediaInfo {
+		width: 3vw;
+	}
 
-#seriesTab .secondary.listItemMediaInfo .mediaInfoItem {
-	transform: translateX(-50%);
-	min-width: 4vw;
-}
+	#seriesTab .secondary.listItemMediaInfo .mediaInfoItem {
+		transform: translateX(-50%);
+		min-width: 4vw;
+	}
 
-#seriesTab .secondary.listItemMediaInfo .starRatingContainer.mediaInfoItem {
-	transform: translateX(-50%);
-	min-width: 4vw;
-	margin-right: 2vw;
-}
+	#seriesTab .secondary.listItemMediaInfo .starRatingContainer.mediaInfoItem {
+		transform: translateX(-50%);
+		min-width: 4vw;
+		margin-right: 2vw;
+	}
 
-#seriesTab .secondary.listItemMediaInfo .mediaInfoItem.mediaInfoText.closedCaptionMediaInfoText {
-	transform: translateX(-50%);
-	min-width: 4vw;
-	justify-content: center;
-}
+	#seriesTab .secondary.listItemMediaInfo .mediaInfoItem.mediaInfoText.closedCaptionMediaInfoText {
+		transform: translateX(-50%);
+		min-width: 4vw;
+		justify-content: center;
+	}
 
-#seriesTab .listViewUserDataButtons {
-	width: 13vw;
-	justify-content: space-around;
-}
+	#seriesTab .listViewUserDataButtons {
+		width: 13vw;
+		justify-content: space-around;
+	}
 
 
-#genresTab .portraitCard, .squareCard {
-    width: 11%;
+	#genresTab .portraitCard, .squareCard {
+		width: 11%;
+	}
 }
