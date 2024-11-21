@@ -2765,3 +2765,11 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
   margin-bottom: 1em !important;
   margin-left: 0em !important;
 }
+
+.card.overflowPortraitCard.card-hoverable.card-withuserdata:hover .countIndicator.indicator {
+  opacity: 0;
+}
+
+.countIndicator.indicator {
+  transition: opacity 0.1s ease;
+}
