@@ -2770,6 +2770,10 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
   opacity: 0;
 }
 
+.card.portraitCard.card-hoverable.card-withuserdata:hover .countIndicator.indicator {
+  opacity: 0;
+}
+
 .countIndicator.indicator {
   transition: opacity 0.1s ease;
 }
