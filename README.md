@@ -24,11 +24,11 @@ Step 2: In Jellyfin Client / Web UI Settings, under "Display", the Theme is set 
 
 Everything is just an alteration of the amazing work already put into [Ultrachromic by CTalvio](https://github.com/CTalvio/Ultrachromic). Updated for jellyfin server 10.10.X
 
-![Screenshot 2024-11-18 132426](https://github.com/user-attachments/assets/96ccf28d-1fa5-4236-8f7e-09850fe57430)
-![Screenshot 2024-11-18 132442](https://github.com/user-attachments/assets/4f4433a1-9d09-47cd-bb49-1b4975cb336a)
-![Screenshot 2024-11-18 132458](https://github.com/user-attachments/assets/f1f608fc-f69a-4c1c-99be-0c91c0977d73)
-![Screenshot 2024-11-18 132512](https://github.com/user-attachments/assets/a23f1cc6-8739-413e-972a-855cf772b33c)
-![Screenshot 2024-11-18 132532](https://github.com/user-attachments/assets/458e6e17-f616-4523-bb3a-18e3702cb93c)
+![Screenshot 2024-11-21 023049](https://github.com/user-attachments/assets/e18cca37-fb5e-437f-8488-0af44e644cd4)
+![Screenshot 2024-11-21 023104](https://github.com/user-attachments/assets/9781e990-634e-47be-899d-00a516c13374)
+![Screenshot 2024-11-21 023122](https://github.com/user-attachments/assets/5523d757-2b76-4d9e-b4c0-bbcf4dfc5982)
+![Screenshot 2024-11-21 023148](https://github.com/user-attachments/assets/d87fc7c4-9082-4c55-bbba-2b79e4eee51f)
+![Screenshot 2024-11-21 023201](https://github.com/user-attachments/assets/25645843-f237-474a-8117-ec15c85dc335)
 ![Screenshot 2024-11-09 201453](https://github.com/user-attachments/assets/4315df5d-dc4e-4571-8d47-a5257095e5c6)
 
 # Episode Grid
