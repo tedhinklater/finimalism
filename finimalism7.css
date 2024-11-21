@@ -180,6 +180,7 @@ p.overview.detail-clamp-text {
 span.homeLibraryText {
     font-family: "Nunito", sans-serif;
     font-size: 12pt;
+	transform: translateY(5%);
 }
 
 .layout-mobile span.homeLibraryText {
@@ -1425,6 +1426,10 @@ progress::-webkit-progress-value {
   margin-left: 0.5em;
 }
 
+.osdTimeText {
+  font-size: 90%;
+}
+
 .videoOsdBottom {
     padding-top: 1em;
 }
@@ -1767,6 +1772,20 @@ progress::-webkit-progress-value {
     filter: none !important;
     transform: scale(1.05);
     transition: transform 1s ease;
+}
+
+.layout-desktop .homeLibraryButton {
+	font-weight: 700;
+	border-radius: 5em !important;
+}
+
+.layout-desktop .homeLibraryButton:hover, .layout-desktop .homeLibraryButton:focus {
+  filter: none !important;
+  background: #fff !important;
+  color: #000 !important;
+  height: 3.3em;
+  transform: scale(1.0);
+  font-weight: 700;
 }
 
 /*Style backdrop*/
@@ -2629,10 +2648,6 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 		transition: 0s !important;
 		width: auto;
 		color: #fff;
-	}
-
-	[dir="ltr"] .pageTitle {
-		display: none;
 	}
 
 	#moviesTab .listItem {
