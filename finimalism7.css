@@ -1784,7 +1784,7 @@ progress::-webkit-progress-value {
   background: #fff !important;
   color: #000 !important;
   height: 3.3em;
-  transform: scale(1.0);
+  transform: revert;
   font-weight: 700;
 }
 
