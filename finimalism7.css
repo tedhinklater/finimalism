@@ -118,7 +118,19 @@ h2 {
 }
 
 .textActionButton {
-    font-size: 11pt
+  font-size: 11pt;
+  transition: color 0.3s, font-weight 0.3s;
+}
+
+.textActionButton:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #15afe6;
+  font-weight: 700;
+}
+
+.cardText-secondary, .fieldDescription, .guide-programNameCaret, .listItem .secondary, .nowPlayingBarSecondaryText, .programSecondaryTitle, .secondaryText {
+  color: rgba(255, 255, 255, 0.75);
 }
 
 /* Movies / Shows gallery titles */
@@ -1269,9 +1281,9 @@ button-flat:hover {
 .raised:hover, 
 .fab:hover,
 a[data-role="button"]:hover {
-  background: linear-gradient(90deg, rgb(40.392% 6.275% 50.98%) 0%, rgb(40.023% 6.794% 51.27%) 6.25%, rgb(38.929% 8.334% 52.13%) 12.5%, rgb(37.154% 10.835% 53.525%) 18.75%, rgb(34.764% 14.2% 55.403%) 25%, rgb(31.852% 18.3% 57.69%) 31.25%, rgb(28.53% 22.978% 60.301%) 37.5%, rgb(24.925% 28.054% 63.133%) 43.75%, rgb(21.176% 33.333% 66.078%) 50%, rgb(17.428% 38.612% 69.024%) 56.25%, rgb(13.823% 43.688% 71.856%) 62.5%, rgb(10.501% 48.366% 74.466%) 68.75%, rgb(7.589% 52.467% 76.754%) 75%, rgb(5.199% 55.832% 78.632%) 81.25%, rgb(3.423% 58.332% 80.027%) 87.5%, rgb(2.33% 59.872% 80.886%) 93.75%, rgb(1.961% 60.392% 81.176%) 100% ) !important;
-  color: #fff !important;
-  font-weight: 800;
+	background: linear-gradient(90deg, rgb(40.392% 6.275% 50.98%) 0%, rgb(40.023% 6.794% 51.27%) 6.25%, rgb(38.929% 8.334% 52.13%) 12.5%, rgb(37.154% 10.835% 53.525%) 18.75%, rgb(34.764% 14.2% 55.403%) 25%, rgb(31.852% 18.3% 57.69%) 31.25%, rgb(28.53% 22.978% 60.301%) 37.5%, rgb(24.925% 28.054% 63.133%) 43.75%, rgb(21.176% 33.333% 66.078%) 50%, rgb(17.428% 38.612% 69.024%) 56.25%, rgb(13.823% 43.688% 71.856%) 62.5%, rgb(10.501% 48.366% 74.466%) 68.75%, rgb(7.589% 52.467% 76.754%) 75%, rgb(5.199% 55.832% 78.632%) 81.25%, rgb(3.423% 58.332% 80.027%) 87.5%, rgb(2.33% 59.872% 80.886%) 93.75%, rgb(1.961% 60.392% 81.176%) 100% ) !important;
+	color: #fff !important;
+	font-weight: 800;
 }
 
 .subtitleappearance-preview {
@@ -1724,6 +1736,7 @@ progress::-webkit-progress-value {
 
 .cardOverlayButton {
   position: relative;
+  color: #fff;
 }
 
 
@@ -2577,4 +2590,119 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 .layout-mobile .itemMiscInfo, .layout-mobile .itemName, .layout-mobile .mainDetailButtons, .layout-mobile .parentName {
   justify-content: center;
   text-align: center;
+}
+
+button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.itemAction.paper-icon-button-light.cardOverlayFab-primary[data-action="resume"] {
+  background-color: rgba(0, 0, 0, 0.7);
+  font-size: 130%;
+  height: 3em;
+  left: 50%;
+  margin-left: -1.5em;
+  margin-top: -1.5em;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  width: 3em;
+}
+
+.first-imageEditor-buttons, .imageEditor-buttons {
+  margin-top: 0em;
+  margin-bottom: 0em;
+}
+
+.headerTabs.sectionTabs .tabs-viewmenubar.emby-tabs.focusable.scrollX .emby-tab-button.emby-button.emby-tab-button-active {
+	background: #fff;
+	color: #000 !important;
+	border-radius: 2em;
+	height: 2em;
+	width: auto;
+	transform: translateY(-11%);
+        transition: 0s;
+}
+
+.headerTabs.sectionTabs .tabs-viewmenubar.emby-tabs.focusable.scrollX .emby-tab-button.emby-button.emby-tab-button-active .emby-button-foreground {
+	transform: translateY(-33%);
+}
+
+.headerTabs .emby-tab-button {
+    transition: 0s !important;
+	width: auto;
+	color: #fff;
+}
+
+[dir="ltr"] .pageTitle {
+	display: none;
+}
+
+#moviesTab .listItem {
+	font-size: 1.15em;
+}
+
+#moviesTab .listItemBody.itemAction {
+	max-width: 60vw;
+}
+
+#moviesTab .secondary.listItemMediaInfo {
+	width: 13vw;
+}
+
+#moviesTab .secondary.listItemMediaInfo .mediaInfoItem {
+	transform: translateX(-50%);
+	min-width: 4vw;
+}
+
+#moviesTab .secondary.listItemMediaInfo .starRatingContainer.mediaInfoItem {
+	transform: translateX(-50%);
+	min-width: 4vw;
+	margin-right: 2vw;
+}
+
+#moviesTab .secondary.listItemMediaInfo .mediaInfoItem.mediaInfoText.closedCaptionMediaInfoText {
+	transform: translateX(-50%);
+	min-width: 4vw;
+	justify-content: center;
+}
+
+#moviesTab .listViewUserDataButtons {
+	width: 13vw;
+	justify-content: space-around;
+}
+
+#seriesTab .listItem {
+	font-size: 1.15em;
+}
+
+#seriesTab .listItemBody.itemAction {
+	max-width: 60vw;
+}
+
+#seriesTab .secondary.listItemMediaInfo {
+	width: 3vw;
+}
+
+#seriesTab .secondary.listItemMediaInfo .mediaInfoItem {
+	transform: translateX(-50%);
+	min-width: 4vw;
+}
+
+#seriesTab .secondary.listItemMediaInfo .starRatingContainer.mediaInfoItem {
+	transform: translateX(-50%);
+	min-width: 4vw;
+	margin-right: 2vw;
+}
+
+#seriesTab .secondary.listItemMediaInfo .mediaInfoItem.mediaInfoText.closedCaptionMediaInfoText {
+	transform: translateX(-50%);
+	min-width: 4vw;
+	justify-content: center;
+}
+
+#seriesTab .listViewUserDataButtons {
+	width: 13vw;
+	justify-content: space-around;
+}
+
+
+#genresTab .portraitCard, .squareCard {
+    width: 11%;
 }
