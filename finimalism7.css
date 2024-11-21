@@ -626,6 +626,11 @@ progress::-webkit-progress-value {
   color: rgba(var(--accent));
 }
 
+.first-imageEditor-buttons, .imageEditor-buttons {
+  margin-top: 0em;
+  margin-bottom: 0em;
+}
+
 .mdl-spinner__layer-1 {
   border-color: rgba(var(--accent));
 }
