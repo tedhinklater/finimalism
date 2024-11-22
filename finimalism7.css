@@ -2775,5 +2775,5 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 }
 
 .countIndicator.indicator {
-  transition: opacity 0.1s ease;
+  transition: opacity 0.3s ease;
 }
