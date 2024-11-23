@@ -1868,8 +1868,10 @@ progress::-webkit-progress-value {
 .itemsContainer.padded-left {
     flex: 1;
     display: flex; 
-    justify-content: center;
+}
 
+.layout-desktop #homeTab .section0 .verticalSection.verticalSection-extrabottompadding .itemsContainer.padded-left.padded-right.vertical-wrap.focuscontainer-x {
+	justify-content: center;
 }
 
 .sectionTitle.sectionTitle-cards {
