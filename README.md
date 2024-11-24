@@ -31,9 +31,4 @@ Everything is just an alteration of the amazing work already put into [Ultrachro
 ![Screenshot 2024-11-21 023201](https://github.com/user-attachments/assets/25645843-f237-474a-8117-ec15c85dc335)
 ![Screenshot 2024-11-09 201453](https://github.com/user-attachments/assets/4315df5d-dc4e-4571-8d47-a5257095e5c6)
 
-add this to your import lines
-```css
-@import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/episode%20grid.css");
-```
-
 <a href="https://github.com/tedhinklater/finality"><img src="https://i.imgur.com/54wZsvH.png" alt="Finality" width="400"/></a> <a href="https://github.com/tedhinklater/Jellypane"><img src="https://i.imgur.com/RHFcIA9.png" alt="Jellypane" width="400"/></a>
