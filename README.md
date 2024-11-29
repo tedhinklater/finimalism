@@ -1,7 +1,7 @@
 # finimalism
 Also: Turn it up to 11 with the new ![Featured Content Bar](https://github.com/tedhinklater/Jellyfin-Featured-Content-Bar) 
-![fcb](https://github.com/user-attachments/assets/2246d51f-199a-41e6-a119-bbec2e162c9f)
 
+![fcb](https://github.com/user-attachments/assets/85c4268a-c945-4abd-9950-6de9b6072871)
 
 ![mockup](https://i.imgur.com/fnEPSIc.jpeg)
 
