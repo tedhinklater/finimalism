@@ -1583,11 +1583,11 @@ progress::-webkit-progress-value {
 }
 
 .layout-mobile .overflowPortraitCard {
-	width: 12%;
+	width: 12.88em;
 }
 
 .layout-mobile .overflowSquareCard {
-    width: 12%;
+    width: 12.88em;
 }
 
 /* Larger screens */
