@@ -198,7 +198,7 @@ span.homeLibraryText {
 
 /* Apply progress bar gradient */
 .itemProgressBarForeground {
-    background: linear-gradient(90deg, rgb(11, 1, 15) 0%, rgb(95, 5, 125) 35%, rgb(63, 120, 209) 66%, rgb(10, 170, 227) 100%);}
+    background: linear-gradient(90deg, rgb(1, 9, 40) 0%, rgb(36, 75, 147) 45%, rgb(23, 125, 255) 85%, rgb(24, 170, 222) 100%);}
 
 /*Raise detailPage detailRibbon */
 
@@ -2137,7 +2137,7 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 
 /* Video Playback Progress Bar */
 .mdl-slider-background-lower {
-    background: linear-gradient(90deg, rgb(11, 1, 15) 0%, rgb(95, 5, 125) 35%, rgb(63, 120, 209) 66%, rgb(10, 170, 227) 100%);
+    background: linear-gradient(90deg, rgb(1, 9, 40) 0%, rgb(36, 75, 147) 45%, rgb(23, 125, 255) 85%, rgb(24, 170, 222) 100%);
 }
 
 .mdl-slider-background-upper {
