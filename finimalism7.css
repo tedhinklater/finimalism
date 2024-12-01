@@ -182,7 +182,7 @@ p.overview.detail-clamp-text {
 /* Font for the Movies, TV and Live TV buttons */
 span.homeLibraryText {
     font-family: "Nunito", sans-serif;
-    font-size: 12pt;
+    font-size: 1.2em;
 	transform: translateY(5%);
 }
 
@@ -1798,7 +1798,7 @@ progress::-webkit-progress-value {
 
 .layout-desktop .homeLibraryButton {
 	font-weight: 700;
-	border-radius: 5em !important;
+	border-radius: 0.5em !important;
 }
 
 .layout-desktop .homeLibraryButton:hover, .layout-desktop .homeLibraryButton:focus {
@@ -1893,7 +1893,7 @@ progress::-webkit-progress-value {
 }
 
 .layout-desktop #homeTab .section0 .verticalSection.verticalSection-extrabottompadding .itemsContainer.padded-left.padded-right.vertical-wrap.focuscontainer-x {
-	justify-content: center;
+	justify-content: space-evenly;
 }
 
 .sectionTitle.sectionTitle-cards {
