@@ -117,8 +117,12 @@ h2 {
     font-size: 12pt !important;
 }
 
+.cardScalable {
+	margin-bottom: 0.2em;
+}
+
 .textActionButton {
-  font-size: 11pt;
+  font-size: 1.1em;
   transition: color 0.3s, font-weight 0.3s;
 }
 
@@ -545,19 +549,19 @@ progress {
 }
 
 .defaultCardBackground1 {
-	background-color: #51347929;
+	background-color: #3d3479ba;
 }
 .defaultCardBackground2 {
-	background-color: #343f7929;
+	background-color: #352b78ba;
 }
 .defaultCardBackground3 {
-	background-color: #28203329;
+	background-color: #2d2176ba;
 }
 .defaultCardBackground4 {
-	background-color: #131c4d29;
+	background-color: #352c67ba;
 }
 .defaultCardBackground5 {
-	background-color: #260c4429;
+	background-color: #2c1f78ba;
 }
 
 .raised:hover, 
@@ -1509,12 +1513,13 @@ progress::-webkit-progress-value {
 
 .layout-desktop .sectionTitle {
     margin-left: 0em !important;
-	margin-top: 0.5em !important;
+	margin-top: 1em !important;
 	margin-bottom: -0.3em !important;
+	font-weight: 700;
 }
 
 .sectionTitleTextButton > .material-icons {
-    padding-top: 0.6em;
+    margin-top: 0.7em;
 }
 .layout-mobile .sectionTitleTextButton > .material-icons {
     padding-top: 0.4em;
@@ -1630,10 +1635,11 @@ progress::-webkit-progress-value {
 .cardText {
   overflow: hidden;
   padding: 0;
-  padding-top: 0.1em;
+  padding-top: 0.2em;
   text-overflow: ellipsis;
-  white-space: nowrap;
+  white-space: normal;
   margin-left: 0em;
+  font-weight: 600;
 }
 
 @media (min-width: 120em) {
