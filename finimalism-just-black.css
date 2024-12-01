@@ -28,55 +28,55 @@
 }
 
 .sectionTitleContainer.sectionTitleContainer-cards.padded-left::before {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background: url(https://i.imgur.com/gpe0jJc.jpeg) center top no-repeat #030322;
-    background-size: cover;
-    opacity: 0.25;
-    z-index: -1;
-    background-attachment: fixed;
+	content: '';
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background: url(https://i.imgur.com/gpe0jJc.jpeg) center top no-repeat #030322;
+	background-size: cover;
+	opacity: 0.25;
+	z-index: -1;
+	background-attachment: fixed;
 }
 
 /*Apply bg to detail Ribbon */
 .detailPagePrimaryContainer {
-    position: relative;
-    z-index: 2;
+	position: relative;
+	z-index: 2;
 }
 
 .detailPagePrimaryContainer::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url(https://i.imgur.com/gpe0jJc.jpeg) center top no-repeat #030322;
-    background-size: cover;
-    opacity: 0.8;
-    z-index: -1;
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url(https://i.imgur.com/gpe0jJc.jpeg) center top no-repeat #030322;
+	background-size: cover;
+	opacity: 0.8;
+	z-index: -1;
 }
 
 /* Apply bg to detailPage content */
 .detailPageSecondaryContainer {
-    position: relative;
-    z-index: 1;
+	position: relative;
+	z-index: 1;
 }
 
 .detailPageSecondaryContainer::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url(https://i.imgur.com/gpe0jJc.jpeg) center top no-repeat #030322;
-    background-size: cover;
-    opacity: 0.9;
-    z-index: -1;
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url(https://i.imgur.com/gpe0jJc.jpeg) center top no-repeat #030322;
+	background-size: cover;
+	opacity: 0.9;
+	z-index: -1;
 }
 
 /*Glow accent on hover*/
@@ -86,18 +86,18 @@
 }
 
 .paper-icon-button-light:hover, .raised.homeLibraryButton:hover, .button-flat:hover, .emby-tab-button:hover, .selectLabelFocused, .inputLabelFocused, .textareaLabelFocused, .buttonActive, .button-link {
-  color: rgb(255, 255, 255) !important;
+	color: rgb(0, 0, 0) !important;
 }
 
 .cardOverlayContainer:hover, .dialog, .toast, .raised.homeLibraryButton:hover {
-  box-shadow: 0px 0px 5px rgb(255, 255, 255);
-  border: solid 1px rgba(var(--accent),0);
+	box-shadow: 0px 0px 5px rgb(255, 255, 255);
+	border: solid 1px rgba(var(--accent),0);
 }
 
 .innerCardFooter, .countIndicator, .playedIndicator {
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.95) 100%);
-  box-shadow: none;
-  color: rgb(--accent);
+	background: linear-gradient(to right, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.95) 100%);
+	box-shadow: none;
+	color: rgb(--accent);
 }
 
 /*Login background*/
