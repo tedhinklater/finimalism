@@ -1582,11 +1582,11 @@ progress::-webkit-progress-value {
 }
 
 .layout-desktop .overflowPortraitCard {
-    width: 12%;
+    width: 13.9em;
 }
 
 .layout-desktop .overflowSquareCard {
-    width: 12%;
+    width: 13.9em;
 }
 
 .layout-mobile .overflowPortraitCard {
@@ -2183,7 +2183,7 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 
 /* Adjust alignment for the cards within the Continue Watching section */
 .layout-desktop .homePage .section1.verticalSection .itemsContainer .card.overflowBackdropCard {
-    width: 24%;
+    width: 30.7em;
     margin-top: 0em;
     font-size: 90% !important;
 }
@@ -2454,12 +2454,12 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 
 
 .layout-desktop .overflowBackdropCard {
-	width: 20vw;
+	width: 30.7em;
 	font-size: 90% !important;
 }
 
 .layout-desktop .verticalSection.section2 .card.overflowBackdropCard {
-	width: 24% !important;
+	width: 30.7em !important;
 	font-size: 90% !important;
 }
 
