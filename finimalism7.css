@@ -1828,11 +1828,11 @@ progress::-webkit-progress-value {
 }
 
 #childrenContent .childrenItemsContainer.itemsContainer.padded-right.vertical-list .listItem.listItem-largeImage.listItem-withContentWrapper .listItem-content .listItemImage.listItemImage-large.itemAction.lazy.non-blurhashable.lazy-image-fadein-fast {
-	height: 11vw;
+	height: 13.2em;
 }
 
 #childrenContent .childrenItemsContainer.itemsContainer.padded-right.vertical-list .listItem.listItem-largeImage.listItem-withContentWrapper .listItem-content {
-	height: 11vw;
+	height: 13.2em;
 	min-height: 10em;
 }
 
@@ -2183,7 +2183,7 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 
 /* Adjust alignment for the cards within the Continue Watching section */
 .layout-desktop .homePage .section1.verticalSection .itemsContainer .card.overflowBackdropCard {
-    width: 30.7em;
+    width: 30.85em;
     margin-top: 0em;
     font-size: 90% !important;
 }
@@ -2454,12 +2454,12 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 
 
 .layout-desktop .overflowBackdropCard {
-	width: 30.7em;
+	width: 30.85em;
 	font-size: 90% !important;
 }
 
 .layout-desktop .verticalSection.section2 .card.overflowBackdropCard {
-	width: 30.7em !important;
+	width: 30.85em !important;
 	font-size: 90% !important;
 }
 
@@ -2803,4 +2803,22 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 
 .countIndicator.indicator {
   transition: opacity 0.3s ease;
+}
+
+[dir="ltr"] .emby-scrollbuttons {
+  right: 4em;
+}
+
+.emby-scroller-container {
+  position: relative;
+  max-height: 28.35em;
+  overflow: hidden;
+}
+
+.listItemImage {
+	cursor: pointer;
+}
+
+.listItemImage:hover {
+  box-shadow: 0px 0px 5px rgb(var(--accent));
 }
