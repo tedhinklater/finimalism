@@ -1665,8 +1665,8 @@ progress::-webkit-progress-value {
   #moviesPage,
   #tvRecommendedPage,
   #musicRecommendedPage {
-    margin-top: 68px;
-    padding-top: 0px !important;
+    margin-top: 3.7em;
+    padding-top: 0em !important;
     overflow-y: scroll;
   }
 }
@@ -2821,4 +2821,13 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 
 .listItemImage:hover {
   box-shadow: 0px 0px 5px rgb(var(--accent));
+}
+
+.skinHeader {
+	pointer-events: none;
+}
+
+.headerButton,
+.headerTabs.sectionTabs {
+	pointer-events: all;
 }
