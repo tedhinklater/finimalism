@@ -2831,3 +2831,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 .headerTabs.sectionTabs {
 	pointer-events: all;
 }
+
+.collectionItems {
+    min-height: calc(18em + 8.6vh);
+}
