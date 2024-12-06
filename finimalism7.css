@@ -1792,7 +1792,7 @@ progress::-webkit-progress-value {
     -webkit-filter: none !important;
     box-shadow: 0 0 5px 0, 255, 222;
     filter: none !important;
-    transform: scale(1.05);
+    transform: scale(1.02);
     transition: transform 1s ease;
 }
 
