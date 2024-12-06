@@ -2811,7 +2811,6 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 
 .layout-desktop #homeTab .emby-scroller-container {
   position: relative;
-  max-height: 28.35em;
   overflow: hidden;
 }
 
