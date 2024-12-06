@@ -1815,7 +1815,7 @@ progress::-webkit-progress-value {
 }
 
 /*Style backdrop*/
-.backdropImage {filter: blur(0px) saturate(110%) contrast(115%) brightness(90%);}
+.backdropImage {filter: blur(0px) saturate(100%) contrast(110%) brightness(100%);}
 
 
 /* Center the listItem content */
@@ -2238,6 +2238,7 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 .layout-mobile .sectionTitle.sectionTitle-cards.padded-left + .itemsContainer {
     margin-bottom: 0em;
     padding-top: 0.5em;
+	justify-content: space-between;
 }
 
 /* Position release year, ratings */
@@ -2354,7 +2355,8 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
     font-size: 73%;
 	margin-top: 2em;
 	width: 100vw;
-    justify-content: space-around;
+    justify-content: space-evenly;
+	margin-left: -1em;
 	}
 }
 
