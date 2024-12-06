@@ -1498,7 +1498,7 @@ progress::-webkit-progress-value {
 
 /*Fix weird shevron off centering*/
 .layout-mobile :not(.sectionTitleContainer-cards)>.sectionTitle-cards {
- padding-top: 0em;
+ padding-top: 1em;
 }
 
 .sectionTitleTextButton > .material-icons {
