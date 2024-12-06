@@ -1235,9 +1235,7 @@ div[data-role="controlgroup"] a[data-role="button"] {
 }
 .itemsContainer > .card > .cardBox {
     margin-left: 0.6em !important;
-}
-.itemsContainer > .card > .cardBox {
-    margin-right: 0.8em;
+    margin-right: 0.2em !important;
 }
 
 /*ANIMATIONS*/
@@ -1580,11 +1578,11 @@ progress::-webkit-progress-value {
 }
 
 .layout-desktop .overflowPortraitCard {
-    width: 13.9em;
+    width: 14.82em;
 }
 
 .layout-desktop .overflowSquareCard {
-    width: 13.9em;
+    width: 14.82em;
 }
 
 .layout-mobile .overflowPortraitCard {
@@ -1605,7 +1603,7 @@ progress::-webkit-progress-value {
 /* Extra-large screens */
 @media all and (min-width: 64em) {
   #castContent .card.overflowPortraitCard {
-        width: 10.4vw !important;
+        width: 15em !important;
   }
 }
 
@@ -2032,7 +2030,7 @@ progress::-webkit-progress-value {
 /* Extra-large screens */
 @media all and (min-width: 64em) {
     .verticalSection.detailVerticalSection .overflowPortraitCard {
-        width: 10.4vw !important;
+        width: 15em !important;
     }
 }
 
@@ -2179,7 +2177,7 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 
 /* Adjust alignment for the cards within the Continue Watching section */
 .layout-desktop .homePage .section1.verticalSection .itemsContainer .card.overflowBackdropCard {
-    width: 30.85em;
+    width: 32.95em;
     margin-top: 0em;
     font-size: 90% !important;
 }
@@ -2452,12 +2450,13 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 
 
 .layout-desktop .overflowBackdropCard {
-	width: 30.85em;
+	width: 32.85em;
 	font-size: 90% !important;
+	filter: drop-shadow(4px 5px 2px rgba(2, 2, 2, 0.5));
 }
 
 .layout-desktop .verticalSection.section2 .card.overflowBackdropCard {
-	width: 30.85em !important;
+	width: 32.95em !important;
 	font-size: 90% !important;
 }
 
@@ -2804,7 +2803,17 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 }
 
 [dir="ltr"] .emby-scrollbuttons {
-  right: 4em;
+  right: 0em;
+  padding-right: 0em;
+}
+
+#castCollapsible .emby-scrollbuttons.padded-right,
+ #similarCollapsible .emby-scrollbuttons.padded-right,
+ #guestCastCollapsible .emby-scrollbuttons.padded-right, 
+ #specialsCollapsible .emby-scrollbuttons.padded-right, 
+ #musicVideosCollapsible .emby-scrollbuttons.padded-right,
+ #scenesCollapsible .emby-scrollbuttons.padded-right {
+	padding-top: 2em !important;
 }
 
 .layout-desktop #homeTab .emby-scroller-container {
@@ -2852,7 +2861,57 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 		margin-bottom: 0em;
 		padding-top: 0.5em;
 		display: grid;
-		grid-template-columns: repeat(2, 1fr); /* Define a two-column layout */
-		grid-gap: 1em; /* Add spacing between the grid items */
+		grid-template-columns: repeat(2, 1fr); /* 2 column layout */
+		grid-gap: 1em;
 	}
+}
+
+.layout-desktop #homeTab .emby-scrollbuttons.padded-right {
+  right: 0em;
+  padding-right: 0em;
+  width: 100vw;
+}
+
+#homeTab button[data-direction="left"] {
+	right: 5.8em;
+	position: absolute;
+	top: -0.45em;
+	z-index: 50;
+	font-size: 2em;
+	color: #fff;
+	height: 3em;
+	border-radius: 0.1em;
+	cursor: pointer;
+	opacity: 0.1;
+	margin: 0;
+	width: 2em;
+	padding: 0;
+	padding-top: 0.5em;
+}
+
+#homeTab button[data-direction="right"] {
+	right: 0em;
+	position: absolute;
+	top: -0.45em;
+	z-index: 50;
+	font-size: 2em;
+	color: #fff;
+	height: 3em;
+	border-radius: 0.1em;
+	cursor: pointer;
+	opacity: 0.1;
+	margin: 0;
+	width: 2em;
+	padding: 0;
+	padding-top: 0.5em;
+}
+
+#homeTab button[data-direction="left"]:hover {
+	color: #fff !important;
+	opacity: 1;
+}
+
+#homeTab button[data-direction="right"]:hover {
+	color: #fff !important;
+	opacity: 1;
 }
