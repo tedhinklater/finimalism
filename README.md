@@ -4,7 +4,7 @@ Also: Turn it up to 11 with the new ![Featured Content Bar](https://github.com/t
 
 ![mockup](https://i.imgur.com/fnEPSIc.jpeg)
 
-Step 1: Import to your CSS with
+Import to your CSS with
 
 ```css
 @import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/finimalism7.css");
@@ -19,8 +19,6 @@ or if you don't want all the lovely colours...
 ```
 
 ![css](https://i.imgur.com/LHPUxqk.png)
-
-Step 2: In Jellyfin Client / Web UI Settings, under "Display", the Theme is set to Dark and Backdrops are enabled.
 
 Everything is just an alteration of the amazing work already put into [Ultrachromic by CTalvio](https://github.com/CTalvio/Ultrachromic). Updated for jellyfin server 10.10.X
 
