@@ -50,7 +50,8 @@ html {
     height: 100vh;
     background: url(https://i.imgur.com/dGBenC7.jpeg) center top no-repeat #030322;
     background-size: cover;
-    opacity: 0.85;
+    opacity: 0.925;
+	filter: brightness(90%);
     z-index: -1;
     background-attachment: fixed;
 }
@@ -72,7 +73,7 @@ html {
     background-size: cover;
     opacity: 0.85;
     z-index: -1;
-	filter: saturate(45%) brightness(250%);
+	filter: saturate(65%) brightness(105%);
 }
 
 /* Apply bg to detailPage content */
@@ -90,8 +91,9 @@ html {
     height: 100%;
     background: url(https://i.imgur.com/dGBenC7.jpeg) center top no-repeat #030322;
     background-size: cover;
-    opacity: 0.85;
+    opacity: 0.925;
     z-index: -1;
+	filter: saturate(75%) brightness(95%) contrast(100%);
 }
 
 /* Resize navbar */
@@ -1189,7 +1191,8 @@ div[data-role="controlgroup"] a[data-role="button"] {
     margin-right: 0.8em;
 }
 .raised.homeLibraryButton {
-    background: rgba(0, 0, 0, 0.3) !important;
+    background: rgba(0, 0, 0, 0.35) !important;
+	filter: drop-shadow(0 0 1px rgba(2, 2, 2, 0.75));
 }
 .raised.homeLibraryButton:hover {
     background: rgba(0, 0, 0, 0.5) !important;
@@ -1529,6 +1532,7 @@ progress::-webkit-progress-value {
 
 .itemsContainer.padded-left.padded-right.padded-right-withalphapicker.vertical-wrap {
 	padding-left: 3%;
+	margin-right: 3%;
 }
 
 #homeTab .emby-scroller {
@@ -1802,7 +1806,7 @@ progress::-webkit-progress-value {
 }
 
 .layout-desktop .homeLibraryButton:hover, .layout-desktop .homeLibraryButton:focus {
-  filter: none !important;
+  filter: drop-shadow(0 0 1px rgba(2, 2, 2, 0.75));
   background: #fff !important;
   color: #000 !important;
   height: 3.3em;
