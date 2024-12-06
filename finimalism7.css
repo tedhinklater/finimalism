@@ -1510,12 +1510,6 @@ progress::-webkit-progress-value {
  }
  
 .sectionTitle {
-	margin-left: .4em !important;
-	margin-top: 0.5em !important;
-	margin-bottom: -0.3em !important;
-}
-
-.layout-desktop .sectionTitle {
     margin-left: 0em !important;
 	margin-top: 0.5em !important;
 	margin-bottom: 0.5em !important;
@@ -1886,8 +1880,6 @@ progress::-webkit-progress-value {
 }
 
 .layout-mobile .sectionTitle.sectionTitle-cards {
-    margin-left: 1em !important;
-    margin-bottom: 0em !important;
     font-size: 110%;
 }
 
@@ -2238,7 +2230,7 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 .layout-mobile .sectionTitle.sectionTitle-cards.padded-left + .itemsContainer {
     margin-bottom: 0em;
     padding-top: 0.5em;
-	justify-content: space-between;
+	display: grid;
 }
 
 /* Position release year, ratings */
@@ -2354,7 +2346,7 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
     padding-left: 0em;
     font-size: 73%;
 	margin-top: 2em;
-	width: 100vw;
+	width: 95vw;
     justify-content: space-evenly;
 	margin-left: -1em;
 	}
@@ -2474,7 +2466,7 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 }
 
 .layout-mobile .verticalSection-extrabottompadding {
-	margin-bottom: 1em;
+	margin-bottom: 2em;
 	margin-top: 0em;
 }
 
@@ -2839,4 +2831,28 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 
 .collectionItems {
     min-height: calc(18em + 8.6vh);
+}
+
+.layout-mobile .raised.homeLibraryButton {
+	min-width: unset !important;
+	max-width: unset !important;
+	width: unset !important;
+	margin: 0 !important;
+	justify-content: center;
+	border-radius: 0em !important;
+	border: 1px solid #1d102e94 !important;
+}
+
+@media (orientation: landscape) {
+	.layout-mobile .raised.homeLibraryButton {
+		max-width: 47vw !important;
+	}
+
+	.layout-mobile .sectionTitle.sectionTitle-cards.padded-left + .itemsContainer {
+		margin-bottom: 0em;
+		padding-top: 0.5em;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr); /* Define a two-column layout */
+		grid-gap: 1em; /* Add spacing between the grid items */
+	}
 }
