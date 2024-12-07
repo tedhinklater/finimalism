@@ -1527,6 +1527,11 @@ progress::-webkit-progress-value {
 	margin-right: 3%;
 }
 
+.layout-desktop .itemsContainer.padded-left.padded-right.padded-right-withalphapicker.vertical-wrap {
+	padding-left: 3%;
+	margin-right: unset;
+}
+
 #homeTab .emby-scroller {
 	padding-left: 1em;
 }
@@ -1661,7 +1666,7 @@ progress::-webkit-progress-value {
   #moviesPage,
   #tvRecommendedPage,
   #musicRecommendedPage {
-    margin-top: 3.7em;
+    margin-top: 4.5em;
     padding-top: 0em !important;
     overflow-y: scroll;
   }
