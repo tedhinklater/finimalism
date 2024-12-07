@@ -209,7 +209,7 @@ span.homeLibraryText {
 /*Raise detailPage detailRibbon */
 
 .itemBackdrop {
-  height: 31vh !important;
+  height: 25.5em !important;
   display: inherit;
 }
 
@@ -1025,8 +1025,8 @@ div[data-role="controlgroup"] a[data-role="button"] {
     width: 64vw;
     max-height: 21em;
     height: 26vw;
-    margin-top: -23.95em;
-    margin-bottom: 3em;
+    margin-top: -28.95em;
+    margin-bottom: 8em;
   }
 }
 
