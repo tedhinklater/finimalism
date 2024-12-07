@@ -22,8 +22,9 @@ or if you don't want all the lovely colours...
 
 Everything is just an alteration of the amazing work already put into [Ultrachromic by CTalvio](https://github.com/CTalvio/Ultrachromic). Updated for jellyfin server 10.10.X
 
-![Screenshot 2024-12-06 193840](https://github.com/user-attachments/assets/55a9b670-214b-4d8d-ae89-14570eec4ed6)
-![Screenshot 2024-12-06 193849](https://github.com/user-attachments/assets/d19c091f-0819-40b6-9cfb-f00db741625b)
+![Screenshot 2024-12-07 001143](https://github.com/user-attachments/assets/bd9b0c46-540e-4a55-b4e4-f06b7d65c930)
+![Screenshot 2024-12-07 001222](https://github.com/user-attachments/assets/7dd94aac-c6c5-4c65-8353-8803abdf6231)
+![Screenshot 2024-12-07 001623](https://github.com/user-attachments/assets/8917504d-0120-4e7e-a241-5a886607bb70)
 ![Screenshot 2024-12-06 193903](https://github.com/user-attachments/assets/d119b3e1-efff-471d-8319-3931426ae001)
 ![Screenshot 2024-12-06 193917](https://github.com/user-attachments/assets/9ba127ae-3460-4816-a0f5-2414ae783eb4)
 ![Screenshot 2024-12-06 193934](https://github.com/user-attachments/assets/b300cb7d-08ac-4d6d-bfff-3db6a8f274cc)
