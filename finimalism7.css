@@ -2880,11 +2880,11 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 #homeTab button[data-direction="left"] {
 	right: 5.8em;
 	position: absolute;
-	top: -0.45em;
+	top: 0em;
 	z-index: 50;
 	font-size: 2em;
 	color: #fff;
-	height: 3em;
+	height: 2em;
 	border-radius: 0.1em;
 	cursor: pointer;
 	opacity: 0.1;
@@ -2897,11 +2897,11 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 #homeTab button[data-direction="right"] {
 	right: 0em;
 	position: absolute;
-	top: -0.45em;
+	top: 0em;
 	z-index: 50;
 	font-size: 2em;
 	color: #fff;
-	height: 3em;
+	height: 2em;
 	border-radius: 0.1em;
 	cursor: pointer;
 	opacity: 0.1;
@@ -2924,11 +2924,11 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 #itemDetailPage button[data-direction="left"] {
 	right: 5em;
 	position: absolute;
-	top: 0.5em;
+	top: 1em;
 	z-index: 50;
 	font-size: 2em;
 	color: #fff;
-	height: 3em;
+	height: 2em;
 	border-radius: 0.1em;
 	cursor: pointer;
 	opacity: 0.1;
@@ -2941,11 +2941,11 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 #itemDetailPage button[data-direction="right"] {
 	right: 0em;
 	position: absolute;
-	top: 0.5em;
+	top: 1em;
 	z-index: 50;
 	font-size: 2em;
 	color: #fff;
-	height: 3em;
+	height: 2em;
 	border-radius: 0.1em;
 	cursor: pointer;
 	opacity: 0.1;
