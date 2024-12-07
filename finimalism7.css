@@ -1026,8 +1026,12 @@ div[data-role="controlgroup"] a[data-role="button"] {
     max-height: 21em;
     height: 26vw;
     margin-top: -28.95em;
-    margin-bottom: 8em;
+    margin-bottom: 7.7em;
   }
+}
+
+.layout-desktop .skinHeader {
+	position: absolute;
 }
 
 @media (orientation: landscape) {
