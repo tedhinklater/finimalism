@@ -2920,3 +2920,47 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 	color: #fff !important;
 	opacity: 1;
 }
+
+#itemDetailPage button[data-direction="left"] {
+	right: 5em;
+	position: absolute;
+	top: 0.5em;
+	z-index: 50;
+	font-size: 2em;
+	color: #fff;
+	height: 3em;
+	border-radius: 0.1em;
+	cursor: pointer;
+	opacity: 0.1;
+	margin: 0;
+	width: 2em;
+	padding: 0;
+	padding-top: 0.5em;
+}
+
+#itemDetailPage button[data-direction="right"] {
+	right: 0em;
+	position: absolute;
+	top: 0.5em;
+	z-index: 50;
+	font-size: 2em;
+	color: #fff;
+	height: 3em;
+	border-radius: 0.1em;
+	cursor: pointer;
+	opacity: 0.1;
+	margin: 0;
+	width: 2em;
+	padding: 0;
+	padding-top: 0.5em;
+}
+
+#itemDetailPage button[data-direction="left"]:hover {
+	color: #fff !important;
+	opacity: 1;
+}
+
+#itemDetailPage button[data-direction="right"]:hover {
+	color: #fff !important;
+	opacity: 1;
+}
