@@ -1,0 +1,24 @@
+#homeTab .section0 .cardImageContainer::before {
+	content: attr(aria-label);
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 3em;
+	font-weight: bold;
+	color: white;
+	text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+	padding: 0.2em 0.5em;
+	border-radius: 0em;
+	z-index: 10;
+	width: 93%;
+	height: 6em;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	text-align: center;
+}
+
+.verticalSection.section0 .textActionButton {
+  display: none;
+}
