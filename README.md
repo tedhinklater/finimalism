@@ -32,10 +32,10 @@ Everything is just an alteration of the amazing work already put into [Ultrachro
 
 # Extras
 
-If you want to style your home library buttons and move the text into the card itself, add this to your import lines
+If you want to use your own My Media library card images and move the text into the card itself, add this to your import lines
 ```css
 @import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/libraryCardAriaText.css");
 ```
-![Screenshot 2024-12-08 213635](https://github.com/user-attachments/assets/13d44f54-a83d-4258-aaa4-09ed5907c38b)
+![Screenshot 2024-12-09 030732](https://github.com/user-attachments/assets/ea733699-2b21-4a58-90ab-9e767be94d56)
 
 <a href="https://github.com/tedhinklater/finality"><img src="https://i.imgur.com/54wZsvH.png" alt="Finality" width="400"/></a> <a href="https://github.com/tedhinklater/Jellypane"><img src="https://i.imgur.com/RHFcIA9.png" alt="Jellypane" width="400"/></a>
