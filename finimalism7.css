@@ -115,7 +115,8 @@ h2 {
 }
 
 /* Movies / Shows gallery titles */
-.layout-desktop .card {
+.layout-desktop .card,
+.layout-tv .card {
     font-size: 12pt !important;
 }
 
@@ -165,7 +166,8 @@ div.itemMiscInfo.itemMiscInfo-primary {
     font-size: 12pt;
 }
 
-.layout-desktop div.itemMiscInfo.itemMiscInfo-primary {
+.layout-desktop div.itemMiscInfo.itemMiscInfo-primary,
+.layout-tv div.itemMiscInfo.itemMiscInfo-primary {
     font-size: 12pt;
 }
 
@@ -213,13 +215,19 @@ span.homeLibraryText {
   display: inherit;
 }
 
-.layout-desktop .detailRibbon {
+.layout-desktop .detailRibbon,
+.layout-tv .detailRibbon {
   margin-top: 0;
   padding-top: 0em;
   padding-bottom: 0em;
 }
 
-.layout-desktop .detailImageContainer .card {
+.layout-tv .detailRibbon {
+	margin-top: -4em !important;
+}
+
+.layout-desktop .detailImageContainer .card,
+.layout-tv .detailImageContainer .card {
   top: 18vh;
 }
 
@@ -229,7 +237,8 @@ span.homeLibraryText {
 }
 
 
-.layout-desktop .itemName.infoText.parentNameLast {
+.layout-desktop .itemName.infoText.parentNameLast,
+.layout-tv .itemName.infoText.parentNameLast {
     display: block;
 }
 
@@ -308,7 +317,8 @@ fieldset {
 }
 
 /* detailRibbon transparency*/
-.layout-desktop .detailRibbon {
+.layout-desktop .detailRibbon,
+.layout-tv .detailRibbon {
   background: rgba(255,255,255,.1) !important;
   height: 6em;
 }
@@ -1015,7 +1025,8 @@ div[data-role="controlgroup"] a[data-role="button"] {
 }
 
 @media (orientation: landscape) {
-  .layout-desktop .detailLogo {
+  .layout-desktop .detailLogo,
+  .layout-tv .detailLogo {
     position: static;
     margin-left: 32.5%;
     margin-right: 10%;
@@ -1028,9 +1039,13 @@ div[data-role="controlgroup"] a[data-role="button"] {
     margin-top: -28.95em;
     margin-bottom: 7.7em;
   }
+  .layout-tv .detailLogo {
+	  margin-top: 8em;
+  }
 }
 
-.layout-desktop .skinHeader {
+.layout-desktop .skinHeader,
+.layout-tv .skinHeader {
 	position: absolute;
 }
 
@@ -1080,6 +1095,11 @@ div[data-role="controlgroup"] a[data-role="button"] {
 .layout-desktop .detailImageContainer .card {
     position: fixed !important;
     top: 10% !important;
+}
+
+.layout-tv .detailImageContainer .card {
+	position: fixed !important;
+	top: 50%;
 }
 
 @media (orientation: landscape) {
@@ -1216,7 +1236,8 @@ div[data-role="controlgroup"] a[data-role="button"] {
 .homeLibraryButton {
   width: auto !important;
 }
-.listItem:hover {
+.listItem:hover,
+.listItem:focus {
     transition: 0.2s;
     background: rgba(0, 0, 0, 0.4);
 }
@@ -1531,7 +1552,8 @@ progress::-webkit-progress-value {
 	margin-right: 3%;
 }
 
-.layout-desktop .itemsContainer.padded-left.padded-right.padded-right-withalphapicker.vertical-wrap {
+.layout-desktop .itemsContainer.padded-left.padded-right.padded-right-withalphapicker.vertical-wrap,
+.layout-tv .itemsContainer.padded-left.padded-right.padded-right-withalphapicker.vertical-wrap {
 	padding-left: 3%;
 	margin-right: unset;
 }
@@ -1586,11 +1608,13 @@ progress::-webkit-progress-value {
   padding-left: 1em;
 }
 
-.layout-desktop .overflowPortraitCard {
+.layout-desktop .overflowPortraitCard,
+.layout-tv .overflowPortraitCard {
     width: 14.82em;
 }
 
-.layout-desktop .overflowSquareCard {
+.layout-desktop .overflowSquareCard,
+.layout-tv .overflowSquareCard {
     width: 14.82em;
 }
 
@@ -1791,7 +1815,9 @@ progress::-webkit-progress-value {
 
 /*hover zoom*/
 .layout-desktop .homeLibraryButton:hover,
+.layout-tv .homeLibraryButton:hover,
 .layout-desktop .homeLibraryButton:focus,
+.layout-tv .homeLibraryButton:focus,
 .layout-desktop .card:hover,
 .layout-desktop .card:focus {
     -webkit-filter: none !important;
@@ -1801,12 +1827,16 @@ progress::-webkit-progress-value {
     transition: transform 1s ease;
 }
 
-.layout-desktop .homeLibraryButton {
+.layout-desktop .homeLibraryButton,
+.layout-tv .homeLibraryButton {
 	font-weight: 700;
 	border-radius: 0.5em !important;
 }
 
-.layout-desktop .homeLibraryButton:hover, .layout-desktop .homeLibraryButton:focus {
+.layout-desktop .homeLibraryButton:hover,
+.layout-tv .homeLibraryButton:hover,
+.layout-desktop .homeLibraryButton:focus,
+.layout-tv .homeLibraryButton:focus {
   filter: drop-shadow(0 0 1px rgba(2, 2, 2, 0.75));
   background: #fff !important;
   color: #000 !important;
@@ -1895,7 +1925,8 @@ progress::-webkit-progress-value {
     display: flex; 
 }
 
-.layout-desktop #homeTab .section0 .verticalSection.verticalSection-extrabottompadding .itemsContainer.padded-left.padded-right.vertical-wrap.focuscontainer-x {
+.layout-desktop #homeTab .section0 .verticalSection.verticalSection-extrabottompadding .itemsContainer.padded-left.padded-right.vertical-wrap.focuscontainer-x,
+.layout-tv #homeTab .section0 .verticalSection.verticalSection-extrabottompadding .itemsContainer.padded-left.padded-right.vertical-wrap.focuscontainer-x {
 	justify-content: space-evenly;
 }
 
@@ -1934,7 +1965,8 @@ progress::-webkit-progress-value {
 /* Index Page header */
 
 @media (min-width:45em) {
-.layout-desktop .headerTop {
+.layout-desktop .headerTop,
+.layout-tv .headerTop {
     padding:.8em .8em
   }
   .headerTabs {
@@ -1951,7 +1983,8 @@ progress::-webkit-progress-value {
 }
 
 @media (max-width:45em) {
-.layout-desktop .headerTop {
+.layout-desktop .headerTop,
+.layout-tv .headerTop {
     padding:.8em .8em
   }
   .headerTabs {
@@ -2154,7 +2187,8 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
   background: #92dcf499;
 }
 
-.layout-desktop div:not(.sectionTitleContainer-cards) > .sectionTitle-cards {
+.layout-desktop div:not(.sectionTitleContainer-cards) > .sectionTitle-cards,
+.layout-tv div:not(.sectionTitleContainer-cards) > .sectionTitle-cards {
   margin: 0;
   padding-bottom: 0.5em;
   padding-top: .5em;
@@ -2185,7 +2219,8 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 }
 
 /* Adjust alignment for the cards within the Continue Watching section */
-.layout-desktop .homePage .section1.verticalSection .itemsContainer .card.overflowBackdropCard {
+.layout-desktop .homePage .section1.verticalSection .itemsContainer .card.overflowBackdropCard,
+.layout-tv .homePage .section1.verticalSection .itemsContainer .card.overflowBackdropCard {
     width: 32.95em;
     margin-top: 0em;
     font-size: 90% !important;
@@ -2199,11 +2234,8 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
     }
 }
 
-.layout-desktop #childrenContent .childrenItemsContainer.itemsContainer > * {
-    scroll-snap-align: center; 
-}
-
-.layout-desktop .overflowBackdropCard {
+.layout-desktop .overflowBackdropCard,
+.layout-tv .overflowBackdropCard {
    width: 25em;
 }
 
@@ -2211,6 +2243,16 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 .verticalSection .card img {
     width: 100%;
     height: auto;
+}
+
+@media (min-width: 100em) {
+  .layout-tv .mainDetailButtons {
+    font-size: 108%;
+    margin: 1em 0 1.25em;
+    position: absolute;
+    right: 0em;
+    top: 1em;
+  }
 }
 
 .detailVerticalSection .nextUpItems {
@@ -2228,7 +2270,8 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 }
 
 /* Reduce space between My Media buttons and Continue Watching */
-.layout-desktop .sectionTitle.sectionTitle-cards.padded-left + .itemsContainer {
+.layout-desktop .sectionTitle.sectionTitle-cards.padded-left + .itemsContainer,
+.layout-tv .sectionTitle.sectionTitle-cards.padded-left + .itemsContainer {
     margin-bottom: 0em;
     padding-top: 0em;
 }
@@ -2241,7 +2284,8 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 }
 
 /* Position release year, ratings */
-.layout-desktop .mediaInfoItem {
+.layout-desktop .mediaInfoItem,
+.layout-tv .mediaInfoItem {
 	margin-top: 0.2em !important;
 }
 
@@ -2297,15 +2341,18 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 
 /* Reposition A-Z */
 
-.layout-desktop .alphaPickerButton-vertical {
+.layout-desktop .alphaPickerButton-vertical,
+.layout-tv .alphaPickerButton-vertical {
     width: 3vw;
 }
 
-.layout-desktop .alphaPickerButton {
+.layout-desktop .alphaPickerButton,
+.layout-tv .alphaPickerButton {
     padding: .2em .4em;
 }
 
-.layout-desktop .alphaPicker-fixed {
+.layout-desktop .alphaPicker-fixed,
+.layout-tv .alphaPicker-fixed {
     top: 17vh;
     top: max(env(safe-area-inset-top),17vh);
 
@@ -2414,57 +2461,15 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
     width: 18.15em !important; 
 }
 
-/* TV Mode */
-
-.layout-tv .noHeaderRight .headerRight, .noHomeButtonHeader .headerHomeButton {
-	display: inline-flex !important;
-}
-
-.layout-tv .paper-icon-button-light {
-	display: inline-flex !important;
-}
-
-.layout-tv .mainDrawer.hide.transition.touch-menu-la.drawer-open {
-	display: block !important;
-}
-
-.layout-tv .portraitCard {
-	width: 12.5%;
-}
-
-.layout-tv .detailPageWrapperContainer {
-	border-collapse: collapse;
-	border-spacing: 0;
-	margin-top: 27em;
-}
-
-.layout-tv .detailLogo {
-	position: static;
-	margin-left: 32.5%;
-	margin-right: 10%;
-	display: block;
-	-webkit-filter: drop-shadow(0 0 10px rgba(2, 2, 2, 0.75));
-	filter: drop-shadow(0 0 10px rgba(2, 2, 2, 0.75));
-	width: 64vw;
-	max-height: 21em;
-	height: 26vw;
-	margin-top: -23.95em;
-	margin-bottom: 3em;
-}
-
-.layout-tv .itemName.infoText.parentNameLast {
-	display: block;
-	font-size: 1.3em;
-}
-
-
-.layout-desktop .overflowBackdropCard {
+.layout-desktop .overflowBackdropCard,
+.layout-tv .overflowBackdropCard {
 	width: 32.85em;
 	font-size: 90% !important;
 	filter: drop-shadow(4px 5px 2px rgba(2, 2, 2, 0.5));
 }
 
-.layout-desktop .verticalSection.section2 .card.overflowBackdropCard {
+.layout-desktop .verticalSection.section2 .card.overflowBackdropCard,
+.layout-tv .verticalSection.section2 .card.overflowBackdropCard {
 	width: 32.95em !important;
 	font-size: 90% !important;
 }
@@ -2478,7 +2483,8 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 	margin-top: 0em;
 }
 
-.layout-desktop .verticalSection-extrabottompadding {
+.layout-desktop .verticalSection-extrabottompadding,
+.layout-tv .verticalSection-extrabottompadding {
 	margin-bottom: 1em !important;
 }
 
@@ -2494,7 +2500,8 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 	opacity: 0;
 }
 
-.layout-desktop #childrenContent .listItemBodyText.secondary.listItem-overview.listItemBodyText {
+.layout-desktop #childrenContent .listItemBodyText.secondary.listItem-overview.listItemBodyText,
+.layout-tv #childrenContent .listItemBodyText.secondary.listItem-overview.listItemBodyText {
 	transition: filter 0.8s, opacity 0.8s;
 	filter: blur(0px);
 	opacity: 1;
@@ -2512,7 +2519,8 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 	font-weight: 300;
 }
 
-.layout-desktop #childrenContent .listItemBodyText.secondary.listItem-overview.listItemBodyText:hover {
+.layout-desktop #childrenContent .listItemBodyText.secondary.listItem-overview.listItemBodyText:hover,
+.layout-tv #childrenContent .listItemBodyText.secondary.listItem-overview.listItemBodyText:hover {
 	filter: blur(0px);
 	opacity: 1;
 }
@@ -2635,7 +2643,8 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
   margin: 0;
 }
 
-.layout-desktop div.itemMiscInfo.itemMiscInfo-primary {
+.layout-desktop div.itemMiscInfo.itemMiscInfo-primary,
+.layout-tv div.itemMiscInfo.itemMiscInfo-primary {
   margin-bottom: 0em !important;
 }
 
@@ -2825,7 +2834,8 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 	padding-top: 2em !important;
 }
 
-.layout-desktop #homeTab .emby-scroller-container {
+.layout-desktop #homeTab .emby-scroller-container,
+.layout-tv #homeTab .emby-scroller-container {
   position: relative;
   overflow: hidden;
 }
@@ -2875,7 +2885,8 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 	}
 }
 
-.layout-desktop #homeTab .emby-scrollbuttons.padded-right {
+.layout-desktop #homeTab .emby-scrollbuttons.padded-right,
+.layout-tv #homeTab .emby-scrollbuttons.padded-right {
   right: 0em;
   padding-right: 0em;
   width: 100vw;
@@ -2968,3 +2979,21 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 	color: #fff !important;
 	opacity: 1;
 }
+
+.layout-tv .cardBox.cardBox-bottompadded {
+	margin-bottom: 2em !important;
+}
+
+@media (min-width: 3000px) {
+	body,
+	.itemMiscInfo,
+	.detailsGroupItem,
+	.cardText,
+	.listItemBody,
+	.detail-clamp-text,
+	.indicators.listItemIndicators,
+	.trackSelections .selectContainer,
+	mainDetailButtons.focuscontainer-x { 
+		font-size: 150% !important;
+		}
+	}
