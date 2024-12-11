@@ -2260,11 +2260,6 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
     margin-top: -5px;
 }
 
-/* hide Live TV text on Homepage */
-.sectionTitleContainer.sectionTitleContainer-cards.padded-left > .sectionTitle.sectionTitle-cards {
-    display: none;
-}
-
 /* hide Live TV shortcuts on Homepage */
 .padded-top.padded-bottom.scrollSlider.focuscontainer-x {
     display: none;
