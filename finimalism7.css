@@ -1514,7 +1514,6 @@ progress::-webkit-progress-value {
 .sectionTitle {
     margin-left: 0em !important;
 	margin-top: 0.5em !important;
-	margin-bottom: 0.5em !important;
 	font-weight: 700;
 	font-size: 1.6em;
 }
@@ -2156,7 +2155,7 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 
 .layout-desktop div:not(.sectionTitleContainer-cards) > .sectionTitle-cards {
   margin: 0;
-  padding-bottom: 0.5em;
+  padding-bottom: 0em;
   padding-top: .5em;
 }
 
