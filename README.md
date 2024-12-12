@@ -20,12 +20,19 @@ or if you don't want all the lovely colours...
 
 Everything is just an alteration of the amazing work already put into [Ultrachromic by CTalvio](https://github.com/CTalvio/Ultrachromic). Updated for jellyfin server 10.10.X
 
+Homepage
 ![Screenshot 2024-12-12 154220](https://github.com/user-attachments/assets/9216c780-b7c2-4161-9ea5-f22d1e9ea671)
+(Scrolled down)
 ![Screenshot 2024-12-12 154237](https://github.com/user-attachments/assets/7a9f921e-47ab-4e14-800d-b592466fe7b6)
+Library
 ![Screenshot 2024-12-12 154249](https://github.com/user-attachments/assets/7d80c086-6795-43a6-ae3f-8225c56edacf)
-![Screenshot 2024-12-12 154522](https://github.com/user-attachments/assets/30a09598-f9fe-4797-964d-b7aef0aa6e38)
+Movie
+![Screenshot 2024-12-12 154401](https://github.com/user-attachments/assets/9e804618-01a7-4bcb-be57-334e9454cd22)
+Season's Episodes
 ![Screenshot 2024-12-12 154554](https://github.com/user-attachments/assets/96aed276-51ac-4d0d-9594-02fe44640b32)
+Episode
 ![Screenshot 2024-12-12 155146](https://github.com/user-attachments/assets/9bbddc02-fa62-408d-8158-35a03c9a4c5b)
+Player
 ![Screenshot 2024-11-30 035044](https://github.com/user-attachments/assets/5e5e519d-5aee-4ecc-8fcc-cac68dc9683e)
 
 # Extras
