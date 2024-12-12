@@ -27,7 +27,7 @@ Everything is just an alteration of the amazing work already put into [Ultrachro
 ![Screenshot 2024-12-12 154249](https://github.com/user-attachments/assets/7d80c086-6795-43a6-ae3f-8225c56edacf)
 ![Screenshot 2024-12-12 154522](https://github.com/user-attachments/assets/30a09598-f9fe-4797-964d-b7aef0aa6e38)
 ![Screenshot 2024-12-12 154554](https://github.com/user-attachments/assets/96aed276-51ac-4d0d-9594-02fe44640b32)
-![Screenshot 2024-12-12 154605](https://github.com/user-attachments/assets/fe7bd189-ded3-484d-b9eb-3fbb82cecbd5)
+![Screenshot 2024-12-12 155146](https://github.com/user-attachments/assets/9bbddc02-fa62-408d-8158-35a03c9a4c5b)
 ![Screenshot 2024-11-30 035044](https://github.com/user-attachments/assets/5e5e519d-5aee-4ecc-8fcc-cac68dc9683e)
 
 # Extras
