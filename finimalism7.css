@@ -117,7 +117,7 @@ h2 {
 /* Movies / Shows gallery titles */
 .layout-desktop .card,
 .layout-tv .card {
-    font-size: 12pt !important;
+    font-size: 1em;
 }
 
 .cardScalable {
@@ -232,7 +232,7 @@ span.homeLibraryText {
 }
 
 [dir="ltr"] .detailPageContent {
-  padding-left: 32.45vw;
+  padding-left: 31em;
   padding-right: 0%;
 }
 
@@ -240,6 +240,12 @@ span.homeLibraryText {
 .layout-desktop .itemName.infoText.parentNameLast,
 .layout-tv .itemName.infoText.parentNameLast {
     display: block;
+	text-align: center;
+	white-space: normal;
+}
+
+.layout-desktop [dir="ltr"] .detailPagePrimaryContainer, .layout-tv [dir="ltr"] .detailPagePrimaryContainer {
+  padding-left: 31em;
 }
 
 .hide+.detailPageWrapperContainer .itemName {
@@ -1027,8 +1033,8 @@ div[data-role="controlgroup"] a[data-role="button"] {
 @media (orientation: landscape) {
   .layout-desktop .detailLogo,
   .layout-tv .detailLogo {
-    position: static;
-    margin-left: 32.5%;
+    position: absolute;
+    left: 60vw;
     margin-right: 10%;
     display: block;
     -webkit-filter: drop-shadow(0 0 10px rgba(2, 2, 2, 0.75));
@@ -1036,12 +1042,24 @@ div[data-role="controlgroup"] a[data-role="button"] {
     width: 64vw;
     max-height: 21em;
     height: 26vw;
-    margin-top: -28.95em;
+    top: 10em;
     margin-bottom: 7.7em;
+	transform: translateX(-50%);
   }
   .layout-tv .detailLogo {
 	  margin-top: 8em;
   }
+}
+
+.layout-desktop #itemDetailPage .nameContainer,
+.layout-tv #itemDetailPage .nameContainer {
+	position: fixed;
+	left: 2.8em;
+	top: 39em;
+	width: 26em;
+	justify-content: center;
+	text-align: center;
+	height: 4.8em;
 }
 
 .layout-desktop .skinHeader,
@@ -1470,7 +1488,7 @@ progress::-webkit-progress-value {
 /*Accommodate ultrawide aspect ratios*/
 @media (min-aspect-ratio: 1.98/1) {
   .detailImageContainer .card {
-    width: 21vw !important ;
+    max-width: 21.35em !important ;
   }
   .detailPagePrimaryContainer {
     padding-left: 28.45vw !important;
@@ -1481,7 +1499,7 @@ progress::-webkit-progress-value {
 }
 @media (min-aspect-ratio: 2.7/1) {
   .detailImageContainer .card {
-    width: 16vw !important;
+    width: 21.35em !important;
   }
   .detailPagePrimaryContainer {
     padding-left: 23.45vw !important;
@@ -1868,8 +1886,8 @@ progress::-webkit-progress-value {
 }
 
 #childrenContent .childrenItemsContainer.itemsContainer.padded-right.vertical-list .listItem.listItem-largeImage.listItem-withContentWrapper .listItem-content {
-	height: 13.2em;
-	min-height: 10em;
+	max-height: 30em;
+	min-height: 20em;
 }
 
 #childrenContent .childrenItemsContainer.itemsContainer.padded-right.vertical-list .listItem.listItem-largeImage.listItem-withContentWrapper .itemProgressBarForeground {
@@ -1894,17 +1912,25 @@ progress::-webkit-progress-value {
   display: -webkit-flex;
   display: flex;
   margin: 0 0 .5em !important;
-  max-width: 100vw;
+  max-width: 33em;
   font-size: 13px;
 }
 
-.trackSelections {
-  max-width: 60em !important;
+.layout-desktop .trackSelections,
+.layout-tv .trackSelections {
+	position: fixed;
+	left: 0em;
+	width: 33em;
+	top: 49em;
 }
 
-.trackSelections .selectContainer .detailTrackSelect {
+.layout-desktop .trackSelections .selectContainer .detailTrackSelect,
+.layout-tv .trackSelections .selectContainer .detailTrackSelect {
   font-size: inherit;
   padding-left: 0.5em;
+  max-width: 25em;
+  text-overflow: ellipsis;
+  text-align: center;
 }
 
 /* Hide Upcoming On TV section */
@@ -1937,6 +1963,18 @@ progress::-webkit-progress-value {
 
 .itemsContainer.padded-left {
     flex: 1;
+}
+
+.layout-desktop .detailImageContainer .card {
+  left: 5em;
+  max-height: 32em;
+  max-width: 18vw !important;
+  width: 21.35em;
+  top: 5em !important;
+}
+
+.layout-desktop .detailImageContainer .card.backdropCard {
+	top: 25em !important;
 }
 
 /* Top bar padding 1px */
@@ -2307,6 +2345,7 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 .subtitle {
   margin: .15em 0 .2em -1em;
   padding-left: 0em;
+  text-align: center;
 }
 
 /* For mobile devices with a maximum width of 426px (portrait orientation) */
@@ -2501,8 +2540,9 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 	transition: filter 0.8s, opacity 0.8s;
 	filter: blur(0px);
 	opacity: 1;
-	max-height: 9em;
+	min-height: 7em;
 	overflow-y: auto;
+	padding-right: 1em;
 }
 
 #childrenContent .listItem-content .listItemBodyText {
@@ -2640,8 +2680,21 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 }
 
 .layout-desktop div.itemMiscInfo.itemMiscInfo-primary,
-.layout-tv div.itemMiscInfo.itemMiscInfo-primary {
-  margin-bottom: 0em !important;
+.layout-tv div.itemMiscInfo.itemMiscInfo-primary,
+.layout-desktop .itemName.originalTitle,
+.layout-tv .itemName.originalTitle {
+	margin-bottom: 0em !important;
+	font-size: 1.4em;
+	font-weight: 500;
+	text-align: center;
+}
+
+.layout-desktop .itemName.infoText.subtitle.focuscontainer-x {
+	text-align: center;
+	position: fixed;
+  top: 38.5em;
+  left: 4em;
+  width: 19em;
 }
 
 .layout-mobile .itemMiscInfo, .layout-mobile .itemName, .layout-mobile .mainDetailButtons, .layout-mobile .parentName {
@@ -2980,16 +3033,196 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 	margin-bottom: 2em !important;
 }
 
-@media (min-width: 3000px) {
-	body,
-	.itemMiscInfo,
-	.detailsGroupItem,
-	.cardText,
-	.listItemBody,
-	.detail-clamp-text,
-	.indicators.listItemIndicators,
-	.trackSelections .selectContainer,
-	mainDetailButtons.focuscontainer-x { 
-		font-size: 150% !important;
-		}
+
+.layout-desktop .childrenItemsContainer.itemsContainer.padded-right.vertical-list,
+.layout-tv .childrenItemsContainer.itemsContainer.padded-right.vertical-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.layout-desktop .listItemImage-large,
+.layout-tv .listItemImage-large {
+    height: 9em;
+}
+
+@media all and (max-width: 2000px) {
+  .layout-desktop .childrenItemsContainer.itemsContainer.padded-right.vertical-list,
+  .layout-tv .childrenItemsContainer.itemsContainer.padded-right.vertical-list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .layout-desktop .childrenItemsContainer.itemsContainer.padded-right.vertical-list,
+  .layout-tv .childrenItemsContainer.itemsContainer.padded-right.vertical-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.layout-mobile
+  .childrenItemsContainer.itemsContainer.padded-right.vertical-list {
+  grid-template-columns: 1fr;
+}
+
+.layout-desktop #itemDetailPage .listItem-content,
+.layout-tv #itemDetailPage .listItem-content {
+  border-radius: var(--rounding);
+  overflow: hidden;
+  transition: background 0.15s ease-in-out;
+  flex-flow: column;
+  -webkit-transition: background 0.15s ease-in-out;
+  -moz-transition: background 0.15s ease-in-out;
+  -ms-transition: background 0.15s ease-in-out;
+  -o-transition: background 0.15s ease-in-out;
+}
+
+.layout-desktop .listItemImage.listItemImage-large,
+.layout-tv .listItemImage.listItemImage-large {
+  width: 100%;
+  margin: 0;
+}
+
+.layout-desktop .listViewUserDataButtons,
+.layout-tv .listViewUserDataButtons {
+	justify-content: space-evenly;
+	width: 100% !important;
+}
+
+.layout-desktop .listItem-overview.listItemBodyText,
+.layout- tv.listItem-overview.listItemBodyText {
+  height: 5.5em !important;
+  font-size: 1em !important;
+  padding-top: 0em !important;
+}
+
+.layout-desktop #itemDetailPage .listItem,
+.layout-tv #itemDetailPage .listItem {
+  position: relative;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  max-height: 30em;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  border-radius: var(--rounding);
+  padding: .5em;
+}
+
+.layout-desktop itemDetailPage .secondary.listItem-overview.listItemBodyText,
+.layout-tv #itemDetailPage .secondary.listItem-overview.listItemBodyText {
+  height: 100%;
+  margin: 0;
+}
+
+.layout-desktop .listItem[data-mediatype="Audio"],
+.layout-tv .listItem[data-mediatype="Audio"] {
+  padding: 0 1em;
+  border-radius: var(--rounding) !important;
+  -webkit-border-radius: var(--rounding) !important;
+  -moz-border-radius: var(--rounding) !important;
+  -ms-border-radius: var(--rounding) !important;
+  -o-border-radius: var(--rounding) !important;
+}
+
+.layout-desktop .listItemImageButton,
+.layout-tv .listItemImageButton {
+  margin: auto;
+  font-size: 1.6em !important;
+}
+.layout-desktop .listItemBody.itemAction,
+.layout-desktop .listItem-bottomoverview.secondary,
+.layout-tv .listItemBody.itemAction,
+.layout-tv .listItem-bottomoverview.secondary {
+  z-index: 1;
+}
+.layout-desktop .listItem-bottomoverview.secondary,
+.layout-tv .listItem-bottomoverview.secondary {
+  text-align: justify;
+  padding: .5em;
+  margin: 0;
+}
+
+.layout-desktop .tagline,
+.layout-tv .tagline {
+	position: fixed;
+	left: 13.5em;
+	top: 37.5em;
+	transform: translateX(-50%);
+	width: 26em;
+	text-align: center;
+}
+
+.layout-desktop .trackSelections .selectContainer .selectLabel,
+.layout-tv .trackSelections .selectContainer .selectLabel {
+	text-align: center;
+}
+
+/* IMDb link replaced with logo */
+a[href*="imdb.com"]::before {
+    content: "";
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+    background-image: url('https://i.imgur.com/pbNvPMX.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+a[href*="imdb.com"] {
+    font-size: 0;
+}
+
+/* TheMovieDb link replaced with logo */
+a[href*="themoviedb.org"]::before {
+    content: "";
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+    background-image: url('https://i.imgur.com/RlC69qy.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+a[href*="themoviedb.org"] {
+    font-size: 0;
+}
+
+/* TheMovieDb link replaced with logo */
+a[href*="themoviedb.org/collection"]::before {
+    content: "";
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+    background-image: url('https://i.imgur.com/HDodxf3.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+@media (min-width: 2000px) {
+	body {
+		font-size: 133%;
 	}
+	.detailImageContainer .card {
+		font-size: 100% !important;
+	}
+	p.overview.detail-clamp-text {
+		font-size: 100% !important;
+	}
+	.detailsGroupItem, .trackSelections .selectContainer {
+		font-size: 83% !important;
+	}
+	.listItem {
+		font-size: 92% !important;
+	}
+}
+
+@media (min-width: 3000px) {
+	body {
+		font-size: 200% !important;
+	}
+}
