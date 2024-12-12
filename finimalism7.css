@@ -1047,12 +1047,17 @@ div[data-role="controlgroup"] a[data-role="button"] {
 	transform: translateX(-50%);
   }
   .layout-tv .detailLogo {
-	  margin-top: 8em;
+	  margin-top: -3em;
   }
 }
 
-.layout-desktop #itemDetailPage .nameContainer,
-.layout-tv #itemDetailPage .nameContainer {
+.layout-tv .tagline {
+  position: fixed;
+  left: 13.5em;
+  top: 34.25em;
+}
+
+.layout-desktop #itemDetailPage .nameContainer {
 	position: fixed;
 	left: 2.8em;
 	top: 39em;
@@ -1060,6 +1065,16 @@ div[data-role="controlgroup"] a[data-role="button"] {
 	justify-content: center;
 	text-align: center;
 	height: 4.8em;
+}
+
+.layout-tv #itemDetailPage .nameContainer {
+  position: fixed;
+  left: 2.8em;
+  top: 32.8em;
+  width: 26em;
+  justify-content: center;
+  text-align: center;
+  height: 4.8em;
 }
 
 .layout-desktop .skinHeader,
@@ -1838,7 +1853,7 @@ progress::-webkit-progress-value {
 .layout-desktop .homeLibraryButton:focus,
 .layout-tv .homeLibraryButton:focus,
 .layout-desktop .card:hover,
-.layout-desktop .card:focus {
+.layout-tv .card:focus {
     -webkit-filter: none !important;
     box-shadow: 0 0 5px 0, 255, 222;
     filter: none !important;
@@ -1908,7 +1923,8 @@ progress::-webkit-progress-value {
 
 /* Extend max width of Video, Audio and Subtitles details */
 
-.detailsGroupItem, .trackSelections .selectContainer {
+.layout-desktop .detailsGroupItem, .trackSelections .selectContainer,
+.layout-tv .detailsGroupItem, .trackSelections .selectContainer {
   display: -webkit-flex;
   display: flex;
   margin: 0 0 .5em !important;
@@ -1918,10 +1934,24 @@ progress::-webkit-progress-value {
 
 .layout-desktop .trackSelections,
 .layout-tv .trackSelections {
+  position: fixed;
+  left: 0em;
+  width: 33em;
+  top: 47.5em;
+}
+
+.layout-desktop .trackSelections {
 	position: fixed;
 	left: 0em;
 	width: 33em;
 	top: 49em;
+}
+
+.layout-tv .trackSelections {
+	position: fixed;
+	left: 0em;
+	width: 33em;
+	top: 47.5em;
 }
 
 .layout-desktop .trackSelections .selectContainer .detailTrackSelect,
@@ -1973,7 +2003,16 @@ progress::-webkit-progress-value {
   top: 5em !important;
 }
 
-.layout-desktop .detailImageContainer .card.backdropCard {
+.layout-tv .detailImageContainer .card {
+  left: 6.5em;
+  max-height: 32em;
+  max-width: 18vw !important;
+  width: 18.35em;
+  top: 18em !important;
+}
+
+.layout-desktop .detailImageContainer .card.backdropCard,
+.layout-tv .detailImageContainer .card.backdropCard {
 	top: 25em !important;
 }
 
@@ -2289,7 +2328,7 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
     font-size: 108%;
     margin: 1em 0 1.25em;
     position: absolute;
-    right: 0em;
+    right: 10em;
     top: 1em;
   }
 }
@@ -2689,7 +2728,8 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 	text-align: center;
 }
 
-.layout-desktop .itemName.infoText.subtitle.focuscontainer-x {
+.layout-desktop .itemName.infoText.subtitle.focuscontainer-x,
+.layout-tv .itemName.infoText.subtitle.focuscontainer-x {
 	text-align: center;
 	position: fixed;
   top: 38.5em;
@@ -3034,8 +3074,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 }
 
 
-.layout-desktop .childrenItemsContainer.itemsContainer.padded-right.vertical-list,
-.layout-tv .childrenItemsContainer.itemsContainer.padded-right.vertical-list {
+.layout-desktop .childrenItemsContainer.itemsContainer.padded-right.vertical-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
@@ -3046,15 +3085,13 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 }
 
 @media all and (max-width: 2000px) {
-  .layout-desktop .childrenItemsContainer.itemsContainer.padded-right.vertical-list,
-  .layout-tv .childrenItemsContainer.itemsContainer.padded-right.vertical-list {
+  .layout-desktop .childrenItemsContainer.itemsContainer.padded-right.vertical-list {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
 @media all and (max-width: 1000px) {
-  .layout-desktop .childrenItemsContainer.itemsContainer.padded-right.vertical-list,
-  .layout-tv .childrenItemsContainer.itemsContainer.padded-right.vertical-list {
+  .layout-desktop .childrenItemsContainer.itemsContainer.padded-right.vertical-list {
     grid-template-columns: 1fr 1fr;
   }
 }
@@ -3064,8 +3101,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
   grid-template-columns: 1fr;
 }
 
-.layout-desktop #itemDetailPage .listItem-content,
-.layout-tv #itemDetailPage .listItem-content {
+.layout-desktop #itemDetailPage .listItem-content {
   border-radius: var(--rounding);
   overflow: hidden;
   transition: background 0.15s ease-in-out;
@@ -3076,27 +3112,23 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
   -o-transition: background 0.15s ease-in-out;
 }
 
-.layout-desktop .listItemImage.listItemImage-large,
-.layout-tv .listItemImage.listItemImage-large {
+.layout-desktop .listItemImage.listItemImage-large {
   width: 100%;
   margin: 0;
 }
 
-.layout-desktop .listViewUserDataButtons,
-.layout-tv .listViewUserDataButtons {
+.layout-desktop .listViewUserDataButtons {
 	justify-content: space-evenly;
 	width: 100% !important;
 }
 
-.layout-desktop .listItem-overview.listItemBodyText,
-.layout- tv.listItem-overview.listItemBodyText {
+.layout-desktop .listItem-overview.listItemBodyText {
   height: 5.5em !important;
   font-size: 1em !important;
   padding-top: 0em !important;
 }
 
-.layout-desktop #itemDetailPage .listItem,
-.layout-tv #itemDetailPage .listItem {
+.layout-desktop #itemDetailPage .listItem {
   position: relative;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -3107,14 +3139,12 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
   padding: .5em;
 }
 
-.layout-desktop itemDetailPage .secondary.listItem-overview.listItemBodyText,
-.layout-tv #itemDetailPage .secondary.listItem-overview.listItemBodyText {
+.layout-desktop itemDetailPage .secondary.listItem-overview.listItemBodyText {
   height: 100%;
   margin: 0;
 }
 
-.layout-desktop .listItem[data-mediatype="Audio"],
-.layout-tv .listItem[data-mediatype="Audio"] {
+.layout-desktop .listItem[data-mediatype="Audio"] {
   padding: 0 1em;
   border-radius: var(--rounding) !important;
   -webkit-border-radius: var(--rounding) !important;
@@ -3123,26 +3153,21 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
   -o-border-radius: var(--rounding) !important;
 }
 
-.layout-desktop .listItemImageButton,
-.layout-tv .listItemImageButton {
+.layout-desktop .listItemImageButton {
   margin: auto;
   font-size: 1.6em !important;
 }
 .layout-desktop .listItemBody.itemAction,
-.layout-desktop .listItem-bottomoverview.secondary,
-.layout-tv .listItemBody.itemAction,
-.layout-tv .listItem-bottomoverview.secondary {
+.layout-desktop .listItem-bottomoverview.secondary {
   z-index: 1;
 }
-.layout-desktop .listItem-bottomoverview.secondary,
-.layout-tv .listItem-bottomoverview.secondary {
+.layout-desktop .listItem-bottomoverview.secondary {
   text-align: justify;
   padding: .5em;
   margin: 0;
 }
 
-.layout-desktop .tagline,
-.layout-tv .tagline {
+.layout-desktop .tagline {
 	position: fixed;
 	left: 13.5em;
 	top: 37.5em;
@@ -3151,9 +3176,22 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 	text-align: center;
 }
 
+.layout-tv .tagline {
+	position: fixed;
+	left: 13.5em;
+	top: 34.25em;
+	transform: translateX(-50%);
+	width: 26em;
+	text-align: center;
+}
+
 .layout-desktop .trackSelections .selectContainer .selectLabel,
 .layout-tv .trackSelections .selectContainer .selectLabel {
 	text-align: center;
+}
+
+.layout-tv .itemDetailPage {
+  padding-top: 36.2em !important;
 }
 
 /* IMDb link replaced with logo */
