@@ -31,7 +31,7 @@ Movie
 Season's Episodes
 ![Screenshot 2024-12-12 222412](https://github.com/user-attachments/assets/e8d4d826-c77e-437b-9a99-0f3524ad048d)
 Episode
-![Screenshot 2024-12-12 222419](https://github.com/user-attachments/assets/205f299a-60eb-45d3-b63b-bf98e3a852cc)
+![Screenshot 2024-12-12 222644](https://github.com/user-attachments/assets/4572ce32-15cd-43c9-b506-d88e36dec27f)
 Player
 ![Screenshot 2024-11-30 035044](https://github.com/user-attachments/assets/5e5e519d-5aee-4ecc-8fcc-cac68dc9683e)
 
