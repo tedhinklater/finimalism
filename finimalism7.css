@@ -3203,6 +3203,10 @@ a[href*="themoviedb.org/collection"]::before {
     vertical-align: middle;
 }
 
+.itemExternalLinks.focuscontainer-x {
+	color: #000a;
+}
+
 @media (min-width: 2000px) {
 	body {
 		font-size: 133%;
