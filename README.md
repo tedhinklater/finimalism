@@ -29,9 +29,9 @@ Library
 Movie
 ![Screenshot 2024-12-12 154437](https://github.com/user-attachments/assets/ada71f1a-bb98-4cc0-9fa7-c3bf470a4874)
 Season's Episodes
-![Screenshot 2024-12-12 154554](https://github.com/user-attachments/assets/96aed276-51ac-4d0d-9594-02fe44640b32)
+![Screenshot 2024-12-12 222412](https://github.com/user-attachments/assets/e8d4d826-c77e-437b-9a99-0f3524ad048d)
 Episode
-![Screenshot 2024-12-12 155146](https://github.com/user-attachments/assets/9bbddc02-fa62-408d-8158-35a03c9a4c5b)
+![Screenshot 2024-12-12 222419](https://github.com/user-attachments/assets/205f299a-60eb-45d3-b63b-bf98e3a852cc)
 Player
 ![Screenshot 2024-11-30 035044](https://github.com/user-attachments/assets/5e5e519d-5aee-4ecc-8fcc-cac68dc9683e)
 
