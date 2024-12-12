@@ -27,7 +27,7 @@ Homepage
 Library
 ![Screenshot 2024-12-12 154249](https://github.com/user-attachments/assets/7d80c086-6795-43a6-ae3f-8225c56edacf)
 Movie
-![Screenshot 2024-12-12 154401](https://github.com/user-attachments/assets/9e804618-01a7-4bcb-be57-334e9454cd22)
+![Screenshot 2024-12-12 154437](https://github.com/user-attachments/assets/ada71f1a-bb98-4cc0-9fa7-c3bf470a4874)
 Season's Episodes
 ![Screenshot 2024-12-12 154554](https://github.com/user-attachments/assets/96aed276-51ac-4d0d-9594-02fe44640b32)
 Episode
