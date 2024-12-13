@@ -21,17 +21,15 @@ or if you don't want all the lovely colours...
 Everything is just an alteration of the amazing work already put into [Ultrachromic by CTalvio](https://github.com/CTalvio/Ultrachromic). Updated for jellyfin server 10.10.X
 
 Homepage
-![Screenshot 2024-12-12 154220](https://github.com/user-attachments/assets/9216c780-b7c2-4161-9ea5-f22d1e9ea671)
-(Scrolled down)
-![Screenshot 2024-12-12 154237](https://github.com/user-attachments/assets/7a9f921e-47ab-4e14-800d-b592466fe7b6)
+![Homepage](https://i.imgur.com/dwDXwx9.png)
 Library
-![Screenshot 2024-12-12 154249](https://github.com/user-attachments/assets/7d80c086-6795-43a6-ae3f-8225c56edacf)
+![Library](https://i.imgur.com/P6IKDU1.png)
 Movie
-![Screenshot 2024-12-12 154437](https://github.com/user-attachments/assets/ada71f1a-bb98-4cc0-9fa7-c3bf470a4874)
+![Movie](https://i.imgur.com/et7x9iw.png)
 Season's Episodes
-![Screenshot 2024-12-12 222412](https://github.com/user-attachments/assets/e8d4d826-c77e-437b-9a99-0f3524ad048d)
+![Episodes](https://i.imgur.com/TgOAEvi.png)
 Episode
-![Screenshot 2024-12-12 222644](https://github.com/user-attachments/assets/4572ce32-15cd-43c9-b506-d88e36dec27f)
+![Episode](https://i.imgur.com/x7tyUsM.png)
 Player
 ![Screenshot 2024-11-30 035044](https://github.com/user-attachments/assets/5e5e519d-5aee-4ecc-8fcc-cac68dc9683e)
 
