@@ -1624,52 +1624,52 @@ progress::-webkit-progress-value {
 
 .layout-desktop .overflowPortraitCard,
 .layout-tv .overflowPortraitCard {
-    width: 14.82em;
+    width: 11.85em;
 }
 
 .layout-desktop .overflowSquareCard,
 .layout-tv .overflowSquareCard {
-    width: 14.82em;
+    width: 11.85em;
 }
 
 .layout-mobile .overflowPortraitCard {
-	width: 12.88em;
+	width: 11.85em;
 }
 
 .layout-mobile .overflowSquareCard {
-    width: 12.88em;
+    width: 11.85em;
 }
 
 /* Larger screens */
 @media all and (min-width: 58em) and (max-width: 64em) {
   #castContent .card.overflowPortraitCard {
-    width: 13.88em !important;
+    width: 11.85em !important;
   }
 }
 
 /* Extra-large screens */
 @media all and (min-width: 64em) {
   #castContent .card.overflowPortraitCard {
-        width: 15em !important;
+        width: 11.85em !important;
   }
 }
 
 /* Mobile or smaller screens */
 @media all and (max-width: 48em) {
   #castContent .card.overflowPortraitCard {
-        width: 13.88em !important;
+        width: 11.85em !important;
   }
 }
 
 @media (max-width: 768px) and (orientation: landscape) {
   #castContent .card.overflowPortraitCard {
-    width: 13.88em !important;
+    width: 11.85em !important;
   }
 }
 
 @media (max-width: 930px) and (orientation: landscape) {
   #castContent .card.overflowPortraitCard {
-    width: 19vw !important;
+    width: 11.85em !important;
   }
 }
 
@@ -2287,7 +2287,7 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 /* Adjust alignment for the cards within the Continue Watching section */
 .layout-desktop .homePage .section1.verticalSection .itemsContainer .card.overflowBackdropCard,
 .layout-tv .homePage .section1.verticalSection .itemsContainer .card.overflowBackdropCard {
-    width: 32.95em;
+    width: 21.85em;
     margin-top: 0em;
     font-size: 90% !important;
 }
@@ -2525,14 +2525,14 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 
 .layout-desktop .overflowBackdropCard,
 .layout-tv .overflowBackdropCard {
-	width: 32.85em;
+	width: 21.85em;
 	font-size: 90% !important;
 	filter: drop-shadow(4px 5px 2px rgba(2, 2, 2, 0.5));
 }
 
 .layout-desktop .verticalSection.section2 .card.overflowBackdropCard,
 .layout-tv .verticalSection.section2 .card.overflowBackdropCard {
-	width: 32.95em !important;
+	width: 21.85em !important;
 	font-size: 90% !important;
 }
 
