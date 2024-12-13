@@ -2971,37 +2971,37 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 }
 
 #homeTab button[data-direction="left"] {
-	right: 5.8em;
+	right: 6.5em;
 	position: absolute;
 	top: 0em;
 	z-index: 50;
-	font-size: 2em;
+	font-size: 1.5em;
 	color: #fff;
-	height: 2em;
+	height: 1.5em;
 	border-radius: 0.1em;
 	cursor: pointer;
 	opacity: 0.1;
 	margin: 0;
-	width: 2em;
+	width: 1.5em;;
 	padding: 0;
-	padding-top: 0.5em;
+	padding-top: 1em;
 }
 
 #homeTab button[data-direction="right"] {
-	right: 0em;
+	right: 0.5em;
 	position: absolute;
 	top: 0em;
 	z-index: 50;
-	font-size: 2em;
+	font-size: 1.5em;;
 	color: #fff;
-	height: 2em;
+	height: 1.5em;;
 	border-radius: 0.1em;
 	cursor: pointer;
 	opacity: 0.1;
 	margin: 0;
-	width: 2em;
+	width: 1.5em;;
 	padding: 0;
-	padding-top: 0.5em;
+	padding-top: 1em;
 }
 
 #homeTab button[data-direction="left"]:hover {
