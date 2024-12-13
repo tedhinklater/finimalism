@@ -19,6 +19,10 @@
 	text-align: center;
 }
 
+.layout-mobile #homeTab .section0 .cardImageContainer::before {
+	font-size: 1.5em;
+}
+
 .verticalSection.section0 .textActionButton {
   display: none;
 }
