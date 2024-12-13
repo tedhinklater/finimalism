@@ -3149,6 +3149,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 .layout-desktop .listItemBody.itemAction,
 .layout-desktop .listItem-bottomoverview.secondary {
   z-index: 1;
+  min-width: 15em;
 }
 .layout-desktop .listItem-bottomoverview.secondary {
   text-align: justify;
