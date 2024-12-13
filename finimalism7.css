@@ -1051,12 +1051,6 @@ div[data-role="controlgroup"] a[data-role="button"] {
   }
 }
 
-.layout-tv .tagline {
-  position: fixed;
-  left: 13.5em;
-  top: 34.25em;
-}
-
 .layout-desktop #itemDetailPage .nameContainer {
 	position: fixed;
 	left: 2.8em;
@@ -1070,8 +1064,8 @@ div[data-role="controlgroup"] a[data-role="button"] {
 .layout-tv #itemDetailPage .nameContainer {
   position: fixed;
   left: 2.8em;
-  top: 32.8em;
-  width: 26em;
+  top: 35em;
+  width: 22em;
   justify-content: center;
   text-align: center;
   height: 4.8em;
@@ -1277,6 +1271,9 @@ div[data-role="controlgroup"] a[data-role="button"] {
 .visualCardBox, .cardImageContainer {
     box-shadow: none;
 }
+#itemDetailPage .cardImageContainer {
+	border-radius: 0.2em !important;
+}
 .backgroundProgress > div {
     background: rgba(0, 0, 0, 0);
 }
@@ -1330,7 +1327,7 @@ div[data-role="controlgroup"] a[data-role="button"] {
 
 .emby-button.show-focus:focus {
   filter: drop-shadow(0 0 1px rgba(2, 2, 8px, 0.75));
-  transform: scale(2);
+  transform: scale(1.5);
 }
 .paper-icon-button-light.show-focus:focus {
     color: rgba(var(--accent)) !important;
@@ -1344,7 +1341,7 @@ button-flat:hover {
 .raised:hover, 
 .fab:hover,
 a[data-role="button"]:hover {
-	background: linear-gradient(90deg, rgb(40.392% 6.275% 50.98%) 0%, rgb(40.023% 6.794% 51.27%) 6.25%, rgb(38.929% 8.334% 52.13%) 12.5%, rgb(37.154% 10.835% 53.525%) 18.75%, rgb(34.764% 14.2% 55.403%) 25%, rgb(31.852% 18.3% 57.69%) 31.25%, rgb(28.53% 22.978% 60.301%) 37.5%, rgb(24.925% 28.054% 63.133%) 43.75%, rgb(21.176% 33.333% 66.078%) 50%, rgb(17.428% 38.612% 69.024%) 56.25%, rgb(13.823% 43.688% 71.856%) 62.5%, rgb(10.501% 48.366% 74.466%) 68.75%, rgb(7.589% 52.467% 76.754%) 75%, rgb(5.199% 55.832% 78.632%) 81.25%, rgb(3.423% 58.332% 80.027%) 87.5%, rgb(2.33% 59.872% 80.886%) 93.75%, rgb(1.961% 60.392% 81.176%) 100% ) !important;
+	background: #2c1f78ba !important;
 	color: #fff !important;
 	font-weight: 800;
 }
@@ -1455,26 +1452,9 @@ progress::-webkit-progress-value {
 	font-size: 120%;
 }
 
-/* Fixes */
-@media all and (min-width: 100em){
-  .button-flat {
-    margin-right: 3.2em !important;
-    padding: 0em !important;
-  }
-}
-
 @media (orientation: landscape){
   .layout-mobile .button-flat {
     margin-top: -1em !important;
-  }
-}
-
-@media all and (max-width: 100em){
-  .mainDetailButtons {
-    font-size: 100%;
-  }
-  .detailButton {
-    max-width: 15vw !important;
   }
 }
 
@@ -1932,26 +1912,18 @@ progress::-webkit-progress-value {
   font-size: 13px;
 }
 
-.layout-desktop .trackSelections,
-.layout-tv .trackSelections {
-  position: fixed;
-  left: 0em;
-  width: 33em;
-  top: 47.5em;
-}
-
 .layout-desktop .trackSelections {
 	position: fixed;
 	left: 0em;
 	width: 33em;
-	top: 49em;
+	top: 47em;
 }
 
 .layout-tv .trackSelections {
 	position: fixed;
 	left: 0em;
 	width: 33em;
-	top: 47.5em;
+	top: 47em;
 }
 
 .layout-desktop .trackSelections .selectContainer .detailTrackSelect,
@@ -1997,23 +1969,39 @@ progress::-webkit-progress-value {
 
 .layout-desktop .detailImageContainer .card {
   left: 5em;
-  max-height: 32em;
-  max-width: 18vw !important;
   width: 21.35em;
-  top: 5em !important;
+  top: 3.5em !important;
+  max-width: unset;
 }
 
 .layout-tv .detailImageContainer .card {
-  left: 6.5em;
+  left: 4.75em;
   max-height: 32em;
   max-width: 18vw !important;
   width: 18.35em;
   top: 18em !important;
 }
 
+.layout-desktop #itemDetailPage .card.squareCard {
+  left: 5em;
+  width: 21.35em;
+  top: 14.15em !important;
+  max-width: unset;
+}
+
+.layout-tv #itemDetailPage .card.squareCard {
+  left: 4.75em;
+  max-height: 32em;
+  max-width: 18vw !important;
+  width: 18.35em;
+  top: 18em !important;
+}
+
+
+
 .layout-desktop .detailImageContainer .card.backdropCard,
 .layout-tv .detailImageContainer .card.backdropCard {
-	top: 25em !important;
+	top: 23.5em !important;
 }
 
 /* Top bar padding 1px */
@@ -2726,6 +2714,7 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 	font-size: 1.4em;
 	font-weight: 500;
 	text-align: center;
+	justify-content: space-between;
 }
 
 .layout-desktop .itemName.infoText.subtitle.focuscontainer-x,
@@ -3167,31 +3156,13 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
   margin: 0;
 }
 
-.layout-desktop .tagline {
-	position: fixed;
-	left: 13.5em;
-	top: 37.5em;
-	transform: translateX(-50%);
-	width: 26em;
-	text-align: center;
-}
-
-.layout-tv .tagline {
-	position: fixed;
-	left: 13.5em;
-	top: 34.25em;
-	transform: translateX(-50%);
-	width: 26em;
-	text-align: center;
-}
-
 .layout-desktop .trackSelections .selectContainer .selectLabel,
 .layout-tv .trackSelections .selectContainer .selectLabel {
 	text-align: center;
 }
 
 .layout-tv .itemDetailPage {
-  padding-top: 36.2em !important;
+  padding-top: 38.5em !important;
 }
 
 /* IMDb link replaced with logo */
@@ -3261,6 +3232,59 @@ a[href*="themoviedb.org/collection"]::before {
 	.listItem {
 		font-size: 92% !important;
 	}
+}
+
+.layout-desktop .mainDetailButtons.focuscontainer-x {
+	position: fixed;
+	left: 4.15em;
+	width: 17.85em;
+	justify-content: space-evenly;
+	top: 28.28em;
+	z-index: 2;
+	background: #110e1ce3;
+	border-radius: 0em;
+	margin: 1.25em 0;
+}
+
+.layout-tv .mainDetailButtons.focuscontainer-x {
+	position: fixed;
+	left: 4.15em;
+	width: 17.85em;
+	justify-content: space-between;
+	top: 28.1em;
+	background: #110e1ce3;
+	border-radius: 0.26em;
+	z-index: 5;
+	margin: 1.25em 0;
+}
+
+.layout-desktop .cardPadder,
+.layout-tv .cardPadder {
+  border-radius: unset;
+}
+
+.layout-desktop .itemExternalLinks.focuscontainer-x,
+.layout-tv .itemExternalLinks.focuscontainer-x {
+	color: #000a;
+	position: fixed;
+	width: 22em;
+	left: 6em;
+	top: 61em;
+	display: flex;
+	justify-content: space-between;
+}
+
+.layout-desktop .mainDetailButtons.focuscontainer-x .button-flat,
+.layout-tv .mainDetailButtons.focuscontainer-x .button-flat {
+	margin-right: 0em !important;
+	padding: 0.5em !important;
+	z-index: 5;
+	border-radius: 0.26em !important;
+}
+
+.layout-desktop .mainDetailButtons.focuscontainer-x .button-flat:hover,
+.layout-tv .mainDetailButtons.focuscontainer-x .button-flat:focus {
+	background: #29264a !important;
 }
 
 @media (min-width: 3000px) {
