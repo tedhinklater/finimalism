@@ -26,10 +26,8 @@ Library
 ![Library](https://i.imgur.com/P6IKDU1.png)
 Movie
 ![Movie](https://i.imgur.com/et7x9iw.png)
-Season's Episodes
+Season / Episodes
 ![Episodes](https://i.imgur.com/TgOAEvi.png)
-Episode
-![Episode](https://i.imgur.com/x7tyUsM.png)
 Player
 ![Screenshot 2024-11-30 035044](https://github.com/user-attachments/assets/5e5e519d-5aee-4ecc-8fcc-cac68dc9683e)
 
