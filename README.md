@@ -23,7 +23,7 @@ or if you don't want all the lovely colours...
 Everything is just an alteration of the amazing work already put into [Ultrachromic by CTalvio](https://github.com/CTalvio/Ultrachromic). Updated for jellyfin server 10.10.X
 
 Homepage
-![Homepage](https://i.imgur.com/dwDXwx9.png)
+![Homepage](https://i.imgur.com/CAoKBtN.png)
 Library
 ![Library](https://i.imgur.com/P6IKDU1.png)
 Movie
