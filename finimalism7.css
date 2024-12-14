@@ -241,7 +241,6 @@ span.homeLibraryText {
 .layout-tv .itemName.infoText.parentNameLast {
     display: block;
 	text-align: center;
-	white-space: normal;
 }
 
 .layout-desktop [dir="ltr"] .detailPagePrimaryContainer, .layout-tv [dir="ltr"] .detailPagePrimaryContainer {
