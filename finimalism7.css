@@ -3229,6 +3229,23 @@ a[href*="thetvdb.com"] {
     font-size: 0;
 }
 
+/* TVMaze link replaced with logo */
+a[href*="tvmaze.com"]::before {
+    content: "";
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+    background-image: url('https://i.imgur.com/sd2al6G.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+a[href*="tvmaze.com"] {
+    font-size: 0;
+}
+
 .itemExternalLinks.focuscontainer-x {
 	color: #000a;
 }
