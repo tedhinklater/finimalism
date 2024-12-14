@@ -85,8 +85,12 @@
 	border: solid 1px rgba(var(--accent),0) !important;
 }
 
-.paper-icon-button-light:hover, .raised.homeLibraryButton:hover, .button-flat:hover, .emby-tab-button:hover, .selectLabelFocused, .inputLabelFocused, .textareaLabelFocused, .buttonActive, .button-link {
+.raised.homeLibraryButton:hover,.emby-tab-button:hover, .selectLabelFocused, .inputLabelFocused, .textareaLabelFocused, .buttonActive, .button-link {
 	color: rgb(0, 0, 0) !important;
+}
+
+.button-flat:hover, .paper-icon-button-light:hover { 
+	color: rgb(255, 255, 255) !important;
 }
 
 .cardOverlayContainer:hover, .dialog, .toast, .raised.homeLibraryButton:hover {
@@ -104,4 +108,8 @@
 #loginPage {
   background: url(https://i.imgur.com/gpe0jJc.jpeg) !important; 
   background-size: cover !important;
+}
+
+.layout-desktop .mainDetailButtons.focuscontainer-x {
+  background: #0a0a0ad6;
 }
