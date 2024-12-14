@@ -3304,6 +3304,27 @@ a[href*="thetvdb.com"] {
 	background: #29264a !important;
 }
 
+/* Limit parentNameLast to 2 lines with ellipsis */
+.layout-desktop .itemName.infoText.parentNameLast,
+.layout-tv .itemName.infoText.parentNameLast {
+  display: -webkit-box !important; /* Required for line clamping */
+  -webkit-box-orient: vertical; /* Set vertical box for line clamping */
+  -webkit-line-clamp: 2; /* Limit text to 2 lines */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal; /* Ensure text wraps */
+}
+
+/* Ensure originalTitle is on a new line */
+.layout-desktop .itemName.infoText.originalTitle,
+.layout-tv .itemName.infoText.originalTitle {
+  position: absolute;
+  top: 6em;
+  left: 1em;
+  font-size: 1em;
+  width: 23.75em;
+}
+
 @media (min-width: 3000px) {
 	body {
 		font-size: 200% !important;
