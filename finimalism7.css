@@ -2932,6 +2932,9 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 .headerButton,
 .headerTabs.sectionTabs {
 	pointer-events: all;
+	-webkit-filter: drop-shadow(0px 0px 1.5px rgb(0, 0, 0));
+	filter: drop-shadow(0px 0px 1.5px rgb(0, 0, 0));
+	color: #fff;
 }
 
 .collectionItems {
