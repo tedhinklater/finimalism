@@ -3304,7 +3304,10 @@ a[href*="thetvdb.com"] {
 	background: #29264a !important;
 }
 
+/* D-E-N-U's title fix */ 
 .layout-desktop .itemName.infoText.parentNameLast,
+.layout-desktop .itemName.infoText.subtitle,
+.layout-tv .itemName.infoText.subtitle,
 .layout-tv .itemName.infoText.parentNameLast {
   display: -webkit-box !important;
   -webkit-box-orient: vertical;
@@ -3315,6 +3318,7 @@ a[href*="thetvdb.com"] {
 }
 
 .layout-desktop .itemName.infoText.originalTitle,
+.layout-desktop .itemName.infoText.subtitle,
 .layout-tv .itemName.infoText.originalTitle {
   position: absolute;
   top: 6em;
