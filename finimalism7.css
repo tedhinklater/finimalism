@@ -3249,6 +3249,23 @@ a[href*="tvmaze.com"] {
     font-size: 0;
 }
 
+/* aniDB link replaced with logo */
+a[href*="anidb.net"]::before {
+    content: "";
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+    background-image: url('https://i.imgur.com/7hpyHRn.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+a[href*="anidb.net"] {
+    font-size: 0;
+}
+
 .itemExternalLinks.focuscontainer-x {
 	color: #000a;
 }
