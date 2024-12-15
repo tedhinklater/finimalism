@@ -11,7 +11,7 @@ Import to your CSS with
 
 ```
 
-or if you don't want all the lovely colours... 
+or, the black & white version if you prefer 
 
 ```css
 @import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/finimalism-just-black.css");
@@ -28,8 +28,10 @@ Library
 ![Library](https://i.imgur.com/wOBpC20.png)
 Movie
 ![Movie](https://i.imgur.com/cTKGgFY.png)
+Series (Black & White theme)
+![Series](https://i.imgur.com/Nf1qzWy.png)
 Season / Episodes
-![Episodes](https://i.imgur.com/durKEpE.png)
+![Episodes](https://i.imgur.com/hd766Tt.png)
 Player
 ![Screenshot 2024-11-30 035044](https://github.com/user-attachments/assets/5e5e519d-5aee-4ecc-8fcc-cac68dc9683e)
 
