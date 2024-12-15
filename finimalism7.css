@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap');
 
 /* Limit Custom CSS code box size */
 #txtCustomCss, #txtLocalCustomCss {
@@ -102,7 +102,7 @@ html {
 }
 
 body {
-    font-family: "Nunito", sans-serif;
+    font-family: "Sofia Sans", sans-serif;
     font-size: 12pt;
 }
 
@@ -173,9 +173,14 @@ div.itemMiscInfo.itemMiscInfo-primary {
 
 /* Font size for the description */
 p.overview.detail-clamp-text {
-    font-size: 12pt; 
+    font-size: 1.1em;
 	color: #fff;
+	font-weight: 400;
+}
+
+#itemDetailPage .tagline {
 	font-weight: 600;
+	font-size: 1.15em;
 }
 
 /* Font size for the description */
@@ -185,7 +190,7 @@ p.overview.detail-clamp-text {
 
 /* Font for the Movies, TV and Live TV buttons */
 span.homeLibraryText {
-    font-family: "Nunito", sans-serif;
+    font-family: "Sofia Sans", sans-serif;
     font-size: 1.2em;
 	transform: translateY(5%);
 }
@@ -1687,7 +1692,12 @@ progress::-webkit-progress-value {
   text-overflow: ellipsis;
   white-space: normal;
   margin-left: 0em;
-  font-weight: 600;
+  font-weight: 400;
+  font-size: 1.1em;
+}
+
+.cardText.cardTextCentered.cardText-secondary {
+	font-size: 0.85em;
 }
 
 @media (min-width: 120em) {
@@ -1912,7 +1922,7 @@ progress::-webkit-progress-value {
   display: flex;
   margin: 0 0 .5em !important;
   max-width: 33em;
-  font-size: 13px;
+  font-size: 0.85em;
 }
 
 .layout-desktop .trackSelections {
@@ -2484,7 +2494,7 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 }
 
 .trackSelections .selectContainer {
-  font-size: 10pt;
+  font-size: 0.85em;
   overflow: hidden;
   }
 }
@@ -2715,7 +2725,7 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 .layout-tv .itemName.originalTitle {
 	margin-bottom: 0em !important;
 	font-size: 1.4em;
-	font-weight: 500;
+	font-weight: 600;
 	text-align: center;
 	justify-content: space-between;
 }
