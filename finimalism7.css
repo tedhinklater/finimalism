@@ -1133,6 +1133,10 @@ div[data-role="controlgroup"] a[data-role="button"] {
         position: fixed !important;
         top: 20% !important;
     }
+	.layout-mobile #itemDetailPage .card.backdropCard {
+		width:13em;
+		position:absolute!important;
+	}
 }
 
 /*Top "task bar" enlarge text*/
