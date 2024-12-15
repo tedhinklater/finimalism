@@ -18,7 +18,7 @@ or, the black & white version if you prefer
 
 ```
 
-![css](https://i.imgur.com/LHPUxqk.png)
+![css](https://i.imgur.com/1W6xXq0.png)
 
 Everything is just an alteration of the amazing work already put into [Ultrachromic by CTalvio](https://github.com/CTalvio/Ultrachromic). Updated for jellyfin server 10.10.X
 
