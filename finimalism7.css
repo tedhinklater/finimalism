@@ -3377,8 +3377,12 @@ a[href*="anidb.net"] {
   width: 23.75em;
 }
 
-#itemDetailPage .detailImageContainer.padded-left .card:hover {
-	transform: none;
+.layout-tv #itemDetailPage .detailImageContainer.padded-left .card:hover {
+	transform: scale(1) translateY(-50%);
+}
+
+.layout-desktop #itemDetailPage .detailImageContainer.padded-left .card:hover {
+	transform: scale(1);
 }
 
 @media (min-width: 3000px) {
