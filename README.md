@@ -23,13 +23,13 @@ or if you don't want all the lovely colours...
 Everything is just an alteration of the amazing work already put into [Ultrachromic by CTalvio](https://github.com/CTalvio/Ultrachromic). Updated for jellyfin server 10.10.X
 
 Homepage
-![Homepage](https://i.imgur.com/9XpNpkc.png)
+![Homepage](https://i.imgur.com/LevEG8k.png)
 Library
-![Library](https://i.imgur.com/P6IKDU1.png)
+![Library](https://i.imgur.com/wOBpC20.png)
 Movie
-![Movie](https://i.imgur.com/et7x9iw.png)
+![Movie](https://i.imgur.com/cTKGgFY.png)
 Season / Episodes
-![Episodes](https://i.imgur.com/TgOAEvi.png)
+![Episodes](https://i.imgur.com/durKEpE.png)
 Player
 ![Screenshot 2024-11-30 035044](https://github.com/user-attachments/assets/5e5e519d-5aee-4ecc-8fcc-cac68dc9683e)
 
