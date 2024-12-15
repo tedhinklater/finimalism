@@ -4,14 +4,14 @@
 Also: Turn it up to 11 with the new ![Featured Content Bar](https://github.com/tedhinklater/Jellyfin-Featured-Content-Bar) 
 ![fcb](https://github.com/user-attachments/assets/ad369437-5460-414d-afb3-e9d344d357ee)
 
-Import to your CSS with
+Import the colour theme to your CSS with
 
 ```css
 @import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/finimalism7.css");
 
 ```
 
-or, the black & white version if you prefer 
+or, the black & white theme if you prefer 
 
 ```css
 @import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/finimalism-just-black.css");
