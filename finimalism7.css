@@ -1867,7 +1867,6 @@ progress::-webkit-progress-value {
   filter: drop-shadow(0 0 1px rgba(2, 2, 2, 0.75));
   background: #fff !important;
   color: #000 !important;
-  height: 3.3em;
   transform: revert;
   font-weight: 700;
 }
