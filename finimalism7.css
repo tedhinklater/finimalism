@@ -1658,7 +1658,7 @@ progress::-webkit-progress-value {
 /* Extra-large screens */
 @media all and (min-width: 64em) {
   #castContent .card.overflowPortraitCard {
-        width: 11.85em !important;
+        width: 15em !important;
   }
 }
 
@@ -1698,18 +1698,6 @@ progress::-webkit-progress-value {
 
 .cardText.cardTextCentered.cardText-secondary {
 	font-size: 0.85em;
-}
-
-@media (min-width: 120em) {
-  .portraitCard, .squareCard {
-    width: 12%;
-  }
-}
-
-@media (max-width: 768px) and (orientation: landscape) {
-  .portraitCard, .squareCard {
-    width: 20%;
-  }
 }
 
 .skinHeader-withBackground {
@@ -3384,6 +3372,13 @@ a[href*="anidb.net"] {
 .layout-desktop #itemDetailPage .detailImageContainer.padded-left .card:hover {
 	transform: scale(1);
 }
+
+.layout-desktop #itemDetailPage .nextUpItems .card.overflowBackdropCard.card-hoverable.card-withuserdata,
+.layout-tv #itemDetailPage .nextUpItems .card.overflowBackdropCard.card-hoverable.card-withuserdata {
+	width: 30.05em;
+}
+
+
 
 @media (min-width: 3000px) {
 	body {
