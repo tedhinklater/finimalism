@@ -1489,7 +1489,7 @@ progress::-webkit-progress-value {
 }
 
 /*Accommodate ultrawide aspect ratios*/
-@media (min-aspect-ratio: 1.98/1) {
+@media (min-aspect-ratio: 1.98/1) and (min-height:1080px) {
   .detailImageContainer .card {
     max-width: 21.35em !important ;
   }
