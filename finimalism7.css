@@ -1497,7 +1497,7 @@ progress::-webkit-progress-value {
     padding-left: 28.45vw !important;
   }
   .detailPageContent {
-    padding-left: 28.45vw !important;
+    padding-left: 31em !important;
   }
 }
 @media (min-aspect-ratio: 2.7/1) {
@@ -1508,7 +1508,7 @@ progress::-webkit-progress-value {
     padding-left: 23.45vw !important;
   }
   .detailPageContent {
-    padding-left: 23.45vw !important;
+    padding-left: 31em !important;
   }
 }
 
@@ -1576,8 +1576,8 @@ progress::-webkit-progress-value {
 
 .layout-desktop .itemsContainer.padded-left.padded-right.padded-right-withalphapicker.vertical-wrap,
 .layout-tv .itemsContainer.padded-left.padded-right.padded-right-withalphapicker.vertical-wrap {
-	padding-left: 3%;
-	margin-right: unset;
+	padding-left: calc(4vw + 1em);
+	padding-right: 4vw;
 }
 
 #homeTab .emby-scroller {
@@ -1632,12 +1632,12 @@ progress::-webkit-progress-value {
 
 .layout-desktop .overflowPortraitCard,
 .layout-tv .overflowPortraitCard {
-    width: 11.85em;
+    width: 13.13em;
 }
 
 .layout-desktop .overflowSquareCard,
 .layout-tv .overflowSquareCard {
-    width: 11.85em;
+    width: 13.13em;
 }
 
 .layout-mobile .overflowPortraitCard {
@@ -1698,6 +1698,18 @@ progress::-webkit-progress-value {
 
 .cardText.cardTextCentered.cardText-secondary {
 	font-size: 0.85em;
+}
+
+@media (min-width: 120em) {
+  .portraitCard, .squareCard {
+    width: 15em;
+  }
+}
+
+@media (max-width: 768px) and (orientation: landscape) {
+  .portraitCard, .squareCard {
+    width: 15em;
+  }
 }
 
 .skinHeader-withBackground {
@@ -2406,6 +2418,7 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 .layout-desktop .alphaPickerButton-vertical,
 .layout-tv .alphaPickerButton-vertical {
     width: 3vw;
+	height: 3vh;
 }
 
 .layout-desktop .alphaPickerButton,
@@ -2417,7 +2430,13 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 .layout-tv .alphaPicker-fixed {
     top: 17vh;
     top: max(env(safe-area-inset-top),17vh);
+}
 
+@media (min-width: 62.5em) {
+  [dir="ltr"] .alphaPicker-fixed-right {
+    right: 1em;
+    right: max(env(safe-area-inset-right),2vw);
+  }
 }
 
 .cardOverlayFab-primary {
@@ -2916,6 +2935,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 .layout-tv #homeTab .emby-scroller-container {
   position: relative;
   overflow: hidden;
+  margin-top: 1.5em;
 }
 
 .listItemImage {
@@ -3018,7 +3038,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 }
 
 #itemDetailPage button[data-direction="left"] {
-	right: 5em;
+	right: 3.5em;
 	position: absolute;
 	top: 1em;
 	z-index: 50;
@@ -3375,7 +3395,7 @@ a[href*="anidb.net"] {
 
 .layout-desktop #itemDetailPage .nextUpItems .card.overflowBackdropCard.card-hoverable.card-withuserdata,
 .layout-tv #itemDetailPage .nextUpItems .card.overflowBackdropCard.card-hoverable.card-withuserdata {
-	width: 30.05em;
+	width: 30.05em !important;
 }
 
 
