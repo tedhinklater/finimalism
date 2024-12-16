@@ -29,7 +29,7 @@ Library
 Movie
 ![Movie](https://i.imgur.com/cTKGgFY.png)
 Series (Black & White theme)
-![Series](https://i.imgur.com/Nf1qzWy.png)
+![Series](https://i.imgur.com/sy3CUts.png)
 Season / Episodes
 ![Episodes](https://i.imgur.com/hd766Tt.png)
 Player
