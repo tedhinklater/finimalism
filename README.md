@@ -22,7 +22,7 @@ or, the Black theme if you prefer
 
 Everything is just an alteration of the amazing work already put into [Ultrachromic by CTalvio](https://github.com/CTalvio/Ultrachromic). Updated for jellyfin server 10.10.X
 
-Homepage (Colour)
+Homepage (Colour theme)
 ![Homepage](https://i.imgur.com/IIlkPBR.png)
 Library (Black theme)
 ![Library](https://i.imgur.com/oK03wLq.png)
