@@ -4,14 +4,14 @@
 Also: Turn it up to 11 with the new ![Featured Content Bar](https://github.com/tedhinklater/Jellyfin-Featured-Content-Bar) 
 ![fcb](https://github.com/user-attachments/assets/ad369437-5460-414d-afb3-e9d344d357ee)
 
-Import the colour theme to your CSS with
+Import the Colour theme to your CSS with
 
 ```css
 @import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/finimalism7.css");
 
 ```
 
-or, the black & white theme if you prefer 
+or, the Black theme if you prefer 
 
 ```css
 @import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/finimalism-just-black.css");
@@ -22,16 +22,16 @@ or, the black & white theme if you prefer
 
 Everything is just an alteration of the amazing work already put into [Ultrachromic by CTalvio](https://github.com/CTalvio/Ultrachromic). Updated for jellyfin server 10.10.X
 
-Homepage (Colour theme)
-![Homepage](https://i.imgur.com/LevEG8k.png)
-Library (Black & White theme)
-![Library](https://i.imgur.com/snb80iI.png)
+Homepage (Colour)
+![Homepage](https://i.imgur.com/IIlkPBR.png)
+Library (Black theme)
+![Library](https://i.imgur.com/oK03wLq.png)
 Movie (Colour)
-![Movie](https://i.imgur.com/cTKGgFY.png)
-Series (Black & White)
-![Series](https://i.imgur.com/3n60KsH.png)
+![Movie](https://i.imgur.com/82VNzS2.png)
+Series (Black)
+![Series](https://i.imgur.com/A1wNGmx.png)
 Season / Episodes (Colour)
-![Episodes](https://i.imgur.com/hd766Tt.png)
+![Episodes](https://i.imgur.com/qbnZouO.png)
 Player
 ![Screenshot 2024-11-30 035044](https://github.com/user-attachments/assets/5e5e519d-5aee-4ecc-8fcc-cac68dc9683e)
 
