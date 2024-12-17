@@ -24,12 +24,12 @@ Everything is just an alteration of the amazing work already put into [Ultrachro
 
 Homepage
 ![Homepage](https://i.imgur.com/LevEG8k.png)
-Library
-![Library](https://i.imgur.com/wOBpC20.png)
+Library (Black & White theme)
+![Library](https://i.imgur.com/snb80iI.png)
 Movie
 ![Movie](https://i.imgur.com/cTKGgFY.png)
 Series (Black & White theme)
-![Series](https://i.imgur.com/sy3CUts.png)
+![Series](https://i.imgur.com/3n60KsH.png)
 Season / Episodes
 ![Episodes](https://i.imgur.com/hd766Tt.png)
 Player
