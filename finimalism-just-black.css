@@ -135,10 +135,6 @@
   background-size: cover !important;
 }
 
-.preload {
-	background-color: #000!important;
-}
-
 .pageTabContent.is-active::before {
   content: '';
   position: fixed;
