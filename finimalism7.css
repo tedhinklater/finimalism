@@ -3398,7 +3398,9 @@ a[href*="anidb.net"] {
 	width: 30.05em !important;
 }
 
-
+.alphaPickerButton:hover {
+  color: rgba(255, 255, 255, 0.75);
+}
 
 @media (min-width: 3000px) {
 	body {
