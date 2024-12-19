@@ -151,6 +151,64 @@
   z-index: -1;
   background-attachment: fixed;
 }
+
 .layout-desktop .mainDetailButtons.focuscontainer-x {
   background: #0a0a0ad6;
 }
+
+.backgroundContainer, .preload {
+  background-color: #000;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .paper-icon-button-light:hover:not(:disabled) {
+        color: rgba(var(--accent)) !important;
+        background-color: rgba(199, 199, 199, 0.2);
+    }
+}
+
+.paper-icon-button-light:active:not(:disabled),
+.paper-icon-button-light.show-focus:focus,
+.inputLabelFocused,
+.selectLabelFocused,
+.textareaLabelFocused,
+.upNextDialog-countdownText,
+.button-flat:hover,
+.button-link,
+.emby-select-withcolor:focus,
+.emby-tab-button.show-focus:focus,
+.emby-tab-button:hover,
+.guide-date-tab-button.emby-tab-button-active,
+.guide-date-tab-button:focus,
+.buttonActive,
+.metadataSidebarIcon,
+.layout-tv .emby-button.detailFloatingButton:focus,
+#dialogToc .bookplayerButtonIcon:hover,
+#dialogToc .toc li a:active,
+#dialogToc .toc li a:hover {
+color: #fff !important;
+}
+
+.alphaPickerButton-tv:focus,
+.emby-select-tv-withcolor:focus,
+.guide-channelHeaderCell:focus,
+.programCell:focus,
+.guide-date-tab-button.show-focus:focus,
+.emby-button.detailFloatingButton,
+.alphaPickerButton-tv:focus,
+.emby-select-tv-withcolor:focus,
+.emby-checkbox:checked + span + .checkboxOutline,
+.itemProgressBarForeground {
+    background-color: rgba(var(--accent)) !important;
+}
+
+.progressring-spiner,
+.emby-input:focus,
+.emby-textarea:focus,
+.emby-select-withcolor:focus,
+.emby-checkbox:checked + span + .checkboxOutline,
+.emby-checkbox:focus:not(:checked) + span + .checkboxOutline,
+.card:focus .cardBox.visualCardBox,
+.card:focus .cardBox:not(.visualCardBox) .cardScalable,
+    border-color: rgba(var(--accent)) !important;
+} 
