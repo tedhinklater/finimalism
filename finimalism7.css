@@ -1861,8 +1861,10 @@ progress::-webkit-progress-value {
 }
 
 .layout-desktop .homeLibraryButton:hover,
+.layout-mobile .homeLibraryButton:hover,
 .layout-tv .homeLibraryButton:hover,
 .layout-desktop .homeLibraryButton:focus,
+.layout-mobile .homeLibraryButton:focus,
 .layout-tv .homeLibraryButton:focus {
   filter: drop-shadow(0 0 1px rgba(2, 2, 2, 0.75));
   background: #fff !important;
