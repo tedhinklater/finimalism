@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/e23544eb-439c-4362-b5c4-ae1156461488)# finimalism
+# finimalism
 ![mockup](https://i.imgur.com/TvTV8jq.jpeg)
 
 Also: Turn it up to 11 with the new ![Featured Content Bar](https://github.com/tedhinklater/Jellyfin-Featured-Content-Bar) 
