@@ -31,7 +31,7 @@ Movie (Colour)
 Series (Black)
 ![Series](https://i.imgur.com/A1wNGmx.png)
 Season / Episodes (Colour)
-![Episodes](https://i.imgur.com/qbnZouO.png)
+![Episodes](https://i.imgur.com/P69BeYi.png)
 Player
 ![Screenshot 2024-11-30 035044](https://github.com/user-attachments/assets/5e5e519d-5aee-4ecc-8fcc-cac68dc9683e)
 
