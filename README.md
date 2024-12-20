@@ -25,7 +25,7 @@ Everything is just an alteration of the amazing work already put into [Ultrachro
 Homepage (Colour theme)
 ![Homepage](https://i.imgur.com/IIlkPBR.png)
 Library (Black theme)
-![Library](https://i.imgur.com/oK03wLq.png)
+![Library](https://i.imgur.com/HuglVXL.png)
 Movie (Colour)
 ![Movie](https://i.imgur.com/82VNzS2.png)
 Series (Black)
