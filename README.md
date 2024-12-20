@@ -1,4 +1,4 @@
-# finimalism
+![image](https://github.com/user-attachments/assets/e23544eb-439c-4362-b5c4-ae1156461488)# finimalism
 ![mockup](https://i.imgur.com/TvTV8jq.jpeg)
 
 Also: Turn it up to 11 with the new ![Featured Content Bar](https://github.com/tedhinklater/Jellyfin-Featured-Content-Bar) 
@@ -27,11 +27,13 @@ Homepage (Colour theme)
 Library (Black theme)
 ![Library](https://i.imgur.com/HuglVXL.png)
 Movie (Colour)
-![Movie](https://i.imgur.com/82VNzS2.png)
+![Movie](https://i.imgur.com/0SxxtPd.png)
 Series (Black)
 ![Series](https://i.imgur.com/A1wNGmx.png)
 Season / Episodes (Colour)
 ![Episodes](https://i.imgur.com/P69BeYi.png)
+Episode (Black)
+![Episode](https://i.imgur.com/ULInnTI.png)
 Player
 ![Screenshot 2024-11-30 035044](https://github.com/user-attachments/assets/5e5e519d-5aee-4ecc-8fcc-cac68dc9683e)
 
