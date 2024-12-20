@@ -1809,7 +1809,7 @@ progress::-webkit-progress-value {
 
 /* Style individual icons */
 .cardOverlayButtonIcon {
-  font-size: 1.5em !important;
+  font-size: 1.48em !important;
   width: 1.1em !important;
   height: 1.5em !important;
   display: flex;
