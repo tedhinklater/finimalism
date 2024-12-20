@@ -1278,7 +1278,8 @@ div[data-role="controlgroup"] a[data-role="button"] {
 .visualCardBox, .cardImageContainer {
     box-shadow: none;
 }
-#itemDetailPage .cardImageContainer {
+
+#itemDetailPage .detailImageContainer.padded-left .cardScalable .cardImageContainer {
 	border-radius: 0.2em !important;
 }
 .backgroundProgress > div {
@@ -1891,6 +1892,7 @@ progress::-webkit-progress-value {
 
 #childrenContent .childrenItemsContainer.itemsContainer.padded-right.vertical-list .listItem.listItem-largeImage.listItem-withContentWrapper .listItem-content .listItemImage.listItemImage-large.itemAction.lazy.non-blurhashable.lazy-image-fadein-fast {
 	height: 13.2em;
+	transition: box-shadow 0.3s;
 }
 
 #childrenContent .childrenItemsContainer.itemsContainer.padded-right.vertical-list .listItem.listItem-largeImage.listItem-withContentWrapper .listItem-content {
@@ -2944,7 +2946,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 }
 
 .listItemImage:hover {
-  box-shadow: 0px 0px 5px rgb(var(--accent));
+  box-shadow: 0px 0px 350px #fff3;
 }
 
 .skinHeader {
