@@ -1648,39 +1648,6 @@ progress::-webkit-progress-value {
     width: 11.85em;
 }
 
-/* Larger screens */
-@media all and (min-width: 58em) and (max-width: 64em) {
-  #castContent .card.overflowPortraitCard {
-    width: 11.85em !important;
-  }
-}
-
-/* Extra-large screens */
-@media all and (min-width: 64em) {
-  #castContent .card.overflowPortraitCard {
-        width: 15em !important;
-  }
-}
-
-/* Mobile or smaller screens */
-@media all and (max-width: 48em) {
-  #castContent .card.overflowPortraitCard {
-        width: 11.85em !important;
-  }
-}
-
-@media (max-width: 768px) and (orientation: landscape) {
-  #castContent .card.overflowPortraitCard {
-    width: 11.85em !important;
-  }
-}
-
-@media (max-width: 930px) and (orientation: landscape) {
-  #castContent .card.overflowPortraitCard {
-    width: 11.85em !important;
-  }
-}
-
 .cardPadder {
   background-color: #0000 !important; box-shadow: none !important;
 }
@@ -2109,79 +2076,6 @@ progress::-webkit-progress-value {
   }
 }
 
-/* Hide My Media text on desktop */
-/* .verticalSection-extrabottompadding > .sectionTitle-cards:not(#similarCollapsible .sectionTitle-cards) {
-  display: none;
-} */
-
-/* Smaller Next Up cards */
-.verticalSection.section2 .card.overflowBackdropCard {
-  width: 13.88em !important;
-  font-size: 90% !important;
-}
-
-
-/* Adjust font size for smaller screens if needed */
-@media all and (max-width: 767px) {
-  .verticalSection.section2 .card.overflowBackdropCard {
-    width: 14.3em !important;
-    font-size: 90% !important;
-  }
-}
-
-/* Mobile or smaller screens */
-@media all and (max-width: 25em) {
-  .verticalSection.section2 .card.overflowBackdropCard {
-    width: 13.88em !important;
-    font-size: 90% !important;
-  }
-}
-
-/* Adjust the size of cards in the "Series" section */
-.verticalSection.detailVerticalSection .overflowPortraitCard {
-    width: 30vw !important;
-    font-size: 90% !important; 
-}
-
-/* Larger screens */
-@media all and (min-width: 58em) and (max-width: 64em) {
-    .verticalSection.detailVerticalSection .overflowPortraitCard {
-        width: 15vw !important;
-    }
-}
-
-/* Extra-large screens */
-@media all and (min-width: 64em) {
-    .verticalSection.detailVerticalSection .overflowPortraitCard {
-        width: 15em !important;
-    }
-}
-
-/* Mobile or smaller screens */
-@media all and (max-width: 48em) {
-    .verticalSection.detailVerticalSection .overflowPortraitCard {
-        width: 13.88em !important;
-    }
-}
-
-@media (max-width: 768px) and (orientation: landscape) {
-  .verticalSection.detailVerticalSection .overflowPortraitCard {
-    width: 19vw !important;
-  }
-}
-
-@media (max-width: 930px) and (orientation: landscape) {
-  .verticalSection.detailVerticalSection .overflowPortraitCard {
-    width: 19vw !important;
-  }
-}
-
-@media (max-width: 720px) and (orientation: landscape) {
-  .detailPageContent {
-    padding-left: 30vw !important;
-  }
-}
-
 /* Main Drawer */
 .mainDrawer {
   background-color: rgba(0, 0, 0, 0.9);
@@ -2276,15 +2170,44 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
 }
 
 .layout-mobile .homePage .section1.verticalSection .itemsContainer .card.overflowBackdropCard {
-  width: 13.88em !important;
   margin-top: 0em;
   margin-bottom: 0em;
+  font-size: 90%;
 }
 
 .layout-mobile #indexPage .overflowBackdropCard, .overflowSmallBackdropCard {
-  width: 12.88em;
   margin: 0em !important;
   margin-right: -0.5em !important;
+}
+@media (orientation: portrait) {
+	.itemsContainer.padded-left.padded-right.padded-right-withalphapicker.vertical-wrap {
+	  padding-left: 5%;
+	  margin-right: 7%;
+	  display: grid;
+	  grid-template-columns: repeat(2, 1fr);
+	  grid-gap: 1em;
+	}
+
+	.itemsContainer.padded-left.padded-right.padded-right-withalphapicker.vertical-wrap .card.portraitCard {
+		width: auto;
+	}
+	
+	.alphaPickerButton-vertical {
+		width: 3vw;
+		height: 3vh;
+	}
+
+	.alphaPickerButton {
+		padding: .2em .4em;
+	}
+
+	.alphaPicker-fixed {
+		top: 17vh;
+		top: max(env(safe-area-inset-top),17vh);
+	}
+	[dir="ltr"] .alphaPicker-fixed-right {
+		right: max(env(safe-area-inset-right),1em);
+  }
 }
 
 /* Push scroll buttons to the right */
@@ -2305,14 +2228,6 @@ button.is-emby-button:hover emby-button .navMenuOptionText {
     width: 21.85em;
     margin-top: 0em;
     font-size: 90% !important;
-}
-
-/* Adjust the card size for smaller screens if needed */
-@media all and (max-width: 767px) {
-    .homePage .section1.verticalSection .itemsContainer .card.overflowBackdropCard {
-        width: 250px !important;
-        font-size: 90% !important;
-    }
 }
 
 .layout-desktop .overflowBackdropCard,
