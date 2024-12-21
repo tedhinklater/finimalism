@@ -3115,6 +3115,14 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
   padding-top: 38.5em !important;
 }
 
+@media (max-width: 32em) {
+  .layout-mobile .infoWrapper {
+    position: relative;
+    max-height: 10em;
+    min-height: 6em;
+  }
+}
+
 /* IMDb link replaced with logo */
 a[href*="imdb.com"]::before {
     content: "";
