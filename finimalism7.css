@@ -3222,9 +3222,6 @@ a[href*="anidb.net"] {
 	body {
 		font-size: 133%;
 	}
-	.featurediframe {
-		height: 13em;
-	}
 	.detailImageContainer .card {
 		font-size: 100% !important;
 	}
