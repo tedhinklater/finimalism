@@ -3343,7 +3343,7 @@ a[href*="anidb.net"] {
 
 @media (min-aspect-ratio: 20/9) and (max-aspect-ratio: 22/9) and (min-width: 2500px) {
 	body {
-		font-size: 166%;
+		font-size: 166% !important;
 	}
 	.layout-desktop .detailSectionContent,
 	.layout-tv .detailSectionContent {
