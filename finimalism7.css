@@ -2319,14 +2319,14 @@ button.is-emby-button emby-button {
 	.layout-mobile [dir="ltr"] .mainDetailButtons {
 		padding-left: 25%;
 		font-size: 0.84em;
-		padding-top: 2em;
+		padding-top: 1em;
 	}
 }
 
 @media (orientation: landscape) and (max-width: 1000px) {
 	.nameContainer {
 		max-width: 60vw;
-		margin-left: 4em;
+		margin-left: 1em;
 	}
 }
 /* Raise Next Up cards on homepage */
