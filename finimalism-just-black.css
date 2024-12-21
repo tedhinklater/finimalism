@@ -102,11 +102,11 @@
   color: #000 !important;
 }
 
-.listItem:hover .listItemBodyText {
+.dialogContainer .listItem:hover .listItemBodyText {
 	color: #000 !important;
 }
 
-.listItem:hover .listItemAside {
+.dialogContainer .listItem:hover .listItemAside {
 	color: #000d !important;
 }
 
