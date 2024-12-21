@@ -22,20 +22,29 @@ or, the Black theme if you prefer
 
 Everything is just an alteration of the amazing work already put into [Ultrachromic by CTalvio](https://github.com/CTalvio/Ultrachromic). Updated for jellyfin server 10.10.X
 
-Homepage (Colour theme)
+## Homepage (Colour theme)
 ![Homepage](https://i.imgur.com/IIlkPBR.png)
-Library (Black theme)
+
+## Library (Black theme)
 ![Library](https://i.imgur.com/HuglVXL.png)
-Movie (Colour)
+
+## Movie (Colour)
 ![Movie](https://i.imgur.com/0SxxtPd.png)
-Series (Black)
+
+## Series (Black)
 ![Series](https://i.imgur.com/A1wNGmx.png)
-Season / Episodes (Colour)
+
+## Season / Episodes (Colour)
 ![Episodes](https://i.imgur.com/P69BeYi.png)
-Episode (Black)
+
+## Episode (Black)
 ![Episode](https://i.imgur.com/ULInnTI.png)
-Player
+
+## Player
 ![Screenshot 2024-11-30 035044](https://github.com/user-attachments/assets/5e5e519d-5aee-4ecc-8fcc-cac68dc9683e)
+
+## Mobile View (Black theme)
+![Mobile](https://i.imgur.com/SdDFqjS.png)
 
 # Extras
 
