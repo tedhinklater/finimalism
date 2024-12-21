@@ -3213,6 +3213,9 @@ a[href*="anidb.net"] {
 	body {
 		font-size: 133%;
 	}
+	.featurediframe {
+		height: 13em;
+	}
 	.detailImageContainer .card {
 		font-size: 100% !important;
 	}
@@ -3322,6 +3325,34 @@ a[href*="anidb.net"] {
 
 @media (min-width: 3000px) {
 	body {
-		font-size: 200% !important;
+		font-size: 200%;
+	}
+        .featurediframe {
+                height: 24em;
+        }
+}
+
+@media (min-width: 3000px) {
+	body {
+		font-size: 200%;
+	}
+        .featurediframe {
+                height: 30em;
+        }
+}
+
+@media (min-aspect-ratio: 20/9) and (max-aspect-ratio: 22/9) and (min-width: 2500px) {
+	body {
+		font-size: 166%;
+	}
+	.layout-desktop .detailSectionContent,
+	.layout-tv .detailSectionContent {
+		font-size: 1.2em;
+	}
+	.layout-desktop .itemExternalLinks.focuscontainer-x, 
+	.layout-tv .itemExternalLinks.focuscontainer-x {
+		font-size: 0.9em !important;
+		width: 18em;
+		top: 51em;
 	}
 }
