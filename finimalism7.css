@@ -3343,21 +3343,18 @@ a[href*="anidb.net"] {
 	body {
 		font-size: 200%;
 	}
-        .featurediframe {
-                height: 24em;
-        }
 }
 
 @media (min-width: 3000px) {
 	body {
 		font-size: 200%;
 	}
-        .featurediframe {
-                height: 30em;
-        }
+	.cardOverlayButton-hover {
+		font-size: 0.95em;
+	}
 }
 
-@media (min-aspect-ratio: 20/9) and (max-aspect-ratio: 22/9) and (min-width: 2500px) {
+@media (min-aspect-ratio: 20/9) and (max-aspect-ratio: 22/9) and (min-width: 2500px) and (max-width: 3500px) {
 	body {
 		font-size: 166% !important;
 	}
