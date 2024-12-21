@@ -549,6 +549,18 @@ progress {
  }
 }
 
+.css-17c09up.Mui-selected,
+.css-1ip8vbj.Mui-selected {
+  background-color: rgb(33, 22, 89) !important;
+}
+
+.css-17c09up:hover,
+.css-1ip8vbj.Mui-selected:hover,
+.css-1ip8vbj:hover {
+  text-decoration: none;
+  background-color: rgba(61, 53, 108, 0.53) !important;
+}
+
 /*Colors for loading spinner, placeholders, scroll bars*/
 .mdl-spinner__layer-1 {border-color: rgba(255, 255, 255, 1);}
 .mdl-spinner__layer-2 {border-color: rgba(128, 128, 128, 1);}
@@ -1417,7 +1429,7 @@ progress::-webkit-progress-value {
 
 .navMenuOption:hover,
 .actionSheetMenuItem:hover {
-  background-color: linear-gradient(to right, rgba(168, 6, 217, 0.3), rgba(6, 161, 217, 0.6)) !important;
+  background-color: #fff !important;
 }
 
 .emby-checkbox:checked + span + .checkboxOutline,
@@ -1425,7 +1437,7 @@ progress::-webkit-progress-value {
 .emby-select-withcolor:focus,
 .emby-input:focus,
 .itemSelectionPanel {
-  border: 0.01em solid linear-gradient(to right, rgba(168, 6, 217, 0.3), rgba(6, 161, 217, 0.6)) !important;
+  border: 0.01em solid #fff !important;
 }
 
 .upNextDialog-countdownText {
@@ -1443,10 +1455,10 @@ progress::-webkit-progress-value {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(var(--accent),0.8) !important;
+  background: #fff !important;
 }
 * {
-  scrollbar-color: rgba(var(--accent),0.8) #0000 !important;
+  scrollbar-color: #fff #0000 !important;
 }
 
 /* Syncplay theming*/
@@ -1731,8 +1743,8 @@ progress::-webkit-progress-value {
   border: solid 1px rgba(var(--accent),0.0) !important;
 }
 .drawer-open {
-    box-shadow: 0px 0px 5px rgba(var(--accent), 1) !important;
-    border-right: solid 1px rgba(var(--accent), 1) !important;
+  box-shadow: 0px 0px 5px rgb(255, 255, 255) !important;
+  border-right: solid 1px rgb(255, 255, 255) !important;
 }
 
 @supports (backdrop-filter: blur(15px)) {
@@ -2085,16 +2097,19 @@ progress::-webkit-progress-value {
 .mainDrawer-scrollContainer.scrollContainer .navMenuOption:hover,
 .mainDrawer-scrollContainer.scrollContainer .navMenuOption:hover emby-button,
 button.is-emby-button:hover emby-button {
-    background: linear-gradient(to right, rgba(168, 6, 217 , 0.3), rgba(6, 161, 217, 0.6)) !important;
-    transition: background 0.3s ease;
+    background: #fff !important;
+    transition: background 0.1s;
+	color: black !important;
 }
 
-.navMenuOption,
-.navMenuOption:hover,
-.navMenuOption-selected {
+.navMenuOption {
     border-radius: var(--rounding) !important;
     width: 90% !important;
     margin-left: 1em !important;
+}
+
+.navMenuOption:hover .navMenuOptionText {
+		color: black !important;
 }
 
 /* Remove default hover background color */
@@ -2105,15 +2120,9 @@ button.is-emby-button emby-button {
     transition: background 0.3s ease;
 }
 
-/* Ensure the text color remains white when hovered */
-.mainDrawer-scrollContainer.scrollContainer .navMenuOption:hover .navMenuOptionText,
-button.is-emby-button:hover emby-button .navMenuOptionText {
-    color: white !important; 
-}
-
 /* Gradient for buttons on hover in the Settings section */
 #myPreferencesMenuPage .verticalSection-extrabottompadding .emby-button:hover {
-    background: linear-gradient(to right, rgba(168, 6, 217, 0.3), rgba(6, 161, 217, 0.6)) !important;
+    background: #2c1f78ba !important;
     transition: background 0.3s ease;
 }
 
@@ -3321,6 +3330,10 @@ a[href*="anidb.net"] {
 
 .alphaPickerButton:hover {
   color: rgba(255, 255, 255, 0.75);
+}
+
+.mainDrawer.transition.touch-menu-la.drawer-open {
+	min-width: 20em;
 }
 
 @media (min-width: 3000px) {
