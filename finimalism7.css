@@ -1539,7 +1539,7 @@ progress::-webkit-progress-value {
 
 @media (orientation: landscape) {
     .layout-mobile  .detailPagePrimaryContainer {
-        padding-left: 1.45vw !important;
+        padding-left: 15vw !important;
   }
 }
 
@@ -2290,9 +2290,45 @@ button.is-emby-button emby-button {
 }
 
 .layout-mobile .mediaInfoItem {
-	margin-top: 0.6em !important;
+	margin: 0.2em !important;
+	justify-content: center;
+	display: flex;
+	max-width: fit-content;
 }
 
+.layout-mobile .nameContainer {
+	display: -webkit-box !important;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: normal;
+	padding: 0.5em;
+}
+
+@media (orientation: portrait) and (min-width: 800px) {
+	.layout-mobile .itemMiscInfo.itemMiscInfo-primary {
+		padding-left: 8vw;
+	}
+	.layout-mobile [dir="ltr"] .mainDetailButtons {
+		justify-content: space-evenly;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 380px) {
+	.layout-mobile [dir="ltr"] .mainDetailButtons {
+		padding-left: 25%;
+		font-size: 0.84em;
+		padding-top: 2em;
+	}
+}
+
+@media (orientation: landscape) and (max-width: 1000px) {
+	.nameContainer {
+		max-width: 60vw;
+		margin-left: 4em;
+	}
+}
 /* Raise Next Up cards on homepage */
 .sectionTitleContainer-cards {
   margin: 0;
@@ -2667,40 +2703,40 @@ button.is-emby-button emby-button {
 .layout-tv .itemName.infoText.subtitle.focuscontainer-x {
 	text-align: center;
 	position: fixed;
-  top: 38.5em;
-  left: 4em;
-  width: 23.3em;
+	top: 38.5em;
+	left: 4em;
+	width: 23.3em;
 }
 
-.layout-mobile .itemMiscInfo, .layout-mobile .itemName, .layout-mobile .mainDetailButtons, .layout-mobile .parentName {
-  justify-content: center;
-  text-align: center;
+	.layout-mobile .itemMiscInfo, .layout-mobile .itemName, .layout-mobile .mainDetailButtons, .layout-mobile .parentName {
+	justify-content: space-evenly;
+	text-align: center;
 }
 
 @media (orientation: portrait) {
 	.itemMiscInfo {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	grid-gap: 1em;
+	grid-gap: 0.1em;
 	}
 }
 
 button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.itemAction.paper-icon-button-light.cardOverlayFab-primary[data-action="resume"] {
-  background-color: rgba(0, 0, 0, 0.7);
-  font-size: 130%;
-  height: 3em;
-  left: 50%;
-  margin-left: -1.5em;
-  margin-top: -1.5em;
-  padding: 0;
-  position: absolute;
-  top: 50%;
-  width: 3em;
+	background-color: rgba(0, 0, 0, 0.7);
+	font-size: 130%;
+	height: 3em;
+	left: 50%;
+	margin-left: -1.5em;
+	margin-top: -1.5em;
+	padding: 0;
+	position: absolute;
+	top: 50%;
+	width: 3em;
 }
 
 .first-imageEditor-buttons, .imageEditor-buttons {
-  margin-top: 0em;
-  margin-bottom: 0em;
+	margin-top: 0em;
+	margin-bottom: 0em;
 }
 
 @media (min-width: 60em) {
@@ -2836,25 +2872,25 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 }
 
 #displayPreferencesPage .sectionTitle {
-  margin-bottom: 1em !important;
-  margin-left: 0em !important;
+	margin-bottom: 1em !important;
+	margin-left: 0em !important;
 }
 
 .card.overflowPortraitCard.card-hoverable.card-withuserdata:hover .countIndicator.indicator {
-  opacity: 0;
+	opacity: 0;
 }
 
 .card.portraitCard.card-hoverable.card-withuserdata:hover .countIndicator.indicator {
-  opacity: 0;
+	opacity: 0;
 }
 
 .countIndicator.indicator {
-  transition: opacity 0.3s ease;
+	transition: opacity 0.3s ease;
 }
 
 [dir="ltr"] .emby-scrollbuttons {
-  right: 0em;
-  padding-right: 0em;
+	right: 0em;
+	padding-right: 0em;
 }
 
 #castCollapsible .emby-scrollbuttons.padded-right,
@@ -2868,9 +2904,9 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 
 .layout-desktop #homeTab .emby-scroller-container,
 .layout-tv #homeTab .emby-scroller-container {
-  position: relative;
-  overflow: hidden;
-  margin-top: 1.5em;
+	position: relative;
+	overflow: hidden;
+	margin-top: 1.5em;
 }
 
 .listItemImage {
@@ -2878,7 +2914,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 }
 
 .listItemImage:hover {
-  box-shadow: 0px 0px 350px #fff3;
+	box-shadow: 0px 0px 350px #fff3;
 }
 
 .skinHeader {
@@ -2894,7 +2930,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 }
 
 .collectionItems {
-    min-height: calc(18em + 8.6vh);
+	min-height: calc(18em + 8.6vh);
 }
 
 
@@ -2922,9 +2958,9 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 
 .layout-desktop #homeTab .emby-scrollbuttons.padded-right,
 .layout-tv #homeTab .emby-scrollbuttons.padded-right {
-  right: 0em;
-  padding-right: 0em;
-  width: 100vw;
+	right: 0em;
+	padding-right: 0em;
+	width: 100vw;
 }
 
 #homeTab button[data-direction="left"] {
@@ -3021,46 +3057,45 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 
 
 .layout-desktop .childrenItemsContainer.itemsContainer.padded-right.vertical-list {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
 }
 
 .layout-desktop .listItemImage-large,
 .layout-tv .listItemImage-large {
-    height: 9em;
+	height: 9em;
 }
 
 @media all and (max-width: 2000px) {
-  .layout-desktop .childrenItemsContainer.itemsContainer.padded-right.vertical-list {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
+	.layout-desktop .childrenItemsContainer.itemsContainer.padded-right.vertical-list {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
 }
 
 @media all and (max-width: 1000px) {
   .layout-desktop .childrenItemsContainer.itemsContainer.padded-right.vertical-list {
-    grid-template-columns: 1fr 1fr;
-  }
+	grid-template-columns: 1fr 1fr;
+	}
 }
 
-.layout-mobile
-  .childrenItemsContainer.itemsContainer.padded-right.vertical-list {
-  grid-template-columns: 1fr;
+.layout-mobile .childrenItemsContainer.itemsContainer.padded-right.vertical-list {
+	grid-template-columns: 1fr;
 }
 
 .layout-desktop #itemDetailPage .listItem-content {
-  border-radius: var(--rounding);
-  overflow: hidden;
-  transition: background 0.15s ease-in-out;
-  flex-flow: column;
-  -webkit-transition: background 0.15s ease-in-out;
-  -moz-transition: background 0.15s ease-in-out;
-  -ms-transition: background 0.15s ease-in-out;
-  -o-transition: background 0.15s ease-in-out;
+	border-radius: var(--rounding);
+	overflow: hidden;
+	transition: background 0.15s ease-in-out;
+	flex-flow: column;
+	-webkit-transition: background 0.15s ease-in-out;
+	-moz-transition: background 0.15s ease-in-out;
+	-ms-transition: background 0.15s ease-in-out;
+	-o-transition: background 0.15s ease-in-out;
 }
 
 .layout-desktop .listItemImage.listItemImage-large {
-  width: 100%;
-  margin: 0;
+	width: 100%;
+	margin: 0;
 }
 
 .layout-desktop .listViewUserDataButtons {
@@ -3069,49 +3104,49 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 }
 
 .layout-desktop .listItem-overview.listItemBodyText {
-  height: 5.5em !important;
-  font-size: 1em !important;
-  padding-top: 0em !important;
+	height: 5.5em !important;
+	font-size: 1em !important;
+	padding-top: 0em !important;
 }
 
 .layout-desktop #itemDetailPage .listItem {
-  position: relative;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  max-height: 30em;
-  overflow: hidden;
-  margin-bottom: 1.5rem;
-  border-radius: var(--rounding);
-  padding: .5em;
+	position: relative;
+	height: -webkit-fit-content;
+	height: -moz-fit-content;
+	max-height: 30em;
+	overflow: hidden;
+	margin-bottom: 1.5rem;
+	border-radius: var(--rounding);
+	padding: .5em;
 }
 
 .layout-desktop itemDetailPage .secondary.listItem-overview.listItemBodyText {
-  height: 100%;
-  margin: 0;
+	height: 100%;
+	margin: 0;
 }
 
 .layout-desktop .listItem[data-mediatype="Audio"] {
-  padding: 0 1em;
-  border-radius: var(--rounding) !important;
-  -webkit-border-radius: var(--rounding) !important;
-  -moz-border-radius: var(--rounding) !important;
-  -ms-border-radius: var(--rounding) !important;
-  -o-border-radius: var(--rounding) !important;
+	padding: 0 1em;
+	border-radius: var(--rounding) !important;
+	-webkit-border-radius: var(--rounding) !important;
+	-moz-border-radius: var(--rounding) !important;
+	-ms-border-radius: var(--rounding) !important;
+	-o-border-radius: var(--rounding) !important;
 }
 
 .layout-desktop .listItemImageButton {
-  margin: auto;
-  font-size: 1.6em !important;
+	margin: auto;
+	font-size: 1.6em !important;
 }
 .layout-desktop .listItemBody.itemAction,
 .layout-desktop .listItem-bottomoverview.secondary {
-  z-index: 1;
-  min-width: 15em;
+	z-index: 1;
+	min-width: 15em;
 }
 .layout-desktop .listItem-bottomoverview.secondary {
-  text-align: justify;
-  padding: .5em;
-  margin: 0;
+	text-align: justify;
+	padding: .5em;
+	margin: 0;
 }
 
 .layout-desktop .trackSelections .selectContainer .selectLabel,
@@ -3120,113 +3155,113 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 }
 
 .layout-tv .itemDetailPage {
-  padding-top: 38.5em !important;
+	padding-top: 38.5em !important;
 }
 
 @media (max-width: 32em) {
-  .layout-mobile .infoWrapper {
-    position: relative;
-    max-height: 10em;
-    min-height: 6em;
-  }
+	.layout-mobile .infoWrapper {
+		position: relative;
+		max-height: 10em;
+		min-height: 6em;
+  	}
 }
 
 /* IMDb link replaced with logo */
 a[href*="imdb.com"]::before {
-    content: "";
-    display: inline-block;
-    width: 50px;
-    height: 25px;
-    background-image: url('https://i.imgur.com/pbNvPMX.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-right: 5px;
-    vertical-align: middle;
+	content: "";
+	display: inline-block;
+	width: 50px;
+	height: 25px;
+	background-image: url('https://i.imgur.com/pbNvPMX.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 5px;
+	vertical-align: middle;
 }
 
 a[href*="imdb.com"] {
-    font-size: 0;
+	font-size: 0;
 }
 
 /* TheMovieDb link replaced with logo */
 a[href*="themoviedb.org"]::before {
-    content: "";
-    display: inline-block;
-    width: 50px;
-    height: 25px;
-    background-image: url('https://i.imgur.com/RlC69qy.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-right: 5px;
-    vertical-align: middle;
+	content: "";
+	display: inline-block;
+	width: 50px;
+	height: 25px;
+	background-image: url('https://i.imgur.com/RlC69qy.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 5px;
+	vertical-align: middle;
 }
 
 a[href*="themoviedb.org"] {
-    font-size: 0;
+	font-size: 0;
 }
 
 /* TheMovieDb link replaced with logo */
 a[href*="themoviedb.org/collection"]::before {
-    content: "";
-    display: inline-block;
-    width: 50px;
-    height: 25px;
-    background-image: url('https://i.imgur.com/HDodxf3.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-right: 5px;
-    vertical-align: middle;
+	content: "";
+	display: inline-block;
+	width: 50px;
+	height: 25px;
+	background-image: url('https://i.imgur.com/HDodxf3.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 5px;
+	vertical-align: middle;
 }
 
 /* TheTVDb link replaced with logo */
 a[href*="thetvdb.com"]::before {
-    content: "";
-    display: inline-block;
-    width: 50px;
-    height: 25px;
-    background-image: url('https://i.imgur.com/Jp1VNqp.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-right: 5px;
-    vertical-align: middle;
+	content: "";
+	display: inline-block;
+	width: 50px;
+	height: 25px;
+	background-image: url('https://i.imgur.com/Jp1VNqp.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 5px;
+	vertical-align: middle;
 }
 
 a[href*="thetvdb.com"] {
-    font-size: 0;
+	font-size: 0;
 }
 
 /* TVMaze link replaced with logo */
 a[href*="tvmaze.com"]::before {
-    content: "";
-    display: inline-block;
-    width: 50px;
-    height: 25px;
-    background-image: url('https://i.imgur.com/sd2al6G.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-right: 5px;
-    vertical-align: middle;
+	content: "";
+	display: inline-block;
+	width: 50px;
+	height: 25px;
+	background-image: url('https://i.imgur.com/sd2al6G.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 5px;
+	vertical-align: middle;
 }
 
 a[href*="tvmaze.com"] {
-    font-size: 0;
+	font-size: 0;
 }
 
 /* aniDB link replaced with logo */
 a[href*="anidb.net"]::before {
-    content: "";
-    display: inline-block;
-    width: 50px;
-    height: 25px;
-    background-image: url('https://i.imgur.com/7hpyHRn.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-right: 5px;
-    vertical-align: middle;
+	content: "";
+	display: inline-block;
+	width: 50px;
+	height: 25px;
+	background-image: url('https://i.imgur.com/7hpyHRn.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 5px;
+	vertical-align: middle;
 }
 
 a[href*="anidb.net"] {
-    font-size: 0;
+	font-size: 0;
 }
 
 .itemExternalLinks.focuscontainer-x {
@@ -3277,7 +3312,7 @@ a[href*="anidb.net"] {
 
 .layout-desktop .cardPadder,
 .layout-tv .cardPadder {
-  border-radius: unset;
+	border-radius: unset;
 }
 
 .layout-desktop .itemExternalLinks.focuscontainer-x,
@@ -3309,22 +3344,22 @@ a[href*="anidb.net"] {
 .layout-desktop .itemName.infoText.subtitle,
 .layout-tv .itemName.infoText.subtitle,
 .layout-tv .itemName.infoText.parentNameLast {
-  display: -webkit-box !important;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: normal;
+	display: -webkit-box !important;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: normal;
 }
 
 .layout-desktop .itemName.infoText.originalTitle,
 .layout-desktop .itemName.infoText.subtitle,
 .layout-tv .itemName.infoText.originalTitle {
-  position: absolute;
-  top: 6em;
-  left: 1em;
-  font-size: 1em;
-  width: 23.75em;
+	position: absolute;
+	top: 6em;
+	left: 1em;
+	font-size: 1em;
+	width: 23.75em;
 }
 
 .layout-tv #itemDetailPage .detailImageContainer.padded-left .card:hover {
@@ -3341,7 +3376,7 @@ a[href*="anidb.net"] {
 }
 
 .alphaPickerButton:hover {
-  color: rgba(255, 255, 255, 0.75);
+	color: rgba(255, 255, 255, 0.75);
 }
 
 .mainDrawer.transition.touch-menu-la.drawer-open {
@@ -3349,9 +3384,9 @@ a[href*="anidb.net"] {
 }
 
 .subtitleSync {
-  position: absolute;
-  width: 100%;
-  margin-top: 4em;
+	position: absolute;
+	width: 100%;
+	margin-top: 4em;
 }
 
 @media (min-width: 3000px) {
