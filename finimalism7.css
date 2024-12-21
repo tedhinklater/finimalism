@@ -2677,6 +2677,14 @@ button.is-emby-button emby-button {
   text-align: center;
 }
 
+@media (orientation: portrait) {
+	.itemMiscInfo {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 1em;
+	}
+}
+
 button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.itemAction.paper-icon-button-light.cardOverlayFab-primary[data-action="resume"] {
   background-color: rgba(0, 0, 0, 0.7);
   font-size: 130%;
