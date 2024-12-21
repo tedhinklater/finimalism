@@ -2889,22 +2889,21 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
     min-height: calc(18em + 8.6vh);
 }
 
-.layout-mobile .raised.homeLibraryButton {
-	min-width: unset !important;
-	max-width: unset !important;
-	width: unset !important;
-	margin: 0 !important;
-	justify-content: center;
-	border-radius: 0em !important;
-	border: 1px solid #1d102e94 !important;
-}
 
-@media (orientation: landscape) {
-	.layout-mobile .raised.homeLibraryButton {
+@media (max-width: 1000px) {
+	.raised.homeLibraryButton {
 		max-width: 47vw !important;
 	}
-
-	.layout-mobile .sectionTitle.sectionTitle-cards.padded-left + .itemsContainer {
+	.raised.homeLibraryButton {
+		min-width: unset !important;
+		max-width: unset !important;
+		width: unset !important;
+		margin: 0 !important;
+		justify-content: center;
+		border-radius: 0em !important;
+		border: 1px solid #1d102e94 !important;
+	}
+	.sectionTitle.sectionTitle-cards.padded-left + .itemsContainer {
 		margin-bottom: 0em;
 		padding-top: 0.5em;
 		display: grid;
