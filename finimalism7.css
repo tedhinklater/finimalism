@@ -3294,6 +3294,7 @@ a[href*="anidb.net"] {
 .musicParentName {
 	position: absolute;
 	top: -27.225em;
+	width: 22em;
 }
 
 .dialogContainer .listItem:hover .listItemBody {
