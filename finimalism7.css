@@ -364,6 +364,14 @@ progress::-webkit-progress-value {
 	background-size: cover !important;
 }
 
+#loginPage .visualLoginForm {
+	width: 26.5em !important;
+}
+
+#loginPage .visualLoginForm h1 {
+	padding-top: 1em;
+}
+
 .innerCardFooter {
 	background: #2f1b57b8;
 	box-shadow: none;
@@ -767,6 +775,7 @@ progress::-webkit-progress-value {
 #loginPage .readOnlyContent,
 #loginPage form {
 	max-width: 22em;
+	padding-left: 3em;
 }
 
 #loginPage .padded-left.padded-right.padded-bottom-page {
