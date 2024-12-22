@@ -1358,12 +1358,10 @@ button-flat:hover {
     color: rgba(var(--accent)) !important;
 }
 
-.raised:hover, 
-.fab:hover,
-a[data-role="button"]:hover {
-	background: #2c1f78ba !important;
-	color: #fff !important;
-	font-weight: 800;
+.raised:hover, .fab:hover, a[data-role="button"]:hover {
+  background: #fff !important;
+  color: #000 !important;
+  font-weight: 800;
 }
 
 .subtitleappearance-preview {
