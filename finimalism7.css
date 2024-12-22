@@ -3303,12 +3303,29 @@ a[href*="anidb.net"] {
 	width: 22em;
 }
 
-.dialogContainer .listItem:hover .listItemBody {
-	color: #000;
-}
+/*.dialogContainer .listItem:hover .listItemBody {
+	color: #fff;
+}*/
 
 .subtitleResults .listItem:hover .listItemBody {
-	color: #fff;
+	color: #fff !important;
+}
+
+.subtitleList .listItem:hover .listItemBody {
+	color: #fff !important;
+}
+
+.subtitleResults .listItem:hover .listItemBodyText {
+  color: #fff;
+}
+
+.subtitleList .listItem:hover .secondary.listItemBodyText,
+.subtitleList .listItem.listItem-border:hover .secondary.listItemBodyText {
+        color: #fffa !important;
+}
+
+.actionSheetScroller .listItem.listItem-button:hover .listItemBodyText {
+        color: #000;
 }
 
 @media (min-width: 3000px) {
