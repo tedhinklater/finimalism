@@ -3389,6 +3389,14 @@ a[href*="anidb.net"] {
 	margin-top: 4em;
 }
 
+.dialogContainer .listItem:hover .listItemBody {
+	color: #000;
+}
+
+.subtitleResults .listItem:hover .listItemBody {
+	color: #fff;
+}
+
 @media (min-width: 3000px) {
 	body {
 		font-size: 200%;
