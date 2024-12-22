@@ -2,35 +2,34 @@
 
 /* Backdrop */
 .backgroundContainer {
-    background: #000;
-    -webkit-background-size: cover;
-    background-size: cover;
+	background: #000;
+	-webkit-background-size: cover;
+	background-size: cover;
 	opacity: 0;
 }
 
 .itemsContainer.padded-left {
-    position: top;
-    z-index: 1;
+	position: top;
+	z-index: 1;
 }
 
 .itemsContainer.padded-left::before {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background-size: cover;
-    opacity: 1;
-    z-index: -1;
-    backdrop-filter: saturate(0%) !important;
+	content: '';
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background-size: cover;
+	opacity: 1;
+	z-index: -1;
+	backdrop-filter: saturate(0%) !important;
 }
 
 .sectionTitleContainer.sectionTitleContainer-cards.padded-left::before {
-  backdrop-filter: saturate(0%) !important;
+	backdrop-filter: saturate(0%) !important;
 }
 
-/*Apply bg to detail Ribbon */
 .detailPagePrimaryContainer {
 	position: relative;
 	z-index: 2;
@@ -49,7 +48,6 @@
 	z-index: -1;
 }
 
-/* Apply bg to detailPage content */
 .detailPageSecondaryContainer {
 	position: relative;
 	z-index: 1;
@@ -68,7 +66,6 @@
 	z-index: -1;
 }
 
-/*Glow accent on hover*/
 .raised.homeLibraryButton {
 	box-shadow: 0px 0px 1px rgb(255, 255, 255) !important;
 	border: solid 1px rgba(var(--accent),0) !important;
@@ -89,17 +86,17 @@
 }
 
 .mainDrawer-scrollContainer.scrollContainer .navMenuOption:hover, .mainDrawer-scrollContainer.scrollContainer .navMenuOption:hover emby-button, button.is-emby-button:hover emby-button {
-  background: #fff !important;
-  transition: background 0 !important;
-  color: #000 !important;
+	background: #fff !important;
+	transition: background 0 !important;
+	color: #000 !important;
 }
 
 #myPreferencesMenuPage .verticalSection-extrabottompadding .emby-button:hover,
 #myPreferencesMenuPage .verticalSection-extrabottompadding .emby-button .listItemBody:hover,
 #myPreferencesMenuPage .verticalSection-extrabottompadding .emby-button .listItem:hover {
-  background: #fff !important;
-  transition: background 0.3s ease;
-  color: #000 !important;
+	background: #fff !important;
+	transition: background 0.3s ease;
+	color: #000 !important;
 }
 
 .dialogContainer .listItem:hover .listItemBodyText {
@@ -111,7 +108,7 @@
 }
 
 #myPreferencesMenuPage .verticalSection-extrabottompadding .emby-button:hover .listItemBodyText {
-  color: black !important;
+	color: black !important;
 }
 
 .verticalSection-extrabottompadding .emby-button {
@@ -119,16 +116,16 @@
 }
 
 .mainDrawer-scrollContainer.scrollContainer .navMenuOption:hover .navMenuOptionText {
-  color: #000 !important;
+	color: #000 !important;
 }
 
 .emby-select-withcolor > option {
-  color: inherit;
-  background: #000;
+	color: inherit;
+	background: #000;
 }
 
 .layout-desktop .mainDetailButtons.focuscontainer-x .button-flat:hover, .layout-tv .mainDetailButtons.focuscontainer-x .button-flat:focus {
-  background: #404040 !important;
+	background: #404040 !important;
 }
 
 .innerCardFooter, .countIndicator, .playedIndicator {
@@ -142,42 +139,41 @@
 	box-shadow: none !important;
 }
 
-/*Login background*/
 #loginPage {
-  background: url(https://i.imgur.com/gpe0jJc.jpeg) !important; 
-  background-size: cover !important;
+	background: url(https://i.imgur.com/gpe0jJc.jpeg) !important; 
+	background-size: cover !important;
 }
 
 .pageTabContent.is-active::before {
-  content: '';
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background: url(https://i.imgur.com/gpe0jJc.jpeg) center top no-repeat #030322;
-    background-attachment: scroll;
-    background-size: auto;
-  background-size: cover;
-  opacity: 0.925;
-  filter: brightness(90%);
-  z-index: -1;
-  background-attachment: fixed;
+	content: '';
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background: url(https://i.imgur.com/gpe0jJc.jpeg) center top no-repeat #030322;
+	background-attachment: scroll;
+	background-size: auto;
+	background-size: cover;
+	opacity: 0.925;
+	filter: brightness(90%);
+	z-index: -1;
+	background-attachment: fixed;
 }
 
 .layout-desktop .mainDetailButtons.focuscontainer-x {
-  background: #0a0a0ad6;
+	background: #0a0a0ad6;
 }
 
 .backgroundContainer, .preload {
-  background-color: #000;
+	background-color: #000;
 }
 
 @media (hover: hover) and (pointer: fine) {
-    .paper-icon-button-light:hover:not(:disabled) {
-        color: rgba(var(--accent)) !important;
-        background-color: rgba(199, 199, 199, 0.2);
-    }
+	.paper-icon-button-light:hover:not(:disabled) {
+		color: rgba(var(--accent)) !important;
+		background-color: rgba(199, 199, 199, 0.2);
+	}
 }
 
 .paper-icon-button-light:active:not(:disabled),
@@ -199,7 +195,7 @@
 #dialogToc .bookplayerButtonIcon:hover,
 #dialogToc .toc li a:active,
 #dialogToc .toc li a:hover {
-color: #fff !important;
+	color: #fff !important;
 }
 
 .alphaPickerButton-tv:focus,
@@ -212,7 +208,7 @@ color: #fff !important;
 .emby-select-tv-withcolor:focus,
 .emby-checkbox:checked + span + .checkboxOutline,
 .itemProgressBarForeground {
-    background-color: rgba(var(--accent)) !important;
+	background-color: rgba(var(--accent)) !important;
 }
 
 .progressring-spiner,
@@ -222,6 +218,6 @@ color: #fff !important;
 .emby-checkbox:checked + span + .checkboxOutline,
 .emby-checkbox:focus:not(:checked) + span + .checkboxOutline,
 .card:focus .cardBox.visualCardBox,
-.card:focus .cardBox:not(.visualCardBox) .cardScalable,
-    border-color: rgba(var(--accent)) !important;
+.card:focus .cardBox:not(.visualCardBox) .cardScalable {
+	border-color: rgba(var(--accent)) !important;
 } 
