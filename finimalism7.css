@@ -1688,15 +1688,15 @@ progress::-webkit-progress-value {
 .dialog,
 .toast,
 .raised.homeLibraryButton:hover {
-	box-shadow: 0px 0px 5px rgb(var(--accent));
-	border: solid 1px rgba(var(--accent),0);
+	box-shadow: 0px 0px 5px #fff9;
+	border: solid 1px #fff;
 }
 .cardOverlayContainer {
-	border: solid 1px rgba(var(--accent),0.0) !important;
+	border: solid 1px #fff !important;
 }
 .drawer-open {
-	box-shadow: 0px 0px 5px rgb(255, 255, 255) !important;
-	border-right: solid 1px rgb(255, 255, 255) !important;
+	box-shadow: 0px 0px 5px #fff !important;
+	border-right: solid 1px #fff !important;
 }
 
 @supports (backdrop-filter: blur(15px)) {
