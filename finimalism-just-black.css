@@ -100,26 +100,26 @@
 }
 
 .dialogContainer .listItem:hover .listItemBodyText {
-	color: #000 !important;
+	color: #000;
 }
 
 .dialogContainer .listItem:hover .listItemAside {
-	color: #000d !important;
+	color: #000d;
 }
 
 #myPreferencesMenuPage .verticalSection-extrabottompadding .emby-button:hover .listItemBodyText {
-	color: black !important;
+	color: black;
 }
 
 .subtitleList .listItem:hover .listItemBody {
-	color: #fff !important;
+	color: #fff;
 }
 .subtitleResults .listItem:hover .listItemBodyText {
   color: #fff;
 }
 .subtitleList .listItem:hover .secondary.listItemBodyText,
 .subtitleList .listItem.listItem-border:hover .secondary.listItemBodyText {
-        color: #fffa !important;
+        color: #fffa;
 }
 .actionSheetScroller .listItem.listItem-button:hover .listItemBodyText {
         color: #000;
