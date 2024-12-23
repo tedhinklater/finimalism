@@ -111,6 +111,20 @@
 	color: black !important;
 }
 
+.subtitleList .listItem:hover .listItemBody {
+	color: #fff !important;
+}
+.subtitleResults .listItem:hover .listItemBodyText {
+  color: #fff;
+}
+.subtitleList .listItem:hover .secondary.listItemBodyText,
+.subtitleList .listItem.listItem-border:hover .secondary.listItemBodyText {
+        color: #fffa !important;
+}
+.actionSheetScroller .listItem.listItem-button:hover .listItemBodyText {
+        color: #000;
+}
+
 .verticalSection-extrabottompadding .emby-button {
 	transition: background 0.3s ease;
 }
