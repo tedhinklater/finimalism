@@ -2096,7 +2096,7 @@ button.is-emby-button emby-button {
 }
 
 #myPreferencesMenuPage .verticalSection-extrabottompadding .emby-button:hover .listItemBodyText {
-	color: white !important;
+	color: black !important;
 }
 
 .mdl-slider-background-lower {
