@@ -3337,13 +3337,7 @@ a[href*="anidb.net"] {
         color: #000;
 }
 
-@media (min-width: 3000px) {
-	body {
-		font-size: 200%;
-	}
-}
-
-@media (min-width: 3000px) {
+@media (min-width: 3500px) {
 	body {
 		font-size: 200%;
 	}
@@ -3352,9 +3346,9 @@ a[href*="anidb.net"] {
 	}
 }
 
-@media (min-aspect-ratio: 20/9) and (max-aspect-ratio: 22/9) and (min-width: 2500px) and (max-width: 3500px) {
+@media (min-aspect-ratio: 20/9) and (max-aspect-ratio: 22/9) and (min-width: 2500px) and (max-width: 3499px) {
 	body {
-		font-size: 166% !important;
+		font-size: 150% !important;
 	}
 	.layout-desktop .detailSectionContent,
 	.layout-tv .detailSectionContent {
