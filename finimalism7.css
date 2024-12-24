@@ -3337,18 +3337,11 @@ a[href*="anidb.net"] {
         color: #000;
 }
 
-@media (min-width: 3500px) {
-	body {
-		font-size: 200%;
-	}
-	.cardOverlayButton-hover {
-		font-size: 0.95em;
-	}
-}
 
-@media (min-aspect-ratio: 20/9) and (max-aspect-ratio: 22/9) and (min-width: 2500px) and (max-width: 3499px) {
+
+@media (min-width: 2000px) {
 	body {
-		font-size: 150% !important;
+		font-size: 1.7vh !important;
 	}
 	.layout-desktop .detailSectionContent,
 	.layout-tv .detailSectionContent {
@@ -3359,5 +3352,11 @@ a[href*="anidb.net"] {
 		font-size: 0.9em !important;
 		width: 18em;
 		top: 51em;
+	}
+}
+
+@media (min-width: 2500px) {
+	.cardOverlayButton-hover {
+		font-size: 0.9em;
 	}
 }
