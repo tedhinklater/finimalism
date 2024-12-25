@@ -1529,8 +1529,8 @@ progress::-webkit-progress-value {
 
 .layout-desktop .itemsContainer.padded-left.padded-right.padded-right-withalphapicker.vertical-wrap,
 .layout-tv .itemsContainer.padded-left.padded-right.padded-right-withalphapicker.vertical-wrap {
-	padding-left: calc(4vw + 1em);
-	padding-right: 4vw;
+	padding-left: calc(1vw + 1em);
+	padding-right: 1vw;
 }
 
 #homeTab .emby-scroller {
@@ -1619,13 +1619,13 @@ progress::-webkit-progress-value {
 
 @media (min-width: 120em) {
 	.portraitCard, .squareCard {
-		width: 15em;
+		width: 12em;
 	}
 }
 
 @media (max-width: 768px) and (orientation: landscape) {
 	.portraitCard, .squareCard {
-		width: 15em;
+		width: 12em;
 	}
 }
 
