@@ -2297,7 +2297,7 @@ button.is-emby-button emby-button {
 @media (min-width: 62.5em) {
 	[dir="ltr"] .alphaPicker-fixed-right {
 		right: 1em;
-		right: max(env(safe-area-inset-right),2vw);
+		right: max(env(safe-area-inset-right),1vw);
 	}
 }
 
@@ -3331,7 +3331,7 @@ a[href*="anidb.net"] {
 
 @media (min-width: 1000px) {
 	body {
-		font-size: 1.65vh !important;
+		font-size: 1.55vh !important;
 	}
 	.layout-desktop .detailSectionContent,
 	.layout-tv .detailSectionContent {
