@@ -3075,6 +3075,22 @@ a[href*="imdb.com"] {
 	font-size: 0;
 }
 
+a[href*="trakt.tv"]::before {
+	content: "";
+	display: inline-block;
+	width: 50px;
+	height: 25px;
+	background-image: url('https://i.imgur.com/c1zc8d7.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 5px;
+	vertical-align: middle;
+}
+
+a[href*="trakt.tv"] {
+	font-size: 0;
+}
+
 a[href*="themoviedb.org"]::before {
 	content: "";
 	display: inline-block;
