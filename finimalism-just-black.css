@@ -108,7 +108,7 @@
 }
 
 #myPreferencesMenuPage .verticalSection-extrabottompadding .emby-button:hover .listItemBodyText {
-	color: black;
+	color: black !important;
 }
 
 .subtitleList .listItem:hover .listItemBody {
