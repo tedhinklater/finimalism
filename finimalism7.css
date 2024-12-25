@@ -3315,7 +3315,7 @@ a[href*="anidb.net"] {
 
 
 
-@media (min-width: 2000px) {
+@media (min-width: 3000px) {
 	body {
 		font-size: 1.7vh !important;
 	}
