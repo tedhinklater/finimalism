@@ -3313,11 +3313,9 @@ a[href*="anidb.net"] {
         color: #000;
 }
 
-
-
-@media (min-width: 3000px) {
+@media (min-width: 1000px) {
 	body {
-		font-size: 1.7vh !important;
+		font-size: 1.65vh !important;
 	}
 	.layout-desktop .detailSectionContent,
 	.layout-tv .detailSectionContent {
