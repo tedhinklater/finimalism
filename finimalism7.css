@@ -3177,24 +3177,6 @@ a[href*="anidb.net"] {
 	color: #000a;
 }
 
-@media (min-width: 2000px) {
-	body {
-		font-size: 133%;
-	}
-	.detailImageContainer .card {
-		font-size: 100% !important;
-	}
-	p.overview.detail-clamp-text {
-		font-size: 100% !important;
-	}
-	.detailsGroupItem, .trackSelections .selectContainer {
-		font-size: 83% !important;
-	}
-	.listItem {
-		font-size: 92% !important;
-	}
-}
-
 .layout-desktop .mainDetailButtons.focuscontainer-x {
 	position: fixed;
 	left: 4.15em;
@@ -3337,22 +3319,23 @@ a[href*="anidb.net"] {
 
 @media (min-width: 1000px) {
 	body {
-		font-size: 1.55vh !important;
 	}
 	.layout-desktop .detailSectionContent,
 	.layout-tv .detailSectionContent {
-		font-size: 1.2em;
+
 	}
 	.layout-desktop .itemExternalLinks.focuscontainer-x, 
 	.layout-tv .itemExternalLinks.focuscontainer-x {
-		font-size: 0.9em !important;
-		width: 18em;
-		top: 51em;
+
 	}
 }
 
 @media (min-width: 2500px) {
 	.cardOverlayButton-hover {
-		font-size: 0.9em;
+	}
+}
+
+@media (min-aspect-ratio: 21/9) and (max-aspect-ratio: 30/9) and (min-width: 3000px) and (max-width: 3440px) {
+	body {
 	}
 }
