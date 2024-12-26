@@ -1531,6 +1531,7 @@ progress::-webkit-progress-value {
 .layout-tv .itemsContainer.padded-left.padded-right.padded-right-withalphapicker.vertical-wrap {
 	padding-left: calc(1vw + 1em);
 	padding-right: 1vw;
+	justify-content: space-evenly;
 }
 
 #homeTab .emby-scroller {
