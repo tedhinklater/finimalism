@@ -1531,7 +1531,6 @@ progress::-webkit-progress-value {
 .layout-tv .itemsContainer.padded-left.padded-right.padded-right-withalphapicker.vertical-wrap {
 	padding-left: calc(1vw + 1em);
 	padding-right: 1vw;
-	justify-content: space-evenly;
 }
 
 #homeTab .emby-scroller {
@@ -2213,11 +2212,15 @@ button.is-emby-button emby-button {
 
 @media (orientation: portrait) and (min-width: 800px) {
 	.layout-mobile .itemMiscInfo.itemMiscInfo-primary {
-		padding-left: 8vw;
+		padding-left: 21vw;
 	}
 	.layout-mobile [dir="ltr"] .mainDetailButtons {
 		justify-content: space-evenly;
 	}
+	.layout-mobile [dir="ltr"] .mainDetailButtons {
+		padding-left: 24vw;
+	}
+	
 }
 
 @media (orientation: landscape) and (max-height: 380px) {
@@ -2348,11 +2351,11 @@ button.is-emby-button emby-button {
 	}
 }
 	
-@media (min-width: 50em) {
+@media (min-width: 65em) {
 	.layout-mobile [dir="ltr"] .mainDetailButtons {
-		font-size: 85%;
+		font-size: 90%;
 		margin-bottom: 0em;
-		margin-top: 2em;
+		margin-top: 4em;
 	}
 }
 
