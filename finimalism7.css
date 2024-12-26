@@ -2220,6 +2220,7 @@ button.is-emby-button emby-button {
 	}
 	.layout-mobile [dir="ltr"] .mainDetailButtons {
 		padding-left: 24vw;
+		padding-top: 2em;
 	}
 	
 }
