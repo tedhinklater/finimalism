@@ -3317,6 +3317,12 @@ a[href*="anidb.net"] {
         color: #000;
 }
 
+.layout-desktop .focuscontainer.dialog.formDialog.dialog-fullscreen-lowres.centeredDialog.opened,
+.layout-tv .focuscontainer.dialog.formDialog.dialog-fullscreen-lowres.centeredDialog.opened {
+	min-height: 50vh;
+	max-height: 100vh;
+}
+
 @media (min-width: 1000px) {
 	body {
 	}
