@@ -48,6 +48,9 @@ Everything is just an alteration of the amazing work already put into [Ultrachro
 
 # Extras
 
+Example library cards can be found [here](https://github.com/tedhinklater/finimalism/tree/main/libary-cards)
+![cards](https://i.imgur.com/aWUsxMG.png)
+
 If you want a simple way to use your own My Media library card images and add the text automatically (any picture you upload will show the text over it), add this to your import lines
 ```css
 @import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/libraryCardAriaText.css");
