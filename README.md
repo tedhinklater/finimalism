@@ -26,19 +26,19 @@ Everything is just an alteration of the amazing work already put into [Ultrachro
 ![Homepage](https://i.imgur.com/Ux6EhPQ.png)
 
 ## Library (Black theme)
-![Library](https://i.imgur.com/HuglVXL.png)
+![Library](https://i.imgur.com/zLpbCab.png)
 
 ## Movie (Colour)
-![Movie](https://i.imgur.com/0SxxtPd.png)
+![Movie](https://i.imgur.com/1GlMXvx.png)
 
 ## Series (Black)
-![Series](https://i.imgur.com/A1wNGmx.png)
+![Series](https://i.imgur.com/W1jnuK3.png)
 
 ## Season / Episodes (Colour)
-![Episodes](https://i.imgur.com/P69BeYi.png)
+![Episodes](https://i.imgur.com/FOw4N8q.png)
 
 ## Episode (Black)
-![Episode](https://i.imgur.com/ULInnTI.png)
+![Episode](https://i.imgur.com/bzAq8dY.png)
 
 ## Player
 ![Screenshot 2024-11-30 035044](https://github.com/user-attachments/assets/5e5e519d-5aee-4ecc-8fcc-cac68dc9683e)
