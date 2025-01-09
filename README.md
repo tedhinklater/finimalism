@@ -23,7 +23,7 @@ or, the Black theme if you prefer
 Everything is just an alteration of the amazing work already put into [Ultrachromic by CTalvio](https://github.com/CTalvio/Ultrachromic). Updated for jellyfin server 10.10.X
 
 ## Homepage (Colour theme)
-![Homepage](https://i.imgur.com/IIlkPBR.png)
+![Homepage](https://i.imgur.com/Ux6EhPQ.png)
 
 ## Library (Black theme)
 ![Library](https://i.imgur.com/HuglVXL.png)
@@ -48,10 +48,13 @@ Everything is just an alteration of the amazing work already put into [Ultrachro
 
 # Extras
 
-If you want to use your own My Media library card images and move the text into the card itself, add this to your import lines
+If you want a simple way to use your own My Media library card images and add the text automatically (any picture you upload will show the text over it), add this to your import lines
 ```css
 @import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/libraryCardAriaText.css");
 ```
 ![Screenshot 2024-12-09 030732](https://github.com/user-attachments/assets/ea733699-2b21-4a58-90ab-9e767be94d56)
 
-<a href="https://github.com/tedhinklater/finality"><img src="https://i.imgur.com/54wZsvH.png" alt="Finality" width="400"/></a> <a href="https://github.com/tedhinklater/Jellypane"><img src="https://i.imgur.com/RHFcIA9.png" alt="Jellypane" width="400"/></a>
+# More Themes
+
+<a href="https://github.com/tedhinklater/finality"><img src="https://i.imgur.com/54wZsvH.png" alt="Finality" width="400"/></a> 
+<a href="https://github.com/tedhinklater/Jellypane"><img src="https://i.imgur.com/RHFcIA9.png" alt="Jellypane" width="400"/></a>
