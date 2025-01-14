@@ -2,7 +2,7 @@
 ![mockup](https://i.imgur.com/TvTV8jq.jpeg)
 
 Also: Turn it up to 11 with the new ![Featured Content Bar](https://github.com/tedhinklater/Jellyfin-Featured-Content-Bar) 
-![fcb](https://github.com/user-attachments/assets/ad369437-5460-414d-afb3-e9d344d357ee)
+![bar](https://github.com/user-attachments/assets/f2c45f47-3530-4525-9f89-fe4e96c7676f)
 
 Import the Colour theme to your CSS with
 
