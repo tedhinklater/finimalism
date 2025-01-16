@@ -1760,12 +1760,18 @@ progress::-webkit-progress-value {
 .layout-tv .homeLibraryButton:hover,
 .layout-desktop .homeLibraryButton:focus,
 .layout-tv .homeLibraryButton:focus,
-.layout-desktop .card:hover,
-.layout-tv .card:focus {
+.layout-desktop .card:hover {
 	-webkit-filter: none !important;
 	box-shadow: 0 0 5px 0, 255, 222;
 	filter: none !important;
 	transform: scale(1.02);
+	transition: transform 1s ease;
+}
+
+.layout-tv .card:focus {
+	-webkit-filter: none !important;
+	box-shadow: 0 0 5px 0, 255, 222;
+	filter: none !important;
 	transition: transform 1s ease;
 }
 
@@ -2074,6 +2080,12 @@ button.is-emby-button emby-button {
 
 #myPreferencesMenuPage .verticalSection-extrabottompadding .emby-button:hover .listItemBodyText {
 	color: white !important;
+}
+
+#myPreferencesMenuPage .verticalSection-extrabottompadding .emby-button:focus .listItemBodyText {
+	color: white !important;
+	border: 1px solid white;
+	border-radius: 1em;
 }
 
 .mdl-slider-background-lower {
