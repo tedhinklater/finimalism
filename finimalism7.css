@@ -1639,8 +1639,8 @@ progress::-webkit-progress-value {
 	#moviesPage,
 	#tvRecommendedPage,
 	#musicRecommendedPage {
-		margin-top: 4.5em;
-		padding-top: 0em !important;
+		margin-top: 0em;
+		padding-top: 4em !important;
 		overflow-y: scroll;
 	}
 }
