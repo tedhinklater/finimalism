@@ -3013,6 +3013,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 .layout-desktop .listViewUserDataButtons {
 	justify-content: space-evenly;
 	width: 100% !important;
+	max-width: 50% !important;
 }
 
 .layout-desktop .listItem-overview.listItemBodyText {
@@ -3357,4 +3358,8 @@ a[href*="anidb.net"] {
 @media (min-aspect-ratio: 21/9) and (max-aspect-ratio: 30/9) and (min-width: 3000px) and (max-width: 3440px) {
 	body {
 	}
+}
+
+.listViewUserDataButtons {
+	max-width: 50%;
 }
