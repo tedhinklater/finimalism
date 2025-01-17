@@ -1641,7 +1641,6 @@ progress::-webkit-progress-value {
 	#musicRecommendedPage {
 		margin-top: 0em;
 		padding-top: 4em !important;
-		overflow-y: scroll;
 	}
 }
 
@@ -1652,7 +1651,6 @@ progress::-webkit-progress-value {
 	#musicRecommendedPage {
 		margin-top: 6em;
 		padding-top: 0.5em !important;
-		overflow-y: scroll;
 	}
 }
 
