@@ -3013,7 +3013,6 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 .layout-desktop .listViewUserDataButtons {
 	justify-content: space-evenly;
 	width: 100% !important;
-	max-width: 50% !important;
 }
 
 .layout-desktop .listItem-overview.listItemBodyText {
