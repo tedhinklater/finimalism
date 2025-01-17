@@ -3336,6 +3336,14 @@ a[href*="anidb.net"] {
 	max-height: 100vh;
 }
 
+.layout-desktop #songsTab .itemsContainer.vertical-list {
+	max-width: 80vw !important;
+}
+
+.layout-desktop #songsTab .itemsContainer.vertical-list .listItemBody.itemAction {
+	min-width: 38vw;
+}
+
 @media (min-width: 1000px) {
 	body {
 	}
