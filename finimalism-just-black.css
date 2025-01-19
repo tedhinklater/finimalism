@@ -235,3 +235,7 @@
 .card:focus .cardBox:not(.visualCardBox) .cardScalable {
 	border-color: rgba(var(--accent)) !important;
 } 
+
+#nowPlayingPage .remoteControlContent.padded-left.padded-right.padded-bottom.hideVideoButtons {
+	background: #000c;
+}
