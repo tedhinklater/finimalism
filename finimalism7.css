@@ -3344,6 +3344,10 @@ a[href*="anidb.net"] {
 	min-width: 38vw;
 }
 
+#nowPlayingPage .remoteControlContent.padded-left.padded-right.padded-bottom.hideVideoButtons {
+	background: #0F031F91;
+}
+
 @media (min-width: 1000px) {
 	body {
 	}
