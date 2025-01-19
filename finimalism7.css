@@ -3348,6 +3348,10 @@ a[href*="anidb.net"] {
 	background: #0F031F91;
 }
 
+.content-primary {
+	padding-bottom: 5em !important;
+}
+
 @media (min-width: 1000px) {
 	body {
 	}
