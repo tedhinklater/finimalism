@@ -236,6 +236,13 @@
 	border-color: rgba(var(--accent)) !important;
 } 
 
-#nowPlayingPage .remoteControlContent.padded-left.padded-right.padded-bottom.hideVideoButtons {
-	background: #000c;
+#nowPlayingPage .remoteControlContent.padded-left.padded-right.padded-bottom.hideVideoButtons::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000c;
+  z-index: 0;
 }
