@@ -3344,8 +3344,15 @@ a[href*="anidb.net"] {
 	min-width: 38vw;
 }
 
-#nowPlayingPage .remoteControlContent.padded-left.padded-right.padded-bottom.hideVideoButtons {
-	background: #0F031F91;
+#nowPlayingPage .remoteControlContent.padded-left.padded-right.padded-bottom.hideVideoButtons::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #0F031F91;
+  z-index: 0;
 }
 
 .content-primary {
