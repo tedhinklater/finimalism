@@ -3186,6 +3186,38 @@ a[href*="anidb.net"] {
 	font-size: 0;
 }
 
+a[href*="anilist.co"]::before {
+	content: "";
+	display: inline-block;
+	width: 50px;
+	height: 25px;
+	background-image: url('https://i.imgur.com/uidNqNC.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 5px;
+	vertical-align: middle;
+}
+
+a[href*="anilist.co"] {
+	font-size: 0;
+}
+
+a[href*="kitsu.io"]::before {
+	content: "";
+	display: inline-block;
+	width: 50px;
+	height: 25px;
+	background-image: url('https://i.imgur.com/vOlwRNY.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 5px;
+	vertical-align: middle;
+}
+
+a[href*="kitsu.io"] {
+	font-size: 0;
+}
+
 .itemExternalLinks.focuscontainer-x {
 	color: #000a;
 }
@@ -3223,11 +3255,13 @@ a[href*="anidb.net"] {
 .layout-tv .itemExternalLinks.focuscontainer-x {
 	color: #000a;
 	position: fixed;
-	width: 22em;
-	left: 6em;
-	top: 61em;
-	display: flex;
-	justify-content: space-between;
+	width: 21em;
+	left: 8em;
+	top: 60em;
+	display: grid;
+	justify-content: space-evenly;
+	grid-template-columns: repeat(8, 1fr);
+	gap: 1em;
 }
 
 .layout-desktop .mainDetailButtons.focuscontainer-x .button-flat,
