@@ -3218,6 +3218,102 @@ a[href*="kitsu.io"] {
 	font-size: 0;
 }
 
+a[href*="theaudiodb.com"]::before {
+	content: "";
+	display: inline-block;
+	width: 50px;
+	height: 25px;
+	background-image: url('https://i.imgur.com/vVrPoJR.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 5px;
+	vertical-align: middle;
+}
+
+a[href*="theaudiodb.com"] {
+	font-size: 0;
+}
+
+a[href*="music.apple.com"]::before {
+	content: "";
+	display: inline-block;
+	width: 50px;
+	height: 25px;
+	background-image: url('https://i.imgur.com/aVpMB56.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 5px;
+	vertical-align: middle;
+}
+
+a[href*="music.apple.com"] {
+	font-size: 0;
+}
+
+a[href*="musicbrainz.org"]::before {
+	content: "";
+	display: inline-block;
+	width: 50px;
+	height: 25px;
+	background-image: url('https://i.imgur.com/xas4Jyq.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 5px;
+	vertical-align: middle;
+}
+
+a[href*="musicbrainz.org"] {
+	font-size: 0;
+}
+
+a[href*="myanimelist.net"]::before {
+	content: "";
+	display: inline-block;
+	width: 50px;
+	height: 25px;
+	background-image: url('https://i.imgur.com/atjS4Rn.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 5px;
+	vertical-align: middle;
+}
+
+a[href*="myanimelist.net"] {
+	font-size: 0;
+}
+
+a[href*="kinopoisk.ru"]::before {
+	content: "";
+	display: inline-block;
+	width: 50px;
+	height: 25px;
+	background-image: url('https://i.imgur.com/IgsO8OO.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 5px;
+	vertical-align: middle;
+}
+
+a[href*="kinopoisk.ru"] {
+	font-size: 0;
+}
+
+a[href*="shokoanime.com"]::before {
+	content: "";
+	display: inline-block;
+	width: 50px;
+	height: 25px;
+	background-image: url('https://i.imgur.com/lNedr1W.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 5px;
+	vertical-align: middle;
+}
+
+a[href*="shokoanime.com"] {
+	font-size: 0;
+}
+
 .itemExternalLinks.focuscontainer-x {
 	color: #000a;
 }
