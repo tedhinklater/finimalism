@@ -3300,13 +3300,15 @@ a[href*="kitsu.io"] {
 	width: 23.75em;
 }
 
-.layout-desktop #itemDetailPage .nameContainer .parentName.focuscontainer-x .button-link.itemAction.emby-button {
+.layout-desktop #itemDetailPage .nameContainer .parentName.focuscontainer-x .button-link.itemAction.emby-button,
+.layout-tv #itemDetailPage .nameContainer .parentName.focuscontainer-x .button-link.itemAction.emby-button {
 	display: -webkit-box !important;
 	-webkit-box-orient: vertical;
 	-webkit-line-clamp: 2;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	transform: translateY(50%);
+	transition: transform 0s;
 }
 
 .layout-tv #itemDetailPage .detailImageContainer.padded-left .card:hover {
