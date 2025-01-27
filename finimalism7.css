@@ -3300,6 +3300,15 @@ a[href*="kitsu.io"] {
 	width: 23.75em;
 }
 
+.layout-desktop #itemDetailPage .nameContainer .parentName.focuscontainer-x .button-link.itemAction.emby-button {
+	display: -webkit-box !important;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	transform: translateY(50%);
+}
+
 .layout-tv #itemDetailPage .detailImageContainer.padded-left .card:hover {
 	transform: scale(1) translateY(-50%);
 }
