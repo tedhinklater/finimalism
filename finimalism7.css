@@ -3522,3 +3522,7 @@ a[href*="shokoanime.com"] {
 	body {
 	}
 }
+
+.listViewUserDataButtons {
+	max-width: 50%;
+}
