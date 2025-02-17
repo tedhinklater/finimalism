@@ -214,7 +214,7 @@ span.homeLibraryText {
 
 .layout-desktop .detailRibbon,
 .layout-tv .detailRibbon {
-	margin-top: 0;
+	margin-top: -1.925em;
 	padding-top: 0em;
 	padding-bottom: 0em;
 }
@@ -1058,8 +1058,8 @@ div[data-role="controlgroup"] a[data-role="button"] {
 
 .layout-desktop #itemDetailPage .nameContainer {
 	position: fixed;
-	left: 2.8em;
-	top: 39em;
+	left: 2em;
+	top: 37.25em;
 	width: 26em;
 	justify-content: center;
 	text-align: center;
@@ -1835,7 +1835,7 @@ progress::-webkit-progress-value {
 .layout-tv .detailsGroupItem, .trackSelections .selectContainer {
 	display: -webkit-flex;
 	display: flex;
-	margin: 0 0 .5em !important;
+	margin: 0 0 .1em !important;
 	max-width: 33em;
 	font-size: 0.85em;
 }
@@ -1844,7 +1844,7 @@ progress::-webkit-progress-value {
 	position: fixed;
 	left: 0em;
 	width: 33em;
-	top: 47em;
+	top: 45em;
 }
 
 .layout-tv .trackSelections {
@@ -1858,7 +1858,7 @@ progress::-webkit-progress-value {
 .layout-tv .trackSelections .selectContainer .detailTrackSelect {
 	font-size: inherit;
 	padding-left: 0.5em;
-	max-width: 25em;
+	max-width: 22em;
 	text-overflow: ellipsis;
 	text-align: center;
 }
@@ -1896,7 +1896,7 @@ progress::-webkit-progress-value {
 
 .layout-desktop .detailImageContainer .card {
 	left: 5em;
-	width: 21.35em;
+	width: 20em;
 	top: 3.5em !important;
 	max-width: unset;
 }
@@ -1911,8 +1911,8 @@ progress::-webkit-progress-value {
 
 .layout-desktop #itemDetailPage .card.squareCard {
 	left: 5em;
-	width: 21.35em;
-	top: 14.15em !important;
+	width: 20em;
+	top: 13.5em !important;
 	max-width: unset;
 }
 
@@ -1926,7 +1926,7 @@ progress::-webkit-progress-value {
 
 .layout-desktop .detailImageContainer .card.backdropCard,
 .layout-tv .detailImageContainer .card.backdropCard {
-	top: 23.5em !important;
+	top: 22.2em !important;
 }
 
 .flex.align-items-center.flex-grow.headerTop {
@@ -2615,9 +2615,9 @@ button.is-emby-button emby-button {
 .layout-tv .itemName.infoText.subtitle.focuscontainer-x {
 	text-align: center;
 	position: fixed;
-	top: 38.5em;
-	left: 4em;
-	width: 23.3em;
+	top: 17.5em;
+	left: 1.5em;
+	width: 24.3em;
 }
 
 	.layout-mobile .itemMiscInfo, .layout-mobile .itemName, .layout-mobile .mainDetailButtons, .layout-mobile .parentName {
@@ -3321,9 +3321,9 @@ a[href*="shokoanime.com"] {
 .layout-desktop .mainDetailButtons.focuscontainer-x {
 	position: fixed;
 	left: 4.15em;
-	width: 17.85em;
+	width: 16.7em;
 	justify-content: space-evenly;
-	top: 28.28em;
+	top: 26.6em;
 	z-index: 2;
 	background: #110e1ce3;
 	border-radius: 0em;
@@ -3353,7 +3353,7 @@ a[href*="shokoanime.com"] {
 	position: fixed;
 	width: 21em;
 	left: 8em;
-	top: 60em;
+	top: 56.5em;
 	display: grid;
 	justify-content: space-evenly;
 	grid-template-columns: repeat(8, 1fr);
@@ -3390,9 +3390,9 @@ a[href*="shokoanime.com"] {
 .layout-desktop .itemName.infoText.subtitle,
 .layout-tv .itemName.infoText.originalTitle {
 	position: absolute;
-	top: 6em;
-	left: 1em;
-	font-size: 1em;
+	top: 5em;
+	left: 0em;
+	font-size: 1.1em;
 	width: 23.75em;
 }
 
@@ -3403,7 +3403,7 @@ a[href*="shokoanime.com"] {
 	-webkit-line-clamp: 2;
 	overflow: hidden;
 	text-overflow: ellipsis;
-	transform: translateY(50%);
+	transform: translateY(25%);
 	transition: transform 0s;
 }
 
@@ -3442,7 +3442,7 @@ a[href*="shokoanime.com"] {
 .layout-desktop .musicParentName,
 .layout-tv .musicParentName {
 	position: absolute;
-	top: -27.225em;
+	top: 5.775em;
 	width: 22em;
 }
 
