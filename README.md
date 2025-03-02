@@ -22,23 +22,26 @@ or, the Black theme if you prefer
 
 Everything is just an alteration of the amazing work already put into [Ultrachromic by CTalvio](https://github.com/CTalvio/Ultrachromic). Updated for jellyfin server 10.10.X
 
-## Homepage (Colour theme)
-![Homepage](https://i.imgur.com/Ux6EhPQ.png)
+## Homepage
+![Screenshot 2025-03-02 041317](https://github.com/user-attachments/assets/ec372128-02e9-4d8f-8f70-b4fc5a772b69)
 
-## Library (Black theme)
-![Library](https://i.imgur.com/zLpbCab.png)
+## Homepage (scrolled down)
+![Screenshot 2025-03-02 041420](https://github.com/user-attachments/assets/bf8c0e53-a871-4032-87db-73de6dd132a3)
 
-## Movie (Colour)
-![Movie](https://i.imgur.com/1GlMXvx.png)
+## Library
+![Screenshot 2025-03-02 041440](https://github.com/user-attachments/assets/f360f8da-b44e-48d7-8984-d509dfec38ef)
 
-## Series (Black)
-![Series](https://i.imgur.com/W1jnuK3.png)
+## Movie
+![Screenshot 2025-03-02 042219](https://github.com/user-attachments/assets/2017d45d-14d1-4a5d-9156-1fbc6e0ea723)
 
-## Season / Episodes (Colour)
-![Episodes](https://i.imgur.com/FOw4N8q.png)
+## Series
+![Screenshot 2025-03-02 042210](https://github.com/user-attachments/assets/9254fa3f-e916-494f-a686-218807f3086e)
 
-## Episode (Black)
-![Episode](https://i.imgur.com/bzAq8dY.png)
+## Season / Episodes
+![Screenshot 2025-03-02 042257](https://github.com/user-attachments/assets/eeba9644-734e-4990-9b54-34086f5ab883)
+
+## Episode
+![Screenshot 2025-03-02 042317](https://github.com/user-attachments/assets/e03e7306-4899-4d71-8d94-33dd13bdbcf2)
 
 ## Player
 ![Screenshot 2024-11-30 035044](https://github.com/user-attachments/assets/5e5e519d-5aee-4ecc-8fcc-cac68dc9683e)
