@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap');
 
 #txtCustomCss, #txtLocalCustomCss {
@@ -32,7 +33,7 @@ html {
 	left: 0;
 	width: 100%;
 	height: 100vh;
-	background: url(https://i.imgur.com/dGBenC7.jpeg) center top no-repeat #030322;
+	background: linear-gradient(315deg, rgb(17.647% 4.706% 25.098%) 0%, rgb(17.577% 4.679% 25.16%) 6.25%, rgb(17.364% 4.603% 25.344%) 12.5%, rgb(17.002% 4.487% 25.646%) 18.75%, rgb(16.482% 4.348% 26.058%) 25%, rgb(15.793% 4.207% 26.568%) 31.25%, rgb(14.924% 4.085% 27.161%) 37.5%, rgb(13.865% 3.999% 27.815%) 43.75%, rgb(12.607% 3.961% 28.506%) 50%, rgb(11.146% 3.973% 29.206%) 56.25%, rgb(9.481% 4.028% 29.887%) 62.5%, rgb(7.62% 4.095% 30.519%) 68.75%, rgb(5.565% 4.164% 31.076%) 75%, rgb(3.338% 4.225% 31.534%) 81.25%, rgb(1.514% 4.273% 31.876%) 87.5%, rgb(0.383% 4.303% 32.086%) 93.75%, rgb(0% 4.314% 32.157%) 100% );
 	background-size: cover;
 	opacity: 0;
 	z-index: -1;
@@ -46,7 +47,7 @@ html {
 	left: 0;
 	width: 100%;
 	height: 100vh;
-	background: url(https://i.imgur.com/dGBenC7.jpeg) center top no-repeat #030322;
+	background: linear-gradient(315deg, rgb(17.647% 4.706% 25.098%) 0%, rgb(17.577% 4.679% 25.16%) 6.25%, rgb(17.364% 4.603% 25.344%) 12.5%, rgb(17.002% 4.487% 25.646%) 18.75%, rgb(16.482% 4.348% 26.058%) 25%, rgb(15.793% 4.207% 26.568%) 31.25%, rgb(14.924% 4.085% 27.161%) 37.5%, rgb(13.865% 3.999% 27.815%) 43.75%, rgb(12.607% 3.961% 28.506%) 50%, rgb(11.146% 3.973% 29.206%) 56.25%, rgb(9.481% 4.028% 29.887%) 62.5%, rgb(7.62% 4.095% 30.519%) 68.75%, rgb(5.565% 4.164% 31.076%) 75%, rgb(3.338% 4.225% 31.534%) 81.25%, rgb(1.514% 4.273% 31.876%) 87.5%, rgb(0.383% 4.303% 32.086%) 93.75%, rgb(0% 4.314% 32.157%) 100% );
 	background-size: cover;
 	opacity: 0.925;
 	filter: brightness(90%);
@@ -66,7 +67,7 @@ html {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: url(https://i.imgur.com/dGBenC7.jpeg) center top no-repeat #030322;
+	background: linear-gradient(315deg, rgb(17.647% 4.706% 25.098%) 0%, rgb(17.577% 4.679% 25.16%) 6.25%, rgb(17.364% 4.603% 25.344%) 12.5%, rgb(17.002% 4.487% 25.646%) 18.75%, rgb(16.482% 4.348% 26.058%) 25%, rgb(15.793% 4.207% 26.568%) 31.25%, rgb(14.924% 4.085% 27.161%) 37.5%, rgb(13.865% 3.999% 27.815%) 43.75%, rgb(12.607% 3.961% 28.506%) 50%, rgb(11.146% 3.973% 29.206%) 56.25%, rgb(9.481% 4.028% 29.887%) 62.5%, rgb(7.62% 4.095% 30.519%) 68.75%, rgb(5.565% 4.164% 31.076%) 75%, rgb(3.338% 4.225% 31.534%) 81.25%, rgb(1.514% 4.273% 31.876%) 87.5%, rgb(0.383% 4.303% 32.086%) 93.75%, rgb(0% 4.314% 32.157%) 100% );
 	background-size: cover;
 	opacity: 0.85;
 	z-index: -1;
@@ -85,7 +86,7 @@ html {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: url(https://i.imgur.com/dGBenC7.jpeg) center top no-repeat #030322;
+	background: linear-gradient(315deg, rgb(17.647% 4.706% 25.098%) 0%, rgb(17.577% 4.679% 25.16%) 6.25%, rgb(17.364% 4.603% 25.344%) 12.5%, rgb(17.002% 4.487% 25.646%) 18.75%, rgb(16.482% 4.348% 26.058%) 25%, rgb(15.793% 4.207% 26.568%) 31.25%, rgb(14.924% 4.085% 27.161%) 37.5%, rgb(13.865% 3.999% 27.815%) 43.75%, rgb(12.607% 3.961% 28.506%) 50%, rgb(11.146% 3.973% 29.206%) 56.25%, rgb(9.481% 4.028% 29.887%) 62.5%, rgb(7.62% 4.095% 30.519%) 68.75%, rgb(5.565% 4.164% 31.076%) 75%, rgb(3.338% 4.225% 31.534%) 81.25%, rgb(1.514% 4.273% 31.876%) 87.5%, rgb(0.383% 4.303% 32.086%) 93.75%, rgb(0% 4.314% 32.157%) 100% );
 	background-size: cover;
 	opacity: 0.925;
 	z-index: -1;
@@ -3325,7 +3326,7 @@ a[href*="shokoanime.com"] {
 	justify-content: space-evenly;
 	top: 26.6em;
 	z-index: 2;
-	background: #110e1ce3;
+	background: #080f38d9;
 	border-radius: 0em;
 	margin: 1.25em 0;
 }
@@ -3336,7 +3337,7 @@ a[href*="shokoanime.com"] {
 	width: 17.85em;
 	justify-content: space-between;
 	top: 28.1em;
-	background: #110e1ce3;
+	background: #080f38d9;
 	border-radius: 0.26em;
 	z-index: 5;
 	margin: 1.25em 0;
@@ -3352,12 +3353,12 @@ a[href*="shokoanime.com"] {
 	color: #000a;
 	position: fixed;
 	width: 21em;
-	left: 8em;
+	left: 7em;
 	top: 56.5em;
 	display: grid;
 	justify-content: space-evenly;
 	grid-template-columns: repeat(8, 1fr);
-	gap: 1em;
+	gap: 0.5em;
 }
 
 .layout-desktop .mainDetailButtons.focuscontainer-x .button-flat,
