@@ -23,25 +23,25 @@ or, the Black theme if you prefer
 Everything is just an alteration of the amazing work already put into [Ultrachromic by CTalvio](https://github.com/CTalvio/Ultrachromic). Updated for jellyfin server 10.10.X
 
 ## Homepage
-![Screenshot 2025-03-02 041317](https://github.com/user-attachments/assets/ec372128-02e9-4d8f-8f70-b4fc5a772b69)
+![Screenshot 2025-03-02 043457](https://github.com/user-attachments/assets/a4fa0dcf-6cef-44c3-8797-b19e3c3dfc57)
 
 ## Homepage (scrolled down)
-![Screenshot 2025-03-02 041420](https://github.com/user-attachments/assets/bf8c0e53-a871-4032-87db-73de6dd132a3)
+![Screenshot 2025-03-02 043513](https://github.com/user-attachments/assets/85af4421-7134-4dc3-86e1-b5df6bfc95ca)
 
 ## Library
-![Screenshot 2025-03-02 041440](https://github.com/user-attachments/assets/f360f8da-b44e-48d7-8984-d509dfec38ef)
+![Screenshot 2025-03-02 043520](https://github.com/user-attachments/assets/baabffd7-6a15-4970-a055-b6a4766e5cb3)
 
 ## Movie
-![Screenshot 2025-03-02 042219](https://github.com/user-attachments/assets/2017d45d-14d1-4a5d-9156-1fbc6e0ea723)
+![Screenshot 2025-03-02 043526](https://github.com/user-attachments/assets/8a0f0752-0761-4953-9dd7-7c36bbfa8527)
 
 ## Series
-![Screenshot 2025-03-02 042210](https://github.com/user-attachments/assets/9254fa3f-e916-494f-a686-218807f3086e)
+![Screenshot 2025-03-02 043539](https://github.com/user-attachments/assets/daf3c3f9-d71f-43b0-ae2d-922acecfd6fb)
 
 ## Season / Episodes
-![Screenshot 2025-03-02 042257](https://github.com/user-attachments/assets/eeba9644-734e-4990-9b54-34086f5ab883)
+![Screenshot 2025-03-02 043555](https://github.com/user-attachments/assets/3e5eff48-cdf3-4070-89f4-13f275fd68e6)
 
 ## Episode
-![Screenshot 2025-03-02 042317](https://github.com/user-attachments/assets/e03e7306-4899-4d71-8d94-33dd13bdbcf2)
+![Screenshot 2025-03-02 043636](https://github.com/user-attachments/assets/299b9786-b7aa-4ed7-9bc3-2b8dc37a6df8)
 
 ## Player
 ![Screenshot 2024-11-30 035044](https://github.com/user-attachments/assets/5e5e519d-5aee-4ecc-8fcc-cac68dc9683e)
