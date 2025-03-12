@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap');
 
 #txtCustomCss, #txtLocalCustomCss {
@@ -3499,6 +3500,23 @@ a[href*="shokoanime.com"] {
 .content-primary {
 	padding-bottom: 5em !important;
 }
+
+.localUsers .cardText-secondary {
+  height: auto;
+  white-space: pre-wrap;
+}
+@media (min-width: 70em) {
+	.localUsers .squareCard {
+		width: 15%;
+	}
+}
+
+@media (max-width: 70em) {
+	.localUsers .squareCard {
+		width: 33%;
+	}
+}
+
 
 @media (min-width: 1000px) {
 	body {
