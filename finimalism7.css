@@ -2566,6 +2566,11 @@ button.is-emby-button emby-button {
 	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
+.skip-button-container {
+    bottom: 7%;
+    right: -24em;
+}
+
 .layout-mobile .backgroundContainer { background-color: transparent;}
 
 #myPreferencesMenuPage .sectionTitle {
