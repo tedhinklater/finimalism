@@ -38,6 +38,7 @@ html {
 	opacity: 0;
 	z-index: -1;
 	background-attachment: fixed;
+	pointer-events: none;
 }
 
 .pageTabContent.is-active::before {
