@@ -50,8 +50,8 @@ html {
 	height: 100vh;
 	background: linear-gradient(135deg, rgb(17.647% 4.706% 25.098%) 0%, rgb(15.743% 4.199% 26.604%) 6.25%, rgb(13.727% 3.992% 27.895%) 12.5%, rgb(11.672% 3.963% 28.966%) 18.75%, rgb(9.631% 4.022% 29.83%) 25%, rgb(7.648% 4.094% 30.51%) 31.25%, rgb(5.753% 4.158% 31.031%) 37.5%, rgb(3.96% 4.209% 31.417%) 43.75%, rgb(2.481% 4.247% 31.695%) 50%, rgb(1.458% 4.274% 31.886%) 56.25%, rgb(0.788% 4.292% 32.011%) 62.5%, rgb(0.38% 4.303% 32.086%) 68.75%, rgb(0.156% 4.31% 32.128%) 75%, rgb(0.049% 4.312% 32.148%) 81.25%, rgb(0.01% 4.313% 32.155%) 87.5%, rgb(0.001% 4.314% 32.157%) 93.75%, rgb(0% 4.314% 32.157%) 100% );
 	background-size: cover;
-	opacity: 0.925;
-	filter: brightness(90%);
+	opacity: 0.95;
+	filter: brightness(50%);
 	z-index: -1;
 	background-attachment: fixed;
 }
@@ -72,7 +72,7 @@ html {
 	background-size: cover;
 	opacity: 0.85;
 	z-index: -1;
-	filter: saturate(65%) brightness(105%);
+	filter: saturate(100%) brightness(50%);
 }
 
 .detailPageSecondaryContainer {
@@ -91,7 +91,7 @@ html {
 	background-size: cover;
 	opacity: 0.925;
 	z-index: -1;
-	filter: saturate(75%) brightness(95%) contrast(100%);
+	filter: saturate(60%) brightness(70%) contrast(100%);
 }
 
 .headerTop {
