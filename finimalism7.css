@@ -1138,6 +1138,7 @@ div[data-role="controlgroup"] a[data-role="button"] {
 	.layout-mobile .detailImageContainer .card {
 		position: fixed !important;
 		top: 20% !important;
+		max-width: 21%;
 	}
 	.layout-mobile #itemDetailPage .card.backdropCard {
 		width:13em;
@@ -2122,25 +2123,22 @@ button.is-emby-button emby-button {
 		grid-gap: 1em;
 	}
 	
+	#albumsTab .itemsContainer.padded-left.padded-right.padded-right-withalphapicker.vertical-wrap {
+		display: flex;
+	}
+	#albumsTab .itemsContainer.padded-left.padded-right.padded-right-withalphapicker.vertical-wrap .card.squareCard {
+		width: 40%;
+	}
+	
 	.itemsContainer.padded-left.padded-right.padded-right-withalphapicker.vertical-wrap .card.portraitCard {
 		width: auto;
 	}
 	
-	.alphaPickerButton-vertical {
-		width: 3vw;
-		height: 3vh;
-	}
-	
-	.alphaPickerButton {
-		padding: .2em .4em;
-	}
-	
 	.alphaPicker-fixed {
-		top: 17vh;
-		top: max(env(safe-area-inset-top),17vh);
+		top: 9em;
 	}
 	[dir="ltr"] .alphaPicker-fixed-right {
-		right: max(env(safe-area-inset-right),1em);
+		right: max(env(safe-area-inset-right),0.5em);
 	}
 }
 
@@ -3535,6 +3533,11 @@ a[href*="shokoanime.com"] {
 	.layout-tv .itemExternalLinks.focuscontainer-x {
 
 	}
+}
+
+.layout-mobile .mainDetailButtons {
+  margin-bottom: .5em;
+  margin-top: 2em;
 }
 
 @media (min-width: 2500px) {
