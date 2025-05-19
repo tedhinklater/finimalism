@@ -28,3 +28,45 @@
 	padding-bottom: 0em;
 	padding-top: 0em;
 }
+
+#itemDetailPage button[data-direction="left"] {
+	right: 3.5em;
+	position: absolute;
+	top: 0em;
+	z-index: 50;
+	font-size: 1.5em;
+	color: #fff;
+	height: 2em;
+	border-radius: 0.1em;
+	cursor: pointer;
+	opacity: 0.1;
+	margin: 0;
+	width: 2em;
+	padding: 0;
+	padding-top: 0.5em;
+}
+
+#itemDetailPage button[data-direction="right"] {
+	right: 0em;
+	position: absolute;
+	top: 0em;
+	z-index: 50;
+	font-size: 1.5em;
+	color: #fff;
+	height: 2em;
+	border-radius: 0.1em;
+	cursor: pointer;
+	opacity: 0.1;
+	margin: 0;
+	width: 2em;
+	padding: 0;
+	padding-top: 0.5em;
+}
+
+.layout-desktop #itemDetailPage .detailVerticalSection,
+.layout-tv #itemDetailPage .detailVerticalSection,
+.layout-desktop #itemDetailPage .itemDetailsGroup,
+.layout-tv #itemDetailPage .itemDetailsGroup {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
