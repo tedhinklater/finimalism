@@ -51,6 +51,14 @@ Everything is just an alteration of the amazing work already put into [Ultrachro
 
 # Extras
 
+Add this to your CSS import lines (below the finimalism theme import line) to give your HomeTab a grid layout
+
+```css
+@import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/gridHometab.css");
+```
+
+![Screenshot 2025-05-19 152557](https://github.com/user-attachments/assets/224044ab-68a8-4ea4-9646-6390ffb0ded3)
+
 Example library cards can be found [here](https://github.com/tedhinklater/finimalism/tree/main/libary-cards)
 ![cards](https://i.imgur.com/aWUsxMG.png)
 
