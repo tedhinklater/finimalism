@@ -1,0 +1,30 @@
+.layout-desktop #homeTab .verticalSection.emby-scroller-container,
+.layout-tv #homeTab .verticalSection.emby-scroller-container {
+  display: inline-grid;
+  width: 50%;
+}
+
+.layout-desktop #homeTab .verticalSection.section0.emby-scroller-container,
+.layout-tv #homeTab .verticalSection.section0.emby-scroller-container {
+  display: initial;
+}
+
+.layout-desktop .overflowPortraitCard, 
+.layout-tv .overflowPortraitCard,
+.layout-desktop .overflowSquareCard, 
+.layout-tv .overflowSquareCard {
+  width: 14.7em;
+}
+
+.sectionTitle.sectionTitle-cards {
+  font-size: 1.25em;
+  margin-left: 0.5em !important;
+  font-style: italic;
+}
+
+.layout-desktop div:not(.sectionTitleContainer-cards) > .sectionTitle-cards,
+.layout-tv div:not(.sectionTitleContainer-cards) > .sectionTitle-cards {
+	margin: 0;
+	padding-bottom: 0em;
+	padding-top: 0em;
+}
