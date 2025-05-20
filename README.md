@@ -11,7 +11,7 @@ Import the Colour theme to your CSS with
 
 ```
 
-or, the Black theme if you prefer 
+or, the Black theme if you prefer (shown below)
 
 ```css
 @import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/finimalism-just-black.css");
@@ -31,15 +31,7 @@ Optional - I prefer my Home Tab to have a 2-column grid layout (instead of just 
 Everything is just an alteration of the amazing work already put into [Ultrachromic by CTalvio](https://github.com/CTalvio/Ultrachromic). Updated for jellyfin server 10.10.X
 
 # Library Cards 
-
-[here](https://github.com/tedhinklater/finimalism/tree/main/libary-cards)
-![cards](https://i.imgur.com/aWUsxMG.png)
-
-If you want a simple way to use your own My Media library card images and add the text automatically (any picture you upload will show the text over it), add this to your import lines
-```css
-@import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/libraryCardAriaText.css");
-```
-![Screenshot 2024-12-09 030732](https://github.com/user-attachments/assets/ea733699-2b21-4a58-90ab-9e767be94d56)
+<a href="https://github.com/Phantomwise/jellyfin-custom-thumbnails-collection"><img src="https://i.imgur.com/aWUsxMG.png" alt="Cards" width="800"/></a>
 
 # More Themes
 
