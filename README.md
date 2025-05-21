@@ -26,7 +26,7 @@ Optional - I prefer my Home Tab to have a 2-column grid layout (instead of just 
 
 ![Untitled](https://github.com/user-attachments/assets/638000fa-1337-4e9b-a315-8be201c33e18)
 
-![Screenshot 2025-05-20 195529](https://github.com/user-attachments/assets/a42cf665-fc1f-4417-97c9-fab4137c8473)
+![Untitled](https://github.com/user-attachments/assets/d558e697-2ea9-420d-8bcb-e83b7d087e38)
 
 Everything is just an alteration of the amazing work already put into [Ultrachromic by CTalvio](https://github.com/CTalvio/Ultrachromic). Updated for jellyfin server 10.10.X
 
