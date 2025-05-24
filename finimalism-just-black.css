@@ -246,3 +246,19 @@
   background: #000c;
   z-index: 0;
 }
+
+.layout-desktop .headerLeft,
+.layout-tv .headerLeft {
+	background: #000000e0 !important;
+}
+
+@media (min-width: 60em) {
+	.headerTabs.sectionTabs .tabs-viewmenubar.emby-tabs.focusable.scrollX .emby-tab-button.emby-button {
+		background: #000000e0 !important;
+	}
+}
+
+.layout-desktop .headerRight,
+.layout-tv .headerRight {
+	background: #000000e0 !important;
+}
