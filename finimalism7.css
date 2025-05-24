@@ -2619,6 +2619,7 @@ button.is-emby-button emby-button {
 	top: 17.5em;
 	left: 1.5em;
 	width: 24.3em;
+	filter: drop-shadow(-1px 1px 2px black);
 }
 
 	.layout-mobile .itemMiscInfo, .layout-mobile .itemName, .layout-mobile .mainDetailButtons, .layout-mobile .parentName {
