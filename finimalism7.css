@@ -1080,7 +1080,8 @@ div[data-role="controlgroup"] a[data-role="button"] {
 
 .layout-desktop .skinHeader,
 .layout-tv .skinHeader {
-	position: absolute;
+	position: fixed;
+	top: -0.5em;
 }
 
 @media (orientation: landscape) {
@@ -2652,18 +2653,30 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 }
 
 @media (min-width: 60em) {
+	.headerTabs.sectionTabs .tabs-viewmenubar.emby-tabs.focusable.scrollX .emby-tab-button.emby-button {
+		background: #0a0418b5 !important;
+		color: #fff !important;
+		border-radius: 0.25em;
+		height: 2em;
+		width: auto;
+		transform: translateY(-23%);
+		transition: 0s;
+		margin-left: 0.25em;
+		margin-right: 0.25em;
+	}
+	
 	.headerTabs.sectionTabs .tabs-viewmenubar.emby-tabs.focusable.scrollX .emby-tab-button.emby-button.emby-tab-button-active {
 		background: #fff !important;
 		color: #000 !important;
-		border-radius: 2em;
+		border-radius: 0.25em;
 		height: 2em;
 		width: auto;
 		transform: translateY(-11%);
-			transition: 0s;
+		transition: 0s;
 	}
 
 	.headerTabs.sectionTabs .tabs-viewmenubar.emby-tabs.focusable.scrollX .emby-tab-button.emby-button.emby-tab-button-active .emby-button-foreground {
-		transform: translateY(-29%);
+		transform: translateY(-13%);
 	}
 
 	.headerTabs .emby-tab-button {
@@ -2781,6 +2794,46 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 	#genresTab .portraitCard, .squareCard {
 		width: 11%;
 	}
+}
+
+.layout-desktop .headerRight,
+.layout-tv .headerRight {
+	-webkit-align-items: center;
+	align-items: center;
+	display: -webkit-flex;
+	display: flex;
+	background: #0a0418b5 !important;
+	color: #000 !important;
+	border-radius: 0.25em;
+	height: 2em;
+	width: auto;
+	transform: translateY(-11%);
+	transition: 0s;
+	padding: 0.25em;
+	right: 0em;
+	position: absolute;
+}
+
+.layout-desktop .headerLeft,
+.layout-tv .headerLeft {
+	-webkit-flex-grow: 1;
+	flex-grow: 1;
+	-webkit-justify-content: flex-start;
+	justify-content: flex-start;
+	overflow: hidden;
+	max-width: fit-content;
+	background: #0a0418b5;
+	padding-right: 1em;
+	border-radius: 0.25em;
+	margin-left: -1em;
+	padding-bottom: 0.25em;
+	margin-top: -0.25em;
+}
+
+.navMenuOption {
+  -webkit-align-items: center;
+  align-items: center;
+  border-radius: 0.25em !important;
 }
 
 #displayPreferencesPage .sectionTitle {
@@ -3556,6 +3609,11 @@ a[href*="shokoanime.com"] {
   display: initial !important;
 }
 
+.layout-desktop #homeTab .verticalSection.section2 .emby-scroller {
+	padding-left: 0em;
+	margin-left: 1em;
+}
+
 .layout-desktop #homeTab .section3 .verticalSection.emby-scroller-container,
 .layout-tv #homeTab .section3 .verticalSection.emby-scroller-container,
 .layout-desktop #homeTab .section3 .verticalSection.emby-scroller-container,
@@ -3567,9 +3625,24 @@ a[href*="shokoanime.com"] {
 .layout-desktop #homeTab .section3 .verticalSection.emby-scroller-container,
 .layout-tv #homeTab .section3 .verticalSection.emby-scroller-container,
 .layout-desktop #homeTab .section3 .verticalSection.emby-scroller-container,
-.layout-tv #homeTab .section3 .verticalSection.emby-scroller-container {
+.layout-tv #homeTab .section3 .verticalSection.emby-scroller-container,
+.layout-desktop #homeTab .section4 .verticalSection.emby-scroller-container,
+.layout-tv #homeTab .section4 .verticalSection.emby-scroller-container,
+.layout-desktop #homeTab .section5 .verticalSection.emby-scroller-container,
+.layout-tv #homeTab .section5 .verticalSection.emby-scroller-container,
+.layout-desktop #homeTab .section6 .verticalSection.emby-scroller-container,
+.layout-tv #homeTab .section6 .verticalSection.emby-scroller-container,
+.layout-desktop #homeTab .section7 .verticalSection.emby-scroller-container,
+.layout-tv #homeTab .section7 .verticalSection.emby-scroller-container,
+.layout-desktop #homeTab .section8 .verticalSection.emby-scroller-container,
+.layout-tv #homeTab .section8 .verticalSection.emby-scroller-container {
 	display: inline-block !important;
-	width: 100%;
+	width: 98.9%;
+}
+
+.layout-desktop .emby-scroller,
+.layout-tv .emby-scroller {
+  padding-right: 0%;
 }
 
 .layout-desktop .overflowPortraitCard, 
@@ -3643,16 +3716,25 @@ a[href*="shokoanime.com"] {
 	margin-left: -0.5em;
 }
 
+.layout-desktop #homeTab .verticalSection.section2.emby-scroller-container,
+.layout-tv #homeTab .verticalSection.section2.emby-scroller-container {
+	margin-left: -1.5em;
+}
+
 @media (min-width: 1000px) {
 	.layout-desktop .card.overflowBackdropCard, 
 	.layout-tv .card.overflowBackdropCard {
-		width: 12.25vw;
+		width: 16.375vw;
 	}
 	.layout-desktop .overflowPortraitCard, 
 	.layout-tv .overflowPortraitCard,
 	.layout-desktop .overflowSquareCard, 
 	.layout-tv .overflowSquareCard {
-		width: 9.8vw;
+		width: 12.25vw;
+	}
+	.layout-desktop .verticalSection.detailVerticalSection.moreFromSeasonSection .card.overflowBackdropCard, 
+	.layout-tv .verticalSection.detailVerticalSection.moreFromSeasonSection .card.overflowBackdropCard {
+		width: 12.255vw;
 	}
 }
 
