@@ -18,13 +18,7 @@ or, the Black theme if you prefer (shown below)
 
 ```
 
-Optional - I prefer my Home Tab to have a 2-column grid layout (instead of just rows), add this to your import lines in the CSS box
-
-```css
-@import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/gridHometab.css");
-```
-
-![Untitled](https://github.com/user-attachments/assets/638000fa-1337-4e9b-a315-8be201c33e18)
+![Screenshot 2025-05-24 130620](https://github.com/user-attachments/assets/cce751d1-6358-4654-a6c4-e6eef54294ee)
 
 ![Untitled](https://github.com/user-attachments/assets/d558e697-2ea9-420d-8bcb-e83b7d087e38)
 
