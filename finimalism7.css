@@ -3718,7 +3718,7 @@ a[href*="shokoanime.com"] {
 
 .layout-desktop #homeTab .verticalSection.section2.emby-scroller-container,
 .layout-tv #homeTab .verticalSection.section2.emby-scroller-container {
-	margin-left: -1.5em;
+	margin-left: -1em;
 }
 
 @media (min-width: 1000px) {
