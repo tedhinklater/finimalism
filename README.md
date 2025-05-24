@@ -20,12 +20,9 @@ or, the Black theme if you prefer (shown below)
 
 ```
 
-![Untitled-2](https://github.com/user-attachments/assets/19e7002f-6d72-4d77-83b7-322e60f3dc7e)
+![Untitled-3](https://github.com/user-attachments/assets/b9b8e619-9ff5-4ef5-9f87-322bfff49c92)
 
 ![Untitled](https://github.com/user-attachments/assets/d558e697-2ea9-420d-8bcb-e83b7d087e38)
-
-Gallery
-![Untitled-3](https://github.com/user-attachments/assets/b9b8e619-9ff5-4ef5-9f87-322bfff49c92)
 
 Movie
 ![Untitled-4](https://github.com/user-attachments/assets/8607e6ee-9071-4ff9-b427-7deb2736cfc0)
