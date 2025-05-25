@@ -2809,9 +2809,10 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 	width: auto;
 	transform: translateY(-11%);
 	transition: 0s;
-	padding: 0.25em;
+	padding: 0.5em;
 	right: 0em;
 	position: absolute;
+	padding-top: 1.7em;
 }
 
 .layout-desktop .headerLeft,
@@ -2828,6 +2829,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 	margin-left: -1em;
 	padding-bottom: 0.25em;
 	margin-top: -0.25em;
+	padding-top: 0.5em;
 }
 
 .navMenuOption {
