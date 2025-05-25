@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap');
 
 #txtCustomCss, #txtLocalCustomCss {
@@ -3602,7 +3601,7 @@ a[href*="shokoanime.com"] {
 .layout-desktop #homeTab .verticalSection.emby-scroller-container,
 .layout-tv #homeTab .verticalSection.emby-scroller-container {
   display: inline-grid;
-  width: 50%;
+  width: 49.55%;
 }
 
 .layout-desktop #homeTab .verticalSection.section0.emby-scroller-container,
@@ -3612,7 +3611,7 @@ a[href*="shokoanime.com"] {
 
 .layout-desktop #homeTab .verticalSection.section2 .emby-scroller {
 	padding-left: 0em;
-	margin-left: 1em;
+	margin-left: 0em;
 }
 
 .layout-desktop #homeTab .section3 .verticalSection.emby-scroller-container,
@@ -3719,7 +3718,7 @@ a[href*="shokoanime.com"] {
 
 .layout-desktop #homeTab .verticalSection.section2.emby-scroller-container,
 .layout-tv #homeTab .verticalSection.section2.emby-scroller-container {
-	margin-left: -1em;
+	margin-left: 0em;
 }
 
 @media (min-width: 1000px) {
