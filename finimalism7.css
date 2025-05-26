@@ -3097,8 +3097,8 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 	margin: auto;
 	font-size: 1.6em !important;
 }
-.layout-desktop .listItemBody.itemAction,
-.layout-desktop .listItem-bottomoverview.secondary {
+.layout-desktop .playlistSection .listItemBody.itemAction,
+.layout-desktop .playlistSection .listItem-bottomoverview.secondary {
 	z-index: 1;
 	min-width: 68vw;
 }
