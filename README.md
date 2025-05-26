@@ -11,7 +11,7 @@ Import the Colour theme (shown below) to your CSS, with:
 
 ```
 
-![Untitled-1](https://github.com/user-attachments/assets/afc7e6bc-5e21-4774-8627-73cb7fa09717)
+![Untitled-1](https://github.com/user-attachments/assets/f31e6e65-726b-4464-900d-9d0000d36b02)
 
 or, the Black theme (shown below) if you prefer:
 
@@ -20,20 +20,26 @@ or, the Black theme (shown below) if you prefer:
 
 ```
 
-![Untitled-1a](https://github.com/user-attachments/assets/b127bb79-f2f4-4afc-8e0e-9108f157ffe3)
+![Untitled-1a](https://github.com/user-attachments/assets/dc4e38e0-634f-41bd-809c-8fdda46e2875)
 
 Just paste the import lines into your "Dashboard > General > CSS" section, or "User Settings > Display > CSS" section.
 
 ![css](https://github.com/user-attachments/assets/f137ab3d-5ab1-431c-ad2f-9541145f9e8d)
 
+Gallery (Colour version)
+![Untitled-2](https://github.com/user-attachments/assets/c3194036-52f0-47e1-b922-ed48b9e2615f)
+
 Movie (Colour version)
-![Untitled-2](https://github.com/user-attachments/assets/17975f8a-56c3-41d1-9a1a-d466d6b773df)
+![Untitled-3](https://github.com/user-attachments/assets/832b257d-1176-4250-8e1f-c096b08bdbe9)
 
-Gallery (Black version)
-![Untitled-3](https://github.com/user-attachments/assets/e29393d6-a316-4244-aaf2-bdf55c16a8d9)
+Show (Black version)
+![Untitled-4](https://github.com/user-attachments/assets/d1138008-2e07-4fcc-830a-80df34650f36)
 
-Season
-![Untitled-4](https://github.com/user-attachments/assets/91fa8244-73ea-44f6-b107-43efcb5a14ed)
+Season (Black version)
+![Untitled-5](https://github.com/user-attachments/assets/e3f40190-8091-427a-b541-500e599e1b96)
+
+Episode (Black version)
+![Untitled-6](https://github.com/user-attachments/assets/19186f1b-7c91-4f9f-b38f-9a6231944775)
 
 Everything is just an alteration of the amazing work already put into [Ultrachromic by CTalvio](https://github.com/CTalvio/Ultrachromic). Updated for jellyfin server 10.10.X
 
