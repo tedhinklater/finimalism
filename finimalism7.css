@@ -112,7 +112,6 @@ h2 {
 
 .layout-desktop .card,
 .layout-tv .card {
-	font-size: 1em;
 }
 
 .cardScalable {
@@ -120,7 +119,6 @@ h2 {
 }
 
 .textActionButton {
-	font-size: 1.1em;
 	transition: color 0.3s, font-weight 0.3s;
 }
 
@@ -1520,7 +1518,6 @@ progress::-webkit-progress-value {
 .sectionTitle {
 	margin-left: 0em !important;
 	margin-top: 0.5em !important;
-	margin-bottom: 0.5em !important;
 	font-weight: 700;
 	font-size: 1.6em;
 }
@@ -1609,7 +1606,6 @@ progress::-webkit-progress-value {
 .cardText {
 	overflow: hidden;
 	padding: 0;
-	padding-top: 0.2em;
 	text-overflow: ellipsis;
 	white-space: normal;
 	margin-left: 0em;
@@ -2099,7 +2095,6 @@ button.is-emby-button emby-button {
 .layout-desktop div:not(.sectionTitleContainer-cards) > .sectionTitle-cards,
 .layout-tv div:not(.sectionTitleContainer-cards) > .sectionTitle-cards {
 	margin: 0;
-	padding-bottom: 0.5em;
 	padding-top: .5em;
 }
 
@@ -2155,7 +2150,6 @@ button.is-emby-button emby-button {
 .layout-desktop .homePage .section1.verticalSection .itemsContainer .card.overflowBackdropCard,
 .layout-tv .homePage .section1.verticalSection .itemsContainer .card.overflowBackdropCard {
 	margin-top: 0em;
-	font-size: 90% !important;
 }
 
 .layout-desktop .overflowBackdropCard,
@@ -2415,13 +2409,11 @@ button.is-emby-button emby-button {
 
 .layout-desktop .overflowBackdropCard,
 .layout-tv .overflowBackdropCard {
-	font-size: 90% !important;
 	filter: drop-shadow(4px 5px 2px rgba(2, 2, 2, 0.5));
 }
 
 .layout-desktop .verticalSection.section2 .card.overflowBackdropCard,
 .layout-tv .verticalSection.section2 .card.overflowBackdropCard {
-	font-size: 90% !important;
 }
 
 .verticalSection.section0 .textActionButton {
@@ -2873,7 +2865,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 .layout-tv #homeTab .emby-scroller-container {
 	position: relative;
 	overflow: hidden;
-	margin-top: 1.5em;
+	margin-top: 0.5em;
 }
 
 .listItemImage {
@@ -2925,7 +2917,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 
 .layout-desktop #homeTab .emby-scrollbuttons.padded-right,
 .layout-tv #homeTab .emby-scrollbuttons.padded-right {
-	right: 0em;
+	right: 2.5em;
 	padding-right: 0em;
 	width: 100vw;
 }
@@ -3108,12 +3100,21 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 .layout-desktop .listItemBody.itemAction,
 .layout-desktop .listItem-bottomoverview.secondary {
 	z-index: 1;
-	min-width: 15em;
+	min-width: 68vw;
 }
 .layout-desktop .listItem-bottomoverview.secondary {
 	text-align: justify;
 	padding: .5em;
 	margin: 0;
+}
+
+.nowPlayingInfoContainer .nowPlayingInfoControls .infoContainer.flex {
+
+}
+
+.infoContainer, .sliderContainer {
+	-webkit-filter: drop-shadow(0 0 2px rgba(2, 2, 2, 1));
+	filter: drop-shadow(0 0 2px rgba(2, 2, 2, 1));
 }
 
 .layout-desktop .trackSelections .selectContainer .selectLabel,
@@ -3445,10 +3446,15 @@ a[href*="shokoanime.com"] {
 .layout-desktop .itemName.infoText.subtitle,
 .layout-tv .itemName.infoText.originalTitle {
 	position: absolute;
-	top: 5em;
+	top: 5.5em;
 	left: 0em;
 	font-size: 1.1em;
-	width: 23.75em;
+	width: 29em;
+}
+
+.layout-desktop [dir="ltr"] .selectArrowContainer,
+.layout-tv [dir="ltr"] .selectArrowContainer {
+  right: 3em;
 }
 
 .layout-desktop #itemDetailPage .nameContainer .parentName.focuscontainer-x .button-link.itemAction.emby-button,
@@ -3458,7 +3464,6 @@ a[href*="shokoanime.com"] {
 	-webkit-line-clamp: 2;
 	overflow: hidden;
 	text-overflow: ellipsis;
-	transform: translateY(25%);
 	transition: transform 0s;
 }
 
@@ -3610,8 +3615,6 @@ a[href*="shokoanime.com"] {
 }
 
 .layout-desktop #homeTab .verticalSection.section2 .emby-scroller {
-	padding-left: 0em;
-	margin-left: 0em;
 }
 
 .layout-desktop #homeTab .section3 .verticalSection.emby-scroller-container,
@@ -3636,8 +3639,6 @@ a[href*="shokoanime.com"] {
 .layout-tv #homeTab .section7 .verticalSection.emby-scroller-container,
 .layout-desktop #homeTab .section8 .verticalSection.emby-scroller-container,
 .layout-tv #homeTab .section8 .verticalSection.emby-scroller-container {
-	display: inline-block !important;
-	width: 98.9%;
 }
 
 .layout-desktop .emby-scroller,
@@ -3664,9 +3665,6 @@ a[href*="shokoanime.com"] {
 
 .layout-desktop div:not(.sectionTitleContainer-cards) > .sectionTitle-cards,
 .layout-tv div:not(.sectionTitleContainer-cards) > .sectionTitle-cards {
-	margin: 0;
-	padding-bottom: 0em;
-	padding-top: 0em;
 }
 
 #itemDetailPage button[data-direction="left"] {
