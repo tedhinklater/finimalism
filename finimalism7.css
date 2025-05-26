@@ -3779,3 +3779,11 @@ a[href*="shokoanime.com"] {
 .layout-tv #childrenContent .childrenItemsContainer.itemsContainer.padded-right.vertical-list .listItemBody.itemAction.listItemBody-noleftpadding {
 	min-width: 7vw;
 }
+
+.layout-desktop .pageTitleWithLogo,
+.layout-tv .pageTitleWithLogo {
+  background-position: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 6.2em;
+}
