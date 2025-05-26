@@ -39,7 +39,7 @@ Season (Black version)
 ![Untitled-5](https://github.com/user-attachments/assets/e3f40190-8091-427a-b541-500e599e1b96)
 
 Episode (Black version)
-![Untitled-6](https://github.com/user-attachments/assets/19186f1b-7c91-4f9f-b38f-9a6231944775)
+![Untitled-1](https://github.com/user-attachments/assets/04b19af0-f51b-4253-ad21-2d305111dbba)
 
 Everything is just an alteration of the amazing work already put into [Ultrachromic by CTalvio](https://github.com/CTalvio/Ultrachromic). Updated for jellyfin server 10.10.X
 
