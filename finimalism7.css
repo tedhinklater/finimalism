@@ -3775,3 +3775,7 @@ a[href*="shokoanime.com"] {
 	}
 }
 
+.layout-desktop #childrenContent .childrenItemsContainer.itemsContainer.padded-right.vertical-list .listItemBody.itemAction.listItemBody-noleftpadding,
+.layout-tv #childrenContent .childrenItemsContainer.itemsContainer.padded-right.vertical-list .listItemBody.itemAction.listItemBody-noleftpadding {
+	min-width: 7vw;
+}
