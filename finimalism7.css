@@ -1618,7 +1618,7 @@ progress::-webkit-progress-value {
 
 @media (min-width: 120em) {
 	.portraitCard, .squareCard {
-		width: 12em;
+		width: 11vw;
 	}
 }
 
@@ -1961,7 +1961,7 @@ progress::-webkit-progress-value {
 		justify-content:center;
 		margin-top:-3.5em;
 		position:relative;
-		width:auto;
+		width:100vw;
 	}
 }
 
@@ -1993,8 +1993,24 @@ progress::-webkit-progress-value {
 		align-self:center;
 		-webkit-justify-content:center;
 		justify-content:center;
-		margin-top:-1.3em;
 		position:relative;
+	}
+}
+
+@media (max-width:959px) {
+	.headerTabs {
+		-webkit-align-items:center;
+		align-items:center;
+		-webkit-align-self:center;
+		align-self:center;
+		-webkit-justify-content:center;
+		justify-content:center;
+		position:relative;
+		margin-top:-1.3em;
+	}
+	.layout-desktop .headerTabs.sectionTabs .tabs-viewmenubar.emby-tabs.focusable.scrollX .emby-tabs-slider .emby-tab-button,
+	.layout-tv .headerTabs.sectionTabs .tabs-viewmenubar.emby-tabs.focusable.scrollX .emby-tabs-slider .emby-tab-button {
+		max-width: fit-content;
 	}
 }
 
@@ -2805,6 +2821,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 	right: 0em;
 	position: absolute;
 	padding-top: 1.7em;
+	z-index: 90;
 }
 
 .layout-desktop .headerLeft,
@@ -2822,6 +2839,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 	padding-bottom: 0.25em;
 	margin-top: -0.25em;
 	padding-top: 0.5em;
+	z-index: 90;
 }
 
 .navMenuOption {
@@ -3741,4 +3759,19 @@ a[href*="shokoanime.com"] {
 	.layout-tv body {
 		font-size: 73% !important;
 	}
+	.layout-desktop .card.overflowBackdropCard, 
+	.layout-tv .card.overflowBackdropCard {
+		width: 16.375vw;
+	}
+	.layout-desktop .overflowPortraitCard, 
+	.layout-tv .overflowPortraitCard,
+	.layout-desktop .overflowSquareCard, 
+	.layout-tv .overflowSquareCard {
+		width: 12.25vw;
+	}
+	.layout-desktop .verticalSection.detailVerticalSection.moreFromSeasonSection .card.overflowBackdropCard, 
+	.layout-tv .verticalSection.detailVerticalSection.moreFromSeasonSection .card.overflowBackdropCard {
+		width: 12.255vw;
+	}
 }
+
