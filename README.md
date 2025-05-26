@@ -24,7 +24,7 @@ or, the Black theme (shown below) if you prefer:
 
 Just paste the import lines into your "Dashboard > General > CSS" section, or "User Settings > Display > CSS" section.
 
-![445940505-d558e697-2ea9-420d-8bcb-e83b7d087e38](https://github.com/user-attachments/assets/6be177b5-37ba-4ea3-9942-7a3158dc5c7a)
+![css](https://github.com/user-attachments/assets/f137ab3d-5ab1-431c-ad2f-9541145f9e8d)
 
 Movie (Colour version)
 ![Untitled-2](https://github.com/user-attachments/assets/17975f8a-56c3-41d1-9a1a-d466d6b773df)
