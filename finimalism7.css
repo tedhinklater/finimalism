@@ -2313,8 +2313,8 @@ button.is-emby-button emby-button {
 
 .layout-desktop .alphaPicker-fixed,
 .layout-tv .alphaPicker-fixed {
-	top: 17vh;
-	top: max(env(safe-area-inset-top),17vh);
+	top: max(env(safe-area-inset-top),20vh);
+	height: 80vh;
 }
 
 @media (min-width: 62.5em) {
@@ -2624,8 +2624,8 @@ button.is-emby-button emby-button {
 	text-align: center;
 	position: fixed;
 	top: 17.5em;
-	left: 1.5em;
-	width: 24.3em;
+	left: 4.5em;
+	width: 18.25em;
 	filter: drop-shadow(-1px 1px 2px black);
 }
 
@@ -3398,11 +3398,13 @@ a[href*="shokoanime.com"] {
 	left: 4.15em;
 	width: 16.7em;
 	justify-content: space-evenly;
-	top: 26.6em;
-	z-index: 2;
+	top: 14.6em;
+	z-index: -1;
 	background: #0c0515c2;
-	border-radius: 0em;
+	border-top-right-radius: 1em;
 	margin: 1.25em 0;
+	padding-top: 12em;
+	border-top-left-radius: 1em;
 }
 
 .layout-tv .mainDetailButtons.focuscontainer-x {
@@ -3772,6 +3774,39 @@ a[href*="shokoanime.com"] {
 	.layout-desktop .verticalSection.detailVerticalSection.moreFromSeasonSection .card.overflowBackdropCard, 
 	.layout-tv .verticalSection.detailVerticalSection.moreFromSeasonSection .card.overflowBackdropCard {
 		width: 12.255vw;
+	}
+}
+
+@media (max-width: 1400px) and (min-height: 800px) {
+	.layout-desktop .headerTabs,
+	.layout-tv .headerTabs {
+		margin-top: -0.7em;
+	}
+	.layout-desktop .emby-tab-button,
+	.layout-desktop .emby-tab-button {
+		background: transparent;
+		border-radius: 0;
+		box-shadow: none;
+		box-sizing: border-box;
+		cursor: pointer;
+		display: inline-block;
+		-webkit-flex-shrink: 0;
+		flex-shrink: 0;
+		font-family: inherit;
+		font-size: inherit;
+		font-weight: 600;
+		height: auto;
+		line-height: 1.25;
+		margin: 0;
+		min-width: 0;
+		min-width: auto;
+		outline: none;
+		overflow: hidden;
+		padding: 1.5em 1.5em;
+		padding-top: 1.5em;
+		position: relative;
+		vertical-align: middle;
+		width: auto;
 	}
 }
 
