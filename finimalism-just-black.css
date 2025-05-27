@@ -262,3 +262,7 @@
 .layout-tv .headerRight {
 	background: #000000e0 !important;
 }
+
+.skip-button {
+	background: #000;
+}
