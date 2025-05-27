@@ -27,7 +27,7 @@ Just paste the import lines into your "Dashboard > General > CSS" section, or "U
 ![css](https://github.com/user-attachments/assets/f137ab3d-5ab1-431c-ad2f-9541145f9e8d)
 
 Gallery (Colour version)
-![Untitled-2](https://github.com/user-attachments/assets/c3194036-52f0-47e1-b922-ed48b9e2615f)
+![Untitled](https://github.com/user-attachments/assets/04d8c11e-f825-4742-b384-78f0c99c038c)
 
 Movie (Colour version)
 ![Untitled-3](https://github.com/user-attachments/assets/832b257d-1176-4250-8e1f-c096b08bdbe9)
