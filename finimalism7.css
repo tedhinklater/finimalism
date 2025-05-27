@@ -2554,9 +2554,9 @@ button.is-emby-button emby-button {
 	bottom: 7.52em;
 	right: 7.5em;
 	color: #fff;
-	background: #000;
+	background: #0a0418b5;
 	border: 1px solid white;
-	border-radius: 0;
+	border-radius: 0.2em;
 	padding: 0.5em 1em;
 	transition: background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
 }
@@ -3277,7 +3277,7 @@ a[href*="anilist.co"] {
 	font-size: 0;
 }
 
-a[href*="kitsu.io"]::before {
+a[href*="kitsu.app"]::before {
 	content: "";
 	display: inline-block;
 	width: 50px;
@@ -3289,7 +3289,7 @@ a[href*="kitsu.io"]::before {
 	vertical-align: middle;
 }
 
-a[href*="kitsu.io"] {
+a[href*="kitsu.app"] {
 	font-size: 0;
 }
 
@@ -3428,13 +3428,9 @@ a[href*="shokoanime.com"] {
 .layout-tv .itemExternalLinks.focuscontainer-x {
 	color: #000a;
 	position: fixed;
-	width: 21em;
-	left: 7em;
+	width: 21.6em;
+	left: 5.5em;
 	top: 56.5em;
-	display: grid;
-	justify-content: space-evenly;
-	grid-template-columns: repeat(8, 1fr);
-	gap: 0.5em;
 }
 
 .layout-desktop .mainDetailButtons.focuscontainer-x .button-flat,
@@ -3756,10 +3752,10 @@ a[href*="shokoanime.com"] {
 	}
 }
 
-@media (max-height: 800px) and (max-width: 1500px) {
+@media (max-height: 870px) {
 	.layout-desktop body, 
 	.layout-tv body {
-		font-size: 73% !important;
+		font-size: 93% !important;
 	}
 	.layout-desktop .card.overflowBackdropCard, 
 	.layout-tv .card.overflowBackdropCard {
@@ -3777,7 +3773,7 @@ a[href*="shokoanime.com"] {
 	}
 }
 
-@media (max-width: 1400px) and (min-height: 800px) {
+@media (max-width: 1400px) and (min-height: 870px) {
 	.layout-desktop .headerTabs,
 	.layout-tv .headerTabs {
 		margin-top: -0.7em;
@@ -3817,8 +3813,29 @@ a[href*="shokoanime.com"] {
 
 .layout-desktop .pageTitleWithLogo,
 .layout-tv .pageTitleWithLogo {
-  background-position: 0;
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 6.2em;
+	background-position: 0;
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 6.2em;
+}
+
+.layout-desktop .videoOsdBottom,
+.layout-tv .videoOsdBottom {
+	background: #0a0418b5;
+	font-size: 80%;
+	padding-bottom: 0.5em;
+	padding-top: 0.5em;
+	border-top-right-radius: 1em;
+	border-top-left-radius: 1em;
+	width: 98vw;
+	margin-left: 1vw;
+}
+
+#itemDetailPage .itemExternalLinks.focuscontainer-x {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 10px;
+	margin: .7em 0;
+	font-size: 0;
 }
