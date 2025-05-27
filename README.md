@@ -26,20 +26,23 @@ Just paste the import lines into your "Dashboard > General > CSS" section, or "U
 
 ![css](https://github.com/user-attachments/assets/f137ab3d-5ab1-431c-ad2f-9541145f9e8d)
 
-Gallery (Colour version)
+Library (Colour version)
 ![Untitled](https://github.com/user-attachments/assets/04d8c11e-f825-4742-b384-78f0c99c038c)
 
 Movie (Colour version)
-![Untitled-3](https://github.com/user-attachments/assets/832b257d-1176-4250-8e1f-c096b08bdbe9)
+![1](https://github.com/user-attachments/assets/3be8693c-8fd4-4a07-9ddd-94aef08a7633)
 
 Show (Black version)
-![Untitled-4](https://github.com/user-attachments/assets/d1138008-2e07-4fcc-830a-80df34650f36)
+![2](https://github.com/user-attachments/assets/c42d1f08-c240-4055-adc4-963e1c75fa38)
 
 Season (Black version)
-![Untitled-5](https://github.com/user-attachments/assets/e3f40190-8091-427a-b541-500e599e1b96)
+![3](https://github.com/user-attachments/assets/dd731808-7da7-4795-9b32-d25569ffd953)
 
 Episode (Black version)
-![Untitled-1](https://github.com/user-attachments/assets/04b19af0-f51b-4253-ad21-2d305111dbba)
+![4](https://github.com/user-attachments/assets/49fe79f4-a31d-4669-a30e-303e5837eaea)
+
+Player (Colour Version)
+![player](https://github.com/user-attachments/assets/c1566c4a-ef47-4306-9131-b229f2adf8c3)
 
 Everything is just an alteration of the amazing work already put into [Ultrachromic by CTalvio](https://github.com/CTalvio/Ultrachromic). Updated for jellyfin server 10.10.X
 
