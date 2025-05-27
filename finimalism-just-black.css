@@ -266,3 +266,8 @@
 .skip-button {
 	background: #000;
 }
+
+.layout-desktop .videoOsdBottom,
+.layout-tv .videoOsdBottom {
+	background: #000a;
+}
