@@ -3754,7 +3754,7 @@ a[href*="shokoanime.com"] {
 @media (max-height: 870px) {
 	.layout-desktop body, 
 	.layout-tv body {
-		font-size: 93% !important;
+		font-size: 89% !important;
 	}
 	.layout-desktop .card.overflowBackdropCard, 
 	.layout-tv .card.overflowBackdropCard {
