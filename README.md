@@ -39,7 +39,7 @@ Season (Black version)
 ![3](https://github.com/user-attachments/assets/dd731808-7da7-4795-9b32-d25569ffd953)
 
 Episode (Black version)
-![4](https://github.com/user-attachments/assets/49fe79f4-a31d-4669-a30e-303e5837eaea)
+![7](https://github.com/user-attachments/assets/740b97f2-f653-4cf9-9141-65391742bbe8)
 
 Player (Colour Version)
 ![player](https://github.com/user-attachments/assets/c1566c4a-ef47-4306-9131-b229f2adf8c3)
