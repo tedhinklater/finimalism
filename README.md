@@ -4,25 +4,27 @@
 Also: Turn it up to 11 with the new [Featured Content Bar](https://github.com/tedhinklater/Jellyfin-Featured-Content-Bar) 
 ![bar](https://github.com/user-attachments/assets/f2c45f47-3530-4525-9f89-fe4e96c7676f)
 
-Import the Colour theme (shown below) to your CSS, with:
+# Colour version 
 
+![Screenshot 2025-05-28 133602](https://github.com/user-attachments/assets/7a0e31a7-2b80-4357-9ccb-d7e55649d118)
+
+Import line:
 ```css
 @import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/finimalism7.css");
 
 ```
 
-![Screenshot 2025-05-28 133602](https://github.com/user-attachments/assets/7a0e31a7-2b80-4357-9ccb-d7e55649d118)
+# Black version
 
-or, the Black theme (shown below) if you prefer:
+![Screenshot 2025-05-28 134254](https://github.com/user-attachments/assets/d5970ba5-8edd-4d98-a7a2-b68fa570e80f)
 
+Import line: 
 ```css
 @import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/finimalism-just-black.css");
 
 ```
 
-![Screenshot 2025-05-28 134254](https://github.com/user-attachments/assets/d5970ba5-8edd-4d98-a7a2-b68fa570e80f)
-
-Just paste the import lines into your "Dashboard > General > CSS" section, or "User Settings > Display > CSS" section.
+Just paste the import line into your "Dashboard > General > CSS" section, or "User Settings > Display > CSS" section.
 
 ![css](https://github.com/user-attachments/assets/f137ab3d-5ab1-431c-ad2f-9541145f9e8d)
 
