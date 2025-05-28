@@ -11,7 +11,7 @@ Import the Colour theme (shown below) to your CSS, with:
 
 ```
 
-![Untitled-1](https://github.com/user-attachments/assets/2f3d02b8-d5bd-4a8b-a9cd-79f5a11f9319)
+![home1](https://github.com/user-attachments/assets/f403b006-30e0-414a-b725-9af8bc956dd5)
 
 or, the Black theme (shown below) if you prefer:
 
@@ -20,7 +20,7 @@ or, the Black theme (shown below) if you prefer:
 
 ```
 
-![Untitled-1a](https://github.com/user-attachments/assets/d7a12567-2d5a-4d56-bd6f-60b80b65a86f)
+![home2](https://github.com/user-attachments/assets/67285414-47b6-4442-b28b-3b8205c668bc)
 
 Just paste the import lines into your "Dashboard > General > CSS" section, or "User Settings > Display > CSS" section.
 
