@@ -2904,7 +2904,6 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 	-webkit-filter: drop-shadow(0px 0px 1.5px rgb(0, 0, 0));
 	filter: drop-shadow(0px 0px 1.5px rgb(0, 0, 0));
 	color: #fff;
-	transform: translateX(-2%);
 }
 
 .collectionItems {
