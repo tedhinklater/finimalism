@@ -11,7 +11,7 @@ Import the Colour theme (shown below) to your CSS, with:
 
 ```
 
-![home1](https://github.com/user-attachments/assets/f403b006-30e0-414a-b725-9af8bc956dd5)
+![Screenshot 2025-05-28 133602](https://github.com/user-attachments/assets/7a0e31a7-2b80-4357-9ccb-d7e55649d118)
 
 or, the Black theme (shown below) if you prefer:
 
@@ -20,29 +20,29 @@ or, the Black theme (shown below) if you prefer:
 
 ```
 
-![home2](https://github.com/user-attachments/assets/67285414-47b6-4442-b28b-3b8205c668bc)
+![Screenshot 2025-05-28 134254](https://github.com/user-attachments/assets/d5970ba5-8edd-4d98-a7a2-b68fa570e80f)
 
 Just paste the import lines into your "Dashboard > General > CSS" section, or "User Settings > Display > CSS" section.
 
 ![css](https://github.com/user-attachments/assets/f137ab3d-5ab1-431c-ad2f-9541145f9e8d)
 
 Library (Colour version)
-![Untitled](https://github.com/user-attachments/assets/04d8c11e-f825-4742-b384-78f0c99c038c)
+![Screenshot 2025-05-28 133730](https://github.com/user-attachments/assets/bdce5aec-ced8-4439-9931-cf744e34dfbb)
 
 Movie (Colour version)
-![1](https://github.com/user-attachments/assets/3be8693c-8fd4-4a07-9ddd-94aef08a7633)
+![Screenshot 2025-05-28 133649](https://github.com/user-attachments/assets/338e3ca6-3657-45b5-98bf-fc0b730e9557)
 
 Show (Black version)
-![2](https://github.com/user-attachments/assets/c42d1f08-c240-4055-adc4-963e1c75fa38)
+![Screenshot 2025-05-28 133815](https://github.com/user-attachments/assets/bcb7159e-0838-49b6-af81-5697f0e80c15)
 
 Season (Black version)
-![3](https://github.com/user-attachments/assets/dd731808-7da7-4795-9b32-d25569ffd953)
+![Screenshot 2025-05-28 133834](https://github.com/user-attachments/assets/ecc8667d-fee0-4033-9fad-962e398f443e)
 
 Episode (Black version)
-![7](https://github.com/user-attachments/assets/740b97f2-f653-4cf9-9141-65391742bbe8)
+![Screenshot 2025-05-28 133909](https://github.com/user-attachments/assets/7fcff714-c7b1-483e-855a-5d343a2943dd)
 
 Player (Colour Version)
-![player](https://github.com/user-attachments/assets/c1566c4a-ef47-4306-9131-b229f2adf8c3)
+![Screenshot 2025-05-28 134014](https://github.com/user-attachments/assets/13ced352-04ab-4901-91e2-b8a594207061)
 
 Everything is just an alteration of the amazing work already put into [Ultrachromic by CTalvio](https://github.com/CTalvio/Ultrachromic). Updated for jellyfin server 10.10.X
 
