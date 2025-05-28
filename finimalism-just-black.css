@@ -249,7 +249,7 @@
 
 .layout-desktop .headerLeft,
 .layout-tv .headerLeft {
-	background: #000000e0 !important;
+	background: linear-gradient(90deg, rgb(0 0 0 / 85%) 30%, rgb(0 0 0 / 0) 100%);
 }
 
 @media (min-width: 60em) {
@@ -260,7 +260,7 @@
 
 .layout-desktop .headerRight,
 .layout-tv .headerRight {
-	background: #000000e0 !important;
+	background: linear-gradient(270deg, rgb(0 0 0 / 85%) 30%, rgb(0 0 0 / 0) 100%);
 }
 
 .skip-button {
