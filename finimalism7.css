@@ -2810,7 +2810,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 	align-items: center;
 	display: -webkit-flex;
 	display: flex;
-	background: #0a0418b5 !important;
+	background: linear-gradient(270deg, rgb(10 4 24 / 85%) 30%, rgb(3.922% 1.569% 9.412% / 0) 100%);
 	color: #000 !important;
 	border-radius: 0.25em;
 	height: 2em;
@@ -2822,6 +2822,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 	position: absolute;
 	padding-top: 1.7em;
 	z-index: 90;
+	padding-bottom: 0.75em;
 }
 
 .layout-desktop .headerLeft,
@@ -2840,6 +2841,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 	margin-top: -0.25em;
 	padding-top: 0.5em;
 	z-index: 90;
+	background: linear-gradient(90deg, rgb(10 4 24 / 85%) 30%, rgb(3.922% 1.569% 9.412% / 0) 100%);
 }
 
 .navMenuOption {
@@ -3816,6 +3818,7 @@ a[href*="shokoanime.com"] {
 	background-repeat: no-repeat;
 	background-size: contain;
 	width: 6.2em;
+	filter: drop-shadow(0 0 2px rgba(2, 2, 2, 0.95));
 }
 
 .layout-desktop .videoOsdBottom,
