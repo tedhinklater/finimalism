@@ -30,13 +30,13 @@ Movie (Colour version)
 ![Screenshot 2025-05-28 133649](https://github.com/user-attachments/assets/338e3ca6-3657-45b5-98bf-fc0b730e9557)
 
 Show (Black version)
-![Screenshot 2025-05-28 133815](https://github.com/user-attachments/assets/bcb7159e-0838-49b6-af81-5697f0e80c15)
+![Screenshot 2025-05-29 192224](https://github.com/user-attachments/assets/db3fb5f4-866d-4b2b-aab4-f650e36da563)
 
 Season (Black version)
-![Screenshot 2025-05-28 133834](https://github.com/user-attachments/assets/ecc8667d-fee0-4033-9fad-962e398f443e)
+![Screenshot 2025-05-29 192243](https://github.com/user-attachments/assets/beb0d144-0ef1-4eb5-840f-398bae164370)
 
 Episode (Black version)
-![Screenshot 2025-05-28 133909](https://github.com/user-attachments/assets/7fcff714-c7b1-483e-855a-5d343a2943dd)
+![Screenshot 2025-05-29 192257](https://github.com/user-attachments/assets/1ae65b51-edc1-446a-bb41-ed9b6f1a2822)
 
 Player (Colour version)
 ![Screenshot 2025-05-28 134014](https://github.com/user-attachments/assets/13ced352-04ab-4901-91e2-b8a594207061)
