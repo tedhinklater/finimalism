@@ -5,6 +5,7 @@
 	max-height: none !important;
 	overflow-y: scroll !important;
 	resize: vertical !important;
+	font-size: 1.25em;
 }
 
 .customCssContainer textarea {
