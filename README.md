@@ -12,7 +12,7 @@
 
 # Black version
 
-![Screenshot 2025-05-29 135840](https://github.com/user-attachments/assets/358387e2-a2e3-462d-ae7e-1b7736ad23ab)
+![Screenshot 2025-05-29 192111](https://github.com/user-attachments/assets/b05f32a4-91d3-43d6-ae3c-1a7afbf5d1e2)
 
 ```css
 @import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/finimalism-just-black.css");
