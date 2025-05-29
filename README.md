@@ -8,7 +8,6 @@ Also: Turn it up to 11 with the new [Featured Content Bar](https://github.com/te
 
 ![Screenshot 2025-05-28 133602](https://github.com/user-attachments/assets/7a0e31a7-2b80-4357-9ccb-d7e55649d118)
 
-Import line:
 ```css
 @import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/finimalism7.css");
 
@@ -18,7 +17,6 @@ Import line:
 
 ![home2](https://github.com/user-attachments/assets/15b475c6-9f1a-43e8-a63b-e72782e79ec3)
 
-Import line: 
 ```css
 @import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/finimalism-just-black.css");
 
