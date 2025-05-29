@@ -27,7 +27,7 @@ Library (Colour version)
 ![Screenshot 2025-05-29 235254](https://github.com/user-attachments/assets/c3623674-0164-42fb-aba5-1f6073f10a12)
 
 Movie (Colour version)
-![Screenshot 2025-05-29 235346](https://github.com/user-attachments/assets/62f87a6b-2e22-4af1-952e-839cb76bdde0)
+![Screenshot 2025-05-30 004810](https://github.com/user-attachments/assets/58f013e1-c577-4b2d-96f4-676a33c68f5f)
 
 Show (Black version)
 ![Screenshot 2025-05-29 235416](https://github.com/user-attachments/assets/6f7fd6c6-d37d-4807-b48a-61276fee98b3)
