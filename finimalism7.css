@@ -140,7 +140,7 @@ h2 {
 }
 
 .layout-mobile .card {
-	font-size: 12pt !important;
+	font-size: 0.85em !important;
 }
 
 @media (min-height: 31.25em) {
@@ -180,7 +180,11 @@ p.overview.detail-clamp-text {
 }
 
 .layout-mobile p.overview.detail-clamp-text {
-	font-size: 12pt; 
+	font-size: 0.85em; 
+}
+
+.layout-mobile .itemDetailsGroup {
+	font-size: 0.85em;
 }
 
 span.homeLibraryText {
@@ -1591,12 +1595,28 @@ progress::-webkit-progress-value {
 	width: 13.13em;
 }
 
-.layout-mobile .overflowPortraitCard {
-	width: 11.85em;
+@media (orientation: portrait) {
+	.layout-mobile .overflowPortraitCard {
+		width: 42vw;
+	}
+	.layout-mobile .overflowSquareCard {
+		width: 42vw;
+	}
+	.layout-mobile .overflowBackdropCard {
+		width: 84vw;
+	}
 }
 
-.layout-mobile .overflowSquareCard {
-	width: 11.85em;
+@media (orientation: horizontal) {
+	.layout-mobile .overflowPortraitCard {
+		width: 21vw;
+	}
+	.layout-mobile .overflowSquareCard {
+		width: 21vw;
+	}
+	.layout-mobile .overflowBackdropCard {
+		width: 42vw;
+	}
 }
 
 .cardPadder {
@@ -1944,7 +1964,7 @@ progress::-webkit-progress-value {
 
 .layout-mobile .headerTabs .emby-tab-button {
 	width: 160px;
-	padding-top: 0.1em;
+	padding-top: 0.5em;
 }
 
 @media (min-width:45em) {
@@ -2221,11 +2241,12 @@ button.is-emby-button emby-button {
 .layout-mobile .nameContainer {
 	display: -webkit-box !important;
 	-webkit-box-orient: vertical;
-	-webkit-line-clamp: 2;
+	-webkit-line-clamp: 3;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: normal;
-	padding: 0.5em;
+	padding: 0.25em;
+	font-size: 1.3em;
 }
 
 @media (orientation: portrait) and (min-width: 800px) {
@@ -2629,9 +2650,15 @@ button.is-emby-button emby-button {
 	filter: drop-shadow(-1px 1px 2px black);
 }
 
-	.layout-mobile .itemMiscInfo, .layout-mobile .itemName, .layout-mobile .mainDetailButtons, .layout-mobile .parentName {
+.layout-mobile .itemMiscInfo, .layout-mobile .itemName, .layout-mobile .mainDetailButtons, .layout-mobile .parentName {
 	justify-content: space-evenly;
 	text-align: center;
+	margin-top: 1em;
+	font-size: 0.85em !important;
+}
+
+.layout-mobile #itemDetailPage .tagline {
+	font-size: 1em;
 }
 
 @media (orientation: portrait) {
@@ -3840,4 +3867,8 @@ a[href*="shokoanime.com"] {
 	gap: 10px;
 	margin: .7em 0;
 	font-size: 0;
+}
+
+.layout-mobile #itemDetailPage .itemExternalLinks.focuscontainer-x {
+	justify-content: space-evenly;
 }
