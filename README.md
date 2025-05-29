@@ -6,7 +6,7 @@ Also: Turn it up to 11 with the new [Featured Content Bar](https://github.com/te
 
 # Colour version 
 
-![Screenshot 2025-05-28 133602](https://github.com/user-attachments/assets/7a0e31a7-2b80-4357-9ccb-d7e55649d118)
+![Screenshot 2025-05-29 135745](https://github.com/user-attachments/assets/fa9a1d42-3f40-4f31-948e-9514175b386c)
 
 ```css
 @import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/finimalism7.css");
@@ -15,7 +15,7 @@ Also: Turn it up to 11 with the new [Featured Content Bar](https://github.com/te
 
 # Black version
 
-![home2](https://github.com/user-attachments/assets/15b475c6-9f1a-43e8-a63b-e72782e79ec3)
+![Screenshot 2025-05-29 135840](https://github.com/user-attachments/assets/358387e2-a2e3-462d-ae7e-1b7736ad23ab)
 
 ```css
 @import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/finimalism-just-black.css");
