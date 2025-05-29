@@ -1,5 +1,3 @@
-@import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/finimalism7.css");
-
 /* Backdrop */
 .backgroundContainer {
 	background: #000;
@@ -42,10 +40,11 @@
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: #000;
+	background: #000000ba;
 	background-size: cover;
-	opacity: 0.8;
+	opacity: 1;
 	z-index: -1;
+    backdrop-filter: saturate(25%) contrast(150%) blur(3px);
 }
 
 .detailPageSecondaryContainer {
@@ -60,10 +59,11 @@
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: #000;
+	background: #000000db;
 	background-size: cover;
-	opacity: 0.9;
+	opacity: 1;
 	z-index: -1;
+        backdrop-filter: saturate(0%) contrast(200%) blur(1px);
 }
 
 .raised.homeLibraryButton {
@@ -165,18 +165,23 @@
 	left: 0;
 	width: 100%;
 	height: 100vh;
-	background: url(https://i.imgur.com/gpe0jJc.jpeg) center top no-repeat #030322;
+	background: #000000db;
 	background-attachment: scroll;
 	background-size: auto;
 	background-size: cover;
-	opacity: 0.925;
-	filter: brightness(90%);
+	opacity: 1;
+	backdrop-filter: saturate(0%) contrast(200%);
 	z-index: -1;
 	background-attachment: fixed;
 }
 
 .layout-desktop .mainDetailButtons.focuscontainer-x {
-	background: #0a0a0ad6;
+        background: #000000ba;
+        background-size: auto;
+        background-size: cover;
+        opacity: 1;
+        z-index: -1;
+        backdrop-filter: saturate(25%) contrast(150%) blur(3px);
 }
 
 .backgroundContainer, .preload {
