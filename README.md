@@ -43,7 +43,7 @@ Season (Black version)
 Episode (Black version)
 ![Screenshot 2025-05-28 133909](https://github.com/user-attachments/assets/7fcff714-c7b1-483e-855a-5d343a2943dd)
 
-Player (Colour Version)
+Player (Colour version)
 ![Screenshot 2025-05-28 134014](https://github.com/user-attachments/assets/13ced352-04ab-4901-91e2-b8a594207061)
 
 Everything is just an alteration of the amazing work already put into [Ultrachromic by CTalvio](https://github.com/CTalvio/Ultrachromic). Updated for jellyfin server 10.10.X
