@@ -2645,6 +2645,7 @@ button.is-emby-button emby-button {
 	font-weight: 600;
 	text-align: center;
 	justify-content: left;
+	filter: drop-shadow(0px 4px 1px #0005);
 }
 
 .layout-desktop .itemName.infoText.subtitle.focuscontainer-x,
@@ -3492,6 +3493,7 @@ a[href*="shokoanime.com"] {
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: normal;
+	filter: drop-shadow(-2px 4px 1px #0005);
 }
 
 .layout-desktop .itemName.infoText.originalTitle,
