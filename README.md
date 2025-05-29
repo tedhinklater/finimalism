@@ -24,19 +24,19 @@ Just paste the import line into your "Dashboard > General > CSS" section, or "Us
 ![css](https://github.com/user-attachments/assets/f137ab3d-5ab1-431c-ad2f-9541145f9e8d)
 
 Library (Colour version)
-![Screenshot 2025-05-28 133730](https://github.com/user-attachments/assets/bdce5aec-ced8-4439-9931-cf744e34dfbb)
+![Screenshot 2025-05-29 235254](https://github.com/user-attachments/assets/c3623674-0164-42fb-aba5-1f6073f10a12)
 
 Movie (Colour version)
-![Screenshot 2025-05-28 133649](https://github.com/user-attachments/assets/338e3ca6-3657-45b5-98bf-fc0b730e9557)
+![Screenshot 2025-05-29 235346](https://github.com/user-attachments/assets/62f87a6b-2e22-4af1-952e-839cb76bdde0)
 
 Show (Black version)
-![Screenshot 2025-05-29 192224](https://github.com/user-attachments/assets/db3fb5f4-866d-4b2b-aab4-f650e36da563)
+![Screenshot 2025-05-29 235416](https://github.com/user-attachments/assets/6f7fd6c6-d37d-4807-b48a-61276fee98b3)
 
 Season (Black version)
-![Screenshot 2025-05-29 192243](https://github.com/user-attachments/assets/beb0d144-0ef1-4eb5-840f-398bae164370)
+![Screenshot 2025-05-29 235449](https://github.com/user-attachments/assets/5438b8ca-d78e-4904-99aa-39b4b883ffef)
 
 Episode (Black version)
-![Screenshot 2025-05-29 192257](https://github.com/user-attachments/assets/1ae65b51-edc1-446a-bb41-ed9b6f1a2822)
+![Screenshot 2025-05-29 235518](https://github.com/user-attachments/assets/c9ac904c-4580-48e0-8206-ff68e97f4309)
 
 Player (Colour version)
 ![Screenshot 2025-05-28 134014](https://github.com/user-attachments/assets/13ced352-04ab-4901-91e2-b8a594207061)
