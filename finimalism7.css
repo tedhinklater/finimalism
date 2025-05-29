@@ -3872,3 +3872,8 @@ a[href*="shokoanime.com"] {
 .layout-mobile #itemDetailPage .itemExternalLinks.focuscontainer-x {
 	justify-content: space-evenly;
 }
+
+.layout-desktop .programGuideSection.verticalSection.detailVerticalSection .listItemBody.itemAction.listItemBody-noleftpadding,
+.layout-tv .programGuideSection.verticalSection.detailVerticalSection .listItemBody.itemAction.listItemBody-noleftpadding {
+	min-width: 30vw;
+}
