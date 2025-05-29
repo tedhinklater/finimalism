@@ -998,7 +998,7 @@ div[data-role="controlgroup"] a[data-role="button"] {
 }
 
 @media (orientation: portrait) {
-	#itemDetailPage .detailLogo {
+		.layout-mobile #itemDetailPage .detailLogo {
 		position: static;
 		margin-left: 40%;
 		display: block;
@@ -1018,6 +1018,11 @@ div[data-role="controlgroup"] a[data-role="button"] {
 	}
 }
 
+@media (max-width: 62.5em) {
+  .layout-desktop .detailPageWrapperContainer, .layout-tv .detailPageWrapperContainer {
+    margin-top: 0em !important;
+  }
+}
 
 /* Landscape orientation styles */
 @media (orientation: landscape) {
@@ -2230,6 +2235,7 @@ button.is-emby-button emby-button {
 .layout-desktop .mediaInfoItem,
 .layout-tv .mediaInfoItem {
 	margin-top: 0.2em !important;
+	margin-right: 7vw;
 }
 
 .layout-mobile .mediaInfoItem {
@@ -2638,7 +2644,7 @@ button.is-emby-button emby-button {
 	font-size: 1.4em;
 	font-weight: 600;
 	text-align: center;
-	justify-content: space-between;
+	justify-content: left;
 }
 
 .layout-desktop .itemName.infoText.subtitle.focuscontainer-x,
