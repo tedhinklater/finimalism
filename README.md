@@ -1,9 +1,6 @@
 # finimalism
 ![mockup](https://i.imgur.com/TvTV8jq.jpeg)
 
-Also: Turn it up to 11 with the new [Featured Content Bar](https://github.com/tedhinklater/Jellyfin-Featured-Content-Bar) 
-![bar](https://github.com/user-attachments/assets/f2c45f47-3530-4525-9f89-fe4e96c7676f)
-
 # Colour version 
 
 ![Screenshot 2025-05-29 135745](https://github.com/user-attachments/assets/fa9a1d42-3f40-4f31-948e-9514175b386c)
@@ -50,6 +47,8 @@ Everything is just an alteration of the amazing work already put into [Ultrachro
 <a href="https://github.com/Phantomwise/jellyfin-custom-thumbnails-collection"><img src="https://i.imgur.com/aWUsxMG.png" alt="Cards" width="800"/></a>
 
 # More Themes
-
 <a href="https://github.com/tedhinklater/finality"><img src="https://i.imgur.com/54wZsvH.png" alt="Finality" width="400"/></a> 
 <a href="https://github.com/tedhinklater/Jellypane"><img src="https://i.imgur.com/RHFcIA9.png" alt="Jellypane" width="400"/></a>
+
+# Featured Content Bar 
+<a href="https://github.com/tedhinklater/Jellyfin-Featured-Content-Bar"><img src="https://github.com/user-attachments/assets/f2c45f47-3530-4525-9f89-fe4e96c7676f"></a>
