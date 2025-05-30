@@ -33,7 +33,7 @@ Show (Black version)
 ![Screenshot 2025-05-30 172554](https://github.com/user-attachments/assets/df34df73-68c5-4118-afc2-e260b114a7e2)
 
 Season (Black version)
-![Screenshot 2025-05-30 172608](https://github.com/user-attachments/assets/4ae1f48a-779f-488d-990f-fa52555ed55b)
+![Screenshot 2025-05-30 173851](https://github.com/user-attachments/assets/6ba4b142-7675-4a17-a948-937679eebcc2)
 
 Episode (Black version)
 ![Screenshot 2025-05-30 171944](https://github.com/user-attachments/assets/73525fde-6d90-46cb-8805-12aae25325a7)
