@@ -36,7 +36,7 @@ Season (Black version)
 ![Screenshot 2025-05-29 235449](https://github.com/user-attachments/assets/5438b8ca-d78e-4904-99aa-39b4b883ffef)
 
 Episode (Black version)
-![Screenshot 2025-05-29 235518](https://github.com/user-attachments/assets/c9ac904c-4580-48e0-8206-ff68e97f4309)
+![Screenshot 2025-05-30 171944](https://github.com/user-attachments/assets/73525fde-6d90-46cb-8805-12aae25325a7)
 
 Player (Colour version)
 ![Screenshot 2025-05-28 134014](https://github.com/user-attachments/assets/13ced352-04ab-4901-91e2-b8a594207061)
