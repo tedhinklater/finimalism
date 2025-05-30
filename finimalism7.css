@@ -3886,3 +3886,13 @@ a[href*="shokoanime.com"] {
 .layout-tv .programGuideSection.verticalSection.detailVerticalSection .listItemBody.itemAction.listItemBody-noleftpadding {
 	min-width: 30vw;
 }
+
+.layout-desktop #childrenContent .secondary.listItemMediaInfo.listItemBodyText .mediaInfoItem,
+.layout-tv #childrenContent .secondary.listItemMediaInfo.listItemBodyText .mediaInfoItem {
+	margin-right: 2%;
+}
+
+.layout-desktop #childrenContent .childrenItemsContainer.itemsContainer.padded-right.vertical-list .listItemBody.itemAction,
+.layout-tv #childrenContent .childrenItemsContainer.itemsContainer.padded-right.vertical-list .listItemBody.itemAction {
+	align-self: baseline;
+}
