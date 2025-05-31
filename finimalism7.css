@@ -1290,6 +1290,12 @@ div[data-role="controlgroup"] a[data-role="button"] {
 #itemDetailPage .detailImageContainer.padded-left .cardScalable .cardImageContainer {
 	border-radius: 0.2em !important;
 }
+
+.layout-desktop #itemDetailPage .detailImageContainer.padded-left .cardScalable .cardImageContainer,
+.layout-tv #itemDetailPage .detailImageContainer.padded-left .cardScalable .cardImageContainer {
+	border-radius: 0em !important;
+}
+
 .backgroundProgress > div {
 	background: rgba(0, 0, 0, 0);
 }
