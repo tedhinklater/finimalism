@@ -3437,7 +3437,8 @@ a[href*="shokoanime.com"] {
 	color: #000a;
 }
 
-.layout-desktop .mainDetailButtons.focuscontainer-x {
+.layout-desktop .mainDetailButtons.focuscontainer-x,
+.layout-tv .mainDetailButtons.focuscontainer-x {
 	position: fixed;
 	left: 4.15em;
 	width: 16.7em;
@@ -3449,18 +3450,6 @@ a[href*="shokoanime.com"] {
 	margin: 1.25em 0;
 	padding-top: 12em;
 	border-top-left-radius: 1em;
-}
-
-.layout-tv .mainDetailButtons.focuscontainer-x {
-	position: fixed;
-	left: 4.15em;
-	width: 17.85em;
-	justify-content: space-between;
-	top: 28.1em;
-	background: #1e0c33a8;
-	border-radius: 0.26em;
-	z-index: 5;
-	margin: 1.25em 0;
 }
 
 .layout-desktop .cardPadder,
