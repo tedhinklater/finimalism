@@ -1161,6 +1161,13 @@ div[data-role="controlgroup"] a[data-role="button"] {
 .pageTitle {
 	margin-top: auto; 
 	margin-bottom: auto;
+	filter: drop-shadow(0px 0px 1.5px rgb(0, 0, 0));
+    	color: #fff;
+}
+
+.layout-desktop .pageTitle,
+.layout-tv .pageTitle {
+    margin-top: 0.15em !important;
 }
 
 .progressring-spiner {
