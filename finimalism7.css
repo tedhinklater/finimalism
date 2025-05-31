@@ -1165,11 +1165,6 @@ div[data-role="controlgroup"] a[data-role="button"] {
     	color: #fff;
 }
 
-.layout-desktop .pageTitle,
-.layout-tv .pageTitle {
-    margin-top: 0.15em !important;
-}
-
 .progressring-spiner {
 	border-color: rgba(var(--accent));
 	border-width: .35em;
