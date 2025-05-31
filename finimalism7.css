@@ -1296,12 +1296,6 @@ div[data-role="controlgroup"] a[data-role="button"] {
 	border-radius: 0em !important;
 }
 
-@keyframes fadeIn { to { opacity: 1;} }
-.layout-desktop #itemDetailPage .detailImageContainer.padded-left .cardScalable .cardImageContainer,
-.layout-tv #itemDetailPage .detailImageContainer.padded-left .cardScalable .cardImageContainer {
-		opacity: 0; animation: fadeIn 0.75s ease-in forwards; animation-delay: 0s;
-}
-
 .backgroundProgress > div {
 	background: rgba(0, 0, 0, 0);
 }
@@ -3443,41 +3437,30 @@ a[href*="shokoanime.com"] {
 	color: #000a;
 }
 
-.layout-desktop .mainDetailButtons.focuscontainer-x,
-.layout-tv .mainDetailButtons.focuscontainer-x {
+.layout-desktop .mainDetailButtons.focuscontainer-x {
 	position: fixed;
 	left: 4.15em;
 	width: 16.7em;
 	justify-content: space-evenly;
 	top: 14.62em;
 	z-index: -1;
-	border-top-right-radius: 1em;
-	margin: 1.25em 0;
-	padding-top: 12em;
-	border-top-left-radius: 1em;
-	background: transparent;
-}
-
-.layout-desktop .mainDetailButtons.focuscontainer-x::before,
-.layout-tv .mainDetailButtons.focuscontainer-x::before {
-	content: "";
-	position: fixed;
-	left: 4.15em;
-	width: 16.7em;
-	top: 14.62em;
-	z-index: 4;
 	background: #0c0515c2;
 	border-top-right-radius: 1em;
 	margin: 1.25em 0;
 	padding-top: 12em;
 	border-top-left-radius: 1em;
-	height: 2.6em;
 }
 
-@keyframes fadeIn { to { opacity: 1;} }
-	.layout-desktop .mainDetailButtons.focuscontainer-x::before,
-	.layout-tv .mainDetailButtons.focuscontainer-x::before {
-		opacity: 0; animation: fadeIn 0.75s ease-in forwards; animation-delay: 0s;
+.layout-tv .mainDetailButtons.focuscontainer-x {
+	position: fixed;
+	left: 4.15em;
+	width: 17.85em;
+	justify-content: space-between;
+	top: 28.1em;
+	background: #1e0c33a8;
+	border-radius: 0.26em;
+	z-index: 5;
+	margin: 1.25em 0;
 }
 
 .layout-desktop .cardPadder,
