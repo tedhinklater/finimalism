@@ -1489,6 +1489,10 @@ progress::-webkit-progress-value {
 	padding-top: 1em;
 }
 
+.layout-mobile .videoOsdBottom {
+	font-size: 80%;
+}
+
 .skinHeader-withBackground.osdHeader {
 	height: 5em;
 }
@@ -1556,8 +1560,16 @@ progress::-webkit-progress-value {
 	padding-left: 1em;
 }
 
+.layout-mobile #homeTab .emby-scroller {
+	padding-left: 0em;
+}
+
 [dir="ltr"] .padded-left {
 	padding-left: 1em;
+}
+
+.layout-mobile [dir="ltr"] .padded-left {
+	padding-left: 0.5em;
 }
 
 .card:hover .indicator.videoIndicator {
@@ -1611,26 +1623,32 @@ progress::-webkit-progress-value {
 
 @media (orientation: portrait) {
 	.layout-mobile .overflowPortraitCard {
-		width: 42vw;
+		width: 47vw;
 	}
 	.layout-mobile .overflowSquareCard {
-		width: 42vw;
+		width: 47vw;
 	}
 	.layout-mobile .overflowBackdropCard {
-		width: 84vw;
+		width: 70vw;
 	}
 }
 
-@media (orientation: horizontal) {
+@media (orientation: landscape) {
 	.layout-mobile .overflowPortraitCard {
-		width: 21vw;
+		width: 22.1vw;
 	}
 	.layout-mobile .overflowSquareCard {
-		width: 21vw;
+		width: 22.1vw;
 	}
 	.layout-mobile .overflowBackdropCard {
-		width: 42vw;
+		width: 33vw;
 	}
+}
+
+.layout-mobile .headerLeft, .skinHeader {
+  display: -webkit-flex;
+  display: flex;
+  font-size: 90%;
 }
 
 .cardPadder {
@@ -1644,6 +1662,20 @@ progress::-webkit-progress-value {
 	white-space: normal;
 	margin-left: 0em;
 	font-weight: 400;
+}
+
+@media (orientation: portrait) {
+	.layout-mobile #homeTab .cardText {
+		overflow: hidden;
+		padding: 0;
+		text-overflow: ellipsis;
+		white-space: normal;
+		margin-left: 0em;
+		font-weight: 400;
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: 2;
+	}
 }
 
 .cardText.cardTextCentered.cardText-secondary {
@@ -1905,7 +1937,11 @@ progress::-webkit-progress-value {
 }
 
 .layout-mobile .sectionTitle.sectionTitle-cards {
-	font-size: 110%;
+	font-size: 105%;
+}
+
+.layout-mobile .emby-button {
+	font-size: 90%;
 }
 
 .itemsContainer.padded-left {
@@ -1971,14 +2007,14 @@ progress::-webkit-progress-value {
 	height: 3.2em;
 }
 
-.headerTabs .emby-tab-button {
-	width: 160px;
-	padding-top: 1em;
+.layout-mobile .headerTabs .emby-tab-button {
+	width: fit-content;
+	padding-top: 0.5em;
 }
 
-.layout-mobile .headerTabs .emby-tab-button {
-	width: 160px;
-	padding-top: 0.5em;
+.layout-mobile .flex.align-items-center.justify-content-center.flex-wrap-wrap.padded-top.padded-left.padded-right.padded-bottom.focuscontainer-x {
+	padding-top: 0em;
+	font-size: 85%;
 }
 
 @media (min-width:45em) {
@@ -2155,9 +2191,8 @@ button.is-emby-button emby-button {
 }
 
 .layout-mobile #indexPage .overflowBackdropCard, .overflowSmallBackdropCard {
-	margin: 0em !important;
-	margin-right: -0.5em !important;
 }
+
 @media (orientation: portrait) {
 	.itemsContainer.padded-left.padded-right.padded-right-withalphapicker.vertical-wrap {
 		padding-left: 5%;
@@ -2351,6 +2386,30 @@ button.is-emby-button emby-button {
 .layout-tv .alphaPicker-fixed {
 	top: max(env(safe-area-inset-top),20vh);
 	height: 80vh;
+}
+
+.layout-mobile .alphaPicker-fixed {
+      top: max(env(safe-area-inset-top),24vh);
+      height: 72vh;
+}
+
+.layout-mobile .alphaPickerButton-vertical {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  text-align: center;
+  width: 7vw;
+  height: 2.7vh;
+  margin-bottom: 0.15vh;
+}
+
+@media (orientation: portrait) {
+  #trailersTab .itemsContainer.padded-left.padded-right.padded-right-withalphapicker.vertical-wrap {
+    padding-left: 5%;
+    margin-right: 7%;
+    display: inherit;
+  }
 }
 
 @media (min-width: 62.5em) {
