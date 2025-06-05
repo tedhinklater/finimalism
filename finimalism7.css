@@ -2029,7 +2029,7 @@ progress::-webkit-progress-value {
 		align-self:center;
 		-webkit-justify-content:center;
 		justify-content:center;
-		margin-top:-3.5em;
+		margin-top:-3.55em;
 		position:relative;
 		width:100vw;
 	}
@@ -3597,6 +3597,7 @@ a[href*="shokoanime.com"] {
 
 .mainDrawer.transition.touch-menu-la.drawer-open {
 	min-width: 20em;
+	font-size: 89%;
 }
 
 .layout-desktop .subtitleSync,
@@ -3952,4 +3953,8 @@ a[href*="shokoanime.com"] {
 .layout-desktop #childrenContent .childrenItemsContainer.itemsContainer.padded-right.vertical-list .listItemBody.itemAction,
 .layout-tv #childrenContent .childrenItemsContainer.itemsContainer.padded-right.vertical-list .listItemBody.itemAction {
 	align-self: baseline;
+}
+
+.mainDrawer-scrollContainer {
+    padding-bottom: 1vh;
 }
