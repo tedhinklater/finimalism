@@ -3528,16 +3528,18 @@ a[href*="shokoanime.com"] {
 
 .layout-desktop .mainDetailButtons.focuscontainer-x .button-flat,
 .layout-tv .mainDetailButtons.focuscontainer-x .button-flat {
-	margin-right: 0em !important;
-	padding: 0.5em !important;
-	z-index: 5;
-	border-radius: 0.26em !important;
+    margin-right: 0em !important;
+    padding: 0 !important;
+    z-index: 5;
+    border-radius: 0.26em !important;
+    padding-top: 0.5em !important;
+    padding-bottom: 0.5em !important;
 }
 
-.layout-desktop .mainDetailButtons.focuscontainer-x .button-flat:hover,
+/* .layout-desktop .mainDetailButtons.focuscontainer-x .button-flat:hover,
 .layout-tv .mainDetailButtons.focuscontainer-x .button-flat:focus {
 	background: #29264a !important;
-}
+} */
 
 /* D-E-N-U's title fix */ 
 .layout-desktop .itemName.infoText.parentNameLast,
