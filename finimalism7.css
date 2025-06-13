@@ -2547,6 +2547,9 @@ button.is-emby-button emby-button {
 
 .content-primary, .padded-bottom-page, .page, .pageWithAbsoluteTabs .pageTabContent {
 	padding-bottom: 0 !important;
+	position: absolute;
+	width: 100%;
+	min-height: 35.1%;
 }
 
 .collectionItems .itemsContainer.padded-left::before {
