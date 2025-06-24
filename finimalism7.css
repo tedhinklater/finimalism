@@ -791,12 +791,14 @@ progress::-webkit-progress-value {
 }
 
 #loginPage .padded-left.padded-right.padded-bottom-page {
-	margin-left: auto;
+	margin-left: 50%;
 	margin-right: auto;
 	background: rgba(0, 0, 0, 0.35);
 	width: 24em;
 	border-radius: var(--rounding);
+	transform: translateX(-50%);
 }
+
 #loginPage .squareCard {
 	width: 33%;
 }
