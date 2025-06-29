@@ -3970,3 +3970,8 @@ a[href*="shokoanime.com"] {
 .layout-tv #itemDetailPage .detailPageSecondaryContainer.padded-bottom-page .detailPageContent .detailPagePrimaryContent.padded-right .detailSection .itemDetailsGroup .detailsGroupItem{
 	max-width: 50vw !important;
 }
+
+.layout-desktop .page.libraryPage.noSecondaryNavPage.mainAnimatedPage .vertical-wrap.itemsContainer.centered,
+.layout-tv .page.libraryPage.noSecondaryNavPage.mainAnimatedPage .vertical-wrap.itemsContainer.centered {
+	max-width: 90%;
+}
