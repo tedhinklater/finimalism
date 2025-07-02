@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap');
 
 #txtCustomCss, #txtLocalCustomCss {
@@ -2418,6 +2419,7 @@ button.is-emby-button emby-button {
 	[dir="ltr"] .alphaPicker-fixed-right {
 		right: 1em;
 		right: max(env(safe-area-inset-right),1vw);
+		z-index: 99;
 	}
 }
 
@@ -3974,4 +3976,14 @@ a[href*="shokoanime.com"] {
 .layout-desktop .page.libraryPage.noSecondaryNavPage.mainAnimatedPage .vertical-wrap.itemsContainer.centered,
 .layout-tv .page.libraryPage.noSecondaryNavPage.mainAnimatedPage .vertical-wrap.itemsContainer.centered {
 	max-width: 90%;
+}
+
+@media (min-height: 31.25em) {
+  [dir="ltr"] .padded-right-withalphapicker {
+	padding: 0;
+    padding-bottom: 0px;
+    padding-left: 0px;
+	margin: 0;
+    margin-left: 0em;
+	}
 }
