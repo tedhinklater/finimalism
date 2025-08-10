@@ -3987,3 +3987,10 @@ a[href*="shokoanime.com"] {
     margin-left: 0em;
 	}
 }
+
+@media (min-width: 900px) {
+    .dashboardDocument .mainAnimatedPage:not(.metadataEditorPage) {
+        left: 14%;
+        width: 84%;
+    }
+}
