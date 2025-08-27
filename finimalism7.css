@@ -3994,3 +3994,8 @@ a[href*="shokoanime.com"] {
         width: 84%;
     }
 }
+
+.layout-desktop .MuiDrawer-paper,
+.layout-tv .MuiDrawer-paper {
+    width: auto !important;
+}
