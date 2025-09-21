@@ -2930,7 +2930,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 	margin-top: -0.25em;
 	padding-top: 0.5em;
 	z-index: 90;
-	background: #0008;
+	background: #110e1ebd;
 	filter: drop-shadow(0 3px 3px rgba(0, 0, 0, 0.2)) drop-shadow(0 3px 3px rgba(0, 0, 0, 0.35));
 }
 
@@ -2940,7 +2940,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 	align-items: center;
 	display: -webkit-flex;
 	display: flex;
-	background: #0008;
+	background: #110e1ebd;
 	color: #000 !important;
 	border-radius: 0.25em;
 	height: 2em;
