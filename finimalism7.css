@@ -2930,7 +2930,8 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 	margin-top: -0.25em;
 	padding-top: 0.5em;
 	z-index: 90;
-	background: linear-gradient(90deg, rgb(10 4 24 / 85%) 50%, rgb(3.922% 1.569% 9.412% / 0) 100%);
+	background: #0008;
+	filter: drop-shadow(0 3px 3px rgba(0, 0, 0, 0.2)) drop-shadow(0 3px 3px rgba(0, 0, 0, 0.35));
 }
 
 .layout-desktop .headerRight,
@@ -2939,7 +2940,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 	align-items: center;
 	display: -webkit-flex;
 	display: flex;
-	background: linear-gradient(270deg, rgb(10 4 24 / 85%) 50%, rgb(3.922% 1.569% 9.412% / 0) 100%);
+	background: #0008;
 	color: #000 !important;
 	border-radius: 0.25em;
 	height: 2em;
@@ -2952,6 +2953,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 	padding-top: 1.7em;
 	z-index: 90;
 	padding-bottom: 0.75em;
+	filter: drop-shadow(0 3px 3px rgba(0, 0, 0, 0.2)) drop-shadow(0 3px 3px rgba(0, 0, 0, 0.35));
 }
 
 .navMenuOption {
