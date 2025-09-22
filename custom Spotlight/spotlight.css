@@ -1,0 +1,648 @@
+/* ================================================
+   Seth's Spotlight - A Jellyfin UI Enhancement
+   Version: 1.2.0
+   Author: J.S.C.
+   File: spotlight.css
+   ================================================ */
+
+/* Base Reset */
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.local-trailer-frame {
+    width: 100%;
+    height: 100%;
+    display: block;
+    overflow: hidden;
+}
+.local-trailer {
+    overflow: hidden;
+}
+
+/* Slides Container */
+#slides-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.slide-mat {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 65px; /* stop before plot area */
+  background-color: #000;
+  z-index: 0;
+}
+
+/* Slide Styling */
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  filter: blur(5px);
+  transition: opacity 1.3s ease, filter 1.3s ease;
+  mask-image: linear-gradient(to bottom,
+    black 0%,
+    black calc(100% - 100px),
+    transparent calc(100% - 55px),
+    transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom,
+    black 0%,
+    black calc(100% - 100px),
+    transparent calc(100% - 55px),
+    transparent 100%);
+}
+.slide.visible {
+  opacity: 1;
+  filter: blur(0);
+}
+
+/* Backdrop Image */
+.backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 50px);
+  object-fit: cover;
+  object-position: center 25%;
+  border-radius: 5px;
+  z-index: 1;
+  transition: width 0.3s ease;
+
+  /* Shading */
+  -webkit-mask-image: linear-gradient(to right,
+      rgba(0,0,0,1) 0%,    /* solid at left */
+      rgba(0,0,0,1) 65%,   /* hold solid for most */
+      rgba(0,0,0,0) 100%   /* fade out on right */
+  );
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: cover;
+
+  mask-image: linear-gradient(to right,
+      rgba(0,0,0,1) 0%,
+      rgba(0,0,0,1) 65%,
+      rgba(0,0,0,0) 100%
+  );
+  mask-repeat: no-repeat;
+  mask-size: cover;
+}
+
+/* Heading */
+.heading {
+  position: absolute;
+  bottom: 10px;
+  left: 88%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  font-family: "Sofia Sans", sans-serif;
+  font-size: 1.5em;
+  color: #d3d3d3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  z-index: 2;
+}
+
+/* Video Container */
+.video-container {
+  position: absolute;
+  right: 0;
+  bottom: 50px;
+  width: 0;
+  height: calc(100% - 50px);
+  overflow: hidden;
+  z-index: 0;
+  transition: width 0.3s ease;
+}
+
+/* Video Player */
+.video-player {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Text Container with stacked logo + metadata + plot */
+.text-container {
+  position: absolute;
+  bottom: 6.5em;
+  left: 2vw;
+  max-width: 60vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.8em;
+  z-index: 12;
+}
+
+/* Logo inside text stack */
+.text-container .logo {
+  position: static !important;
+  max-height: 40vh;
+  max-width: 40vw;
+  width: auto;
+  opacity: 1;
+  align-self: flex-start;
+  margin-left: 20vw;
+  transform: translateX(-50%);
+  filter: drop-shadow(1px 1px 1px);
+  text-shadow: -2px 2px 4px rgba(0, 0, 0, 0.5);
+  transition: transform 5.5s ease-in-out, opacity 5.5s ease-in-out;
+  padding-bottom: 3em;
+  padding-left: 6vw;
+}
+
+/* Metadata bar */
+.text-container .lorem-ipsum {
+	position: static !important;
+	margin: 0;
+	max-width: 45vw;
+	font-family: "Titillium Web", sans-serif;
+	font-size: 0.9em;
+	font-weight: 300;
+	line-height: 1.8em;
+	color: #fff;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	background: #110e1ebd;
+	border-radius: 0.3em;
+	filter: drop-shadow(0 3px 3px rgba(0, 0, 0, 0.2)) drop-shadow(0 3px 3px rgba(0, 0, 0, 0.35));
+	padding: 0.7em;
+}
+
+/* Plot text */
+.text-container .plot {
+	position: static !important;
+	font-family: "Sofia Sans", sans-serif;
+	font-size: 0.9em;
+    font-weight: 350;
+    line-height: 1.3em;
+	color: #fff;
+	max-width: 45vw;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: normal;
+	background: #110e1ebd;
+	border-radius: 0.3em;
+	padding: 0.7em;
+	filter: drop-shadow(0 3px 3px rgba(0, 0, 0, 0.2)) drop-shadow(0 3px 3px rgba(0, 0, 0, 0.35));
+	max-height: 3.5em;
+}
+
+.text-container .lorem-ipsum,
+.text-container .lorem-ipsum * {
+	white-space: nowrap !important;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width: 45.5vw;
+	font-weight: 500 !important;
+	padding-left: 0.4em;
+    padding-right: 0.4em;
+}
+
+.bullet-separator {
+  margin: 0 5px;
+  color: var(--md-sys-color-primary);
+  font-weight: bold;
+  font-size: 1.3em;
+  vertical-align: middle;
+  display: none;
+}
+
+.logo-hover-zone {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: calc(100% - 50px);
+  width: 50%;
+  z-index: 15; /* ensure it's above the backdrop and clickable overlay */
+  pointer-events: none;
+  cursor: pointer;
+}
+
+/* Star Icon */
+.star-icon {
+  font-size: 1em;
+  margin-right: 0;
+  color: gold;
+  vertical-align: middle;
+  padding-top: 0.3em !important;
+}
+
+/* Emby Scroll Buttons */
+.emby-scrollbuttons {
+  position: absolute;
+  bottom: 55px;
+  left: 80%;
+  transform: translateX(-50%);
+  display: flex;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  z-index: 2;
+}
+
+.emby-scrollbuttons-button {
+  background: none;
+  border: none;
+  padding: 6px;
+  margin: 0 5px;
+  font-size: 1.8em;
+  color: #b2008a;
+  cursor: pointer;
+}
+
+.emby-scrollbuttons-button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+/* Material Icons */
+.material-icons {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: normal;
+  font-size: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: normal;
+  text-transform: none;
+  letter-spacing: normal;
+  white-space: nowrap;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "liga";
+}
+
+.lorem-ipsum .material-icons {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1em;
+  padding-top: 0.1em;
+}
+
+/* Volume Control */
+#volumeButton {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.3em;
+  background: none;
+  border: 1px solid var(--md-sys-color-outline);
+  background-color: var(--md-sys-color-primary-container);
+  color: var(--md-sys-color-on-primary-container);
+  cursor: pointer;
+}
+
+#volumeButton .material-icons {
+  font-size: 0.9em;
+  margin: 0 0.15em;
+}
+
+/* Invisible hover bridge */
+#volumeHoverZone {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  height: 3em;
+  background: transparent;
+  pointer-events: auto;
+}
+
+/* Slider */
+#volumeSlider {
+  position: absolute;
+  bottom: 320%; /* fully above the button */
+  left: 50%;
+  transform: translateX(-50%) rotate(-90deg);
+  width: 110px;
+  height: 6px;
+  border-radius: 9999px;
+
+  background: rgba(255, 255, 255, 0.15);
+
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  pointer-events: none;
+}
+
+/* Keep visible while hovering button, bridge, or slider */
+#volumeButton:hover #volumeSlider,
+#volumeSlider:hover,
+#volumeHoverZone:hover + #volumeSlider {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Track styling */
+#volumeSlider::-webkit-slider-runnable-track {
+  height: 6px;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.15);
+}
+#volumeSlider::-moz-range-track {
+  height: 6px;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* Thumb styling with glow */
+#volumeSlider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--md-sys-color-primary);
+  cursor: pointer;
+  border: none;
+  margin-top: -4px; /* center thumb vertically */
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+#volumeSlider::-webkit-slider-thumb:hover,
+#volumeSlider::-webkit-slider-thumb:active {
+  box-shadow: 0 0 6px 2px var(--md-sys-color-primary);
+  transform: scale(1.1);
+}
+
+#volumeSlider::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--md-sys-color-primary);
+  cursor: pointer;
+  border: none;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+#volumeSlider::-moz-range-thumb:hover,
+#volumeSlider::-moz-range-thumb:active {
+  box-shadow: 0 0 6px 2px var(--md-sys-color-primary);
+  transform: scale(1.1);
+}
+
+/* Error Message */
+.error-message {
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  background-color: rgba(255, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 5px;
+  font-family: "Titillium Web", sans-serif;
+  z-index: 1000;
+}
+
+/* Phone-width Styling */
+@media screen and (max-width: 768px) {
+  .logo {
+    left: 50% !important;
+	top: 20% !important;
+    transform: translateX(-50%) !important;
+    max-width: 65vw;
+    max-height: none;
+    z-index: 15;
+  }
+
+  .bullet-separator {
+    margin: 0 6px;
+    font-size: 1em;
+    color: var(--md-sys-color-primary);
+    font-weight: bold;
+    vertical-align: middle;
+  }
+
+  /* Force a line break after the 2nd bullet */
+	.bullet-separator.second-bullet::after {
+	  content: "";
+	  display: block;
+	}
+
+  .star-icon {
+    font-size: 0.9em;
+  }
+
+  .lorem-ipsum img {
+    height: 0.9em !important;
+  }
+
+  .plot {
+    max-width: 90vw;
+	font-size: 0.9em;
+    left: 5vw;
+    padding-right: 0;
+	bottom: 7.0em;
+  }
+  
+  .text-container {
+	bottom: 7.5em;
+    left: 5vw;
+    right: 5vw;
+    max-width: 90vw;
+    gap: 0.6em;
+  }
+
+  .text-container .logo {
+    max-width: 50vw !important;
+    max-height: none !important;
+    margin-left: 45vw !important;
+	margin-bottom: 5vw !important;
+  }
+
+  .text-container .lorem-ipsum {
+    font-size: 1em;
+    line-height: 1.5em;
+  }
+
+  .text-container .plot {
+    font-size: 0.9em;
+	max-width: 90vw !important;
+  }
+}
+
+/* Navigation Buttons Container */
+#navButtons {
+  position: absolute;
+  bottom: 4.1em;
+  right: 1em;
+  display: flex;
+  z-index: 2;
+  background: #202020;
+  border-radius: 9999px;
+}
+
+/* Navigation Buttons */
+#navButtons button {
+  border: 1px solid var(--md-sys-color-outline);
+  background: none;
+  padding: 0.15em 0.9em;
+  margin: 0;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 1.4em;
+  cursor: pointer;
+  background-color: var(--md-sys-color-primary-container) !important;
+  color: var(--md-sys-color-on-primary-container) !important;
+  border-color: var(--md-sys-color-outline) !important;
+}
+
+#navButtons button + button {
+  border-left: none;
+}
+
+/* ------------------------------------
+   Navigation Buttons (MD3 Style)
+------------------------------------- */
+#navButtons button {
+  position: relative; /* For state-layer overlay */
+  border: 1px solid var(--md-sys-color-outline);
+  background-color: var(--md-sys-color-primary-container);
+  color: var(--md-sys-color-on-primary-container);
+  padding: 0.15em 0.9em;
+  margin: 0;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 1.4em;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Sheen layer for hover */
+#navButtons button::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background-color: var(--md-sys-color-on-primary-container);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+
+#navButtons button:hover::after {
+  opacity: 0.08;
+}
+
+#navButtons button + button {
+  border-left: none;
+}
+
+/* ------------------------------------
+   Corner Rounding
+------------------------------------- */
+#leftButton {
+  border-radius: 9999px 0 0 9999px;
+}
+#mediaButton,
+#playPauseButton {
+  border-radius: 0;
+  font-size: 1.5em !important;
+}
+#mediaButton .material-icons {
+  font-size: 0.8em !important;
+  margin: 0 0.15em;
+}
+
+#rightButton {
+  border-radius: 0 9999px 9999px 0;
+}
+
+/* ------------------------------------
+   Icon Styling
+------------------------------------- */
+#navButtons button .material-icons {
+  color: var(--md-sys-color-on-primary-container);
+  transition: color 0.2s ease;
+}
+
+#navButtons button:hover .material-icons {
+  color: var(--md-sys-color-on-primary-container);
+}
+
+/* ------------------------------------
+   Disabled State
+------------------------------------- */
+#navButtons button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+#navButtons #leftButton,
+#navButtons #rightButton {
+  position: fixed !important;         /* anchor to iframe viewport, not the pill */
+  top: 50% !important;                /* middle */
+  bottom: auto !important;            /* cancel old bottom anchor */
+  transform: translateY(-50%) !important;
+  z-index: 1000 !important;
+
+  /* standalone circular buttons */
+  width: 48px; height: 48px;
+  display: flex; align-items: center; justify-content: center;
+  border-radius: 9999px !important;
+  margin: 0 !important;
+  background-color: transparent !important;  /* fully clear */
+  border: 1px solid transparent !important;  /* invisible border */
+  color: var(--md-sys-color-on-primary-container) !important;
+  cursor: pointer;
+}
+
+#leftButton  { left: 0.75rem !important;  right: auto !important; }
+#rightButton { right: 0.75rem !important; left:  auto !important; }
+
+#leftButton .material-icons,
+#rightButton .material-icons { font-size: 2rem; pointer-events: none; }
+
+/* The pill keeps only the middle buttons */
+#navButtons #mediaButton { border-radius: 9999px 0 0 9999px !important; }
+#navButtons #volumeButton { border-radius: 0 9999px 9999px 0 !important; }
+
+#navButtons #leftButton:hover,
+#navButtons #rightButton:hover {
+  transform: translateY(-50%) scale(1.35) !important;
+  transition: transform 0.2s ease;
+}
+
+/* Phone width Resolution */
+@media (max-width: 768px) {
+  #leftButton, 
+  #rightButton {
+    width: 40px;
+    height: 40px;
+  }
+
+  #playPauseButton,
+  #volumeButton {
+    display: none !important;
+  }
+
+  /* Info button becomes the only pill in the group */
+  #navButtons #mediaButton {
+    border-radius: 9999px !important; /* fully rounded both sides */
+    border-left: 1px solid var(--md-sys-color-outline) !important;
+    border-right: 1px solid var(--md-sys-color-outline) !important;
+  }
+}
