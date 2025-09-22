@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Seth's Spotlight - A Jellyfin UI Enhancement v1.2.0</title>
+
+    <!-- Fonts and Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100..900;1,100..900&display=swap"/>
+    <link rel="stylesheet" href="spotlight.css">
+
+    <!-- Theme Variable Injection from Parent with Fallbacks -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+			window.addEventListener("message", (e) => {
+				if (e.data === "local-trailer-ended") {
+					console.log("📼 Local trailer ended, advancing slide.");
+					cleanup();
+					fetchNextMovie();
+				}
+			});
+            const parentStyles = getComputedStyle(window.parent.document.documentElement);
+            const root = document.documentElement;
+            const fallbackColors = {
+				'--md-sys-color-primary': '#239dfb',
+				'--md-sys-color-primary-container': '#0032570D', // 95% transp
+				'--md-sys-color-on-primary': '#003257',
+				'--md-sys-color-on-primary-container': '#e9ddff',
+				'--md-sys-color-outline': '#67656a', // darker gray
+				'--color-text-body': '#e6e1e6'
+			};
+
+            Object.entries(fallbackColors).forEach(([name, fallback]) => {
+                const val = parentStyles.getPropertyValue(name).trim() || fallback;
+                root.style.setProperty(name, val);
+            });
+        });
+
+        // Load and initialize YouTube Iframe API
+        let youTubeAPIReadyPromise = new Promise((resolve, reject) => {
+            if (window.YT && window.YT.Player) {
+                console.log("YouTube Iframe API already loaded.");
+                resolve(window.YT);
+            } else {
+                window.onYouTubeIframeAPIReady = function () {
+                    console.log("YouTube Iframe API is ready.");
+                    resolve(window.YT);
+                };
+
+                if (!document.querySelector('script[src="https://www.youtube.com/iframe_api"]')) {
+                    const tag = document.createElement('script');
+                    tag.src = "https://www.youtube.com/iframe_api";
+                    const firstScriptTag = document.getElementsByTagName('script')[0];
+                    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+                    console.log("YouTube Iframe API script added.");
+                } else {
+                    console.log("YouTube Iframe API script already present.");
+                }
+
+                setTimeout(() => {
+                    reject(new Error("YouTube Iframe API failed to load within expected time."));
+                }, 10000);
+            }
+        });
+    </script>
+</head>
+<body>
+    <div class="spotlight-wrapper">
+        <div id="slides-container"></div>
+        <div id="navButtons">
+            <button id="leftButton" type="button" disabled tabindex="0" aria-label="Previous Movie">
+                <span class="material-icons" aria-hidden="true">chevron_left</span>
+            </button>
+            <button id="mediaButton" type="button" tabindex="0" aria-label="View Media Info"  title="Media Page">
+                <span class="material-icons" aria-hidden="true">info</span>
+            </button>
+            <button id="playPauseButton" type="button" tabindex="0" aria-label="Toggle Trailer Playback">
+                <span class="material-icons" aria-hidden="true">play_arrow</span>
+            </button>
+			<button id="volumeButton" type="button" tabindex="0" aria-label="Volume">
+				<span class="material-icons" aria-hidden="true">volume_up</span>
+				<div id="volumeHoverZone"></div>
+				<input id="volumeSlider" type="range" min="0" max="100" value="50">
+			</button>
+            <button id="rightButton" type="button" tabindex="0" aria-label="Next Movie">
+                <span class="material-icons" aria-hidden="true">chevron_right</span>
+            </button>
+        </div>
+    </div>
+	
+			
+    <script>
+        // Initialize global variables
+        let customTitle = '';
+        let moviesSeriesBoth = 3, shuffleInterval = 10000, plotMaxLength = 450, useTrailers = true;
+        let isChangingSlide = false, player = null, slideChangeTimeout = null, isHomePageActive = false, navigationInterval = null;
+        let currentLocation = window.top.location.href;
+        let movieList = [], currentMovieIndex = 0, lastMovie = null, currentMovie = null, currentSlideElement = null;
+		let localTrailerIframe = null;
+		let globalVolume = Number(localStorage.getItem('spotlightVolume') ?? 0.5);
+		
+		//Get User Auth token
+		const getJellyfinAuth = () => {
+			let token = null;
+			let userId = null;
+			const initEl = window.parent.document.getElementById('jellyfin-initialization-data');
+			if (initEl) {
+				try {
+					const initJson = JSON.parse(initEl.textContent);
+					token = initJson?.AccessToken;
+					userId = initJson?.User?.Id;
+				} catch {}
+			}
+			if (!token) {
+				try {
+					const raw = window.parent.localStorage.getItem('jellyfin_credentials');
+					if (raw) {
+						const creds = JSON.parse(raw);
+						token = creds?.Servers?.[0]?.AccessToken;
+						userId = creds?.Servers?.[0]?.UserId;
+					}
+				} catch {}
+			}
+			if (!token) {
+				const v = window.parent.document.querySelector('video');
+				const s = v?.currentSrc || v?.src || '';
+				token = s.match(/[?&]api_key=([^&]+)/i)?.[1] || null;
+			}
+			return { token, userId };
+		};
+
+		const { token, userId: fallbackUserId } = getJellyfinAuth();
+
+        // Create and return a new DOM element with specified attributes
+        const createElem = (tag, className, textContent, src, alt) => {
+            const elem = document.createElement(tag);
+            if (className) elem.className = className;
+            if (textContent) elem.textContent = textContent;
+            if (src) elem.src = src;
+            if (alt) elem.alt = alt;
+            return elem;
+        };
+
+        // Truncate text to a specified maximum length and append '...' if truncated
+        const truncateText = (text, maxLength) => text && text.length > maxLength ? text.substr(0, maxLength) + '...' : text;
+
+        // Display error messages to users
+        const displayError = (message) => {
+            const errorDiv = createElem('div', 'error-message');
+            errorDiv.textContent = message;
+            document.body.appendChild(errorDiv);
+            setTimeout(() => {
+                if (errorDiv.parentNode) errorDiv.parentNode.removeChild(errorDiv);
+            }, 5000); // Remove after 5 seconds
+        };
+
+        // Clean up existing player and timeout
+		const cleanup = () => {
+			if (player && typeof player.stopVideo === 'function') {
+				player.stopVideo();
+				player.destroy();
+				player = null;
+				console.log("YouTube player cleaned up.");
+			}
+			if (localTrailerIframe) {
+				localTrailerIframe.remove();
+				localTrailerIframe = null;
+				console.log("Local trailer iframe removed.");
+			}
+			if (slideChangeTimeout) {
+				clearTimeout(slideChangeTimeout);
+				slideChangeTimeout = null;
+				console.log("Slide change timeout cleared.");
+			}
+		};
+
+        // Shut down the slideshow by cleaning up and resetting variables
+        const shutdown = () => {
+            isChangingSlide = true;
+            cleanup();
+            document.getElementById('rightButton').onclick = null;
+            document.getElementById('leftButton').onclick = null;
+            const container = document.getElementById('slides-container');
+            if (container) container.innerHTML = '';
+            currentMovie = null;
+            lastMovie = null;
+            currentMovieIndex = 0;
+            movieList = [];
+            isHomePageActive = false;
+            isChangingSlide = false;
+            
+            console.log("Slideshow has been completely shutdown");
+        };
+
+        // Update the state of navigation buttons based on the current and last movie
+        const updateSlideButtons = () => {
+            const leftButton = document.getElementById('leftButton');
+            leftButton.disabled = !lastMovie || (currentMovie && lastMovie.Id === currentMovie.Id);
+            console.log(`Left button disabled: ${leftButton.disabled}`);
+        };
+
+        // Check if backdrop and logo images exist for the movie, then create the slide or fetch the next movie
+        const checkBackdropAndLogo = movie => {
+            Promise.all(['/Images/Backdrop/0', '/Images/Logo'].map(url => 
+                fetch(`/Items/${movie.Id}${url}`, { method: 'HEAD' }).then(response => response.ok)
+            )).then(([backdropExists, logoExists]) => {
+                if (backdropExists && logoExists) {
+                    console.log(`Backdrop and logo exist for movie: ${movie.Name}`);
+                    createSlideElement(movie, true);
+                } else {
+                    console.log(`Backdrop or logo missing for movie: ${movie.Name}. Fetching next movie.`);
+                    fetchNextMovie();
+                }
+            }).catch(error => {
+                console.error("Error checking backdrop and logo:", error);
+                fetchNextMovie();
+            });
+        };
+		
+		async function checkLocalTrailer(itemId) {
+			const uid = fallbackUserId; // already from getJellyfinAuth()
+			if (!token || !uid) return null;
+
+			try {
+				const res = await fetch(`/Users/${uid}/Items/${itemId}/LocalTrailers?api_key=${token}`);
+				if (!res.ok) return null;
+				const arr = await res.json();
+				if (!arr?.length) return null;
+
+				const t = arr[0];
+				const mediaSourceId = t.MediaSources?.[0]?.Id;
+				const streamUrl = mediaSourceId
+					? `/Videos/${t.Id}/stream.mp4?Static=true&mediaSourceId=${mediaSourceId}&api_key=${token}`
+					: null;
+
+				return { trailer: t, streamUrl };
+			} catch (e) {
+				console.warn("Local trailer check failed:", e);
+				return null;
+			}
+		}
+
+        // Create and display a new slide element for the given movie
+        const createSlideElement = async (movie, hasVideo = false) => {
+            cleanup();
+            const container = document.getElementById('slides-container');
+            const newSlide = createElem('div', 'slide');
+			newSlide.appendChild(createElem('div', 'slide-mat'));
+            
+			const visualWrapper = createElem('div', 'visual-wrapper');
+			visualWrapper.appendChild(createElem('img', 'backdrop', null, `/Items/${movie.Id}/Images/Backdrop/0`, 'backdrop'));
+
+			const hoverZone = createElem('div', 'logo-hover-zone');
+			hoverZone.setAttribute('role', 'button');
+			hoverZone.setAttribute('aria-label', 'View Movie Details');
+			hoverZone.onclick = () => window.top.Emby.Page.showItem(movie.Id);
+			hoverZone.addEventListener('keypress', (e) => {
+				if (e.key === 'Enter' || e.key === ' ') {
+					window.top.Emby.Page.showItem(movie.Id);
+				}
+			});
+			
+			// Hover effects via JS for logo
+			hoverZone.addEventListener("mouseenter", () => {
+			  const logo = textContainer.querySelector('.logo');
+			  if (logo) {
+				logo.style.transformOrigin = "center center";
+				logo.style.transition = "transform 5s ease-in-out, opacity 5s ease-in-out";
+				logo.style.transform = "translateX(-50%) scale(1.2)";
+				logo.style.opacity = "0.1";
+			  }
+			});
+
+			hoverZone.addEventListener("mouseleave", () => {
+			  const logo = textContainer.querySelector('.logo');
+			  if (logo) {
+				logo.style.transition = "transform 5s ease-in-out, opacity 5s ease-in-out";
+				logo.style.transform = "translateX(-50%) scale(1)";
+				logo.style.opacity = "1";
+			  }
+			});
+						
+			visualWrapper.appendChild(hoverZone);
+
+			newSlide.appendChild(visualWrapper);
+
+            const textContainer = createElem('div', 'text-container');
+			
+			textContainer.appendChild(createElem('img', 'logo', null, `/Items/${movie.Id}/Images/Logo`, 'logo'));
+			
+            const premiereYear = movie.PremiereDate ? new Date(movie.PremiereDate).getFullYear() : 'Unknown';
+            const additionalInfo = movie.Type === 'Series' ? (movie.ChildCount ? `${movie.ChildCount} Season${movie.ChildCount > 1 ? 's' : ''}` : 'Unknown Seasons') : (movie.RunTimeTicks ? `${Math.round(movie.RunTimeTicks / 600000000)} min` : 'Unknown Runtime');
+
+			const communityRating = movie.CommunityRating ? movie.CommunityRating.toFixed(1) : '–';
+			const genres = Array.isArray(movie.Genres) && movie.Genres.length
+			  ? movie.Genres.slice(0, 2).join(', ')
+			  : 'Genre';
+			const officialRating = movie.OfficialRating || 'NR';
+			const year = movie.PremiereDate ? new Date(movie.PremiereDate).getFullYear() : '–';
+			const durationOrSeasons = movie.Type === 'Series'
+			  ? (movie.ChildCount ? `${movie.ChildCount} Season${movie.ChildCount > 1 ? 's' : ''}` : '–')
+			  : (movie.RunTimeTicks ? `${Math.round(movie.RunTimeTicks / 600000000)} min` : '–');
+
+			const loremText = `
+			  <span style="display:inline-flex; align-items:center; gap:12px; vertical-align:middle; flex-wrap:wrap;">
+
+				<span style="display:inline-flex; align-items:center; gap:4px;">
+				  <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/IMDB_Logo_2016.svg" alt="IMDb" style="height:1.05em; margin-right:0px;">
+				  <span>${communityRating}</span>
+				  <span class="material-icons star-icon" style="font-size:1em; transform: translateY(-2px);">star</span>
+				</span>
+
+				<span class="bullet-separator">•</span>
+
+				<span style="display:inline-flex; align-items:center; gap:4px;">
+				  <span class="material-icons" style="font-size:1em;">theater_comedy</span>
+				  <span>${genres}</span>
+				</span>
+
+				<span class="bullet-separator second-bullet">•</span>
+
+				<span style="background:#fff; color:#3d3c3c; padding:4px 12px 3px 12px; border-radius:8px; font-weight:750!important; font-size:0.78em; font-family:'Titillium Web', sans-serif; line-height:1em;">
+				  ${officialRating}
+				</span>
+
+				<span class="bullet-separator">•</span>
+
+				<span style="display:inline-flex; align-items:center; gap:4px;">
+				  <span class="material-icons" style="font-size:1em;">
+					${movie.Type === 'Series' ? 'calendar_today' : 'schedule'}
+				  </span>
+				  <span>${durationOrSeasons}</span>
+				</span>
+
+				<span class="bullet-separator">•</span>
+				<span>${year}</span>
+
+			  </span>
+			`;
+			
+            const loremDiv = createElem('div', 'lorem-ipsum');
+            loremDiv.innerHTML = loremText;
+
+            textContainer.appendChild(loremDiv);
+            textContainer.appendChild(createElem('div', 'plot', truncateText(movie.Overview, plotMaxLength)));
+			
+            newSlide.appendChild(textContainer);
+			
+			const fadeDiv = createElem('div', 'bottom-fade');
+
+			let localTrailerInfo = null;
+			let hasLocalTrailer = false;
+
+			if (useTrailers) {
+				localTrailerInfo = await checkLocalTrailer(movie.Id);
+				hasLocalTrailer = !!localTrailerInfo;
+				console.log(
+					hasLocalTrailer ? "✅ Local trailer exists:" : "❌ No local trailer. Proceeding to Remote/YouTube…",
+					localTrailerInfo
+				);
+			}
+			// Local Trailer playback
+			if (useTrailers && hasLocalTrailer) {
+				const { trailer, streamUrl } = localTrailerInfo;
+				const mediaSourceId = trailer.MediaSources?.[0]?.Id;
+				const finalUrl = mediaSourceId
+					? `/Videos/${trailer.Id}/stream.mp4?Static=true&mediaSourceId=${mediaSourceId}&api_key=${token}`
+					: streamUrl; // fallback from the checker
+
+				const videoContainer = createElem('div', 'video-container', null, null, 'Local Trailer');
+				const iframe = document.createElement('iframe');
+				iframe.className = 'local-trailer-frame';
+				iframe.allow = 'autoplay';
+				iframe.setAttribute('aria-label', 'Local Trailer');
+
+				// remove border & scrollbar
+				Object.assign(iframe.style, {
+				  width: '100%',
+				  height: '100%',
+				  border: '0',
+				  overflow: 'hidden',
+				  position: 'absolute',
+				  inset: '0'
+				});
+				iframe.setAttribute('scrolling', 'no');
+				iframe.setAttribute('frameborder', '0');
+				
+				
+				
+				
+				iframe.srcdoc = [
+				  '<!DOCTYPE html><html><head><meta charset="utf-8">',
+				  '<style>',
+				  'html,body { margin: 0; height: 100%; background: #000; }',
+				  'video { width: 100%; height: 100%; object-fit: contain; outline: none; }',
+				  'video::-webkit-media-controls-panel { display: none !important; -webkit-appearance: none; }',
+				  'video::-moz-media-controls { display: none !important; }',
+				  '</style></head><body>',
+				  '<video id="lt" autoplay playsinline preload="auto" controls src="', finalUrl ,'"></video>',
+				  '<script>',
+				  'const v=document.getElementById("lt");',
+				  'const unmute=()=>{ try { v.volume = parent.globalVolume; v.muted = (parent.globalVolume === 0); } catch(e){} };',
+				  'v.addEventListener("loadedmetadata",()=>{',
+				  '  unmute();',
+				  '  try {',
+				  '    parent.postMessage({ type: "local-trailer-metadata", width: v.videoWidth, height: v.videoHeight }, "*");',
+				  '  } catch(e){}',
+				  '});',
+				  'v.addEventListener("play",unmute);',
+				  'v.addEventListener("ended",()=>{ parent.postMessage("local-trailer-ended", "*"); });',
+				  'window.addEventListener("message",e=>{',
+				  ' if(e.data==="pause")v.pause();',
+				  ' if(e.data==="play")v.play();',
+				  ' if(e.data==="toggle"){ v.paused?v.play():v.pause(); }',
+				  ' if(e.data?.type==="setVolume"){ ',
+				  ' v.volume = e.data.value;', 
+				  ' v.muted = (e.data.value===0);}', 
+				  '});',
+				  '<\/script>',
+				  '</body></html>'
+				].join('');
+
+				videoContainer.appendChild(iframe);
+				
+				iframe.addEventListener('load', () => {
+				  try {
+					iframe.contentWindow?.postMessage(
+					  { type: 'setVolume', value: globalVolume }, '*'
+					);
+				  } catch {}
+				});
+
+				// ⬇️ Add this block to resize the iframe based on actual video dimensions
+				window.addEventListener('message', function onMeta(e) {
+					if (e.data?.type === 'local-trailer-metadata') {
+						window.removeEventListener('message', onMeta); // Only handle once
+						const { width, height } = e.data;
+						if (width && height) {
+							const aspectRatio = width / height;
+							const videoContainer = iframe.parentElement;
+							const h = videoContainer.clientHeight || 360;
+							const w = h * aspectRatio;
+
+							videoContainer.style.width = `${w}px`;
+
+							const backdropElement = newSlide.querySelector('.backdrop');
+							if (backdropElement) {
+								backdropElement.style.width = `calc(100% - ${w * 0.8}px)`;
+								backdropElement.style.webkitMaskImage =
+									backdropElement.style.maskImage =
+									'linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 65%, rgba(255,255,255,0) 100%)';
+							}
+
+							['clickable-overlay'].forEach(cls => {
+								const el = newSlide.querySelector(`.${cls}`);
+								if (el) el.style.width = `calc(100% - ${w * 0.8}px)`;
+							});
+						}
+					}
+				});
+				newSlide.appendChild(videoContainer);
+				localTrailerIframe = iframe; // keep ref for cleanup/pause
+
+				// sizing like the YT branch
+				const backdropElement = newSlide.querySelector('.backdrop');
+				if (backdropElement) {
+					const aspectRatio = 16 / 9;
+					const h = videoContainer.clientHeight || 360;
+					const w = h * aspectRatio;
+					videoContainer.style.width = `${w}px`;
+					videoContainer.style.webkitMaskImage = videoContainer.style.maskImage =
+					'linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 25%)';
+					backdropElement.style.width = `calc(100% - ${w * 0.8}px)`;
+					backdropElement.style.webkitMaskImage =
+						backdropElement.style.maskImage =
+						'linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 65%, rgba(255,255,255,0) 100%)';
+					['clickable-overlay'].forEach(cls => {
+						const el = newSlide.querySelector(`.${cls}`);
+						if (el) el.style.width = `calc(100% - ${w * 0.8}px)`;
+					});
+				}
+
+				// show play/pause btn
+				const playPauseBtn = document.getElementById('playPauseButton');
+				if (playPauseBtn) {
+					playPauseBtn.style.display = 'inline-block';
+					const icon = playPauseBtn.querySelector('span.material-icons');
+					if (icon) icon.textContent = 'pause';
+				}
+
+				container.appendChild(newSlide);
+				void newSlide.offsetWidth;
+				newSlide.classList.add('visible');
+
+				const oldSlideElement = currentSlideElement;
+				if (oldSlideElement) {
+					oldSlideElement.classList.remove('visible');
+					setTimeout(() => oldSlideElement?.parentNode?.removeChild(oldSlideElement), 1300);
+				}
+				currentSlideElement = newSlide;
+				lastMovie = currentMovie;
+				currentMovie = movie;
+				updateSlideButtons();
+				return; // prevent falling through to YouTube
+			}
+
+            if (useTrailers && !hasLocalTrailer && movie.RemoteTrailers?.length > 0) {
+                const trailerUrl = movie.RemoteTrailers[0].Url;
+                let videoId = null;
+                try {
+                    videoId = new URL(trailerUrl).searchParams.get('v');
+                } catch (e) {
+                    console.error("Invalid trailer URL:", trailerUrl);
+                }
+
+                if (videoId) {
+                    let aspectRatio = 16 / 9;
+                    try {
+                        const response = await fetch('https://noembed.com/embed?url=https://www.youtube.com/watch?v=' + videoId);
+                        const data = await response.json();
+                        if (data.width && data.height) aspectRatio = data.width / data.height;
+                    } catch (e) { 
+                        console.error("Error fetching trailer embed data:", e);
+                    }
+
+                    const videoContainer = createElem('div', 'video-container', null, null, 'Play Trailer');
+                    const videoElement = createElem('div', 'video-player');
+                    videoContainer.appendChild(videoElement);
+                    newSlide.appendChild(videoContainer);
+
+                    // Initialize YouTube player after ensuring API is ready
+                    youTubeAPIReadyPromise.then(YT => {
+                        console.log("Initializing YouTube player for video ID:", videoId);
+                        player = new YT.Player(videoElement, {
+                            height: '100%',
+                            width: '100%',
+                            videoId: videoId,
+                            playerVars: {
+                                'autoplay': 1,
+                                'controls': 0,
+                                'loop': 0,
+                                'rel': 0,
+                                'modestbranding': 1,
+                                'color': 'white',
+                                'iv_load_policy': 3,
+                                'fs': 0
+                            },
+                            events: {
+                                'onReady': event => {
+									console.log("YouTube player ready.");
+									event.target.playVideo();
+									event.target.setVolume(globalVolume * 100);
+									
+									const videoContainerHeight = videoContainer.clientHeight;
+									const calculatedWidth = videoContainerHeight * aspectRatio;
+									videoContainer.style.width = `${calculatedWidth}px`;
+
+									const backdropElement = newSlide.querySelector('.backdrop');
+									if (backdropElement) {
+										// Change multiplier from 0.7 to 0.8 for 80%
+										backdropElement.style.width = `calc(100% - ${calculatedWidth * 0.8}px)`;
+										
+										// Update mask gradient to match new width
+										backdropElement.style.webkitMaskImage = backdropElement.style.maskImage = `linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) ${65}%, rgba(255, 255, 255, 0) 100%)`;
+										
+										backdropElement.style.backgroundImage = `url(/Items/${movie.Id}/Images/Backdrop/0)`;
+										backdropElement.style.backgroundSize = 'cover';
+										backdropElement.style.backgroundPosition = 'center';
+									}
+
+									const videoPlayerElement = newSlide.querySelector('.video-player');
+									if (videoPlayerElement) {
+										videoPlayerElement.style.webkitMaskImage = videoPlayerElement.style.maskImage = `linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 25%)`;
+									}
+
+									['clickable-overlay'].forEach(cls => {
+										const element = newSlide.querySelector(`.${cls}`);
+										if (element) element.style.width = `calc(100% - ${calculatedWidth * 0.8}px)`;
+									});
+									const playPauseBtn = document.getElementById('playPauseButton');
+									if (playPauseBtn) {
+										playPauseBtn.style.display = 'inline-block';
+
+										const nav = document.getElementById('navButtons');
+										const playIcon = playPauseBtn.querySelector('span.material-icons');
+										if (playIcon) {
+											playIcon.textContent = 'pause'; // Assume trailer auto-plays
+										}
+									}
+																		
+                                },
+                                'onStateChange': event => {
+                                    if (event.data === YT.PlayerState.ENDED) {
+                                        console.log("YouTube video ended. Fetching next movie.");
+                                        setTimeout(fetchNextMovie, 100);
+                                    }
+                                },
+                                'onError': event => {
+                                    console.error("YouTube Player Error:", event.data);
+                                    if (player) {
+                                        player.destroy();
+                                        player = null;
+                                    }
+
+                                    ['backdrop', 'plot', 'lorem-ipsum'].forEach(cls => {
+                                        const element = newSlide.querySelector(`.${cls}`);
+                                        if (element) element.style.width = '100%';
+                                    });
+                                    videoContainer.style.width = '0';
+                                    startSlideChangeTimer();
+                                }
+                            }
+                        });
+                    }).catch(error => {
+                        console.error("YouTube Iframe API is not ready or failed to load:", error);
+                        startSlideChangeTimer();
+                    });
+                } else {
+                    console.warn("Trailer video ID not found for movie:", movie.Name);
+                    startSlideChangeTimer();
+                }
+            } else {
+                startSlideChangeTimer();
+            }
+
+            container.appendChild(newSlide);
+            void newSlide.offsetWidth;
+            newSlide.classList.add('visible');
+
+            const oldSlideElement = currentSlideElement; // Capture the old slide
+            if (oldSlideElement) {
+                oldSlideElement.classList.remove('visible');
+                setTimeout(() => {
+                    if (oldSlideElement && oldSlideElement.parentNode) {
+                        oldSlideElement.parentNode.removeChild(oldSlideElement);
+                        console.log("Old slide removed from DOM.");
+                    }
+                }, 1300); // Remove after transition
+            }
+            // Update currentSlideElement
+            currentSlideElement = newSlide;
+
+            lastMovie = currentMovie;
+            currentMovie = movie;
+
+            updateSlideButtons();
+        };
+
+        // Read a custom list of movie IDs from 'list.txt' and update the title
+        const readCustomList = () => 
+            fetch('list.txt?' + new Date().getTime())
+                .then(response => response.ok ? response.text() : null)
+                .then(text => {
+                    if (!text) return null;
+                    const lines = text.split('\n').filter(Boolean);
+                    customTitle = lines.shift() || customTitle;
+                    // Not Using list titles for now    document.getElementById('titleHeading').textContent = customTitle;
+                    return lines.map(line => line.trim().substring(0, 32));
+                })
+                .catch(error => {
+                    console.error("Error reading custom list:", error);
+                    return null;
+                });
+
+        // Fetch a random movie or the next movie in the custom list
+        const fetchRandomMovie = () => {
+            if (isChangingSlide) {
+                console.log("Slide change already in progress.");
+                return;
+            }
+            isChangingSlide = true;
+
+            if (movieList.length === 0) {
+                readCustomList().then(list => {
+                    if (list) { 
+                        movieList = list; 
+                        currentMovieIndex = 0; 
+                        console.log("Custom movie list loaded:", movieList);
+                    }
+                    fetchNextMovie();
+                }).catch(error => {
+                    console.error("Error loading custom movie list:", error);
+                    fetchNextMovie();
+                });
+            } else {
+                fetchNextMovie();
+            }
+        };
+
+        // Fetch the next movie based on the current list or randomly
+		const fetchNextMovie = () => {
+			if (currentMovie) lastMovie = currentMovie;
+
+			// Corrected fetchCurrentUserId function
+			const fetchCurrentUserId = () => fetch(`/Sessions?api_key=${token}`, { credentials: 'same-origin' })
+				.then(response => {
+					if (!response.ok) throw new Error(`Network response was not ok: ${response.statusText}`);
+					return response.json();
+				})
+				.then(sessions => {
+					const currentSession = sessions.find(session => session.UserId);
+					return currentSession ? currentSession.UserId : null;
+				})
+				.catch(error => {
+					console.error("Error fetching current user ID:", error);
+					return null;
+				});
+
+			fetchCurrentUserId().then(currentUserId => {
+				if (!currentUserId) {
+					console.warn("Current user ID not found.");
+					isChangingSlide = false;
+					return;
+				}
+
+				if (movieList.length > 0) {
+					if (currentMovieIndex >= movieList.length) currentMovieIndex = 0; 
+					const movieId = movieList[currentMovieIndex];
+					currentMovieIndex++;
+
+					fetch(`/Users/${currentUserId}/Items/${movieId}?Fields=Overview,RemoteTrailers,PremiereDate,RunTimeTicks,ChildCount,Title,Type,Genres,OfficialRating,CommunityRating&api_key=${token}`)
+						.then(response => {
+							if (!response.ok) throw new Error(`Failed to fetch movie: ${response.statusText}`);
+							return response.json();
+						})
+						.then(movie => {
+							console.log("Fetched movie from custom list:", movie.Name);
+							checkBackdropAndLogo(movie);
+						})
+						.catch(error => {
+							console.error("Error fetching movie from custom list:", error);
+							displayError("Failed to load the next movie. Please try again.");
+							startSlideChangeTimer();
+						})
+						.finally(() => { isChangingSlide = false; });
+				} else {
+					const itemTypes = moviesSeriesBoth === 1 ? 'Movie' : (moviesSeriesBoth === 2 ? 'Series' : 'Movie,Series');
+					fetch(`/Users/${currentUserId}/Items?IncludeItemTypes=${itemTypes}&Recursive=true&Limit=1&SortBy=random&Fields=Id,Overview,RemoteTrailers,PremiereDate,RunTimeTicks,ChildCount,Title,Type,Genres,OfficialRating,CommunityRating&api_key=${token}`)
+						.then(response => {
+							if (!response.ok) throw new Error(`Failed to fetch random movie: ${response.statusText}`);
+							return response.json();
+						})
+						.then(data => {
+							if (data.Items[0]) {
+								console.log("Fetched random movie:", data.Items[0].Name);
+								checkBackdropAndLogo(data.Items[0]);
+							} else {
+								console.warn("No items found in random fetch.");
+								displayError("No movies found to display.");
+								startSlideChangeTimer();
+							}
+						})
+						.catch(error => {
+							console.error("Error fetching random movie:", error);
+							displayError("Failed to load the next movie. Please try again.");
+							startSlideChangeTimer();
+						})
+						.finally(() => { isChangingSlide = false; });
+				}
+			});
+		};
+
+        // Start a timer to change slides after a specified interval
+        const startSlideChangeTimer = () => {
+            if (slideChangeTimeout) clearTimeout(slideChangeTimeout);
+            slideChangeTimeout = setTimeout(fetchNextMovie, shuffleInterval);
+            console.log("Slide change timer started.");
+        };
+
+        // Check if the user has navigated away from the homepage and handle slideshow accordingly
+        const checkNavigation = () => {
+            const newLocation = window.top.location.href;
+            
+            if (newLocation !== currentLocation) {
+                currentLocation = newLocation;
+                
+                const isHomePage = url => url.endsWith('home.html') || url.endsWith('/web/') || url.endsWith('/web/index.html');
+                if (isHomePage(newLocation)) {
+                    if (!isHomePageActive) {
+                        console.log("Returning to homepage, reactivating slideshow");
+                        isHomePageActive = true;
+                        cleanup();
+                        fetchRandomMovie();
+                        attachButtonListeners(); 
+                    }
+                } else if (isHomePageActive) {
+                    console.log("Leaving homepage, shutting down slideshow");
+                    shutdown();
+                    setTimeout(function(){
+                        window.location.href = window.location.href;
+						cleanup();
+                        /* This page reload is strangely critical to ensure
+                        we don't double the script vars upon navigating home
+                        using Jellyfin's home button. But it makes videos only
+                        load on home not navback. Meh, lesser of two evils;
+                        True SPA headache... */
+                    }, 500);
+                }
+            }	
+        };
+
+        // Attach event listeners to navigation buttons
+        const attachButtonListeners = () => {
+			const rightButton = document.getElementById('rightButton');
+			const leftButton = document.getElementById('leftButton');
+			const mediaButton = document.getElementById('mediaButton');
+			const playPauseButton = document.getElementById('playPauseButton');
+			if (playPauseButton) {
+				playPauseButton.onclick = () => {
+				const icon = playPauseButton.querySelector('span.material-icons');
+
+				if (player && typeof player.getPlayerState === 'function') {
+					const state = player.getPlayerState();
+					if (state === YT.PlayerState.PLAYING) {
+						player.pauseVideo();
+						console.log("YouTube player paused.");
+						if (icon) icon.textContent = 'play_arrow';
+					} else {
+						player.playVideo();
+						console.log("YouTube player playing.");
+						if (icon) icon.textContent = 'pause';
+					}
+				} else if (localTrailerIframe?.contentWindow) {
+					localTrailerIframe.contentWindow.postMessage('toggle', '*');
+
+					// We'll assume the current state and flip it.
+					if (icon) {
+						icon.textContent = icon.textContent === 'pause' ? 'play_arrow' : 'pause';
+					}
+				}
+			};
+			}
+
+			if (rightButton && leftButton) {
+				rightButton.onclick = fetchNextMovie;
+				leftButton.onclick = () => {
+					if (lastMovie) {
+						console.log("Navigating to previous movie:", lastMovie.Name);
+						createSlideElement(lastMovie, true);
+					}
+				};
+				console.log("Navigation button listeners attached.");
+			}
+
+			// Media info button
+			if (mediaButton) {
+				mediaButton.onclick = () => {
+					if (currentMovie && currentMovie.Id) {
+						window.top.Emby.Page.showItem(currentMovie.Id);
+					} else {
+						console.warn('No current movie to show.');
+					}
+				};
+				console.log("Media info button listener attached.");
+			}
+			
+		};
+		
+		function initVolumeControl() {
+		  const button = document.getElementById('volumeButton');
+		  const icon = button.querySelector('.material-icons');
+		  const slider = document.getElementById('volumeSlider');
+
+		  let muted = globalVolume === 0;
+
+		  // 🔹 Initialize slider and icon state from globalVolume
+		  slider.value = globalVolume * 100;
+		  icon.textContent = muted ? 'volume_off' : 'volume_up';
+
+		  // Toggle mute on click (ignore clicks on slider itself)
+		  button.addEventListener('click', e => {
+			if (e.target === slider) return;
+			muted = !muted;
+			slider.value = muted ? 0 : globalVolume * 100 || 50; // fallback to 50 if unset
+			updateVolume(parseInt(slider.value, 10));
+			icon.textContent = muted ? 'volume_off' : 'volume_up';
+		  });
+
+		  // Adjust volume on slider input
+		  slider.addEventListener('input', () => {
+			const vol = parseInt(slider.value, 10);
+			muted = vol === 0;
+			icon.textContent = muted ? 'volume_off' : 'volume_up';
+			updateVolume(vol);
+		  });
+
+		  function updateVolume(vol) {
+			globalVolume = vol / 100; // persist globally
+			localStorage.setItem('spotlightVolume', String(globalVolume));
+			
+			// YouTube trailers
+			if (player?.setVolume) player.setVolume(vol);
+
+			// Local trailers
+			if (localTrailerIframe?.contentWindow) {
+			  localTrailerIframe.contentWindow.postMessage(
+				{ type: 'setVolume', value: globalVolume }, '*'
+			  );
+			}
+		  }
+		}
+
+        // Initialize the slideshow once the DOM is fully loaded
+        document.addEventListener('DOMContentLoaded', () => {
+            if (window.innerWidth < 701) useTrailers = false;
+            const isHomePage = url => url.includes('/home') || url.endsWith('/web/') || url.endsWith('/web/index.html');
+            if (isHomePage(window.top.location.href)) {
+                isHomePageActive = true;
+                cleanup();
+                fetchRandomMovie();
+                attachButtonListeners();
+				initVolumeControl();
+                console.log("Slideshow initialized on homepage.");
+            }
+            navigationInterval = setInterval(checkNavigation, 250);
+            console.log("Navigation check interval started.");
+        }, { passive: true });
+
+        // Expose controlYouTubePlayer to the global window scope
+        window.controlYouTubePlayer = {
+            // Toggle play/pause state of the YouTube player
+            toggle: function() {
+                if (player && typeof player.getPlayerState === 'function') {
+                    const state = player.getPlayerState();
+                    if (state === YT.PlayerState.PLAYING) {
+                        player.pauseVideo();
+                        console.log("YouTube player paused.");
+                    } else {
+                        player.playVideo();
+                        console.log("YouTube player playing.");
+                    }
+                } else {
+                    console.warn('YouTube player is not initialized or not available.');
+                }
+            }
+        };
+    </script>
+</body>
+</html>
