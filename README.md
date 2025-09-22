@@ -1,18 +1,18 @@
 # finimalism
 ![mockup](https://i.imgur.com/TvTV8jq.jpeg)
 
-# Colour version 
+# Colour version (example with [Spotlight](https://github.com/JSethCreates/jellyfin-script-spotlight) bar)
 
-![Screenshot 2025-05-29 135745](https://github.com/user-attachments/assets/fa9a1d42-3f40-4f31-948e-9514175b386c)
+![fcb](https://github.com/user-attachments/assets/730518b9-f34f-469c-9aab-bdb271ff7e4b)
 
 ```css
 @import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/finimalism7.css");
 
 ```
 
-# Black version
+# Black version (example without [Spotlight](https://github.com/JSethCreates/jellyfin-script-spotlight) bar)
 
-![Screenshot 2025-05-29 192111](https://github.com/user-attachments/assets/b05f32a4-91d3-43d6-ae3c-1a7afbf5d1e2)
+<img width="1920" height="1080" alt="2" src="https://github.com/user-attachments/assets/6ac60d92-c449-40c0-b01f-3b8366f3ab32" />
 
 ```css
 @import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/finimalism-just-black.css");
@@ -50,5 +50,5 @@ Everything is just an alteration of the amazing work already put into [Ultrachro
 <a href="https://github.com/tedhinklater/finality"><img src="https://i.imgur.com/54wZsvH.png" alt="Finality" width="400"/></a> 
 <a href="https://github.com/tedhinklater/Jellypane"><img src="https://i.imgur.com/RHFcIA9.png" alt="Jellypane" width="400"/></a>
 
-# Featured Content Bar 
-<a href="https://github.com/tedhinklater/Jellyfin-Featured-Content-Bar"><img src="https://github.com/user-attachments/assets/f2c45f47-3530-4525-9f89-fe4e96c7676f"></a>
+# [Spotlight](https://github.com/JSethCreates/jellyfin-script-spotlight) + my [custom style](https://github.com/tedhinklater/finimalism/tree/main/custom%20Spotlight) for it to match Finimalism
+<a href="https://github.com/JSethCreates/jellyfin-script-spotlight"><img src="https://github.com/user-attachments/assets/8434bbfe-d0c3-4f4c-abe3-7eb89e65b403"></a>
