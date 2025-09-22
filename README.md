@@ -1,5 +1,4 @@
 # finimalism
-![mockup](https://i.imgur.com/TvTV8jq.jpeg)
 
 # Colour version (example with [Spotlight](https://github.com/JSethCreates/jellyfin-script-spotlight) bar)
 
