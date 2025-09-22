@@ -1,6 +1,6 @@
 /* ================================================
    Seth's Spotlight - A Jellyfin UI Enhancement
-   Version: 1.2.0
+   Version: 1.2.0 (Finimalism)
    Author: J.S.C.
    File: spotlight.css
    ================================================ */
@@ -168,7 +168,7 @@ body {
 .text-container .lorem-ipsum {
 	position: static !important;
 	margin: 0;
-	max-width: 45vw;
+	max-width: fit-content;
 	font-family: "Titillium Web", sans-serif;
 	font-size: 0.9em;
 	font-weight: 300;
@@ -210,7 +210,7 @@ body {
 	white-space: nowrap !important;
 	overflow: hidden;
 	text-overflow: ellipsis;
-	max-width: 45.5vw;
+	max-width: fit-content;
 	font-weight: 500 !important;
 	padding-left: 0.4em;
     padding-right: 0.4em;
