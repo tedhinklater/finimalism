@@ -24,10 +24,10 @@ Just paste the import line into your "Dashboard > General > CSS" section, or "Us
 ![css](https://github.com/user-attachments/assets/f137ab3d-5ab1-431c-ad2f-9541145f9e8d)
 
 Library (Colour version)
-![Screenshot 2025-05-29 235254](https://github.com/user-attachments/assets/c3623674-0164-42fb-aba5-1f6073f10a12)
+<img width="1920" height="1080" alt="Screenshot 2025-09-22 023626" src="https://github.com/user-attachments/assets/759fe07b-055d-45a5-b06e-1b876cc570f4" />
 
 Movie (Colour version)
-![Screenshot 2025-06-12 225933](https://github.com/user-attachments/assets/f54ea170-e38e-4766-b6c3-ee17bfc1929a)
+<img width="1920" height="1080" alt="Screenshot 2025-09-22 023719" src="https://github.com/user-attachments/assets/f3a07cee-a340-48ed-a7a8-cc4b58bddc03" />
 
 Show (Black version)
 ![Screenshot 2025-05-30 172554](https://github.com/user-attachments/assets/df34df73-68c5-4118-afc2-e260b114a7e2)
@@ -39,7 +39,7 @@ Episode (Black version)
 ![Screenshot 2025-05-30 171944](https://github.com/user-attachments/assets/73525fde-6d90-46cb-8805-12aae25325a7)
 
 Player (Colour version)
-![Screenshot 2025-05-28 134014](https://github.com/user-attachments/assets/13ced352-04ab-4901-91e2-b8a594207061)
+<img width="1920" height="1080" alt="Screenshot 2025-09-22 023822" src="https://github.com/user-attachments/assets/b872ec4a-1c8f-4614-b29c-8f986170ced6" />
 
 Everything is just an alteration of the amazing work already put into [Ultrachromic by CTalvio](https://github.com/CTalvio/Ultrachromic). Updated for jellyfin server 10.10.X
 
