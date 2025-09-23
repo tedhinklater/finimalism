@@ -1,6 +1,6 @@
 /* ================================================
    Seth's Spotlight - A Jellyfin UI Enhancement
-   Version: 1.2.0 (Finimalism)
+   Version: 1.2.0
    Author: J.S.C.
    File: spotlight.css
    ================================================ */
@@ -202,7 +202,7 @@ body {
 	border-radius: 0.3em;
 	padding: 0.7em;
 	filter: drop-shadow(0 3px 3px rgba(0, 0, 0, 0.2)) drop-shadow(0 3px 3px rgba(0, 0, 0, 0.35));
-	max-height: 3.5em;
+	max-height: 3.4em;
 }
 
 .text-container .lorem-ipsum,
