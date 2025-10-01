@@ -365,7 +365,7 @@ progress::-webkit-progress-value {
 }
 
 #loginPage {
-	background: url(https://i.imgur.com/3JRhFzi.jpeg) !important; 
+	background: url(https://i.ibb.co/Qv2NWWPs/bg.jpg) !important; 
 	background-size: cover !important;
 }
 
@@ -813,7 +813,7 @@ progress::-webkit-progress-value {
 	margin-bottom: 1.2em !important;
 }
 #loginPage {
-	background: url(https://i.imgur.com/3JRhFzi.jpeg) !important; 
+	background: url(https://i.ibb.co/Qv2NWWPs/bg.jpg) !important; 
 	background-size: cover !important;
 }
 
@@ -3271,7 +3271,7 @@ a[href*="imdb.com"]::before {
 	display: inline-block;
 	width: 50px;
 	height: 25px;
-	background-image: url('https://i.imgur.com/pbNvPMX.png');
+	background-image: url('https://i.ibb.co/WWKKmLcC/imdb.png');
 	background-size: contain;
 	background-repeat: no-repeat;
 	margin-right: 5px;
@@ -3287,7 +3287,7 @@ a[href*="trakt.tv"]::before {
 	display: inline-block;
 	width: 50px;
 	height: 25px;
-	background-image: url('https://i.imgur.com/c1zc8d7.png');
+	background-image: url('https://i.ibb.co/G6p74rm/trakt.png');
 	background-size: contain;
 	background-repeat: no-repeat;
 	margin-right: 5px;
@@ -3303,7 +3303,7 @@ a[href*="themoviedb.org"]::before {
 	display: inline-block;
 	width: 50px;
 	height: 25px;
-	background-image: url('https://i.imgur.com/RlC69qy.png');
+	background-image: url('https://i.ibb.co/Mk9r3tqm/tmdb.png');
 	background-size: contain;
 	background-repeat: no-repeat;
 	margin-right: 5px;
@@ -3319,7 +3319,7 @@ a[href*="themoviedb.org/collection"]::before {
 	display: inline-block;
 	width: 50px;
 	height: 25px;
-	background-image: url('https://i.imgur.com/HDodxf3.png');
+	background-image: url('https://i.ibb.co/9kvKdzj9/tmdbcollection.png');
 	background-size: contain;
 	background-repeat: no-repeat;
 	margin-right: 5px;
@@ -3331,7 +3331,7 @@ a[href*="thetvdb.com"]::before {
 	display: inline-block;
 	width: 50px;
 	height: 25px;
-	background-image: url('https://i.imgur.com/Jp1VNqp.png');
+	background-image: url('https://i.ibb.co/0jKrJ38d/tvdb.png');
 	background-size: contain;
 	background-repeat: no-repeat;
 	margin-right: 5px;
@@ -3347,7 +3347,7 @@ a[href*="tvmaze.com"]::before {
 	display: inline-block;
 	width: 50px;
 	height: 25px;
-	background-image: url('https://i.imgur.com/sd2al6G.png');
+	background-image: url('https://i.ibb.co/YTqbgfJc/tvmaze.png');
 	background-size: contain;
 	background-repeat: no-repeat;
 	margin-right: 5px;
@@ -3363,7 +3363,7 @@ a[href*="anidb.net"]::before {
 	display: inline-block;
 	width: 50px;
 	height: 25px;
-	background-image: url('https://i.imgur.com/7hpyHRn.png');
+	background-image: url('https://i.ibb.co/GNzTYhz/anidb.png');
 	background-size: contain;
 	background-repeat: no-repeat;
 	margin-right: 5px;
@@ -3379,7 +3379,7 @@ a[href*="anilist.co"]::before {
 	display: inline-block;
 	width: 50px;
 	height: 25px;
-	background-image: url('https://i.imgur.com/uidNqNC.png');
+	background-image: url('https://i.ibb.co/tM2cNLZm/anilist.png');
 	background-size: contain;
 	background-repeat: no-repeat;
 	margin-right: 5px;
@@ -3395,7 +3395,7 @@ a[href*="kitsu.app"]::before {
 	display: inline-block;
 	width: 50px;
 	height: 25px;
-	background-image: url('https://i.imgur.com/vOlwRNY.png');
+	background-image: url('https://i.ibb.co/Ng8RmDFg/kitsu.png');
 	background-size: contain;
 	background-repeat: no-repeat;
 	margin-right: 5px;
@@ -3411,7 +3411,7 @@ a[href*="theaudiodb.com"]::before {
 	display: inline-block;
 	width: 50px;
 	height: 25px;
-	background-image: url('https://i.imgur.com/vVrPoJR.png');
+	background-image: url('https://i.ibb.co/TMqCZLtp/theaudiodb.png');
 	background-size: contain;
 	background-repeat: no-repeat;
 	margin-right: 5px;
@@ -3427,7 +3427,7 @@ a[href*="music.apple.com"]::before {
 	display: inline-block;
 	width: 50px;
 	height: 25px;
-	background-image: url('https://i.imgur.com/aVpMB56.png');
+	background-image: url('https://i.ibb.co/wZq3Xw5K/applemusic.png');
 	background-size: contain;
 	background-repeat: no-repeat;
 	margin-right: 5px;
@@ -3443,7 +3443,7 @@ a[href*="musicbrainz.org"]::before {
 	display: inline-block;
 	width: 50px;
 	height: 25px;
-	background-image: url('https://i.imgur.com/xas4Jyq.png');
+	background-image: url('https://i.ibb.co/r2mW8XbQ/musicbrainz.png');
 	background-size: contain;
 	background-repeat: no-repeat;
 	margin-right: 5px;
@@ -3459,7 +3459,7 @@ a[href*="myanimelist.net"]::before {
 	display: inline-block;
 	width: 50px;
 	height: 25px;
-	background-image: url('https://i.imgur.com/atjS4Rn.png');
+	background-image: url('https://i.ibb.co/YFbTWhnQ/myanimelist.png');
 	background-size: contain;
 	background-repeat: no-repeat;
 	margin-right: 5px;
@@ -3475,7 +3475,7 @@ a[href*="kinopoisk.ru"]::before {
 	display: inline-block;
 	width: 50px;
 	height: 25px;
-	background-image: url('https://i.imgur.com/IgsO8OO.png');
+	background-image: url('https://i.ibb.co/N6TZ0yjZ/kinopoisk.png');
 	background-size: contain;
 	background-repeat: no-repeat;
 	margin-right: 5px;
@@ -3491,7 +3491,7 @@ a[href*="shokoanime.com"]::before {
 	display: inline-block;
 	width: 50px;
 	height: 25px;
-	background-image: url('https://i.imgur.com/lNedr1W.png');
+	background-image: url('https://i.ibb.co/mChjxCk6/shokoanime.png');
 	background-size: contain;
 	background-repeat: no-repeat;
 	margin-right: 5px;
