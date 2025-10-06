@@ -3944,8 +3944,10 @@ a[href*="shokoanime.com"] {
 	justify-content: center;
 	gap: 10px;
 	margin: .7em 0;
-	font-size: 0;
+	font-size: 0 !important;
 }
+
+
 
 .layout-mobile #itemDetailPage .itemExternalLinks.focuscontainer-x {
 	justify-content: space-evenly;
