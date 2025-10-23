@@ -13,7 +13,7 @@
 <img width="1920" height="1080" alt="2" src="https://github.com/user-attachments/assets/6ac60d92-c449-40c0-b01f-3b8366f3ab32" />
 
 ```css
-@import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/finimalism-just-black.css");
+@import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/finimalism10.11-black.css");
 
 ```
 
