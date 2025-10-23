@@ -1115,8 +1115,9 @@ div[data-role="controlgroup"] a[data-role="button"] {
 		max-width: 21%;
 	}
 	.layout-mobile #itemDetailPage .card.backdropCard {
-		width:13em;
-		position:absolute!important;
+		width: 20vw;
+		padding-top: 50vh;
+		transform: translateY(-26%);
 	}
 }
 
@@ -1935,6 +1936,8 @@ progress::-webkit-progress-value {
 }
 
 .flex.align-items-center.flex-grow.headerTop {
+	padding-bottom: 20px;
+	height: 2.2em;
 }
 
 .layout-mobile .flex.align-items-center.flex-grow.headerTop {
@@ -2683,6 +2686,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 		width: auto;
 		transform: translateY(-23%);
 		transition: 0s;
+		height: 2em;
 	}
 	
 	.headerTabs.sectionTabs .tabs-viewmenubar.emby-tabs.focusable.scrollX .emby-tab-button.emby-button.emby-tab-button-active {
@@ -3890,7 +3894,7 @@ a[href*="shokoanime.com"] {
   .layout-mobile [dir="ltr"] .mainDetailButtons {
     padding-left: 0%;
     font-size: 0.84em;
-    padding-top: 1em;
+    padding-top: 0.5em;
   }
 }
 
@@ -3902,4 +3906,15 @@ a[href*="shokoanime.com"] {
 
 .layout-mobile h1.itemName, .layout-mobile h1.parentName {
   font-size: 1em;
+  margin-top: 0em;
+}
+
+.layout-mobile .detailPageSecondaryContainer {
+  padding-top: 1em;
+  padding-left: 27vw;
+}
+
+.layout-mobile .subtitle {
+  margin: 0em 0.2em .5em;
+  padding-left: 0;
 }
