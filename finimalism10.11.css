@@ -162,8 +162,8 @@ h2 {
 	display: none !important;
 }
 
-div.itemMiscInfo.itemMiscInfo-primary {
-	font-size: 12pt;
+.layout-mobile div.itemMiscInfo.itemMiscInfo-primary {
+	font-size: 0.8em;
 }
 
 .layout-desktop div.itemMiscInfo.itemMiscInfo-primary,
@@ -815,6 +815,7 @@ progress::-webkit-progress-value {
 }
 .layout-mobile .listItemImageButton {
 	background: rgba(0, 0, 0, 0);
+	height: 2em;
 }
 
 /*Rounded corners on pretty much everything*/
@@ -1892,10 +1893,6 @@ progress::-webkit-progress-value {
 
 .layout-mobile .sectionTitle.sectionTitle-cards {
 	font-size: 105%;
-}
-
-.layout-mobile .emby-button {
-	font-size: 90%;
 }
 
 .itemsContainer.padded-left {
@@ -3909,12 +3906,37 @@ a[href*="shokoanime.com"] {
   margin-top: 0em;
 }
 
-.layout-mobile .detailPageSecondaryContainer {
-  padding-top: 1em;
-  padding-left: 27vw;
+@media (orientation:landscape) {
+    .layout-mobile .detailPageSecondaryContainer {
+    padding-top: 1em;
+    padding-left: 27vw;
+  }
 }
 
 .layout-mobile .subtitle {
-  margin: 0em 0.2em .5em;
+  margin: .5em .2em .5em .2em;
   padding-left: 0;
+}
+
+@media (min-width: 50em) {
+  .listItem-bottomoverview {
+    display: inherit !important;
+  }
+}
+
+.layout-mobile #itemDetailPage .listViewUserDataButtons {
+  -webkit-align-items: center;
+  align-items: center;
+  display: -webkit-flex;
+  display: flex;
+  font-size: 0.7em;
+}
+
+.layout-mobile .detailPagePrimaryContent {
+  padding-top: 0.25em;
+  position: relative;
+}
+
+.layout-mobile [dir="ltr"] .mediaInfoItem {
+  margin: 0 0em 0 0;
 }
