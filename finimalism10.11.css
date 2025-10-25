@@ -250,11 +250,23 @@ span.homeLibraryText {
 }
 
 .layout-mobile .itemName.infoText.parentNameLast {
-	display: block;
-	font-size: 1em;
+	font-size: 0.8em;
 	padding-bottom: 0.25em;
-	max-width: 67vw;
-	width: 67vw;
+	max-width: 59vw;
+	width: 59vw;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.layout-desktop #childrenContent .listItemBodyText.secondary.listItem-overview.listItemBodyText,
+.layout-tv #childrenContent .listItemBodyText.secondary.listItem-overview.listItemBodyText {
+  transition: filter 0.8s, opacity 0.8s;
+  filter: blur(0px);
+  opacity: 1;
+
 }
 
 :root {--selection: 170, 95, 200;}
