@@ -1,7 +1,7 @@
 # NOTICE: If you've updated to Jellyfin v10.11 you'll need the new version of Finimalism
 
 ```css
-@import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/finimalism10.11.css");
+@import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@latest/finimalism10.11.css");
 ```
 
 # Colour version (example with [Spotlight](https://github.com/JSethCreates/jellyfin-script-spotlight) bar)
@@ -13,7 +13,7 @@
 <img width="1920" height="1080" alt="2" src="https://github.com/user-attachments/assets/6ac60d92-c449-40c0-b01f-3b8366f3ab32" />
 
 ```css
-@import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/finimalism10.11-black.css");
+@import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@latest/finimalism10.11-black.css");
 
 ```
 
