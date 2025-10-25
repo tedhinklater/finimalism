@@ -252,13 +252,18 @@ span.homeLibraryText {
 .layout-mobile .itemName.infoText.parentNameLast {
 	font-size: 0.8em;
 	padding-bottom: 0.25em;
-	max-width: 59vw;
-	width: 59vw;
 	display: -webkit-box;
 	-webkit-box-orient: vertical;
 	-webkit-line-clamp: 2;
 	overflow: hidden;
 	text-overflow: ellipsis;
+}
+
+@media (max-width:800x) {
+	.layout-mobile .itemName.infoText.parentNameLast {
+		max-width: 59vw;
+		width: 59vw;
+	}
 }
 
 .layout-desktop #childrenContent .listItemBodyText.secondary.listItem-overview.listItemBodyText,
@@ -1078,14 +1083,13 @@ div[data-role="controlgroup"] a[data-role="button"] {
 @media (orientation: landscape) {
 	.layout-mobile .detailLogo {
 		position: absolute;
-		left: 65%;
+		left: 61vw;
 		top: 26%;
 		transform: translate(-50%, -50%);
 		display: block;
 		-webkit-filter: drop-shadow(0 0 10px rgba(2, 2, 2, 0.75));
 		filter: drop-shadow(0 0 10px rgba(2, 2, 2, 0.75));
 		flex-shrink: 0;
-		background-position: 0 70%;
 		margin: 0;
 		width: 50vw !important;
 		height: 30vh !important;
@@ -1095,14 +1099,12 @@ div[data-role="controlgroup"] a[data-role="button"] {
 @media (orientation: landscape) and (min-width:1000px) and (min-width:800px) {
 	.layout-mobile .detailLogo {
 		position: absolute;
-		left: 65%;
-		top: 8%;
+		left: 61vw;
 		transform: translate(-50%, -50%);
 		display: block;
 		-webkit-filter: drop-shadow(0 0 10px rgba(2, 2, 2, 0.75));
 		filter: drop-shadow(0 0 10px rgba(2, 2, 2, 0.75));
 		flex-shrink: 0;
-		background-position: 0 70%;
 		margin: 0;
 		width: 50vw !important;
 		height: 30vh !important;
@@ -2236,7 +2238,7 @@ button.is-emby-button emby-button {
 
 @media (orientation: portrait) and (min-width: 800px) {
 	.layout-mobile .itemMiscInfo.itemMiscInfo-primary {
-		padding-left: 21vw;
+		padding-left: 14vw;
 	}
 	.layout-mobile [dir="ltr"] .mainDetailButtons {
 		justify-content: space-evenly;
@@ -2259,7 +2261,7 @@ button.is-emby-button emby-button {
 @media (orientation: landscape) and (max-width: 1000px) {
 	.nameContainer {
 		max-width: 60vw;
-		margin-left: 1em;
+		margin-left: 2em;
 	}
 }
 
