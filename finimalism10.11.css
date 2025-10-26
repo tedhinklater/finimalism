@@ -1850,11 +1850,6 @@ progress::-webkit-progress-value {
 	font-size: 12pt;
 }
 
-.listItemIcon {
-	display: none;
-	padding: 10px;
-}
-
 #childrenContent .childrenItemsContainer.itemsContainer.padded-right.vertical-list .listItem.listItem-largeImage.listItem-withContentWrapper .listItem-content .listItemImage.listItemImage-large.itemAction.lazy.non-blurhashable.lazy-image-fadein-fast {
 	transition: box-shadow 0.3s;
 }
@@ -3444,7 +3439,7 @@ a[href*="shokoanime.com"] {
 
 .layout-desktop [dir="ltr"] .selectArrowContainer,
 .layout-tv [dir="ltr"] .selectArrowContainer {
-  right: 3em;
+  right: 0.5em;
 }
 
 .layout-desktop #itemDetailPage .nameContainer .parentName.focuscontainer-x .button-link.itemAction.emby-button,
@@ -3515,7 +3510,8 @@ a[href*="shokoanime.com"] {
         color: #fffa !important;
 }
 
-.actionSheetScroller .listItem.listItem-button:hover .listItemBodyText {
+.actionSheetScroller .listItem.listItem-button:hover .listItemBodyText,
+.actionSheetScroller .listItem.listItem-button:hover .listItemIcon {
         color: #000;
 }
 
