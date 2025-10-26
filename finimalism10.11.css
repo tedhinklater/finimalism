@@ -3424,7 +3424,8 @@ a[href*="shokoanime.com"] {
 	text-overflow: ellipsis;
 	white-space: normal;
 	filter: drop-shadow(-2px 4px 1px #0005);
-	padding-bottom: 0.75em;
+	margin-top: -0.75em;
+	line-height: 1em;
 }
 
 .layout-desktop .itemName.infoText.originalTitle,
