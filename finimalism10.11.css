@@ -2358,7 +2358,7 @@ button.is-emby-button emby-button {
 
 .infoWrapper {
 	min-width: 52%;
-	max-width: 100%;
+	max-width: 96%;
 	max-height: 5.5em;
 }
 
@@ -3796,15 +3796,15 @@ a[href*="shokoanime.com"] {
 }
 
 [dir="ltr"] .detailPagePrimaryContent {
-  padding-left: 29.45vw;
+  padding-left: 27vw;
 }
 
 .layout-desktop [dir="ltr"] .detailRibbon, .layout-tv [dir="ltr"] .detailRibbon {
-  padding-left: 29.45vw;
+  padding-left: 27vw;
 }
 
 [dir="ltr"] .detailPageContent {
-  padding-left: 29.45vw;
+  padding-left: 27vw;
 }
 
 
