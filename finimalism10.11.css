@@ -1924,6 +1924,7 @@ progress::-webkit-progress-value {
 	width: 20em;
 	top: 3.5em;
 	left: 5em;
+	min-width: 265px;
 }
 
 .layout-tv .detailImageContainer .card {
