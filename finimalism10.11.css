@@ -1685,7 +1685,7 @@ progress::-webkit-progress-value {
 	#tvRecommendedPage,
 	#musicRecommendedPage {
 		margin-top: 0em;
-		padding-top: 4em !important;
+		padding-top: 2.5em !important;
 	}
 }
 
@@ -1844,7 +1844,7 @@ progress::-webkit-progress-value {
 .listItem {
 	text-align: center;
 	padding: 10px;
-	font-size: 12pt;
+	font-size: 1em;
 }
 
 #childrenContent .childrenItemsContainer.itemsContainer.padded-right.vertical-list .listItem.listItem-largeImage.listItem-withContentWrapper .listItem-content .listItemImage.listItemImage-large.itemAction.lazy.non-blurhashable.lazy-image-fadein-fast {
@@ -1926,13 +1926,14 @@ progress::-webkit-progress-value {
 }
 
 .layout-tv .detailImageContainer .card {
+	width: 18em;
+	top: 3.2em;
+	left: 5.7em;
 }
 
-.layout-desktop #itemDetailPage .card.squareCard {
-	top: 13em;
-}
-
+.layout-desktop #itemDetailPage .card.squareCard,
 .layout-tv #itemDetailPage .card.squareCard {
+	top: 13em;
 }
 
 .layout-desktop .detailImageContainer .card.backdropCard,
@@ -1992,7 +1993,8 @@ progress::-webkit-progress-value {
 }
 
 @media (max-width:85em) {
-	#moviesTab .layout-desktop .headerTop {
+	#moviesTab .layout-desktop .headerTop,
+	#moviesTab .layout-tv .headerTop {
 		padding:.8em .8em
 	}
 	.headerTabs {
@@ -2448,7 +2450,10 @@ button.is-emby-button emby-button {
 
 .layout-desktop .overflowBackdropCard, .layout-tv .overflowBackdropCard,
 .layout-desktop .overflowPortraitCard, .layout-tv .overflowPortraitCard, 
-.layout-desktop .overflowSquareCard, .layout-tv .overflowSquareCard {
+.layout-desktop .overflowSquareCard, .layout-tv .overflowSquareCard,
+.layout-tv .overflowBackdropCard, .layout-tv .overflowBackdropCard,
+.layout-tv .overflowPortraitCard, .layout-tv .overflowPortraitCard, 
+.layout-tv .overflowSquareCard, .layout-tv .overflowSquareCard {
 	filter: drop-shadow(0px 2px 1px rgba(0, 0, 0, 0.68));
 }
 
@@ -3015,7 +3020,8 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 }
 
 
-.layout-desktop .childrenItemsContainer.itemsContainer.padded-right.vertical-list {
+.layout-desktop .childrenItemsContainer.itemsContainer.padded-right.vertical-list,
+.layout-tv .childrenItemsContainer.itemsContainer.padded-right.vertical-list {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 }
@@ -3028,13 +3034,15 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 }
 
 @media all and (max-width: 2000px) {
-	.layout-desktop .childrenItemsContainer.itemsContainer.padded-right.vertical-list {
+	.layout-desktop .childrenItemsContainer.itemsContainer.padded-right.vertical-list,
+	.layout-tv .childrenItemsContainer.itemsContainer.padded-right.vertical-list {
 		grid-template-columns: 1fr 1fr 1fr;
 	}
 }
 
 @media all and (max-width: 1000px) {
-  .layout-desktop .childrenItemsContainer.itemsContainer.padded-right.vertical-list {
+  .layout-desktop .childrenItemsContainer.itemsContainer.padded-right.vertical-list,
+  .layout-tv .childrenItemsContainer.itemsContainer.padded-right.vertical-list {
 	grid-template-columns: 1fr 1fr;
 	}
 }
@@ -3043,7 +3051,8 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 	grid-template-columns: 1fr;
 }
 
-.layout-desktop #itemDetailPage .listItem-content {
+.layout-desktop #itemDetailPage .listItem-content,
+.layout-tv #itemDetailPage .listItem-content {
 	border-radius: var(--rounding);
 	overflow: hidden;
 	transition: background 0.15s ease-in-out;
@@ -3054,17 +3063,20 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 	-o-transition: background 0.15s ease-in-out;
 }
 
-.layout-desktop .listItemImage.listItemImage-large {
+.layout-desktop .listItemImage.listItemImage-large,
+.layout-tv .listItemImage.listItemImage-large {
 	width: 100%;
 	margin: 0;
 }
 
-.layout-desktop .listItem-overview.listItemBodyText {
+.layout-desktop .listItem-overview.listItemBodyText,
+.layout-desktop .listItem-overview.listItemBodyText{
 	height: 5.5em !important;
 	font-size: 1em !important;
 }
 
-.layout-desktop #itemDetailPage .listItem {
+.layout-desktop #itemDetailPage .listItem,
+.layout-tv #itemDetailPage .listItem {
 	position: relative;
 	height: -webkit-fit-content;
 	height: -moz-fit-content;
@@ -3072,11 +3084,13 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 	border-radius: var(--rounding);
 }
 
-.layout-desktop itemDetailPage .secondary.listItem-overview.listItemBodyText {
+.layout-desktop itemDetailPage .secondary.listItem-overview.listItemBodyText,
+.layout-tv itemDetailPage .secondary.listItem-overview.listItemBodyText {
 	height: 100%;
 }
 
-.layout-desktop .listItem[data-mediatype="Audio"] {
+.layout-desktop .listItem[data-mediatype="Audio"],
+.layout-tv .listItem[data-mediatype="Audio"] {
 	padding: 0 1em;
 	border-radius: var(--rounding) !important;
 	-webkit-border-radius: var(--rounding) !important;
@@ -3085,15 +3099,19 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 	-o-border-radius: var(--rounding) !important;
 }
 
-.layout-desktop .listItemImageButton {
+.layout-desktop .listItemImageButton,
+.layout-tv .listItemImageButton {
 	margin: auto;
 	font-size: 1.6em !important;
 }
 .layout-desktop .playlistSection .listItemBody.itemAction,
-.layout-desktop .playlistSection .listItem-bottomoverview.secondary {
+.layout-desktop .playlistSection .listItem-bottomoverview.secondary,
+.layout-tv .playlistSection .listItemBody.itemAction,
+.layout-tv .playlistSection .listItem-bottomoverview.secondary {
 	z-index: 1;
 }
-.layout-desktop .listItem-bottomoverview.secondary {
+.layout-desktop .listItem-bottomoverview.secondary,
+.layout-tv .listItem-bottomoverview.secondary {
 	text-align: justify;
 }
 
@@ -3109,10 +3127,6 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 .layout-desktop .trackSelections .selectContainer .selectLabel,
 .layout-tv .trackSelections .selectContainer .selectLabel {
 	text-align: center;
-}
-
-.layout-tv .itemDetailPage {
-	padding-top: 38.5em !important;
 }
 
 @media (max-width: 32em) {
@@ -3378,6 +3392,10 @@ a[href*="shokoanime.com"] {
 	border-top-left-radius: 1em;
 }
 
+.layout-tv .mainDetailButtons.focuscontainer-x {
+	top: 15.62em;
+}
+
 .layout-desktop .cardPadder,
 .layout-tv .cardPadder {
 	border-radius: unset;
@@ -3424,11 +3442,19 @@ a[href*="shokoanime.com"] {
 }
 
 .layout-desktop .itemName.infoText.originalTitle,
-.layout-desktop .itemName.infoText.subtitle,
 .layout-tv .itemName.infoText.originalTitle {
 	position: absolute;
 	top: 3em;
 	left: 1.2em;
+	font-size: 1.1em;
+	width: 21em;
+}
+
+.layout-desktop .itemName.infoText.subtitle,
+.layout-tv .itemName.infoText.subtitle {
+	position: absolute;
+	top: 5em;
+	left: 2.2em;
 	font-size: 1.1em;
 	width: 21em;
 }
@@ -3480,7 +3506,8 @@ a[href*="shokoanime.com"] {
 	margin-top: 2em;
 } 
 
-.layout-desktop .musicParentName, .layout-tv .musicParentName {
+.layout-desktop .musicParentName, .layout-tv .musicParentName,
+.layout-tv .musicParentName, .layout-tv .musicParentName {
 	position: absolute;
 	left: 10.2em;
 	top: 3em;
@@ -3490,7 +3517,7 @@ a[href*="shokoanime.com"] {
 }
 
 .layout-desktop #listChildrenCollapsible #childrenContent .itemsContainer:has(.listItem[data-type="Episode"]) .listViewUserDataButtons,
-.layout-tv      #listChildrenCollapsible #childrenContent .itemsContainer:has(.listItem[data-type="Episode"]) .listViewUserDataButtons {
+.layout-tv #listChildrenCollapsible #childrenContent .itemsContainer:has(.listItem[data-type="Episode"]) .listViewUserDataButtons {
   justify-content: space-evenly;
   width: 100% !important;
 }
@@ -3858,9 +3885,7 @@ a[href*="shokoanime.com"] {
 }
 
 .layout-desktop #listChildrenCollapsible.verticalSection-extrabottompadding #childrenContent .itemsContainer:has(.listItem[data-type="Episode"]),
-.layout-tv #listChildrenCollapsible.verticalSection-extrabottompadding #childrenContent .itemsContainer:has(.listItem[data-type="Episode"]),
 .layout-desktop #listChildrenCollapsible.verticalSection-extrabottompadding #childrenContent .itemsContainer:has(.listItem-largeImage),
-.layout-tv #listChildrenCollapsible.verticalSection-extrabottompadding #childrenContent .itemsContainer:has(.listItem-largeImage)
 {
   display: grid !important;
   grid-template-columns: repeat(3, 1fr);
@@ -3957,12 +3982,41 @@ a[href*="shokoanime.com"] {
 }
 
 @media (max-width:1566px) and (min-height:720px) {
-	.layout-desktop #itemDetailPage .detailPagePrimaryContent {
+	.layout-desktop #itemDetailPage .detailPagePrimaryContent,
+	.layout-tv #itemDetailPage .detailPagePrimaryContent {
 		padding-left: 28em;
 	}
-	.layout-desktop div.itemMiscInfo.itemMiscInfo-primary, .layout-tv div.itemMiscInfo.itemMiscInfo-primary {
+	.layout-desktop div.itemMiscInfo.itemMiscInfo-primary, .layout-tv div.itemMiscInfo.itemMiscInfo-primary,
+	.layout-tv div.itemMiscInfo.itemMiscInfo-primary, .layout-tv div.itemMiscInfo.itemMiscInfo-primary {
 		left: 20em;
 		position: absolute;
 		top: 0em;
 	}
+}
+
+@media (min-width: 2000px) and (min-height: 1200px) {
+	body {
+		font-size: 200% !important;
+	}
+}
+
+/*.layout-tv .itemDetailPage {
+	padding-top: 38.5em !important;
+}*/
+
+.layout-tv .emby-button.show-focus:focus {
+  background:#00a4dc;
+  color:#fff;
+  width:auto;
+  height: auto;
+}
+
+.layout-tv .detailPageWrapperContainer {
+	padding-top: 30.5em !important;
+}
+
+.currentTimeText {
+  padding-left: .8em;
+  padding-right: .8em;
+  color: #fff;
 }
