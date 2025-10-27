@@ -1045,17 +1045,15 @@ div[data-role="controlgroup"] a[data-role="button"] {
   .layout-desktop .detailLogo,
   .layout-tv .detailLogo {
 		position: absolute;
-		left: 60vw;
-		margin-right: 10%;
+		width: 50vw;
 		display: block;
-		-webkit-filter: drop-shadow(0 0 10px rgba(2, 2, 2, 0.75));
+		right: unset;
 		filter: drop-shadow(0 0 10px rgba(2, 2, 2, 0.75));
-		width: 64vw;
-		max-height: 21em;
-		height: 26vw;
-		top: 10em;
-		margin-bottom: 7.7em;
-		transform: translateX(-50%);
+		left: 60%;
+		transform: translateX(-50%) translateY(-50%);
+		top: 19em;
+		max-height: 25em;
+		height: 25em;
 	}
   .layout-tv .detailLogo {
 		margin-top: -3em;
@@ -3956,4 +3954,15 @@ a[href*="shokoanime.com"] {
 
 .layout-mobile [dir="ltr"] .mediaInfoItem {
   margin: 0 0em 0 0;
+}
+
+@media (max-width:1566px) and (min-height:720px) {
+	.layout-desktop #itemDetailPage .detailPagePrimaryContent {
+		padding-left: 28em;
+	}
+	.layout-desktop div.itemMiscInfo.itemMiscInfo-primary, .layout-tv div.itemMiscInfo.itemMiscInfo-primary {
+		left: 20em;
+		position: absolute;
+		top: 0em;
+	}
 }
