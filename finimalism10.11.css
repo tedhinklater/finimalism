@@ -1923,7 +1923,7 @@ progress::-webkit-progress-value {
 .layout-desktop .detailImageContainer .card {
 	width: 20em;
 	top: 3.5em;
-	left: 6.35em;
+	left: 6.3em;
 	min-width: 265px;
 }
 
@@ -2640,7 +2640,7 @@ button.is-emby-button emby-button {
 	filter: drop-shadow(0px 4px 1px #0005);
 	justify-content: space-between;
 	padding-top: 0.85em;
-	width: 65vw;
+	width: 62.5vw;
 }
 
 .layout-desktop .itemName.infoText.subtitle.focuscontainer-x,
