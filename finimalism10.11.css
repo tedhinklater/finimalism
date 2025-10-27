@@ -1065,7 +1065,7 @@ div[data-role="controlgroup"] a[data-role="button"] {
 .layout-desktop #itemDetailPage .nameContainer,
 .layout-tv #itemDetailPage .nameContainer {
 	position: fixed;
-	left: 2em;
+	left: 3.5em;
 	top: 37.25em;
 	width: 26em;
 	justify-content: center;
@@ -1923,7 +1923,7 @@ progress::-webkit-progress-value {
 .layout-desktop .detailImageContainer .card {
 	width: 20em;
 	top: 3.5em;
-	left: 5em;
+	left: 6.35em;
 	min-width: 265px;
 }
 
@@ -1931,6 +1931,7 @@ progress::-webkit-progress-value {
 }
 
 .layout-desktop #itemDetailPage .card.squareCard {
+	top: 13em;
 }
 
 .layout-tv #itemDetailPage .card.squareCard {
@@ -2639,14 +2640,15 @@ button.is-emby-button emby-button {
 	filter: drop-shadow(0px 4px 1px #0005);
 	justify-content: space-between;
 	padding-top: 0.85em;
+	width: 65vw;
 }
 
 .layout-desktop .itemName.infoText.subtitle.focuscontainer-x,
 .layout-tv .itemName.infoText.subtitle.focuscontainer-x {
 	text-align: center;
 	position: fixed;
-	top: 18.35em;
-	left: 6.25em;
+	top: 19.35em;
+	left: 7.5em;
 	width: 18em;
 	filter: drop-shadow(-1px 1px 2px black);
 	line-height: 0.8em;
@@ -3059,11 +3061,6 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 	margin: 0;
 }
 
-.layout-desktop .listViewUserDataButtons {
-	justify-content: space-evenly;
-	width: 100% !important;
-}
-
 .layout-desktop .listItem-overview.listItemBodyText {
 	height: 5.5em !important;
 	font-size: 1em !important;
@@ -3371,7 +3368,7 @@ a[href*="shokoanime.com"] {
 .layout-desktop .mainDetailButtons.focuscontainer-x,
 .layout-tv .mainDetailButtons.focuscontainer-x {
 	position: fixed;
-	left: 4.15em;
+	left: 5.25em;
 	width: 16.7em;
 	justify-content: space-evenly;
 	top: 14.62em;
@@ -3393,7 +3390,7 @@ a[href*="shokoanime.com"] {
 	color: #000a;
 	position: fixed;
 	width: 21.6em;
-	left: 5.5em;
+	left: 7em;
 	top: 56.5em;
 }
 
@@ -3433,7 +3430,7 @@ a[href*="shokoanime.com"] {
 .layout-tv .itemName.infoText.originalTitle {
 	position: absolute;
 	top: 3em;
-	left: 2.5em;
+	left: 1.2em;
 	font-size: 1.1em;
 	width: 21em;
 }
@@ -3485,9 +3482,19 @@ a[href*="shokoanime.com"] {
 	margin-top: 2em;
 } 
 
-.layout-desktop .musicParentName,
-.layout-tv .musicParentName {
+.layout-desktop .musicParentName, .layout-tv .musicParentName {
 	position: absolute;
+	left: 10.2em;
+	top: 3em;
+	transform: translateX(-50%);
+	font-size: 1.25em;
+	width: 17em;
+}
+
+.layout-desktop #listChildrenCollapsible #childrenContent .itemsContainer:has(.listItem[data-type="Episode"]) .listViewUserDataButtons,
+.layout-tv      #listChildrenCollapsible #childrenContent .itemsContainer:has(.listItem[data-type="Episode"]) .listViewUserDataButtons {
+  justify-content: space-evenly;
+  width: 100% !important;
 }
 
 /*.dialogContainer .listItem:hover .listItemBody {
@@ -3852,22 +3859,22 @@ a[href*="shokoanime.com"] {
 	width: 100vw;
 }
 
-.layout-desktop #listChildrenCollapsible.verticalSection-extrabottompadding #childrenContent .itemsContainer,
-.layout-tv #listChildrenCollapsible.verticalSection-extrabottompadding #childrenContent .itemsContainer {
+.layout-desktop #listChildrenCollapsible.verticalSection-extrabottompadding #childrenContent .itemsContainer:has(.listItem[data-type="Episode"]),
+.layout-tv #listChildrenCollapsible.verticalSection-extrabottompadding #childrenContent .itemsContainer:has(.listItem[data-type="Episode"]),
+.layout-desktop #listChildrenCollapsible.verticalSection-extrabottompadding #childrenContent .itemsContainer:has(.listItem-largeImage),
+.layout-tv #listChildrenCollapsible.verticalSection-extrabottompadding #childrenContent .itemsContainer:has(.listItem-largeImage)
+{
   display: grid !important;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
   padding: 1rem;
 }
 
-
-.layout-desktop #childrenContent .listItem,
-.layout-tv #childrenContent .listItem {
-
+.layout-desktop #listChildrenCollapsible.verticalSection-extrabottompadding #childrenContent .listViewUserDataButtons:has(.listItem-largeImage),
+.layout-tv #listChildrenCollapsible.verticalSection-extrabottompadding #childrenContent .listViewUserDataButtons:has(.listItem-largeImage)
+{
+  justify-content: space-evenly;
   width: 100% !important;
-  margin: 0 !important;
-  display: flex;
-  flex-direction: column;
 }
 
 .layout-desktop #childrenContent .listItemImage,
@@ -3880,7 +3887,6 @@ a[href*="shokoanime.com"] {
 
 .layout-desktop #childrenContent,
 .layout-tv #childrenContent {
-
 	width: 67vw;
 }
 
