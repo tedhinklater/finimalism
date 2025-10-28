@@ -309,3 +309,7 @@
   z-index: -1;
   backdrop-filter: saturate(25%) contrast(150%) blur(2px);
 }
+
+.layout-tv .mainDetailButtons.focuscontainer-x {
+  background: #000a;
+}
