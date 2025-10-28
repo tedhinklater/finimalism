@@ -1928,7 +1928,7 @@ progress::-webkit-progress-value {
 .layout-tv .detailImageContainer .card {
 	width: 18em;
 	top: 3.2em;
-	left: 5.7em;
+	left: 7em;
 }
 
 .layout-desktop #itemDetailPage .card.squareCard,
@@ -2410,7 +2410,7 @@ button.is-emby-button emby-button {
 
 .trackSelections .selectContainer {
 	font-size: 0.85em;
-	overflow: hidden;
+	/*overflow: hidden;*/
 	}
 }
 
@@ -3885,13 +3885,23 @@ a[href*="shokoanime.com"] {
 }
 
 .layout-desktop #listChildrenCollapsible.verticalSection-extrabottompadding #childrenContent .itemsContainer:has(.listItem[data-type="Episode"]),
-.layout-desktop #listChildrenCollapsible.verticalSection-extrabottompadding #childrenContent .itemsContainer:has(.listItem-largeImage),
+.layout-desktop #listChildrenCollapsible.verticalSection-extrabottompadding #childrenContent .itemsContainer:has(.listItem-largeImage)
 {
   display: grid !important;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
   padding: 1rem;
 }
+
+.layout-tv #listChildrenCollapsible.verticalSection-extrabottompadding #childrenContent .itemsContainer:has(.listItem[data-type="Episode"]),
+.layout-tv #listChildrenCollapsible.verticalSection-extrabottompadding #childrenContent .itemsContainer:has(.listItem-largeImage)
+{
+  display: grid !important;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 0rem;
+  padding: 1rem;
+}
+
 
 .layout-desktop #listChildrenCollapsible.verticalSection-extrabottompadding #childrenContent .listViewUserDataButtons:has(.listItem-largeImage),
 .layout-tv #listChildrenCollapsible.verticalSection-extrabottompadding #childrenContent .listViewUserDataButtons:has(.listItem-largeImage)
@@ -4009,6 +4019,13 @@ a[href*="shokoanime.com"] {
   color:#fff;
   width:auto;
   height: auto;
+  transform: scale(1.02);
+}
+
+.layout-tv .card.show-focus:focus {
+  transform: scale(0.95);
+  transition: transform 0.1s ease;
+  filter: drop-shadow(0em -0.1em 0.35em rgba(255, 255, 255, 0.75)) !important;
 }
 
 .layout-tv .detailPageWrapperContainer {
@@ -4019,4 +4036,42 @@ a[href*="shokoanime.com"] {
   padding-left: .8em;
   padding-right: .8em;
   color: #fff;
+}
+
+.itemsContainer-tv > .portraitCard, .itemsContainer-tv > .squareCard {
+  width: 15%;
+  margin-bottom: 1em;
+}
+
+.layout-tv .detailImageContainer .card.backdropCard {
+  top: 20em !important;
+}
+
+.layout-tv .mainDetailButtons.focuscontainer-x {
+  top: 14.62em;
+  padding-top: 13em;
+  left: 6.5em;
+}
+
+.layout-tv .itemName.infoText.subtitle.focuscontainer-x {
+  top: 17.2em;
+  left: 7.75em;
+  width: 17em;
+}
+
+.listItemImage-large-tv {
+	height: 10.98em !important;
+	width: 19.52em !important;
+}
+
+.layout-tv .overflowBackdropCard {
+	max-width: 21em;
+}
+
+.layout-tv #childrenContent .listItemBody {
+  width: 200%;
+}
+
+.layout-tv #itemDetailPage .listItem {
+  font-size: 1em;
 }
