@@ -46,8 +46,7 @@
 	background-size: cover;
 	opacity: 1;
 	z-index: -1;
-        backdrop-filter: saturate(25%) contrast(150%) blur(2px);
-        filter: drop-shadow(0px 3px 4px #000a);
+    backdrop-filter: saturate(25%) contrast(150%) blur(2px);
 }
 
 .detailPageSecondaryContainer {
@@ -66,7 +65,7 @@
 	background-size: cover;
 	opacity: 1;
 	z-index: -1;
-        backdrop-filter: saturate(0%) contrast(200%) blur(1px);
+    backdrop-filter: saturate(0%) contrast(200%) blur(1px);
 }
 
 .raised.homeLibraryButton {
@@ -309,5 +308,4 @@
   opacity: 1;
   z-index: -1;
   backdrop-filter: saturate(25%) contrast(150%) blur(2px);
-  filter: drop-shadow(0px 3px 4px #000a);
 }
