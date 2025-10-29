@@ -4098,3 +4098,7 @@ a[href*="shokoanime.com"] {
 .layout-tv .detailsGroupItem {
 	max-width: 66vw;
 }
+
+.pageTitleWithLogo {
+  width: 7.5em;
+}
