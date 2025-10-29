@@ -18,23 +18,23 @@
 ```
 
 Just paste the import line into your "Dashboard > General > CSS" section, or "User Settings > Display > CSS" section.
+<img width="1920" height="1080" alt="Screenshot from 2025-10-29 14-47-14" src="https://github.com/user-attachments/assets/89c429b8-a2bb-4e71-8ef0-26a64c38b14c" />
 
-![css](https://github.com/user-attachments/assets/f137ab3d-5ab1-431c-ad2f-9541145f9e8d)
 
 Library (Colour version)
-<img width="1920" height="1080" alt="Screenshot 2025-09-22 023626" src="https://github.com/user-attachments/assets/759fe07b-055d-45a5-b06e-1b876cc570f4" />
+<img width="1920" height="1080" alt="Screenshot 2025-09-22 023626" src="https://github.com/user-attachments/assets/7799f8d7-eee1-4635-b16d-c696506569ea" />
 
 Movie (Colour version)
-<img width="1920" height="1080" alt="Screenshot 2025-09-22 023719" src="https://github.com/user-attachments/assets/f3a07cee-a340-48ed-a7a8-cc4b58bddc03" />
+<img width="1920" height="1080" alt="Screenshot 2025-09-22 023719" src="https://github.com/user-attachments/assets/9eebdb39-6c1a-4752-85d2-358bda0532b5" />
 
 Show (Black version)
-![Screenshot 2025-05-30 172554](https://github.com/user-attachments/assets/df34df73-68c5-4118-afc2-e260b114a7e2)
+<img width="1920" height="1080" alt="Screenshot from 2025-10-29 14-38-07" src="https://github.com/user-attachments/assets/a932d3e5-b0cf-4a11-b5bb-79177d7fd2ca" />
 
 Season (Black version)
-![Screenshot 2025-05-30 173851](https://github.com/user-attachments/assets/6ba4b142-7675-4a17-a948-937679eebcc2)
+<img width="1920" height="1080" alt="Screenshot from 2025-10-29 14-40-02" src="https://github.com/user-attachments/assets/7ab36b76-0608-4a38-9f92-08eb7b3c3a6b" />
 
 Episode (Black version)
-![Screenshot 2025-05-30 171944](https://github.com/user-attachments/assets/73525fde-6d90-46cb-8805-12aae25325a7)
+<img width="1920" height="1080" alt="Screenshot from 2025-10-29 14-41-33" src="https://github.com/user-attachments/assets/64ee66ae-2921-409d-b202-8e3401835b8c" />
 
 Player (Colour version)
 <img width="1920" height="1080" alt="Screenshot 2025-09-22 023822" src="https://github.com/user-attachments/assets/b872ec4a-1c8f-4614-b29c-8f986170ced6" />
