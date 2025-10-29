@@ -1592,12 +1592,12 @@ progress::-webkit-progress-value {
 
 .layout-desktop .overflowPortraitCard,
 .layout-tv .overflowPortraitCard {
-	width: 13.13em;
+	width: 14em;
 }
 
 .layout-desktop .overflowSquareCard,
 .layout-tv .overflowSquareCard {
-	width: 13.13em;
+	width: 14em;
 }
 
 @media (orientation: portrait) {
@@ -1641,7 +1641,7 @@ progress::-webkit-progress-value {
 	white-space: normal;
 	margin-left: 0em;
 	font-weight: 400;
-	padding-top: 0.25em;
+	padding-top: 0.5em;
 }
 
 @media (orientation: portrait) {
@@ -1685,7 +1685,7 @@ progress::-webkit-progress-value {
 	#tvRecommendedPage,
 	#musicRecommendedPage {
 		margin-top: 0em;
-		padding-top: 2.5em !important;
+		padding-top: 3.5em !important;
 	}
 }
 
@@ -1721,6 +1721,11 @@ progress::-webkit-progress-value {
 	box-shadow: 0px 0px 5px #fff9;
 	border: solid 1px #fff;
 }
+
+.listItem:hover {
+	box-shadow: 0px 0px 5px #fff9;
+}
+
 .cardOverlayContainer {
 	border: solid 1px #fff !important;
 }
@@ -2124,7 +2129,7 @@ button.is-emby-button emby-button {
 .layout-desktop div:not(.sectionTitleContainer-cards) > .sectionTitle-cards,
 .layout-tv div:not(.sectionTitleContainer-cards) > .sectionTitle-cards {
 	margin: 0;
-	padding-top: .5em;
+	padding-top: 1.25em;
 }
 
 .layout-mobile .homePage .section1.verticalSection .itemsContainer .card.overflowBackdropCard {
@@ -2932,37 +2937,21 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 }
 
 #homeTab button[data-direction="left"] {
-	right: 6.5em;
-	position: absolute;
-	top: 0em;
-	z-index: 50;
 	font-size: 1.5em;
 	color: #fff;
-	height: 1.5em;
-	border-radius: 0.1em;
 	cursor: pointer;
-	opacity: 0.1;
-	margin: 0;
-	width: 1.5em;;
-	padding: 0;
-	padding-top: 1em;
+	opacity: 0.2;
+	margin-right: 2em;
+	margin-top: 0.35em;
 }
 
 #homeTab button[data-direction="right"] {
-	right: 0.5em;
-	position: absolute;
-	top: 0em;
-	z-index: 50;
-	font-size: 1.5em;;
+	font-size: 1.5em;
 	color: #fff;
-	height: 1.5em;;
-	border-radius: 0.1em;
 	cursor: pointer;
-	opacity: 0.1;
-	margin: 0;
-	width: 1.5em;;
-	padding: 0;
-	padding-top: 1em;
+	opacity: 0.2;
+	margin-right: -2.1em;
+	margin-top: 0.35em;
 }
 
 #homeTab button[data-direction="left"]:hover {
@@ -3625,7 +3614,6 @@ a[href*="shokoanime.com"] {
 
 .layout-desktop #homeTab .verticalSection.section0.emby-scroller-container,
 .layout-tv #homeTab .verticalSection.section0.emby-scroller-container {
-  display: initial !important;
 }
 
 .layout-desktop #homeTab .verticalSection.section2 .emby-scroller {
@@ -3678,24 +3666,31 @@ a[href*="shokoanime.com"] {
 }
 
 #itemDetailPage button[data-direction="left"] {
-	position: absolute;
-	z-index: 50;
 	font-size: 1.5em;
 	color: #fff;
-	border-radius: 0.1em;
 	cursor: pointer;
-	opacity: 0.1;
+	opacity: 0.2;
+	margin-right: 2em;
+	margin-top: 0.35em;
 }
 
 #itemDetailPage button[data-direction="right"] {
-	right: -1em;
-	position: absolute;
-	z-index: 50;
 	font-size: 1.5em;
 	color: #fff;
-	border-radius: 0.1em;
 	cursor: pointer;
-	opacity: 0.1;
+	opacity: 0.2;
+	margin-right: 0em;
+	margin-top: 0.35em;
+}
+
+#itemDetailPage button[data-direction="left"]:hover {
+	color: #fff !important;
+	opacity: 1;
+}
+
+#itemDetailPage button[data-direction="right"]:hover {
+	color: #fff !important;
+	opacity: 1;
 }
 
 .layout-desktop #itemDetailPage .detailVerticalSection,
