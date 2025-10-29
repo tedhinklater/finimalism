@@ -1882,6 +1882,7 @@ progress::-webkit-progress-value {
 	left: 0.55em;
 	top: 44em;
 	width: 26em;
+	font-weight: 500;
 }
 
 .layout-desktop .trackSelections .selectContainer .detailTrackSelect,
@@ -1928,7 +1929,7 @@ progress::-webkit-progress-value {
 
 .layout-tv .detailImageContainer .card {
 	width: 18em;
-	top: 3.2em;
+	top: 6.6em;
 	left: 7em;
 }
 
@@ -2651,12 +2652,13 @@ button.is-emby-button emby-button {
 .layout-tv .itemName.infoText.subtitle.focuscontainer-x {
 	text-align: center;
 	position: fixed;
-	top: 19.35em;
+	top: 20.4em;
 	left: 7.5em;
 	width: 18em;
 	filter: drop-shadow(-1px 1px 2px black);
 	line-height: 0.8em;
 	font-size: 1.05em;
+	transform: translateY(-50%);
 }
 
 .layout-mobile .itemMiscInfo, .layout-mobile .itemName, .layout-mobile .mainDetailButtons, .layout-mobile .parentName {
@@ -3092,7 +3094,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 
 .layout-desktop .listItem[data-mediatype="Audio"],
 .layout-tv .listItem[data-mediatype="Audio"] {
-	padding: 0 1em;
+	padding: 0.5em 1em;
 	border-radius: var(--rounding) !important;
 	-webkit-border-radius: var(--rounding) !important;
 	-moz-border-radius: var(--rounding) !important;
@@ -4015,12 +4017,16 @@ a[href*="shokoanime.com"] {
 	padding-top: 38.5em !important;
 }*/
 
-.layout-tv .emby-button.show-focus:focus {
-  background:#00a4dc;
-  color:#fff;
+.layout-tv #itemDetailPage .emby-button.show-focus:focus {
+  border: solid 1px #fff;
+  background: transparent !important;
+  color:#00a4dc !important;
   width:auto;
   height: auto;
   transform: scale(1.02);
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  box-shadow: 0px 0px 5px #fff9;
 }
 
 .layout-tv .card.show-focus:focus {
@@ -4031,12 +4037,11 @@ a[href*="shokoanime.com"] {
 .layout-tv .card.show-focus:focus .cardImageContainer,
 .layout-tv .listItem-focusscale:focus {
 	box-shadow: 0px 0px 5px #fff9;
-	border: solid 1px #fff;
 	border: solid 1px #fff !important;
 }
 
 .layout-tv .detailPageWrapperContainer {
-	padding-top: 30.5em !important;
+	padding-top: 36.8em !important;
 }
 
 .currentTimeText {
@@ -4051,19 +4056,20 @@ a[href*="shokoanime.com"] {
 }
 
 .layout-tv .detailImageContainer .card.backdropCard {
-  top: 20em !important;
+  top: 23em !important;
 }
 
 .layout-tv .mainDetailButtons.focuscontainer-x {
-  top: 14.62em;
-  padding-top: 13em;
+  top: 17.62em;
+  padding-top: 12.3em;
   left: 6.5em;
 }
 
 .layout-tv .itemName.infoText.subtitle.focuscontainer-x {
-  top: 17.2em;
-  left: 7.75em;
-  width: 17em;
+	top: 21.4em;
+	left: 7.75em;
+	width: 17em;
+	transform: translateY(-50%);
 }
 
 .listItemImage-large-tv {
@@ -4075,10 +4081,19 @@ a[href*="shokoanime.com"] {
 	max-width: 21em;
 }
 
+.layout-tv #itemDetailPage .card.squareCard {
+  top: 15.6em;
+}
+
 .layout-tv #childrenContent .listItemBody {
   width: 200%;
 }
 
 .layout-tv #itemDetailPage .listItem {
   font-size: 1em;
+}
+
+.layout-desktop .detailsGroupItem,
+.layout-tv .detailsGroupItem {
+	max-width: 66vw;
 }
