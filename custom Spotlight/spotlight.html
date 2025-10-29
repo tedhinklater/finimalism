@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Seth's Spotlight - A Jellyfin UI Enhancement v1.2.0</title>
+    <title>Seth's Spotlight - A Jellyfin UI Enhancement v1.2.0.1</title>
 
     <!-- Fonts and Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -302,27 +302,29 @@
 			  : (movie.RunTimeTicks ? `${Math.round(movie.RunTimeTicks / 600000000)} min` : '–');
 
 			const loremText = `
-			  <span style="display:inline-flex; align-items:center; gap:12px; vertical-align:middle; flex-wrap:wrap;">
-
-				<span style="display:inline-flex; align-items:center; gap:4px;">
-				  <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/IMDB_Logo_2016.svg" alt="IMDb" style="height:1.05em; margin-right:0px;">
-				  <span>${communityRating}</span>
-				  <span class="material-icons star-icon" style="font-size:1em; transform: translateY(-2px);">star</span>
-				</span>
-
-				<span class="bullet-separator">•</span>
-
-				<span style="display:inline-flex; align-items:center; gap:4px;">
-				  <span class="material-icons" style="font-size:1em;">theater_comedy</span>
-				  <span>${genres}</span>
-				</span>
-
-				<span class="bullet-separator second-bullet">•</span>
+			  <span style="display:inline-flex; align-items:center; gap:12px; vertical-align:middle; width: 38.65em;">
 
 				<span style="background:#fff; color:#3d3c3c; padding:4px 12px 3px 12px; border-radius:8px; font-weight:750!important; font-size:0.78em; font-family:'Titillium Web', sans-serif; line-height:1em;">
 				  ${officialRating}
 				</span>
+				<span class="bullet-separator second-bullet">•</span>
 
+				<span style="display:inline-flex; align-items:center; gap:4px;">
+				  <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/IMDB_Logo_2016.svg" alt="IMDb" style="height:1.05em; margin-left: 1em; margin-right:0px;">
+				  <span style="margin-right-0.65em; margin-left:-0.5em;">${communityRating}</span>
+				  <span class="material-icons star-icon" style="font-size:0em; transform: translateY(-2px);">star</span>
+				</span>
+
+				<span class="bullet-separator">•</span>
+
+
+
+
+
+
+
+				<span class="bullet-separator">•</span>
+				<span>${year}</span>
 				<span class="bullet-separator">•</span>
 
 				<span style="display:inline-flex; align-items:center; gap:4px;">
@@ -331,10 +333,10 @@
 				  </span>
 				  <span>${durationOrSeasons}</span>
 				</span>
-
-				<span class="bullet-separator">•</span>
-				<span>${year}</span>
-
+				<span style="display:inline-flex; min-width:9em; align-items:center; gap:4px;">
+				  <span class="material-icons" style="font-size:1em;">theater_comedy</span>
+				  <span>${genres}</span>
+				</span>
 			  </span>
 			`;
 			
@@ -602,9 +604,9 @@
                                         player = null;
                                     }
 
-                                    ['backdrop', 'plot', 'lorem-ipsum'].forEach(cls => {
+                                    ['plot', 'lorem-ipsum'].forEach(cls => {
                                         const element = newSlide.querySelector(`.${cls}`);
-                                        if (element) element.style.width = '100%';
+                                        if (element) element.style.width = '38.65em';
                                     });
                                     videoContainer.style.width = '0';
                                     startSlideChangeTimer();
