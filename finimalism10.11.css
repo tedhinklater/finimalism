@@ -176,6 +176,11 @@ p.overview.detail-clamp-text {
 	font-weight: 400;
 }
 
+.layout-desktop p.overview.detail-clamp-text,
+.layout-desktop p.overview.detail-clamp-text {
+	margin-top: -0.85em;
+}
+
 #itemDetailPage .tagline {
 	font-weight: 700;
 	font-size: 1.5em;
