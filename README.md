@@ -5,7 +5,7 @@
 ```
 
 # Colour version (example with [Spotlight](https://github.com/JSethCreates/jellyfin-script-spotlight) bar)
-<img width="1920" height="1080" alt="Screenshot from 2025-10-29 22-47-55" src="https://github.com/user-attachments/assets/fbab4bb0-d546-41f6-b9b9-65df5f7460ff" />
+<img width="1920" height="1080" alt="Screenshot from 2025-10-29 22-52-19" src="https://github.com/user-attachments/assets/6494b3bf-dda3-4725-86a1-cfc83ac7287d" />
 
 # Black version (example without [Spotlight](https://github.com/JSethCreates/jellyfin-script-spotlight) bar)
 
