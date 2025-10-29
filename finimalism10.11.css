@@ -3377,7 +3377,7 @@ a[href*="shokoanime.com"] {
 	justify-content: space-evenly;
 	top: 14.62em;
 	z-index: -1;
-	background: #0c0515c2;
+	background: #0c0515ed;
 	border-top-right-radius: 1em;
 	margin: 1.25em 0;
 	padding-top: 12em;
@@ -3826,8 +3826,10 @@ a[href*="shokoanime.com"] {
 .layout-tv #itemDetailPage .detailPageSecondaryContainer.padded-bottom-page .detailPageContent .detailPagePrimaryContent.padded-right .detailSection .itemDetailsGroup .detailsGroupItem{
 }
 
-[dir="ltr"] .detailPagePrimaryContent {
-  padding-left: 27vw;
+.layout-desktop [dir="ltr"] .detailPagePrimaryContent,
+.layout-tv [dir="ltr"] .detailPagePrimaryContent {
+	padding-left: 27vw;
+	max-width: 62vw;
 }
 
 .layout-desktop [dir="ltr"] .detailRibbon, .layout-tv [dir="ltr"] .detailRibbon {
@@ -3874,11 +3876,10 @@ a[href*="shokoanime.com"] {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: linear-gradient(90deg, rgb(8.627% 2.353% 18.431%) 0%, rgb(8.556% 2.353% 18.458%) 6.25%, rgb(8.344% 2.353% 18.536%) 12.5%, rgb(8% 2.353% 18.663%) 18.75%, rgb(7.536% 2.353% 18.833%) 25%, rgb(6.972% 2.353% 19.041%) 31.25%, rgb(6.328% 2.353% 19.279%) 37.5%, rgb(5.629% 2.353% 19.536%) 43.75%, rgb(4.902% 2.353% 19.804%) 50%, rgb(4.175% 2.353% 20.072%) 56.25%, rgb(3.476% 2.353% 20.329%) 62.5%, rgb(2.832% 2.353% 20.566%) 68.75%, rgb(2.268% 2.353% 20.774%) 75%, rgb(1.804% 2.353% 20.945%) 81.25%, rgb(1.46% 2.353% 21.072%) 87.5%, rgb(1.248% 2.353% 21.15%) 93.75%, rgb(1.176% 2.353% 21.176%) 100% );
+	background: #13082be0;
 	background-size: cover;
 	opacity: 0.85;
 	z-index: -1;
-	filter: saturate(100%) brightness(50%);
 	width: 100vw;
 }
 
