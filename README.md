@@ -7,9 +7,8 @@
 # Colour version (example with [Spotlight](https://github.com/JSethCreates/jellyfin-script-spotlight) bar)
 <img width="1920" height="1080" alt="Screenshot from 2025-10-29 22-52-19" src="https://github.com/user-attachments/assets/6494b3bf-dda3-4725-86a1-cfc83ac7287d" />
 
-# Black version (example without [Spotlight](https://github.com/JSethCreates/jellyfin-script-spotlight) bar)
-
-<img width="1920" height="1080" alt="2" src="https://github.com/user-attachments/assets/6ac60d92-c449-40c0-b01f-3b8366f3ab32" />
+# Black version (example without Spotlight bar)
+<img width="1920" height="1080" alt="Screenshot from 2025-10-30 00-05-30" src="https://github.com/user-attachments/assets/c0242cbd-f2bf-4869-a4d8-4465a3c9dadd" />
 
 ```css
 @import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@latest/finimalism10.11-black.css");
