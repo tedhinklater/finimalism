@@ -3,37 +3,36 @@
 ```css
 @import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@latest/finimalism10.11.css");
 ```
-
-# Colour version (example with [Spotlight](https://github.com/JSethCreates/jellyfin-script-spotlight) bar)
-<img width="1920" height="1080" alt="Screenshot from 2025-10-29 22-52-19" src="https://github.com/user-attachments/assets/6494b3bf-dda3-4725-86a1-cfc83ac7287d" />
-
+or
 ```css
 @import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@latest/finimalism10.11-black.css");
 
 ```
 
-Just paste the import line into your "Dashboard > General > CSS" section, or "User Settings > Display > CSS" section.
-<img width="1920" height="1080" alt="Screenshot from 2025-10-29 14-47-14" src="https://github.com/user-attachments/assets/89c429b8-a2bb-4e71-8ef0-26a64c38b14c" />
+# Colour version (example with [Spotlight](https://github.com/JSethCreates/jellyfin-script-spotlight) bar)
+<img width="1920" height="1080" alt="Screenshot from 2025-10-29 22-52-19" src="https://github.com/user-attachments/assets/6494b3bf-dda3-4725-86a1-cfc83ac7287d" />
 
-Library (Colour version)
+Just paste an import line into your "Dashboard > General > CSS" section, or "User Settings > Display > CSS" section.
+
+# Library
 <img width="1920" height="1080" alt="Screenshot from 2025-10-29 19-49-26" src="https://github.com/user-attachments/assets/eebeada7-5989-485e-be1a-eeb263c432c9" />
 
-Movie (Colour version)
+# Movie
 <img width="1920" height="1080" alt="Screenshot from 2025-10-29 19-51-19" src="https://github.com/user-attachments/assets/4d8c9174-5028-4d37-82ee-36f3890128ff" />
 
-Show (Black version)
+# Show (Black version)
 <img width="1920" height="1080" alt="Screenshot from 2025-10-29 19-53-52" src="https://github.com/user-attachments/assets/dbe96af1-24fa-4869-81f1-857e16987196" />
 
-Show (Black version, scrolled down)
+# Show (Scrolled down)
 <img width="1920" height="1080" alt="Screenshot from 2025-10-29 19-55-10" src="https://github.com/user-attachments/assets/50fd39fd-a9c3-4856-bed5-a08db6371389" />
 
-Season (Colour version)
+# Season
 <img width="1920" height="1080" alt="Screenshot from 2025-10-29 20-06-36" src="https://github.com/user-attachments/assets/941f0707-adf6-4cb0-a675-51ae601fa87b" />
 
-Episode (Black Version)
+# Episode
 <img width="1920" height="1080" alt="Screenshot from 2025-10-29 20-01-26" src="https://github.com/user-attachments/assets/eecad906-80d3-48fb-9757-7605cd41d58c" />
 
-Player (Colour version)
+# Player
 <img width="1920" height="1080" alt="Screenshot 2025-09-22 023822" src="https://github.com/user-attachments/assets/b872ec4a-1c8f-4614-b29c-8f986170ced6" />
 
 Everything is just an alteration of the amazing work already put into [Ultrachromic by CTalvio](https://github.com/CTalvio/Ultrachromic). Updated for jellyfin server 10.10.X
