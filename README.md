@@ -12,28 +12,28 @@ or
 Just paste an import line into your "Dashboard > General > CSS" section, or "User Settings > Display > CSS" section.
 
 # Homepage (Colour version example with [Spotlight](https://github.com/JSethCreates/jellyfin-script-spotlight) bar)
-<img width="1920" height="1080" alt="Screenshot from 2025-10-30 16-13-27" src="https://github.com/user-attachments/assets/9dbe4e5e-a964-403b-a22b-ed7b9a8662f2" />
+<img width="1920" height="1080" alt="f1" src="https://github.com/user-attachments/assets/a09c7526-9ca8-4c4c-b4fa-808f53e444cf" />
 
 # Library
 <img width="1920" height="1080" alt="Screenshot from 2025-10-29 19-49-26" src="https://github.com/user-attachments/assets/eebeada7-5989-485e-be1a-eeb263c432c9" />
 
 # Movie
-<img width="1920" height="1080" alt="Screenshot from 2025-10-29 19-51-19" src="https://github.com/user-attachments/assets/4d8c9174-5028-4d37-82ee-36f3890128ff" />
+<img width="1920" height="1080" alt="f2" src="https://github.com/user-attachments/assets/4df46b62-82dd-47d4-b5f4-66f4ee84ed81" />
 
 # Show (Black version)
-<img width="1920" height="1080" alt="Screenshot from 2025-10-29 19-53-52" src="https://github.com/user-attachments/assets/dbe96af1-24fa-4869-81f1-857e16987196" />
+<img width="1920" height="1080" alt="f3" src="https://github.com/user-attachments/assets/aa03fb9e-f694-43fc-8b01-477d4e8fe1b0" />
 
 # Show (Scrolled down)
-<img width="1920" height="1080" alt="Screenshot from 2025-10-29 19-55-10" src="https://github.com/user-attachments/assets/50fd39fd-a9c3-4856-bed5-a08db6371389" />
+<img width="1920" height="1080" alt="f4" src="https://github.com/user-attachments/assets/551c063a-9ed9-49fa-b83d-480dfbea039b" />
 
 # Season
-<img width="1920" height="1080" alt="Screenshot from 2025-10-29 20-06-36" src="https://github.com/user-attachments/assets/941f0707-adf6-4cb0-a675-51ae601fa87b" />
+<img width="1920" height="1080" alt="f5" src="https://github.com/user-attachments/assets/5a1edfae-64ab-4c35-ad92-8bb475ab9059" />
 
 # Episode
-<img width="1920" height="1080" alt="Screenshot from 2025-10-29 20-01-26" src="https://github.com/user-attachments/assets/eecad906-80d3-48fb-9757-7605cd41d58c" />
+<img width="1920" height="1080" alt="f6" src="https://github.com/user-attachments/assets/b071c6ee-514e-4d19-be86-298b0d585e09" />
 
 # Player
-<img width="1920" height="1080" alt="Screenshot 2025-09-22 023822" src="https://github.com/user-attachments/assets/b872ec4a-1c8f-4614-b29c-8f986170ced6" />
+<img width="1920" height="1080" alt="f7" src="https://github.com/user-attachments/assets/9fa52036-85b8-4c3d-b3c1-d80fbfc48ae1" />
 
 Everything is just an alteration of the amazing work already put into [Ultrachromic by CTalvio](https://github.com/CTalvio/Ultrachromic). Updated for jellyfin server 10.11.X
 
