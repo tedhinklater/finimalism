@@ -34,7 +34,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  bottom: 65px; /* stop before plot area */
+  bottom: 3.15em; /* stop before plot area */
   background-color: #000;
   z-index: 0;
 }
@@ -49,18 +49,37 @@ body {
   transition: opacity 1.3s ease, filter 1.3s ease;
   mask-image: linear-gradient(to bottom,
     black 0%,
-    black calc(100% - 100px),
+    black calc(100% - 3.1em),
     transparent calc(100% - 55px),
     transparent 100%);
   -webkit-mask-image: linear-gradient(to bottom,
     black 0%,
-    black calc(100% - 100px),
+    black calc(100% - 3.5em),
     transparent calc(100% - 55px),
     transparent 100%);
 }
 .slide.visible {
   opacity: 1;
   filter: blur(0);
+}
+
+.slide::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 5;
+  -webkit-mask-image: linear-gradient(to bottom,
+    black 0%,
+    black calc(100% - 100px),
+    transparent calc(100% - 55px),
+    transparent 100%);
+  mask-image: linear-gradient(to bottom,
+    black 0%,
+    black calc(100% - 100px),
+    transparent calc(100% - 55px),
+    transparent 100%);
+  background: rgba(0, 0, 0, 0.2);
 }
 
 /* Backdrop Image */
@@ -137,83 +156,85 @@ body {
 /* Text Container with stacked logo + metadata + plot */
 .text-container {
   position: absolute;
-  bottom: 6.5em;
-  left: 2vw;
+  bottom: 3.45em;
+  left: 0.75vw;
   max-width: 60vw;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 0.8em;
   z-index: 12;
 }
 
 /* Logo inside text stack */
 .text-container .logo {
   position: static !important;
-  max-height: 40vh;
-  max-width: 40vw;
+  max-height: 50vh;
+  max-width: 33vw;
   width: auto;
   opacity: 1;
-  align-self: flex-start;
-  margin-left: 20vw;
   transform: translateX(-50%);
   filter: drop-shadow(1px 1px 1px);
   text-shadow: -2px 2px 4px rgba(0, 0, 0, 0.5);
   transition: transform 5.5s ease-in-out, opacity 5.5s ease-in-out;
-  padding-bottom: 3em;
   padding-left: 6vw;
+  margin-bottom: -1em !important;
+  margin-left: 47vw;
 }
 
 /* Metadata bar */
 .text-container .lorem-ipsum {
-	position: static !important;
-	margin: 0;
-	max-width: fit-content;
-	font-family: "Titillium Web", sans-serif;
-	font-size: 0.9em;
-	font-weight: 300;
-	line-height: 1.8em;
-	color: #fff;
-	white-space: nowrap;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	background: #110e1ebd;
-	border-radius: 0.3em;
-	filter: drop-shadow(0 3px 3px rgba(0, 0, 0, 0.2)) drop-shadow(0 3px 3px rgba(0, 0, 0, 0.35));
-	padding: 0.7em;
+  position: static !important;
+  margin: 0;
+  max-width: fit-content;
+  font-family: "Sofia Sans", sans-serif;
+  font-size: 0.9em;
+  font-weight: 300;
+  line-height: 1.8em;
+  color: #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  background: #110e1ebd;
+  border-top-left-radius: 0.3em;
+  border-top-right-radius: 0.3em;
+  filter: drop-shadow(0 3px 3px rgba(0, 0, 0, 0.2)) drop-shadow(0 3px 3px rgba(0, 0, 0, 0.35));
+  padding: 0.4em;
+  padding-bottom: 0;
 }
 
 /* Plot text */
 .text-container .plot {
-	position: static !important;
-	font-family: "Sofia Sans", sans-serif;
-	font-size: 0.9em;
+  position: static !important;
+  font-family: "Sofia Sans", sans-serif;
+  font-size: 0.9em;
     font-weight: 350;
     line-height: 1.3em;
-	color: #fff;
-	max-width: 45vw;
-	display: -webkit-box;
-	-webkit-line-clamp: 3;
-	-webkit-box-orient: vertical;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	white-space: normal;
-	background: #110e1ebd;
-	border-radius: 0.3em;
-	padding: 0.7em;
-	filter: drop-shadow(0 3px 3px rgba(0, 0, 0, 0.2)) drop-shadow(0 3px 3px rgba(0, 0, 0, 0.35));
-	max-height: 3.4em;
+  color: #fff;
+  max-width: 38.45em;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+  background: #110e1ebd;
+  border-bottom-right-radius: 0.3em;
+  border-top-right-radius: 0em;
+  padding: 0.7em;
+  padding-top: 0.4em;
+  filter: drop-shadow(0 3px 3px rgba(0, 0, 0, 0.2)) drop-shadow(0 3px 3px rgba(0, 0, 0, 0.35));
+  max-height: 3.35em;
 }
 
 .text-container .lorem-ipsum,
 .text-container .lorem-ipsum * {
-	white-space: nowrap !important;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	max-width: fit-content;
-	font-weight: 500 !important;
-	padding-left: 0.4em;
-    padding-right: 0.4em;
+  white-space: nowrap !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 40em;
+  font-weight: 400 !important;
+  padding-left: 0.2em;
+  padding-right: 0.4em;
 }
 
 .bullet-separator {
@@ -423,7 +444,7 @@ body {
 @media screen and (max-width: 768px) {
   .logo {
     left: 50% !important;
-	top: 20% !important;
+  top: 20% !important;
     transform: translateX(-50%) !important;
     max-width: 65vw;
     max-height: none;
@@ -439,10 +460,10 @@ body {
   }
 
   /* Force a line break after the 2nd bullet */
-	.bullet-separator.second-bullet::after {
-	  content: "";
-	  display: block;
-	}
+  .bullet-separator.second-bullet::after {
+    content: "";
+    display: block;
+  }
 
   .star-icon {
     font-size: 0.9em;
@@ -454,14 +475,14 @@ body {
 
   .plot {
     max-width: 90vw;
-	font-size: 0.9em;
+  font-size: 0.9em;
     left: 5vw;
     padding-right: 0;
-	bottom: 7.0em;
+  bottom: 7.0em;
   }
   
   .text-container {
-	bottom: 7.5em;
+  bottom: 7.5em;
     left: 5vw;
     right: 5vw;
     max-width: 90vw;
@@ -472,7 +493,7 @@ body {
     max-width: 50vw !important;
     max-height: none !important;
     margin-left: 45vw !important;
-	margin-bottom: 5vw !important;
+  margin-bottom: 5vw !important;
   }
 
   .text-container .lorem-ipsum {
@@ -482,7 +503,7 @@ body {
 
   .text-container .plot {
     font-size: 0.9em;
-	max-width: 90vw !important;
+  max-width: 90vw !important;
   }
 }
 
