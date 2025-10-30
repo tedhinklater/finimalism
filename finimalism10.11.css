@@ -4008,10 +4008,18 @@ a[href*="shokoanime.com"] {
 	}
 }
 
-@media (min-width: 2000px) and (min-height: 1200px) {
-	body {
-		font-size: 200% !important;
-	}
+/* 1440p resolution */
+@media (min-width: 1950px) {
+  .layout-desktop body, .layout-tv body {
+    font-size: 166% !important;
+  }
+}
+
+/* 4k resolution */
+@media (min-width: 3000px) {
+  .layout-desktop body, .layout-tv body {
+    font-size: 200% !important;
+  }
 }
 
 /*.layout-tv .itemDetailPage {
