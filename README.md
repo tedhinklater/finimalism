@@ -36,7 +36,7 @@ Just paste an import line into your "Dashboard > General > CSS" section, or "Use
 # Player
 <img width="1920" height="1080" alt="Screenshot 2025-09-22 023822" src="https://github.com/user-attachments/assets/b872ec4a-1c8f-4614-b29c-8f986170ced6" />
 
-Everything is just an alteration of the amazing work already put into [Ultrachromic by CTalvio](https://github.com/CTalvio/Ultrachromic). Updated for jellyfin server 10.10.X
+Everything is just an alteration of the amazing work already put into [Ultrachromic by CTalvio](https://github.com/CTalvio/Ultrachromic). Updated for jellyfin server 10.11.X
 
 # More Library Cards 
 <a href="https://github.com/Phantomwise/jellyfin-custom-thumbnails-collection"><img src="https://i.imgur.com/aWUsxMG.png" alt="Cards" width="800"/></a>
