@@ -2855,7 +2855,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 	filter: drop-shadow(0 3px 3px rgba(0, 0, 0, 0.2)) drop-shadow(0 3px 3px rgba(0, 0, 0, 0.35));
 	position: fixed;
 	right: 0.7vw;
-	top: 2vh;
+	top: 1em;
 }
 
 .navMenuOption {
