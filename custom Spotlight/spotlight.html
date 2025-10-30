@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Seth's Spotlight - A Jellyfin UI Enhancement v1.2.0.1</title>
+    <title>Seth's Spotlight - A Jellyfin UI Enhancement v1.2.0</title>
 
     <!-- Fonts and Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -317,12 +317,6 @@
 
 				<span class="bullet-separator">•</span>
 
-
-
-
-
-
-
 				<span class="bullet-separator">•</span>
 				<span>${year}</span>
 				<span class="bullet-separator">•</span>
@@ -347,6 +341,28 @@
             textContainer.appendChild(createElem('div', 'plot', truncateText(movie.Overview, plotMaxLength)));
 			
             newSlide.appendChild(textContainer);
+
+			const posterUrl = `/Items/${movie.Id}/Images/Primary?fillHeight=720&fillWidth=480&quality=96`;
+
+			const posterDiv = document.createElement('div');
+			posterDiv.className = 'spotlight-poster';
+			posterDiv.style.backgroundImage = `url('${posterUrl}')`;
+			posterDiv.setAttribute('role', 'img');
+			posterDiv.setAttribute('aria-label', `${movie.Name} poster`);
+
+			posterDiv.onclick = () => {
+			    if (currentMovie && currentMovie.Id) {
+			        window.top.Emby.Page.showItem(currentMovie.Id);
+			    } else {
+			        console.warn('No current movie to show.');
+			    }
+			};
+
+			visualWrapper.appendChild(posterDiv);
+
+			setTimeout(() => {
+			  posterDiv.classList.add('active');
+			}, 300);
 			
 			const fadeDiv = createElem('div', 'bottom-fade');
 
@@ -559,10 +575,8 @@
 
 									const backdropElement = newSlide.querySelector('.backdrop');
 									if (backdropElement) {
-										// Change multiplier from 0.7 to 0.8 for 80%
+
 										backdropElement.style.width = `calc(100% - ${calculatedWidth * 0.8}px)`;
-										
-										// Update mask gradient to match new width
 										backdropElement.style.webkitMaskImage = backdropElement.style.maskImage = `linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) ${65}%, rgba(255, 255, 255, 0) 100%)`;
 										
 										backdropElement.style.backgroundImage = `url(/Items/${movie.Id}/Images/Backdrop/0)`;
@@ -604,7 +618,7 @@
                                         player = null;
                                     }
 
-                                    ['plot', 'lorem-ipsum'].forEach(cls => {
+                                    [ 'plot', 'lorem-ipsum'].forEach(cls => {
                                         const element = newSlide.querySelector(`.${cls}`);
                                         if (element) element.style.width = '38.65em';
                                     });
