@@ -12,7 +12,7 @@ or
 Just paste an import line into your "Dashboard > General > CSS" section, or "User Settings > Display > CSS" section.
 
 # Homepage (Colour version example with [Spotlight](https://github.com/JSethCreates/jellyfin-script-spotlight) bar)
-<img width="1920" height="1080" alt="f1" src="https://github.com/user-attachments/assets/a09c7526-9ca8-4c4c-b4fa-808f53e444cf" />
+![simplescreenrecorder-2025-10-30_23 50 54-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/ce83ae74-ef9f-416a-9ab0-7f014889a9ba)
 
 # Library
 <img width="1920" height="1080" alt="Screenshot from 2025-10-29 19-49-26" src="https://github.com/user-attachments/assets/eebeada7-5989-485e-be1a-eeb263c432c9" />
