@@ -39,6 +39,18 @@ body {
   z-index: 0;
 }
 
+@media (min-width: 1950px) {
+    body {
+      font-size: 150% !important;
+    }
+  }
+
+@media (min-width: 3000px) {
+  body {
+    font-size: 200% !important;
+  }
+}
+
 /* Slide Styling */
 .slide {
   position: absolute;
