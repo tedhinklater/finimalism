@@ -178,7 +178,7 @@ body {
   transition: transform 5.5s ease-in-out, opacity 5.5s ease-in-out;
   padding-left: 6vw;
   margin-bottom: -1em !important;
-  margin-left: 47vw;
+  margin-left: 45.5vw;
 }
 
 /* Metadata bar */
@@ -218,7 +218,6 @@ body {
   text-overflow: ellipsis;
   white-space: normal;
   background: #110e1ebd;
-  border-bottom-right-radius: 0.3em;
   border-top-right-radius: 0em;
   padding: 0.7em;
   padding-top: 0.4em;
