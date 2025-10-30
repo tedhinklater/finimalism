@@ -3729,7 +3729,10 @@ a[href*="shokoanime.com"] {
 @media (max-height: 870px) {
 	.layout-desktop body, 
 	.layout-tv body {
-		font-size: 89% !important;
+		font-size: 98% !important;
+	}
+	.spotlightiframe {
+		font-size: 110.5% !important;
 	}
 	.layout-desktop .card.overflowBackdropCard, 
 	.layout-tv .card.overflowBackdropCard {
@@ -4008,20 +4011,6 @@ a[href*="shokoanime.com"] {
 	}
 }
 
-/* 1440p resolution */
-@media (min-width: 1950px) {
-  .layout-desktop body, .layout-tv body {
-    font-size: 166% !important;
-  }
-}
-
-/* 4k resolution */
-@media (min-width: 3000px) {
-  .layout-desktop body, .layout-tv body {
-    font-size: 200% !important;
-  }
-}
-
 /*.layout-tv .itemDetailPage {
 	padding-top: 38.5em !important;
 }*/
@@ -4109,4 +4098,21 @@ a[href*="shokoanime.com"] {
 
 .pageTitleWithLogo {
   width: 7.5em;
+}
+
+/* 1440p resolution */
+@media (min-width: 1950px) {
+  .layout-desktop body, .layout-tv body {
+    font-size: 166% !important;
+  }
+}
+
+/* 4k resolution */
+@media (min-width: 3000px) {
+  .layout-desktop body, .layout-tv body {
+    font-size: 200% !important;
+  }
+  .spotlightiframe {
+    margin-top: -3.5em !important;
+  }
 }
