@@ -2606,8 +2606,8 @@ button.is-emby-button emby-button {
 }
 
 .skip-button-container {
-    bottom: 7%;
-    right: -24em;
+  bottom: 0;
+  right: -5em;
 }
 
 .layout-mobile .backgroundContainer { background-color: transparent;}
