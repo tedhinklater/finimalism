@@ -454,7 +454,7 @@ body {
   }
   
   .text-container {
-  bottom: 3.2em;
+  bottom: 2.8em;
     left: 0;
     right: 5vw;
     width: 100vw;
@@ -472,6 +472,7 @@ body {
   .text-container .lorem-ipsum {
     font-size: 1em;
     line-height: 1.5em;
+    margin-bottom: -0.55em;
   }
 
   .text-container .plot {
@@ -706,5 +707,9 @@ body {
     height: 90%;
     top: 45%;
   }
-
+}
+@media (max-width: 421px) and (orientation: portrait) {
+  .text-container {
+    bottom: 2.8em !important;
+  }
 }
