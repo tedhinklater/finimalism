@@ -39,18 +39,6 @@ body {
   z-index: 0;
 }
 
-@media (min-width: 1950px) {
-    body {
-      font-size: 150% !important;
-    }
-  }
-
-@media (min-width: 3000px) {
-  body {
-    font-size: 200% !important;
-  }
-}
-
 /* Slide Styling */
 .slide {
   position: absolute;
@@ -90,10 +78,10 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: calc(100% - 50px);
+  height: calc(100% - 3.2em);
   object-fit: cover;
   object-position: center 25%;
-  border-radius: 5px;
+  border-radius: 0em;
   z-index: 1;
   transition: width 0.3s ease;
 }
@@ -101,10 +89,10 @@ body {
 /* Heading */
 .heading {
   position: absolute;
-  bottom: 10px;
+  bottom: 1em;
   left: 88%;
   transform: translateX(-50%);
-  padding: 10px 20px;
+  padding: 0.6em 1.2em;
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 5px;
   font-family: "Sofia Sans", sans-serif;
@@ -121,9 +109,9 @@ body {
 .video-container {
   position: absolute;
   right: 0;
-  bottom: 50px;
+  bottom: 3.2em;
   width: 0;
-  height: calc(100% - 50px);
+  height: calc(100% - 3.2em);
   overflow: hidden;
   z-index: 0;
   transition: width 0.3s ease;
@@ -234,7 +222,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  height: calc(100% - 50px);
+  height: calc(100% - 3.2em);
   width: 50%;
   z-index: 15; /* ensure it's above the backdrop and clickable overlay */
   pointer-events: none;
@@ -253,11 +241,11 @@ body {
 /* Emby Scroll Buttons */
 .emby-scrollbuttons {
   position: absolute;
-  bottom: 55px;
+  bottom: 3.3em;
   left: 80%;
   transform: translateX(-50%);
   display: flex;
-  padding: 10px;
+  padding: 0.6em;
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 5px;
   z-index: 2;
@@ -341,8 +329,8 @@ body {
   bottom: 320%; /* fully above the button */
   left: 50%;
   transform: translateX(-50%) rotate(-90deg);
-  width: 110px;
-  height: 6px;
+  width: 7em;
+  height: 0.34em;
   border-radius: 9999px;
 
   background: rgba(255, 255, 255, 0.15);
@@ -366,7 +354,7 @@ body {
 
 /* Track styling */
 #volumeSlider::-webkit-slider-runnable-track {
-  height: 6px;
+  height: 0.34em;
   border-radius: 9999px;
   background: rgba(255, 255, 255, 0.15);
 }
@@ -380,13 +368,13 @@ body {
 #volumeSlider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 14px;
-  height: 14px;
+  width: 0.9em;
+  height: 0.9em;
   border-radius: 50%;
   background: var(--md-sys-color-primary);
   cursor: pointer;
   border: none;
-  margin-top: -4px; /* center thumb vertically */
+  margin-top: -0.34em; /* center thumb vertically */
   transition: box-shadow 0.2s ease, transform 0.2s ease;
 }
 #volumeSlider::-webkit-slider-thumb:hover,
@@ -396,8 +384,8 @@ body {
 }
 
 #volumeSlider::-moz-range-thumb {
-  width: 14px;
-  height: 14px;
+  width: 0.9em;
+  height: 0.9em;
   border-radius: 50%;
   background: var(--md-sys-color-primary);
   cursor: pointer;
@@ -436,7 +424,7 @@ body {
   }
 
   .bullet-separator {
-    margin: 0 6px;
+    margin: 0 0.34em;
     font-size: 1em;
     color: var(--md-sys-color-primary);
     font-weight: bold;
@@ -600,7 +588,7 @@ body {
 
 #navButtons {
   /* standalone circular buttons */
-  width: 48px; height: 48px;
+  width: 3.1em; height: 3.1em;
   display: flex; align-items: center; justify-content: center;
   border-radius: 9999px !important;
   margin: 0 !important;
@@ -624,8 +612,8 @@ body {
 @media (max-width: 768px) {
   #leftButton, 
   #rightButton {
-    width: 40px;
-    height: 40px;
+    width: 2.4em;
+    height: 2.4em;
   }
 
   #playPauseButton,
@@ -701,7 +689,7 @@ body {
     width: 12.5em;
   }
   .text-container {
-    bottom: 1.5em;
+    bottom: 3.2em;
   }
   #navButtons #leftButton {
     margin-left: -0.4em;
@@ -738,5 +726,17 @@ body {
   }
   #navButtons {
     right: 6em;
+  }
+}
+
+@media (min-width: 1950px) {
+    body {
+      font-size: 150% !important;
+    }
+  }
+
+@media (min-width: 3000px) {
+  body {
+    font-size: 200% !important;
   }
 }
