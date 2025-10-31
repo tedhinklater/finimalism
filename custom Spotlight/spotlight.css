@@ -650,7 +650,7 @@ body {
   transform: translateY(-50%) !important;
   z-index: 1000 !important;
   height: 88%;
-  background: transparent !important;
+  background: #0001 !important;
   width: 0.7em;
   padding: 0 !important;
   opacity: 1;
@@ -659,17 +659,18 @@ body {
 }
 
 #navButtons #leftButton {
-  margin-left: -0.55em;
+  margin-left: -0.6em;
 }
 
 #navButtons #rightButton {
   margin-right: -0.55em;
+  width: 1em;
 }
 
 #navButtons #leftButton:hover,
 #navButtons #rightButton:hover {
-  background: #000 !important;
-  transition: transform 0.2s ease;
+  background: #000a !important;
+  transition: transform 0.2s ease, background 1s ease;
 }
 
 .spotlight-poster {
@@ -692,6 +693,29 @@ body {
 .spotlight-poster.active {
   transform: translateX(0);
   opacity: 1;
+}
+
+@media (min-width:1950px) {
+  .spotlight-poster {
+    top: 2.5em;
+    width: 12.5em;
+  }
+  .text-container {
+    bottom: 1.5em;
+  }
+  #navButtons #leftButton {
+    margin-left: -0.4em;
+    height: 22.6em;
+    top: 9.3em;
+  }
+  #navButtons #rightButton {
+    margin-right: -0.2em;
+    height: 22.6em;
+    top: 9.3em;
+  }
+  #navButtons {
+    right: 6em;
+  }
 }
 
 @media (min-width:3000px) {
