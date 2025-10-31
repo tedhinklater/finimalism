@@ -2838,6 +2838,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 	z-index: 90;
 	background: #110e1ebd;
 	filter: drop-shadow(0 3px 3px rgba(0, 0, 0, 0.2)) drop-shadow(0 3px 3px rgba(0, 0, 0, 0.35));
+	margin-left: 0.15em;
 }
 
 .layout-desktop .headerRight,
