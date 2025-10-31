@@ -446,7 +446,7 @@ body {
   }
 
   .plot {
-    max-width: 90vw;
+    max-width: 100vw;
   font-size: 0.9em;
     left: 5vw;
     padding-right: 0;
@@ -457,15 +457,16 @@ body {
   bottom: 3.2em;
     left: 0;
     right: 5vw;
-    max-width: 90vw;
+    width: 100vw;
     gap: 0.6em;
+    max-width: 100vw;
   }
 
   .text-container .logo {
     max-width: 50vw !important;
     max-height: none !important;
-    margin-left: 45vw !important;
-  margin-bottom: 5vw !important;
+    margin-left: 58vw !important;
+  margin-bottom: 6vw !important;
   }
 
   .text-container .lorem-ipsum {
@@ -475,7 +476,10 @@ body {
 
   .text-container .plot {
     font-size: 0.9em;
-  max-width: 90vw !important;
+  max-width: 100vw !important;
+  }
+  button {
+    display: none !important;
   }
 }
 
@@ -610,25 +614,19 @@ body {
 
 /* Phone width Resolution */
 @media (max-width: 768px) {
-  #leftButton, 
-  #rightButton {
-    width: 2.4em;
-    height: 2.4em;
+  body {
+    font-size: 0.7em;
   }
-
-  #playPauseButton,
-  #volumeButton {
-    display: none !important;
-  }
-
-  /* Info button becomes the only pill in the group */
-  #navButtons #mediaButton {
-    border-radius: 9999px !important; /* fully rounded both sides */
-    border-left: 1px solid var(--md-sys-color-outline) !important;
-    border-right: 1px solid var(--md-sys-color-outline) !important;
+  .spotlightiframe {
+    height: 20em;
   }
 }
 
+@media (max-width: 1000px) {
+  .spotlight-poster {
+    max-width: 6em;
+  }
+}
 
 #navButtons #leftButton,
 #navButtons #rightButton {
@@ -683,9 +681,9 @@ body {
   opacity: 1;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 768px) {
   .spotlight-poster {
-    display: none;
+    max-width: 20vw;
   }
 }
 
