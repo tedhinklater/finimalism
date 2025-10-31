@@ -454,8 +454,8 @@ body {
   }
   
   .text-container {
-  bottom: 7.5em;
-    left: 5vw;
+  bottom: 3.2em;
+    left: 0;
     right: 5vw;
     max-width: 90vw;
     gap: 0.6em;
@@ -482,7 +482,7 @@ body {
 /* Navigation Buttons Container */
 #navButtons {
   position: absolute;
-  bottom: 4.1em;
+  bottom: 6em;
   right: 5em;
   display: flex;
   z-index: 2;
@@ -683,51 +683,12 @@ body {
   opacity: 1;
 }
 
-@media (min-width:1950px) {
+@media (max-width: 1000px) {
   .spotlight-poster {
-    top: 2.5em;
-    width: 12.5em;
-  }
-  .text-container {
-    bottom: 3.2em;
-  }
-  #navButtons #leftButton {
-    margin-left: -0.4em;
-    height: 22.6em;
-    top: 9.3em;
-  }
-  #navButtons #rightButton {
-    margin-right: -0.2em;
-    height: 22.6em;
-    top: 9.3em;
-  }
-  #navButtons {
-    right: 6em;
+    display: none;
   }
 }
 
-@media (min-width:3000px) {
-  .spotlight-poster {
-    top: 2.5em;
-    width: 12.5em;
-  }
-  .text-container {
-    bottom: 1.5em;
-  }
-  #navButtons #leftButton {
-    margin-left: -0.3em;
-    height: 19em;
-    top: 9.3em;
-  }
-  #navButtons #rightButton {
-    margin-right: -0.3em;
-    height: 19em;
-    top: 9.3em;
-  }
-  #navButtons {
-    right: 6em;
-  }
-}
 
 @media (min-width: 1950px) {
     body {
@@ -737,6 +698,6 @@ body {
 
 @media (min-width: 3000px) {
   body {
-    font-size: 200% !important;
+    font-size: 188% !important;
   }
 }
