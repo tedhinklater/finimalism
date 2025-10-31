@@ -698,4 +698,13 @@ body {
   body {
     font-size: 188% !important;
   }
+  #navButtons #leftButton {
+    margin-left: -0.3em;
+  }
+  #navButtons #leftButton,
+  #navButtons #rightButton {
+    height: 90%;
+    top: 45%;
+  }
+
 }
