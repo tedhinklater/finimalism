@@ -673,8 +673,12 @@ body {
   cursor: pointer;
   opacity: 0;
   transform: translateX(-150%);
-  transition: transform 1s ease-out, opacity 1s ease-out;
+  transition: transform 1s ease-out, opacity 1s ease-out, box-shadow 0.25s ease-in-out;
   z-index: 50;
+}
+
+.spotlight-poster:hover {
+  box-shadow: 0px 0px 5px #fffa;
 }
 
 .spotlight-poster.active {
