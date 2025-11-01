@@ -455,7 +455,7 @@ body {
   }
   
   .text-container {
-  bottom: 2.8em;
+  bottom: 1.8em;
     left: 0;
     right: 5vw;
     width: 100vw;
@@ -488,9 +488,8 @@ body {
 /* Navigation Buttons Container */
 #navButtons {
   position: absolute;
-  bottom: 6em;
-  right: 5em;
-  display: flex;
+  bottom: 2.5em;
+  right: 1.9em;
   z-index: 2;
   background: #202020;
   border-radius: 9999px;
@@ -498,7 +497,7 @@ body {
 
 /* Navigation Buttons */
 #navButtons button {
-  border: 1px solid var(--md-sys-color-outline);
+  border: none;
   background: none;
   padding: 0.15em 0.9em;
   margin: 0;
@@ -511,7 +510,6 @@ body {
 }
 
 #navButtons button + button {
-  border-left: none;
 }
 
 
@@ -520,7 +518,6 @@ body {
 ------------------------------------- */
 #navButtons button {
   position: relative; /* For state-layer overlay */
-  border: 1px solid var(--md-sys-color-outline);
   background-color: var(--md-sys-color-primary-container);
   color: var(--md-sys-color-on-primary-container);
   padding: 0.15em 0.9em;
@@ -548,7 +545,6 @@ body {
 }
 
 #navButtons button + button {
-  border-left: none;
 }
 
 /* ------------------------------------
@@ -577,6 +573,8 @@ body {
 #navButtons button .material-icons {
   color: var(--md-sys-color-on-primary-container);
   transition: color 0.2s ease;
+  -webkit-filter: drop-shadow(0 0 10px rgba(2, 2, 2, 0.75));
+  filter: drop-shadow(0 0 10px rgba(2, 2, 2, 0.75));
 }
 
 #navButtons button:hover .material-icons {
@@ -591,15 +589,16 @@ body {
   cursor: default;
 }
 
-
 #navButtons {
-  /* standalone circular buttons */
-  width: 3.1em; height: 3.1em;
-  display: flex; align-items: center; justify-content: center;
+  width: 3.1em;
+  height: 3.1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 9999px !important;
   margin: 0 !important;
-  background-color: transparent !important;  /* fully clear */
-  border: 1px solid transparent !important;  /* invisible border */
+  background-color: transparent !important;
+  border: none;
   color: var(--md-sys-color-on-primary-container) !important;
   cursor: pointer;
 }
@@ -611,8 +610,14 @@ body {
 #rightButton .material-icons { font-size: 2rem; pointer-events: none; }
 
 /* The pill keeps only the middle buttons */
-#navButtons #mediaButton { border-radius: 9999px 0 0 9999px !important; }
-#navButtons #volumeButton { border-radius: 0 9999px 9999px 0 !important; }
+#navButtons #mediaButton { display: none; }
+#navButtons #playPauseButton { display: none !important; }
+
+#navButtons #volumeButton {
+  background: #110e1ebd !important;
+  width: 3em;
+  border-radius: 0.2em;
+}
 
 /* Phone width Resolution */
 @media (max-width: 768px) {
@@ -633,12 +638,12 @@ body {
 #navButtons #leftButton,
 #navButtons #rightButton {
   position: fixed !important;         /* anchor to iframe viewport, not the pill */
-  top: 46%;                /* middle */
+  top: 44%;                /* middle */
   bottom: auto !important;            /* cancel old bottom anchor */
   transform: translateY(-50%) !important;
   z-index: 1000 !important;
-  height: 88%;
-  background: #0001 !important;
+  height: 89%;
+  background: #110e1ebd !important;
   width: 0.7em;
   padding: 0 !important;
   opacity: 1;
@@ -657,7 +662,7 @@ body {
 
 #navButtons #leftButton:hover,
 #navButtons #rightButton:hover {
-  background: #000a !important;
+  background: #090119d1 !important;
   transition: transform 0.2s ease, background 1s ease;
 }
 
@@ -675,7 +680,7 @@ body {
   opacity: 0;
   transform: translateX(-150%);
   transition: transform 1s ease-out, opacity 1s ease-out, box-shadow 0.25s ease-in-out;
-  z-index: 50;
+  z-index: 1001;
 }
 
 .spotlight-poster:hover {
