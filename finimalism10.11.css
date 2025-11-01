@@ -4103,7 +4103,7 @@ a[href*="shokoanime.com"] {
 /* 1440p resolution */
 @media (min-width: 1950px) {
   .layout-desktop body, .layout-tv body {
-    font-size: 166% !important;
+    font-size: 133.333% !important;
   }
 }
 
