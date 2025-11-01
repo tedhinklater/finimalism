@@ -150,7 +150,7 @@ body {
   text-shadow: -2px 2px 4px rgba(0, 0, 0, 0.5);
   transition: transform 5.5s ease-in-out, opacity 5.5s ease-in-out;
   padding-left: 6vw;
-  margin-bottom: -1em !important;
+  margin-bottom: -1em;
   margin-left: 45.5vw;
 }
 
@@ -472,7 +472,7 @@ body {
   .text-container .lorem-ipsum {
     font-size: 1em;
     line-height: 1.5em;
-    margin-bottom: -0.55em;
+    margin-bottom: -0.6em;
   }
 
   .text-container .plot {
@@ -662,9 +662,9 @@ body {
 
 .spotlight-poster {
   position: absolute;
-  top: 3.55em;
+  top: 2.8em;
   left: 1em;
-  width: 12em;
+  width: 39vh;
   aspect-ratio: 2 / 3;
   background-size: cover;
   background-position: center;
@@ -691,9 +691,25 @@ body {
 
 @media (min-width: 1950px) {
     body {
-      font-size: 150% !important;
+      font-size: 140% !important;
+    }
+    .spotlight-poster {
+      top: 2.55em;
+      width: 10.2em;
     }
   }
+
+@media (max-height:5em) {
+  .spotlight-poster {
+    width: 10.2em ;
+  }
+}
+
+@media (min-height:871px) {
+  .spotlight-poster {
+    width: 12em;
+  }
+}
 
 @media (min-width: 3000px) {
   body {
@@ -711,5 +727,23 @@ body {
 @media (max-width: 421px) and (orientation: portrait) {
   .text-container {
     bottom: 2.8em !important;
+  }
+}
+
+@media (orientation: landscape) and (max-width: 1000px) {
+  .text-container .logo {
+    margin-bottom: 1em;
+  }
+  .text-container {
+    max-width: 100vw;
+  }
+  .text-container .plot {
+    max-width: 100vw;
+  }
+  #navButtons #mediaButton,
+  #navButtons #playPauseButton,
+  #navButtons #volumeButton {
+    display: none !important;
+  }
   }
 }
