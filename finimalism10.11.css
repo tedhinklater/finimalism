@@ -2058,6 +2058,7 @@ progress::-webkit-progress-value {
 @media (min-width: 540px) {
 	.layout-mobile .headerTabs {
 		margin-top: -4em !important;
+		z-index: -1;
 	}
 }
 
