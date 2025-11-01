@@ -2491,6 +2491,13 @@ button.is-emby-button emby-button {
 	width: 100%;
 }
 
+.layout-desktop .itemsContainer.vertical-wrap.centered,
+.layout-tv .itemsContainer.vertical-wrap.centered {
+  width: 98%;
+  margin: 0 auto;
+  margin-right: 2em;
+}
+
 .collectionItems .itemsContainer.padded-left::before {
 	opacity: 0;
 }
