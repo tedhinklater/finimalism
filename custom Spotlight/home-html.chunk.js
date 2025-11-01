@@ -29,6 +29,12 @@
     @media (max-height: 421px) and (orientation: landscape) {
       .spotlightiframe { height: 21em !important; }
     }
+    @media (min-height: 870px) and (orientation: landscape) and (min-width:1000px) {
+      .spotlightiframe {height: 27.25em !important; }
+    }
+    @media (min-width: 1950px) {
+      .spotlightiframe {height: 29.6em !important; }
+    }
   </style>
 
   <iframe class="spotlightiframe"
