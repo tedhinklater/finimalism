@@ -413,7 +413,7 @@ body {
 }
 
 /* Phone-width Styling */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
   .logo {
     left: 50% !important;
   top: 20% !important;
@@ -451,6 +451,7 @@ body {
     left: 5vw;
     padding-right: 0;
   bottom: 7.0em;
+  display: none !important;
   }
   
   .text-container {
@@ -464,9 +465,9 @@ body {
 
   .text-container .logo {
     max-width: 50vw !important;
-    max-height: none !important;
+    max-height: 58vh !important;
     margin-left: 58vw !important;
-  margin-bottom: 6vw !important;
+    margin-bottom: 3vw !important;
   }
 
   .text-container .lorem-ipsum {
@@ -686,9 +687,10 @@ body {
   opacity: 1;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .spotlight-poster {
-    max-width: 20vw;
+    max-width: 37vh;
+    top: 14%;
   }
 }
 
