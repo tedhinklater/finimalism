@@ -1900,6 +1900,8 @@ progress::-webkit-progress-value {
 	font-size: inherit;
 	text-overflow: ellipsis;
 	text-align: center;
+	padding-left: 1em;
+	padding-right: 2em;
 }
 
 #seriesScheduleSection {
@@ -3400,7 +3402,7 @@ a[href*="shokoanime.com"] {
 	left: 5.25em;
 	width: 16.7em;
 	justify-content: space-evenly;
-	top: 14.62em;
+	top: 14.66em;
 	z-index: -1;
 	background: #0c0515ed;
 	border-top-right-radius: 1em;
