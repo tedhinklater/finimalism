@@ -4116,7 +4116,25 @@ a[href*="shokoanime.com"] {
 }
 
 .pageTitleWithLogo {
-  width: 7.5em;
+  width: 6.25em;
+}
+
+@media (max-height: 870px) and (min-width: 1000px) {
+	.pageTitleWithLogo {
+		width: 7.5em;
+	}
+}
+
+@media (min-width: 1950px) {
+	.pageTitleWithLogo {
+  		width: 7.25em;
+	}
+}
+
+@media (min-width: 3000px) {
+	.pageTitleWithLogo {
+		width: 7.65em;
+	}
 }
 
 /* 1440p resolution */
