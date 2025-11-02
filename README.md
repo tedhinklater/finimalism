@@ -57,4 +57,4 @@ or
 <a href="https://github.com/tedhinklater/Jellypane"><img src="https://i.imgur.com/RHFcIA9.png" alt="Jellypane" width="400"/></a>
 
 # [Spotlight](https://github.com/JSethCreates/jellyfin-script-spotlight) + my [custom style](https://github.com/tedhinklater/finimalism/tree/main/custom%20Spotlight) for it to match Finimalism
-<a href="https://github.com/JSethCreates/jellyfin-script-spotlight"><img src="https://github.com/user-attachments/assets/8434bbfe-d0c3-4f4c-abe3-7eb89e65b403"></a>
+<a href="https://github.com/JSethCreates/jellyfin-script-spotlight"><img src="https://github.com/user-attachments/assets/0f035093-b11f-4bc4-ab92-f8161ff48b2c"></a>
