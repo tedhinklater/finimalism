@@ -41,12 +41,12 @@ Everything is just an alteration of the amazing work already put into [Ultrachro
 If your TV or desktop is lagging, use the import lines below to use an optimized version of the theme
 ```css
 @import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@latest/finimalism10.11.css");
-@import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/PerformanceMode");
+@import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/PerformanceMode.css");
 ```
 or
 ```css
 @import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@latest/finimalism10.11-black.css");
-@import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/PerformanceMode");
+@import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/PerformanceMode.css");
 ```
 
 # More Library Cards 
