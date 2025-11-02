@@ -21,3 +21,7 @@
 .layout-desktop .pageTitleWithLogo,.layout-tv .pageTitleWithLogo {filter: none !important;}
 .layout-tv .card.show-focus:focus .cardImageContainer,.layout-tv .listItem-focusscale:focus {box-shadow: none !important;}
 .mainDrawer {background-color: #110e1ef5;}
+.sections.homeSectionsContainer::before {	background: transparent !important;}
+.pageTabContent.is-active::before {	background: #0c0515 !important; opacity: 1;}
+.detailPagePrimaryContainer::before { background: #0c0515 !important; opacity: 1;}
+.detailPageSecondaryContainer::before { background: #0c0515 !important; opacity: 1;}
