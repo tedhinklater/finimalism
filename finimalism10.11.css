@@ -4178,3 +4178,12 @@ a[href*="shokoanime.com"] {
 		padding-left: 25vw;
 	}
 }
+
+.layout-desktop #itemDetailPage .card.backdropCard .cardImageContainer.coveredImage.cardContent.lazy.blurhashed.lazy-image-fadein-fast {
+	border-radius: 0em !important;
+}
+
+.layout-mobile .detailPageContent {
+  padding-left: 5%;
+  padding-right: 0;
+}
