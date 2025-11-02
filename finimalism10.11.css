@@ -2065,7 +2065,7 @@ progress::-webkit-progress-value {
 }
 
 .mainDrawer {
-	background-color: rgba(0, 0, 0, 0.9);
+	background-color: #110e1ebd;
 }
 
 .mainDrawer-scrollContainer.scrollContainer .navMenuOption:hover,
