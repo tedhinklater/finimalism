@@ -37,6 +37,18 @@ Just paste an import line into your "Dashboard > General > CSS" section, or "Use
 
 Everything is just an alteration of the amazing work already put into [Ultrachromic by CTalvio](https://github.com/CTalvio/Ultrachromic). Updated for jellyfin server 10.11.X
 
+# Performance Mode
+If your TV or desktop is lagging, use the import lines below to use an optimized version of the theme
+```css
+@import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@latest/finimalism10.11.css");
+@import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/PerformanceMode");
+```
+or
+```css
+@import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@latest/finimalism10.11-black.css");
+@import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/PerformanceMode");
+```
+
 # More Library Cards 
 <a href="https://github.com/Phantomwise/jellyfin-custom-thumbnails-collection"><img src="https://i.imgur.com/aWUsxMG.png" alt="Cards" width="800"/></a>
 
