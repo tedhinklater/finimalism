@@ -165,6 +165,12 @@ h2 {
 	font-size: 0.8em;
 }
 
+@media (orientation: portrait) {
+	.layout-mobile div.itemMiscInfo.itemMiscInfo-primary {
+  		width: 68vw;
+	}
+}
+
 .layout-desktop div.itemMiscInfo.itemMiscInfo-primary,
 .layout-tv div.itemMiscInfo.itemMiscInfo-primary {
 	font-size: 12pt;
@@ -3970,6 +3976,7 @@ a[href*="shokoanime.com"] {
 @media (min-width: 30em) and (orientation: landscape) {
   .layout-mobile [dir="ltr"] .infoWrapper {
     padding-left: 0%;
+	width: 66vw;
   }
 }
 
