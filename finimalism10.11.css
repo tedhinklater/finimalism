@@ -165,6 +165,18 @@ h2 {
 	font-size: 0.8em;
 }
 
+.layout-mobile .trackSelections {
+  max-width: 44em;
+  font-size: 0.95em;
+  font-weight: 400;
+}
+
+.layout-mobile .trackSelections .selectContainer .detailTrackSelect {
+  padding-left: 0.5em;
+  text-align: center;
+  padding-right: 0.5em;
+}
+
 .layout-desktop div.itemMiscInfo.itemMiscInfo-primary,
 .layout-tv div.itemMiscInfo.itemMiscInfo-primary {
 	font-size: 12pt;
@@ -182,16 +194,23 @@ p.overview.detail-clamp-text {
 }
 
 #itemDetailPage .tagline {
-	font-weight: 700;
-	font-size: 1.5em;
+	font-weight: 600;
+	font-size: 1.25em;
 }
 
 .layout-mobile p.overview.detail-clamp-text {
-	font-size: 0.85em; 
+	font-size: 0.9em; 
 }
 
-.layout-mobile .itemDetailsGroup {
-	font-size: 0.85em;
+.layout-mobile .itemDetailsGroup,
+.layout-mobile .itemDetailsGroup .detailsGroupItem .emby-button {
+	font-size: 0.9em;
+	font-weight: 400;
+}
+
+.layout-mobile .detailSectionContent,
+.layout-mobile .detailSection {
+	margin-top: 2em;
 }
 
 span.homeLibraryText {
@@ -254,13 +273,14 @@ span.homeLibraryText {
 }
 
 .layout-mobile .itemName.infoText.parentNameLast {
-	font-size: 0.8em;
+	font-size: 1em;
 	padding-bottom: 0.25em;
 	display: -webkit-box;
 	-webkit-box-orient: vertical;
 	-webkit-line-clamp: 2;
 	overflow: hidden;
 	text-overflow: ellipsis;
+	font-weight: 700;
 }
 
 @media (max-width:800x) {
@@ -2283,7 +2303,8 @@ button.is-emby-button emby-button {
 @media (orientation: landscape) and (max-width: 1000px) {
 	.nameContainer {
 		max-width: 60vw;
-		margin-left: 2em;
+		margin-left: 1.2em;
+		font-size: 161% !important;
 	}
 }
 
@@ -4162,7 +4183,9 @@ a[href*="shokoanime.com"] {
 
 @media (orientation: portrait) {
 	.layout-mobile div.itemMiscInfo.itemMiscInfo-primary {
-  		width: 68vw;
+		width: 67vw;
+		margin-left: -5vw;
+		justify-items: center;
 	}
 }
 
@@ -4171,8 +4194,8 @@ a[href*="shokoanime.com"] {
 		margin-left: -25vw;
 	}
 	.layout-mobile [dir="ltr"] .infoWrapper {
-    	padding-left: 25vw;
-   		width: 66vw;
+		padding-left: 27vw;
+		width: 68vw;
   	}
 	.layout-mobile .mainDetailButtons.focuscontainer-x {
 		padding-left: 25vw;
