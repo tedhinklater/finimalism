@@ -165,12 +165,6 @@ h2 {
 	font-size: 0.8em;
 }
 
-@media (orientation: portrait) {
-	.layout-mobile div.itemMiscInfo.itemMiscInfo-primary {
-  		width: 68vw;
-	}
-}
-
 .layout-desktop div.itemMiscInfo.itemMiscInfo-primary,
 .layout-tv div.itemMiscInfo.itemMiscInfo-primary {
 	font-size: 12pt;
@@ -4163,4 +4157,24 @@ a[href*="shokoanime.com"] {
   .spotlightiframe {
     margin-top: -3.5em !important;
   }
+}
+
+
+@media (orientation: portrait) {
+	.layout-mobile div.itemMiscInfo.itemMiscInfo-primary {
+  		width: 68vw;
+	}
+}
+
+@media (orientation: landscape) and (max-width:1400px) {
+	.layout-mobile .detailRibbon {
+		margin-left: -25vw;
+	}
+	.layout-mobile [dir="ltr"] .infoWrapper {
+    	padding-left: 25vw;
+   		width: 66vw;
+  	}
+	.layout-mobile .mainDetailButtons.focuscontainer-x {
+		padding-left: 25vw;
+	}
 }
