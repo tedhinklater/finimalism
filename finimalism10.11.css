@@ -1459,6 +1459,7 @@ progress::-webkit-progress-value {
 }
 * {
 	scrollbar-color: #fff #0000 !important;
+	scrollbar-width: thin !important;
 }
 
 .syncPlayIconCircle {
