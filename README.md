@@ -12,22 +12,22 @@ or
 Just paste an import line into your "Dashboard > General > CSS" section, or "User Settings > Display > CSS" section.
 
 # Homepage (Colour version example with [Spotlight](https://github.com/JSethCreates/jellyfin-script-spotlight) bar)
-<img width="1920" height="1080" alt="fini1" src="https://github.com/user-attachments/assets/2afb41be-eb12-45a4-bbef-503c2919467e" />
+<img width="1920" height="1010" alt="f1" src="https://github.com/user-attachments/assets/3fc6f760-c730-4c98-b5ac-f3f53e1b4e36" />
 
 # Library
-<img width="1920" height="1080" alt="fini2" src="https://github.com/user-attachments/assets/960a6672-6d53-4092-8335-bb07aa4b8fd0" />
+<img width="1920" height="1010" alt="f2" src="https://github.com/user-attachments/assets/8d021baa-9bd2-4673-8faa-da83eb03eded" />
 
 # Movie
-<img width="1920" height="1080" alt="fini3" src="https://github.com/user-attachments/assets/04c20990-9233-4a2d-a6f9-74a1ec0d7e86" />
+<img width="1920" height="1010" alt="f3" src="https://github.com/user-attachments/assets/ce4a5f17-9e7f-456c-b72d-593f2666f337" />
 
 # Show
-<img width="1920" height="1080" alt="fini4" src="https://github.com/user-attachments/assets/f49b92b4-1de2-452c-8f48-5f68517e86ef" />
+<img width="1920" height="1010" alt="f4" src="https://github.com/user-attachments/assets/48471f58-4b4f-4922-b46a-c26b6b35d2bb" />
 
 # Season
-<img width="1920" height="1080" alt="fini5" src="https://github.com/user-attachments/assets/055452d7-ca53-44bc-beb1-81501dd96f62" />
+<img width="1920" height="1010" alt="f5" src="https://github.com/user-attachments/assets/b751f6a4-08fe-4112-a59f-5b19ea4b3aeb" />
 
 # Episode
-<img width="1920" height="1080" alt="fini6" src="https://github.com/user-attachments/assets/6c52efc4-f84f-492a-8c8f-400abd904c9f" />
+<img width="1920" height="1010" alt="f6" src="https://github.com/user-attachments/assets/359f1285-174d-49ec-bce0-07097ce61ce3" />
 
 # Player
 <img width="1920" height="1080" alt="f7" src="https://github.com/user-attachments/assets/9fa52036-85b8-4c3d-b3c1-d80fbfc48ae1" />
