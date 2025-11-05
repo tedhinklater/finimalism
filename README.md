@@ -12,25 +12,22 @@ or
 Just paste an import line into your "Dashboard > General > CSS" section, or "User Settings > Display > CSS" section.
 
 # Homepage (Colour version example with [Spotlight](https://github.com/JSethCreates/jellyfin-script-spotlight) bar)
-![homepage](https://github.com/user-attachments/assets/c9d64ab1-da7f-4c16-9a84-b30ff7b108b2)
+<img width="1920" height="1080" alt="fin1" src="https://github.com/user-attachments/assets/8644c6f2-6ccf-46fe-9536-964908057ad5" />
 
 # Library
-<img width="1920" height="1080" alt="f1" src="https://github.com/user-attachments/assets/c939261c-2547-4e7b-ad73-6443d43df3a4" />
+<img width="1920" height="1080" alt="fin2" src="https://github.com/user-attachments/assets/8b21be50-d162-47d4-925b-3db47260d9a3" />
 
 # Movie
-<img width="1920" height="1080" alt="f2" src="https://github.com/user-attachments/assets/a3f34100-fcf0-4498-8333-3da804dad482" />
+<img width="1920" height="1080" alt="fin3" src="https://github.com/user-attachments/assets/a906e488-0a31-41b5-a6aa-77afd1bd2db1" />
 
-# Show (Black version)
-<img width="1920" height="1080" alt="f3" src="https://github.com/user-attachments/assets/d0b0895a-b9a3-4c28-ab99-0b905a82a71a" />
-
-# Show (Scrolled down)
-<img width="1920" height="1080" alt="f4" src="https://github.com/user-attachments/assets/d2c175e9-9038-489c-8631-db0a7d34e1c3" />
+# Show
+<img width="1920" height="1080" alt="fin4" src="https://github.com/user-attachments/assets/6dc7d635-57b2-480f-922b-8fe7cb76c1a8" />
 
 # Season
-<img width="1920" height="1080" alt="f5" src="https://github.com/user-attachments/assets/4ad589cf-5d5b-4d42-b15b-c5697b295902" />
+<img width="1920" height="1080" alt="fin5" src="https://github.com/user-attachments/assets/6db1414d-c569-454c-a652-f2147725764e" />
 
 # Episode
-<img width="1920" height="1080" alt="f6" src="https://github.com/user-attachments/assets/5908ef3b-5910-4461-83d6-b377c2a92f56" />
+<img width="1920" height="1080" alt="fin6" src="https://github.com/user-attachments/assets/43aed3ba-8848-4186-90e1-115b51537eca" />
 
 # Player
 <img width="1920" height="1080" alt="f7" src="https://github.com/user-attachments/assets/9fa52036-85b8-4c3d-b3c1-d80fbfc48ae1" />
