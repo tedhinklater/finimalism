@@ -1079,10 +1079,6 @@ div[data-role="controlgroup"] a[data-role="button"] {
     animation: logoScale 0.3s ease-out forwards;
     display: block;
   }
-  @keyframes logoScale {
-    0% { transform: scale(1.15); }
-    100% { transform: scale(1); }
-  }
 }
 
 .layout-desktop #itemDetailPage .nameContainer,
