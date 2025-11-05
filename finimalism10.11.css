@@ -18,7 +18,7 @@ html {
 }
 
 .backgroundContainer, .preload {
-	background-color: #080112;
+	background-color: #110e1ebd;
 }
 
 .itemsContainer.padded-left {
@@ -33,7 +33,7 @@ html {
 	left: 0;
 	width: 100%;
 	height: 100vh;
-	background: linear-gradient(90deg, rgb(8.627% 2.353% 18.431%) 0%, rgb(8.556% 2.353% 18.458%) 6.25%, rgb(8.344% 2.353% 18.536%) 12.5%, rgb(8% 2.353% 18.663%) 18.75%, rgb(7.536% 2.353% 18.833%) 25%, rgb(6.972% 2.353% 19.041%) 31.25%, rgb(6.328% 2.353% 19.279%) 37.5%, rgb(5.629% 2.353% 19.536%) 43.75%, rgb(4.902% 2.353% 19.804%) 50%, rgb(4.175% 2.353% 20.072%) 56.25%, rgb(3.476% 2.353% 20.329%) 62.5%, rgb(2.832% 2.353% 20.566%) 68.75%, rgb(2.268% 2.353% 20.774%) 75%, rgb(1.804% 2.353% 20.945%) 81.25%, rgb(1.46% 2.353% 21.072%) 87.5%, rgb(1.248% 2.353% 21.15%) 93.75%, rgb(1.176% 2.353% 21.176%) 100% );
+	background: #110e1ebd;
 	background-size: cover;
 	opacity: 0;
 	z-index: -1;
@@ -48,10 +48,8 @@ html {
 	left: 0;
 	width: 100%;
 	height: 100vh;
-	background: linear-gradient(90deg, rgb(8.627% 2.353% 18.431%) 0%, rgb(8.556% 2.353% 18.458%) 6.25%, rgb(8.344% 2.353% 18.536%) 12.5%, rgb(8% 2.353% 18.663%) 18.75%, rgb(7.536% 2.353% 18.833%) 25%, rgb(6.972% 2.353% 19.041%) 31.25%, rgb(6.328% 2.353% 19.279%) 37.5%, rgb(5.629% 2.353% 19.536%) 43.75%, rgb(4.902% 2.353% 19.804%) 50%, rgb(4.175% 2.353% 20.072%) 56.25%, rgb(3.476% 2.353% 20.329%) 62.5%, rgb(2.832% 2.353% 20.566%) 68.75%, rgb(2.268% 2.353% 20.774%) 75%, rgb(1.804% 2.353% 20.945%) 81.25%, rgb(1.46% 2.353% 21.072%) 87.5%, rgb(1.248% 2.353% 21.15%) 93.75%, rgb(1.176% 2.353% 21.176%) 100% );
+	background: #110e1eeb;
 	background-size: cover;
-	opacity: 0.95;
-	filter: brightness(50%);
 	z-index: -1;
 	background-attachment: fixed;
 }
@@ -68,11 +66,10 @@ html {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: linear-gradient(90deg, rgb(8.627% 2.353% 18.431%) 0%, rgb(8.556% 2.353% 18.458%) 6.25%, rgb(8.344% 2.353% 18.536%) 12.5%, rgb(8% 2.353% 18.663%) 18.75%, rgb(7.536% 2.353% 18.833%) 25%, rgb(6.972% 2.353% 19.041%) 31.25%, rgb(6.328% 2.353% 19.279%) 37.5%, rgb(5.629% 2.353% 19.536%) 43.75%, rgb(4.902% 2.353% 19.804%) 50%, rgb(4.175% 2.353% 20.072%) 56.25%, rgb(3.476% 2.353% 20.329%) 62.5%, rgb(2.832% 2.353% 20.566%) 68.75%, rgb(2.268% 2.353% 20.774%) 75%, rgb(1.804% 2.353% 20.945%) 81.25%, rgb(1.46% 2.353% 21.072%) 87.5%, rgb(1.248% 2.353% 21.15%) 93.75%, rgb(1.176% 2.353% 21.176%) 100% );
+	background: #110e1ee0;
 	background-size: cover;
-	opacity: 0.925;
+	opacity: 1;
 	z-index: -1;
-	filter: saturate(100%) brightness(50%);
 }
 
 .detailPageSecondaryContainer {
@@ -87,11 +84,10 @@ html {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: linear-gradient(90deg, rgb(8.627% 2.353% 18.431%) 0%, rgb(8.556% 2.353% 18.458%) 6.25%, rgb(8.344% 2.353% 18.536%) 12.5%, rgb(8% 2.353% 18.663%) 18.75%, rgb(7.536% 2.353% 18.833%) 25%, rgb(6.972% 2.353% 19.041%) 31.25%, rgb(6.328% 2.353% 19.279%) 37.5%, rgb(5.629% 2.353% 19.536%) 43.75%, rgb(4.902% 2.353% 19.804%) 50%, rgb(4.175% 2.353% 20.072%) 56.25%, rgb(3.476% 2.353% 20.329%) 62.5%, rgb(2.832% 2.353% 20.566%) 68.75%, rgb(2.268% 2.353% 20.774%) 75%, rgb(1.804% 2.353% 20.945%) 81.25%, rgb(1.46% 2.353% 21.072%) 87.5%, rgb(1.248% 2.353% 21.15%) 93.75%, rgb(1.176% 2.353% 21.176%) 100% );
+	background: #110e1ee0;
 	background-size: cover;
-	opacity: 0.925;
+	opacity: 1;
 	z-index: -1;
-	filter: saturate(100%) brightness(50%);
 }
 
 .headerTop {
@@ -680,21 +676,6 @@ progress::-webkit-progress-value {
 	background: rgb(var(--accent));
 }
 
-.paper-icon-button-light:hover,
-.raised.homeLibraryButton:hover,
-.button-flat:hover,
-.playstatebutton-icon-played,
-.ratingbutton-icon-withrating,
-.paper-icon-button-light:hover:not(:disabled),
-.emby-tab-button:hover,
-.selectLabelFocused,
-.inputLabelFocused,
-.textareaLabelFocused,
-.buttonActive,
-.button-link {
-	color: rgba(var(--accent)) !important;
-}
-
 #itemDetailPage .button-link {
 	color: inherit !important;
 }
@@ -1067,29 +1048,48 @@ div[data-role="controlgroup"] a[data-role="button"] {
 }
 
 @media (orientation: landscape) {
+  .layout-desktop #itemDetailPage { 
+    position: relative;
+  }
+  .layout-desktop #itemDetailPage::after,
+  .layout-tv #itemDetailPage::after {
+    content: none;
+  }
+  .layout-desktop #itemDetailPage:has(.detailLogo[style*="background-image"])::after,
+  .layout-tv #itemDetailPage:has(.detailLogo[style*="background-image"])::after {
+    content: '';
+    position: fixed;
+    left: 4.2em;
+    top: 3em;
+    width: 23em;
+    height: 8em;
+    background: #110e1ebd;
+    z-index: 5;
+    border-radius: 0.7em;
+    box-shadow: 0px 2px 8px #0005;
+  }
   .layout-desktop .detailLogo,
   .layout-tv .detailLogo {
-		position: absolute;
-		width: 50vw;
-		display: block;
-		right: unset;
-		filter: drop-shadow(0 0 10px rgba(2, 2, 2, 0.75));
-		left: 60%;
-		transform: translateX(-50%) translateY(-50%);
-		top: 19em;
-		max-height: 25em;
-		height: 25em;
-	}
-  .layout-tv .detailLogo {
-		margin-top: -3em;
-	}
+    position: fixed;
+    z-index: 10;
+    left: 5em;
+    top: 3.3em;
+    width: 21.6em;
+    height: 7.5em;
+    animation: logoScale 0.3s ease-out forwards;
+    display: block;
+  }
+  @keyframes logoScale {
+    0% { transform: scale(1.15); }
+    100% { transform: scale(1); }
+  }
 }
 
 .layout-desktop #itemDetailPage .nameContainer,
 .layout-tv #itemDetailPage .nameContainer {
 	position: fixed;
-	left: 3.5em;
-	top: 37.25em;
+	left: 2.75em;
+	top: 49.65em;
 	width: 26em;
 	justify-content: center;
 	text-align: center;
@@ -1135,7 +1135,7 @@ div[data-role="controlgroup"] a[data-role="button"] {
 
 @media (orientation: landscape) {
 	.itemDetailPage {
-		padding-top: 21.7682275em !important;
+		padding-top: 34.2em !important;
 	}
 }
 
@@ -1166,7 +1166,7 @@ div[data-role="controlgroup"] a[data-role="button"] {
 	margin-top: auto; 
 	margin-bottom: auto;
 	filter: drop-shadow(0px 0px 1.5px rgb(0, 0, 0));
-    	color: #fff;
+  color: #fff;
 }
 
 .progressring-spiner {
@@ -1420,7 +1420,7 @@ progress::-webkit-progress-value {
 .textareaLabelFocused,
 .buttonActive,
 .button-link {
-	color: rgba(var(--accent)) !important;
+	color: rgba(255, 255, 255, 1) !important;
 }
 
 #itemDetailPage .button-link {
@@ -1467,8 +1467,9 @@ progress::-webkit-progress-value {
 	text-shadow: none !important;
 }
 
-.mainDetailButtons {
-	font-size: 120%;
+.layout-desktop .mainDetailButtons,
+.layout-tv .mainDetailButtons {
+	font-size: 120% !important;
 }
 
 @media (orientation: landscape){
@@ -1601,9 +1602,9 @@ progress::-webkit-progress-value {
 .formDialogHeaderTitle {
 	margin-left: 1em;
 }
-.formDialogContent {
+/*.formDialogContent {
 	margin-bottom: 6.2em;
-}
+}*/
 .dialogContentInner {
 	padding: .5em 1em 1em;
 	padding-right: 1em;
@@ -1835,7 +1836,9 @@ progress::-webkit-progress-value {
 .layout-tv .homeLibraryButton:hover,
 .layout-desktop .homeLibraryButton:focus,
 .layout-tv .homeLibraryButton:focus,
-.layout-desktop .card:hover {
+.layout-desktop .card.portraitCard:hover,
+.layout-desktop .card.backdropCard:hover,
+.layout-desktop .card.squareCard:hover {
 	-webkit-filter: none !important;
 	box-shadow: 0 0 5px 0, 255, 222;
 	filter: none !important;
@@ -1910,9 +1913,9 @@ progress::-webkit-progress-value {
 .layout-desktop .trackSelections,
 .layout-tv .trackSelections {
 	position: fixed;
-	left: 0.55em;
-	top: 44em;
-	width: 26em;
+	left: 0em;
+	top: 56em;
+	width: 27em;
 	font-weight: 500;
 }
 
@@ -1953,27 +1956,34 @@ progress::-webkit-progress-value {
 	flex: 1;
 }
 
-.layout-desktop .detailImageContainer .card {
-	width: 20em;
-	top: 3.5em;
-	left: 6.3em;
-	min-width: 265px;
-}
-
+.layout-desktop .detailImageContainer .card,
 .layout-tv .detailImageContainer .card {
-	width: 18em;
-	top: 6.6em;
-	left: 7em;
+	width: 22.975em;
+	top: 11.5em;
+	left: 4.3em;
+	min-width: 265px;
+	filter: drop-shadow(-6px 2px 8px rgba(0, 0, 0, 0.58));
 }
 
+
+.layout-desktop .detailImageContainer .card.portraitCard:hover,
+.layout-tv .detailImageContainer .card.portraitCard:hover,
+.layout-desktop .detailImageContainer .card.backdropCard:hover,
+.layout-tv .detailImageContainer .card.backdropCard:hover,
+.layout-desktop .detailImageContainer .card.squareCard:hover,
+.layout-tv .detailImageContainer .card.squareCard:hover {
+	filter: drop-shadow(-6px 2px 8px rgba(0, 0, 0, 0.58)) !important;
+  transform: none;
+  transition: transform 1s ease;
+}
 .layout-desktop #itemDetailPage .card.squareCard,
 .layout-tv #itemDetailPage .card.squareCard {
-	top: 13em;
+	top: 22.8em;
 }
 
 .layout-desktop .detailImageContainer .card.backdropCard,
 .layout-tv .detailImageContainer .card.backdropCard {
-	top: 22.2em !important;
+	top: 32.8em !important;
 }
 
 .flex.align-items-center.flex-grow.headerTop {
@@ -2115,7 +2125,7 @@ button.is-emby-button emby-button {
 }
 
 #myPreferencesMenuPage .verticalSection-extrabottompadding .emby-button:hover {
-	background: #2c1f78ba !important;
+	background: #3733531f !important;
 	transition: background 0.3s ease;
 }
 
@@ -2170,6 +2180,7 @@ button.is-emby-button emby-button {
 .layout-tv div:not(.sectionTitleContainer-cards) > .sectionTitle-cards {
 	margin: 0;
 	padding-top: 1.25em;
+	padding-left: 0.5em;
 }
 
 .layout-mobile .homePage .section1.verticalSection .itemsContainer .card.overflowBackdropCard {
@@ -2232,16 +2243,6 @@ button.is-emby-button emby-button {
 .verticalSection .card img {
 	width: 100%;
 	height: auto;
-}
-
-@media (min-width: 100em) {
-	.layout-tv .mainDetailButtons {
-		font-size: 108%;
-		margin: 1em 0 1.25em;
-		position: absolute;
-		right: 10em;
-		top: 1em;
-	}
 }
 
 .detailVerticalSection .nextUpItems {
@@ -2705,9 +2706,9 @@ button.is-emby-button emby-button {
 .layout-tv .itemName.infoText.subtitle.focuscontainer-x {
 	text-align: center;
 	position: fixed;
-	top: 20.4em;
-	left: 7.5em;
-	width: 18em;
+	top: 30.3em;
+	left: 5em;
+	width: 22em;
 	filter: drop-shadow(-1px 1px 2px black);
 	line-height: 0.8em;
 	font-size: 1.05em;
@@ -2880,7 +2881,6 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 	border-radius: 0.25em;
 	z-index: 90;
 	background: #110e1ebd;
-	filter: drop-shadow(0 3px 3px rgba(0, 0, 0, 0.2)) drop-shadow(0 3px 3px rgba(0, 0, 0, 0.35));
 	margin-left: 0.1em;
 }
 
@@ -2896,7 +2896,6 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 	transform: translateY(-11%);
 	transition: 0s;
 	z-index: 90;
-	filter: drop-shadow(0 3px 3px rgba(0, 0, 0, 0.2)) drop-shadow(0 3px 3px rgba(0, 0, 0, 0.35));
 	position: fixed;
 	right: 0.7vw;
 	top: 1em;
@@ -3178,16 +3177,49 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
   	}
 }
 
+.layout-desktop #itemDetailPage .itemExternalLinks,
+.layout-tv #itemDetailPage .itemExternalLinks {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	position: fixed;
+	left: 2.9em;
+	transform: translateX(-50%) translateY(-100%);
+	top: 55.4em;
+	z-index: 2;
+	padding: 1em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	min-height: 17.55em;
+	padding-bottom: 3em;
+	padding-top: 0.5em;
+}
+
+.layout-desktop #itemDetailPage .itemExternalLinks .button-link.emby-button, 
+.layout-tv #itemDetailPage .itemExternalLinks .button-link.emby-button {
+  background: #14152b45;
+  padding: 7px;
+  border-radius: 8px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  filter: drop-shadow(0px 2px 1px rgba(0, 0, 0, 0.68));
+}
+
+.layout-desktop #itemDetailPage .itemExternalLinks .button-link.emby-button:hover, 
+.layout-tv #itemDetailPage .itemExternalLinks .button-link.emby-button:focus {
+  background: #150c27b5;
+}
+
 a[href*="imdb.com"]::before {
 	content: "";
 	display: inline-block;
-	width: 50px;
-	height: 25px;
+	width: 40px;
+	height: 20px;
 	background-image: url('https://i.ibb.co/WWKKmLcC/imdb.png');
 	background-size: contain;
 	background-repeat: no-repeat;
-	margin-right: 5px;
 	vertical-align: middle;
+	
 }
 
 a[href*="imdb.com"] {
@@ -3197,12 +3229,11 @@ a[href*="imdb.com"] {
 a[href*="trakt.tv"]::before {
 	content: "";
 	display: inline-block;
-	width: 50px;
-	height: 25px;
+	width: 40px;
+	height: 20px;
 	background-image: url('https://i.ibb.co/G6p74rm/trakt.png');
 	background-size: contain;
 	background-repeat: no-repeat;
-	margin-right: 5px;
 	vertical-align: middle;
 }
 
@@ -3213,12 +3244,11 @@ a[href*="trakt.tv"] {
 a[href*="themoviedb.org"]::before {
 	content: "";
 	display: inline-block;
-	width: 50px;
-	height: 25px;
+	width: 40px;
+	height: 20px;
 	background-image: url('https://i.ibb.co/Mk9r3tqm/tmdb.png');
 	background-size: contain;
 	background-repeat: no-repeat;
-	margin-right: 5px;
 	vertical-align: middle;
 }
 
@@ -3229,24 +3259,22 @@ a[href*="themoviedb.org"] {
 a[href*="themoviedb.org/collection"]::before {
 	content: "";
 	display: inline-block;
-	width: 50px;
-	height: 25px;
+	width: 40px;
+	height: 20px;
 	background-image: url('https://i.ibb.co/9kvKdzj9/tmdbcollection.png');
 	background-size: contain;
 	background-repeat: no-repeat;
-	margin-right: 5px;
 	vertical-align: middle;
 }
 
 a[href*="thetvdb.com"]::before {
 	content: "";
 	display: inline-block;
-	width: 50px;
-	height: 25px;
+	width: 40px;
+	height: 20px;
 	background-image: url('https://i.ibb.co/0jKrJ38d/tvdb.png');
 	background-size: contain;
 	background-repeat: no-repeat;
-	margin-right: 5px;
 	vertical-align: middle;
 }
 
@@ -3257,12 +3285,11 @@ a[href*="thetvdb.com"] {
 a[href*="tvmaze.com"]::before {
 	content: "";
 	display: inline-block;
-	width: 50px;
-	height: 25px;
+	width: 40px;
+	height: 20px;
 	background-image: url('https://i.ibb.co/YTqbgfJc/tvmaze.png');
 	background-size: contain;
 	background-repeat: no-repeat;
-	margin-right: 5px;
 	vertical-align: middle;
 }
 
@@ -3273,12 +3300,11 @@ a[href*="tvmaze.com"] {
 a[href*="anidb.net"]::before {
 	content: "";
 	display: inline-block;
-	width: 50px;
-	height: 25px;
+	width: 40px;
+	height: 20px;
 	background-image: url('https://i.ibb.co/GNzTYhz/anidb.png');
 	background-size: contain;
 	background-repeat: no-repeat;
-	margin-right: 5px;
 	vertical-align: middle;
 }
 
@@ -3289,12 +3315,11 @@ a[href*="anidb.net"] {
 a[href*="anilist.co"]::before {
 	content: "";
 	display: inline-block;
-	width: 50px;
-	height: 25px;
+	width: 40px;
+	height: 20px;
 	background-image: url('https://i.ibb.co/tM2cNLZm/anilist.png');
 	background-size: contain;
 	background-repeat: no-repeat;
-	margin-right: 5px;
 	vertical-align: middle;
 }
 
@@ -3305,12 +3330,11 @@ a[href*="anilist.co"] {
 a[href*="kitsu.app"]::before {
 	content: "";
 	display: inline-block;
-	width: 50px;
-	height: 25px;
+	width: 40px;
+	height: 20px;
 	background-image: url('https://i.ibb.co/Ng8RmDFg/kitsu.png');
 	background-size: contain;
 	background-repeat: no-repeat;
-	margin-right: 5px;
 	vertical-align: middle;
 }
 
@@ -3321,12 +3345,11 @@ a[href*="kitsu.app"] {
 a[href*="theaudiodb.com"]::before {
 	content: "";
 	display: inline-block;
-	width: 50px;
-	height: 25px;
+	width: 40px;
+	height: 20px;
 	background-image: url('https://i.ibb.co/TMqCZLtp/theaudiodb.png');
 	background-size: contain;
 	background-repeat: no-repeat;
-	margin-right: 5px;
 	vertical-align: middle;
 }
 
@@ -3337,12 +3360,11 @@ a[href*="theaudiodb.com"] {
 a[href*="music.apple.com"]::before {
 	content: "";
 	display: inline-block;
-	width: 50px;
-	height: 25px;
+	width: 40px;
+	height: 20px;
 	background-image: url('https://i.ibb.co/wZq3Xw5K/applemusic.png');
 	background-size: contain;
 	background-repeat: no-repeat;
-	margin-right: 5px;
 	vertical-align: middle;
 }
 
@@ -3353,12 +3375,11 @@ a[href*="music.apple.com"] {
 a[href*="musicbrainz.org"]::before {
 	content: "";
 	display: inline-block;
-	width: 50px;
-	height: 25px;
+	width: 40px;
+	height: 20px;
 	background-image: url('https://i.ibb.co/r2mW8XbQ/musicbrainz.png');
 	background-size: contain;
 	background-repeat: no-repeat;
-	margin-right: 5px;
 	vertical-align: middle;
 }
 
@@ -3369,12 +3390,11 @@ a[href*="musicbrainz.org"] {
 a[href*="myanimelist.net"]::before {
 	content: "";
 	display: inline-block;
-	width: 50px;
-	height: 25px;
+	width: 40px;
+	height: 20px;
 	background-image: url('https://i.ibb.co/YFbTWhnQ/myanimelist.png');
 	background-size: contain;
 	background-repeat: no-repeat;
-	margin-right: 5px;
 	vertical-align: middle;
 }
 
@@ -3385,12 +3405,11 @@ a[href*="myanimelist.net"] {
 a[href*="kinopoisk.ru"]::before {
 	content: "";
 	display: inline-block;
-	width: 50px;
-	height: 25px;
+	width: 40px;
+	height: 20px;
 	background-image: url('https://i.ibb.co/N6TZ0yjZ/kinopoisk.png');
 	background-size: contain;
 	background-repeat: no-repeat;
-	margin-right: 5px;
 	vertical-align: middle;
 }
 
@@ -3401,12 +3420,11 @@ a[href*="kinopoisk.ru"] {
 a[href*="shokoanime.com"]::before {
 	content: "";
 	display: inline-block;
-	width: 50px;
-	height: 25px;
+	width: 40px;
+	height: 20px;
 	background-image: url('https://i.ibb.co/mChjxCk6/shokoanime.png');
 	background-size: contain;
 	background-repeat: no-repeat;
-	margin-right: 5px;
 	vertical-align: middle;
 }
 
@@ -3415,40 +3433,50 @@ a[href*="shokoanime.com"] {
 }
 
 .itemExternalLinks.focuscontainer-x {
-	color: #000a;
+	color: #0002;
+	filter: drop-shadow(-2px 1px 0px #131313c7);
 }
 
 .layout-desktop .mainDetailButtons.focuscontainer-x,
 .layout-tv .mainDetailButtons.focuscontainer-x {
 	position: fixed;
-	left: 5.25em;
-	width: 16.7em;
+	left: 3.57em;
+	width: 19.15em;
 	justify-content: space-evenly;
-	top: 14.66em;
+	top: 23.05em;
 	z-index: -1;
-	background: #0c0515ed;
 	border-top-right-radius: 1em;
 	margin: 1.25em 0;
-	padding-top: 12em;
-	border-top-left-radius: 1em;
+	padding-top: 14em;
+	border-top-left-radius: 0em;
 }
 
-.layout-tv .mainDetailButtons.focuscontainer-x {
-	top: 15.62em;
+.layout-desktop .mainDetailButtons.focuscontainer-x::before,
+.layout-tv .mainDetailButtons.focuscontainer-x::before {
+content: '';
+  position: absolute;
+  left: 0;
+  width: 19.15em;
+  height: 2.557777em;
+  background-size: cover;
+  background: #0a0715d6;
+  border-top-right-radius: 1em;
+  margin: 1.25em 0;
+  padding-top: 14em;
+  border-top-left-radius: 1em;
+  top: -1.25em;
+  box-shadow: 0px 2px 8px #0005;
+}
+
+.layout-desktop #itemDetailPage .card.portraitCard .cardImageContainer.coveredImage.cardContent.lazy.blurhashed.lazy-image-fadein-fast,
+.layout-tv #itemDetailPage .card.portraitCard .cardImageContainer.coveredImage.cardContent.lazy.blurhashed.lazy-image-fadein-fast {
+	border-bottom-left-radius: 0em !important;
+	border-bottom-right-radius: 0em !important;
 }
 
 .layout-desktop .cardPadder,
 .layout-tv .cardPadder {
 	border-radius: unset;
-}
-
-.layout-desktop .itemExternalLinks.focuscontainer-x,
-.layout-tv .itemExternalLinks.focuscontainer-x {
-	color: #000a;
-	position: fixed;
-	width: 21.6em;
-	left: 7em;
-	top: 56.5em;
 }
 
 .layout-desktop .mainDetailButtons.focuscontainer-x .button-flat,
@@ -3457,8 +3485,8 @@ a[href*="shokoanime.com"] {
     padding: 0 !important;
     z-index: 5;
     border-radius: 0.26em !important;
-    padding-top: 0.5em !important;
-    padding-bottom: 0.5em !important;
+    margin-top: 0.5em !important;
+    margin-bottom: 0.5em !important;
 }
 
 /* .layout-desktop .mainDetailButtons.focuscontainer-x .button-flat:hover,
@@ -3553,7 +3581,7 @@ a[href*="shokoanime.com"] {
 .layout-tv .musicParentName, .layout-tv .musicParentName {
 	position: absolute;
 	left: 10.2em;
-	top: 3em;
+	top: 3.5em;
 	transform: translateX(-50%);
 	font-size: 1.25em;
 	width: 17em;
@@ -3772,10 +3800,10 @@ a[href*="shokoanime.com"] {
 	}
 }
 
-@media (max-height: 870px) {
+@media (max-height: 1000px) {
 	.layout-desktop body, 
 	.layout-tv body {
-		font-size: 98% !important;
+		font-size: 100% !important;
 	}
 	.spotlightiframe {
 	}
@@ -3845,15 +3873,6 @@ a[href*="shokoanime.com"] {
 	margin-left: 1vw;
 }
 
-#itemDetailPage .itemExternalLinks.focuscontainer-x {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	gap: 10px;
-	margin: .7em 0;
-	font-size: 0;
-}
-
 .layout-mobile #itemDetailPage .itemExternalLinks.focuscontainer-x {
 	justify-content: space-evenly;
 	font-size: 0 !important;
@@ -3881,16 +3900,17 @@ a[href*="shokoanime.com"] {
 
 .layout-desktop [dir="ltr"] .detailPagePrimaryContent,
 .layout-tv [dir="ltr"] .detailPagePrimaryContent {
-	padding-left: 27vw;
+	padding-left: 32em;
 	max-width: 62vw;
 }
 
 .layout-desktop [dir="ltr"] .detailRibbon, .layout-tv [dir="ltr"] .detailRibbon {
-  padding-left: 27vw;
+  padding-left: 32em;
+  background: transparent;
 }
 
 [dir="ltr"] .detailPageContent {
-  padding-left: 27vw;
+  padding-left: 31.5em;
 }
 
 
@@ -3927,11 +3947,10 @@ a[href*="shokoanime.com"] {
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
 	height: 100%;
-	background: #13082be0;
+	background: #0a0715d6;
+	  background-size: auto;
 	background-size: cover;
-	opacity: 0.85;
 	z-index: -1;
 	width: 100vw;
 }
@@ -3972,7 +3991,7 @@ a[href*="shokoanime.com"] {
 
 .layout-desktop #childrenContent,
 .layout-tv #childrenContent {
-	width: 67vw;
+	width: 65vw;
 }
 
 .layout-desktop #itemDetailPage .padded-top-focusscale.padded-bottom-focusscale.no-padding.emby-scroller,
@@ -4047,13 +4066,16 @@ a[href*="shokoanime.com"] {
 @media (max-width:1566px) and (min-height:720px) {
 	.layout-desktop #itemDetailPage .detailPagePrimaryContent,
 	.layout-tv #itemDetailPage .detailPagePrimaryContent {
-		padding-left: 28em;
+		padding-left: 29em;
 	}
 	.layout-desktop div.itemMiscInfo.itemMiscInfo-primary, .layout-tv div.itemMiscInfo.itemMiscInfo-primary,
 	.layout-tv div.itemMiscInfo.itemMiscInfo-primary, .layout-tv div.itemMiscInfo.itemMiscInfo-primary {
 		left: 20em;
 		position: absolute;
 		top: 0em;
+	}
+	[dir="ltr"] .detailPageContent {
+		padding-left: 28em;
 	}
 }
 
@@ -4085,7 +4107,7 @@ a[href*="shokoanime.com"] {
 }
 
 .layout-tv .detailPageWrapperContainer {
-	padding-top: 36.8em !important;
+	padding-top: 49.3em !important;
 }
 
 .currentTimeText {
@@ -4097,23 +4119,6 @@ a[href*="shokoanime.com"] {
 .itemsContainer-tv > .portraitCard, .itemsContainer-tv > .squareCard {
   width: 15%;
   margin-bottom: 1em;
-}
-
-.layout-tv .detailImageContainer .card.backdropCard {
-  top: 23em !important;
-}
-
-.layout-tv .mainDetailButtons.focuscontainer-x {
-  top: 17.62em;
-  padding-top: 12.3em;
-  left: 6.5em;
-}
-
-.layout-tv .itemName.infoText.subtitle.focuscontainer-x {
-	top: 21.4em;
-	left: 7.75em;
-	width: 17em;
-	transform: translateY(-50%);
 }
 
 .listItemImage-large-tv {
@@ -4211,3 +4216,50 @@ a[href*="shokoanime.com"] {
   padding-left: 5%;
   padding-right: 0;
 }
+
+.layout-desktop .page.libraryPage.itemDetailPage.noSecondaryNavPage.selfBackdropPage.mainAnimatedPage::before {
+	content: '';
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background: linear-gradient( 90deg, rgb(12, 3, 26, 0.92) 0%, rgba(12, 3, 26, 0.44) 25%, rgba(8, 4, 37, 0) 32% );
+	background-size: cover;
+	opacity: 1;
+	z-index: -1;
+	background-attachment: fixed;
+	pointer-events: none;
+}
+
+.layout-desktop .nextUpSection.verticalSection.detailVerticalSection,
+.layout-tv .nextUpSection.verticalSection.detailVerticalSection {
+	position: absolute;
+	right: 4em;
+	border-top-left-radius: 0.2em;
+	animation: slideDown 1.5s ease-out forwards;
+	animation-delay: 0.5s;
+	opacity: 0;
+  top: -27em;
+  filter: drop-shadow(0px 2px 1px rgba(0, 0, 0, 0.68));
+}
+
+@keyframes slideDown {
+  from {
+    right: 0em;
+    opacity: 0;
+  }
+  to {
+    right: 4em;
+    opacity: 1;
+  }
+}
+
+.layout-desktop #itemDetailPage .nextUpItems.vertical-wrap.padded-right.itemsContainer .cardText.cardTextCentered.cardText-first {
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 3;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
