@@ -1055,19 +1055,6 @@ div[data-role="controlgroup"] a[data-role="button"] {
   .layout-tv #itemDetailPage::after {
     content: none;
   }
-  .layout-desktop #itemDetailPage:has(.detailLogo[style*="background-image"])::after,
-  .layout-tv #itemDetailPage:has(.detailLogo[style*="background-image"])::after {
-    content: '';
-    position: fixed;
-    left: 4.2em;
-    top: 3em;
-    width: 23em;
-    height: 8em;
-    background: transparent;
-    z-index: 5;
-    border-radius: 0.7em;
-    box-shadow: 0px 2px 8px #0005;
-  }
   .layout-desktop .detailLogo,
   .layout-tv .detailLogo {
     position: fixed;
