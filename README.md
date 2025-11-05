@@ -12,22 +12,22 @@ or
 Just paste an import line into your "Dashboard > General > CSS" section, or "User Settings > Display > CSS" section.
 
 # Homepage (Colour version example with [Spotlight](https://github.com/JSethCreates/jellyfin-script-spotlight) bar)
-<img width="1920" height="1080" alt="fin1" src="https://github.com/user-attachments/assets/8644c6f2-6ccf-46fe-9536-964908057ad5" />
+<img width="1920" height="1080" alt="fini1" src="https://github.com/user-attachments/assets/2afb41be-eb12-45a4-bbef-503c2919467e" />
 
 # Library
-<img width="1920" height="1080" alt="fin2" src="https://github.com/user-attachments/assets/8b21be50-d162-47d4-925b-3db47260d9a3" />
+<img width="1920" height="1080" alt="fini2" src="https://github.com/user-attachments/assets/960a6672-6d53-4092-8335-bb07aa4b8fd0" />
 
 # Movie
-<img width="1920" height="1080" alt="fin3" src="https://github.com/user-attachments/assets/a906e488-0a31-41b5-a6aa-77afd1bd2db1" />
+<img width="1920" height="1080" alt="fini3" src="https://github.com/user-attachments/assets/04c20990-9233-4a2d-a6f9-74a1ec0d7e86" />
 
 # Show
-<img width="1920" height="1080" alt="fin4" src="https://github.com/user-attachments/assets/6dc7d635-57b2-480f-922b-8fe7cb76c1a8" />
+<img width="1920" height="1080" alt="fini4" src="https://github.com/user-attachments/assets/f49b92b4-1de2-452c-8f48-5f68517e86ef" />
 
 # Season
-<img width="1920" height="1080" alt="fin5" src="https://github.com/user-attachments/assets/6db1414d-c569-454c-a652-f2147725764e" />
+<img width="1920" height="1080" alt="fini5" src="https://github.com/user-attachments/assets/055452d7-ca53-44bc-beb1-81501dd96f62" />
 
 # Episode
-<img width="1920" height="1080" alt="fin6" src="https://github.com/user-attachments/assets/43aed3ba-8848-4186-90e1-115b51537eca" />
+<img width="1920" height="1080" alt="fini6" src="https://github.com/user-attachments/assets/6c52efc4-f84f-492a-8c8f-400abd904c9f" />
 
 # Player
 <img width="1920" height="1080" alt="f7" src="https://github.com/user-attachments/assets/9fa52036-85b8-4c3d-b3c1-d80fbfc48ae1" />
