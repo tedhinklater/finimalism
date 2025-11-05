@@ -15,7 +15,7 @@ Just paste an import line into your "Dashboard > General > CSS" section, or "Use
 <img width="1920" height="1010" alt="f1" src="https://github.com/user-attachments/assets/3fc6f760-c730-4c98-b5ac-f3f53e1b4e36" />
 
 # Library
-<img width="1920" height="1010" alt="f2" src="https://github.com/user-attachments/assets/8d021baa-9bd2-4673-8faa-da83eb03eded" />
+<img width="1920" height="1010" alt="f2" src="https://github.com/user-attachments/assets/371b346f-fafd-4e2d-a738-ce4c174a60c5" />
 
 # Movie
 <img width="1920" height="1010" alt="f3" src="https://github.com/user-attachments/assets/ce4a5f17-9e7f-456c-b72d-593f2666f337" />
