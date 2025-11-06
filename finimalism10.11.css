@@ -3995,7 +3995,7 @@ content: '';
 
 .layout-desktop [dir="ltr"] .detailPagePrimaryContent,
 .layout-tv [dir="ltr"] .detailPagePrimaryContent {
-	padding-left: 32em;
+	padding-left: 31.5em;
 	max-width: 62vw;
 }
 
