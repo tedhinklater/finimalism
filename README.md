@@ -23,7 +23,7 @@ Just paste an import line into your "Dashboard > General > CSS" section, or "Use
 <img width="1920" height="1080" alt="f3a" src="https://github.com/user-attachments/assets/e4f12557-7979-4ce3-a04d-4018ae2019c2" />
 
 # TV Show
-<img width="1920" height="1080" alt="f4" src="https://github.com/user-attachments/assets/f795d8e9-701d-41e4-a81f-097e1894b2f1" />
+<img width="1920" height="1080" alt="f4" src="https://github.com/user-attachments/assets/70d0f64a-e373-479a-b5db-7d990028ad82" />
 
 <img width="1920" height="1080" alt="f4a" src="https://github.com/user-attachments/assets/dc239374-14cc-416f-bc15-b85058e73b48" />
 
