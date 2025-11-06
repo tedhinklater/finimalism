@@ -408,14 +408,6 @@ progress::-webkit-progress-value {
 	box-shadow: none;
 	color: rgb(--accent);
 }
-
-.countIndicator, 
-.playedIndicator {
-	background: linear-gradient(90deg, rgb(40.392% 6.275% 50.98%) 0%, rgb(40.023% 6.794% 51.27%) 6.25%, rgb(38.929% 8.334% 52.13%) 12.5%, rgb(37.154% 10.835% 53.525%) 18.75%, rgb(34.764% 14.2% 55.403%) 25%, rgb(31.852% 18.3% 57.69%) 31.25%, rgb(28.53% 22.978% 60.301%) 37.5%, rgb(24.925% 28.054% 63.133%) 43.75%, rgb(21.176% 33.333% 66.078%) 50%, rgb(17.428% 38.612% 69.024%) 56.25%, rgb(13.823% 43.688% 71.856%) 62.5%, rgb(10.501% 48.366% 74.466%) 68.75%, rgb(7.589% 52.467% 76.754%) 75%, rgb(5.199% 55.832% 78.632%) 81.25%, rgb(3.423% 58.332% 80.027%) 87.5%, rgb(2.33% 59.872% 80.886%) 93.75%, rgb(1.961% 60.392% 81.176%) 100% );
-	box-shadow: none;
-	color: rgb(--accent);
-}
-
 .subtitleappearance-preview {
 	background: linear-gradient(140deg,#444,#111) !important;
 }
@@ -1273,11 +1265,7 @@ div[data-role="controlgroup"] a[data-role="button"] {
 .homeLibraryButton {
 	width: auto !important;
 }
-.listItem:hover,
-.listItem:focus {
-	transition: 0.2s;
-	background: rgba(0, 0, 0, 0.4);
-}
+
 .visualCardBox, .cardImageContainer {
 	box-shadow: none;
 }
@@ -1399,6 +1387,11 @@ progress::-webkit-progress-value {
 	background: rgb(var(--accent));
 }
 
+.countIndicator, 
+.playedIndicator {
+	background: #473391;
+}
+
 .paper-icon-button-light:hover,
 .raised.homeLibraryButton:hover,
 .button-flat:hover,
@@ -1411,7 +1404,7 @@ progress::-webkit-progress-value {
 .textareaLabelFocused,
 .buttonActive,
 .button-link {
-	color: rgba(255, 255, 255, 1) !important;
+	color: #0abaff !important;
 }
 
 #itemDetailPage .button-link {
@@ -1705,6 +1698,12 @@ progress::-webkit-progress-value {
 		margin-top: 0em;
 		padding-top: 3.5em !important;
 	}
+  .layout-desktop .verticalSection.detailVerticalSection.moreFromSeasonSection .card.overflowBackdropCard, 
+  .layout-tv .verticalSection.detailVerticalSection.moreFromSeasonSection .card.overflowBackdropCard,
+  .layout-desktop #specialsCollapsible .scrollSlider.focuscontainer-x.itemsContainer.animatedScrollX .card.overflowBackdropCard,
+  .layout-tv #specialsCollapsible .scrollSlider.focuscontainer-x.itemsContainer.animatedScrollX .card.overflowBackdropCard {
+  	width: 21.2em;
+  }
 }
 
 @media all and (max-width: 100em){
@@ -3127,6 +3126,19 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 	height: -moz-fit-content;
 	overflow: hidden;
 	border-radius: var(--rounding);
+	box-shadow: 0px 2px 8px #000000b0;
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.listItem:hover,
+.listItem:focus {
+	transition: 0.2s;
+	background: rgba(0, 0, 0, 0.7);
+}
+
+.layout-desktop #itemDetailPage .listItem:hover,
+.layout-tv #itemDetailPage .listItem:hover {
+	box-shadow: 0px 0px 5px #fff9;
 }
 
 .layout-desktop itemDetailPage .secondary.listItem-overview.listItemBodyText,
@@ -3753,7 +3765,7 @@ content: '';
 	font-size: 1.5em;
 	color: #fff;
 	cursor: pointer;
-	opacity: 0.2;
+	opacity: 0;
 	margin-right: 2em;
 	margin-top: 0.35em;
 }
@@ -3762,7 +3774,7 @@ content: '';
 	font-size: 1.5em;
 	color: #fff;
 	cursor: pointer;
-	opacity: 0.2;
+	opacity: 0;
 	margin-right: 0em;
 	margin-top: 0.35em;
 }
@@ -3803,6 +3815,84 @@ content: '';
 	.layout-desktop .verticalSection.detailVerticalSection.moreFromSeasonSection .card.overflowBackdropCard, 
 	.layout-tv .verticalSection.detailVerticalSection.moreFromSeasonSection .card.overflowBackdropCard {
 	}
+}
+
+.layout-desktop #childrenContent .itemsContainer.padded-right.vertical-wrap {
+	display: grid !important;
+	grid-template-columns: repeat(8, 1fr);
+	gap: 0.5rem;
+	padding: 0rem;
+	width: 72vw;
+	margin: 0;
+}
+
+.layout-desktop #childrenContent .itemsContainer.padded-right.vertical-wrap .card.overflowPortraitCard.card-hoverable.card-withuserdata {
+	width: 10em;
+}
+
+.layout-desktop #itemDetailPage .verticalSection.detailVerticalSection.moreFromSeasonSection.emby-scroller-container .scrollSlider.focuscontainer-x.itemsContainer.animatedScrollX,
+.layout-tv #itemDetailPage .verticalSection.detailVerticalSection.moreFromSeasonSection.emby-scroller-container .scrollSlider.focuscontainer-x.itemsContainer.animatedScrollX {
+	display: grid !important;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 0.5rem;
+	padding: 0rem;
+	width: 72vw;
+	margin: 0;
+}
+
+.layout-desktop #castCollapsible .scrollSlider.focuscontainer-x.itemsContainer.animatedScrollX,
+.layout-tv #castCollapsible .scrollSlider.focuscontainer-x.itemsContainer.animatedScrollX {
+	display: grid !important;
+	grid-template-columns: repeat(8, 1fr);
+	gap: 0.5rem;
+	padding: 0rem;
+	width: 72vw;
+	margin: 0;
+}
+
+.layout-desktop #castCollapsible .card.overflowPortraitCard.personCard.card-hoverable.card-withuserdata,
+.layout-tv #castCollapsible .card.overflowPortraitCard.personCard.card-hoverable.card-withuserdata {
+	width: 10em;
+}
+
+.layout-desktop #guestCastCollapsible .scrollSlider.focuscontainer-x.itemsContainer.animatedScrollX,
+.layout-tv #guestCastCollapsible .scrollSlider.focuscontainer-x.itemsContainer.animatedScrollX {
+	display: grid !important;
+	grid-template-columns: repeat(8, 1fr);
+	gap: 0.5rem;
+	padding: 0rem;
+	width: 72vw;
+	margin: 0;
+}
+
+.layout-desktop #guestCastCollapsible .card.overflowPortraitCard.personCard.card-hoverable.card-withuserdata,
+.layout-tv #guestCastCollapsible .card.overflowPortraitCard.personCard.card-hoverable.card-withuserdata {
+	width: 10em;
+}
+
+.layout-desktop #similarCollapsible .scrollSlider.focuscontainer-x.itemsContainer.similarContent.animatedScrollX,
+.layout-tv #similarCollapsible .scrollSlider.focuscontainer-x.itemsContainer.similarContent.animatedScrollX {
+	display: grid !important;
+	grid-template-columns: repeat(8, 1fr);
+	gap: 0.5rem;
+	padding: 0rem;
+	width: 72vw;
+	margin: 0;
+}
+
+.layout-desktop #similarCollapsible .card.overflowPortraitCard,
+.layout-tv #similarCollapsible .card.overflowPortraitCard {
+	width: 10em;
+}
+
+.layout-desktop #specialsCollapsible .scrollSlider.focuscontainer-x.itemsContainer.animatedScrollX,
+.layout-tv #specialsCollapsible .scrollSlider.focuscontainer-x.itemsContainer.animatedScrollX {
+	display: grid !important;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 0.5rem;
+	padding: 0rem;
+	width: 72vw;
+	margin: 0;
 }
 
 @media (max-height: 1000px) {
@@ -3963,10 +4053,11 @@ content: '';
 .layout-desktop #listChildrenCollapsible.verticalSection-extrabottompadding #childrenContent .itemsContainer:has(.listItem[data-type="Episode"]),
 .layout-desktop #listChildrenCollapsible.verticalSection-extrabottompadding #childrenContent .itemsContainer:has(.listItem-largeImage)
 {
-  display: grid !important;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
-  padding: 1rem;
+	display: grid !important;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 1rem;
+  padding: 0rem;
+	width: 72vw;
 }
 
 .layout-tv #listChildrenCollapsible.verticalSection-extrabottompadding #childrenContent .itemsContainer:has(.listItem[data-type="Episode"]),
