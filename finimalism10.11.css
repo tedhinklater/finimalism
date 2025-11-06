@@ -3999,6 +3999,13 @@ content: '';
 	max-width: 62vw;
 }
 
+.layout-desktop [dir="ltr"] .detailPagePrimaryContent .detailSectionContent,
+.layout-tv [dir="ltr"] .detailPagePrimaryContent .detailSectionContent,
+.layout-desktop [dir="ltr"] .detailPagePrimaryContent .itemDetailsGroup,
+.layout-tv [dir="ltr"] .detailPagePrimaryContent .itemDetailsGroup {
+	padding-left: 0.5em;
+}
+
 .layout-desktop [dir="ltr"] .detailRibbon, .layout-tv [dir="ltr"] .detailRibbon {
   padding-left: 32em;
   background: transparent;
