@@ -15,25 +15,25 @@ Just paste an import line into your "Dashboard > General > CSS" section, or "Use
 <img width="1920" height="1010" alt="f1" src="https://github.com/user-attachments/assets/3fc6f760-c730-4c98-b5ac-f3f53e1b4e36" />
 
 # Library
-<img width="1920" height="1080" alt="f2" src="https://github.com/user-attachments/assets/cee0020c-4a54-4af0-96b8-adcaa87d6a2e" />
+<img width="1920" height="1080" alt="f2" src="https://github.com/user-attachments/assets/4c86bd39-d16e-45ac-a2e9-35c8563d1796" />
 
 # Movie
-<img width="1920" height="1080" alt="f3" src="https://github.com/user-attachments/assets/b230cdd1-011b-4cfb-948e-a9d2ab230378" />
+<img width="1920" height="1080" alt="f3" src="https://github.com/user-attachments/assets/8cfeb2d2-aef9-478b-ac07-e7c445ac72d9" />
+
+<img width="1920" height="1080" alt="f3a" src="https://github.com/user-attachments/assets/030dabd1-5bac-49be-a7fd-3e3884332aad" />
 
 # TV Show
-<img width="1920" height="1080" alt="f4" src="https://github.com/user-attachments/assets/1a173e64-743d-4816-8375-bb0678c3d7e6" />
+<img width="1920" height="1080" alt="f4" src="https://github.com/user-attachments/assets/f795d8e9-701d-41e4-a81f-097e1894b2f1" />
 
-# TV Show (scrolled down)
-<img width="1920" height="1080" alt="f4a" src="https://github.com/user-attachments/assets/f36547dc-7073-42ce-8337-5d7dd17f1906" />
+<img width="1920" height="1080" alt="f4a" src="https://github.com/user-attachments/assets/dc239374-14cc-416f-bc15-b85058e73b48" />
 
 # Season
-<img width="1920" height="1080" alt="f5" src="https://github.com/user-attachments/assets/3b1088e9-1903-4c80-9ca2-f4567975e63d" />
+<img width="1920" height="1080" alt="f5" src="https://github.com/user-attachments/assets/4dda0aa6-785e-4f75-8955-4fd5286d53c9" />
 
 # TV Episode
-<img width="1920" height="1080" alt="f6" src="https://github.com/user-attachments/assets/6d9074c2-9d97-403c-afd8-090550362ac3" />
+<img width="1920" height="1080" alt="f6" src="https://github.com/user-attachments/assets/5f1efc23-017d-4ab5-acea-f368e21e8c77" />
 
-# TV Episode (scrolled down)
-<img width="1920" height="1080" alt="f6a" src="https://github.com/user-attachments/assets/2c075933-9f50-44d9-9822-d1c8d6fd2510" />
+<img width="1920" height="1080" alt="f6a" src="https://github.com/user-attachments/assets/6d5e113a-bcd1-4f12-a184-627ef1336c77" />
 
 # Player
 <img width="1920" height="1080" alt="f7" src="https://github.com/user-attachments/assets/9fa52036-85b8-4c3d-b3c1-d80fbfc48ae1" />
