@@ -1066,6 +1066,14 @@ div[data-role="controlgroup"] a[data-role="button"] {
     animation: logoScale 0.3s ease-out forwards;
     display: block;
   }
+  .layout-desktop #itemDetailPage:has(.backdropCard) .detailLogo,
+  .layout-tv #itemDetailPage:has(.backdropCard) .detailLogo {
+    top: 21em;
+  }
+  .layout-desktop #itemDetailPage:has(.portraitCard) .detailLogo,
+  .layout-tv #itemDetailPage:has(.portraitCard) .detailLogo {
+    top: 3em;
+  }
 }
 
 .layout-desktop #itemDetailPage .nameContainer,
@@ -4234,20 +4242,20 @@ content: '';
 	position: absolute;
 	right: 4em;
 	border-top-left-radius: 0.2em;
-	animation: slideDown 1.5s ease-out forwards;
-	animation-delay: 0.5s;
+	animation: slideRight 1s ease-out forwards;
+	animation-delay: 0s;
 	opacity: 0;
   top: -27em;
   filter: drop-shadow(0px 2px 1px rgba(0, 0, 0, 0.68));
 }
 
-@keyframes slideDown {
+@keyframes slideRight {
   from {
-    right: 0em;
+    right: 8em;
     opacity: 0;
   }
   to {
-    right: 4em;
+    right: 4.5em;
     opacity: 1;
   }
 }
@@ -4264,3 +4272,5 @@ content: '';
 	padding: 0.25em;
   padding-right: 3vw;
 }
+
+
