@@ -15,19 +15,25 @@ Just paste an import line into your "Dashboard > General > CSS" section, or "Use
 <img width="1920" height="1010" alt="f1" src="https://github.com/user-attachments/assets/3fc6f760-c730-4c98-b5ac-f3f53e1b4e36" />
 
 # Library
-<img width="1920" height="923" alt="f2" src="https://github.com/user-attachments/assets/5a9194f6-b526-47f6-9136-72ab182b61e0" />
+<img width="1920" height="1080" alt="f2" src="https://github.com/user-attachments/assets/cee0020c-4a54-4af0-96b8-adcaa87d6a2e" />
 
 # Movie
-<img width="1920" height="1010" alt="f3" src="https://github.com/user-attachments/assets/ce4a5f17-9e7f-456c-b72d-593f2666f337" />
+<img width="1920" height="1080" alt="f3" src="https://github.com/user-attachments/assets/b230cdd1-011b-4cfb-948e-a9d2ab230378" />
 
-# Show
-<img width="1920" height="1010" alt="f4" src="https://github.com/user-attachments/assets/48471f58-4b4f-4922-b46a-c26b6b35d2bb" />
+# TV Show
+<img width="1920" height="1080" alt="f4" src="https://github.com/user-attachments/assets/1a173e64-743d-4816-8375-bb0678c3d7e6" />
+
+# TV Show (scrolled down)
+<img width="1920" height="1080" alt="f4a" src="https://github.com/user-attachments/assets/f36547dc-7073-42ce-8337-5d7dd17f1906" />
 
 # Season
-<img width="1920" height="1010" alt="f5" src="https://github.com/user-attachments/assets/b751f6a4-08fe-4112-a59f-5b19ea4b3aeb" />
+<img width="1920" height="1080" alt="f5" src="https://github.com/user-attachments/assets/3b1088e9-1903-4c80-9ca2-f4567975e63d" />
 
-# Episode
-<img width="1920" height="1010" alt="f6" src="https://github.com/user-attachments/assets/ebc0a536-f85b-4237-8427-a3f36213027a" />
+# TV Episode
+<img width="1920" height="1080" alt="f6" src="https://github.com/user-attachments/assets/6d9074c2-9d97-403c-afd8-090550362ac3" />
+
+# TV Episode (scrolled down)
+<img width="1920" height="1080" alt="f6a" src="https://github.com/user-attachments/assets/2c075933-9f50-44d9-9822-d1c8d6fd2510" />
 
 # Player
 <img width="1920" height="1080" alt="f7" src="https://github.com/user-attachments/assets/9fa52036-85b8-4c3d-b3c1-d80fbfc48ae1" />
