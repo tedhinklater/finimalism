@@ -2550,7 +2550,7 @@ button.is-emby-button emby-button {
 
 .layout-desktop .itemsContainer.vertical-wrap.centered,
 .layout-tv .itemsContainer.vertical-wrap.centered {
-  width: 98%;
+  width: 96%;
   margin: 0 auto;
   margin-right: 2em;
 }
@@ -4401,4 +4401,9 @@ content: '';
 
 .paper-icon-button-light[data-action="resume"]:hover {
   background-color: rgba(0, 0, 0, 0.86) !important;
+}
+
+.layout-desktop .page.libraryPage.noSecondaryNavPage.mainAnimatedPage .padded-left.padded-right.padded-bottom-page.padded-right-withalphapicker,
+.layout-tv .page.libraryPage.noSecondaryNavPage.mainAnimatedPage .padded-left.padded-right.padded-bottom-page.padded-right-withalphapicker {
+  max-width: 96vw;
 }
