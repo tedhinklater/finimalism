@@ -27,7 +27,7 @@ Just paste an import line into your "Dashboard > General > CSS" section, or "Use
 <img width="1920" height="1010" alt="f5" src="https://github.com/user-attachments/assets/b751f6a4-08fe-4112-a59f-5b19ea4b3aeb" />
 
 # Episode
-<img width="1920" height="1010" alt="f6" src="https://github.com/user-attachments/assets/359f1285-174d-49ec-bce0-07097ce61ce3" />
+<img width="1920" height="1010" alt="f6" src="https://github.com/user-attachments/assets/ebc0a536-f85b-4237-8427-a3f36213027a" />
 
 # Player
 <img width="1920" height="1080" alt="f7" src="https://github.com/user-attachments/assets/9fa52036-85b8-4c3d-b3c1-d80fbfc48ae1" />
