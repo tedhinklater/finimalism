@@ -2477,7 +2477,7 @@ button.is-emby-button emby-button {
     margin-bottom: 0;
     padding-left: 0em;
     font-size: 73%;
-    margin-top: 2em;
+    margin-top: 1em;
     width: 100vw;
     justify-content: space-evenly;
     margin-left: -1em;
@@ -4083,13 +4083,31 @@ content: '';
   position: relative;
 }
 
-.detailRibbon::before {
+.layout-desktop .detailRibbon::before,
+.layout-tv .detailRibbon::before {
   content: '';
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   background: #0a0715d6;
+    background-size: auto;
+  background-size: cover;
+  z-index: -1;
+  width: 100vw;
+}
+
+.layout-mobile .detailRibbon {
+  background: rgba(32,32,32,0);
+}
+
+.layout-mobile .detailRibbon.padded-left.padded-right::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #0a071573;
     background-size: auto;
   background-size: cover;
   z-index: -1;
@@ -4203,6 +4221,8 @@ content: '';
 
 .layout-mobile [dir="ltr"] .mediaInfoItem {
   margin: 0 0em 0 0;
+  margin-top: 0.5em;
+  margin-bottom:0.5em;
 }
 
 @media (max-width:1566px) and (min-height:720px) {
