@@ -803,7 +803,7 @@ progress::-webkit-progress-value {
   margin-right: auto !important;
 }
 #loginPage {
-  background: url("https://i.ibb.co/nsV5bPjJ/loginbg.jpg") !important;
+  background: linear-gradient(0deg, rgb(10.196% 2.745% 22.353%) 0%, rgb(12.07% 4.886% 25.743%) 6.25%, rgb(13.604% 6.64% 28.52%) 12.5%, rgb(14.842% 8.055% 30.761%) 18.75%, rgb(15.826% 9.179% 32.54%) 25%, rgb(16.592% 10.054% 33.926%) 31.25%, rgb(17.175% 10.721% 34.981%) 37.5%, rgb(17.607% 11.215% 35.763%) 43.75%, rgb(17.917% 11.569% 36.324%) 50%, rgb(18.13% 11.812% 36.709%) 56.25%, rgb(18.269% 11.971% 36.96%) 62.5%, rgb(18.353% 12.067% 37.113%) 68.75%, rgb(18.399% 12.12% 37.197%) 75%, rgb(18.421% 12.145% 37.236%) 81.25%, rgb(18.429% 12.155% 37.251%) 87.5%, rgb(18.431% 12.157% 37.255%) 93.75%, rgb(18.431% 12.157% 37.255%) 100% ) !important;
   background-size: cover !important;
 }
 
@@ -814,18 +814,7 @@ progress::-webkit-progress-value {
 
 .layout-desktop #loginPage::before,
 .layout-tv #loginPage::before {
-  content: '';
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background: linear-gradient( 90deg, rgb(12, 3, 26, 0.92) 0%, rgba(12, 3, 26, 0.44) 25%, rgba(8, 4, 37, 0) 32% );
-  background-size: cover;
-  opacity: 1;
-  z-index: 0;
-  background-attachment: fixed;
-  pointer-events: none;
+
 }
 
 
@@ -1623,12 +1612,12 @@ progress::-webkit-progress-value {
 
 .layout-desktop .overflowPortraitCard,
 .layout-tv .overflowPortraitCard {
-  width: 14em;
+  width: 11.54vw;
 }
 
 .layout-desktop .overflowSquareCard,
 .layout-tv .overflowSquareCard {
-  width: 14em;
+  width: 11.54vw;
 }
 
 @media (orientation: portrait) {
@@ -4385,7 +4374,8 @@ content: '';
   filter: drop-shadow(0px 2px 1px rgb(0, 0, 0));
 }
 
-.layout-desktop #itemDetailPage .nextUpItems.vertical-wrap.padded-right.itemsContainer .cardText.cardTextCentered.cardText-first {
+.layout-desktop #itemDetailPage .nextUpItems.vertical-wrap.padded-right.itemsContainer .cardText.cardTextCentered.cardText-first,
+.layout-tv #itemDetailPage .nextUpItems.vertical-wrap.padded-right.itemsContainer .cardText.cardTextCentered.cardText-first {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
@@ -4393,7 +4383,8 @@ content: '';
   text-overflow: ellipsis;
 }
 
-.layout-desktop .flex.align-items-center.justify-content-center.flex-wrap-wrap.padded-top.padded-left.padded-right.padded-bottom.focuscontainer-x {
+.layout-desktop .flex.align-items-center.justify-content-center.flex-wrap-wrap.padded-top.padded-left.padded-right.padded-bottom.focuscontainer-x,
+.layout-tv .flex.align-items-center.justify-content-center.flex-wrap-wrap.padded-top.padded-left.padded-right.padded-bottom.focuscontainer-x {
   padding: 0.25em;
   padding-right: 3vw;
 }
@@ -4406,4 +4397,35 @@ content: '';
 .layout-desktop .page.libraryPage.noSecondaryNavPage.mainAnimatedPage .padded-left.padded-right.padded-bottom-page.padded-right-withalphapicker,
 .layout-tv .page.libraryPage.noSecondaryNavPage.mainAnimatedPage .padded-left.padded-right.padded-bottom-page.padded-right-withalphapicker {
   max-width: 96vw;
+}
+
+.layout-desktop #indexPage .itemsContainer .card.overflowBackdropCard.card-hoverable.card-withuserdata,
+.layout-tv #indexPage .itemsContainer .card.overflowBackdropCard.card-hoverable.card-withuserdata {
+  width: 15.58vw;
+}
+
+#indexPage button[data-direction="left"],
+#indexPage button[data-direction="right"] {
+  opacity: 0;
+}
+
+.layout-desktop #indexPage .itemsContainer,
+.layout-tv #indexPage .itemsContainer {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 0.5rem;
+  padding: 0;
+  margin: 0;
+  overflow: visible !important;
+  white-space: normal !important;
+}
+
+.layout-desktop #indexPage .itemsContainer .card.portraitCard,
+.layout-tv #indexPage .itemsContainer .card.portraitCard {
+  flex: 1 0 calc((100% - (0.5rem * 7)) / 8);
+}
+
+.layout-desktop #indexPage .itemsContainer .card.backdropCard,
+.layout-tv #indexPage .itemsContainer .card.backdropCard {
+  flex: 1 0 calc((100% - (0.5rem * 5)) / 6);
 }
