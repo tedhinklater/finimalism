@@ -12,28 +12,29 @@ or
 Just paste an import line into your "Dashboard > General > CSS" section, or "User Settings > Display > CSS" section.
 
 # Homepage (Colour version example with [Spotlight](https://github.com/JSethCreates/jellyfin-script-spotlight) bar)
-<img width="1920" height="1010" alt="f1" src="https://github.com/user-attachments/assets/3fc6f760-c730-4c98-b5ac-f3f53e1b4e36" />
+<img width="1920" height="1080" alt="f1" src="https://github.com/user-attachments/assets/99f95811-0d1c-4ce3-89a6-571305bfc946" />
+
+<img width="1920" height="1080" alt="f1a" src="https://github.com/user-attachments/assets/4b1129cc-f661-4ba4-9115-d7ae6e84f272" />
 
 # Library
-<img width="1920" height="1080" alt="f2" src="https://github.com/user-attachments/assets/4c86bd39-d16e-45ac-a2e9-35c8563d1796" />
+<img width="1920" height="1080" alt="f2" src="https://github.com/user-attachments/assets/f6ba9ad4-b8f9-4fdc-97e7-b36b59bc954c" />
 
 # Movie
-<img width="1920" height="1080" alt="f3" src="https://github.com/user-attachments/assets/a86d5fa2-7360-4e39-bbc1-aa1894f4ba11" />
+<img width="1920" height="1080" alt="f3" src="https://github.com/user-attachments/assets/e494092c-28dc-4c87-81f2-41573152f2ee" />
 
-<img width="1920" height="1080" alt="f3a" src="https://github.com/user-attachments/assets/e4f12557-7979-4ce3-a04d-4018ae2019c2" />
+<img width="1920" height="1080" alt="f3a" src="https://github.com/user-attachments/assets/6de324d8-4a0c-4382-b57e-8d95aeaaa171" />
 
 # TV Show
-<img width="1920" height="1080" alt="f4" src="https://github.com/user-attachments/assets/70d0f64a-e373-479a-b5db-7d990028ad82" />
+<img width="1920" height="1080" alt="f4" src="https://github.com/user-attachments/assets/cd9f5f29-fb12-4a35-bfc2-33cffce2e892" />
 
-<img width="1920" height="1080" alt="f4a" src="https://github.com/user-attachments/assets/dc239374-14cc-416f-bc15-b85058e73b48" />
+<img width="1920" height="1080" alt="f4a" src="https://github.com/user-attachments/assets/7e370800-f0da-4f52-856a-583fae66135c" />
 
 # Season
-<img width="1920" height="1080" alt="f5" src="https://github.com/user-attachments/assets/64728b28-b9aa-4abb-870a-089932cb860e" />
+<img width="1920" height="1080" alt="f5" src="https://github.com/user-attachments/assets/1b9c8ea8-24fc-415c-8d7c-e3e7e26b660d" />
 
 # TV Episode
-<img width="1920" height="1080" alt="f6" src="https://github.com/user-attachments/assets/69f1da93-2037-4d40-b215-e07586d08006" />
-
-<img width="1920" height="1080" alt="f6a" src="https://github.com/user-attachments/assets/6d5e113a-bcd1-4f12-a184-627ef1336c77" />
+<img width="1920" height="1080" alt="f6" src="https://github.com/user-attachments/assets/efd623e0-d52f-47f6-9818-59229692b868" />
+<img width="1920" height="1080" alt="f6a" src="https://github.com/user-attachments/assets/7ab4946c-80fd-4c45-b986-374532431e41" />
 
 # Player
 <img width="1920" height="1080" alt="f7" src="https://github.com/user-attachments/assets/9fa52036-85b8-4c3d-b3c1-d80fbfc48ae1" />
