@@ -12,7 +12,7 @@ or
 Just paste an import line into your "Dashboard > General > CSS" section, or "User Settings > Display > CSS" section.
 
 # Homepage (Colour version example with [Spotlight](https://github.com/JSethCreates/jellyfin-script-spotlight) bar)
-<img width="1920" height="1080" alt="f1" src="https://github.com/user-attachments/assets/99f95811-0d1c-4ce3-89a6-571305bfc946" />
+<img width="1920" height="1080" alt="f1" src="https://github.com/user-attachments/assets/b55fe114-9472-480c-8271-96f5346ca12e" />
 
 <img width="1920" height="1080" alt="f1a" src="https://github.com/user-attachments/assets/4b1129cc-f661-4ba4-9115-d7ae6e84f272" />
 
@@ -37,7 +37,7 @@ Just paste an import line into your "Dashboard > General > CSS" section, or "Use
 <img width="1920" height="1080" alt="f6a" src="https://github.com/user-attachments/assets/7ab4946c-80fd-4c45-b986-374532431e41" />
 
 # Player
-<img width="1920" height="1080" alt="f7" src="https://github.com/user-attachments/assets/9fa52036-85b8-4c3d-b3c1-d80fbfc48ae1" />
+<img width="1920" height="1080" alt="f7" src="https://github.com/user-attachments/assets/976e60a1-4aff-400c-b134-5e83a63a5abb" />
 
 Everything is just an alteration of the amazing work already put into [Ultrachromic by CTalvio](https://github.com/CTalvio/Ultrachromic).
 
