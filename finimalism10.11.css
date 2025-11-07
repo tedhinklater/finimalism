@@ -121,7 +121,7 @@ h2 {
 .textActionButton:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
-  color: #15afe6;
+  color: #8564ff;
   font-weight: 700;
 }
 
@@ -229,7 +229,38 @@ span.homeLibraryText {
 }
 
 .itemProgressBarForeground {
-  background: linear-gradient(90deg, rgb(1, 9, 40) 0%, rgb(36, 75, 147) 45%, rgb(23, 125, 255) 85%, rgb(24, 170, 222) 100%);
+  background: linear-gradient(90deg, rgba(46, 0, 255, 0.11) 0%, rgba(46, 0, 255, 0.11) 6.25%, rgba(47, 2, 255, 0.13) 12.5%, rgba(49, 4, 255, 0.14) 18.75%, rgba(51, 6, 255, 0.17) 25%, rgba(54, 10, 255, 0.2) 31.25%, rgba(58, 14, 255, 0.23) 37.5%, rgba(63, 19, 255, 0.28) 43.75%, rgba(68, 25, 255, 0.33) 50%, rgba(74, 32, 255, 0.39) 56.25%, rgba(80, 39, 255, 0.46) 62.5%, rgba(87, 47, 255, 0.53) 68.75%, rgba(95, 56, 255, 0.61) 75%, rgba(103, 66, 255, 0.7) 81.25%, rgba(113, 77, 255, 0.79) 87.5%, rgba(122, 88, 255, 0.89) 93.75%, rgb(52.157% 39.216% 100%) 100% );
+}
+
+.mdl-slider .mdl-slider-background-lower,
+.mdl-slider .mdl-slider-background-lower-withtransform,
+.mdl-slider-background-lower {
+  background: linear-gradient(90deg, rgb(0% 0% 0%) 0%, rgb(0.204% 0.153% 0.391%) 6.25%, rgb(0.815% 0.613% 1.563%) 12.5%, rgb(1.834% 1.379% 3.516%) 18.75%, rgb(3.26% 2.451% 6.25%) 25%, rgb(5.093% 3.83% 9.766%) 31.25%, rgb(7.335% 5.515% 14.063%) 37.5%, rgb(9.983% 7.506% 19.141%) 43.75%, rgb(13.039% 9.804% 25%) 50%, rgb(16.503% 12.408% 31.641%) 56.25%, rgb(20.374% 15.319% 39.063%) 62.5%, rgb(24.652% 18.536% 47.266%) 68.75%, rgb(29.338% 22.059% 56.25%) 75%, rgb(34.432% 25.888% 66.016%) 81.25%, rgb(39.933% 30.025% 76.563%) 87.5%, rgb(45.841% 34.467% 87.891%) 93.75%, rgb(52.157% 39.216% 100%) 100% );
+  background-color: linear-gradient(90deg, rgb(0% 0% 0%) 0%, rgb(0.204% 0.153% 0.391%) 6.25%, rgb(0.815% 0.613% 1.563%) 12.5%, rgb(1.834% 1.379% 3.516%) 18.75%, rgb(3.26% 2.451% 6.25%) 25%, rgb(5.093% 3.83% 9.766%) 31.25%, rgb(7.335% 5.515% 14.063%) 37.5%, rgb(9.983% 7.506% 19.141%) 43.75%, rgb(13.039% 9.804% 25%) 50%, rgb(16.503% 12.408% 31.641%) 56.25%, rgb(20.374% 15.319% 39.063%) 62.5%, rgb(24.652% 18.536% 47.266%) 68.75%, rgb(29.338% 22.059% 56.25%) 75%, rgb(34.432% 25.888% 66.016%) 81.25%, rgb(39.933% 30.025% 76.563%) 87.5%, rgb(45.841% 34.467% 87.891%) 93.75%, rgb(52.157% 39.216% 100%) 100% );
+}
+
+.mdl-slider::-webkit-slider-thumb,
+.mdl-slider .mdl-slider::-webkit-slider-thumb {
+  background: #8564ff !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.mdl-slider::-moz-range-thumb,
+.mdl-slider .mdl-slider::-moz-range-thumb {
+  background: #8564ff !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+.mdl-slider::-ms-thumb,
+.mdl-slider .mdl-slider::-ms-thumb {
+  background: #8564ff !important;
+  border: none !important;
+}
+
+.mdl-slider .mdl-slider-background-lower[style] {
+  background: #8564ff !important;
+  background-color: #8564ff !important;
 }
 
 .itemBackdrop {
@@ -635,7 +666,6 @@ progress::-webkit-progress-value {
 
 .transcodingProgress>div, 
 .itemProgressBarForeground {
-  background-color: rgba(var(--accent),0.35);
 }
 
 .mdl-slider-background-lower {
@@ -1289,7 +1319,7 @@ div[data-role="controlgroup"] a[data-role="button"] {
 }
 .itemProgressBar {
   background: rgba(0, 0, 0, 0.25);
-  height: .5em;
+  height: 100%;
   position: absolute;
   bottom: 0em;
   left: 0;
@@ -2178,7 +2208,7 @@ button.is-emby-button emby-button {
 }
 
 .mdl-slider-background-lower {
-  background: linear-gradient(90deg, rgb(1, 9, 40) 0%, rgb(36, 75, 147) 45%, rgb(23, 125, 255) 85%, rgb(24, 170, 222) 100%);
+  background: linear-gradient(90deg, rgb(18.039% 0% 100% / 0.11) 0%, rgb(18.172% 0.153% 100% / 0.1134765625) 6.25%, rgb(18.572% 0.613% 100% / 0.12390625) 12.5%, rgb(19.239% 1.379% 100% / 0.1412890625) 18.75%, rgb(20.172% 2.451% 100% / 0.165625) 25%, rgb(21.371% 3.83% 100% / 0.1969140625) 31.25%, rgb(22.837% 5.515% 100% / 0.23515625) 37.5%, rgb(24.57% 7.506% 100% / 0.2803515625) 43.75%, rgb(26.569% 9.804% 100% / 0.3325) 50%, rgb(28.834% 12.408% 100% / 0.3916015625) 56.25%, rgb(31.366% 15.319% 100% / 0.45765625) 62.5%, rgb(34.165% 18.536% 100% / 0.5306640625) 68.75%, rgb(37.23% 22.059% 100% / 0.610625) 75%, rgb(40.562% 25.888% 100% / 0.6975390625) 81.25%, rgb(44.161% 30.025% 100% / 0.79140625) 87.5%, rgb(48.025% 34.467% 100% / 0.8922265625) 93.75%, rgb(52.157% 39.216% 100%) 100% );
 }
 
 .mdl-slider-background-upper {
