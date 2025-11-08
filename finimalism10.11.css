@@ -453,11 +453,11 @@ progress::-webkit-progress-value {
 .mainDrawer {
   background-color: rgba(0, 0, 0, 0.8);
 }
-.raised,
-.fab,
-a[data-role="button"] {
-  background: rgba(4, 4, 4, 0.8) !important;
+.raised, .fab, a[data-role="button"] {
+  background: #1b0d3c8f;
   transition: all 0.2s !important;
+  border: 1px solid white;
+  font-weight: 900;
 }
 .raised:hover,
 .fab:hover,
@@ -474,10 +474,12 @@ a[data-role="button"] {
   background: #101010 !important;
 }
 
+.collapseContent, .formDialogFooter:not(.formDialogFooter-clear), .formDialogHeader:not(.formDialogHeader-clear), .paperList, .visualCardBox {
+  background-color: #070710;
+}
 progress {
   background: rgba(0, 0, 0, 0.5) !important;
 }
-
 
 /*Theme syncplay*/
 .syncPlayIconCircle {
@@ -1441,8 +1443,18 @@ progress::-webkit-progress-value {
   color: #8564ff;
 }
 
+.material-icons.detailButton-icon.favorite:hover {
+  color: #f00;
+  transition: color 1s;
+}
+
 .ratingbutton-icon-withrating {
   color: #ff0060;
+}
+
+.material-icons.detailButton-icon.favorite.ratingbutton-icon-withrating:hover {
+    color: #8564ff;
+    transition: color 1s;
 }
 
 .card-hoverable.card-withuserdata:hover .playstatebutton-icon-played {
@@ -1635,6 +1647,7 @@ progress::-webkit-progress-value {
   padding: .5em 1em 1em;
   padding-right: 1em;
   padding-left: 1em;
+  padding-bottom: 6em;
 }
 .listItem-indexnumberleft {
   margin: 1em;
@@ -1809,7 +1822,7 @@ progress::-webkit-progress-value {
   .toast,
   .appfooter {
     backdrop-filter: blur(15px);
-    background-color: rgba(0, 0, 0, 0.35);
+    background-color: #110e1ebd;
   }
   .paper-icon-button-light:hover,
   #itemDetailPage .itemProgressBar,
@@ -4505,3 +4518,13 @@ content: '';
 .layout-tv .itemsContainer.collectionItemsContainer .card.portraitCard {
   width: auto;
 }
+
+.layout-desktop .mediaInfoStream,
+.layout-tv .mediaInfoStream {
+  display: inline-block;
+  margin: 0 3em 0 0;
+  vertical-align: top;
+  width: 20%;
+}
+
+
