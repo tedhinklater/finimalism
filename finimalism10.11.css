@@ -2002,6 +2002,7 @@ progress::-webkit-progress-value {
   left: 4.3em;
   min-width: 265px;
   filter: drop-shadow(-6px 2px 8px rgba(0, 0, 0, 0.58));
+  max-width: unset;
 }
 
 
@@ -4478,4 +4479,18 @@ content: '';
 .layout-desktop #indexPage .itemsContainer .card.backdropCard,
 .layout-tv #indexPage .itemsContainer .card.backdropCard {
   flex: 1 0 calc((100% - (0.5rem * 5)) / 6);
+}
+
+.layout-desktop .itemsContainer.collectionItemsContainer.vertical-wrap.padded-left.padded-right,
+.layout-tv .itemsContainer.collectionItemsContainer.vertical-wrap.padded-left.padded-right {
+  display: grid !important;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1rem;
+  padding: 0rem;
+  width: 72vw;
+}
+
+.layout-desktop .itemsContainer.collectionItemsContainer .card.portraitCard,
+.layout-tv .itemsContainer.collectionItemsContainer .card.portraitCard {
+  width: auto;
 }
