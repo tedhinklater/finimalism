@@ -2629,8 +2629,17 @@ button.is-emby-button emby-button {
 }
 
 .upNextContainer {
-  background: #000;
+  background: #1b0d3c8f;
   z-index: 50;
+}
+
+.upNextContainer .raised {
+  background :rgb(38, 17, 96) !important;
+  border: 1px solid white;
+}
+
+.upNextContainer .raised:hover {
+  background: #fff !important;
 }
 
 .raised.raised-mini.btnHide.upNextDialog-button.emby-button:hover {
@@ -2673,14 +2682,13 @@ button.is-emby-button emby-button {
   color:black !important;
 }
 
-/*Change Intro Skip Color*/
 .skip-button {
   bottom: 7.52em;
   right: 7.5em;
   color: #fff;
-  background: #0a0418b5;
+  background: #1b0d3c8f;
   border: 1px solid white;
-  border-radius: 0.2em;
+  border-radius: 0.8em;
   padding: 0.5em 1em;
   transition: background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
 }
