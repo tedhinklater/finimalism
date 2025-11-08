@@ -1431,7 +1431,6 @@ progress::-webkit-progress-value {
 .raised.homeLibraryButton:hover,
 .button-flat:hover,
 .playstatebutton-icon-played,
-.ratingbutton-icon-withrating,
 .paper-icon-button-light:hover:not(:disabled),
 .emby-tab-button:hover,
 .selectLabelFocused,
@@ -1440,6 +1439,10 @@ progress::-webkit-progress-value {
 .buttonActive,
 .button-link {
   color: #8564ff;
+}
+
+.ratingbutton-icon-withrating {
+  color: #ff0060;
 }
 
 .card-hoverable.card-withuserdata:hover .playstatebutton-icon-played {
@@ -2807,12 +2810,12 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
     color: #000 !important;
     border-radius: 0.25em;
     width: auto;
-    transform: translateY(-11%);
+    transform: translateY(-23%);
     transition: 0s;
   }
 
   .headerTabs.sectionTabs .tabs-viewmenubar.emby-tabs.focusable.scrollX .emby-tab-button.emby-button.emby-tab-button-active .emby-button-foreground {
-    transform: translateY(-13%);
+    transform: translateY(-23%);
   }
 
   .headerTabs .emby-tab-button {
