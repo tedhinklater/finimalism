@@ -1658,12 +1658,12 @@ progress::-webkit-progress-value {
 
 .layout-desktop .overflowPortraitCard,
 .layout-tv .overflowPortraitCard {
-  width: 11.54vw;
+  width: 11.875vw;
 }
 
 .layout-desktop .overflowSquareCard,
 .layout-tv .overflowSquareCard {
-  width: 11.54vw;
+  width: 11.875vw;
 }
 
 @media (orientation: portrait) {
@@ -1727,12 +1727,6 @@ progress::-webkit-progress-value {
 .cardText.cardTextCentered.cardText-secondary {
   font-size: 0.85em;
   padding-top: 0.1em;
-}
-
-@media (min-width: 120em) {
-  .portraitCard, .squareCard {
-    width: 11vw;
-  }
 }
 
 @media (max-width: 768px) and (orientation: landscape) {
@@ -4476,7 +4470,7 @@ content: '';
 
 .layout-desktop #indexPage .itemsContainer .card.overflowBackdropCard.card-hoverable.card-withuserdata,
 .layout-tv #indexPage .itemsContainer .card.overflowBackdropCard.card-hoverable.card-withuserdata {
-  width: 15.58vw;
+  width: 15.95vw;
 }
 
 #indexPage button[data-direction="left"],
@@ -4530,4 +4524,16 @@ content: '';
 .layout-desktop .sectionTitleContainer-cards,
 .layout-tv .sectionTitleContainer-cards {
   padding-top: 1em;
+}
+
+@supports (width:max(1px,1px)) {
+  .emby-scroller {
+    padding-right: max(env(safe-area-inset-right),1.3%);
+  }
+}
+
+@supports (width:max(1px,1px)) {
+  [dir="ltr"] .padded-right {
+    padding-right: max(env(safe-area-inset-right),1.3%);
+  }
 }
