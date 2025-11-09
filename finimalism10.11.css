@@ -1657,13 +1657,13 @@ progress::-webkit-progress-value {
 }
 
 .layout-desktop .overflowPortraitCard,
-.layout-tv .overflowPortraitCard {
+.layout-desktop .overflowSquareCard {
   width: 11.875vw;
 }
 
-.layout-desktop .overflowSquareCard,
+.layout-tv .overflowPortraitCard,
 .layout-tv .overflowSquareCard {
-  width: 11.875vw;
+  width: 11.5vw;
 }
 
 @media (orientation: portrait) {
@@ -4468,9 +4468,16 @@ content: '';
   max-width: 96vw;
 }
 
-.layout-desktop #indexPage .itemsContainer .card.overflowBackdropCard.card-hoverable.card-withuserdata,
-.layout-tv #indexPage .itemsContainer .card.overflowBackdropCard.card-hoverable.card-withuserdata {
+.layout-desktop #indexPage .itemsContainer .card.overflowBackdropCard.card-hoverable.card-withuserdata {
   width: 15.95vw;
+}
+
+.layout-tv #indexPage .itemsContainer .card.overflowBackdropCard {
+  width: 15.8vw;
+}
+
+.layout-tv .itemsContainer.scrollSlider.focuscontainer-x.animatedScrollX.itemsContainer-tv {
+  transform: none !important;
 }
 
 #indexPage button[data-direction="left"],
