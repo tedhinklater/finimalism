@@ -4527,4 +4527,14 @@ content: '';
   width: 20%;
 }
 
+.layout-desktop .card.overflowBackdropCard.card-hoverable.card-withuserdata[data-type="CollectionFolder"],
+.layout-desktop .card.overflowBackdropCard.card-hoverable.card-withuserdata[data-type="UserView"],
+.layout-tv .card.overflowBackdropCard.card-hoverable.card-withuserdata[data-type="CollectionFolder"],
+.layout-tv .card.overflowBackdropCard.card-hoverable.card-withuserdata[data-type="UserView"] {
+  max-width: 11.713685vw;
+}
 
+.layout-desktop .sectionTitleContainer-cards,
+.layout-tv .sectionTitleContainer-cards {
+  padding-top: 1em;
+}
