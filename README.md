@@ -40,13 +40,3 @@ Just paste an import line into your "Dashboard > General > CSS" section, or "Use
 <img width="1920" height="1080" alt="f7" src="https://github.com/user-attachments/assets/976e60a1-4aff-400c-b134-5e83a63a5abb" />
 
 Everything is just an alteration of the amazing work already put into [Ultrachromic by CTalvio](https://github.com/CTalvio/Ultrachromic).
-
-# More Library Cards 
-<a href="https://github.com/Phantomwise/jellyfin-custom-thumbnails-collection"><img src="https://i.imgur.com/aWUsxMG.png" alt="Cards" width="800"/></a>
-
-# More Themes
-<a href="https://github.com/tedhinklater/finality"><img src="https://i.imgur.com/54wZsvH.png" alt="Finality" width="400"/></a> 
-<a href="https://github.com/tedhinklater/Jellypane"><img src="https://i.imgur.com/RHFcIA9.png" alt="Jellypane" width="400"/></a>
-
-# [Spotlight](https://github.com/JSethCreates/jellyfin-script-spotlight) + my [custom style](https://github.com/tedhinklater/finimalism/tree/main/custom%20Spotlight) for it to match Finimalism
-<a href="https://github.com/JSethCreates/jellyfin-script-spotlight"><img src="https://github.com/user-attachments/assets/0f035093-b11f-4bc4-ab92-f8161ff48b2c"></a>
