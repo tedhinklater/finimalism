@@ -336,3 +336,21 @@
   z-index: -1;
   width: 100vw;
 }
+
+@supports (backdrop-filter: blur(15px)) {
+  .dialog, .mainDrawer, .toast, .appfooter {
+    backdrop-filter: blur(15px);
+    background-color: #000000de;
+  }
+}
+
+.raised, .fab, a[data-role="button"] {
+  background: #000000de;
+  transition: all 0.2s !important;
+  border: 1px solid white;
+  font-weight: 900;
+}
+
+.collapseContent, .formDialogFooter:not(.formDialogFooter-clear), .formDialogHeader:not(.formDialogHeader-clear), .paperList, .visualCardBox {
+  background-color: #000000de;
+}
