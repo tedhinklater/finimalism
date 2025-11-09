@@ -1,4 +1,4 @@
-# NOTICE: If you've updated to Jellyfin v10.11 you'll need the new version of Finimalism
+If you've updated to Jellyfin v10.11 you'll need the new version
 
 ```css
 @import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@latest/finimalism10.11.css");
