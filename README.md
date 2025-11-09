@@ -11,8 +11,8 @@ or
 
 Just paste an import line into your "Dashboard > General > CSS" section, or "User Settings > Display > CSS" section.
 
-# Homepage (Colour version example with [Spotlight](https://github.com/JSethCreates/jellyfin-script-spotlight) bar)
-<img width="1920" height="1080" alt="f1" src="https://github.com/user-attachments/assets/b55fe114-9472-480c-8271-96f5346ca12e" />
+# Homepage (Colour version example with [Featured Content Bar](https://github.com/tedhinklater/Jellyfin-Featured-Content-Bar))
+<img width="1920" height="1080" alt="f1" src="https://github.com/user-attachments/assets/a9eb2a54-3b79-489e-a769-14ab5a55e192" />
 
 <img width="1920" height="1080" alt="f1a" src="https://github.com/user-attachments/assets/4b1129cc-f661-4ba4-9115-d7ae6e84f272" />
 
