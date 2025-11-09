@@ -12,7 +12,7 @@ or
 Just paste an import line into your "Dashboard > General > CSS" section, or "User Settings > Display > CSS" section.
 
 # Homepage (Colour version example with [Featured Content Bar](https://github.com/tedhinklater/Jellyfin-Featured-Content-Bar))
-<img width="1920" height="1080" alt="f1" src="https://github.com/user-attachments/assets/a9eb2a54-3b79-489e-a769-14ab5a55e192" />
+<img width="1920" height="1080" alt="f1" src="https://github.com/user-attachments/assets/7466ecf8-e20f-483e-8adc-e00b958cdb1e" />
 
 <img width="1920" height="1080" alt="f1a" src="https://github.com/user-attachments/assets/4b1129cc-f661-4ba4-9115-d7ae6e84f272" />
 
