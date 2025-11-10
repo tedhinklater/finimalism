@@ -20,21 +20,16 @@ Just paste an import line into your "Dashboard > General > CSS" section, or "Use
 <img width="1920" height="1080" alt="f2" src="https://github.com/user-attachments/assets/f6ba9ad4-b8f9-4fdc-97e7-b36b59bc954c" />
 
 # Movie
-<img width="1920" height="1080" alt="f3" src="https://github.com/user-attachments/assets/e494092c-28dc-4c87-81f2-41573152f2ee" />
-
-<img width="1920" height="1080" alt="f3a" src="https://github.com/user-attachments/assets/6de324d8-4a0c-4382-b57e-8d95aeaaa171" />
+<img width="1920" height="1080" alt="f3" src="https://github.com/user-attachments/assets/4f0775f7-dc88-4dbe-afe3-94401811bc78" />
 
 # TV Show
-<img width="1920" height="1080" alt="f4" src="https://github.com/user-attachments/assets/cd9f5f29-fb12-4a35-bfc2-33cffce2e892" />
-
-<img width="1920" height="1080" alt="f4a" src="https://github.com/user-attachments/assets/7e370800-f0da-4f52-856a-583fae66135c" />
+<img width="1920" height="1080" alt="f4" src="https://github.com/user-attachments/assets/c152d2df-21b0-413c-87bb-05ba8f67feb6" />
 
 # Season
-<img width="1920" height="1080" alt="f5" src="https://github.com/user-attachments/assets/1b9c8ea8-24fc-415c-8d7c-e3e7e26b660d" />
+<img width="1920" height="1080" alt="f5" src="https://github.com/user-attachments/assets/26d7d878-fb7d-4bfd-a1a7-7128436626be" />
 
 # TV Episode
-<img width="1920" height="1080" alt="f6" src="https://github.com/user-attachments/assets/efd623e0-d52f-47f6-9818-59229692b868" />
-<img width="1920" height="1080" alt="f6a" src="https://github.com/user-attachments/assets/7ab4946c-80fd-4c45-b986-374532431e41" />
+<img width="1920" height="1080" alt="f6" src="https://github.com/user-attachments/assets/fc1ff3b9-5232-48b0-884b-206f21e7bceb" />
 
 # Player
 <img width="1920" height="1080" alt="f7" src="https://github.com/user-attachments/assets/976e60a1-4aff-400c-b134-5e83a63a5abb" />
