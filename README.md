@@ -11,16 +11,10 @@ or
 
 Just paste an import line into your "Dashboard > General > CSS" section, or "User Settings > Display > CSS" section.
 
-# Homepage (Colour version example with [Featured Content Bar](https://github.com/tedhinklater/Jellyfin-Featured-Content-Bar))
+# Homepage & Movie (Colour version with [Featured Content Bar](https://github.com/tedhinklater/Jellyfin-Featured-Content-Bar))
 ![homepage](https://github.com/user-attachments/assets/7d045edb-46c2-4902-9a41-8d9df84eed69)
 
-# Movie
-<img width="1920" height="1080" alt="f3" src="https://github.com/user-attachments/assets/2ff82f70-c0ac-41c0-909a-6bc8fac893bf" />
-
-# TV Show
-![show](https://github.com/user-attachments/assets/3a86a9c8-f153-493f-9377-b834ddd72ae3)
-
-# Player
-<img width="1920" height="1080" alt="f7" src="https://github.com/user-attachments/assets/6d5ae307-6334-47ce-8835-5f50525a1984" />
+# Show, Season & Player
+![show](https://github.com/user-attachments/assets/718f656e-9f8f-4e3a-9cbf-0f9108c23008)
 
 Everything is just an alteration of the amazing work already put into [Ultrachromic by CTalvio](https://github.com/CTalvio/Ultrachromic).
