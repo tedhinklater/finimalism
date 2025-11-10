@@ -3090,34 +3090,6 @@ content: '';
   pointer-events: none;
 }
 
-.layout-desktop .nextUpSection.verticalSection.detailVerticalSection,
-.layout-tv .nextUpSection.verticalSection.detailVerticalSection {
-  position: absolute;
-  right: 4em;
-  border-top-left-radius: 0.2em;
-  animation: slideRight 1s ease-out forwards;
-  animation-delay: 0s;
-  opacity: 0;
-  top: -27em;
-  filter: drop-shadow(0px 25px 24px rgb(0, 0, 0));
-}
-
-@keyframes slideRight {
-  from {
-    right: 8em;
-    opacity: 0;
-  }
-  to {
-    right: 4.5em;
-    opacity: 1;
-  }
-}
-
-.layout-desktop .nextUpSection.verticalSection.detailVerticalSection .sectionTitle.sectionTitle-cards,
-.layout-tv .nextUpSection.verticalSection.detailVerticalSection .sectionTitle.sectionTitle-cards {
-  filter: drop-shadow(0px 2px 1px rgb(0, 0, 0));
-}
-
 .layout-desktop #itemDetailPage .nextUpItems.vertical-wrap.padded-right.itemsContainer .cardText.cardTextCentered.cardText-first,
 .layout-tv #itemDetailPage .nextUpItems.vertical-wrap.padded-right.itemsContainer .cardText.cardTextCentered.cardText-first {
   display: -webkit-box;
