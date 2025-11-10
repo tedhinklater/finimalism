@@ -753,7 +753,7 @@ progress {
 
 .layout-desktop .overflowPortraitCard,
 .layout-desktop .overflowSquareCard {
-  width: 11.875vw;
+  width: 11.8vw;
 }
 
 .layout-tv .overflowPortraitCard,
@@ -3132,7 +3132,7 @@ content: '';
 }
 
 .layout-desktop #indexPage .itemsContainer .card.overflowBackdropCard.card-hoverable.card-withuserdata {
-  width: 15.95vw;
+  width: 15.9vw;
 }
 
 .layout-tv #indexPage .itemsContainer .card.overflowBackdropCard {
@@ -3792,5 +3792,3 @@ content: '';
   display: flex;
   font-size: 90%;
 }
-
-
