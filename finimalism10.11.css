@@ -1496,8 +1496,8 @@ button.is-emby-button emby-button {
 }
 
 #childrenContent .listItem-content .secondary.listItemBodyText {
-  color: #fff;
-  font-weight: 300;
+  color: #ffffffe3;
+  font-weight: 500;
   justify-content: space-between;
 }
 
@@ -1871,7 +1871,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 }
 
 .listItemImage:hover {
-  box-shadow: 0px 0px 350px #fff3;
+  box-shadow: 0px 0px 350px #2f21488a;
 }
 
 .skinHeader {
@@ -2049,8 +2049,8 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
   height: -moz-fit-content;
   overflow: hidden;
   border-radius: var(--rounding);
-  box-shadow: 0px 2px 8px #000000b0;
-  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 5px #06030b8a;
+  background: #0b0713c4;
 }
 
 .listItem:hover,
@@ -2061,7 +2061,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 
 .layout-desktop #itemDetailPage .listItem:hover,
 .layout-tv #itemDetailPage .listItem:hover {
-  box-shadow: 0px 0px 5px #fff9;
+  box-shadow: 0px 0px 10px #322942c9;
 }
 
 .layout-desktop itemDetailPage .secondary.listItem-overview.listItemBodyText,
@@ -2447,6 +2447,31 @@ content: '';
   line-height: 1em;
   font-size: 1.7em;
   font-weight: 700;
+}
+
+.layout-desktop #listChildrenCollapsible.verticalSection.detailVerticalSection.verticalSection-extrabottompadding #childrenContent .itemsContainer.padded-right.vertical-list .listItem.listItem-largeImage.listItem-withContentWrapper .listItem-content .listItemBody.itemAction .listItemBodyText,
+.layout-tv #listChildrenCollapsible.verticalSection.detailVerticalSection.verticalSection-extrabottompadding #childrenContent .itemsContainer.padded-right.vertical-list .listItem.listItem-largeImage.listItem-withContentWrapper .listItem-content .listItemBody.itemAction .listItemBodyText {
+  display: -webkit-box !important;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+  font-weight: 700;
+}
+
+.layout-desktop #listChildrenCollapsible.verticalSection.detailVerticalSection.verticalSection-extrabottompadding #childrenContent .itemsContainer.padded-right.vertical-list .listItem.listItem-largeImage.listItem-withContentWrapper .listItem-content .secondary.listItemMediaInfo.listItemBodyText,
+.layout-tv #listChildrenCollapsible.verticalSection.detailVerticalSection.verticalSection-extrabottompadding #childrenContent .itemsContainer.padded-right.vertical-list .listItem.listItem-largeImage.listItem-withContentWrapper .listItem-content .secondary.listItemMediaInfo.listItemBodyText {
+  display: flex !important;
+  font-weight: 500;
+  padding-top: 0.5em;
+}
+
+.layout-desktop #listChildrenCollapsible.verticalSection.detailVerticalSection.verticalSection-extrabottompadding #childrenContent .itemsContainer.padded-right.vertical-list .listItem.listItem-largeImage.listItem-withContentWrapper .listItem-content .secondary.listItem-overview.listItemBodyText,
+.layout-tv #listChildrenCollapsible.verticalSection.detailVerticalSection.verticalSection-extrabottompadding #childrenContent .itemsContainer.padded-right.vertical-list .listItem.listItem-largeImage.listItem-withContentWrapper .listItem-content .secondary.listItem-overview.listItemBodyText {
+  display: flex !important;
+  font-weight: 500;
+  margin-top: -0.5em;
 }
 
 .layout-desktop .itemName.infoText.originalTitle,
@@ -2902,6 +2927,11 @@ content: '';
   gap: 1rem;
   padding: 0rem;
   width: 72vw;
+}
+
+.layout-desktop #listChildrenCollapsible.verticalSection-extrabottompadding #childrenContent .itemsContainer.padded-right.vertical-list .listItem.listItem-largeImage.listItem-withContentWrapper .listItem-content .listItemBody.itemAction,
+.layout-tv #listChildrenCollapsible.verticalSection-extrabottompadding #childrenContent .itemsContainer.padded-right.vertical-list .listItem.listItem-largeImage.listItem-withContentWrapper .listItem-content .listItemBody.itemAction {
+  width: 95%;
 }
 
 .layout-tv #listChildrenCollapsible.verticalSection-extrabottompadding #childrenContent .itemsContainer:has(.listItem[data-type="Episode"]),
