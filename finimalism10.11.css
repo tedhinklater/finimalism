@@ -2702,6 +2702,16 @@ content: '';
   margin: 0;
 }
 
+.layout-desktop #scenesCollapsible .scrollSlider.focuscontainer-x.itemsContainer.animatedScrollX,
+.layout-tv #scenesCollapsible .scrollSlider.focuscontainer-x.itemsContainer.animatedScrollX, {
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+  padding: 0rem;
+  width: 72vw;
+  margin: 0;
+}
+
 .layout-desktop #castCollapsible .card.overflowPortraitCard.personCard.card-hoverable.card-withuserdata,
 .layout-tv #castCollapsible .card.overflowPortraitCard.personCard.card-hoverable.card-withuserdata {
   width: 10em;
@@ -3778,4 +3788,3 @@ content: '';
   display: flex;
   font-size: 90%;
 }
-
