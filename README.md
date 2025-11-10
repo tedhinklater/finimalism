@@ -32,6 +32,6 @@ Just paste an import line into your "Dashboard > General > CSS" section, or "Use
 <img width="1920" height="1080" alt="f6" src="https://github.com/user-attachments/assets/fc1ff3b9-5232-48b0-884b-206f21e7bceb" />
 
 # Player
-<img width="1920" height="1080" alt="f7" src="https://github.com/user-attachments/assets/976e60a1-4aff-400c-b134-5e83a63a5abb" />
+<img width="1920" height="1080" alt="f7" src="https://github.com/user-attachments/assets/6d5ae307-6334-47ce-8835-5f50525a1984" />
 
 Everything is just an alteration of the amazing work already put into [Ultrachromic by CTalvio](https://github.com/CTalvio/Ultrachromic).
