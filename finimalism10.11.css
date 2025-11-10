@@ -5,7 +5,7 @@ html {
   color: rgba(255, 255, 255, 1);
 }
 
-:root {--accent: #8564ff;}
+:root {--accent: #8546ff;}
 
 :root {--rounding: 0.8em;}
 
@@ -146,21 +146,9 @@ p.overview.detail-clamp-text {
   color: #fff;
   font-weight: 400;
 }
-
 #itemDetailPage .tagline {
   font-weight: 600;
   font-size: 1.25em;
-}
-
-.itemProgressBarForeground {
-  background: linear-gradient(90deg, rgba(46, 0, 255, 0.11) 0%, rgba(46, 0, 255, 0.11) 6.25%, rgba(47, 2, 255, 0.13) 12.5%, rgba(49, 4, 255, 0.14) 18.75%, rgba(51, 6, 255, 0.17) 25%, rgba(54, 10, 255, 0.2) 31.25%, rgba(58, 14, 255, 0.23) 37.5%, rgba(63, 19, 255, 0.28) 43.75%, rgba(68, 25, 255, 0.33) 50%, rgba(74, 32, 255, 0.39) 56.25%, rgba(80, 39, 255, 0.46) 62.5%, rgba(87, 47, 255, 0.53) 68.75%, rgba(95, 56, 255, 0.61) 75%, rgba(103, 66, 255, 0.7) 81.25%, rgba(113, 77, 255, 0.79) 87.5%, rgba(122, 88, 255, 0.89) 93.75%, rgb(52.157% 39.216% 100%) 100% );
-}
-
-.mdl-slider .mdl-slider-background-lower,
-.mdl-slider .mdl-slider-background-lower-withtransform,
-.mdl-slider-background-lower {
-  background: linear-gradient(90deg, rgb(0% 0% 0%) 0%, rgb(0.204% 0.153% 0.391%) 6.25%, rgb(0.815% 0.613% 1.563%) 12.5%, rgb(1.834% 1.379% 3.516%) 18.75%, rgb(3.26% 2.451% 6.25%) 25%, rgb(5.093% 3.83% 9.766%) 31.25%, rgb(7.335% 5.515% 14.063%) 37.5%, rgb(9.983% 7.506% 19.141%) 43.75%, rgb(13.039% 9.804% 25%) 50%, rgb(16.503% 12.408% 31.641%) 56.25%, rgb(20.374% 15.319% 39.063%) 62.5%, rgb(24.652% 18.536% 47.266%) 68.75%, rgb(29.338% 22.059% 56.25%) 75%, rgb(34.432% 25.888% 66.016%) 81.25%, rgb(39.933% 30.025% 76.563%) 87.5%, rgb(45.841% 34.467% 87.891%) 93.75%, rgb(52.157% 39.216% 100%) 100% );
-  background-color: linear-gradient(90deg, rgb(0% 0% 0%) 0%, rgb(0.204% 0.153% 0.391%) 6.25%, rgb(0.815% 0.613% 1.563%) 12.5%, rgb(1.834% 1.379% 3.516%) 18.75%, rgb(3.26% 2.451% 6.25%) 25%, rgb(5.093% 3.83% 9.766%) 31.25%, rgb(7.335% 5.515% 14.063%) 37.5%, rgb(9.983% 7.506% 19.141%) 43.75%, rgb(13.039% 9.804% 25%) 50%, rgb(16.503% 12.408% 31.641%) 56.25%, rgb(20.374% 15.319% 39.063%) 62.5%, rgb(24.652% 18.536% 47.266%) 68.75%, rgb(29.338% 22.059% 56.25%) 75%, rgb(34.432% 25.888% 66.016%) 81.25%, rgb(39.933% 30.025% 76.563%) 87.5%, rgb(45.841% 34.467% 87.891%) 93.75%, rgb(52.157% 39.216% 100%) 100% );
 }
 
 .mdl-slider::-webkit-slider-thumb,
@@ -473,14 +461,7 @@ p.overview.detail-clamp-text {
 .backgroundProgress > div {
   background: rgba(0, 0, 0, 0);
 }
-.itemProgressBar {
-  background: rgba(0, 0, 0, 0.25);
-  height: 100%;
-  position: absolute;
-  bottom: 0em;
-  left: 0;
-  width: 100%;
-}
+
 #divRunningTasks span {
   color: rgba(255,255,255,0.75) !important;
 }
@@ -563,19 +544,19 @@ progress::-webkit-progress-value {
 }
 
 .mdl-slider-background-lower {
-  background-color: rgb(var(--accent));
+  background-color: #8546ff;
 }
 .mdl-slider::-moz-range-thumb {
-  background: rgb(var(--accent));
+  background: #8546ff;
 }
 .mdl-slider::-ms-thumb {
-  background: rgb(var(--accent));
+  background: #8546ff;
 }
 .mdl-slider::-webkit-slider-thumb {
-  background: rgb(var(--accent));
+  background: #8546ff;
 }
 .iconOsdProgressInner {
-  background: rgb(var(--accent));
+  background: #8546ff;
 }
 
 .countIndicator, 
@@ -1097,7 +1078,7 @@ progress {
 
 .itemProgressBar {
   background: rgba(0, 0, 0, 0.25);
-  height: 100%;
+  height: 0.5em;
   position: absolute;
   bottom: 0em;
   left: 0;
@@ -1105,7 +1086,7 @@ progress {
 }
 
 .itemProgressBarForeground {
-  background: linear-gradient(90deg, rgba(46, 0, 255, 0.11) 0%, rgba(46, 0, 255, 0.11) 6.25%, rgba(47, 2, 255, 0.13) 12.5%, rgba(49, 4, 255, 0.14) 18.75%, rgba(51, 6, 255, 0.17) 25%, rgba(54, 10, 255, 0.2) 31.25%, rgba(58, 14, 255, 0.23) 37.5%, rgba(63, 19, 255, 0.28) 43.75%, rgba(68, 25, 255, 0.33) 50%, rgba(74, 32, 255, 0.39) 56.25%, rgba(80, 39, 255, 0.46) 62.5%, rgba(87, 47, 255, 0.53) 68.75%, rgba(95, 56, 255, 0.61) 75%, rgba(103, 66, 255, 0.7) 81.25%, rgba(113, 77, 255, 0.79) 87.5%, rgba(122, 88, 255, 0.89) 93.75%, rgb(52.157% 39.216% 100%) 100% );
+  background: #8564ff;
 }
 
 .layout-desktop .detailImageContainer .card.portraitCard:hover,
