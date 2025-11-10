@@ -1031,7 +1031,7 @@ progress {
     width: 27em;
     font-weight: 500;
     opacity: 0;
-    animation: fadeTracks 0.5s ease-out 1.5s forwards;
+    animation: fadeTracks 0.5s ease-out 1.25s forwards;
 }
 
 @keyframes fadeTracks {
@@ -2126,7 +2126,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
   padding-bottom: 3em;
   padding-top: 0.5em;
   opacity: 0;
-  animation: fadeTitle 0.5s ease-out 1.5s forwards;
+  animation: fadeTitle 0.5s ease-out 1.25s forwards;
 }
 
 
@@ -2453,7 +2453,7 @@ content: '';
 .layout-desktop .itemName.infoText.parentNameLast,
 .layout-desktop .parentName.musicParentName.focuscontainer-x {
   opacity: 0;
-  animation: fadeTitle 0.5s ease-out 1.5s forwards;
+  animation: fadeTitle 0.5s ease-out 1.25s forwards;
 }
 
 @keyframes fadeTitle {
@@ -3197,7 +3197,7 @@ content: '';
 
 .itemDetailPage:has(.itemName.parentNameLast) #itemBackdrop {
     height: calc(100vh + 3em);
-    animation: shrinkBackdrop 1s cubic-bezier(0.25, 0.8, 0.25, 1) 1.5s forwards;
+    animation: shrinkBackdrop 1s cubic-bezier(0.25, 0.8, 0.25, 1) 1.25s forwards;
 }
 
 @keyframes shrinkBackdrop {
