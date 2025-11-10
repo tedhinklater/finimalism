@@ -254,11 +254,6 @@ p.overview.detail-clamp-text {
   background-color: #2c1f78ba;
 }
 
-.itemBackdrop {
-  display: inherit;
-  height: 19.32552em;
-}
-
 .countIndicator {
   box-shadow: none;
 }
@@ -385,7 +380,7 @@ p.overview.detail-clamp-text {
 
 @media (orientation: landscape) {
   .itemDetailPage {
-    padding-top: 34.2em !important;
+    padding-top: 0em !important;
   }
 }
 
@@ -1049,11 +1044,18 @@ progress {
 
 .layout-desktop .trackSelections,
 .layout-tv .trackSelections {
-  position: fixed;
-  left: 0em;
-  top: 56em;
-  width: 27em;
-  font-weight: 500;
+    position: fixed;
+    left: 0em;
+    top: 56em;
+    width: 27em;
+    font-weight: 500;
+    opacity: 0;
+    animation: fadeTracks 0.5s ease-out 1.5s forwards;
+}
+
+@keyframes fadeTracks {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
 
 .layout-desktop .trackSelections .selectContainer .detailTrackSelect,
@@ -1646,13 +1648,14 @@ button.is-emby-button emby-button {
 .layout-tv div.itemMiscInfo.itemMiscInfo-primary,
 .layout-desktop .itemName.originalTitle,
 .layout-tv .itemName.originalTitle {
-  font-size: 1.5em;
+  font-size: 1.3em;
   font-weight: 600;
   text-align: center;
   filter: drop-shadow(0px 4px 1px #0005);
-  justify-content: space-between;
+  justify-content: flex-start;
   padding-top: 0.85em;
   width: 61vw;
+  gap: 5em;
 }
 
 .layout-desktop .itemName.infoText.subtitle.focuscontainer-x,
@@ -2141,7 +2144,10 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
   min-height: 17.55em;
   padding-bottom: 3em;
   padding-top: 0.5em;
+  opacity: 0;
+  animation: fadeTitle 0.5s ease-out 1.5s forwards;
 }
+
 
 .layout-desktop #itemDetailPage .itemExternalLinks .button-link.emby-button, 
 .layout-tv #itemDetailPage .itemExternalLinks .button-link.emby-button {
@@ -2458,6 +2464,18 @@ content: '';
   line-height: 1em;
   font-size: 1.7em;
   font-weight: 700;
+}
+
+.layout-desktop .itemName.infoText.originalTitle,
+.layout-desktop .itemName.infoText.parentNameLast,
+.layout-desktop .parentName.musicParentName.focuscontainer-x {
+  opacity: 0;
+  animation: fadeTitle 0.5s ease-out 1.5s forwards;
+}
+
+@keyframes fadeTitle {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
 
 .layout-desktop .itemName.infoText.originalTitle,
@@ -2837,7 +2855,8 @@ content: '';
   padding-left: 0.5em;
 }
 
-.layout-desktop [dir="ltr"] .detailRibbon, .layout-tv [dir="ltr"] .detailRibbon {
+.layout-desktop [dir="ltr"] .detailRibbon, 
+.layout-tv [dir="ltr"] .detailRibbon {
   padding-left: 32em;
   background: transparent;
 }
@@ -2861,17 +2880,10 @@ content: '';
     }
 }
 
-.layout-desktop .MuiDrawer-paper,
-.layout-tv .MuiDrawer-paper {
-}
-
-.layout-desktop [dir="ltr"] .detailRibbon, .layout-tv [dir="ltr"] .detailRibbon {
-}
-
 .layout-desktop .detailRibbon,
 .layout-tv .detailRibbon {
-  height: 4.5em;
-  margin-top: -4.5em;
+  height: 3em;
+  margin-top: -3em;
   position: relative;
 }
 
@@ -3218,7 +3230,26 @@ content: '';
   margin: 0;
 }
 
-/* MOBILE */
+.itemDetailPage:has(.itemName.parentNameLast) #itemBackdrop {
+    height: calc(100vh + 3em);
+    animation: shrinkBackdrop 1s cubic-bezier(0.25, 0.8, 0.25, 1) 1.5s forwards;
+}
+
+@keyframes shrinkBackdrop {
+    0%   { height: 100vh; }
+    80%  { height: 5vh; }
+    100% { height: 3em; }
+}
+
+.itemBackdrop {
+  height: 0vh;
+}
+
+.layout-desktop .detailPageWrapperContainer {
+  min-height: 100vh;
+}
+
+/* --------------- MOBILE --------------- */
 
 .layout-mobile .card {
   font-size: 0.85em !important;
