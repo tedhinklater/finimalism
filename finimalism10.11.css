@@ -3208,6 +3208,16 @@ content: '';
   }
 }
 
+.layout-desktop #childrenContent .verticalSection[data-type="Episode"] .itemsContainer.padded-right.vertical-wrap,
+.layout-tv #childrenContent .verticalSection[data-type="Episode"] .itemsContainer.padded-right.vertical-wrap {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  padding: 0rem;
+  width: 72vw;
+  margin: 0;
+}
+
 /* MOBILE */
 
 .layout-mobile .card {
@@ -3782,3 +3792,5 @@ content: '';
   display: flex;
   font-size: 90%;
 }
+
+
