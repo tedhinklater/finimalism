@@ -2612,6 +2612,19 @@ content: '';
   z-index: 0;
 }
 
+.layout-desktop .videoPlayerContainer,
+.layout-tv .videoPlayerContainer {
+  animation: 1240ms ease-in fadeTitle !important;
+  animation-name: fadeTitle !important;
+  animation-duration: 1240ms !important;
+  animation-timing-function: ease-in !important;
+  animation-delay: 0s !important;
+  animation-iteration-count: 1 !important;
+  animation-direction: normal !important;
+  animation-fill-mode: none !important;
+  animation-play-state: running !important;
+}
+
 .content-primary {
   padding-bottom: 5em !important;
 }
