@@ -1636,7 +1636,7 @@ button.is-emby-button emby-button {
   justify-content: flex-start;
   padding-top: 0.85em;
   width: 61vw;
-  gap: 5em;
+  gap: 5%;
 }
 
 .layout-desktop .itemName.infoText.subtitle.focuscontainer-x,
