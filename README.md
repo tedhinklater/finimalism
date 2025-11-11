@@ -16,5 +16,3 @@ Just paste an import line into your "Dashboard > General > CSS" section, or "Use
 
 # Show, Season & Player
 ![show](https://github.com/user-attachments/assets/718f656e-9f8f-4e3a-9cbf-0f9108c23008)
-
-Everything is just an alteration of the amazing work already put into [Ultrachromic by CTalvio](https://github.com/CTalvio/Ultrachromic).
