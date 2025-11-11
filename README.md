@@ -9,7 +9,7 @@ or
 
 ```
 
-Just paste an import line into your "Dashboard > General > CSS" section, or "User Settings > Display > CSS" section.
+Just paste an import line into your "Dashboard > Branding > CSS" section, or "User Settings > Display > CSS" section.
 
 # Homepage & Movie (Colour version with [Featured Content Bar](https://github.com/tedhinklater/Jellyfin-Featured-Content-Bar))
 ![homepage](https://github.com/user-attachments/assets/43d4b7a1-592a-489a-91bc-d7131f7b46fa)
