@@ -3248,7 +3248,22 @@ content: '';
     animation: shrinkBackdrop 1s cubic-bezier(0.25, 0.8, 0.25, 1) 1.25s forwards;
 }
 
+.layout-desktop .itemDetailPage:has(.button-flat.mediaInfoItem.emby-button) .itemMiscInfo.itemMiscInfo-primary {
+  width: fit-content;
+}
+
+.layout-desktop .itemDetailPage:has(.button-flat.mediaInfoItem.emby-button) .infoWrapper {
+  display: inline-flex;
+}
+
 .layout-desktop .itemDetailPage:has(.button-flat.mediaInfoItem.emby-button) .itemMiscInfo.itemMiscInfo-secondary {
+  font-size: 1.5em;
+  padding: 1.2em;
+}
+
+.layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .trackSelections.focuscontainer-x {
+  animation: none;
+  opacity: 1;
 }
 
 @keyframes shrinkBackdrop {
