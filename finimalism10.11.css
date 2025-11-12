@@ -2499,9 +2499,9 @@ content: '';
 .layout-tv .itemName.infoText.subtitle {
   position: absolute;
   top: 5em;
-  left: 2.2em;
-  font-size: 1.1em;
-  width: 21em;
+  left: 2.1em;
+  font-size: 1em;
+  width: 24em;
 }
 
 .layout-desktop [dir="ltr"] .selectArrowContainer,
@@ -3242,9 +3242,15 @@ content: '';
   margin: 0;
 }
 
-.layout-desktop .itemDetailPage:has(.itemName.parentNameLast) #itemBackdrop {
+.layout-desktop .itemDetailPage:has(.itemName.parentNameLast) #itemBackdrop,
+.layout-desktop .itemDetailPage:has(.button-flat.mediaInfoItem.emby-button) #itemBackdrop {
     height: calc(100vh + 3em);
     animation: shrinkBackdrop 1s cubic-bezier(0.25, 0.8, 0.25, 1) 1.25s forwards;
+}
+
+.layout-desktop .itemDetailPage:has(.button-flat.mediaInfoItem.emby-button) .itemMiscInfo.itemMiscInfo-secondary {
+  margin-top: -2.4em;
+  margin-left: 13em;
 }
 
 @keyframes shrinkBackdrop {
