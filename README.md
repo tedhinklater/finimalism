@@ -18,3 +18,8 @@ Just paste an import line into your "Dashboard > Branding > CSS" section, or "Us
 ![show](https://github.com/user-attachments/assets/8f7f6699-2653-4e09-9520-409d15b1ced6)
 
 
+If you want it without the animations, add this line 
+
+```css
+@import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/no-animation.css");
+```
