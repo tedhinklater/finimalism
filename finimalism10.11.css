@@ -151,6 +151,12 @@ p.overview.detail-clamp-text {
   font-size: 1.25em;
 }
 
+.layout-desktop #itemDetailPage .tagline {
+  font-size: 1.35em;
+  margin-top: 1.2em;
+  margin-bottom: 2em;
+}
+
 .mdl-slider::-webkit-slider-thumb,
 .mdl-slider .mdl-slider::-webkit-slider-thumb {
   background: #8564ff !important;
@@ -597,7 +603,7 @@ progress::-webkit-progress-value {
 }
 
 #itemDetailPage .button-link {
-  color: inherit !important;
+  color: inherit;
 }
 
 .navMenuOption:hover,
@@ -1650,6 +1656,7 @@ button.is-emby-button emby-button {
   line-height: 0.8em;
   font-size: 1.05em;
   transform: translateY(-50%);
+  font-weight: 600;
 }
 
 @media (orientation: portrait) {
@@ -3261,10 +3268,14 @@ content: '';
   padding: 1.2em;
 }
 
-.layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .trackSelections.focuscontainer-x {
-  animation: none;
-  opacity: 1;
+.layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .trackSelections.focuscontainer-x,
+.layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .itemExternalLinks,
+.layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .itemName.infoText.originalTitle,
+.layout-desktop .itemDetailPage:has(.secondary.listItemMediaInfo.listItemBodyText) .itemExternalLinks {
+  animation: none !important;
+  opacity: 1 !important;
 }
+
 
 @keyframes shrinkBackdrop {
     0%   { height: 100vh; }
@@ -3278,6 +3289,12 @@ content: '';
 
 .layout-desktop .detailPageWrapperContainer {
   min-height: 100vh;
+}
+
+.layout-desktop #itemDetailPage .nameContainer .itemName.infoText.subtitle.focuscontainer-x .button-link.itemAction.emby-button[data-action="link"],
+.layout-tv #itemDetailPage .nameContainer .itemName.infoText.subtitle.focuscontainer-x .button-link.itemAction.emby-button[data-action="link"]  {
+  color: #a086ff !important;
+  font-weight: 800;
 }
 
 /* --------------- MOBILE --------------- */
