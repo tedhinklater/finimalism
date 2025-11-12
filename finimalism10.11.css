@@ -3249,8 +3249,6 @@ content: '';
 }
 
 .layout-desktop .itemDetailPage:has(.button-flat.mediaInfoItem.emby-button) .itemMiscInfo.itemMiscInfo-secondary {
-  margin-top: -2.4em;
-  margin-left: 13em;
 }
 
 @keyframes shrinkBackdrop {
