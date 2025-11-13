@@ -1653,7 +1653,7 @@ button.is-emby-button emby-button {
   left: 5em;
   width: 22em;
   filter: drop-shadow(-1px 1px 2px black);
-  line-height: 0.8em;
+  line-height: unset;
   font-size: 1.05em;
   transform: translateY(-50%);
   font-weight: 600;
