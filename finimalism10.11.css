@@ -1034,13 +1034,14 @@ progress {
 
 .layout-desktop .trackSelections,
 .layout-tv .trackSelections {
-    position: fixed;
-    left: 0em;
-    top: 56em;
-    width: 27em;
-    font-weight: 500;
-    opacity: 0;
-    animation: fadeTracks 0.5s ease-out 1.25s forwards;
+  position: fixed;
+  left: 0em;
+  top: 47em;
+  width: 22em;
+  font-weight: 500;
+  opacity: 0;
+  animation: fadeTracks 0.5s ease-out 1.25s forwards;
+  font-size: 1.18em;
 }
 
 @keyframes fadeTracks {
@@ -1050,11 +1051,12 @@ progress {
 
 .layout-desktop .trackSelections .selectContainer .detailTrackSelect,
 .layout-tv .trackSelections .selectContainer .detailTrackSelect {
-  font-size: inherit;
+  font-size: 98%;
   text-overflow: ellipsis;
   text-align: center;
   padding-left: 1em;
   padding-right: 2em;
+  font-weight: 600;
 }
 
 #seriesScheduleSection {
@@ -2112,6 +2114,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 .layout-desktop .trackSelections .selectContainer .selectLabel,
 .layout-tv .trackSelections .selectContainer .selectLabel {
   text-align: center;
+  font-size: 0.95em;
 }
 
 .layout-desktop #itemDetailPage .itemExternalLinks,
@@ -2494,7 +2497,7 @@ content: '';
 .layout-desktop .itemName.infoText.originalTitle,
 .layout-tv .itemName.infoText.originalTitle {
   position: absolute;
-  top: 3em;
+  top: 2.7em;
   left: 1.2em;
   font-size: 1.1em;
   width: 21em;
@@ -2507,6 +2510,12 @@ content: '';
   left: 2.1em;
   font-size: 1em;
   width: 24em;
+}
+
+.layout-desktop .detailsGroupItem,
+.layout-desktop .detailsGroupItem.genres.content.focuscontainer-x {
+  font-size: 0.85em;
+  font-weight: 400;
 }
 
 .layout-desktop [dir="ltr"] .selectArrowContainer,
@@ -3336,7 +3345,7 @@ content: '';
 .layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button.show-focus[data-type="Season"]) #itemBackdrop,
 .layout-desktop .itemDetailPage:has(.itemName.infoText.subtitle) #itemBackdrop,
 .layout-tv .itemDetailPage:has(.itemName.infoText.subtitle) #itemBackdrop {
-  height: 3em;
+  height: 0em;
 }
 
 .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) #itemBackdrop,
@@ -3388,9 +3397,9 @@ content: '';
 
 .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .trackSelections,
 .layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button.show-focus[data-type="Season"]) .trackSelections {
-  top: 42.8em !important;
+  top: 36.1em !important;
   width: 30em;
-  left: 4em;
+  left: 0.55em;
 }
 
 .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .itemName.infoText.subtitle.focuscontainer-x,
@@ -3400,14 +3409,14 @@ content: '';
 
 .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .detailRibbon,
 .layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button.show-focus[data-type="Season"]) .detailRibbon {
-  padding-left: 40em;
+  padding-left: 42em;
 }
 
 .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .detailPagePrimaryContent,
 .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .detailPageContent,
 .layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button.show-focus[data-type="Season"]) .detailPagePrimaryContent,
 .layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button.show-focus[data-type="Season"]) .detailPageContent {
-  padding-left: 39.5em;
+  padding-left: 41.5em;
 }
 
 .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .verticalSection.detailVerticalSection.moreFromSeasonSection.emby-scroller-container .scrollSlider.focuscontainer-x.itemsContainer.animatedScrollX,
@@ -3425,6 +3434,7 @@ content: '';
 .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .itemName.infoText.originalTitle {
   left: 0.2em !important;
   width: 31.2em !important;
+  top: 3.3em;
 }
 
 /* 1440p resolution */
