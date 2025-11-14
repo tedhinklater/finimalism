@@ -344,10 +344,6 @@ p.overview.detail-clamp-text {
     animation: logoScale 0.3s ease-out forwards;
     display: block;
   }
-  .layout-desktop #itemDetailPage:has(.backdropCard) .detailLogo,
-  .layout-tv #itemDetailPage:has(.backdropCard) .detailLogo {
-    top: 21em;
-  }
   .layout-desktop #itemDetailPage:has(.portraitCard) .detailLogo,
   .layout-tv #itemDetailPage:has(.portraitCard) .detailLogo {
     top: 3em;
@@ -1108,11 +1104,6 @@ progress {
 .layout-desktop #itemDetailPage .card.squareCard,
 .layout-tv #itemDetailPage .card.squareCard {
   top: 22.8em;
-}
-
-.layout-desktop .detailImageContainer .card.backdropCard,
-.layout-tv .detailImageContainer .card.backdropCard {
-  top: 32.8em !important;
 }
 
 .flex.align-items-center.flex-grow.headerTop {
@@ -2124,7 +2115,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
   position: fixed;
   left: 2.9em;
   transform: translateX(-50%) translateY(-100%);
-  top: 55.4em;
+  top: 36.4em;
   z-index: 2;
   padding: 1em;
   padding-top: 1em;
@@ -3259,14 +3250,6 @@ content: '';
   opacity: 1 !important;
 }
 
-.layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) #itemBackdrop
-.layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) #itemBackdrop,
-.layout-desktop .itemDetailPage:has(.itemName.infoText.subtitle) #itemBackdrop,
-.layout-tv .itemDetailPage:has(.itemName.infoText.subtitle) #itemBackdrop {
-  height: 3em;
-}
-
-
 @keyframes shrinkBackdrop {
     0%   { height: 100vh; }
     80%  { height: 5vh; }
@@ -3332,6 +3315,42 @@ content: '';
   font-weight: 800;
 }
 
+/* --- Episode Page --- */
+
+.layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) #itemBackdrop
+.layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) #itemBackdrop,
+.layout-desktop .itemDetailPage:has(.itemName.infoText.subtitle) #itemBackdrop,
+.layout-tv .itemDetailPage:has(.itemName.infoText.subtitle) #itemBackdrop {
+  height: 3em;
+}
+
+.layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) #itemBackdrop {
+  height: 34.55em;
+}
+
+.layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .detailLogo {
+  top: 4em;
+}
+
+.layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .mainDetailButtons.focuscontainer-x {
+  top: 8.5em;
+}
+
+.layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .detailImageContainer .card.backdropCard {
+  top: 15.5em !important;
+}
+
+.layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .infoWrapper .nameContainer .itemName.infoText.subtitle.focuscontainer-x {
+  top: 13.7em;
+}
+
+.layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .nameContainer {
+  top: 30.7em !important;
+}
+
+.layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .trackSelections {
+  top: 37.9em !important;
+}
 
 /* 1440p resolution */
 @media (min-width: 1950px) {
