@@ -2514,7 +2514,7 @@ content: '';
 
 .layout-desktop .detailsGroupItem,
 .layout-desktop .detailsGroupItem.genres.content.focuscontainer-x {
-  font-size: 0.85em;
+  font-size: 1em;
   font-weight: 400;
 }
 
