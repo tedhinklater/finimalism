@@ -15,7 +15,7 @@ Just paste an import line into your "Dashboard > Branding > CSS" section, or "Us
 ![homepage](https://github.com/user-attachments/assets/bf1c7d94-be16-446e-8ae4-3bb290a5a4c4)
 
 # Show, Season & Player
-![show](https://github.com/user-attachments/assets/fe2630ba-5535-4d84-afdf-a1ec934762ee)
+![show](https://github.com/user-attachments/assets/6fc555c9-591e-4b07-9f6c-7ff884aba482)
 
 If you want it without the animations, add this line 
 
