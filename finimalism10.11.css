@@ -742,6 +742,11 @@ progress {
   width: 11.5vw;
 }
 
+.layout-desktop #itemDetailPage .overflowSquareCard,
+.layout-tv #itemDetailPage .overflowSquareCard {
+  width: 8.8vw;
+}
+
 .skinHeader {
   display: -webkit-flex;
   display: flex;
@@ -3310,6 +3315,7 @@ content: '';
   display: flex;
   justify-content: space-evenly;
   padding-left: 0.75em;
+  gap: 1em;
 }
 
 .layout-desktop .padded-top-focusscale.padded-bottom-focusscale.emby-scroller.scrollX[data-centerfocus="true"] .padded-top.padded-bottom.scrollSlider.focuscontainer-x .raised.emby-button,
@@ -3317,10 +3323,11 @@ content: '';
   width: 100%;
   padding: 0.25em;
   justify-content: center;
-  border-radius: 0 !important;
+  border-radius: var(--rounding) !important;
   margin: 0;
   background: #19134287;
-  font-weight: 800;
+  font-weight: 700;
+  font-size: 1.2em;
 }
 
 /* --- Episode Page --- */
@@ -3406,7 +3413,7 @@ content: '';
 .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .verticalSection.detailVerticalSection.moreFromSeasonSection.emby-scroller-container .scrollSlider.focuscontainer-x.itemsContainer.animatedScrollX,
 .layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button.show-focus[data-type="Season"]) .verticalSection.detailVerticalSection.moreFromSeasonSection.emby-scroller-container .scrollSlider.focuscontainer-x.itemsContainer.animatedScrollX {
   grid-template-columns: repeat(4, 1fr) !important;
-  width: 69vw !important;
+  width: 67vw !important;
 }
 
 .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .verticalSection.detailVerticalSection.moreFromSeasonSection .card.overflowBackdropCard,
