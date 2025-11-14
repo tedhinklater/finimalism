@@ -2762,8 +2762,13 @@ content: '';
   grid-template-columns: repeat(4, 1fr);
   gap: 0.5rem;
   padding: 0rem;
-  width: 72vw;
+  width: 73vw;
   margin: 0;
+}
+
+.layout-desktop #scenesCollapsible .itemAction.chapterCard.overflowBackdropCard,
+.layout-tv #scenesCollapsiblecard .itemAction.chapterCard.overflowBackdropCard {
+  width: 20em;
 }
 
 .layout-desktop #castCollapsible .card.overflowPortraitCard.personCard.card-hoverable.card-withuserdata,
