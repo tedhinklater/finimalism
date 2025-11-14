@@ -3242,6 +3242,7 @@ content: '';
 
 .layout-desktop .itemDetailPage:has(.button-flat.mediaInfoItem.emby-button) .itemMiscInfo.itemMiscInfo-primary {
   width: fit-content;
+  min-width: 7em;
 }
 
 .layout-desktop .itemDetailPage:has(.button-flat.mediaInfoItem.emby-button) .infoWrapper {
