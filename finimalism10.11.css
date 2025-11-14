@@ -343,6 +343,7 @@ p.overview.detail-clamp-text {
     height: 7.5em;
     animation: logoScale 0.3s ease-out forwards;
     display: block;
+    transition: width 0.2s ease-in-out;
   }
   .layout-desktop #itemDetailPage:has(.portraitCard) .detailLogo,
   .layout-tv #itemDetailPage:has(.portraitCard) .detailLogo {
@@ -3332,6 +3333,7 @@ content: '';
   top: 3em;
   width: 32.75em;
   height: 7em;
+  transition: width 0.2s ease-in-out;
 }
 
 .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .mainDetailButtons.focuscontainer-x {
