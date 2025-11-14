@@ -3422,7 +3422,21 @@ content: '';
 .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .verticalSection.detailVerticalSection.moreFromSeasonSection.emby-scroller-container .scrollSlider.focuscontainer-x.itemsContainer.animatedScrollX,
 .layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button.show-focus[data-type="Season"]) .verticalSection.detailVerticalSection.moreFromSeasonSection.emby-scroller-container .scrollSlider.focuscontainer-x.itemsContainer.animatedScrollX {
   grid-template-columns: repeat(4, 1fr) !important;
-  width: 67vw !important;
+  width: 59vw !important;
+}
+
+.layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) #castContent.scrollSlider.focuscontainer-x.itemsContainer.animatedScrollX,
+.layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button.show-focus[data-type="Season"]) #castContent.scrollSlider.focuscontainer-x.itemsContainer.animatedScroll,
+.layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) #guestCastContent.scrollSlider.focuscontainer-x.itemsContainer.animatedScrollX,
+.layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button.show-focus[data-type="Season"]) #guestCastContent.scrollSlider.focuscontainer-x.itemsContainer.animatedScroll {
+  grid-template-columns: repeat(7, 1fr) !important;
+  width: 65vw !important;
+}
+
+.layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) #scenesCollapsible .scrollSlider.focuscontainer-x.itemsContainer.animatedScrollX,
+.layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button.show-focus[data-type="Season"]) #scenesCollapsible .scrollSlider.focuscontainer-x.itemsContainer.animatedScrollX {
+  grid-template-columns: repeat(4, 1fr) !important;
+  width: 65vw !important;
 }
 
 .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .verticalSection.detailVerticalSection.moreFromSeasonSection .card.overflowBackdropCard,
