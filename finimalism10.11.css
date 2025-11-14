@@ -3370,7 +3370,7 @@ content: '';
 .layout-tv #itemDetailPage:has(.button-link.itemAction.emby-button.show-focus[data-type="Season"]) .mainDetailButtons.focuscontainer-x {
   top: 7.5em !important;
   width: 28.45em;
-  padding-top: 19em;
+  padding-top: 19.1em;
 }
 
 .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .mainDetailButtons.focuscontainer-x::before,
