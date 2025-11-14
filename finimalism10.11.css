@@ -1055,7 +1055,7 @@ progress {
   text-overflow: ellipsis;
   text-align: center;
   padding-left: 1em;
-  padding-right: 2em;
+  padding-right: 1em;
   font-weight: 600;
 }
 
