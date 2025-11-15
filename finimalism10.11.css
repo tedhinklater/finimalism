@@ -782,6 +782,11 @@ progress {
   width: 8.5vw;
 }
 
+.layout-desktop #itemDetailPage .overflowBackdropCard,
+.layout-tv #itemDetailPage .overflowBackdropCard {
+  width: 18.6vw;
+}
+
 .skinHeader {
   display: -webkit-flex;
   display: flex;
@@ -3275,7 +3280,7 @@ content: '';
 }
 
 .layout-desktop #indexPage .itemsContainer .card.overflowBackdropCard.card-hoverable.card-withuserdata {
-  width: 15.9vw;
+  width: 15.8vw;
 }
 
 .layout-tv #indexPage .itemsContainer .card.overflowBackdropCard {
@@ -3438,10 +3443,10 @@ content: '';
 
 .layout-desktop #indexPage 
 .verticalSection .itemsContainer.scrollSlider.focuscontainer-x.animatedScrollX 
-.card:nth-child(n+25),
+.card:nth-child(n+13),
 .layout-tv #indexPage 
 .verticalSection .itemsContainer.scrollSlider.focuscontainer-x.animatedScrollX 
-.card:nth-child(n+25) {
+.card:nth-child(n+13) {
     display: none !important;
 }
 
@@ -3458,7 +3463,7 @@ content: '';
 .layout-tv #indexPage .overflowSquareCard,
 .layout-desktop #indexPage .overflowPortraitCard,
 .layout-tv #indexPage .overflowPortraitCard {
-  width: 11.5vw;
+  width: 15.8vw;
 }
 
 .layout-desktop .padded-top-focusscale.padded-bottom-focusscale.emby-scroller.scrollX[data-centerfocus="true"] .padded-top.padded-bottom.scrollSlider.focuscontainer-x .raised.emby-button,
