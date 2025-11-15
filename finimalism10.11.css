@@ -3572,8 +3572,8 @@ content: '';
 .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .nameContainer,
 .layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button.show-focus[data-type="Season"]) .nameContainer {
   top: 36em !important;
-  width: 34.75em !important;
-  left: 3.9em !important;
+  width: 34.15em !important;
+  left: 4.3em !important;
 }
 
 .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .overview.detail-clamp-text,
