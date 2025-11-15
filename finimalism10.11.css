@@ -140,10 +140,23 @@ h2 {
   }
 }
 
+.layout-desktop #itemDetailPage .infoWrapper .nameContainer .parentName.focuscontainer-x {
+  font-size: 1.5em;
+  transition: color 0.3s;
+}
+
+.layout-desktop #itemDetailPage .infoWrapper .nameContainer .parentName.focuscontainer-x:hover {
+  color: #a086ff;
+}
+
+.layout-desktop #itemDetailPage .infoWrapper .nameContainer .parentName.focuscontainer-x .button-link:hover {
+  text-decoration: none !important;
+}
+
 p.overview.detail-clamp-text {
-  font-size: 1.1em;
+  font-size: 1em;
   color: #fff;
-  font-weight: 400;
+  font-weight: 500;
   -webkit-line-clamp: unset;
 }
 
@@ -1051,12 +1064,12 @@ progress {
 
 .layout-desktop .trackSelections .selectContainer .detailTrackSelect,
 .layout-tv .trackSelections .selectContainer .detailTrackSelect {
-  font-size: 98%;
+  font-size: 0.95em;
   text-overflow: ellipsis;
   text-align: center;
   padding-left: 1em;
   padding-right: 1em;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 #seriesScheduleSection {
@@ -3382,8 +3395,8 @@ content: '';
 .layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button.show-focus[data-type="Season"]) .itemDetailsGroup {
   position: fixed;
   top: 50em;
-  left: 1.5em;
-  width: 37em;
+  left: 0em;
+  width: 38em;
 }
 
 .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .itemDetailsGroup .detailsGroupItem.genresGroup .genres.content.focuscontainer-x,
@@ -3395,7 +3408,18 @@ content: '';
 .layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .itemDetailsGroup .detailsGroupItem.directorsGroup .directors.content.focuscontainer-x,
 .layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .itemDetailsGroup .detailsGroupItem.studiosGroup .studios.content.focuscontainer-x {
   text-align: center;
-  width: 25em;
+  width: 29.5em;
+}
+
+.layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .itemDetailsGroup .detailsGroupItem.genresGroup .genresLabel.label,
+.layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .itemDetailsGroup .detailsGroupItem.writersGroup .writersLabel.label,
+.layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .itemDetailsGroup .detailsGroupItem.directorsGroup .directorsLabel.label,
+.layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .itemDetailsGroup .detailsGroupItem.studiosGroup .studiosLabel.label,
+.layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .itemDetailsGroup .detailsGroupItem.genresGroup .genresLabel.label,
+.layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .itemDetailsGroup .detailsGroupItem.writersGroup .writersLabel.label,
+.layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .itemDetailsGroup .detailsGroupItem.directorsGroup .directorsLabel.label,
+.layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .itemDetailsGroup .detailsGroupItem.studiosGroup .studiosLabel.label {
+  text-align: center;
 }
 
 .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .detailLogo,
@@ -3425,12 +3449,18 @@ content: '';
   width: 34.15em;
 }
 
-.layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .infoWrapper .nameContainer .itemName.infoText.subtitle.focuscontainer-x,
-.layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button.show-focus[data-type="Season"]) .infoWrapper .nameContainer .itemName.infoText.subtitle.focuscontainer-x {
-  top: 9.65em;
-  font-size: 1.4em;
-  left: 4.25em;
-  width: 24em;
+.layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .infoWrapper .nameContainer .itemName.infoText.subtitle.focuscontainer-x {
+  top: 11.2em;
+  font-size: 1.2em;
+  left: 5.25em;
+  width: 27em;
+  font-weight: 600;
+}
+
+.layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button.show-focus[data-type="Season"]) .infoWrapper .nameContainer .parentName.focuscontainer-x {
+  width: 27em;
+  font-weight: 600;
+  font-size: 1.3em;
 }
 
 .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .nameContainer,
@@ -3438,6 +3468,11 @@ content: '';
   top: 35.5em !important;
   width: 34.75em !important;
   left: 3.9em !important;
+}
+
+.layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .overview.detail-clamp-text,
+.layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button.show-focus[data-type="Season"]) .overview.detail-clamp-text {
+  margin-bottom: 0;
 }
 
 .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .trackSelections,
