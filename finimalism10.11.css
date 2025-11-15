@@ -751,7 +751,7 @@ progress {
 
 .layout-tv .overflowPortraitCard,
 .layout-tv .overflowSquareCard {
-  width: 11.5vw;
+  width: 8.8vw;
 }
 
 .layout-desktop #itemDetailPage .overflowSquareCard,
@@ -2797,7 +2797,7 @@ content: '';
 
 .layout-tv #castContent.scrollSlider.focuscontainer-x.itemsContainer.animatedScrollX.itemsContainer-tv {
   display: grid !important;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(8, 1fr);
   gap: 0.5rem;
   padding: 0rem;
   width: 72vw;
@@ -3034,7 +3034,7 @@ content: '';
 {
   display: grid !important;
   grid-template-columns: repeat(1, 1fr);
-  gap: 0rem;
+  gap: 1rem;
   padding: 1rem;
 }
 
@@ -3108,7 +3108,7 @@ content: '';
 }
 
 .layout-tv div.itemMiscInfo.itemMiscInfo-primary {
-  margin-top: -0.5em;
+  margin-top: 0.3em;
 }
 
 .layout-tv .itemDetailPage {
@@ -3119,6 +3119,10 @@ content: '';
   padding-left: .8em;
   padding-right: .8em;
   color: #fff;
+}
+
+.detailPageSecondaryContainer.padded-bottom-page {
+  min-height: 100vh;
 }
 
 .itemsContainer-tv > .portraitCard, .itemsContainer-tv > .squareCard {
