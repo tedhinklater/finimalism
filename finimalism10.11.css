@@ -1544,14 +1544,31 @@ button.is-emby-button emby-button {
 }
 
 .upNextContainer {
-  background: #1b0d3c8f;
+  background: #140f22a3;
   z-index: 50;
+  font-size: 0.85em;
 }
 
 .upNextContainer .raised {
-  background :rgb(38, 17, 96) !important;
-  border: 1px solid white;
+  background: #8564ff69;
+  border: transparent;
+  padding: 0.8em;
+  padding-left: 2em;
+  padding-right: 2em;
+  margin-left: 0;
+  font-size: 1.25em;
 }
+
+.upNextContainer .flex.flex-direction-row.upNextDialog-buttons {
+  gap: calc(100% - 18.93em);
+  margin: 0;
+  max-width: 100%;
+}
+
+.upNextContainer .flex.flex-direction-row.upNextDialog-mediainfo {
+  font-size: 1.2em;
+}
+
 
 .upNextContainer .raised:hover {
   background: #fff !important;
@@ -4136,4 +4153,12 @@ content: '';
   display: -webkit-flex;
   display: flex;
   font-size: 90%;
+}
+
+.layout-mobile .upNextContainer {
+  font-size: 0.5em;
+}
+
+.layout-mobile .upNextContainer .flex.flex-direction-row.upNextDialog-mediainfo {
+  gap: 14%;
 }
