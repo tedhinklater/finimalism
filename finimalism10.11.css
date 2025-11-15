@@ -2814,9 +2814,18 @@ content: '';
   margin: 0;
 }
 
+.layout-desktop #scenesContent .innerCardFooter,
+.layout-tv #scenesContent .innerCardFooter {
+  height: 1.6em;
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+  background: #0d0a20bd;
+}
+
 .layout-desktop #scenesCollapsible .itemAction.chapterCard.overflowBackdropCard,
 .layout-tv #scenesCollapsiblecard .itemAction.chapterCard.overflowBackdropCard {
-  width: 20em;
+  width: 17em;
 }
 
 .layout-desktop #castCollapsible .card.overflowPortraitCard.personCard.card-hoverable.card-withuserdata,
@@ -2984,8 +2993,8 @@ content: '';
 
 .layout-desktop .detailRibbon,
 .layout-tv .detailRibbon {
-  height: 3em;
-  margin-top: -3em;
+  height: 4em;
+  margin-top: -4em;
   position: relative;
 }
 
@@ -3405,13 +3414,13 @@ content: '';
 
 .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) #itemBackdrop,
 .layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button.show-focus[data-type="Season"]) #itemBackdrop {
-  height: 39.3em;
+  height: 40.3em;
 }
 
 .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .itemDetailsGroup,
 .layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button.show-focus[data-type="Season"]) .itemDetailsGroup {
   position: fixed;
-  top: 50em;
+  top: 50.9em;
   left: 0em;
   width: 38em;
 }
@@ -3482,7 +3491,7 @@ content: '';
 
 .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .nameContainer,
 .layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button.show-focus[data-type="Season"]) .nameContainer {
-  top: 35.5em !important;
+  top: 36em !important;
   width: 34.75em !important;
   left: 3.9em !important;
 }
@@ -3494,7 +3503,7 @@ content: '';
 
 .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .trackSelections,
 .layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button.show-focus[data-type="Season"]) .trackSelections {
-  top: 36.1em !important;
+  top: 36.8em !important;
   width: 30em;
   left: 0.55em;
 }
@@ -3507,6 +3516,7 @@ content: '';
 .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .detailRibbon,
 .layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button.show-focus[data-type="Season"]) .detailRibbon {
   padding-left: 40.5em;
+  height: 4em;
 }
 
 .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .detailPagePrimaryContent,
@@ -3542,7 +3552,7 @@ content: '';
 .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) #scenesCollapsible .scrollSlider.focuscontainer-x.itemsContainer.animatedScrollX,
 .layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button.show-focus[data-type="Season"]) #scenesCollapsible .scrollSlider.focuscontainer-x.itemsContainer.animatedScrollX {
   grid-template-columns: repeat(4, 1fr) !important;
-  width: 65vw !important;
+  width: 58vw !important;
 }
 
 .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .verticalSection.detailVerticalSection.moreFromSeasonSection .card.overflowBackdropCard,
@@ -3554,7 +3564,7 @@ content: '';
 .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .itemName.infoText.originalTitle {
   left: 0.2em !important;
   width: 31.2em !important;
-  top: 3.3em;
+  top: 3.77em;
 }
 
 .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .detailSectionContent,
