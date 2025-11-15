@@ -224,11 +224,6 @@ p.overview.detail-clamp-text {
   background: white;
 }
 
-#loginPage {
-  background: url(https://i.ibb.co/Qv2NWWPs/bg.jpg) !important; 
-  background-size: cover !important;
-}
-
 .raised, .fab, a[data-role="button"] {
   background: #111126;
   transition: all 0.2s !important;
@@ -298,7 +293,7 @@ p.overview.detail-clamp-text {
 #loginPage .padded-left.padded-right.padded-bottom-page {
   margin-left: 50%;
   margin-right: auto;
-  background: #0a0418b5;
+  background: #0a041847;
   border-radius: var(--rounding);
   transform: translateX(-50%);
   padding-left: 1em;
@@ -312,6 +307,34 @@ p.overview.detail-clamp-text {
   min-width: 10em;
 }
 
+#loginPage .card.squareCard.scalableCard.squareCard-scalable {
+  border: 1px solid #58547a;
+  border-radius: var(--rounding);
+  margin: 1em;
+}
+
+#loginPage .cardBox.cardBox-bottompadded {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+#loginPage .visualLoginForm {
+  margin-bottom: 2em;
+}
+
+#loginPage .readOnlyContent .emby-button {
+  width: max-content;
+  transform: translateX(-50%);
+  margin-left: 50%;
+  margin-right: 50%;
+  margin-top: 1.5em;
+}
+
+#divUsers.itemsContainer.vertical-wrap.centered {
+  margin-right: 0;
+  width: 100%;
+}
+
 #loginPage form {
   padding-top: 4em;
 }
@@ -321,7 +344,7 @@ p.overview.detail-clamp-text {
   margin-right: auto !important;
 }
 #loginPage {
-  background: linear-gradient(0deg, rgb(10.196% 2.745% 22.353%) 0%, rgb(12.07% 4.886% 25.743%) 6.25%, rgb(13.604% 6.64% 28.52%) 12.5%, rgb(14.842% 8.055% 30.761%) 18.75%, rgb(15.826% 9.179% 32.54%) 25%, rgb(16.592% 10.054% 33.926%) 31.25%, rgb(17.175% 10.721% 34.981%) 37.5%, rgb(17.607% 11.215% 35.763%) 43.75%, rgb(17.917% 11.569% 36.324%) 50%, rgb(18.13% 11.812% 36.709%) 56.25%, rgb(18.269% 11.971% 36.96%) 62.5%, rgb(18.353% 12.067% 37.113%) 68.75%, rgb(18.399% 12.12% 37.197%) 75%, rgb(18.421% 12.145% 37.236%) 81.25%, rgb(18.429% 12.155% 37.251%) 87.5%, rgb(18.431% 12.157% 37.255%) 93.75%, rgb(18.431% 12.157% 37.255%) 100% ) !important;
+  background: linear-gradient(180deg, rgb(10.98% 11.373% 22.353%) 0%, rgb(10.411% 10.755% 21.118%) 6.25%, rgb(9.877% 10.178% 19.963%) 12.5%, rgb(9.381% 9.64% 18.888%) 18.75%, rgb(8.922% 9.142% 17.892%) 25%, rgb(8.499% 8.684% 16.976%) 31.25%, rgb(8.113% 8.266% 16.14%) 37.5%, rgb(7.763% 7.888% 15.383%) 43.75%, rgb(7.451% 7.549% 14.706%) 50%, rgb(7.175% 7.25% 14.108%) 56.25%, rgb(6.936% 6.991% 13.591%) 62.5%, rgb(6.734% 6.772% 13.153%) 68.75%, rgb(6.569% 6.593% 12.794%) 75%, rgb(6.44% 6.454% 12.515%) 81.25%, rgb(6.348% 6.354% 12.316%) 87.5%, rgb(6.293% 6.294% 12.197%) 93.75%, rgb(6.275% 6.275% 12.157%) 100% ) !important;
   background-size: cover !important;
 }
 
