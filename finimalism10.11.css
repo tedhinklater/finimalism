@@ -2512,10 +2512,20 @@ content: '';
   width: 24em;
 }
 
-.layout-desktop .detailsGroupItem,
 .layout-desktop .detailsGroupItem.genres.content.focuscontainer-x {
   font-size: 1em;
-  font-weight: 400;
+}
+
+.layout-desktop .itemDetailsGroup .detailsGroupItem,
+.layout-tv .itemDetailsGroup .detailsGroupItem {
+  font-weight: 600;
+  font-size: 0.965em;
+}
+
+
+.layout-desktop .detailsGroupItem,
+.layout-tv .detailsGroupItem {
+  max-width: 66vw;
 }
 
 .layout-desktop [dir="ltr"] .selectArrowContainer,
@@ -2746,10 +2756,18 @@ content: '';
   margin: 0;
 }
 
-.layout-desktop #castCollapsible .scrollSlider.focuscontainer-x.itemsContainer.animatedScrollX,
-.layout-tv #castCollapsible .scrollSlider.focuscontainer-x.itemsContainer.animatedScrollX {
+.layout-desktop #castCollapsible .scrollSlider.focuscontainer-x.itemsContainer.animatedScrollX {
   display: grid !important;
   grid-template-columns: repeat(8, 1fr);
+  gap: 0.5rem;
+  padding: 0rem;
+  width: 72vw;
+  margin: 0;
+}
+
+.layout-tv #castContent.scrollSlider.focuscontainer-x.itemsContainer.animatedScrollX.itemsContainer-tv {
+  display: grid !important;
+  grid-template-columns: repeat(6, 1fr);
   gap: 0.5rem;
   padding: 0rem;
   width: 72vw;
@@ -2817,9 +2835,11 @@ content: '';
 }
 
 @media (max-height: 1000px) {
-  .layout-desktop body, 
-  .layout-tv body {
+  .layout-desktop body {
     font-size: 100% !important;
+  }
+  .layout-tv body {
+    font-size: 80% !important;
   }
   .spotlightiframe {
   }
@@ -2958,7 +2978,7 @@ content: '';
 {
   display: grid !important;
   grid-template-columns: repeat(4, 1fr);
-  gap: 1rem;
+  gap: 0.5rem;
   padding: 0rem;
   width: 72vw;
   opacity: 0;
@@ -3086,11 +3106,6 @@ content: '';
 
 .layout-tv #itemDetailPage .listItem {
   font-size: 1em;
-}
-
-.layout-desktop .detailsGroupItem,
-.layout-tv .detailsGroupItem {
-  max-width: 66vw;
 }
 
 .pageTitleWithLogo {
@@ -3344,6 +3359,11 @@ content: '';
   font-size: 1.2em;
 }
 
+.layout-desktop .itemDetailsGroup,
+.layout-tv .itemDetailsGroup {
+  margin-top: 1em;
+}
+
 /* --- Episode Page --- */
 
 .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) #itemBackdrop
@@ -3356,6 +3376,26 @@ content: '';
 .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) #itemBackdrop,
 .layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button.show-focus[data-type="Season"]) #itemBackdrop {
   height: 39.3em;
+}
+
+.layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .itemDetailsGroup,
+.layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button.show-focus[data-type="Season"]) .itemDetailsGroup {
+  position: fixed;
+  top: 50em;
+  left: 1.5em;
+  width: 37em;
+}
+
+.layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .itemDetailsGroup .detailsGroupItem.genresGroup .genres.content.focuscontainer-x,
+.layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .itemDetailsGroup .detailsGroupItem.writersGroup .writers.content.focuscontainer-x,
+.layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .itemDetailsGroup .detailsGroupItem.directorsGroup .directors.content.focuscontainer-x,
+.layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .itemDetailsGroup .detailsGroupItem.studiosGroup .studios.content.focuscontainer-x,
+.layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .itemDetailsGroup .detailsGroupItem.genresGroup .genres.content.focuscontainer-x,
+.layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .itemDetailsGroup .detailsGroupItem.writersGroup .writers.content.focuscontainer-x,
+.layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .itemDetailsGroup .detailsGroupItem.directorsGroup .directors.content.focuscontainer-x,
+.layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .itemDetailsGroup .detailsGroupItem.studiosGroup .studios.content.focuscontainer-x {
+  text-align: center;
+  width: 25em;
 }
 
 .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .detailLogo,
@@ -3414,20 +3454,29 @@ content: '';
 
 .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .detailRibbon,
 .layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button.show-focus[data-type="Season"]) .detailRibbon {
-  padding-left: 42em;
+  padding-left: 40.5em;
 }
 
 .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .detailPagePrimaryContent,
 .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .detailPageContent,
 .layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button.show-focus[data-type="Season"]) .detailPagePrimaryContent,
 .layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button.show-focus[data-type="Season"]) .detailPageContent {
-  padding-left: 41.5em;
+  padding-left: 40em;
 }
 
 .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .verticalSection.detailVerticalSection.moreFromSeasonSection.emby-scroller-container .scrollSlider.focuscontainer-x.itemsContainer.animatedScrollX,
-.layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button.show-focus[data-type="Season"]) .verticalSection.detailVerticalSection.moreFromSeasonSection.emby-scroller-container .scrollSlider.focuscontainer-x.itemsContainer.animatedScrollX {
+.layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button.show-focus[data-type="Season"]) .verticalSection.detailVerticalSection.moreFromSeasonSection .scrollSlider.focuscontainer-x.itemsContainer.animatedScrollX.itemsContainer-tv {
   grid-template-columns: repeat(4, 1fr) !important;
   width: 59vw !important;
+  display: grid;
+  margin: 0;
+}
+
+.layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button.show-focus[data-type="Season"]) #scenesContent.scrollSlider.focuscontainer-x.itemsContainer.animatedScrollX.itemsContainer-tv {
+  grid-template-columns: repeat(3, 1fr) !important;
+  width: 59vw !important;
+  display: grid !important;
+  margin: 0;
 }
 
 .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) #castContent.scrollSlider.focuscontainer-x.itemsContainer.animatedScrollX,
@@ -3454,6 +3503,11 @@ content: '';
   left: 0.2em !important;
   width: 31.2em !important;
   top: 3.3em;
+}
+
+.layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .detailSectionContent,
+.layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button.show-focus[data-type="Season"]) .detailSectionContent {
+  width: 54vw !important;
 }
 
 /* 1440p resolution */
