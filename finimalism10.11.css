@@ -3429,10 +3429,10 @@ content: '';
 
 .layout-desktop #indexPage 
 .itemsContainer.scrollSlider.focuscontainer-x.animatedScrollX[data-monitor="videoplayback,markplayed"]
-.card:nth-child(n+16),
+.card:nth-child(n+19),
 .layout-tv #indexPage 
 .itemsContainer.scrollSlider.focuscontainer-x.animatedScrollX[data-monitor="videoplayback,markplayed"]
-.card:nth-child(n+16) {
+.card:nth-child(n+19) {
     display: none !important;
 }
 
@@ -3452,6 +3452,13 @@ content: '';
   justify-content: space-evenly;
   padding-left: 0.75em;
   gap: 1em;
+}
+
+.layout-desktop #indexPage .overflowSquareCard,
+.layout-tv #indexPage .overflowSquareCard,
+.layout-desktop #indexPage .overflowPortraitCard,
+.layout-tv #indexPage .overflowPortraitCard {
+  width: 11.5vw;
 }
 
 .layout-desktop .padded-top-focusscale.padded-bottom-focusscale.emby-scroller.scrollX[data-centerfocus="true"] .padded-top.padded-bottom.scrollSlider.focuscontainer-x .raised.emby-button,
@@ -3553,6 +3560,13 @@ content: '';
 .layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button.show-focus[data-type="Season"]) .detailImageContainer .card.backdropCard {
   top: 14.35em !important;
   width: 34.15em;
+}
+
+.layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .detailImageContainer .card.squareCard,
+.layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button.show-focus[data-type="Season"]) .detailImageContainer .card.squareCard {
+  top: 14.5em !important;
+  width: 19em;
+  left: 11.9em;
 }
 
 .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .infoWrapper .nameContainer .itemName.infoText.subtitle.focuscontainer-x {
