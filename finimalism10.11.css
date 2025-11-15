@@ -2567,9 +2567,11 @@ content: '';
 
 .layout-desktop #listChildrenCollapsible.verticalSection.detailVerticalSection.verticalSection-extrabottompadding #childrenContent .itemsContainer.padded-right.vertical-list .listItem.listItem-largeImage.listItem-withContentWrapper .listItem-content .secondary.listItem-overview.listItemBodyText,
 .layout-tv #listChildrenCollapsible.verticalSection.detailVerticalSection.verticalSection-extrabottompadding #childrenContent .itemsContainer.padded-right.vertical-list .listItem.listItem-largeImage.listItem-withContentWrapper .listItem-content .secondary.listItem-overview.listItemBodyText {
-  display: flex !important;
   font-weight: 500;
   margin-top: -0.5em;
+  display: -webkit-box !important;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
 }
 
 .layout-desktop .itemName.infoText.originalTitle,
