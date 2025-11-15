@@ -746,17 +746,17 @@ progress {
 
 .layout-desktop .overflowPortraitCard,
 .layout-desktop .overflowSquareCard {
-  width: 11.8vw;
+  width: 8.5vw;
 }
 
 .layout-tv .overflowPortraitCard,
 .layout-tv .overflowSquareCard {
-  width: 8.8vw;
+  width: 8.5vw;
 }
 
 .layout-desktop #itemDetailPage .overflowSquareCard,
 .layout-tv #itemDetailPage .overflowSquareCard {
-  width: 8.8vw;
+  width: 8.5vw;
 }
 
 .skinHeader {
@@ -1045,8 +1045,7 @@ progress {
   font-size: 0.85em;
 }
 
-.layout-desktop .trackSelections,
-.layout-tv .trackSelections {
+.layout-desktop .trackSelections {
   position: fixed;
   left: 0em;
   top: 47em;
@@ -1054,6 +1053,17 @@ progress {
   font-weight: 500;
   opacity: 0;
   animation: fadeTracks 0.5s ease-out 1.25s forwards;
+  font-size: 1.18em;
+}
+
+.layout-tv .trackSelections {
+  position: fixed;
+  left: 0em;
+  top: 47em;
+  width: 22em;
+  font-weight: 500;
+  opacity: 1;
+  animation: none;
   font-size: 1.18em;
 }
 
@@ -1675,11 +1685,23 @@ button.is-emby-button emby-button {
   gap: 5%;
 }
 
-.layout-desktop .itemName.infoText.subtitle.focuscontainer-x,
-.layout-tv .itemName.infoText.subtitle.focuscontainer-x {
+.layout-desktop .itemName.infoText.subtitle.focuscontainer-x {
   text-align: center;
   position: fixed;
   top: 30.3em;
+  left: 5em;
+  width: 22em;
+  filter: drop-shadow(-1px 1px 2px black);
+  line-height: unset;
+  font-size: 1.05em;
+  transform: translateY(-50%);
+  font-weight: 600;
+}
+
+.layout-tv .itemName.infoText.subtitle.focuscontainer-x {
+  text-align: center;
+  position: fixed;
+  top: 12.7em;
   left: 5em;
   width: 22em;
   filter: drop-shadow(-1px 1px 2px black);
@@ -3329,9 +3351,18 @@ content: '';
 .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .trackSelections.focuscontainer-x,
 .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .itemExternalLinks,
 .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .itemName.infoText.originalTitle,
-.layout-desktop .itemDetailPage:has(.secondary.listItemMediaInfo.listItemBodyText) .itemExternalLinks {
+.layout-desktop .itemDetailPage:has(.secondary.listItemMediaInfo.listItemBodyText) .itemExternalLinks
+.layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .trackSelections.focuscontainer-x,
+.layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .itemExternalLinks,
+.layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .itemName.infoText.originalTitle,
+.layout-tv .itemDetailPage:has(.secondary.listItemMediaInfo.listItemBodyText) .itemExternalLinks {
   animation: none !important;
   opacity: 1 !important;
+}
+
+.layout-tv .trackselections {
+  animation: none;
+  opacity: 1;
 }
 
 @keyframes shrinkBackdrop {
