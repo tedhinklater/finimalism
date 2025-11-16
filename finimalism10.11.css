@@ -2869,10 +2869,10 @@ content: '';
 .layout-desktop #scenesCollapsible .scrollSlider.focuscontainer-x.itemsContainer.animatedScrollX,
 .layout-tv #scenesCollapsible .scrollSlider.focuscontainer-x.itemsContainer.animatedScrollX {
   display: grid !important;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 0.5rem;
   padding: 0rem;
-  width: 73vw;
+  width: 72vw;
   margin: 0;
 }
 
@@ -3633,6 +3633,7 @@ content: '';
   width: 59vw !important;
   display: grid;
   margin: 0;
+  transform: translateX(0px) !important;
 }
 
 .layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button.show-focus[data-type="Season"]) #scenesContent.scrollSlider.focuscontainer-x.itemsContainer.animatedScrollX.itemsContainer-tv {
@@ -3658,7 +3659,7 @@ content: '';
 
 .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .verticalSection.detailVerticalSection.moreFromSeasonSection .card.overflowBackdropCard,
 .layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button.show-focus[data-type="Season"]) .verticalSection.detailVerticalSection.moreFromSeasonSection .card.overflowBackdropCard {
-    width: 16.8em;
+    width: 15.8vw !important;
 }
 
 .layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button.show-focus[data-type="Season"]) .itemName.infoText.originalTitle,
