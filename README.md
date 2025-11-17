@@ -12,10 +12,10 @@ or
 Just paste an import line into your "Dashboard > Branding > CSS" section, or "User Settings > Display > CSS" section.
 
 # Homepage & Movie (Colour version with [Featured Content Bar](https://github.com/tedhinklater/Jellyfin-Featured-Content-Bar))
-![homepage](https://github.com/user-attachments/assets/d9f4d0fb-7fd3-4cf9-9ee8-06286659d864)
+![homepage](https://github.com/user-attachments/assets/4e36cd73-0e37-4984-bcb3-690d653525b8)
 
 # Show, Season & Player
-![show](https://github.com/user-attachments/assets/dbdbf95b-3616-488e-9ec7-2c864491f5e6)
+![show](https://github.com/user-attachments/assets/0a9bbba9-862b-4636-bf02-6a208c53c6e9)
 
 If you want it without the animations, add this line 
 
