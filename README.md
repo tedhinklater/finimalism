@@ -1,4 +1,4 @@
-If you've updated to Jellyfin v10.11 you'll need the new version
+![homepage](https://github.com/user-attachments/assets/05502c39-a7a5-422e-9e8d-6f79f6060020)If you've updated to Jellyfin v10.11 you'll need the new version
 
 ```css
 @import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@latest/finimalism10.11.css");
@@ -12,7 +12,7 @@ or
 Just paste an import line into your "Dashboard > Branding > CSS" section, or "User Settings > Display > CSS" section.
 
 # Homepage & Movie (Colour version with [Featured Content Bar](https://github.com/tedhinklater/Jellyfin-Featured-Content-Bar))
-![homepage](https://github.com/user-attachments/assets/4e36cd73-0e37-4984-bcb3-690d653525b8)
+![homepage](https://github.com/user-attachments/assets/af6c7b14-3236-4aea-b9d6-ca2c5c5f7410)
 
 # Show, Season & Player
 ![show](https://github.com/user-attachments/assets/0a9bbba9-862b-4636-bf02-6a208c53c6e9)
