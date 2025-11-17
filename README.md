@@ -1,4 +1,4 @@
-![homepage](https://github.com/user-attachments/assets/05502c39-a7a5-422e-9e8d-6f79f6060020)If you've updated to Jellyfin v10.11 you'll need the new version
+If you've updated to Jellyfin v10.11 you'll need the new version
 
 ```css
 @import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@latest/finimalism10.11.css");
