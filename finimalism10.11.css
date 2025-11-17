@@ -3488,6 +3488,11 @@ content: '';
   margin-top: 1em;
 }
 
+.layout-desktop #listChildrenCollapsible.verticalSection-extrabottompadding #childrenContent .itemsContainer:has(.listItem[data-type="Episode"]) .listItem-content .indicators.listItemIndicators .playedIndicator.indicator,
+.layout-tv #listChildrenCollapsible.verticalSection-extrabottompadding #childrenContent .itemsContainer:has(.listItem[data-type="Episode"]) .listItem-content .indicators.listItemIndicators .playedIndicator.indicator {
+  opacity: 0;
+}
+
 /* --- Episode Page --- */
 
 .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) #itemBackdrop
