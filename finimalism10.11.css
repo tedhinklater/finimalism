@@ -2666,8 +2666,8 @@ content: '';
 .layout-desktop .musicParentName, .layout-tv .musicParentName,
 .layout-tv .musicParentName, .layout-tv .musicParentName {
   position: absolute;
-  left: 10.2em;
-  top: 3.5em;
+  left: 8.6em;
+  top: 2em;
   transform: translateX(-50%);
   font-size: 1.25em;
   width: 17em;
@@ -3181,10 +3181,6 @@ content: '';
   padding-left: .8em;
   padding-right: .8em;
   color: #fff;
-}
-
-.detailPageSecondaryContainer.padded-bottom-page {
-  min-height: 100vh;
 }
 
 .itemsContainer-tv > .portraitCard, .itemsContainer-tv > .squareCard {
@@ -3718,6 +3714,10 @@ content: '';
 }
 .layout-desktop .itemDetailPage:has(.nameContainer .parentName.musicParentName.focuscontainer-x) .mainDetailButtons.focuscontainer-x::before {
   width: 19.15em !important;
+}
+
+.layout-desktop .itemDetailPage:has(.nameContainer .parentName.musicParentName.focuscontainer-x) .detailImageContainer .card.backdropCard {
+  top: 32em;
 }
 
 /* 1440p resolution */
