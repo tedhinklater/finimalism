@@ -1386,7 +1386,7 @@ button.is-emby-button emby-button {
 }
 
 @media (orientation: landscape) and (max-width: 1000px) {
-  .nameContainer {
+  .layout-mobile .nameContainer {
     max-width: 60vw;
     margin-left: 1.2em;
     font-size: 161% !important;
@@ -3081,9 +3081,36 @@ content: '';
   grid-template-columns: repeat(4, 1fr);
   gap: 0.5rem;
   padding: 0rem;
-  width: 72vw;
+  width: calc(100vw - 34.5em);
   opacity: 0;
   animation: fadeTitle 0.5s ease-out 0s forwards;
+}
+
+@media (max-width: 100em) {
+  .layout-desktop #listChildrenCollapsible.verticalSection-extrabottompadding #childrenContent .itemsContainer:has(.listItem[data-type="Episode"]),
+  .layout-desktop #listChildrenCollapsible.verticalSection-extrabottompadding #childrenContent .itemsContainer:has(.listItem-largeImage)
+{
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+}
+}
+
+@media (max-width: 75em) {
+  .layout-desktop #listChildrenCollapsible.verticalSection-extrabottompadding #childrenContent .itemsContainer:has(.listItem[data-type="Episode"]),
+  .layout-desktop #listChildrenCollapsible.verticalSection-extrabottompadding #childrenContent .itemsContainer:has(.listItem-largeImage)
+{
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+}
+}
+
+@media (max-width: 60em) {
+  .layout-desktop #listChildrenCollapsible.verticalSection-extrabottompadding #childrenContent .itemsContainer:has(.listItem[data-type="Episode"]),
+  .layout-desktop #listChildrenCollapsible.verticalSection-extrabottompadding #childrenContent .itemsContainer:has(.listItem-largeImage)
+{
+  display: grid !important;
+  grid-template-columns: repeat(1, 1fr) !important;
+}
 }
 
 .layout-desktop #listChildrenCollapsible.verticalSection-extrabottompadding #childrenContent .itemsContainer.padded-right.vertical-list .listItem.listItem-largeImage.listItem-withContentWrapper .listItem-content .listItemBody.itemAction,
@@ -3115,11 +3142,6 @@ content: '';
   border-radius: 10px;
 }
 
-.layout-desktop #childrenContent,
-.layout-tv #childrenContent {
-  width: 65vw;
-}
-
 .layout-desktop #itemDetailPage .padded-top-focusscale.padded-bottom-focusscale.no-padding.emby-scroller,
 .layout-tv #itemDetailPage .padded-top-focusscale.padded-bottom-focusscale.no-padding.emby-scroller {
   width: 100%;
@@ -3128,22 +3150,6 @@ content: '';
 
 [dir="ltr"] .pageTitle {
   margin: 0em 0.5em 0 0.5em;
-}
-
-@media (max-width:1566px) and (min-height:720px) {
-  .layout-desktop #itemDetailPage .detailPagePrimaryContent,
-  .layout-tv #itemDetailPage .detailPagePrimaryContent {
-    padding-left: 29em;
-  }
-  .layout-desktop div.itemMiscInfo.itemMiscInfo-primary, .layout-tv div.itemMiscInfo.itemMiscInfo-primary,
-  .layout-tv div.itemMiscInfo.itemMiscInfo-primary, .layout-tv div.itemMiscInfo.itemMiscInfo-primary {
-    left: 20em;
-    position: absolute;
-    top: 0em;
-  }
-  [dir="ltr"] .detailPageContent {
-    padding-left: 28em;
-  }
 }
 
 .layout-tv #itemDetailPage .emby-button.show-focus:focus {
@@ -3627,10 +3633,37 @@ content: '';
 .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .verticalSection.detailVerticalSection.moreFromSeasonSection.emby-scroller-container .scrollSlider.focuscontainer-x.itemsContainer.animatedScrollX,
 .layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button.show-focus[data-type="Season"]) .verticalSection.detailVerticalSection.moreFromSeasonSection .scrollSlider.focuscontainer-x.itemsContainer.animatedScrollX.itemsContainer-tv {
   grid-template-columns: repeat(4, 1fr) !important;
-  width: 59vw !important;
+  width: calc(95vw - 38em) !important;
   display: grid;
   margin: 0;
   transform: translateX(0px) !important;
+}
+
+@media (max-width: 100em) {
+  .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .verticalSection.detailVerticalSection.moreFromSeasonSection.emby-scroller-container .scrollSlider.focuscontainer-x.itemsContainer.animatedScrollX,
+  .layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button.show-focus[data-type="Season"]) .verticalSection.detailVerticalSection.moreFromSeasonSection .scrollSlider.focuscontainer-x.itemsContainer.animatedScrollX.itemsContainer-tv
+{
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+}
+}
+
+@media (max-width: 75em) {
+  .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .verticalSection.detailVerticalSection.moreFromSeasonSection.emby-scroller-container .scrollSlider.focuscontainer-x.itemsContainer.animatedScrollX,
+  .layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button.show-focus[data-type="Season"]) .verticalSection.detailVerticalSection.moreFromSeasonSection .scrollSlider.focuscontainer-x.itemsContainer.animatedScrollX.itemsContainer-tv
+{
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+}
+}
+
+@media (max-width: 60em) {
+  .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .verticalSection.detailVerticalSection.moreFromSeasonSection.emby-scroller-container .scrollSlider.focuscontainer-x.itemsContainer.animatedScrollX,
+  .layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button.show-focus[data-type="Season"]) .verticalSection.detailVerticalSection.moreFromSeasonSection .scrollSlider.focuscontainer-x.itemsContainer.animatedScrollX.itemsContainer-tv
+{
+  display: grid !important;
+  grid-template-columns: repeat(1, 1fr) !important;
+}
 }
 
 .layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button.show-focus[data-type="Season"]) #scenesContent.scrollSlider.focuscontainer-x.itemsContainer.animatedScrollX.itemsContainer-tv {
@@ -3849,7 +3882,7 @@ content: '';
 }
 
 @media (orientation: portrait) {
-  .itemDetailPage {
+  .layout-mobile .itemDetailPage {
     padding-top: 13em !important;
   }
 }
@@ -3993,7 +4026,7 @@ content: '';
 }
 
 @media (max-width: 768px) and (orientation: landscape) {
-  .portraitCard, .squareCard {
+  .layout-mobile .portraitCard, .layout-mobile .squareCard {
     width: 12em;
   }
 }
@@ -4111,7 +4144,7 @@ content: '';
 }
 
 @media (max-width: 768px) and (orientation: portrait) {
-  .mainDetailButtons.focuscontainer-x {
+  .layout-mobile .mainDetailButtons.focuscontainer-x {
     margin-bottom: 0em;
     margin-top: 0em;
   }
