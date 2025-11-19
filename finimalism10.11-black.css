@@ -8,6 +8,14 @@
 	opacity: 0;
 }
 
+:root { --accent: #000; }
+
+
+.countIndicator, 
+.playedIndicator {
+  background: #000;
+}
+
 .sectionTitleContainer.sectionTitleContainer-cards.padded-left::before {
 	backdrop-filter: saturate(0%) !important;
 }
@@ -335,4 +343,28 @@
 
 .collapseContent, .formDialogFooter:not(.formDialogFooter-clear), .formDialogHeader:not(.formDialogHeader-clear), .paperList, .visualCardBox {
   background-color: #000000de;
+}
+
+.layout-desktop #scenesContent .innerCardFooter, .layout-tv #scenesContent .innerCardFooter {
+  background: #000d;
+}
+
+.paper-icon-button-light:hover, .raised.homeLibraryButton:hover, .button-flat:hover, .playstatebutton-icon-played, .paper-icon-button-light:hover:not(:disabled), .emby-tab-button:hover, .selectLabelFocused, .inputLabelFocused, .textareaLabelFocused, .buttonActive, .button-link {
+  color: #000;
+}
+
+.defaultCardBackground1 {
+  background-color: #91919169;
+}
+.defaultCardBackground2 {
+  background-color: #6a6a6a69;
+}
+.defaultCardBackground3 {
+  background-color: #7e7e7e69;
+}
+.defaultCardBackground4 {
+  background-color: #51515169;
+}
+.defaultCardBackground5 {
+  background-color: #29292969;
 }
