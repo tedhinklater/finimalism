@@ -1138,6 +1138,16 @@ progress {
   max-width: unset;
 }
 
+.layout-desktop .detailImageContainer .card.backdropCard, 
+.layout-tv .detailImageContainer .card.backdropCard {
+  width: 22.975em;
+  top: 32.5em;
+  left: 4.3em;
+  min-width: 265px;
+  filter: drop-shadow(-6px 2px 8px rgba(0, 0, 0, 0.58));
+  max-width: unset;
+}
+
 .itemProgressBar {
   background: rgba(0, 0, 0, 0.25);
   height: 0.5em;
@@ -3267,10 +3277,10 @@ content: '';
   text-overflow: ellipsis;
 }
 
-.layout-desktop .flex.align-items-center.justify-content-center.flex-wrap-wrap.padded-top.padded-left.padded-right.padded-bottom.focuscontainer-x,
+.layout-desktop .flex.align-items-center.justify-content-center.flex-wrap-wrap.padded-top.padded-left.padded-right.padded-bottom.focuscontainer-x, 
 .layout-tv .flex.align-items-center.justify-content-center.flex-wrap-wrap.padded-top.padded-left.padded-right.padded-bottom.focuscontainer-x {
-  padding: 0.25em;
-  padding-right: 3vw;
+  padding-right: max(env(safe-area-inset-right),3.3%);
+  width: 96vw;
 }
 
 
@@ -3731,6 +3741,21 @@ content: '';
 .layout-desktop .itemDetailPage:has(.detailImageContainer .card.squareCard .cardImageContainer.coveredImage.cardContent.lazy.blurhashed.lazy-image-fadein-fast) .mainDetailButtons.focuscontainer-x::before,
 .layout-tv .itemDetailPage:has(.detailImageContainer .card.squareCard .cardImageContainer.coveredImage.cardContent.lazy.blurhashed.lazy-image-fadein-fast) .mainDetailButtons.focuscontainer-x::before {
   width: 16.45em;
+}
+
+.layout-desktop .itemDetailPage:has(.itemAction.textActionButton[data-type="Season"]) .mainDetailButtons.focuscontainer-x,
+.layout-tv .itemDetailPage:has(.detailImageContainer .card.squareCard .cardImageContainer.coveredImage.cardContent.lazy.blurhashed.lazy-image-fadein-fast) .mainDetailButtons.focuscontainer-x,
+.layout-desktop .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) .mainDetailButtons.focuscontainer-x,
+.layout-desktop .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) .mainDetailButtons.focuscontainer-x {
+  width: 19.3em !important;
+  left: 3.5em !important;
+}
+
+.layout-desktop .itemDetailPage:has(.itemAction.textActionButton[data-type="Season"]) .mainDetailButtons.focuscontainer-x::before,
+.layout-tv .itemDetailPage:has(.detailImageContainer .card.squareCard .cardImageContainer.coveredImage.cardContent.lazy.blurhashed.lazy-image-fadein-fast) .mainDetailButtons.focuscontainer-x::before,
+.layout-desktop .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) .mainDetailButtons.focuscontainer-x::before,
+.layout-tv .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) .mainDetailButtons.focuscontainer-x::before {
+  width: 19.3em !important;
 }
 
 .layout-desktop .itemDetailPage:has(.detailImageContainer .card.squareCard .cardImageContainer.coveredImage.cardContent.lazy.blurhashed.lazy-image-fadein-fast) .itemName.infoText.subtitle.focuscontainer-x,
