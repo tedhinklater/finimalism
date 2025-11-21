@@ -1791,7 +1791,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
     color: #fff !important;
     border-radius: 0.25em;
     width: auto;
-    transform: translateY(-23%);
+    transform: translateY(-31%);
     transition: 0s;
     height: 2em;
   }
