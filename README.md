@@ -12,7 +12,7 @@ or
 Just paste an import line into your "Dashboard > Branding > CSS" section, or "User Settings > Display > CSS" section.
 
 # Homepage (Colour version with [Featured Content Bar](https://github.com/tedhinklater/Jellyfin-Featured-Content-Bar))
-![homepage](https://github.com/user-attachments/assets/8927018a-1831-4e78-a6f7-f1c05407c11f)
+![homepage](https://github.com/user-attachments/assets/c7435468-d52e-4a91-a831-639f7ba599e0)
 
 # Show, Season & Player
 ![show](https://github.com/user-attachments/assets/801ff3ca-a629-4ef3-be37-877703debdc7)
