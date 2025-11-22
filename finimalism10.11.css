@@ -428,6 +428,10 @@ p.overview.detail-clamp-text {
   color: #fff;
 }
 
+[dir="ltr"] .listItem {
+  padding: .25em .25em .25em .25em;
+}
+
 .docspinner {
   contain: layout style size;
   height: 10vh;
@@ -1000,6 +1004,12 @@ progress {
   border-radius: var(--rounding) !important;
 }
 
+.layout-desktop #itemDetailPage .listItemImage.listItemImage-large.itemAction.lazy.non-blurhashable.lazy-image-fadein-fast[data-action="link"] {
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+  height: 10vw;
+}
+
 /*hover zoom*/
 .layout-desktop .homeLibraryButton:hover,
 .layout-tv .homeLibraryButton:hover,
@@ -1106,8 +1116,9 @@ progress {
   text-overflow: ellipsis;
   text-align: center;
   padding-left: 1em;
-  padding-right: 1em;
+  padding-right: 1.5em;
   font-weight: 500;
+  margin-left: 0.5em;
 }
 
 #seriesScheduleSection {
@@ -2157,7 +2168,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
   overflow: hidden;
   border-radius: var(--rounding);
   box-shadow: 0px 0px 5px #06030b8a;
-  background: #0b0713c4;
+  background: #110e1c80;
 }
 
 .listItem:hover,
@@ -2168,7 +2179,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 
 .layout-desktop #itemDetailPage .listItem:hover,
 .layout-tv #itemDetailPage .listItem:hover {
-  box-shadow: 0px 0px 10px #322942c9;
+  box-shadow: 0px 0px 5px #fff9;
 }
 
 .layout-desktop itemDetailPage .secondary.listItem-overview.listItemBodyText,
@@ -2685,8 +2696,9 @@ content: '';
 
 .layout-desktop #listChildrenCollapsible #childrenContent .itemsContainer:has(.listItem[data-type="Episode"]) .listViewUserDataButtons,
 .layout-tv #listChildrenCollapsible #childrenContent .itemsContainer:has(.listItem[data-type="Episode"]) .listViewUserDataButtons {
-  justify-content: space-evenly;
+  justify-content: space-between;
   width: 100% !important;
+  background: #110e1c80;
 }
 
 /*.dialogContainer .listItem:hover .listItemBody {
@@ -3126,6 +3138,8 @@ content: '';
 .layout-desktop #listChildrenCollapsible.verticalSection-extrabottompadding #childrenContent .itemsContainer.padded-right.vertical-list .listItem.listItem-largeImage.listItem-withContentWrapper .listItem-content .listItemBody.itemAction,
 .layout-tv #listChildrenCollapsible.verticalSection-extrabottompadding #childrenContent .itemsContainer.padded-right.vertical-list .listItem.listItem-largeImage.listItem-withContentWrapper .listItem-content .listItemBody.itemAction {
   width: 95%;
+  background: #110e1c80;
+  border-radius: 0;
 }
 
 .layout-tv #listChildrenCollapsible.verticalSection-extrabottompadding #childrenContent .itemsContainer:has(.listItem[data-type="Episode"]),
