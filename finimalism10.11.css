@@ -2847,7 +2847,8 @@ content: '';
   }
 }
 
-.layout-desktop #childrenContent .itemsContainer.padded-right.vertical-wrap {
+.layout-desktop #childrenContent .itemsContainer.padded-right.vertical-wrap,
+.layout-tv #childrenContent .itemsContainer.padded-right.vertical-wrap {
   display: grid !important;
   grid-template-columns: repeat(8, 1fr);
   gap: 0.5rem;
@@ -2856,7 +2857,8 @@ content: '';
   margin: 0;
 }
 
-.layout-desktop #childrenContent .itemsContainer.padded-right.vertical-wrap .card.overflowPortraitCard.card-hoverable.card-withuserdata {
+.layout-desktop #childrenContent .itemsContainer.padded-right.vertical-wrap .card.overflowPortraitCard.card-hoverable.card-withuserdata,
+.layout-tv #childrenContent .itemsContainer.padded-right.vertical-wrap .card.overflowPortraitCard.card-hoverable.card-withuserdata {
   width: 10em;
 }
 
@@ -3228,7 +3230,7 @@ content: '';
 }
 
 .layout-tv #itemDetailPage .card.squareCard {
-  top: 15.6em;
+  top: 22.8em;
 }
 
 .layout-tv #childrenContent .listItemBody {
@@ -3760,7 +3762,7 @@ content: '';
 .layout-desktop .itemDetailPage:has(.itemAction.textActionButton[data-type="Season"]) .mainDetailButtons.focuscontainer-x,
 .layout-tv .itemDetailPage:has(.detailImageContainer .card.squareCard .cardImageContainer.coveredImage.cardContent.lazy.blurhashed.lazy-image-fadein-fast) .mainDetailButtons.focuscontainer-x,
 .layout-desktop .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) .mainDetailButtons.focuscontainer-x,
-.layout-desktop .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) .mainDetailButtons.focuscontainer-x {
+.layout-tv .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) .mainDetailButtons.focuscontainer-x {
   width: 19.3em !important;
   left: 3.5em !important;
 }
@@ -3780,15 +3782,25 @@ content: '';
 
 /* ---- Music Page ---- */
 
-.layout-desktop .itemDetailPage:has(.nameContainer .parentName.musicParentName.focuscontainer-x) .mainDetailButtons.focuscontainer-x {
+.layout-desktop .itemDetailPage:has(.nameContainer .parentName.musicParentName.focuscontainer-x) .mainDetailButtons.focuscontainer-x,
+.layout-desktop .itemDetailPage:has(.card.overflowSquareCard.card-hoverable) .mainDetailButtons.focuscontainer-x,
+.layout-tv .itemDetailPage:has(.nameContainer .parentName.musicParentName.focuscontainer-x) .mainDetailButtons.focuscontainer-x,
+.layout-tv .itemDetailPage:has(.card.overflowSquareCard.card-hoverable) .mainDetailButtons.focuscontainer-x {
   width: 19.15em !important;
   left: 3.5em !important;
 }
-.layout-desktop .itemDetailPage:has(.nameContainer .parentName.musicParentName.focuscontainer-x) .mainDetailButtons.focuscontainer-x::before {
+.layout-desktop .itemDetailPage:has(.nameContainer .parentName.musicParentName.focuscontainer-x) .mainDetailButtons.focuscontainer-x::before,
+.layout-desktop .itemDetailPage:has(.card.overflowSquareCard.card-hoverable) .mainDetailButtons.focuscontainer-x::before,
+.layout-tv .itemDetailPage:has(.nameContainer .parentName.musicParentName.focuscontainer-x) .mainDetailButtons.focuscontainer-x::before,
+.layout-tv .itemDetailPage:has(.card.overflowSquareCard.card-hoverable) .mainDetailButtons.focuscontainer-x::before  {
   width: 19.15em !important;
 }
 
-.layout-desktop .itemDetailPage:has(.nameContainer .parentName.musicParentName.focuscontainer-x) .detailImageContainer .card.backdropCard {
+.layout-desktop .itemDetailPage:has(.nameContainer .parentName.musicParentName.focuscontainer-x) .detailImageContainer .card.backdropCard,
+.layout-desktop .itemDetailPage:has(.card.overflowSquareCard.card-hoverable) .detailImageContainer .card.backdropCard,
+.layout-tv .itemDetailPage:has(.nameContainer .parentName.musicParentName.focuscontainer-x) .detailImageContainer .card.backdropCard,
+.layout-tv .itemDetailPage:has(.card.overflowSquareCard.card-hoverable) .detailImageContainer .card.backdropCard {
+ {
   top: 32em;
 }
 
