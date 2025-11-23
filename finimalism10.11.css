@@ -3800,7 +3800,6 @@ content: '';
 .layout-desktop .itemDetailPage:has(.card.overflowSquareCard.card-hoverable) .detailImageContainer .card.backdropCard,
 .layout-tv .itemDetailPage:has(.nameContainer .parentName.musicParentName.focuscontainer-x) .detailImageContainer .card.backdropCard,
 .layout-tv .itemDetailPage:has(.card.overflowSquareCard.card-hoverable) .detailImageContainer .card.backdropCard {
- {
   top: 32em;
 }
 
@@ -3933,7 +3932,7 @@ content: '';
 }
 
 @media (orientation: portrait) {
-  .layout-mobile .itemDetailPage {
+  .itemDetailPage {
     padding-top: 13em !important;
   }
 }
@@ -4077,7 +4076,7 @@ content: '';
 }
 
 @media (max-width: 768px) and (orientation: landscape) {
-  .layout-mobile .portraitCard, .layout-mobile .squareCard {
+  .portraitCard, .squareCard {
     width: 12em;
   }
 }
@@ -4195,7 +4194,7 @@ content: '';
 }
 
 @media (max-width: 768px) and (orientation: portrait) {
-  .layout-mobile .mainDetailButtons.focuscontainer-x {
+  .mainDetailButtons.focuscontainer-x {
     margin-bottom: 0em;
     margin-top: 0em;
   }
