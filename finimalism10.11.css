@@ -4310,7 +4310,7 @@ content: '';
 
 @media (orientation: landscape) {
   .layout-mobile .itemDetailPage {
-    padding-top: 62vh !important;
+    padding-top: 48vh !important;
   }
 }
 
