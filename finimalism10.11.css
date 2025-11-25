@@ -1013,6 +1013,8 @@ progress {
   border-bottom-right-radius: 0 !important;
   height: 9vw;
   width: 16vw;
+  min-height: 9em;
+  min-width: 16em;
 }
 /*hover zoom*/
 .layout-desktop .homeLibraryButton:hover,
@@ -3014,6 +3016,7 @@ content: '';
 .layout-desktop #listChildrenCollapsible.verticalSection-extrabottompadding #childrenContent .itemsContainer.padded-right.vertical-list .listItem.listItem-largeImage.listItem-withContentWrapper .listItem-content .listItemBody.itemAction,
 .layout-tv #listChildrenCollapsible.verticalSection-extrabottompadding #childrenContent .itemsContainer.padded-right.vertical-list .listItem.listItem-largeImage.listItem-withContentWrapper .listItem-content .listItemBody.itemAction {
   width: 16vw;
+  min-width: 16em;
   background: #110e1c80;
   border-radius: 0;
 }
