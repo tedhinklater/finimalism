@@ -1,0 +1,16 @@
+.layout-desktop #indexPage .itemsContainer,
+.layout-tv #indexPage .itemsContainer,
+.layout-desktop #childrenContent .itemsContainer.padded-right.vertical-wrap,
+.layout-tv #childrenContent .itemsContainer.padded-right.vertical-wrap,
+.layout-desktop #itemDetailPage .verticalSection.detailVerticalSection.moreFromSeasonSection.emby-scroller-container .scrollSlider.focuscontainer-x.itemsContainer.animatedScrollX,
+.layout-tv #itemDetailPage .verticalSection.detailVerticalSection.moreFromSeasonSection.emby-scroller-container .scrollSlider.focuscontainer-x.itemsContainer.animatedScrollX,
+.layout-desktop #castCollapsible .scrollSlider.focuscontainer-x.itemsContainer.animatedScrollX,
+.layout-tv #castCollapsible .scrollSlider.focuscontainer-x.itemsContainer.animatedScrollX,
+.layout-desktop #guestCastCollapsible .scrollSlider.focuscontainer-x.itemsContainer.animatedScrollX,
+.layout-tv #guestCastCollapsible .scrollSlider.focuscontainer-x.itemsContainer.animatedScrollX,
+.layout-desktop #similarCollapsible .scrollSlider.focuscontainer-x.itemsContainer.similarContent.animatedScrollX,
+.layout-tv #similarCollapsible .scrollSlider.focuscontainer-x.itemsContainer.similarContent.animatedScrollX,
+.layout-desktop #specialsCollapsible .scrollSlider.focuscontainer-x.itemsContainer.animatedScrollX,
+.layout-tv #specialsCollapsible .scrollSlider.focuscontainer-x.itemsContainer.animatedScrollX {display: flex !important; flex-wrap: nowrap !important; gap: unset;}
+#indexPage button[data-direction="left"], #indexPage button[data-direction="right"] {opacity: 0.5; padding-right: 1em;}
+#itemDetailPage button[data-direction="left"], #itemDetailPage button[data-direction="right"] { opacity: 0.5; }
