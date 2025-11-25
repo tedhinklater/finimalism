@@ -24,3 +24,9 @@ If you want it without the animations, add this line
 ```css
 @import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/no-animation.css");
 ```
+
+If you want it with the old emby scrollers use this
+
+```css
+@import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/horizontal-scrolling.css");
+```
