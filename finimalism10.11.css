@@ -774,21 +774,25 @@ progress {
 .layout-desktop .overflowPortraitCard,
 .layout-desktop .overflowSquareCard {
   width: 8.5vw;
+  min-width: 9em;
 }
 
 .layout-tv .overflowPortraitCard,
 .layout-tv .overflowSquareCard {
   width: 8.5vw;
+  min-width: 9em;
 }
 
 .layout-desktop #itemDetailPage .overflowSquareCard,
 .layout-tv #itemDetailPage .overflowSquareCard {
   width: 8.5vw;
+  min-width: 9em;
 }
 
 .layout-desktop #itemDetailPage .overflowBackdropCard,
 .layout-tv #itemDetailPage .overflowBackdropCard {
   width: 15.5vw;
+  min-width: 18em;
 }
 
 .skinHeader {
