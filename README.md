@@ -1,11 +1,11 @@
 If you've updated to Jellyfin v10.11 you'll need the new version
 
 ```css
-@import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@latest/finimalism10.11.css");
+@import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/finimalism10.11.css");
 ```
 or
 ```css
-@import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@latest/finimalism10.11-black.css");
+@import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/finimalism10.11-black.css");
 
 ```
 
