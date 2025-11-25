@@ -3650,6 +3650,15 @@ content: '';
   width: 19.15em !important;
   left: 3.5em !important;
 }
+
+.layout-desktop .itemDetailPage:has(.nameContainer .parentName.musicParentName.focuscontainer-x) .itemExternalLinks,
+.layout-desktop .itemDetailPage:has(.card.overflowSquareCard.card-hoverable) .itemExternalLinks,
+.layout-tv .itemDetailPage:has(.nameContainer .parentName.musicParentName.focuscontainer-x) .itemExternalLinks,
+.layout-tv .itemDetailPage:has(.card.overflowSquareCard.card-hoverable) .itemExternalLinks {
+  top: 47.75em !important;
+}
+
+
 .layout-desktop .itemDetailPage:has(.nameContainer .parentName.musicParentName.focuscontainer-x) .mainDetailButtons.focuscontainer-x::before,
 .layout-desktop .itemDetailPage:has(.card.overflowSquareCard.card-hoverable) .mainDetailButtons.focuscontainer-x::before,
 .layout-tv .itemDetailPage:has(.nameContainer .parentName.musicParentName.focuscontainer-x) .mainDetailButtons.focuscontainer-x::before,
