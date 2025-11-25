@@ -720,9 +720,9 @@ progress {
 
 .layout-desktop .itemsContainer.padded-left.padded-right.padded-right-withalphapicker.vertical-wrap,
 .layout-tv .itemsContainer.padded-left.padded-right.padded-right-withalphapicker.vertical-wrap {
-  padding-right: 1vw;
-  justify-content: space-evenly;
-  padding-left: 0;
+  max-width: 94%;
+  padding: 0;
+  gap: 1%;
 }
 
 #homeTab .emby-scroller {
@@ -788,7 +788,7 @@ progress {
 
 .layout-desktop #itemDetailPage .overflowBackdropCard,
 .layout-tv #itemDetailPage .overflowBackdropCard {
-  width: 12.5vw;
+  width: 15.5vw;
 }
 
 .skinHeader {
@@ -832,7 +832,7 @@ progress {
   .layout-tv .verticalSection.detailVerticalSection.moreFromSeasonSection .card.overflowBackdropCard,
   .layout-desktop #specialsCollapsible .scrollSlider.focuscontainer-x.itemsContainer.animatedScrollX .card.overflowBackdropCard,
   .layout-tv #specialsCollapsible .scrollSlider.focuscontainer-x.itemsContainer.animatedScrollX .card.overflowBackdropCard {
-    width: 21.2em;
+    width: 16vw;
   }
 }
 
@@ -1007,9 +1007,9 @@ progress {
 .layout-desktop #itemDetailPage .listItemImage.listItemImage-large.itemAction.lazy.non-blurhashable.lazy-image-fadein-fast[data-action="link"] {
   border-bottom-left-radius: 0 !important;
   border-bottom-right-radius: 0 !important;
-  height: 10vw;
+  height: 9vw;
+  width: 16vw;
 }
-
 /*hover zoom*/
 .layout-desktop .homeLibraryButton:hover,
 .layout-tv .homeLibraryButton:hover,
@@ -2108,32 +2108,11 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 .layout-tv .cardBox.cardBox-bottompadded {
 }
 
-
-.layout-desktop .childrenItemsContainer.itemsContainer.padded-right.vertical-list,
-.layout-tv .childrenItemsContainer.itemsContainer.padded-right.vertical-list {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
 .layout-desktop #listChildrenCollapsible {
 }
 
 .layout-desktop .listItemImage-large,
 .layout-tv .listItemImage-large {
-}
-
-@media all and (max-width: 2000px) {
-  .layout-desktop .childrenItemsContainer.itemsContainer.padded-right.vertical-list,
-  .layout-tv .childrenItemsContainer.itemsContainer.padded-right.vertical-list {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
-
-@media all and (max-width: 1000px) {
-  .layout-desktop .childrenItemsContainer.itemsContainer.padded-right.vertical-list,
-  .layout-tv .childrenItemsContainer.itemsContainer.padded-right.vertical-list {
-  grid-template-columns: 1fr 1fr;
-  }
 }
 
 .layout-desktop #itemDetailPage .listItem-content,
@@ -2169,6 +2148,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
   border-radius: var(--rounding);
   box-shadow: 0px 0px 5px #06030b8a;
   background: #110e1c80;
+  margin-bottom: 0.5%;
 }
 
 .listItem:hover,
@@ -2697,7 +2677,7 @@ content: '';
 .layout-desktop #listChildrenCollapsible #childrenContent .itemsContainer:has(.listItem[data-type="Episode"]) .listViewUserDataButtons,
 .layout-tv #listChildrenCollapsible #childrenContent .itemsContainer:has(.listItem[data-type="Episode"]) .listViewUserDataButtons {
   justify-content: space-between;
-  width: 100% !important;
+  width: 100%;
   background: #110e1c80;
 }
 
@@ -2849,12 +2829,13 @@ content: '';
 
 .layout-desktop #childrenContent .itemsContainer.padded-right.vertical-wrap,
 .layout-tv #childrenContent .itemsContainer.padded-right.vertical-wrap {
-  display: grid !important;
-  grid-template-columns: repeat(8, 1fr);
+  display: flex !important;
   gap: 0.5rem;
   padding: 0rem;
-  width: 72vw;
+  width: calc(100vw - 33em);
   margin: 0;
+  white-space: wrap !important;
+  flex-direction: row !important;
 }
 
 .layout-desktop #childrenContent .itemsContainer.padded-right.vertical-wrap .card.overflowPortraitCard.card-hoverable.card-withuserdata,
@@ -2862,42 +2843,8 @@ content: '';
   width: 10em;
 }
 
-.layout-desktop #itemDetailPage .verticalSection.detailVerticalSection.moreFromSeasonSection.emby-scroller-container .scrollSlider.focuscontainer-x.itemsContainer.animatedScrollX,
-.layout-tv #itemDetailPage .verticalSection.detailVerticalSection.moreFromSeasonSection.emby-scroller-container .scrollSlider.focuscontainer-x.itemsContainer.animatedScrollX {
-  display: grid !important;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 0.5rem;
-  padding: 0rem;
-  width: 72vw;
-  margin: 0;
-}
-
-.layout-desktop #castCollapsible .scrollSlider.focuscontainer-x.itemsContainer.animatedScrollX {
-  display: grid !important;
-  grid-template-columns: repeat(8, 1fr);
-  gap: 0.5rem;
-  padding: 0rem;
-  width: 72vw;
-  margin: 0;
-}
-
-.layout-tv #castContent.scrollSlider.focuscontainer-x.itemsContainer.animatedScrollX.itemsContainer-tv {
-  display: grid !important;
-  grid-template-columns: repeat(8, 1fr);
-  gap: 0.5rem;
-  padding: 0rem;
-  width: 72vw;
-  margin: 0;
-}
-
-.layout-desktop #scenesCollapsible .scrollSlider.focuscontainer-x.itemsContainer.animatedScrollX,
-.layout-tv #scenesCollapsible .scrollSlider.focuscontainer-x.itemsContainer.animatedScrollX {
-  display: grid !important;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 0.2rem;
-  padding: 0rem;
-  width: 72vw;
-  margin: 0;
+.layout-desktop .listItem[data-type="Audio"] {
+  width: calc(100vw - 33em);
 }
 
 .layout-desktop #scenesContent .innerCardFooter,
@@ -2911,52 +2858,22 @@ content: '';
 
 .layout-desktop #scenesCollapsible .itemAction.chapterCard.overflowBackdropCard,
 .layout-tv #scenesCollapsiblecard .itemAction.chapterCard.overflowBackdropCard {
-  width: 16.9vw;
+  width: 15.5vw;
 }
 
 .layout-desktop #castCollapsible .card.overflowPortraitCard.personCard.card-hoverable.card-withuserdata,
 .layout-tv #castCollapsible .card.overflowPortraitCard.personCard.card-hoverable.card-withuserdata {
-  width: 10em;
-}
-
-.layout-desktop #guestCastCollapsible .scrollSlider.focuscontainer-x.itemsContainer.animatedScrollX,
-.layout-tv #guestCastCollapsible .scrollSlider.focuscontainer-x.itemsContainer.animatedScrollX {
-  display: grid !important;
-  grid-template-columns: repeat(8, 1fr);
-  gap: 0.5rem;
-  padding: 0rem;
-  width: 72vw;
-  margin: 0;
+  width: 7.5vw;
 }
 
 .layout-desktop #guestCastCollapsible .card.overflowPortraitCard.personCard.card-hoverable.card-withuserdata,
 .layout-tv #guestCastCollapsible .card.overflowPortraitCard.personCard.card-hoverable.card-withuserdata {
-  width: 7.8vw;
-}
-
-.layout-desktop #similarCollapsible .scrollSlider.focuscontainer-x.itemsContainer.similarContent.animatedScrollX,
-.layout-tv #similarCollapsible .scrollSlider.focuscontainer-x.itemsContainer.similarContent.animatedScrollX {
-  display: grid !important;
-  grid-template-columns: repeat(8, 1fr);
-  gap: 0.5rem;
-  padding: 0rem;
-  width: 72vw;
-  margin: 0;
+  width: 7.5vw;
 }
 
 .layout-desktop #similarCollapsible .card.overflowPortraitCard,
 .layout-tv #similarCollapsible .card.overflowPortraitCard {
-  width: 10em;
-}
-
-.layout-desktop #specialsCollapsible .scrollSlider.focuscontainer-x.itemsContainer.animatedScrollX,
-.layout-tv #specialsCollapsible .scrollSlider.focuscontainer-x.itemsContainer.animatedScrollX {
-  display: grid !important;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 0.5rem;
-  padding: 0rem;
-  width: 72vw;
-  margin: 0;
+  width: 7.5vw;
 }
 
 @media (max-height: 1000px) {
@@ -3098,59 +3015,12 @@ content: '';
   width: 100vw;
 }
 
-.layout-desktop #listChildrenCollapsible.verticalSection-extrabottompadding #childrenContent .itemsContainer:has(.listItem[data-type="Episode"]),
-.layout-desktop #listChildrenCollapsible.verticalSection-extrabottompadding #childrenContent .itemsContainer:has(.listItem-largeImage)
-{
-  display: grid !important;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 0.5rem;
-  padding: 0rem;
-  width: calc(100vw - 34.5em);
-  opacity: 0;
-  animation: fadeTitle 0.5s ease-out 0s forwards;
-}
-
-@media (max-width: 100em) {
-  .layout-desktop #listChildrenCollapsible.verticalSection-extrabottompadding #childrenContent .itemsContainer:has(.listItem[data-type="Episode"]),
-  .layout-desktop #listChildrenCollapsible.verticalSection-extrabottompadding #childrenContent .itemsContainer:has(.listItem-largeImage)
-{
-  display: grid !important;
-  grid-template-columns: repeat(3, 1fr) !important;
-}
-}
-
-@media (max-width: 75em) {
-  .layout-desktop #listChildrenCollapsible.verticalSection-extrabottompadding #childrenContent .itemsContainer:has(.listItem[data-type="Episode"]),
-  .layout-desktop #listChildrenCollapsible.verticalSection-extrabottompadding #childrenContent .itemsContainer:has(.listItem-largeImage)
-{
-  display: grid !important;
-  grid-template-columns: repeat(2, 1fr) !important;
-}
-}
-
-@media (max-width: 60em) {
-  .layout-desktop #listChildrenCollapsible.verticalSection-extrabottompadding #childrenContent .itemsContainer:has(.listItem[data-type="Episode"]),
-  .layout-desktop #listChildrenCollapsible.verticalSection-extrabottompadding #childrenContent .itemsContainer:has(.listItem-largeImage)
-{
-  display: grid !important;
-  grid-template-columns: repeat(1, 1fr) !important;
-}
-}
 
 .layout-desktop #listChildrenCollapsible.verticalSection-extrabottompadding #childrenContent .itemsContainer.padded-right.vertical-list .listItem.listItem-largeImage.listItem-withContentWrapper .listItem-content .listItemBody.itemAction,
 .layout-tv #listChildrenCollapsible.verticalSection-extrabottompadding #childrenContent .itemsContainer.padded-right.vertical-list .listItem.listItem-largeImage.listItem-withContentWrapper .listItem-content .listItemBody.itemAction {
-  width: 95%;
+  width: 16vw;
   background: #110e1c80;
   border-radius: 0;
-}
-
-.layout-tv #listChildrenCollapsible.verticalSection-extrabottompadding #childrenContent .itemsContainer:has(.listItem[data-type="Episode"]),
-.layout-tv #listChildrenCollapsible.verticalSection-extrabottompadding #childrenContent .itemsContainer:has(.listItem-largeImage)
-{
-  display: grid !important;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 1rem;
-  padding: 1rem;
 }
 
 .layout-desktop #listChildrenCollapsible.verticalSection-extrabottompadding #childrenContent .listViewUserDataButtons:has(.listItem-largeImage),
@@ -3235,6 +3105,24 @@ content: '';
 
 .layout-tv #childrenContent .listItemBody {
   width: 200%;
+}
+
+.layout-desktop .listItem-content,
+.layout-tv .listItem-content {
+  align-items: center;
+  display: flex;
+  width: 100%;
+}
+
+.layout-desktop #listChildrenCollapsible.verticalSection-extrabottompadding #childrenContent .itemsContainer {
+  display: inline-flex;
+  white-space: normal;
+  gap: 0%;
+  width: calc(100vw - 34.5em);
+  opacity: 0;
+  animation: fadeTitle 0.5s ease-out 0s forwards;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .layout-tv #itemDetailPage .listItem {
@@ -3347,15 +3235,6 @@ content: '';
   flex: 1 0 calc((100% - (0.5rem * 5)) / 6);
 }
 
-.layout-desktop .itemsContainer.collectionItemsContainer.vertical-wrap.padded-left.padded-right,
-.layout-tv .itemsContainer.collectionItemsContainer.vertical-wrap.padded-left.padded-right {
-  display: grid !important;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 1rem;
-  padding: 0rem;
-  width: 72vw;
-}
-
 .layout-desktop .itemsContainer.collectionItemsContainer .card.portraitCard,
 .layout-tv .itemsContainer.collectionItemsContainer .card.portraitCard {
   width: auto;
@@ -3384,16 +3263,6 @@ content: '';
   [dir="ltr"] .padded-right {
     padding-right: max(env(safe-area-inset-right),1.3%);
   }
-}
-
-.layout-desktop #childrenContent .verticalSection[data-type="Episode"] .itemsContainer.padded-right.vertical-wrap,
-.layout-tv #childrenContent .verticalSection[data-type="Episode"] .itemsContainer.padded-right.vertical-wrap {
-  display: grid !important;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 0.5rem;
-  padding: 0rem;
-  width: 72vw;
-  margin: 0;
 }
 
 .layout-desktop .itemDetailPage:has(.itemName.parentNameLast) #itemBackdrop,
@@ -3656,68 +3525,6 @@ content: '';
   padding-left: 40em;
 }
 
-.layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .verticalSection.detailVerticalSection.moreFromSeasonSection.emby-scroller-container .scrollSlider.focuscontainer-x.itemsContainer.animatedScrollX,
-.layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button.show-focus[data-type="Season"]) .verticalSection.detailVerticalSection.moreFromSeasonSection .scrollSlider.focuscontainer-x.itemsContainer.animatedScrollX.itemsContainer-tv {
-  grid-template-columns: repeat(4, 1fr) !important;
-  width: calc(95vw - 38em) !important;
-  display: grid;
-  margin: 0;
-  transform: translateX(0px) !important;
-}
-
-@media (max-width: 100em) {
-  .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .verticalSection.detailVerticalSection.moreFromSeasonSection.emby-scroller-container .scrollSlider.focuscontainer-x.itemsContainer.animatedScrollX,
-  .layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button.show-focus[data-type="Season"]) .verticalSection.detailVerticalSection.moreFromSeasonSection .scrollSlider.focuscontainer-x.itemsContainer.animatedScrollX.itemsContainer-tv
-{
-  display: grid !important;
-  grid-template-columns: repeat(3, 1fr) !important;
-}
-}
-
-@media (max-width: 75em) {
-  .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .verticalSection.detailVerticalSection.moreFromSeasonSection.emby-scroller-container .scrollSlider.focuscontainer-x.itemsContainer.animatedScrollX,
-  .layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button.show-focus[data-type="Season"]) .verticalSection.detailVerticalSection.moreFromSeasonSection .scrollSlider.focuscontainer-x.itemsContainer.animatedScrollX.itemsContainer-tv
-{
-  display: grid !important;
-  grid-template-columns: repeat(2, 1fr) !important;
-}
-}
-
-@media (max-width: 60em) {
-  .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .verticalSection.detailVerticalSection.moreFromSeasonSection.emby-scroller-container .scrollSlider.focuscontainer-x.itemsContainer.animatedScrollX,
-  .layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button.show-focus[data-type="Season"]) .verticalSection.detailVerticalSection.moreFromSeasonSection .scrollSlider.focuscontainer-x.itemsContainer.animatedScrollX.itemsContainer-tv
-{
-  display: grid !important;
-  grid-template-columns: repeat(1, 1fr) !important;
-}
-}
-
-.layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button.show-focus[data-type="Season"]) #scenesContent.scrollSlider.focuscontainer-x.itemsContainer.animatedScrollX.itemsContainer-tv {
-  grid-template-columns: repeat(3, 1fr) !important;
-  width: 59vw !important;
-  display: grid !important;
-  margin: 0;
-}
-
-.layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) #castContent.scrollSlider.focuscontainer-x.itemsContainer.animatedScrollX,
-.layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button.show-focus[data-type="Season"]) #castContent.scrollSlider.focuscontainer-x.itemsContainer.animatedScroll,
-.layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) #guestCastContent.scrollSlider.focuscontainer-x.itemsContainer.animatedScrollX,
-.layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button.show-focus[data-type="Season"]) #guestCastContent.scrollSlider.focuscontainer-x.itemsContainer.animatedScroll {
-  grid-template-columns: repeat(8, 1fr) !important;
-  width: 65vw !important;
-}
-
-.layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) #scenesCollapsible .scrollSlider.focuscontainer-x.itemsContainer.animatedScrollX,
-.layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button.show-focus[data-type="Season"]) #scenesCollapsible .scrollSlider.focuscontainer-x.itemsContainer.animatedScrollX {
-  grid-template-columns: repeat(4, 1fr) !important;
-  width: 58vw !important;
-}
-
-.layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .verticalSection.detailVerticalSection.moreFromSeasonSection .card.overflowBackdropCard,
-.layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button.show-focus[data-type="Season"]) .verticalSection.detailVerticalSection.moreFromSeasonSection .card.overflowBackdropCard {
-    width: 16vw !important;
-}
-
 .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .itemName.infoText.originalTitle,
 .layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button.show-focus[data-type="Season"]) .itemName.infoText.originalTitle {
   left: 0.2em !important;
@@ -3729,12 +3536,6 @@ content: '';
 .layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button.show-focus[data-type="Season"]) .detailSectionContent {
   width: 54vw !important;
 }
-
-.layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .card.itemAction.chapterCard.overflowBackdropCard, 
-.layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button.show-focus[data-type="Season"]) .card.itemAction.chapterCard.overflowBackdropCard {
-  width: 16.165vw !important;
-}
-
 
 .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .detailImageContainer .card.squareCard,
 .layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button.show-focus[data-type="Season"]) .detailImageContainer .card.squareCard {
@@ -3818,6 +3619,13 @@ content: '';
   .spotlightiframe {
     margin-top: -3.5em !important;
   }
+}
+
+.layout-desktop #itemDetailPage .scrollSlider.itemsContainer {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    white-space: normal !important;
+    gap: 1%;
 }
 
 /* --------------- MOBILE --------------- */
