@@ -543,7 +543,7 @@ p.overview.detail-clamp-text {
 
 .emby-button.show-focus:focus {
   filter: drop-shadow(0 0 1px rgba(2, 2, 8px, 0.75));
-  transform: scale(1.5);
+  transform: scale(1);
 }
 .paper-icon-button-light.show-focus:focus {
   color: rgba(var(--accent)) !important;
@@ -1516,15 +1516,6 @@ button.is-emby-button emby-button {
   white-space: wrap;
 }
 
-.layout-desktop .overflowBackdropCard, .layout-tv .overflowBackdropCard,
-.layout-desktop .overflowPortraitCard, .layout-tv .overflowPortraitCard, 
-.layout-desktop .overflowSquareCard, .layout-tv .overflowSquareCard,
-.layout-tv .overflowBackdropCard, .layout-tv .overflowBackdropCard,
-.layout-tv .overflowPortraitCard, .layout-tv .overflowPortraitCard, 
-.layout-tv .overflowSquareCard, .layout-tv .overflowSquareCard {
-  filter: drop-shadow(0px 2px 1px rgba(0, 0, 0, 0.68));
-}
-
 .layout-desktop .verticalSection.section2 .card.overflowBackdropCard,
 .layout-tv .verticalSection.section2 .card.overflowBackdropCard {
 }
@@ -1729,7 +1720,7 @@ button.is-emby-button emby-button {
   justify-content: flex-start;
   padding-top: 1.2em;
   width: 61vw;
-  gap: 5%;
+  gap: 2%;
 }
 
 .layout-desktop .itemName.originalTitle,
@@ -3054,7 +3045,7 @@ content: '';
   color:#8564ff !important;
   width:auto;
   height: auto;
-  transform: scale(1.02);
+  transform: scale(1);
   padding-left: 0.5em;
   padding-right: 0.5em;
   box-shadow: 0px 0px 5px #fff9;
@@ -3581,6 +3572,75 @@ content: '';
   left: 11em;
 }
 
+
+.layout-desktop .cardImageContainer .language-overlay-container,
+.layout-tv .cardImageContainer .language-overlay-container {
+  max-width: 2em;
+  margin-bottom: 0.125em;
+}
+
+.layout-desktop .cardImageContainer .genre-overlay-container,
+ .layout-tv .cardImageContainer .genre-overlay-container {
+  margin-right: 1em;
+  opacity: 0;
+  gap: 0.15em;
+  transition: opacity 0.5s ease-in-out;
+  top: unset;
+  bottom: 0.55em;
+  transition-delay: 0.5s;
+}
+
+.layout-desktop #itemDetailPage .detailImageContainer .genre-overlay-container,
+.layout-tv #itemDetailPage .detailImageContainer .genre-overlay-container {
+  display: none !important;
+}
+
+.layout-desktop .card:hover .genre-overlay-container,
+.layout-tv .card:hover .genre-overlay-container {
+  opacity: 1;
+}
+
+.layout-desktop .cardImageContainer .quality-overlay-container,
+.layout-tv .cardImageContainer .quality-overlay-container {
+}
+
+.layout-desktop .genre-tag,
+.layout-tv .genre-tag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: auto;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.4);
+  overflow: hidden;
+  background-color: rgba(10, 10, 10, 0.8);
+  color: #E0E0E0;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  max-height: 1em;
+  max-width: fit-content;
+  padding: 0.2em;
+}
+
+.layout-desktop .genre-tag .material-symbols-outlined,
+.layout-tv .genre-tag .material-symbols-outlined {
+  font-size: 1.1em;
+  line-height: 1;
+}
+
+.layout-desktop .genre-tag .genre-text,
+.layout-tv .genre-tag .genre-text {
+  display: none;
+  white-space: nowrap;
+  font-size: 13px;
+  font-weight: 500;
+  margin-left: 6px;
+  margin-right: 10px;
+  text-transform: capitalize;
+  font-size: 0.75em;
+}
+
 /* ---- Music Page ---- */
 
 .layout-desktop .itemDetailPage:has(.nameContainer .parentName.musicParentName.focuscontainer-x) .mainDetailButtons.focuscontainer-x,
@@ -3621,7 +3681,8 @@ content: '';
   }
 }
 
-.layout-desktop #itemDetailPage .scrollSlider.itemsContainer {
+.layout-desktop #itemDetailPage .scrollSlider.itemsContainer,
+.layout-tv #itemDetailPage .scrollSlider.itemsContainer {
     display: flex !important;
     flex-wrap: wrap !important;
     white-space: normal !important;
