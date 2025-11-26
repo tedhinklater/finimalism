@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap');
 
 html {
@@ -1357,12 +1358,10 @@ button.is-emby-button emby-button {
 
 @media (orientation: portrait) {
   .itemsContainer.padded-left.padded-right.padded-right-withalphapicker.vertical-wrap {
-    padding-left: 5%;
-    margin-right: 7%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 1em;
-  }
+    display: flex;
+    white-space: normal;
+    gap: 3%;
+}
   
   #albumsTab .itemsContainer.padded-left.padded-right.padded-right-withalphapicker.vertical-wrap {
     display: flex;
@@ -1793,7 +1792,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
   margin-bottom: 0em;
 }
 
-@media (min-width: 60em) {
+@media (min-width: 70em) {
   .headerTabs.sectionTabs .tabs-viewmenubar.emby-tabs.focusable.scrollX .emby-tab-button.emby-button {
     background: #0a0418b5 !important;
     color: #fff !important;
@@ -2649,7 +2648,7 @@ content: '';
   color: rgba(255, 255, 255, 0.75);
 }
 
-.mainDrawer.transition.touch-menu-la.drawer-open {
+.mainDrawer {
   min-width: 20em;
   font-size: 89%;
 }
@@ -3818,7 +3817,7 @@ content: '';
 
 @media (orientation: portrait) {
   .itemDetailPage {
-    padding-top: 13em !important;
+    padding-top: 50vh !important;
   }
 }
 
@@ -3921,30 +3920,6 @@ content: '';
   padding-left: 0.5em;
 }
 
-@media (orientation: portrait) {
-  .layout-mobile .overflowPortraitCard {
-    width: 47vw;
-  }
-  .layout-mobile .overflowSquareCard {
-    width: 47vw;
-  }
-  .layout-mobile .overflowBackdropCard {
-    width: 70vw;
-  }
-}
-
-@media (orientation: landscape) {
-  .layout-mobile .overflowPortraitCard {
-    width: 22.1vw;
-  }
-  .layout-mobile .overflowSquareCard {
-    width: 22.1vw;
-  }
-  .layout-mobile .overflowBackdropCard {
-    width: 33vw;
-  }
-}
-
 
 @media (orientation: portrait) {
   .layout-mobile #homeTab .cardText {
@@ -3989,9 +3964,16 @@ content: '';
   position: relative;
 }
 
-@media (min-width: 540px) {
+@media (min-width: 70em) {
   .layout-mobile .headerTabs {
     margin-top: -4em !important;
+    z-index: -1;
+  }
+}
+
+@media (max-width: 70em) {
+  .layout-mobile .headerTabs {
+    margin-top: -2em !important;
     z-index: -1;
   }
 }
@@ -4150,7 +4132,8 @@ content: '';
 
 
 .layout-mobile #itemDetailPage .itemExternalLinks.focuscontainer-x {
-  justify-content: space-evenly;
+  gap: 3%;
+  display: flex;
   font-size: 0 !important;
 }
 
@@ -4173,7 +4156,7 @@ content: '';
 }
 
 .layout-mobile [dir="ltr"] .detailPageContent {
-  padding-left: 2vw;
+  padding-left: 0vw;
 }
 
 
@@ -4234,6 +4217,7 @@ content: '';
 .layout-mobile .detailPagePrimaryContent {
   padding-top: 0.25em;
   position: relative;
+  padding-left: 2vw !important;
 }
 
 .layout-mobile [dir="ltr"] .mediaInfoItem {
@@ -4287,4 +4271,28 @@ content: '';
 
 .layout-mobile .upNextContainer .flex.flex-direction-row.upNextDialog-mediainfo {
   gap: 14%;
+}
+
+@media (orientation: portrait) {
+  .layout-mobile .overflowPortraitCard {
+    width: 25vw;
+  }
+  .layout-mobile .overflowSquareCard {
+    width: 25vw;
+  }
+  .layout-mobile .overflowBackdropCard {
+    width: 50vw;
+  }
+}
+
+@media (orientation: landscape) {
+  .layout-mobile .overflowPortraitCard {
+    width: 15vw;
+  }
+  .layout-mobile .overflowSquareCard {
+    width: 15vw;
+  }
+  .layout-mobile .overflowBackdropCard {
+    width: 30vw;
+  }
 }
