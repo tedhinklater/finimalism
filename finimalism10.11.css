@@ -1370,10 +1370,6 @@ button.is-emby-button emby-button {
     width: 40%;
   }
   
-  .itemsContainer.padded-left.padded-right.padded-right-withalphapicker.vertical-wrap .card.portraitCard {
-    width: auto;
-  }
-  
   .alphaPicker-fixed {
     top: 9em;
   }
@@ -4274,24 +4270,31 @@ content: '';
 }
 
 @media (orientation: portrait) {
+  .layout-mobile .portraitCard,
   .layout-mobile .overflowPortraitCard {
     width: 25vw;
   }
+  .layout-mobile .squareCard,
   .layout-mobile .overflowSquareCard {
+
     width: 25vw;
   }
+  .layout-mobile .backdropCard,
   .layout-mobile .overflowBackdropCard {
     width: 50vw;
   }
 }
 
 @media (orientation: landscape) {
+  .layout-mobile .portraitCard,
   .layout-mobile .overflowPortraitCard {
     width: 15vw;
   }
+  .layout-mobile .squareCard,
   .layout-mobile .overflowSquareCard {
     width: 15vw;
   }
+  .layout-mobile .backdropCard,
   .layout-mobile .overflowBackdropCard {
     width: 30vw;
   }
