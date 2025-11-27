@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap');
 
 html {
@@ -1790,26 +1789,35 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 
 @media (min-width: 70em) {
   .headerTabs.sectionTabs .tabs-viewmenubar.emby-tabs.focusable.scrollX .emby-tab-button.emby-button {
-    background: #0a0418b5 !important;
-    color: #fff !important;
+    background: #110e1e1c;
+    padding: .256em 1em .2em;
+    font-size: 1.25em;
+    font-weight: 600;
     border-radius: 0.25em;
-    width: auto;
-    transform: translateY(-31%);
-    transition: 0s;
-    height: 2em;
+    margin-top: 0em;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    border: 1px solid #110e1e52;
   }
   
   .headerTabs.sectionTabs .tabs-viewmenubar.emby-tabs.focusable.scrollX .emby-tab-button.emby-button.emby-tab-button-active {
-    background: #fff !important;
-    color: #000 !important;
+    background: #110e1e87;
+    padding: .256em 1em .2em;
+    font-size: 1.25em;
+    font-weight: 600;
     border-radius: 0.25em;
-    width: auto;
-    transform: translateY(-23%);
-    transition: 0s;
+    margin-top: 0em;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    border: 1px solid transparent;
   }
 
-  .headerTabs.sectionTabs .tabs-viewmenubar.emby-tabs.focusable.scrollX .emby-tab-button.emby-button.emby-tab-button-active .emby-button-foreground {
-    transform: translateY(-23%);
+  .headerTabs.sectionTabs .tabs-viewmenubar.emby-tabs.focusable.scrollX .emby-tab-button.emby-button .emby-button-foreground {
+    background: transparent;
+    font-size: 1em;
+    font-weight: 500;
+    border-radius: 0.2em;
+    width: 5em;
   }
 
   .headerTabs .emby-tab-button {
