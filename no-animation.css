@@ -47,3 +47,8 @@
   animation: none !important;
   opacity: 1 !important;
 }
+
+.layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .detailRibbon, 
+.layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button.show-focus[data-type="Season"]) .detailRibbon {
+  height: 5em !important;
+}
