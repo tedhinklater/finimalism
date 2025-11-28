@@ -3683,6 +3683,13 @@ content: '';
   top: 32em;
 }
 
+/* 720p resolution */
+@media (max-width: 1280px) and (max-height: 720px) {
+  .layout-desktop body, .layout-tv body {
+    font-size: 77% !important;
+  }
+}
+
 /* 1440p resolution */
 @media (min-width: 1950px) {
   .layout-desktop body, .layout-tv body {
