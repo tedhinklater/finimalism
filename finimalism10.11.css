@@ -3246,11 +3246,6 @@ content: '';
   flex: 1 0 calc((100% - (0.5rem * 5)) / 6);
 }
 
-.layout-desktop .itemsContainer.collectionItemsContainer .card.portraitCard,
-.layout-tv .itemsContainer.collectionItemsContainer .card.portraitCard {
-  width: auto;
-}
-
 .layout-desktop .mediaInfoStream,
 .layout-tv .mediaInfoStream {
   display: inline-block;
