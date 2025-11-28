@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
 html {
   color: #fff;
@@ -1787,22 +1788,32 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 
 @media (min-width: 70em) {
   .headerTabs.sectionTabs .tabs-viewmenubar.emby-tabs.focusable.scrollX .emby-tab-button.emby-button {
-    background: #110e1e1c;
-    padding: .256em 1em .2em;
-    font-size: 1.25em;
-    font-weight: 600;
+    padding: 0.656em 1em 0.656em;
+    font-size: 1em;
+    font-family: "Quicksand", sans-serif;
     border-radius: 0.25em;
     margin-top: 0em;
     margin-left: 1vw;
     margin-right: 1vw;
     border: 1px solid #110e1e52;
+    margin-bottom: 1em;
   }
   
   .headerTabs.sectionTabs .tabs-viewmenubar.emby-tabs.focusable.scrollX .emby-tab-button.emby-button.emby-tab-button-active {
     background: #110e1e87;
-    padding: .256em 1em .2em;
-    font-size: 1.25em;
-    font-weight: 600;
+    padding: 0.656em 1em 0.656em;
+    font-size: 1em;
+    border-radius: 0.25em;
+    margin-top: 0em;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    border: 1px solid transparent;
+  }
+
+  .headerTabs.sectionTabs .tabs-viewmenubar.emby-tabs.focusable.scrollX .emby-tab-button.emby-button.emby-tab-button-active.lastFocused {
+    background: #110e1e87;
+    padding: 0.656em 1em 0.656em;
+    font-size: 1em;
     border-radius: 0.25em;
     margin-top: 0em;
     margin-left: 1vw;
@@ -3129,11 +3140,13 @@ content: '';
 
 .pageTitleWithLogo {
   width: 6.25em;
+  height: 1.4em;
 }
 
 @media (max-height: 870px) and (min-width: 1000px) {
   .pageTitleWithLogo {
-    width: 7.5em;
+    width: 6.5em;
+    height: 1.2em;
   }
 }
 
