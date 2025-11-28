@@ -1011,11 +1011,9 @@ progress {
 .layout-desktop #itemDetailPage .listItemImage.listItemImage-large.itemAction.lazy.non-blurhashable.lazy-image-fadein-fast[data-action="link"] {
   border-bottom-left-radius: 0 !important;
   border-bottom-right-radius: 0 !important;
-  height: 9vw;
-  width: 16vw;
-  min-height: 9em;
-  min-width: 16em;
+  max-width: 22em;
 }
+
 /*hover zoom*/
 .layout-desktop .homeLibraryButton:hover,
 .layout-tv .homeLibraryButton:hover,
@@ -3033,7 +3031,7 @@ content: '';
 
 .layout-desktop #childrenContent .listItemImage,
 .layout-tv #childrenContent .listItemImage {
-  aspect-ratio: 16 / 9;
+  aspect-ratio: unset;
   background-size: cover;
   background-position: center;
   border-radius: 10px;
