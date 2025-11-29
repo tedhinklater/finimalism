@@ -2557,9 +2557,9 @@ content: '';
 .layout-desktop .itemName.infoText.subtitle,
 .layout-tv .itemName.infoText.subtitle {
   position: absolute;
-  top: 5em;
+  top: -19em;
   left: 2.1em;
-  width: 24em;
+  width: 20em;
 }
 
 .layout-desktop .detailsGroupItem.genres.content.focuscontainer-x {
