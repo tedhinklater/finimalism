@@ -3230,17 +3230,22 @@ content: '';
 }
 
 .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .trackSelections.focuscontainer-x,
-.layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .itemExternalLinks,
 .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .itemName.infoText.originalTitle,
-.layout-desktop .itemDetailPage:has(.secondary.listItemMediaInfo.listItemBodyText) .itemExternalLinks
 .layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .trackSelections.focuscontainer-x,
-.layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .itemExternalLinks,
-.layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .itemName.infoText.originalTitle,
-.layout-tv .itemDetailPage:has(.secondary.listItemMediaInfo.listItemBodyText) .itemExternalLinks {
+.layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .itemName.infoText.originalTitle {
   animation: none !important;
   opacity: 1 !important;
   top: 44em !important;
   width: 40em;
+  left: 1.5em;
+}
+
+.layout-desktop .itemDetailPage:has(.secondary.listItemMediaInfo.listItemBodyText) .itemExternalLinks
+.layout-tv .itemDetailPage:has(.secondary.listItemMediaInfo.listItemBodyText) .itemExternalLinks {
+  animation: none !important;
+  opacity: 1 !important;
+  top: 44em !important;
+  width: 4em;
   left: 1.5em;
 }
 
