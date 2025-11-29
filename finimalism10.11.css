@@ -1915,6 +1915,13 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
   top: 1em;
 }
 
+.headerSelectedPlayer {
+  max-width: 10em;
+  white-space: nowrap;
+  color: #df9aff;
+  filter: drop-shadow(0px 0px 4px var(--accent));
+}
+
 .navMenuOption {
   -webkit-align-items: center;
   align-items: center;
@@ -3696,6 +3703,8 @@ content: '';
 .layout-desktop .itemDetailsGroup .detailsGroupItem .focuscontainer-x {
   margin-left: 1em;
 }
+
+
 
 
 /* ---- Music Page ---- */
