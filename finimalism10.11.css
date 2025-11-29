@@ -388,11 +388,11 @@ p.overview.detail-clamp-text {
 .layout-tv #itemDetailPage .nameContainer {
   position: fixed;
   left: 2.75em;
-  top: 50.45em;
+  top: 52.15em;
   width: 26.4em;
   justify-content: center;
   text-align: center;
-  height: 3.8em;
+  height: 3.6em;
   display: flex;
   flex-direction: row;
 }
@@ -2506,6 +2506,7 @@ content: '';
   filter: drop-shadow(-2px 4px 1px #0005);
   line-height: 1em;
   font-weight: 700;
+  transform: translateY(-50%);
 }
 
 .layout-desktop #listChildrenCollapsible.verticalSection.detailVerticalSection.verticalSection-extrabottompadding #childrenContent .itemsContainer.padded-right.vertical-list .listItem.listItem-largeImage.listItem-withContentWrapper .listItem-content .listItemBody.itemAction .listItemBodyText,
@@ -2549,9 +2550,10 @@ content: '';
 
 .layout-desktop .itemName.infoText.originalTitle,
 .layout-tv .itemName.infoText.originalTitle {
-  top: 2.7em;
-  left: 1.5em;
+  top: 53.7em;
+  left: 4.3em;
   width: 23em;
+  position: fixed;
 }
 
 .layout-desktop .itemName.infoText.subtitle,
