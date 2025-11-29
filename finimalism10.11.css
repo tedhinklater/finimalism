@@ -2110,9 +2110,9 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
   height: -moz-fit-content;
   overflow: hidden;
   border-radius: var(--rounding);
-  box-shadow: 0px 0px 5px #06030b8a;
-  background: #110e1c80;
+  backdrop-filter: blur(7px) brightness(50%);;
   margin-bottom: 0.5%;
+  box-shadow: 0px 0px 2px rgb(0, 0, 0);
 }
 
 .listItem:hover,
@@ -2631,7 +2631,7 @@ content: '';
 .layout-tv #listChildrenCollapsible #childrenContent .itemsContainer:has(.listItem[data-type="Episode"]) .listViewUserDataButtons {
   justify-content: space-between;
   width: 100%;
-  background: #110e1c80;
+  background: transparent;
 }
 
 /*.dialogContainer .listItem:hover .listItemBody {
@@ -2968,7 +2968,7 @@ content: '';
 .layout-tv #listChildrenCollapsible.verticalSection-extrabottompadding #childrenContent .itemsContainer.padded-right.vertical-list .listItem.listItem-largeImage.listItem-withContentWrapper .listItem-content .listItemBody.itemAction {
   width: 16vw;
   min-width: 16em;
-  background: #110e1c80;
+  background: transparent;
   border-radius: 0;
 }
 
@@ -3066,8 +3066,8 @@ content: '';
 .layout-desktop #listChildrenCollapsible.verticalSection-extrabottompadding #childrenContent .itemsContainer {
   display: inline-flex;
   white-space: normal;
-  gap: 0%;
-  width: calc(100vw - 34.5em);
+  gap: 0.5%;
+  width: calc(100vw - 32.5em);
   opacity: 0;
   animation: fadeTitle 0.5s ease-out 0s forwards;
   flex-direction: row;
