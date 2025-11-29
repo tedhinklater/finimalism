@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
 html {
   color: #fff;
@@ -142,7 +141,6 @@ h2 {
 }
 
 .layout-desktop #itemDetailPage .infoWrapper .nameContainer .parentName.focuscontainer-x {
-  font-size: 1.5em;
   transition: color 0.3s;
 }
 
@@ -155,7 +153,6 @@ h2 {
 }
 
 p.overview.detail-clamp-text {
-  font-size: 1em;
   color: #fff;
   font-weight: 500;
   -webkit-line-clamp: unset;
@@ -163,11 +160,9 @@ p.overview.detail-clamp-text {
 
 #itemDetailPage .tagline {
   font-weight: 600;
-  font-size: 1.25em;
 }
 
 .layout-desktop #itemDetailPage .tagline {
-  font-size: 1.35em;
   margin-top: 1.2em;
   margin-bottom: 2em;
 }
@@ -389,15 +384,17 @@ p.overview.detail-clamp-text {
   }
 }
 
-.layout-desktop #itemDetailPage .nameContainer,
+.layout-desktop #itemDetailPage .nameContainer, 
 .layout-tv #itemDetailPage .nameContainer {
   position: fixed;
   left: 2.75em;
-  top: 49.65em;
-  width: 26em;
+  top: 50.45em;
+  width: 26.4em;
   justify-content: center;
   text-align: center;
-  height: 4.8em;
+  height: 3.8em;
+  display: flex;
+  flex-direction: row;
 }
 
 .layout-desktop .skinHeader,
@@ -420,7 +417,6 @@ p.overview.detail-clamp-text {
 
 .headerTabs.sectionTabs {
   text-size-adjust: 110%;
-  font-size: 110%;
 }
 .pageTitle {
   margin-top: auto; 
@@ -513,6 +509,8 @@ p.overview.detail-clamp-text {
 .itemsContainer > .card > .cardBox {
   margin-left: 0.6em !important;
   margin-right: 0.2em !important;
+  background: #0a071559;
+  border-radius: var(--rounding);
 }
 
 .button-flat:hover {
@@ -638,11 +636,14 @@ progress::-webkit-progress-value {
 }
 
 .card-hoverable.card-withuserdata:hover .playstatebutton-icon-played {
-    color: #fff !important;
+  color: #fff !important;
+  top: -0.1em;
+  right: -0.05em;
 }
 
 #itemDetailPage .button-link {
   color: inherit;
+  font-weight: 400;
 }
 
 .navMenuOption:hover,
@@ -660,7 +661,6 @@ progress::-webkit-progress-value {
 
 .layout-desktop .mainDetailButtons,
 .layout-tv .mainDetailButtons {
-  font-size: 120% !important;
 }
 
 .startTimeText, .endTimeText {
@@ -673,7 +673,6 @@ progress::-webkit-progress-value {
 }
 
 .osdTimeText {
-  font-size: 90%;
 }
 
 .videoOsdBottom {
@@ -704,7 +703,6 @@ progress {
 }
 
 .sectionTitleTextButton > .material-icons {
-  font-size: 1.5em;
   margin-bottom: -0.1em;
   opacity: 0;
  }
@@ -799,7 +797,6 @@ progress {
 .skinHeader {
   display: -webkit-flex;
   display: flex;
-  font-size: 90%;
 }
 
 .cardPadder {
@@ -813,12 +810,12 @@ progress {
   white-space: normal;
   margin-left: 0em;
   font-weight: 400;
-  padding-top: 0.5em;
+  padding-top: 0.25em;
 }
 
 .cardText.cardTextCentered.cardText-secondary {
-  font-size: 0.85em;
   padding-top: 0.1em;
+  padding-bottom: 0.25em;
 }
 
 .skinHeader-withBackground {
@@ -938,7 +935,6 @@ progress {
 }
 
 .cardOverlayButtonIcon {
-  font-size: 1.55em !important;
   width: 1.1em !important;
   height: 1.5em !important;
   display: flex;
@@ -954,7 +950,6 @@ progress {
 
 .cardOverlayContainer > .cardOverlayFab-primary {
   background-color: rgba(0,0,0,0);
-  font-size: 100%;
   height: 3em;
   left: 50%;
   margin-left: -1.5em;
@@ -1063,7 +1058,6 @@ progress {
 .listItem {
   text-align: center;
   padding: 10px;
-  font-size: 1em;
 }
 
 #childrenContent .childrenItemsContainer.itemsContainer.padded-right.vertical-list .listItem.listItem-largeImage.listItem-withContentWrapper .listItem-content .listItemImage.listItemImage-large.itemAction.lazy.non-blurhashable.lazy-image-fadein-fast {
@@ -1085,29 +1079,26 @@ progress {
 .layout-tv .detailsGroupItem, .trackSelections .selectContainer {
   display: -webkit-flex;
   display: flex;
-  font-size: 0.85em;
 }
 
 .layout-desktop .trackSelections {
   position: fixed;
-  left: 0em;
-  top: 47em;
-  width: 22em;
+  left: 1.5em;
+  top: 55.6em;
+  width: 27em;
   font-weight: 500;
   opacity: 0;
   animation: fadeTracks 0.5s ease-out 1.25s forwards;
-  font-size: 1.18em;
 }
 
 .layout-tv .trackSelections {
   position: fixed;
-  left: 0em;
-  top: 47em;
-  width: 22em;
+  left: 1.5em;
+  top: 55.6em;
+  width: 27em;
   font-weight: 500;
   opacity: 1;
   animation: none;
-  font-size: 1.18em;
 }
 
 @keyframes fadeTracks {
@@ -1117,13 +1108,24 @@ progress {
 
 .layout-desktop .trackSelections .selectContainer .detailTrackSelect,
 .layout-tv .trackSelections .selectContainer .detailTrackSelect {
-  font-size: 0.95em;
   text-overflow: ellipsis;
   text-align: center;
   padding-left: 1em;
   padding-right: 1.5em;
   font-weight: 500;
   margin-left: 0.5em;
+  transform: translateX(-7%);
+}
+
+.layout-desktop .trackSelections.focuscontainer-x .selectVideo,
+.layout-desktop .trackSelections.focuscontainer-x .selectAudio,
+.layout-desktop .trackSelections.focuscontainer-x .selectSubtitles,
+.layout-desktop .trackSelections.focuscontainer-x .selectSource,
+.layout-tv .trackSelections.focuscontainer-x .selectVideo,
+.layout-tv .trackSelections.focuscontainer-x .selectAudio,
+.layout-tv .trackSelections.focuscontainer-x .selectSubtitles,
+.layout-tv .trackSelections.focuscontainer-x .selectSource {
+  margin-left: 4em;
 }
 
 #seriesScheduleSection {
@@ -1311,12 +1313,10 @@ button.is-emby-button emby-button {
 }
 
 #myPreferencesMenuPage .sectionTitle {
-  margin-left: 1em !important;
-  margin-bottom: 0em !important;
 }
 
 #myPreferencesMenuPage .verticalSection-extrabottompadding .emby-button {
-  width: 30% !important;
+  width: fit-content;
   margin-left: 0 !important;
   margin-bottom: 1em;
   border-radius: var(--rounding) !important;
@@ -1353,27 +1353,19 @@ button.is-emby-button emby-button {
   padding-top: 1.25em;
   padding-left: 0.5em;
 }
-
-@media (orientation: portrait) {
-  .itemsContainer.padded-left.padded-right.padded-right-withalphapicker.vertical-wrap {
-    display: flex;
-    white-space: normal;
-    gap: 3%;
-}
-  
   #albumsTab .itemsContainer.padded-left.padded-right.padded-right-withalphapicker.vertical-wrap {
     display: flex;
   }
-  #albumsTab .itemsContainer.padded-left.padded-right.padded-right-withalphapicker.vertical-wrap .card.squareCard {
-    width: 40%;
-  }
-  
   .alphaPicker-fixed {
     top: 9em;
   }
   [dir="ltr"] .alphaPicker-fixed-right {
     right: max(env(safe-area-inset-right),0.5em);
   }
+}
+
+#myPreferencesMenuPage .listItemIcon {
+  margin: 0;
 }
 
 .homePage .section1.verticalSection .sectionTitle-cards + .emby-scrollbuttons {
@@ -1403,14 +1395,6 @@ button.is-emby-button emby-button {
 
 .detailVerticalSection .nextUpItems {
   margin-top: -5px;
-}
-
-@media (orientation: landscape) and (max-width: 1000px) {
-  .layout-mobile .nameContainer {
-    max-width: 60vw;
-    margin-left: 1.2em;
-    font-size: 161% !important;
-  }
 }
 
 .itemName {
@@ -1467,7 +1451,6 @@ button.is-emby-button emby-button {
 
 .cardOverlayFab-primary {
   background-color: rgba(0,0,0,0);
-  font-size: 100%;
   height: 3em;
   left: 50%;
 }
@@ -1478,15 +1461,13 @@ button.is-emby-button emby-button {
   max-height: 5.5em;
 }
 
-.trackSelections .selectContainer {
-  font-size: 0.85em;
-  /*overflow: hidden;*/
-  }
+.layout-desktop .trackSelections .selectContainer {
+
 }
+
 
 @media (max-width: 50em) {
   .trackSelections .selectContainer {
-    font-size: 8pt;
     overflow: hidden;
   }
 }
@@ -1508,7 +1489,6 @@ button.is-emby-button emby-button {
   margin: 0;
   overflow: hidden;
   text-overflow: ellipsis;
-  font-size: 80%;
 }
 
 .channelPrograms {
@@ -1595,7 +1575,6 @@ button.is-emby-button emby-button {
 .upNextContainer {
   background: #140f22a3;
   z-index: 50;
-  font-size: 0.85em;
 }
 
 .upNextContainer .raised {
@@ -1605,7 +1584,6 @@ button.is-emby-button emby-button {
   padding-left: 2em;
   padding-right: 2em;
   margin-left: 0;
-  font-size: 1.25em;
 }
 
 .upNextContainer .flex.flex-direction-row.upNextDialog-buttons {
@@ -1615,7 +1593,6 @@ button.is-emby-button emby-button {
 }
 
 .upNextContainer .flex.flex-direction-row.upNextDialog-mediainfo {
-  font-size: 1.2em;
 }
 
 
@@ -1650,7 +1627,6 @@ button.is-emby-button emby-button {
 }
 
 .osdControls {
-  font-size: 1.25em;
 }
 
 .css-4yt2of, .css-139vfv2 {
@@ -1691,7 +1667,6 @@ button.is-emby-button emby-button {
 }
 
 #myPreferencesPage .readOnlycontent {
-  font-size: 90%;
 }
 
 #myPreferencesMenuPage .verticalSection-extrabottompadding .emby-button .listItem {
@@ -1712,7 +1687,6 @@ button.is-emby-button emby-button {
 
 .layout-desktop div.itemMiscInfo.itemMiscInfo-primary,
 .layout-tv div.itemMiscInfo.itemMiscInfo-primary {
-  font-size: 1.3em;
   font-weight: 600;
   text-align: center;
   filter: drop-shadow(0px 4px 1px #0005);
@@ -1724,12 +1698,10 @@ button.is-emby-button emby-button {
 
 .layout-desktop .itemName.originalTitle,
 .layout-tv .itemName.originalTitle {
-  font-size: 1.3em;
   font-weight: 600;
   text-align: center;
   filter: drop-shadow(0px 4px 1px #0005);
   justify-content: flex-start;
-  padding-top: 0.85em;
   width: 61vw;
   gap: 5%;
 }
@@ -1742,7 +1714,6 @@ button.is-emby-button emby-button {
   width: 22em;
   filter: drop-shadow(-1px 1px 2px black);
   line-height: unset;
-  font-size: 1.05em;
   transform: translateY(-50%);
   font-weight: 600;
 }
@@ -1755,7 +1726,6 @@ button.is-emby-button emby-button {
   width: 22em;
   filter: drop-shadow(-1px 1px 2px black);
   line-height: unset;
-  font-size: 1.05em;
   transform: translateY(-50%);
   font-weight: 600;
 }
@@ -1770,7 +1740,6 @@ button.is-emby-button emby-button {
 
 button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.itemAction.paper-icon-button-light.cardOverlayFab-primary[data-action="resume"] {
   background-color: rgba(0, 0, 0, 0.7);
-  font-size: 130%;
   height: 3em;
   left: 50%;
   margin-left: -1.5em;
@@ -1789,8 +1758,6 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 @media (min-width: 70em) {
   .headerTabs.sectionTabs .tabs-viewmenubar.emby-tabs.focusable.scrollX .emby-tab-button.emby-button {
     padding: 0.656em 1em 0.656em;
-    font-size: 1em;
-    font-family: "Quicksand", sans-serif;
     border-radius: 0.25em;
     margin-top: 0em;
     margin-left: 1vw;
@@ -1802,7 +1769,6 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
   .headerTabs.sectionTabs .tabs-viewmenubar.emby-tabs.focusable.scrollX .emby-tab-button.emby-button.emby-tab-button-active {
     background: #110e1e87;
     padding: 0.656em 1em 0.656em;
-    font-size: 1em;
     border-radius: 0.25em;
     margin-top: 0em;
     margin-left: 1vw;
@@ -1813,7 +1779,6 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
   .headerTabs.sectionTabs .tabs-viewmenubar.emby-tabs.focusable.scrollX .emby-tab-button.emby-button.emby-tab-button-active.lastFocused {
     background: #110e1e87;
     padding: 0.656em 1em 0.656em;
-    font-size: 1em;
     border-radius: 0.25em;
     margin-top: 0em;
     margin-left: 1vw;
@@ -1823,10 +1788,8 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 
   .headerTabs.sectionTabs .tabs-viewmenubar.emby-tabs.focusable.scrollX .emby-tab-button.emby-button .emby-button-foreground {
     background: transparent;
-    font-size: 1em;
     font-weight: 500;
     border-radius: 0.2em;
-    width: 5em;
   }
 
   .headerTabs .emby-tab-button {
@@ -1836,7 +1799,6 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
   }
 
   #moviesTab .listItem {
-    font-size: 1.15em;
   }
 
   #moviesTab .listItemBody.itemAction {
@@ -1863,7 +1825,6 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
   }
 
   #seriesTab .listItem {
-    font-size: 1.15em;
   }
 
   #seriesTab .listItemBody.itemAction {
@@ -1890,7 +1851,6 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
   }
   
   #episodesTab .listItem {
-    font-size: 1.15em;
   }
 
   #episodesTab .listItemBody.itemAction {
@@ -2043,7 +2003,6 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 }
 
 #homeTab button[data-direction="left"] {
-  font-size: 1.5em;
   color: #fff;
   cursor: pointer;
   opacity: 0.2;
@@ -2052,7 +2011,6 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 }
 
 #homeTab button[data-direction="right"] {
-  font-size: 1.5em;
   color: #fff;
   cursor: pointer;
   opacity: 0.2;
@@ -2075,7 +2033,6 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
   position: absolute;
   top: 0.5em;
   z-index: 50;
-  font-size: 2em;
   color: #fff;
   height: 2em;
   border-radius: 0.1em;
@@ -2092,7 +2049,6 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
   position: absolute;
   top: 0.5em;
   z-index: 50;
-  font-size: 2em;
   color: #fff;
   height: 2em;
   border-radius: 0.1em;
@@ -2145,7 +2101,6 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 .layout-desktop .listItem-overview.listItemBodyText,
 .layout-desktop .listItem-overview.listItemBodyText{
   height: 5.5em !important;
-  font-size: 1em !important;
 }
 
 .layout-desktop #itemDetailPage .listItem,
@@ -2163,7 +2118,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 .listItem:hover,
 .listItem:focus {
   transition: 0.2s;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.34);
 }
 
 .layout-desktop #itemDetailPage .listItem:hover,
@@ -2189,7 +2144,6 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 .layout-desktop .listItemImageButton,
 .layout-tv .listItemImageButton {
   margin: auto;
-  font-size: 1.6em !important;
 }
 .layout-desktop .playlistSection .listItemBody.itemAction,
 .layout-desktop .playlistSection .listItem-bottomoverview.secondary,
@@ -2214,7 +2168,6 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 .layout-desktop .trackSelections .selectContainer .selectLabel,
 .layout-tv .trackSelections .selectContainer .selectLabel {
   text-align: center;
-  font-size: 0.95em;
 }
 
 .layout-desktop #itemDetailPage .itemExternalLinks,
@@ -2483,14 +2436,14 @@ a[href*="shokoanime.com"] {
 .layout-desktop .mainDetailButtons.focuscontainer-x,
 .layout-tv .mainDetailButtons.focuscontainer-x {
   position: fixed;
-  left: 3.57em;
-  width: 19.15em;
+  left: 3.89em;
+  width: 21.4em;
   justify-content: space-evenly;
   top: 23.05em;
   z-index: -1;
   border-top-right-radius: 1em;
   margin: 1.25em 0;
-  padding-top: 14em;
+  padding-top: 19em;
   border-top-left-radius: 0em;
 }
 
@@ -2499,13 +2452,13 @@ a[href*="shokoanime.com"] {
 content: '';
   position: absolute;
   left: 0;
-  width: 19.15em;
+  width: 21.4em;
   height: 2.557777em;
   background-size: cover;
   background: #0a0715d6;
   border-top-right-radius: 1em;
   margin: 1.25em 0;
-  padding-top: 14em;
+  padding-top: 19.5em;
   border-top-left-radius: 1em;
   top: -1.25em;
   box-shadow: 0px 2px 8px #0005;
@@ -2551,9 +2504,7 @@ content: '';
   text-overflow: ellipsis;
   white-space: normal;
   filter: drop-shadow(-2px 4px 1px #0005);
-  margin-top: -0.75em;
   line-height: 1em;
-  font-size: 1.7em;
   font-weight: 700;
 }
 
@@ -2598,11 +2549,9 @@ content: '';
 
 .layout-desktop .itemName.infoText.originalTitle,
 .layout-tv .itemName.infoText.originalTitle {
-  position: absolute;
   top: 2.7em;
-  left: 1.2em;
-  font-size: 1.1em;
-  width: 21em;
+  left: 1.5em;
+  width: 23em;
 }
 
 .layout-desktop .itemName.infoText.subtitle,
@@ -2610,18 +2559,15 @@ content: '';
   position: absolute;
   top: 5em;
   left: 2.1em;
-  font-size: 1em;
   width: 24em;
 }
 
 .layout-desktop .detailsGroupItem.genres.content.focuscontainer-x {
-  font-size: 1em;
 }
 
 .layout-desktop .itemDetailsGroup .detailsGroupItem,
 .layout-tv .itemDetailsGroup .detailsGroupItem {
-  font-weight: 600;
-  font-size: 0.965em;
+  font-weight: 400;
 }
 
 
@@ -2632,7 +2578,8 @@ content: '';
 
 .layout-desktop [dir="ltr"] .selectArrowContainer,
 .layout-tv [dir="ltr"] .selectArrowContainer {
-  right: 0.5em;
+  right: 3em;
+  top: 0;
 }
 
 .layout-desktop #itemDetailPage .nameContainer .parentName.focuscontainer-x .button-link.itemAction.emby-button,
@@ -2662,7 +2609,6 @@ content: '';
 }
 
 .mainDrawer {
-  font-size: 89%;
 }
 
 .layout-desktop .subtitleSync,
@@ -2675,11 +2621,10 @@ content: '';
 .layout-desktop .musicParentName, .layout-tv .musicParentName,
 .layout-tv .musicParentName, .layout-tv .musicParentName {
   position: absolute;
-  left: 8.6em;
-  top: 2em;
+  left: 11.2em;
+  top: 3em;
   transform: translateX(-50%);
-  font-size: 1.25em;
-  width: 17em;
+  width: 19em;
 }
 
 .layout-desktop #listChildrenCollapsible #childrenContent .itemsContainer:has(.listItem[data-type="Episode"]) .listViewUserDataButtons,
@@ -2774,11 +2719,9 @@ content: '';
   }
 }
 .sectionTitle.sectionTitle-cards {
-  font-size: 1.25em;
 }
 
 #itemDetailPage button[data-direction="left"] {
-  font-size: 1.5em;
   color: #fff;
   cursor: pointer;
   opacity: 0;
@@ -2787,7 +2730,6 @@ content: '';
 }
 
 #itemDetailPage button[data-direction="right"] {
-  font-size: 1.5em;
   color: #fff;
   cursor: pointer;
   opacity: 0;
@@ -2921,7 +2863,6 @@ content: '';
     -webkit-flex-shrink: 0;
     flex-shrink: 0;
     font-family: inherit;
-    font-size: inherit;
     font-weight: 600;
     height: auto;
     line-height: 1.25;
@@ -2950,7 +2891,6 @@ content: '';
 .layout-desktop .videoOsdBottom,
 .layout-tv .videoOsdBottom {
   background: #0a0418b5;
-  font-size: 80%;
   padding-bottom: 0.5em;
   padding-top: 0.5em;
   border-top-right-radius: 1em;
@@ -3135,7 +3075,6 @@ content: '';
 }
 
 .layout-tv #itemDetailPage .listItem {
-  font-size: 1em;
 }
 
 .pageTitleWithLogo {
@@ -3287,7 +3226,6 @@ content: '';
 }
 
 .layout-desktop .itemDetailPage:has(.button-flat.mediaInfoItem.emby-button) .itemMiscInfo.itemMiscInfo-secondary {
-  font-size: 1.5em;
   padding: 1.2em;
 }
 
@@ -3301,6 +3239,16 @@ content: '';
 .layout-tv .itemDetailPage:has(.secondary.listItemMediaInfo.listItemBodyText) .itemExternalLinks {
   animation: none !important;
   opacity: 1 !important;
+  top: 44em !important;
+  width: 40em;
+  left: 1.5em;
+}
+
+.layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .itemDetailsGroup,
+.layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .itemDetailsGroup {
+  width: 41em;
+  left: 1.5em;
+  padding-left: 0;
 }
 
 .layout-tv .trackselections {
@@ -3383,7 +3331,6 @@ content: '';
   margin: 0;
   background: #19134287;
   font-weight: 700;
-  font-size: 1.2em;
 }
 
 .layout-desktop .itemDetailsGroup,
@@ -3413,9 +3360,9 @@ content: '';
 .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .itemDetailsGroup,
 .layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button.show-focus[data-type="Season"]) .itemDetailsGroup {
   position: fixed;
-  top: 50.9em;
-  left: 0em;
-  width: 38em;
+  top: 49.7em;
+  left: 1.5em;
+  width: 38.4em;
 }
 
 .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .itemDetailsGroup .detailsGroupItem.genresGroup .genres.content.focuscontainer-x,
@@ -3427,7 +3374,8 @@ content: '';
 .layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .itemDetailsGroup .detailsGroupItem.directorsGroup .directors.content.focuscontainer-x,
 .layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .itemDetailsGroup .detailsGroupItem.studiosGroup .studios.content.focuscontainer-x {
   text-align: center;
-  width: 29.5em;
+  width: 41em;
+  margin-left: 0!important;
 }
 
 .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .itemDetailsGroup .detailsGroupItem.genresGroup .genresLabel.label,
@@ -3443,7 +3391,6 @@ content: '';
 
 .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) div.itemMiscInfo.itemMiscInfo-primary,
 .layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) div.itemMiscInfo.itemMiscInfo-primary {
-  font-size: 1.3em;
   font-weight: 600;
   text-align: center;
   filter: drop-shadow(0px 4px 1px #0005);
@@ -3463,15 +3410,15 @@ content: '';
 
 .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .mainDetailButtons.focuscontainer-x,
 .layout-tv #itemDetailPage:has(.button-link.itemAction.emby-button.show-focus[data-type="Season"]) .mainDetailButtons.focuscontainer-x {
-  top: 7.5em !important;
-  width: 28.45em;
-  padding-top: 19.1em;
+  top: 8em !important;
+  width: 31.73333em;
+  padding-top: 22em;
 }
 
 .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .mainDetailButtons.focuscontainer-x::before,
 .layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button.show-focus[data-type="Season"]) .mainDetailButtons.focuscontainer-x::before {
-  width: 28.45em;
-  padding-top: 19.1em;
+  width: 31.73333em;
+  padding-top: 22em;
 }
 
 .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .detailImageContainer .card.backdropCard,
@@ -3481,8 +3428,7 @@ content: '';
 }
 
 .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .infoWrapper .nameContainer .itemName.infoText.subtitle.focuscontainer-x {
-  top: 11.2em;
-  font-size: 1.2em;
+  top: 10.3em;
   left: 5.25em;
   width: 27em;
   font-weight: 600;
@@ -3491,7 +3437,6 @@ content: '';
 .layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button.show-focus[data-type="Season"]) .infoWrapper .nameContainer .parentName.focuscontainer-x {
   width: 27em;
   font-weight: 600;
-  font-size: 1.3em;
 }
 
 .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .nameContainer,
@@ -3508,9 +3453,9 @@ content: '';
 
 .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .trackSelections,
 .layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button.show-focus[data-type="Season"]) .trackSelections {
-  top: 36.8em !important;
-  width: 30em;
-  left: 0.55em;
+  top: 43.3em !important;
+  width: 38em;
+  left: 1.5em;
 }
 
 .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .itemName.infoText.subtitle.focuscontainer-x,
@@ -3533,9 +3478,8 @@ content: '';
 
 .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .itemName.infoText.originalTitle,
 .layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button.show-focus[data-type="Season"]) .itemName.infoText.originalTitle {
-  left: 0.2em !important;
-  width: 31.2em !important;
-  top: 3.77em;
+  width: 34.2em !important;
+  margin-top: 1.77em !important;
 }
 
 .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .detailSectionContent,
@@ -3555,6 +3499,34 @@ content: '';
   border-radius: .2em !important;
 }
 
+.layout-desktop .itemMiscInfo.itemMiscInfo-primary .mediaInfoItem,
+.layout-tv .itemMiscInfo.itemMiscInfo-primary .mediaInfoItem {
+  margin: 0 1em 0 0;
+  font-size: 1.25em;
+}
+
+.layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .nameContainer,
+.layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button.show-focus[data-type="Season"]) .nameContainer {
+  display: -webkit-box !important;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: transform 0s;
+  top: 37em !important;
+  height: unset !important;
+}
+
+.layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .nameContainer .parentName.focuscontainer-x .button-link.itemAction.emby-button,
+.layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button.show-focus[data-type="Season"]) .nameContainer .parentName.focuscontainer-x .button-link.itemAction.emby-button {
+  display: -webkit-box !important;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1 !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: transform 0s;
+}
+
 .layout-desktop .itemDetailPage:has(.detailImageContainer .card.squareCard .cardImageContainer.coveredImage.cardContent.lazy.blurhashed.lazy-image-fadein-fast) .mainDetailButtons.focuscontainer-x,
 .layout-tv .itemDetailPage:has(.detailImageContainer .card.squareCard .cardImageContainer.coveredImage.cardContent.lazy.blurhashed.lazy-image-fadein-fast) .mainDetailButtons.focuscontainer-x {
   width: 16.45em;
@@ -3570,15 +3542,15 @@ content: '';
 .layout-tv .itemDetailPage:has(.detailImageContainer .card.squareCard .cardImageContainer.coveredImage.cardContent.lazy.blurhashed.lazy-image-fadein-fast) .mainDetailButtons.focuscontainer-x,
 .layout-desktop .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) .mainDetailButtons.focuscontainer-x,
 .layout-tv .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) .mainDetailButtons.focuscontainer-x {
-  width: 19.3em !important;
-  left: 3.5em !important;
+  width: 21.4em !important;
+  left: 3.9em !important;
 }
 
 .layout-desktop .itemDetailPage:has(.itemAction.textActionButton[data-type="Season"]) .mainDetailButtons.focuscontainer-x::before,
 .layout-tv .itemDetailPage:has(.detailImageContainer .card.squareCard .cardImageContainer.coveredImage.cardContent.lazy.blurhashed.lazy-image-fadein-fast) .mainDetailButtons.focuscontainer-x::before,
 .layout-desktop .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) .mainDetailButtons.focuscontainer-x::before,
 .layout-tv .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) .mainDetailButtons.focuscontainer-x::before {
-  width: 19.3em !important;
+  width: 21.4em !important;
 }
 
 .layout-desktop .itemDetailPage:has(.detailImageContainer .card.squareCard .cardImageContainer.coveredImage.cardContent.lazy.blurhashed.lazy-image-fadein-fast) .itemName.infoText.subtitle.focuscontainer-x,
@@ -3587,6 +3559,10 @@ content: '';
   left: 11em;
 }
 
+.layout-desktop .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) .itemName.infoText.subtitle,
+.layout-tv .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) .itemName.infoText.subtitle {
+  width: 20.2em;
+}
 
 .layout-desktop .cardImageContainer .language-overlay-container,
 .layout-tv .cardImageContainer .language-overlay-container {
@@ -3640,7 +3616,6 @@ content: '';
 
 .layout-desktop .genre-tag .material-symbols-outlined,
 .layout-tv .genre-tag .material-symbols-outlined {
-  font-size: 1.1em;
   line-height: 1;
 }
 
@@ -3648,13 +3623,73 @@ content: '';
 .layout-tv .genre-tag .genre-text {
   display: none;
   white-space: nowrap;
-  font-size: 13px;
   font-weight: 500;
   margin-left: 6px;
   margin-right: 10px;
   text-transform: capitalize;
-  font-size: 0.75em;
 }
+
+.trackSelections .selectLabel {
+    font-size: 0 !important;
+    position: relative;
+}
+
+.trackSelections .selectLabel::before {
+    font-size: 15pt;
+    line-height: 20px;
+}
+
+.selectSourceContainer .selectLabel::before {
+    content: "inventory_2";
+    font-family: "Material Icons";
+}
+
+.selectVideoContainer .selectLabel::before {
+    content: "videocam";
+    font-family: "Material Icons";
+}
+
+.selectAudioContainer .selectLabel::before {
+    content: "audiotrack";
+    font-family: "Material Icons";
+}
+
+.selectSubtitlesContainer .selectLabel::before {
+    content: "subtitles";
+    font-family: "Material Icons";
+}
+
+.itemDetailsGroup .label {
+    font-size: 0 !important;
+    position: relative;
+}
+
+.itemDetailsGroup .label::before {
+    font-family: "Material Icons";
+    font-size: 15pt;
+    line-height: 20px;
+}
+
+.genresGroup .genresLabel::before {
+    content: "theater_comedy";
+}
+
+.directorsGroup .directorsLabel::before {
+    content: "movie_creation"; 
+}
+
+.writersGroup .writersLabel::before {
+    content: "edit"; 
+}
+
+.studiosGroup .studiosLabel::before {
+    content: "apartment"; 
+}
+
+.layout-desktop .itemDetailsGroup .detailsGroupItem .focuscontainer-x {
+  margin-left: 1em;
+}
+
 
 /* ---- Music Page ---- */
 
@@ -3662,8 +3697,8 @@ content: '';
 .layout-desktop .itemDetailPage:has(.card.overflowSquareCard.card-hoverable) .mainDetailButtons.focuscontainer-x,
 .layout-tv .itemDetailPage:has(.nameContainer .parentName.musicParentName.focuscontainer-x) .mainDetailButtons.focuscontainer-x,
 .layout-tv .itemDetailPage:has(.card.overflowSquareCard.card-hoverable) .mainDetailButtons.focuscontainer-x {
-  width: 19.15em !important;
-  left: 3.5em !important;
+  width: 21.4em !important;
+  left: 3.9em !important;
 }
 
 .layout-desktop .itemDetailPage:has(.nameContainer .parentName.musicParentName.focuscontainer-x) .itemExternalLinks,
@@ -3678,7 +3713,7 @@ content: '';
 .layout-desktop .itemDetailPage:has(.card.overflowSquareCard.card-hoverable) .mainDetailButtons.focuscontainer-x::before,
 .layout-tv .itemDetailPage:has(.nameContainer .parentName.musicParentName.focuscontainer-x) .mainDetailButtons.focuscontainer-x::before,
 .layout-tv .itemDetailPage:has(.card.overflowSquareCard.card-hoverable) .mainDetailButtons.focuscontainer-x::before  {
-  width: 19.15em !important;
+  width: 21.4em !important;
 }
 
 .layout-desktop .itemDetailPage:has(.nameContainer .parentName.musicParentName.focuscontainer-x) .detailImageContainer .card.backdropCard,
@@ -3723,20 +3758,16 @@ content: '';
 /* --------------- MOBILE --------------- */
 
 .layout-mobile .card {
-  font-size: 0.85em !important;
 }
 
 .layout-mobile body {
-  font-size: 12pt;
 }
 
 .layout-mobile div.itemMiscInfo.itemMiscInfo-primary {
-  font-size: 0.8em;
 }
 
 .layout-mobile .trackSelections {
   max-width: 44em;
-  font-size: 0.95em;
   font-weight: 400;
 }
 
@@ -3744,15 +3775,14 @@ content: '';
   padding-left: 0.5em;
   text-align: center;
   padding-right: 0.5em;
+  margin-left: 1.5em;
 }
 
 .layout-mobile p.overview.detail-clamp-text {
-  font-size: 0.9em; 
 }
 
 .layout-mobile .itemDetailsGroup,
 .layout-mobile .itemDetailsGroup .detailsGroupItem .emby-button {
-  font-size: 0.9em;
   font-weight: 400;
 }
 
@@ -3762,11 +3792,9 @@ content: '';
 }
 
 .layout-mobile span.homeLibraryText {
-  font-size: 12pt;
 }
 
 .layout-mobile .itemName.infoText.parentNameLast {
-  font-size: 1em;
   padding-bottom: 0.25em;
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -3891,7 +3919,9 @@ content: '';
   .layout-mobile .detailImageContainer .card {
     position: fixed !important;
     top: 20% !important;
-    max-width: 21%;
+    max-width: 25%;
+    left: 2%;
+    width: 20vw;
   }
   .layout-mobile #itemDetailPage .card.backdropCard {
     width: 20vw;
@@ -3901,13 +3931,12 @@ content: '';
 }
 
 .layout-mobile .videoOsdBottom {
-  font-size: 80%;
 }
 
 
 @media (orientation: landscape) {
   .layout-mobile .detailPageContent {
-    padding-left: 27%;
+    padding-left: 25%;
     padding-right: 0%;
   }
 }
@@ -3915,6 +3944,13 @@ content: '';
 @media (max-width: 750px)  and (orientation: landscape) {
   .layout-mobile .detailPagePrimaryContainer {
     padding-right: 11vw;
+  }
+}
+
+@media (max-width: 50em) {
+  .layout-mobile .detailImageContainer .card {
+    bottom: 0;
+    left: 5%;
   }
 }
 
@@ -3933,7 +3969,7 @@ content: '';
 }
 
 .layout-mobile [dir="ltr"] .padded-left {
-  padding-left: 0.5em;
+  padding-left: 0em;
 }
 
 
@@ -3962,11 +3998,9 @@ content: '';
 }
 
 .layout-mobile .sectionTitle.sectionTitle-cards {
-  font-size: 105%;
 }
 
 .layout-mobile .flex.align-items-center.justify-content-center.flex-wrap-wrap.padded-top.padded-left.padded-right.padded-bottom.focuscontainer-x {
-  font-size: 85%;
 }
 
 .layout-mobile .headerTabs {
@@ -3997,7 +4031,6 @@ content: '';
 .layout-mobile .homePage .section1.verticalSection .itemsContainer .card.overflowBackdropCard {
   margin-top: 0em;
   margin-bottom: 0em;
-  font-size: 90%;
 }
 
 .layout-mobile .sectionTitle.sectionTitle-cards.padded-left + .itemsContainer {
@@ -4013,11 +4046,10 @@ content: '';
 .layout-mobile .nameContainer {
   display: -webkit-box !important;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 2;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: normal;
-  font-size: 1.3em;
 }
 
 
@@ -4032,13 +4064,39 @@ content: '';
     padding-left: 24vw;
     padding-top: 2em;
   }
-  
+}
+
+@media (orientation: portrait) {
+  .layout-mobile .itemsContainer.padded-left.padded-right.padded-right-withalphapicker.vertical-wrap {
+      display: flex;
+      white-space: normal;
+      gap: 6%;
+      width: 86%;
+  }
+  .layout-mobile .itemsContainer.padded-left.padded-right.padded-right-withalphapicker.vertical-wrap {
+    margin-right: 10%;
+  }
+}
+
+@media (orientation: landscape) {
+  .itemsContainer.padded-left.padded-right.padded-right-withalphapicker.vertical-wrap {
+    margin-right: 0%;
+    margin-left: 1.5%;
+    gap: 1.2%;
+  }
+}
+
+
+@media (orientation: landscape) and (max-width: 1000px) {
+  .layout-mobile .nameContainer {
+    max-width: 76vw;
+    margin-left: 0;
+  }
 }
 
 @media (orientation: landscape) and (max-height: 380px) {
   .layout-mobile [dir="ltr"] .mainDetailButtons {
     padding-left: 25%;
-    font-size: 0.84em;
     padding-top: 1em;
   }
 }
@@ -4087,7 +4145,6 @@ content: '';
   .layout-mobile [dir="ltr"] .mainDetailButtons {
     margin-bottom: 0;
     padding-left: 0em;
-    font-size: 73%;
     margin-top: 1em;
     width: 100vw;
     justify-content: space-evenly;
@@ -4097,7 +4154,6 @@ content: '';
   
 @media (min-width: 65em) {
   .layout-mobile [dir="ltr"] .mainDetailButtons {
-    font-size: 90%;
     margin-bottom: 0em;
     margin-top: 4em;
   }
@@ -4123,23 +4179,39 @@ content: '';
 .layout-mobile .itemMiscInfo, .layout-mobile .itemName, .layout-mobile .mainDetailButtons, .layout-mobile .parentName {
   justify-content: space-evenly;
   text-align: center;
-  font-size: 0.65em;
 }
 
 .layout-mobile #itemDetailPage .tagline {
-  font-size: 1em;
 }
 
 .layout-mobile .childrenItemsContainer.itemsContainer.padded-right.vertical-list {
   grid-template-columns: 1fr;
 }
 
-@media (max-width: 32em) {
+@media (max-width: 100em) {
+  .trackSelections .selectContainer {
+    overflow: hidden;
+    margin-left: 1% !important;
+    margin-right: 1% !important;
+  }
+}
+
+@media (max-width: 100em) {
   .layout-mobile .infoWrapper {
     position: relative;
-    max-height: 10em;
-    min-height: 6em;
-    }
+    max-height: fit-content;
+  }
+}
+
+.layout-mobile .itemDetailsGroup .directors.content.focuscontainer-x,
+.layout-mobile .itemDetailsGroup .studios.content.focuscontainer-x,
+.layout-mobile .itemDetailsGroup .writers.content.focuscontainer-x,
+.layout-mobile .itemDetailsGroup .genres.content.focuscontainer-x {
+  margin-left: 1em;
+}
+
+.layout-mobile .selectArrowContainer {
+  top: 0;
 }
 
 .layout-mobile .subtitleSync {
@@ -4186,27 +4258,23 @@ content: '';
 @media (orientation: landscape) and (max-height: 900px) {
   .layout-mobile [dir="ltr"] .mainDetailButtons {
     padding-left: 0%;
-    font-size: 0.84em;
-    padding-top: 0.5em;
-    margin-top: 5em;
   }
 }
 
 @media (orientation: landscape) {
   .layout-mobile .itemDetailPage {
-    padding-top: 48vh !important;
+    padding-top: calc(100vh - 13em) !important;
   }
 }
 
 .layout-mobile h1.itemName, .layout-mobile h1.parentName {
-  font-size: 1em;
-  margin-top: 0em;
+    margin-top: 0em;
 }
 
 @media (orientation:landscape) {
     .layout-mobile .detailPageSecondaryContainer {
     padding-top: 1em;
-    padding-left: 27vw;
+    padding-left: 25vw;
   }
 }
 
@@ -4220,13 +4288,10 @@ content: '';
   align-items: center;
   display: -webkit-flex;
   display: flex;
-  font-size: 0.7em;
 }
 
 @media (orientation: landscape) {
   .layout-mobile .detailButton {
-    padding-left: 1.8em !important;
-    padding-right: 1.8em !important;
   }
 }
 
@@ -4234,6 +4299,12 @@ content: '';
   padding-top: 0.25em;
   position: relative;
   padding-left: 2vw !important;
+}
+
+@media (orientation: landscape) {
+  .layout-mobile .detailPagePrimaryContent {
+    padding-left: 0vw !important;
+  }
 }
 
 .layout-mobile [dir="ltr"] .mediaInfoItem {
@@ -4245,8 +4316,8 @@ content: '';
 
 @media (orientation: portrait) {
   .layout-mobile div.itemMiscInfo.itemMiscInfo-primary {
-    width: 67vw;
-    margin-left: -5vw;
+    width: 60vw;
+    margin-left: 0vw;
     justify-items: center;
   }
 }
@@ -4256,11 +4327,11 @@ content: '';
     margin-left: -25vw;
   }
   .layout-mobile [dir="ltr"] .infoWrapper {
-    padding-left: 27vw;
-    width: 68vw;
+    padding-left: 23vw;
+    width: 76vw;
     }
   .layout-mobile .mainDetailButtons.focuscontainer-x {
-    padding-left: 25vw;
+    padding-left: 23vw;
   }
 }
 
@@ -4271,18 +4342,15 @@ content: '';
 
 @media (orientation: landscape){
   .layout-mobile .button-flat {
-    margin-top: -1em !important;
   }
 }
 
 .layout-mobile .headerLeft {
   display: -webkit-flex;
   display: flex;
-  font-size: 90%;
 }
 
 .layout-mobile .upNextContainer {
-  font-size: 0.5em;
 }
 
 .layout-mobile .upNextContainer .flex.flex-direction-row.upNextDialog-mediainfo {
@@ -4318,4 +4386,18 @@ content: '';
   .layout-mobile .overflowBackdropCard {
     width: 30vw;
   }
+}
+
+.layout-mobile #listChildrenCollapsible.verticalSection-extrabottompadding #childrenContent .itemsContainer.vertical-list .listItem.listItem-largeImage.listItem-withContentWrapper {
+  box-shadow: 0px 1px 8px rgb(0, 0, 0);
+  background: #0f0c1a8c;
+}
+
+.layout-mobile #listChildrenCollapsible.verticalSection-extrabottompadding #childrenContent .itemsContainer.vertical-list .listItem.listItem-largeImage.listItem-withContentWrapper .secondary.listItem-overview.listItemBodyText p {
+  margin: 0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
