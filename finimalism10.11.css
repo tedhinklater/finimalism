@@ -163,7 +163,7 @@ p.overview.detail-clamp-text {
 }
 
 .layout-desktop #itemDetailPage .tagline {
-  margin-top: 1.2em;
+  margin-top: 1.7em;
   margin-bottom: 2em;
 }
 
@@ -719,9 +719,9 @@ progress {
 
 .layout-desktop .itemsContainer.padded-left.padded-right.padded-right-withalphapicker.vertical-wrap,
 .layout-tv .itemsContainer.padded-left.padded-right.padded-right-withalphapicker.vertical-wrap {
-  max-width: 94%;
+  max-width: 95%;
   padding: 0;
-  gap: 1%;
+  gap: 1.35%;
 }
 
 #homeTab .emby-scroller {
@@ -2450,7 +2450,7 @@ a[href*="shokoanime.com"] {
   z-index: -1;
   border-top-right-radius: 1em;
   margin: 1.25em 0;
-  padding-top: 19em;
+  padding-top: 18.6em;
   border-top-left-radius: 0em;
 }
 
@@ -2465,7 +2465,7 @@ content: '';
   background: #0a0715d6;
   border-top-right-radius: 1em;
   margin: 1.25em 0;
-  padding-top: 19.5em;
+  padding-top: 18.8em;
   border-top-left-radius: 1em;
   top: -1.25em;
   box-shadow: 0px 2px 8px #0005;
@@ -2587,7 +2587,7 @@ content: '';
 
 .layout-desktop [dir="ltr"] .selectArrowContainer,
 .layout-tv [dir="ltr"] .selectArrowContainer {
-  right: 3em;
+  right: 2.5em;
   top: 0;
 }
 
@@ -2631,7 +2631,7 @@ content: '';
 .layout-tv .musicParentName, .layout-tv .musicParentName {
   position: absolute;
   left: 11.2em;
-  top: 3em;
+  top: 1em;
   transform: translateX(-50%);
   width: 19em;
 }
@@ -2817,22 +2817,22 @@ content: '';
 
 .layout-desktop #scenesCollapsible .itemAction.chapterCard.overflowBackdropCard,
 .layout-tv #scenesCollapsiblecard .itemAction.chapterCard.overflowBackdropCard {
-  width: 15.5vw;
+  width: 16.9333vw;
 }
 
 .layout-desktop #castCollapsible .card.overflowPortraitCard.personCard.card-hoverable.card-withuserdata,
 .layout-tv #castCollapsible .card.overflowPortraitCard.personCard.card-hoverable.card-withuserdata {
-  width: 7.5vw;
+  width: 8.3vw;
 }
 
 .layout-desktop #guestCastCollapsible .card.overflowPortraitCard.personCard.card-hoverable.card-withuserdata,
 .layout-tv #guestCastCollapsible .card.overflowPortraitCard.personCard.card-hoverable.card-withuserdata {
-  width: 7.5vw;
+  width: 8.3vw;
 }
 
 .layout-desktop #similarCollapsible .card.overflowPortraitCard,
 .layout-tv #similarCollapsible .card.overflowPortraitCard {
-  width: 7.5vw;
+  width: 8.3vw;
 }
 
 @media (max-height: 1000px) {
@@ -3463,6 +3463,7 @@ content: '';
 .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .overview.detail-clamp-text,
 .layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button.show-focus[data-type="Season"]) .overview.detail-clamp-text {
   margin-bottom: 0;
+  padding-top: 0.4em;
 }
 
 .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .trackSelections,
@@ -3492,8 +3493,9 @@ content: '';
 
 .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .itemName.infoText.originalTitle,
 .layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button.show-focus[data-type="Season"]) .itemName.infoText.originalTitle {
-  width: 34.2em !important;
-  margin-top: 1.77em !important;
+  width: 34.7em !important;
+  margin-top: -2.43em !important;
+  left: 4.3em;
 }
 
 .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .detailSectionContent,
@@ -3768,7 +3770,7 @@ content: '';
     display: flex !important;
     flex-wrap: wrap !important;
     white-space: normal !important;
-    gap: 1%;
+    gap: 0.5%;
 }
 
 /* --------------- MOBILE --------------- */
