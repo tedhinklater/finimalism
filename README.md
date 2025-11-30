@@ -13,7 +13,7 @@ Just paste an import line into your "Dashboard > Branding > CSS" section, or "Us
 
 # Homepage 
 ### (Colour version with [Home Screen Sections](https://github.com/IAmParadox27/jellyfin-plugin-home-sections) / [Featured Content Bar](https://github.com/tedhinklater/Jellyfin-Featured-Content-Bar) / [Jellyfin Enhanced](https://github.com/n00bcodr/Jellyfin-Enhanced))
-![homepage](https://github.com/user-attachments/assets/52e35ce7-507b-48cf-88e1-bc6207815259)
+![homepage](https://github.com/user-attachments/assets/a468f6a8-219b-4051-975e-265e39f338b3)
 
 # Show, Season & Player
 ![show](https://github.com/user-attachments/assets/4f512c17-5dfa-4b3d-9280-e8936772aba9)
