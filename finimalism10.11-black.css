@@ -405,8 +405,7 @@
 .emby-select-tv-withcolor:focus,
 .emby-checkbox:checked + span + .checkboxOutline,
 .itemProgressBarForeground,
-.textActionButton:hover,
- {
+.textActionButton:hover {
 	background-color: var(--accentBlack) !important;
 }
 
