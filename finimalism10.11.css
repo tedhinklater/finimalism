@@ -1694,6 +1694,7 @@ button.is-emby-button emby-button {
   padding-top: 1.2em;
   width: 61vw;
   gap: 2%;
+  margin-bottom: 0 !important;
 }
 
 .layout-desktop .itemName.originalTitle,
@@ -1759,7 +1760,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
   .headerTabs.sectionTabs .tabs-viewmenubar.emby-tabs.focusable.scrollX .emby-tab-button.emby-button {
     padding: 0.656em 1em 0.656em;
     border-radius: 0.25em;
-    margin-top: 0em;
+    margin-top: 0.2em;
     margin-left: 1vw;
     margin-right: 1vw;
     border: 1px solid #110e1e52;
@@ -2099,10 +2100,10 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
   -o-transition: background 0.15s ease-in-out;
 }
 
-.layout-desktop .listItemImage.listItemImage-large,
-.layout-tv .listItemImage.listItemImage-large {
+.layout-desktop .listItemImage.listItemImage-large, .layout-tv .listItemImage.listItemImage-large {
   width: 100%;
   margin: 0;
+  transition: box-shadow 2s ease-in;
 }
 
 .layout-desktop .listItem-overview.listItemBodyText,
