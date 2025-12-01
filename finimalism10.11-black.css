@@ -286,10 +286,12 @@
 
 .cardOverlayButton-hover .playstatebutton-icon-played {
   color: var(--accentBlack);
-	background: #fff !important;
-  right: -0.19em;
-  width: 1.37em !important;
-  height: 1.37em !important;
+  background: #fff !important;
+  border-radius: 9999em !important;
+  width: 1.098766666em !important;
+  height: 1.09876666666em !important;
+  margin-top: 0.19em;
+  margin-right: 0.05em;
 }
 
 .countIndicator, 
