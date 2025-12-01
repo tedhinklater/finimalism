@@ -3869,13 +3869,13 @@ content: '';
     -webkit-filter: drop-shadow(0 0 10px rgba(2, 2, 2, 0.75));
     filter: drop-shadow(0 0 10px rgba(2, 2, 2, 0.75));
     display: block;
-    bottom: 46vh;
+    bottom: unset;
     right: unset;
-    width: 100vw;
-    top: unset;
+    width: 90vw;
+    top: 4em;
     transform: translateX(-50%);
     left: 50vw;
-    max-height: 16vh;
+    max-height: 8em;
   }
 }
 
@@ -3908,7 +3908,7 @@ content: '';
   .layout-mobile .detailLogo {
     position: absolute;
     left: 61vw;
-    top: 26%;
+    top: 15em;
     transform: translate(-50%, -50%);
     display: block;
     -webkit-filter: drop-shadow(0 0 10px rgba(2, 2, 2, 0.75));
@@ -4425,7 +4425,7 @@ content: '';
   .layout-mobile .detailImageContainer .card.portraitCard {
     position: absolute;
     left: 50%;
-    top: -5em;
+    top: 4em;
     bottom: unset;
     right: unset;
     margin-top: -40vh;
@@ -4439,9 +4439,9 @@ content: '';
   .layout-mobile .detailImageContainer .card.backdropCard,
   .layout-mobile .detailImageContainer .card.squareCard {
     position: absolute;
-    left: 1vw;
-    top: unset;
-    bottom: 34vh;
+    left: 1.5vw;
+    top: -18em;
+    bottom: unset;
     right: unset;
     transform: none;
     width: 98vw;
@@ -4452,7 +4452,7 @@ content: '';
 @media (max-width: 50em) and (orientation: portrait) {
   .layout-mobile .detailImageContainer .card.squareCard {
     position: absolute;
-    top: -30.3em;
+    top: -21em;
     bottom: unset;
     left: 50vw;
     transform: translateX(-50%);
