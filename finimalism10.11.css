@@ -2115,9 +2115,10 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
   height: -moz-fit-content;
   overflow: hidden;
   border-radius: var(--rounding);
-  backdrop-filter: blur(7px) brightness(50%);;
+  backdrop-filter: blur(2px) brightness(81%);
   margin-bottom: 0.5%;
   box-shadow: 0px 0px 2px rgb(0, 0, 0);
+  background: #0a07159e;
 }
 
 .listItem:hover,
