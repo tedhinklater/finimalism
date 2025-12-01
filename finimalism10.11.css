@@ -623,9 +623,6 @@ progress::-webkit-progress-value {
 
 .cardOverlayButton-hover .playstatebutton-icon-played {
   color: #fff;
-  right: -0.19em;
-  width: 1.37em !important;
-  height: 1.37em !important;
 }
 
 .material-icons.detailButton-icon.favorite:hover {
@@ -946,6 +943,7 @@ progress {
 .cardOverlayButton {
   position: relative;
   color: #fff;
+  padding: 0.12em;
 }
 
 
@@ -984,8 +982,6 @@ progress {
 .listItemButton,
 .blurhash-canvas,
 .dialog,
-.countIndicator,
-.playedIndicator,
 .listItemIcon,
 .listItem-border,
 .visualCardBox,
