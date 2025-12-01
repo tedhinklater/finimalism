@@ -621,6 +621,13 @@ progress::-webkit-progress-value {
   color: #8564ff;
 }
 
+.cardOverlayButton-hover .playstatebutton-icon-played {
+  color: #fff;
+  right: -0.19em;
+  width: 1.37em !important;
+  height: 1.37em !important;
+}
+
 .material-icons.detailButton-icon.favorite:hover {
   color: #f00;
   transition: color 1s;
@@ -633,12 +640,6 @@ progress::-webkit-progress-value {
 .material-icons.detailButton-icon.favorite.ratingbutton-icon-withrating:hover {
     color: #8564ff;
     transition: color 1s;
-}
-
-.card-hoverable.card-withuserdata:hover .playstatebutton-icon-played {
-  color: #fff !important;
-  top: -0.1em;
-  right: -0.05em;
 }
 
 #itemDetailPage .button-link {
