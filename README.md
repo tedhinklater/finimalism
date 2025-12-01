@@ -3,7 +3,7 @@ If you've updated to Jellyfin v10.11 you'll need the new version
 ```css
 @import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/finimalism10.11.css");
 ```
-or
+or, for the Black version
 ```css
 @import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/finimalism10.11-black.css");
 
