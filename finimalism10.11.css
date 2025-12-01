@@ -4370,16 +4370,16 @@ content: '';
 @media (orientation: portrait) {
   .layout-mobile .portraitCard,
   .layout-mobile .overflowPortraitCard {
-    width: 25vw;
+    width: 28vw;
   }
   .layout-mobile .squareCard,
   .layout-mobile .overflowSquareCard {
 
-    width: 25vw;
+    width: 28vw;
   }
   .layout-mobile .backdropCard,
   .layout-mobile .overflowBackdropCard {
-    width: 50vw;
+    width: 42vw;
   }
 }
 
@@ -4413,7 +4413,7 @@ content: '';
 }
 
 @media (max-width: 32em) and (orientation: portrait) {
-  .layout-mobile .detailImageContainer .card {
+  .layout-mobile .detailImageContainer .card.portraitCard {
     position: absolute;
     left: 1vw;
     top: unset;
@@ -4422,6 +4422,20 @@ content: '';
     margin-top: -40vh;
     transform: none;
     width: 25vh;
+    max-width: 50vw;
+  }
+}
+
+@media (max-width: 32em) and (orientation: portrait) {
+  .layout-mobile .detailImageContainer .card.backdropCard,
+  .layout-mobile .detailImageContainer .card.squareCard {
+    position: absolute;
+    left: 1vw;
+    top: unset;
+    bottom: 20vh;
+    right: unset;
+    transform: none;
+    width: 50vw;
     max-width: 50vw;
   }
 }
@@ -4435,4 +4449,9 @@ content: '';
   .layout-mobile [dir="ltr"] .infoWrapper {
   max-width: 77%;
   padding-left: 23vw;
+  }
+}
+
+.layout-mobile .itemsContainer.padded-right.vertical-wrap {
+  gap: 2%;
 }
