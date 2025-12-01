@@ -2585,8 +2585,8 @@ content: '';
   max-width: 66vw;
 }
 
-.layout-desktop [dir="ltr"] .selectArrowContainer,
-.layout-tv [dir="ltr"] .selectArrowContainer {
+.layout-desktop [dir="ltr"] .trackSelections.focuscontainer-x .selectArrowContainer,
+.layout-tv [dir="ltr"] .trackSelections.focuscontainer-x .selectArrowContainer {
   right: 2.5em;
   top: 0;
 }
