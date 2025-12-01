@@ -1,5 +1,9 @@
 @import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/finimalism10.11.css");
 
+/* ---- Black ---- */
+
+:root {--accentBlack: #ca1414;}
+
 /* Backdrop */
 .backgroundContainer {
 	background: #000;
@@ -8,25 +12,27 @@
 	opacity: 0;
 }
 
-:root {--accent: #8546ff;}
-
-
-.layout-desktop #itemDetailPage .listItem,
-.layout-tv #itemDetailPage .listItem {
-  background: #00000080;
+@keyframes fadeContainer {
+    from { opacity: 0.5; }
+    to   { opacity: 1; }
 }
 
-.layout-desktop #listChildrenCollapsible #childrenContent .itemsContainer:has(.listItem[data-type="Episode"]) .listViewUserDataButtons, .layout-tv #listChildrenCollapsible #childrenContent .itemsContainer:has(.listItem[data-type="Episode"]) .listViewUserDataButtons {
-  background: transparent !important;
+.itemsContainer.padded-left {
+	position: top;
+	z-index: 1;
 }
 
-.layout-desktop #listChildrenCollapsible.verticalSection-extrabottompadding #childrenContent .itemsContainer.padded-right.vertical-list .listItem.listItem-largeImage.listItem-withContentWrapper .listItem-content .listItemBody.itemAction, .layout-tv #listChildrenCollapsible.verticalSection-extrabottompadding #childrenContent .itemsContainer.padded-right.vertical-list .listItem.listItem-largeImage.listItem-withContentWrapper .listItem-content .listItemBody.itemAction {
-  background: transparent;
-}
-
-.countIndicator, 
-.playedIndicator {
-  background: #000;
+.itemsContainer.padded-left::before {
+	content: '';
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background-size: cover;
+	opacity: 1;
+	z-index: -1;
+	animation: fadeContainer 7s ease-out 0s forwards;
 }
 
 .sectionTitleContainer.sectionTitleContainer-cards.padded-left::before {
@@ -38,6 +44,30 @@
 	z-index: 2;
 }
 
+.backgroundContainer.withBackdrop {
+  background-color: rgba(0, 0, 0, 0);
+  filter: saturate(0%);
+}
+
+@supports (backdrop-filter: blur(15px)) {
+  .dialog, .mainDrawer, .toast, .appfooter {
+    backdrop-filter: blur(15px);
+    background-color: #000a;
+  }
+}
+
+.raised, .fab, a[data-role="button"] {
+  background: #000;
+  transition: all 0.2s !important;
+  border: 1px solid white;
+  font-weight: 900;
+}
+
+
+.collapseContent, .formDialogFooter:not(.formDialogFooter-clear), .formDialogHeader:not(.formDialogHeader-clear), .paperList, .visualCardBox {
+  background-color: #000a;
+}
+
 .detailPagePrimaryContainer::before {
 	content: '';
 	position: absolute;
@@ -45,10 +75,11 @@
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: #000000e3;
+	background: #000;
 	background-size: cover;
 	opacity: 1;
 	z-index: -1;
+	animation: fadeContainer 7s ease-out 0s forwards;
 }
 
 .detailPageSecondaryContainer {
@@ -63,15 +94,102 @@
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: #000000e3;
+	background: #000;
 	background-size: cover;
 	opacity: 1;
 	z-index: -1;
+	animation: fadeContainer 7s ease-out 0s forwards;
+}
+
+.layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .itemsContainer.padded-left::before,
+.layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .itemsContainer.padded-left::before,
+.layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .detailPagePrimaryContainer::before,
+.layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .detailPagePrimaryContainer::before,
+.layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .detailPageSecondaryContainer::before,
+.layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .detailPageSecondaryContainer::before,
+.layout-desktop .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) .itemsContainer.padded-left::before,
+.layout-tv .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) .itemsContainer.padded-left::before,
+.layout-desktop .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) .detailPagePrimaryContainer::before,
+.layout-tv .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) .detailPagePrimaryContainer::before,
+.layout-desktop .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) .detailPageSecondaryContainer::before,
+.layout-tv .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) .detailPageSecondaryContainer::before {
+	animation: none !important;
+}
+
+.layout-desktop .detailRibbon::before, 
+.layout-tv .detailRibbon::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #070707;
+    background-size: auto;
+  background-size: auto;
+  background-size: cover;
+  z-index: -1;
+  width: 100vw;
+}
+
+.layout-desktop .mainDetailButtons.focuscontainer-x::before, 
+.layout-tv .mainDetailButtons.focuscontainer-x::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 21.4em;
+  height: 2.557777em;
+  background-size: cover;
+  background: #070707;
+  border-top-right-radius: 1em;
+  margin: 1.25em 0;
+  padding-top: 18.8em;
+  border-top-left-radius: 1em;
+  top: -1.25em;
+  box-shadow: 0px 2px 8px #0005;
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+}
+
+.layout-desktop .page.libraryPage.itemDetailPage.noSecondaryNavPage.selfBackdropPage.mainAnimatedPage::before, 
+.layout-tv .page.libraryPage.itemDetailPage.noSecondaryNavPage.selfBackdropPage.mainAnimatedPage::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: transparent;
+    background-attachment: scroll;
+    background-size: auto;
+  background-size: cover;
+  opacity: 1;
+  z-index: -1;
+  background-attachment: fixed;
+  pointer-events: none;
+  backdrop-filter: saturate(0%) brightness(66%) contrast(133%);
+}
+
+.layout-desktop #itemDetailPage .infoWrapper .nameContainer .parentName.focuscontainer-x:hover {
+  color: var(--accentBlack) !important;
+}
+
+.layout-desktop #itemDetailPage .nameContainer .itemName.infoText.subtitle.focuscontainer-x .button-link.itemAction.emby-button[data-action="link"],
+.layout-tv #itemDetailPage .nameContainer .itemName.infoText.subtitle.focuscontainer-x .button-link.itemAction.emby-button[data-action="link"]  {
+  color: var(--accentBlack) !important;
+}
+
+.listItemImage:hover {
+  box-shadow: 0px 0px 350px #5b00ff6b;
+}
+
+.layout-desktop #itemDetailPage .listItem:hover, .layout-tv #itemDetailPage .listItem:hover {
+  box-shadow: 0px 0px 5px #fff9;
+  background: #070707;
 }
 
 .raised.homeLibraryButton {
 	box-shadow: 0px 0px 1px rgb(255, 255, 255) !important;
-	border: solid 1px rgba(var(--accent),0) !important;
+	border: solid 1px var(--accentBlack) !important;
 }
 
 .raised.homeLibraryButton:hover,.emby-tab-button:hover, .textareaLabelFocused, .buttonActive {
@@ -80,12 +198,12 @@
 }
 
 .button-flat:hover, .paper-icon-button-light:hover { 
-	color: #473391 !important;
+	color: rgb(255, 255, 255) !important;
 }
 
 .cardOverlayContainer:hover, .dialog, .toast, .raised.homeLibraryButton:hover {
 	box-shadow: 0px 0px 5px rgb(255, 255, 255);
-	border: solid 1px rgba(var(--accent),0);
+	border: solid 1px var(--accentBlack);
 }
 
 .mainDrawer-scrollContainer.scrollContainer .navMenuOption:hover, .mainDrawer-scrollContainer.scrollContainer .navMenuOption:hover emby-button, button.is-emby-button:hover emby-button {
@@ -117,6 +235,91 @@
 .subtitleList .listItem:hover .listItemBody {
 	color: #fff;
 }
+
+.mdl-slider::-webkit-slider-thumb,
+.mdl-slider .mdl-slider::-webkit-slider-thumb {
+  background: var(--accentBlack) !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.mdl-slider::-moz-range-thumb,
+.mdl-slider .mdl-slider::-moz-range-thumb {
+  background: var(--accentBlack) !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+.mdl-slider::-ms-thumb,
+.mdl-slider .mdl-slider::-ms-thumb {
+  background: var(--accentBlack) !important;
+  border: none !important;
+}
+
+.mdl-slider .mdl-slider-background-lower[style] {
+  background: var(--accentBlack) !important;
+  background-color: var(--accentBlack) !important;
+}
+
+.mdlSpinnerActive .mdl-spinner__circleLeft {
+  -webkit-animation: mdl-spinner__left-spin 1333ms cubic-bezier(.4,0,.2,1) infinite both;
+  animation: mdl-spinner__left-spin 1333ms cubic-bezier(.4,0,.2,1) infinite both;
+  border: 0.5em solid: var(--accentBlack);
+}
+
+.button-flat:hover {
+  background: transparent !important;
+  color: var(--accentBlack) !important;
+}
+
+.paper-icon-button-light:hover,
+.raised.homeLibraryButton:hover,
+.button-flat:hover,
+.playstatebutton-icon-played,
+.paper-icon-button-light:hover:not(:disabled),
+.emby-tab-button:hover,
+.selectLabelFocused,
+.inputLabelFocused,
+.textareaLabelFocused,
+.buttonActive,
+.button-link {
+  color: var(--accentBlack);
+}
+
+.material-icons.detailButton-icon.favorite.ratingbutton-icon-withrating:hover {
+    color: var(--accentBlack);
+    transition: color 1s;
+}
+
+.itemProgressBarForeground {
+  background: var(--accentBlack);
+}
+
+.upNextContainer .raised {
+  background: var(--accentBlack);
+  border: transparent;
+  padding: 0.8em;
+  padding-left: 2em;
+  padding-right: 2em;
+  margin-left: 0;
+}
+
+.layout-tv #itemDetailPage .emby-button.show-focus:focus {
+  border: solid 1px #fff;
+  background: transparent !important;
+  color: var(--accentBlack) !important;
+  width:auto;
+  height: auto;
+  transform: scale(1);
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  box-shadow: 0px 0px 5px #fff9;
+}
+
+.raised.homeLibraryButton:hover, .emby-tab-button:hover, .textareaLabelFocused, .buttonActive {
+  color: rgb(255, 255, 255) !important;
+  box-shadow: 0px 0px 5px rgb(255, 255, 255) !important;
+}
+
 .subtitleResults .listItem:hover .listItemBodyText {
   color: #fff;
 }
@@ -142,12 +345,12 @@
 }
 
 .layout-desktop .mainDetailButtons.focuscontainer-x .button-flat:hover, .layout-tv .mainDetailButtons.focuscontainer-x .button-flat:focus {
-	background: #404040 !important;
 }
 
-.headerTabs.sectionTabs:hover .emby-button {
-	color: #fff !important;
-	box-shadow: none !important;
+.innerCardFooter, .countIndicator, .playedIndicator {
+	background: linear-gradient(to right, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.95) 100%);
+	box-shadow: none;
+	color: rgb(--accentBlack);
 }
 
 #loginPage {
@@ -167,16 +370,18 @@
 	background-size: auto;
 	background-size: cover;
 	opacity: 1;
+	backdrop-filter: saturate(0%) contrast(200%);
 	z-index: -1;
 	background-attachment: fixed;
 }
 
 .layout-desktop .mainDetailButtons.focuscontainer-x {
-        background: #000000de;
-        background-size: auto;
-        background-size: cover;
-        opacity: 1;
-        z-index: -1;
+	background: #000000ba;
+	background-size: auto;
+	background-size: cover;
+	opacity: 1;
+	z-index: -1;
+	border-radius: var(--rounding);
 }
 
 .backgroundContainer, .preload {
@@ -185,30 +390,9 @@
 
 @media (hover: hover) and (pointer: fine) {
 	.paper-icon-button-light:hover:not(:disabled) {
+		color: var(--accentBlack) !important;
 		background-color: rgba(199, 199, 199, 0.2);
 	}
-}
-
-.paper-icon-button-light:active:not(:disabled),
-.paper-icon-button-light.show-focus:focus,
-.inputLabelFocused,
-.selectLabelFocused,
-.textareaLabelFocused,
-.upNextDialog-countdownText,
-.button-flat:hover,
-.button-link,
-.emby-select-withcolor:focus,
-.emby-tab-button.show-focus:focus,
-.emby-tab-button:hover,
-.guide-date-tab-button.emby-tab-button-active,
-.guide-date-tab-button:focus,
-.buttonActive,
-.metadataSidebarIcon,
-.layout-tv .emby-button.detailFloatingButton:focus,
-#dialogToc .bookplayerButtonIcon:hover,
-#dialogToc .toc li a:active,
-#dialogToc .toc li a:hover {
-	color: #fff !important;
 }
 
 .alphaPickerButton-tv:focus,
@@ -220,8 +404,10 @@
 .alphaPickerButton-tv:focus,
 .emby-select-tv-withcolor:focus,
 .emby-checkbox:checked + span + .checkboxOutline,
-.itemProgressBarForeground {
-	background-color: rgba(var(--accent)) !important;
+.itemProgressBarForeground,
+.textActionButton:hover,
+ {
+	background-color: var(--accentBlack) !important;
 }
 
 .progressring-spiner,
@@ -232,7 +418,7 @@
 .emby-checkbox:focus:not(:checked) + span + .checkboxOutline,
 .card:focus .cardBox.visualCardBox,
 .card:focus .cardBox:not(.visualCardBox) .cardScalable {
-	border-color: rgba(var(--accent)) !important;
+	border-color: var(--accentBlack) !important;
 } 
 
 #nowPlayingPage .remoteControlContent.padded-left.padded-right.padded-bottom.hideVideoButtons::before {
@@ -251,12 +437,6 @@
 	background: #0008;
 }
 
-@media (min-width: 60em) {
-	.headerTabs.sectionTabs .tabs-viewmenubar.emby-tabs.focusable.scrollX .emby-tab-button.emby-button {
-		background: #000000e0 !important;
-	}
-}
-
 .layout-desktop .headerRight,
 .layout-tv .headerRight {
 	background: #0008;
@@ -271,113 +451,42 @@
 	background: #000a;
 }
 
-.detailRibbon::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #00000096;
-    background-size: auto;
-  background-size: cover;
-  opacity: 1;
-  z-index: -1;
-}
-
-.layout-tv .mainDetailButtons.focuscontainer-x {
-  background: #000a;
-}
-
-.mainDrawer {
-  background-color: #000a;
-}
-
-.layout-desktop .page.libraryPage.itemDetailPage.noSecondaryNavPage.selfBackdropPage.mainAnimatedPage::before,
-.layout-tv .page.libraryPage.itemDetailPage.noSecondaryNavPage.selfBackdropPage.mainAnimatedPage::before {
-	content: '';
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100vh;
-	background: linear-gradient( 90deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.76) 25%, rgba(0, 0, 0, 0.54) 33%, rgba(0, 0, 0, 0) 40% );
-	background-size: cover;
-	opacity: 1;
-	z-index: -1;
-	background-attachment: fixed;
-	pointer-events: none;
-}
-
-.layout-desktop .mainDetailButtons.focuscontainer-x::before, .layout-tv .mainDetailButtons.focuscontainer-x::before,
-.layout-tv .mainDetailButtons.focuscontainer-x::before, .layout-tv .mainDetailButtons.focuscontainer-x::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  width: 19.15em;
-  height: 2.557777em;
-  background-size: cover;
-  background: #000000de;
-  border-top-right-radius: 1em;
-  margin: 1.25em 0;
-  padding-top: 14em;
-  border-top-left-radius: 1em;
-  top: -1.25em;
-}
-
-.layout-desktop .detailRibbon::before, .layout-tv .detailRibbon::before,
-.layout-tv .detailRibbon::before, .layout-tv .detailRibbon::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  background: #0b0b0bcf;
-    background-size: auto;
-  background-size: auto;
-  background-size: cover;
-  z-index: -1;
-  width: 100vw;
-}
-
-@supports (backdrop-filter: blur(15px)) {
-  .dialog, .mainDrawer, .toast, .appfooter {
-    backdrop-filter: blur(15px);
-    background-color: #000000de;
+@media (min-width: 70em) {
+  .headerTabs.sectionTabs .tabs-viewmenubar.emby-tabs.focusable.scrollX .emby-tab-button.emby-button.emby-tab-button-active.lastFocused {
+    background: #fff;
+    padding: 0.656em 1em 0.656em;
+    border-radius: 0.25em;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    border: 1px solid transparent;
+    color: #000;
   }
 }
 
-.raised, .fab, a[data-role="button"] {
-  background: #000000de;
-  transition: all 0.2s !important;
-  border: 1px solid white;
-  font-weight: 900;
+@media (min-width: 70em) {
+  .headerTabs.sectionTabs .tabs-viewmenubar.emby-tabs.focusable.scrollX .emby-tab-button.emby-button {
+    padding: 0.656em 1em 0.656em;
+    border-radius: 0.25em;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    border: 1px solid #62626287;
+    margin-bottom: 1em;
+  }
 }
 
-.collapseContent, .formDialogFooter:not(.formDialogFooter-clear), .formDialogHeader:not(.formDialogHeader-clear), .paperList, .visualCardBox {
-  background-color: #000000de;
+.headerTabs.sectionTabs .tabs-viewmenubar.emby-tabs.focusable.scrollX .emby-tab-button.emby-button.emby-tab-button-active {
+background: #fff;
+padding: 0.656em 1em 0.656em;
+border-radius: 0.25em;
+margin-left: 1vw;
+margin-right: 1vw;
+border: 1px solid transparent;
+color: #000;
 }
 
-.layout-desktop #scenesContent .innerCardFooter, .layout-tv #scenesContent .innerCardFooter {
-  background: #000d;
-}
-
-.paper-icon-button-light:hover, .raised.homeLibraryButton:hover, .button-flat:hover, .playstatebutton-icon-played, .paper-icon-button-light:hover:not(:disabled), .emby-tab-button:hover, .selectLabelFocused, .inputLabelFocused, .textareaLabelFocused, .buttonActive, .button-link {
-  color: var(--accent);
-}
-
-.defaultCardBackground1 {
-  background-color: #91919169;
-}
-.defaultCardBackground2 {
-  background-color: #6a6a6a69;
-}
-.defaultCardBackground3 {
-  background-color: #7e7e7e69;
-}
-.defaultCardBackground4 {
-  background-color: #51515169;
-}
-.defaultCardBackground5 {
-  background-color: #29292969;
+.itemsContainer > .card > .cardBox {
+  margin-left: 0.6em !important;
+  margin-right: 0.2em !important;
+  background: #00000059;
+  border-radius: var(--rounding);
 }
