@@ -13,10 +13,16 @@ Just paste an import line into your "Dashboard > Branding > CSS" section, or "Us
 
 # Homepage 
 ### Colour version with [Home Screen Sections](https://github.com/IAmParadox27/jellyfin-plugin-home-sections) / [Featured Content Bar](https://github.com/tedhinklater/Jellyfin-Featured-Content-Bar) / [Jellyfin Enhanced](https://github.com/n00bcodr/Jellyfin-Enhanced)
-![homepage](https://github.com/user-attachments/assets/d42bc0d8-5659-447e-8385-3b1e48bcd202)
 
-# Show, Season & Player
-![shows](https://github.com/user-attachments/assets/4981eb38-f126-4329-9627-b600d7237e6e)
+<img width="74%" alt="1d" src="https://github.com/user-attachments/assets/cfa9a16e-7fcb-4ff9-a77d-006f88c70506" /> <img width="21.5%" alt="1m" src="https://github.com/user-attachments/assets/82cff510-0739-4b0f-8d25-d24a57640d4d" />
+<img width="74.5%" alt="2d" src="https://github.com/user-attachments/assets/da877575-02ae-48a4-8182-cffbef0a514d" /><img width="21.5%" alt="2m" src="https://github.com/user-attachments/assets/36b3154f-2823-45b9-9ed8-d99f848873dc" />
+![output](https://github.com/user-attachments/assets/c0c9402e-7285-49fb-8d53-b20b7e10f411) <img width="21%" alt="3m" src="https://github.com/user-attachments/assets/e9a46647-4e75-4582-8778-729b1865b893" />
+<img  width="74%"  alt="4d" src="https://github.com/user-attachments/assets/9d3de93d-1e8a-45ee-9117-6e0f246a8945" /><img width="21.5%" alt="4m" src="https://github.com/user-attachments/assets/80dba655-45de-4b4f-8af3-1471fe580096" />
+<img  width="74%"  alt="5d" src="https://github.com/user-attachments/assets/a4f31521-1f01-4234-9a62-dc5e1cf8cef2" /><img width="21.5%" alt="5m" src="https://github.com/user-attachments/assets/2fca04ec-9c84-478e-a636-0bfb2f0e75f2" />
+<img  width="74%"  alt="6d" src="https://github.com/user-attachments/assets/45f7d80c-83fb-452c-a0ca-d1055ab8322f" /><img width="21.5%" alt="6m" src="https://github.com/user-attachments/assets/88843ffb-9388-46f8-9141-69da51b65ed6" />
+<img  width="74%"  alt="7d" src="https://github.com/user-attachments/assets/593b6b5f-3acb-454d-b1ba-a7499a35ce54" /><img width="21.5%" alt="7m" src="https://github.com/user-attachments/assets/7e3eb784-e4fc-46cc-b563-89fc7118df9d" />
+<img  width="74%"  alt="8d" src="https://github.com/user-attachments/assets/8e26cfb6-6494-499a-81f1-26aad42067ad" /><img width="21.5%" alt="8m" src="https://github.com/user-attachments/assets/da91faff-aec1-4030-b522-fb09e7b35826" />
+
 
 If you want it without the animations, add this line 
 
