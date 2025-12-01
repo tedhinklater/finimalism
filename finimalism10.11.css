@@ -3908,7 +3908,7 @@ content: '';
   .layout-mobile .detailLogo {
     position: absolute;
     left: 61vw;
-    top: 15em;
+    top: 12em;
     transform: translate(-50%, -50%);
     display: block;
     -webkit-filter: drop-shadow(0 0 10px rgba(2, 2, 2, 0.75));
