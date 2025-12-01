@@ -274,7 +274,6 @@
 .paper-icon-button-light:hover,
 .raised.homeLibraryButton:hover,
 .button-flat:hover,
-.playstatebutton-icon-played,
 .paper-icon-button-light:hover:not(:disabled),
 .emby-tab-button:hover,
 .selectLabelFocused,
@@ -283,6 +282,20 @@
 .buttonActive,
 .button-link {
   color: var(--accentBlack);
+}
+
+.cardOverlayButton-hover .playstatebutton-icon-played {
+  color: var(--accentBlack);
+	background: #fff !important;
+  right: -0.19em;
+  width: 1.37em !important;
+  height: 1.37em !important;
+}
+
+.countIndicator, 
+.playedIndicator,
+.innerCardFooter {
+  background: var(--accentBlack);
 }
 
 .material-icons.detailButton-icon.favorite.ratingbutton-icon-withrating:hover {
@@ -345,12 +358,6 @@
 }
 
 .layout-desktop .mainDetailButtons.focuscontainer-x .button-flat:hover, .layout-tv .mainDetailButtons.focuscontainer-x .button-flat:focus {
-}
-
-.innerCardFooter, .countIndicator, .playedIndicator {
-	background: linear-gradient(to right, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.95) 100%);
-	box-shadow: none;
-	color: rgb(--accentBlack);
 }
 
 #loginPage {
