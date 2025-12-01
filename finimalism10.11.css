@@ -3779,6 +3779,7 @@ content: '';
 }
 
 .layout-mobile body {
+  font-size: 10pt;
 }
 
 .layout-mobile div.itemMiscInfo.itemMiscInfo-primary {
@@ -3864,22 +3865,19 @@ content: '';
 
 @media (orientation: portrait) {
     .layout-mobile #itemDetailPage .detailLogo {
-    position: static;
-    margin-left: 40%;
-    display: block;
+    position: absolute;
     -webkit-filter: drop-shadow(0 0 10px rgba(2, 2, 2, 0.75));
     filter: drop-shadow(0 0 10px rgba(2, 2, 2, 0.75));
-    flex-shrink: 0;
-    background-position: 0 70%;
-    margin-top: -18vh;
-    margin-bottom: 1vh;
-    width: 50vw;
+    display: block;
+    top: 25vh;
+    right: 1vh;
+    width: 45vw;
   }
 }
 
 @media (orientation: portrait) {
   .itemDetailPage {
-    padding-top: 50vh !important;
+    padding-top: 0 !important;
   }
 }
 
@@ -3962,13 +3960,6 @@ content: '';
 @media (max-width: 750px)  and (orientation: landscape) {
   .layout-mobile .detailPagePrimaryContainer {
     padding-right: 11vw;
-  }
-}
-
-@media (max-width: 50em) {
-  .layout-mobile .detailImageContainer .card {
-    bottom: 0;
-    left: 5%;
   }
 }
 
@@ -4245,6 +4236,7 @@ content: '';
 
 .layout-mobile .detailRibbon {
   background: rgba(32,32,32,0);
+  margin-top: 50vh;
 }
 
 
@@ -4281,7 +4273,7 @@ content: '';
 
 @media (orientation: landscape) {
   .layout-mobile .itemDetailPage {
-    padding-top: calc(100vh - 13em) !important;
+    padding-top: calc(100vh - 29em) !important;
   }
 }
 
@@ -4333,8 +4325,8 @@ content: '';
 
 
 @media (orientation: portrait) {
-  .layout-mobile div.itemMiscInfo.itemMiscInfo-primary {
-    width: 60vw;
+   .layout-mobile div.itemMiscInfo.itemMiscInfo-primary {
+    width: 98vw;
     margin-left: 0vw;
     justify-items: center;
   }
@@ -4418,4 +4410,29 @@ content: '';
   -webkit-line-clamp: 3;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+@media (max-width: 32em) and (orientation: portrait) {
+  .layout-mobile .detailImageContainer .card {
+    position: absolute;
+    left: 1vw;
+    top: unset;
+    bottom: 23vh;
+    right: unset;
+    margin-top: -40vh;
+    transform: none;
+    width: 25vh;
+    max-width: 50vw;
+  }
+}
+
+.layout-mobile [dir="ltr"] .infoWrapper {
+  padding: 1vw;
+  max-width: 98%;
+}
+
+@media (orientation: landscape) {
+  .layout-mobile [dir="ltr"] .infoWrapper {
+  max-width: 77%;
+  padding-left: 23vw;
 }
