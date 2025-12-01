@@ -202,8 +202,8 @@
 }
 
 .cardOverlayContainer:hover, .dialog, .toast, .raised.homeLibraryButton:hover {
-	box-shadow: 0px 0px 5px rgb(255, 255, 255);
-	border: solid 1px var(--accentBlack);
+  box-shadow: 0px 0px 5px rgb(255, 255, 255);
+  border: solid 1px #fff;
 }
 
 .mainDrawer-scrollContainer.scrollContainer .navMenuOption:hover, .mainDrawer-scrollContainer.scrollContainer .navMenuOption:hover emby-button, button.is-emby-button:hover emby-button {
@@ -512,4 +512,8 @@ color: #000;
 .defaultCardBackground4,
 .defaultCardBackground5 {
   background-color: #2d0000ba;
+}
+
+.mdl-slider-background-lower {
+  background-color: var(--accentBlack);
 }
