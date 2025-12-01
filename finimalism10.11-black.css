@@ -298,6 +298,10 @@
   background: var(--accentBlack);
 }
 
+.paper-icon-button-light:hover, .raised.homeLibraryButton:hover, .button-flat:hover, .playstatebutton-icon-played, .paper-icon-button-light:hover:not(:disabled), .emby-tab-button:hover, .selectLabelFocused, .inputLabelFocused, .textareaLabelFocused, .buttonActive, .button-link {
+  color: var(--accentBlack);
+}
+
 .material-icons.detailButton-icon.favorite.ratingbutton-icon-withrating:hover {
     color: var(--accentBlack);
     transition: color 1s;
@@ -498,4 +502,12 @@ color: #000;
   margin-right: 0.2em !important;
   background: #00000059;
   border-radius: var(--rounding);
+}
+
+.defaultCardBackground1,
+.defaultCardBackground2,
+.defaultCardBackground3,
+.defaultCardBackground4,
+.defaultCardBackground5 {
+  background-color: #2d0000ba;
 }
