@@ -71,6 +71,10 @@ html {
   z-index: -1;
 }
 
+.layout-mobile .detailPagePrimaryContainer::before {
+  backdrop-filter: blur(1px);
+}
+
 .detailPageSecondaryContainer {
   position: relative;
   z-index: 1;
@@ -87,6 +91,10 @@ html {
   background-size: cover;
   opacity: 1;
   z-index: -1;
+}
+
+.layout-mobile .detailPagePrimaryContainer::before {
+  backdrop-filter: blur(1px);
 }
 
 .headerTop {
@@ -3279,7 +3287,7 @@ content: '';
   height: 0vh;
 }
 
-.layout-desktop .detailPageWrapperContainer {
+.detailPageWrapperContainer {
   min-height: 100vh;
 }
 
@@ -3818,7 +3826,6 @@ content: '';
 }
 
 .layout-mobile .itemName.infoText.parentNameLast {
-  padding-bottom: 0.25em;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
@@ -4163,10 +4170,10 @@ content: '';
   .layout-mobile [dir="ltr"] .mainDetailButtons {
     margin-bottom: 0;
     padding-left: 0em;
-    margin-top: 1em;
+    margin-top: 0.5em;
     width: 100vw;
     justify-content: space-evenly;
-    margin-left: -1em;
+    margin-left: 0em;
   }
 }
   
@@ -4243,7 +4250,7 @@ content: '';
   .layout-mobile .itemDetailsGroup .writers.content.focuscontainer-x,
   .layout-mobile .itemDetailsGroup .genres.content.focuscontainer-x {
     margin-left: 50%;
-    transform: translateX(-36%);
+    transform: translateX(-27%);
     width: 50%;
     max-width: 50%;
   }
@@ -4353,12 +4360,13 @@ content: '';
   margin: 0 0em 0 0;
   margin-top: 0.5em;
   margin-bottom:0.5em;
+  min-width: 14%;
 }
 
 
 @media (orientation: portrait) {
    .layout-mobile div.itemMiscInfo.itemMiscInfo-primary {
-    width: 98vw;
+    width: 100vw;
     margin-left: 0vw;
     justify-items: center;
   }
@@ -4462,7 +4470,7 @@ content: '';
   .layout-mobile .detailImageContainer .card.backdropCard,
   .layout-mobile .detailImageContainer .card.squareCard {
     position: absolute;
-    left: 1.5vw;
+    left: 1vw;
     top: -18em;
     bottom: unset;
     right: unset;
@@ -4487,7 +4495,7 @@ content: '';
 
 @media (max-width: 100em) and (orientation: landscape) {
   .layout-mobile .detailImageContainer .card.portraitCard {
-    left: 2vw;
+    left: 3vw;
     top: -5em !important;
     bottom: unset;
     right: unset;
@@ -4520,7 +4528,7 @@ content: '';
 }
 
 .layout-mobile [dir="ltr"] .infoWrapper {
-  padding: 1vw;
+  padding: 0vw;
   max-width: 100%;
   width: 100%;
 }
