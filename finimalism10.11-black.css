@@ -6,10 +6,10 @@
 
 /* Backdrop */
 .backgroundContainer {
-	background: #000;
-	-webkit-background-size: cover;
-	background-size: cover;
-	opacity: 0;
+  background: #000;
+  -webkit-background-size: cover;
+  background-size: cover;
+  opacity: 0;
 }
 
 @keyframes fadeContainer {
@@ -18,30 +18,30 @@
 }
 
 .itemsContainer.padded-left {
-	position: top;
-	z-index: 1;
+  position: top;
+  z-index: 1;
 }
 
 .itemsContainer.padded-left::before {
-	content: '';
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100vh;
-	background-size: cover;
-	opacity: 1;
-	z-index: -1;
-	animation: fadeContainer 7s ease-out 0s forwards;
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  opacity: 1;
+  z-index: -1;
+  animation: fadeContainer 7s ease-out 0s forwards;
 }
 
 .sectionTitleContainer.sectionTitleContainer-cards.padded-left::before {
-	backdrop-filter: saturate(0%) !important;
+  backdrop-filter: saturate(0%) !important;
 }
 
 .detailPagePrimaryContainer {
-	position: relative;
-	z-index: 2;
+  position: relative;
+  z-index: 2;
 }
 
 .backgroundContainer.withBackdrop {
@@ -69,36 +69,36 @@
 }
 
 .detailPagePrimaryContainer::before {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: #000;
-	background-size: cover;
-	opacity: 1;
-	z-index: -1;
-	animation: fadeContainer 7s ease-out 0s forwards;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  background-size: cover;
+  opacity: 1;
+  z-index: -1;
+  animation: fadeContainer 7s ease-out 0s forwards;
 }
 
 .detailPageSecondaryContainer {
-	position: relative;
-	z-index: 1;
+  position: relative;
+  z-index: 1;
 }
 
 .detailPageSecondaryContainer::before {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: #000;
-	background-size: cover;
-	opacity: 1;
-	z-index: -1;
-	animation: fadeContainer 7s ease-out 0s forwards;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  background-size: cover;
+  opacity: 1;
+  z-index: -1;
+  animation: fadeContainer 7s ease-out 0s forwards;
 }
 
 .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .itemsContainer.padded-left::before,
@@ -113,7 +113,7 @@
 .layout-tv .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) .detailPagePrimaryContainer::before,
 .layout-desktop .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) .detailPageSecondaryContainer::before,
 .layout-tv .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) .detailPageSecondaryContainer::before {
-	animation: none !important;
+  animation: none !important;
 }
 
 .layout-desktop .detailRibbon::before, 
@@ -184,21 +184,21 @@
 
 .layout-desktop #itemDetailPage .listItem:hover, .layout-tv #itemDetailPage .listItem:hover {
   box-shadow: 0px 0px 5px #fff9;
-  background: #070707;
+  background: #07070785;
 }
 
 .raised.homeLibraryButton {
-	box-shadow: 0px 0px 1px rgb(255, 255, 255) !important;
-	border: solid 1px var(--accentBlack) !important;
+  box-shadow: 0px 0px 1px rgb(255, 255, 255) !important;
+  border: solid 1px var(--accentBlack) !important;
 }
 
 .raised.homeLibraryButton:hover,.emby-tab-button:hover, .textareaLabelFocused, .buttonActive {
-	color: rgb(0, 0, 0) !important;
-	box-shadow: 0px 0px 5px rgb(255, 255, 255) !important;
+  color: rgb(0, 0, 0) !important;
+  box-shadow: 0px 0px 5px rgb(255, 255, 255) !important;
 }
 
 .button-flat:hover, .paper-icon-button-light:hover { 
-	color: rgb(255, 255, 255) !important;
+  color: rgb(255, 255, 255) !important;
 }
 
 .cardOverlayContainer:hover, .dialog, .toast, .raised.homeLibraryButton:hover {
@@ -207,33 +207,33 @@
 }
 
 .mainDrawer-scrollContainer.scrollContainer .navMenuOption:hover, .mainDrawer-scrollContainer.scrollContainer .navMenuOption:hover emby-button, button.is-emby-button:hover emby-button {
-	background: #fff !important;
-	transition: background 0 !important;
-	color: #000 !important;
+  background: #fff !important;
+  transition: background 0 !important;
+  color: #000 !important;
 }
 
 #myPreferencesMenuPage .verticalSection-extrabottompadding .emby-button:hover,
 #myPreferencesMenuPage .verticalSection-extrabottompadding .emby-button .listItemBody:hover,
 #myPreferencesMenuPage .verticalSection-extrabottompadding .emby-button .listItem:hover {
-	background: #fff !important;
-	transition: background 0.3s ease;
-	color: #000 !important;
+  background: #fff !important;
+  transition: background 0.3s ease;
+  color: #000 !important;
 }
 
 .dialogContainer .listItem:hover .listItemBodyText {
-	color: #000;
+  color: #000;
 }
 
 .dialogContainer .listItem:hover .listItemAside {
-	color: #000d;
+  color: #000d;
 }
 
 #myPreferencesMenuPage .verticalSection-extrabottompadding .emby-button:hover .listItemBodyText {
-	color: black !important;
+  color: black !important;
 }
 
 .subtitleList .listItem:hover .listItemBody {
-	color: #fff;
+  color: #fff;
 }
 
 .mdl-slider::-webkit-slider-thumb,
@@ -344,7 +344,7 @@
 
 .layout-desktop .headerTabs.sectionTabs .emby-tab-button-active:hover,
 .layout-tv .headerTabs.sectionTabs .emby-tab-button-active:focus {
-	color: #000 !important;
+  color: #000 !important;
 }
 
 .subtitleResults .listItem:hover .listItemBodyText {
@@ -359,61 +359,61 @@
 }
 
 .verticalSection-extrabottompadding .emby-button {
-	transition: background 0.3s ease;
+  transition: background 0.3s ease;
 }
 
 .mainDrawer-scrollContainer.scrollContainer .navMenuOption:hover .navMenuOptionText {
-	color: #000 !important;
+  color: #000 !important;
 }
 
 .emby-select-withcolor > option {
-	color: inherit;
-	background: #000;
+  color: inherit;
+  background: #000;
 }
 
 .layout-desktop .mainDetailButtons.focuscontainer-x .button-flat:hover, .layout-tv .mainDetailButtons.focuscontainer-x .button-flat:focus {
 }
 
 #loginPage {
-	background: url(https://i.ibb.co/xnWbbLm/bg.jpg) !important; 
-	background-size: cover !important;
+  background: url(https://i.ibb.co/xnWbbLm/bg.jpg) !important; 
+  background-size: cover !important;
 }
 
 .pageTabContent.is-active::before {
-	content: '';
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100vh;
-	background: #000000db;
-	background-attachment: scroll;
-	background-size: auto;
-	background-size: cover;
-	opacity: 1;
-	backdrop-filter: saturate(0%) contrast(200%);
-	z-index: -1;
-	background-attachment: fixed;
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #000000db;
+  background-attachment: scroll;
+  background-size: auto;
+  background-size: cover;
+  opacity: 1;
+  backdrop-filter: saturate(0%) contrast(200%);
+  z-index: -1;
+  background-attachment: fixed;
 }
 
 .layout-desktop .mainDetailButtons.focuscontainer-x {
-	background: #000000ba;
-	background-size: auto;
-	background-size: cover;
-	opacity: 1;
-	z-index: -1;
-	border-radius: var(--rounding);
+  background: #000000ba;
+  background-size: auto;
+  background-size: cover;
+  opacity: 1;
+  z-index: -1;
+  border-radius: var(--rounding);
 }
 
 .backgroundContainer, .preload {
-	background-color: #000;
+  background-color: #000;
 }
 
 @media (hover: hover) and (pointer: fine) {
-	.paper-icon-button-light:hover:not(:disabled) {
-		color: var(--accentBlack) !important;
-		background-color: rgba(199, 199, 199, 0.2);
-	}
+  .paper-icon-button-light:hover:not(:disabled) {
+    color: var(--accentBlack) !important;
+    background-color: rgba(199, 199, 199, 0.2);
+  }
 }
 
 .alphaPickerButton-tv:focus,
@@ -426,11 +426,11 @@
 .emby-select-tv-withcolor:focus,
 .emby-checkbox:checked + span + .checkboxOutline,
 .itemProgressBarForeground {
-	background-color: var(--accentBlack) !important;
+  background-color: var(--accentBlack) !important;
 }
 
 .textActionButton:hover {
-	color: var(--accentBlack) !important;
+  color: var(--accentBlack) !important;
 }
 
 .progressring-spiner,
@@ -441,37 +441,37 @@
 .emby-checkbox:focus:not(:checked) + span + .checkboxOutline,
 .card:focus .cardBox.visualCardBox,
 .card:focus .cardBox:not(.visualCardBox) .cardScalable {
-	border-color: var(--accentBlack) !important;
+  border-color: var(--accentBlack) !important;
 } 
 
 #nowPlayingPage .remoteControlContent.padded-left.padded-right.padded-bottom.hideVideoButtons::before {
-	content: "";
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: #000c;
-	z-index: 0;
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000c;
+  z-index: 0;
 }
 
 .layout-desktop .headerLeft,
 .layout-tv .headerLeft {
-	background: #0008;
+  background: #0008;
 }
 
 .layout-desktop .headerRight,
 .layout-tv .headerRight {
-	background: #0008;
+  background: #0008;
 }
 
 .skip-button {
-	background: #000;
+  background: #000;
 }
 
 .layout-desktop .videoOsdBottom,
 .layout-tv .videoOsdBottom {
-	background: #000a;
+  background: #000a;
 }
 
 @media (min-width: 70em) {
