@@ -536,3 +536,15 @@ color: #000;
 .layout-desktop #itemDetailPage .listItem, .layout-tv #itemDetailPage .listItem {
   background: #070707;
 }
+
+.layout-desktop .nowPlayingInfoContainer, 
+.layout-tv .nowPlayingInfoContainer {
+  position: fixed;
+  top: 4em;
+  left: 1vw;
+  width: 96.7vw;
+  border-radius: var(--rounding);
+  padding: 1em;
+  box-shadow: 0px 2px 12px #000;
+  background: #0d0d0dbd;
+}
