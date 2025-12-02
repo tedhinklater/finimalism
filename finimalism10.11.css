@@ -3802,6 +3802,7 @@ content: '';
   text-align: center;
   padding-right: 0.5em;
   margin-left: 4%;
+  color: #eee !important;
 }
 
 .layout-mobile p.overview.detail-clamp-text {
@@ -4249,8 +4250,7 @@ content: '';
   .layout-mobile .itemDetailsGroup .studios.content.focuscontainer-x,
   .layout-mobile .itemDetailsGroup .writers.content.focuscontainer-x,
   .layout-mobile .itemDetailsGroup .genres.content.focuscontainer-x {
-    margin-left: 50%;
-    transform: translateX(-27%);
+    margin-left: 44%;
     width: 50%;
     max-width: 50%;
   }
@@ -4360,7 +4360,6 @@ content: '';
   margin: 0 0em 0 0;
   margin-top: 0.5em;
   margin-bottom:0.5em;
-  min-width: 14%;
 }
 
 
@@ -4369,6 +4368,7 @@ content: '';
     width: 100vw;
     margin-left: 0vw;
     justify-items: center;
+    color: #eee !important;
   }
 }
 
