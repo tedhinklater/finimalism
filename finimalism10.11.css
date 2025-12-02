@@ -2811,6 +2811,7 @@ content: '';
 
 .layout-desktop .listItem[data-type="Audio"] {
   width: 97%;
+  margin-left: 0.25vw;
 }
 
 .layout-desktop .playlistSection,
