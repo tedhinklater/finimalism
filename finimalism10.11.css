@@ -1762,35 +1762,37 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
   margin-bottom: 0em;
 }
 
+
+@media (min-width: 70em) {
+  .headerTabs.sectionTabs .tabs-viewmenubar.emby-tabs.focusable.scrollX .emby-tab-button.emby-button.emby-tab-button-active.lastFocused {
+    background: #fff;
+    padding: 0.656em 1em 0.656em;
+    border-radius: 0.25em;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    border: 1px solid transparent;
+    color: #000;
+  }
+}
+
 @media (min-width: 70em) {
   .headerTabs.sectionTabs .tabs-viewmenubar.emby-tabs.focusable.scrollX .emby-tab-button.emby-button {
     padding: 0.656em 1em 0.656em;
     border-radius: 0.25em;
-    margin-top: 0.2em;
     margin-left: 1vw;
     margin-right: 1vw;
-    border: 1px solid #110e1e52;
+    border: 1px solid #62626287;
     margin-bottom: 1em;
   }
-  
-  .headerTabs.sectionTabs .tabs-viewmenubar.emby-tabs.focusable.scrollX .emby-tab-button.emby-button.emby-tab-button-active {
-    background: #110e1e87;
-    padding: 0.656em 1em 0.656em;
-    border-radius: 0.25em;
-    margin-top: 0em;
-    margin-left: 1vw;
-    margin-right: 1vw;
-    border: 1px solid transparent;
-  }
 
-  .headerTabs.sectionTabs .tabs-viewmenubar.emby-tabs.focusable.scrollX .emby-tab-button.emby-button.emby-tab-button-active.lastFocused {
-    background: #110e1e87;
+  .headerTabs.sectionTabs .tabs-viewmenubar.emby-tabs.focusable.scrollX .emby-tab-button.emby-button.emby-tab-button-active {
+    background: #fff;
     padding: 0.656em 1em 0.656em;
     border-radius: 0.25em;
-    margin-top: 0em;
     margin-left: 1vw;
     margin-right: 1vw;
     border: 1px solid transparent;
+    color: #000;
   }
 
   .headerTabs.sectionTabs .tabs-viewmenubar.emby-tabs.focusable.scrollX .emby-tab-button.emby-button .emby-button-foreground {
