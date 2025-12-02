@@ -2833,6 +2833,7 @@ content: '';
   border-radius: var(--rounding);
   padding: 1em;
   box-shadow: 0px 2px 12px #000;
+  background: #110e1ebd;
 }
 
 .layout-desktop .playlistSectionButton, 
