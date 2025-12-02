@@ -3697,6 +3697,12 @@ content: '';
     line-height: 20px;
 }
 
+.layout-desktop.trackSelections .selectLabel::before,
+.layout-tv .trackSelections .selectLabel::before {
+    font-size: 1vw;
+    line-height: 1vh;
+}
+
 .selectSourceContainer .selectLabel::before {
     content: "inventory_2";
     font-family: "Material Icons";
