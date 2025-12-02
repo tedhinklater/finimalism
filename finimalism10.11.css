@@ -1773,9 +1773,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
     border: 1px solid transparent;
     color: #000;
   }
-}
-
-@media (min-width: 70em) {
+  
   .headerTabs.sectionTabs .tabs-viewmenubar.emby-tabs.focusable.scrollX .emby-tab-button.emby-button {
     padding: 0.656em 1em 0.656em;
     border-radius: 0.25em;
