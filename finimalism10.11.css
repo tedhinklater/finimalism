@@ -2819,8 +2819,8 @@ content: '';
   width: 82%;
   margin-left: 16%;
   position: fixed;
-  top: 22em;
-  height: calc(100vh - 22em);
+  top: 26em;
+  height: calc(100vh - 26em);
   overflow-y: scroll;
 }
 
@@ -2829,15 +2829,21 @@ content: '';
   position: fixed;
   top: 4em;
   left: 1vw;
-  width: 96vw;
+  width: 96.7vw;
+  border-radius: var(--rounding);
+  padding: 1em;
+  box-shadow: 0px 2px 12px #000;
 }
 
 .layout-desktop .playlistSectionButton, 
 .layout-tv .playlistSectionButton {
   background: none;
   color: inherit;
-  width: 98.25%;
-  gap: 2.1%;
+  width: 19.6em;
+  justify-content: space-evenly;
+  position: fixed;
+  left: 2vw;
+  top: 27.1em;
 }
 
 .layout-desktop #scenesContent .innerCardFooter,
