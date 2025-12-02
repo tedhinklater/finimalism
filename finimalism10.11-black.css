@@ -295,12 +295,9 @@
 }
 
 .countIndicator, 
-.playedIndicator {
+.playedIndicator,
+.innerCardFooter {
   background: var(--accentBlack);
-}
-
-#scenesContent .innerCardFooter {
-    background: #000000bd !important;
 }
 
 .paper-icon-button-light:hover, .raised.homeLibraryButton:hover, .button-flat:hover, .playstatebutton-icon-played, .paper-icon-button-light:hover:not(:disabled), .emby-tab-button:hover, .selectLabelFocused, .inputLabelFocused, .textareaLabelFocused, .buttonActive, .button-link {
@@ -340,6 +337,11 @@
 .raised.homeLibraryButton:hover, .emby-tab-button:hover, .textareaLabelFocused, .buttonActive {
   color: rgb(255, 255, 255) !important;
   box-shadow: 0px 0px 5px rgb(255, 255, 255) !important;
+}
+
+.layout-desktop .headerTabs.sectionTabs .emby-tab-button-active:hover,
+.layout-tv .headerTabs.sectionTabs .emby-tab-button-active:focus {
+	color: #000 !important;
 }
 
 .subtitleResults .listItem:hover .listItemBodyText {
@@ -519,4 +521,11 @@ color: #000;
 
 .mdl-slider-background-lower {
   background-color: var(--accentBlack);
+}
+
+.headerSelectedPlayer {
+  max-width: 10em;
+  white-space: nowrap;
+  color: #ff6767;
+  filter: drop-shadow(0px 0px 3px #f00);
 }
