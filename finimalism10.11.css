@@ -2810,7 +2810,33 @@ content: '';
 }
 
 .layout-desktop .listItem[data-type="Audio"] {
-  width: calc(100vw - 33em);
+  width: 97%;
+}
+
+.layout-desktop .playlistSection,
+.layout-tv .playlistSection {
+  width: 82%;
+  margin-left: 16%;
+  position: fixed;
+  top: 22em;
+  height: calc(100vh - 22em);
+  overflow-y: scroll;
+}
+
+.layout-desktop .nowPlayingInfoContainer,
+.layout-tv .nowPlayingInfoContainer {
+  position: fixed;
+  top: 4em;
+  left: 1vw;
+  width: 96vw;
+}
+
+.layout-desktop .playlistSectionButton, 
+.layout-tv .playlistSectionButton {
+  background: none;
+  color: inherit;
+  width: 98.25%;
+  gap: 2.1%;
 }
 
 .layout-desktop #scenesContent .innerCardFooter,
@@ -3714,7 +3740,9 @@ content: '';
 }
 
 
-
+.detailPageWrapperContainer {
+  min-height: calc(100vh - 3em) !important;
+}
 
 /* ---- Music Page ---- */
 
