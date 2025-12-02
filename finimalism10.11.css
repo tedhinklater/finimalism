@@ -667,6 +667,7 @@ progress::-webkit-progress-value {
 
 .layout-desktop .mainDetailButtons,
 .layout-tv .mainDetailButtons {
+  font-size: 1.08em;
 }
 
 .startTimeText, .endTimeText {
