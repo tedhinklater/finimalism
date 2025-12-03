@@ -1461,10 +1461,10 @@ button.is-emby-button emby-button {
   left: 50%;
 }
 
-.infoWrapper {
-  min-width: 52%;
-  max-width: 96%;
-  max-height: 5.5em;
+.layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .infoWrapper, 
+.layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .infoWrapper {
+  width: 76%;
+  max-width: 76%;
 }
 
 .layout-desktop .trackSelections .selectContainer {
@@ -1697,10 +1697,11 @@ button.is-emby-button emby-button {
   text-align: center;
   filter: drop-shadow(0px 4px 1px #0005);
   justify-content: flex-start;
-  padding-top: 1.2em;
-  width: 61vw;
+  width: 100%;
   gap: 2%;
   margin-bottom: 0 !important;
+  max-height: 4em;
+  transform: translateY(20%);
 }
 
 .layout-desktop .itemName.originalTitle,
@@ -3452,8 +3453,15 @@ content: '';
   filter: drop-shadow(0px 4px 1px #0005);
   justify-content: flex-start;
   padding-top: 0.85em;
-  width: 61vw;
+  width: 100%;
   gap: 5%;
+}
+
+@media (max-height: 1000px) {
+  .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) div.itemMiscInfo.itemMiscInfo-primary,
+  .layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) div.itemMiscInfo.itemMiscInfo-primary {
+    width: 96%;
+  }
 }
 
 .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .detailLogo,
@@ -3559,7 +3567,7 @@ content: '';
 
 .layout-desktop .itemMiscInfo.itemMiscInfo-primary .mediaInfoItem,
 .layout-tv .itemMiscInfo.itemMiscInfo-primary .mediaInfoItem {
-  margin: 0 1em 0 0;
+  margin: 0;
   font-size: 1.25em;
 }
 
@@ -3757,6 +3765,14 @@ content: '';
 
 .detailPageWrapperContainer {
   min-height: calc(100vh) !important;
+}
+
+.layout-desktop .infoWrapper,
+.layout-tv .infoWrapper {
+  -webkit-flex: 1 0 0;
+  flex: 1 0 0;
+  max-width: 76%;
+  min-width: 0;
 }
 
 /* ---- Music Page ---- */
