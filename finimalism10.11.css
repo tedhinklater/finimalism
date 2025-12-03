@@ -1282,6 +1282,19 @@ progress {
   background-color: #110e1ebd;
 }
 
+.layout-desktop .mainDrawer,
+.layout-tv .mainDrawer {
+  max-width: 14.5vw;
+}
+
+[dir="ltr"] .sidebarHeader {
+  margin-left: 8%;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: left;
+  text-decoration: underline;
+}
+
 .mainDrawer-scrollContainer.scrollContainer .navMenuOption:hover,
 .mainDrawer-scrollContainer.scrollContainer .navMenuOption:hover emby-button,
 button.is-emby-button:hover emby-button {
@@ -1294,6 +1307,10 @@ button.is-emby-button:hover emby-button {
   border-radius: var(--rounding) !important;
   width: 100% !important;
   margin-left: 0em !important;
+}
+
+[dir="ltr"] .navMenuOption {
+  padding: .75em 0 .75em 1.5em !important;
 }
 
 .navMenuOption:hover .navMenuOptionText {
