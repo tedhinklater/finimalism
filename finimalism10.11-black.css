@@ -32,7 +32,7 @@
   background-size: cover;
   opacity: 1;
   z-index: -1;
-  animation: fadeContainer 7s ease-out 0s forwards;
+  animation: fadeContainer 5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
 
 .sectionTitleContainer.sectionTitleContainer-cards.padded-left::before {
@@ -79,7 +79,7 @@
   background-size: cover;
   opacity: 1;
   z-index: -1;
-  animation: fadeContainer 7s ease-out 0s forwards;
+  animation: fadeContainer 5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
 
 .detailPageSecondaryContainer {
@@ -98,7 +98,7 @@
   background-size: cover;
   opacity: 1;
   z-index: -1;
-  animation: fadeContainer 7s ease-out 0s forwards;
+  animation: fadeContainer 5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
 
 .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .itemsContainer.padded-left::before,
