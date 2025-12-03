@@ -13,7 +13,7 @@ Just paste an import line into your "Dashboard > Branding > CSS" section, or "Us
 
 ### Each version with [Home Screen Sections](https://github.com/IAmParadox27/jellyfin-plugin-home-sections) / [Featured Content Bar](https://github.com/tedhinklater/Jellyfin-Featured-Content-Bar) / [Jellyfin Enhanced](https://github.com/n00bcodr/Jellyfin-Enhanced)
 
-![1](https://github.com/user-attachments/assets/0b2c9601-b450-4ce9-8796-4a05489cf86e)
+![1](https://github.com/user-attachments/assets/c4129051-922b-40b9-b42e-242e1094f4f2)
 ![2](https://github.com/user-attachments/assets/ed93ba33-e6ee-4cfa-bb60-f1bdef4fdc16)
 ![3](https://github.com/user-attachments/assets/d6224101-b098-4574-8911-5b3f19885f22)
 ![4](https://github.com/user-attachments/assets/921a9d7c-2ff1-41d8-88d2-d460a889e180)
