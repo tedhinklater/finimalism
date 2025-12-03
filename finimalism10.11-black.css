@@ -166,7 +166,7 @@
   z-index: -1;
   background-attachment: fixed;
   pointer-events: none;
-  backdrop-filter: saturate(0%) brightness(66%) contrast(133%);
+  backdrop-filter: saturate(0%);
 }
 
 .layout-desktop #itemDetailPage .infoWrapper .nameContainer .parentName.focuscontainer-x:hover {
@@ -391,7 +391,7 @@
   background-size: auto;
   background-size: cover;
   opacity: 1;
-  backdrop-filter: saturate(0%) contrast(200%);
+  backdrop-filter: saturate(0%);
   z-index: -1;
   background-attachment: fixed;
 }
