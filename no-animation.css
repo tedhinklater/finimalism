@@ -1,11 +1,11 @@
 .itemBackdrop {
   display: inherit;
-  height: 54em !important;
+  height: 4em !important;
 }
 
 .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) #itemBackdrop,
 .layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button.show-focus[data-type="Season"]) #itemBackdrop {
-  height: 41.5em !important;
+  height: 3.6em !important;
 }
 
 .layout-desktop .detailRibbon, 
