@@ -2469,25 +2469,25 @@ a[href*="shokoanime.com"] {
 .layout-desktop .mainDetailButtons.focuscontainer-x,
 .layout-tv .mainDetailButtons.focuscontainer-x {
   position: fixed;
-  left: 3.89em;
-  width: 21.4em;
+  left: 4em;
+  width: 21.3em;
   justify-content: space-evenly;
   top: 23.05em;
   z-index: -1;
   border-top-right-radius: 1em;
   margin: 1.25em 0;
-  padding-top: 18.6em;
+  padding-top: 18.5em;
   border-top-left-radius: 0em;
+  padding-bottom: 0.3em !important;
 }
 
 .layout-desktop .mainDetailButtons.focuscontainer-x::before,
 .layout-tv .mainDetailButtons.focuscontainer-x::before {
-content: '';
+  content: '';
   position: absolute;
   left: 0;
-  width: 21.4em;
+  width: 21.3em;
   height: 2.557777em;
-  background-size: cover;
   background: #0a0715d6;
   border-top-right-radius: 1em;
   margin: 1.25em 0;
@@ -2497,6 +2497,7 @@ content: '';
   box-shadow: 0px 2px 8px #0005;
   border-bottom-left-radius: 1em;
   border-bottom-right-radius: 1em;
+  padding-bottom: 0.3em;
 }
 
 .layout-desktop #itemDetailPage .card.portraitCard .cardImageContainer.coveredImage.cardContent.lazy.blurhashed.lazy-image-fadein-fast,
@@ -3305,7 +3306,7 @@ content: '';
   animation: none !important;
   opacity: 1 !important;
   top: 44em !important;
-  width: 40em;
+  width: 39.5em;
   left: 1.5em;
 }
 
@@ -3492,8 +3493,9 @@ content: '';
 .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .mainDetailButtons.focuscontainer-x,
 .layout-tv #itemDetailPage:has(.button-link.itemAction.emby-button.show-focus[data-type="Season"]) .mainDetailButtons.focuscontainer-x {
   top: 8em !important;
-  width: 31.73333em;
-  padding-top: 22em;
+  width: 31.6em;
+  padding-top: 21.9em;
+  padding-bottom: 0.3em;
 }
 
 .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .mainDetailButtons.focuscontainer-x::before,
@@ -3506,6 +3508,11 @@ content: '';
 .layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button.show-focus[data-type="Season"]) .detailImageContainer .card.backdropCard {
   top: 14.35em !important;
   width: 34.15em;
+}
+
+.layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .button-flat.btnPlay.detailButton.emby-button,
+.layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button.show-focus[data-type="Season"]) .button-flat.btnPlay.detailButton.emby-button { 
+  margin-left: -8% !important;
 }
 
 .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .infoWrapper .nameContainer .itemName.infoText.subtitle.focuscontainer-x {
@@ -3625,15 +3632,15 @@ content: '';
 .layout-tv .itemDetailPage:has(.detailImageContainer .card.squareCard .cardImageContainer.coveredImage.cardContent.lazy.blurhashed.lazy-image-fadein-fast) .mainDetailButtons.focuscontainer-x,
 .layout-desktop .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) .mainDetailButtons.focuscontainer-x,
 .layout-tv .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) .mainDetailButtons.focuscontainer-x {
-  width: 21.4em !important;
-  left: 3.9em !important;
+  width: 21.3em !important;
+  left: 4em !important;
 }
 
 .layout-desktop .itemDetailPage:has(.itemAction.textActionButton[data-type="Season"]) .mainDetailButtons.focuscontainer-x::before,
 .layout-tv .itemDetailPage:has(.detailImageContainer .card.squareCard .cardImageContainer.coveredImage.cardContent.lazy.blurhashed.lazy-image-fadein-fast) .mainDetailButtons.focuscontainer-x::before,
 .layout-desktop .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) .mainDetailButtons.focuscontainer-x::before,
 .layout-tv .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) .mainDetailButtons.focuscontainer-x::before {
-  width: 21.4em !important;
+  width: 21.3em !important;
 }
 
 .layout-desktop .itemDetailPage:has(.detailImageContainer .card.squareCard .cardImageContainer.coveredImage.cardContent.lazy.blurhashed.lazy-image-fadein-fast) .itemName.infoText.subtitle.focuscontainer-x,
@@ -3792,7 +3799,31 @@ content: '';
   min-width: 0;
 }
 
-/* ---- Music Page ---- */
+.layout-desktop .button-flat.btnPlay.detailButton.emby-button,
+.layout-tv .button-flat.btnPlay.detailButton.emby-button {
+  width: 33.3333%;
+  height: 2em;
+  background: #503eb3 !important;
+  box-shadow: 0px 0px 13px #432b6f7a;
+  margin-left: -0.9em !important;
+}
+
+.layout-desktop .button-flat.btnPlay.detailButton.emby-button:hover,
+.layout-tv .button-flat.btnPlay.detailButton.emby-button:focus {
+  background: #fff !important;
+  box-shadow: 0px 0px 11px #ffffff70;
+  color: #39334f !important;
+}
+
+.layout-desktop .button-flat.btnPlay.detailButton.emby-button .detailButton-content,
+.layout-tv .button-flat.btnPlay.detailButton.emby-button .detailButton-content {
+  transform-origin: center;
+}
+
+.layout-desktop .button-flat.btnPlay.detailButton.emby-button:hover .detailButton-content,
+.layout-tv .button-flat.btnPlay.detailButton.emby-button:focus .detailButton-content {
+  transform: scale(1.25);
+}
 
 .layout-desktop .itemDetailPage:has(.nameContainer .parentName.musicParentName.focuscontainer-x) .mainDetailButtons.focuscontainer-x,
 .layout-desktop .itemDetailPage:has(.card.overflowSquareCard.card-hoverable) .mainDetailButtons.focuscontainer-x,
