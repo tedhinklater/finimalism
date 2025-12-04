@@ -1,9 +1,10 @@
-If you've updated to Jellyfin v10.11 you'll need the new version
-## Colour
+# Finimalism for Jellyfin  ![jsDelivr](https://data.jsdelivr.com/v1/package/gh/tedhinklater/finimalism/badge) 
+
+### Colour
 ```css
 @import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/finimalism10.11.css");
 ```
-## Black
+### Black
 ```css
 @import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/finimalism10.11-black.css");
 
@@ -29,7 +30,7 @@ If you want it without the animations, add this line
 @import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/no-animation.css");
 ```
 
-If you want it with the old emby scrollers use this
+If you want it with the old emby scrollers, use this
 
 ```css
 @import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/horizontal-scrolling.css");
