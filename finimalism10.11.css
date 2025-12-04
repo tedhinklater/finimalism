@@ -379,9 +379,9 @@ p.overview.detail-clamp-text {
   .layout-tv .detailLogo {
     position: fixed;
     z-index: 10;
-    left: 5em;
-    width: 21.6em;
-    height: 7.5em;
+    left: 4.5em;
+    width: 22.6em;
+    height: 8.3em;
     animation: logoScale 0.3s ease-out forwards;
     display: block;
     transition: width 0.2s ease-in-out;
@@ -3497,7 +3497,7 @@ a[href*="shokoanime.com"] {
 .layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button.show-focus[data-type="Season"]) .detailLogo {
   top: 3em;
   width: 32.75em;
-  height: 7em;
+  height: 6.6em;
   transition: width 0.2s ease-in-out;
 }
 
@@ -3614,7 +3614,7 @@ a[href*="shokoanime.com"] {
   overflow: hidden;
   text-overflow: ellipsis;
   transition: transform 0s;
-  top: 37em !important;
+  top: 37.5em !important;
   height: unset !important;
 }
 
@@ -3663,6 +3663,7 @@ a[href*="shokoanime.com"] {
 .layout-desktop .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) .itemName.infoText.subtitle,
 .layout-tv .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) .itemName.infoText.subtitle {
   width: 20.2em;
+  top: -1em;
 }
 
 .layout-desktop .cardImageContainer .language-overlay-container,
