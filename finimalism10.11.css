@@ -1368,8 +1368,10 @@ button.is-emby-button emby-button {
 
 #myPreferencesMenuPage .verticalSection-extrabottompadding .emby-button:focus .listItemBodyText {
   color: white !important;
-  border: 1px solid white;
-  border-radius: 1em;
+}
+
+#myPreferencesMenuPage [dir="ltr"] .listItemIcon {
+  margin: 0 .25em 0 0.25em;
 }
 
 .mdl-slider-background-upper {
