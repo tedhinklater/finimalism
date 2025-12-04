@@ -13,14 +13,14 @@ Just paste an import line into your "Dashboard > Branding > CSS" section, or "Us
 
 ### Each version with [Home Screen Sections](https://github.com/IAmParadox27/jellyfin-plugin-home-sections) / [Featured Content Bar](https://github.com/tedhinklater/Jellyfin-Featured-Content-Bar) / [Jellyfin Enhanced](https://github.com/n00bcodr/Jellyfin-Enhanced)
 
-![1](https://github.com/user-attachments/assets/c4129051-922b-40b9-b42e-242e1094f4f2)
-![2](https://github.com/user-attachments/assets/60ef3695-12e4-41b2-96b6-929113e4d87f)
-![3](https://github.com/user-attachments/assets/d6224101-b098-4574-8911-5b3f19885f22)
-![4](https://github.com/user-attachments/assets/921a9d7c-2ff1-41d8-88d2-d460a889e180)
-![5](https://github.com/user-attachments/assets/bff5fe15-bb32-4d19-999c-0c5321d88745)
-![6](https://github.com/user-attachments/assets/244b31a3-7df0-4486-8378-dc45da63a2a3)
-![7](https://github.com/user-attachments/assets/c04ae0cd-faf0-452f-977f-af9c4d8715c2)
-![8](https://github.com/user-attachments/assets/7aca4d8b-cf48-4e12-80f8-c7f88527f941)
+![1](https://github.com/user-attachments/assets/8e8b95e9-f137-4a16-99e5-accf4925e147)
+![2](https://github.com/user-attachments/assets/530f3d6c-d827-4410-89ab-565e412f5736)
+![3](https://github.com/user-attachments/assets/786130d8-894a-4b3f-a138-bfcf68705b51)
+![4](https://github.com/user-attachments/assets/fbb215a3-3665-41d4-b0ef-0e94a62c09dd)
+![5](https://github.com/user-attachments/assets/057e9657-6d2b-470a-9a53-fd7674effab4)
+![6](https://github.com/user-attachments/assets/5a45c12b-b4bc-49a8-b75e-5e902a01c584)
+![7](https://github.com/user-attachments/assets/d7943bc0-c3c9-4168-b9e0-d09814ff299b)
+![8](https://github.com/user-attachments/assets/150320ba-2de8-41a3-b776-71cfe26eaedc)
 ![player](https://github.com/user-attachments/assets/8ca8205f-c91b-41d8-b116-5810f17b319d)
 
 ## Mobile
