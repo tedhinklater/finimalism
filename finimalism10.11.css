@@ -4669,3 +4669,26 @@ a[href*="shokoanime.com"] {
     margin-left: 0;
     max-width: 100%;
 }
+
+
+.layout-mobile .button-flat.btnPlay.detailButton.emby-button {
+  width: 22%;
+  height: 2em;
+  background: #503eb3 !important;
+  box-shadow: 0px 0px 13px #432b6f7a;
+  margin-left: -0.9em !important;
+}
+
+.layout-mobile .button-flat.btnPlay.detailButton.emby-button:focus {
+  background: #fff !important;
+  box-shadow: 0px 0px 11px #ffffff70;
+  color: #39334f !important;
+}
+
+.layout-mobile .button-flat.btnPlay.detailButton.emby-button .detailButton-content {
+  transform-origin: center;
+}
+
+.layout-mobile .button-flat.btnPlay.detailButton.emby-button:focus .detailButton-content {
+  transform: scale(1.25);
+}
