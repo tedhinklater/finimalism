@@ -551,11 +551,8 @@ color: #000;
 
 .layout-desktop .button-flat.btnPlay.detailButton.emby-button, 
 .layout-tv .button-flat.btnPlay.detailButton.emby-button {
-  width: 33.3333%;
-  height: 2em;
   background: var(--accentBlack) !important;
   box-shadow: 0px 0px 13px #8200007a;
-  margin-left: -0.9em !important;
 }
 
 .layout-desktop .button-flat.btnPlay.detailButton.emby-button:hover, 
