@@ -650,6 +650,12 @@ progress::-webkit-progress-value {
 #itemDetailPage .button-link {
   color: inherit;
   font-weight: 400;
+  transition: color 0.3s;
+}
+
+#itemDetailPage .button-link:hover {
+  color: #8564ff !important;
+  text-decoration: none;
 }
 
 .navMenuOption:hover,
@@ -2625,7 +2631,7 @@ a[href*="shokoanime.com"] {
   -webkit-line-clamp: 2;
   overflow: hidden;
   text-overflow: ellipsis;
-  transition: transform 0s;
+  transition: transform 0s color 0.3s;
 }
 
 .layout-tv #itemDetailPage .detailImageContainer.padded-left .card:hover {
@@ -3347,8 +3353,13 @@ a[href*="shokoanime.com"] {
 
 .layout-desktop #itemDetailPage .nameContainer .itemName.infoText.subtitle.focuscontainer-x .button-link.itemAction.emby-button[data-action="link"],
 .layout-tv #itemDetailPage .nameContainer .itemName.infoText.subtitle.focuscontainer-x .button-link.itemAction.emby-button[data-action="link"]  {
-  color: #a086ff !important;
+  color: #7c64ff !important;
   font-weight: 800;
+}
+
+.layout-desktop #itemDetailPage .nameContainer .itemName.infoText.subtitle.focuscontainer-x .button-link.itemAction.emby-button[data-action="link"]:hover,
+.layout-tv #itemDetailPage .nameContainer .itemName.infoText.subtitle.focuscontainer-x .button-link.itemAction.emby-button[data-action="link"]:hover  {
+  color: #fff !important;
 }
 
 .layout-desktop #indexPage .itemsContainer.scrollSlider.focuscontainer-x.animatedScrollX .cardText.cardTextCentered.cardText-secondary { 
