@@ -732,7 +732,7 @@ progress {
 
 .layout-desktop .itemsContainer.padded-left.padded-right.padded-right-withalphapicker.vertical-wrap,
 .layout-tv .itemsContainer.padded-left.padded-right.padded-right-withalphapicker.vertical-wrap {
-  max-width: 95%;
+  max-width: 93%;
   padding: 0;
   gap: 1.35%;
 }
@@ -2014,7 +2014,6 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 }
 
 .layout-desktop .headerTabs.sectionTabs .tabs-viewmenubar.emby-tabs.focusable.scrollX {
-  margin-left: -3vw;
 }
 
 .collectionItems {
@@ -2665,7 +2664,7 @@ a[href*="shokoanime.com"] {
 .layout-tv .musicParentName, .layout-tv .musicParentName {
   position: absolute;
   left: 11.2em;
-  top: 1em;
+  top: 3em;
   transform: translateX(-50%);
   width: 19em;
 }
@@ -3211,7 +3210,7 @@ a[href*="shokoanime.com"] {
 .layout-desktop .flex.align-items-center.justify-content-center.flex-wrap-wrap.padded-top.padded-left.padded-right.padded-bottom.focuscontainer-x, 
 .layout-tv .flex.align-items-center.justify-content-center.flex-wrap-wrap.padded-top.padded-left.padded-right.padded-bottom.focuscontainer-x {
   padding-right: max(env(safe-area-inset-right),3.3%);
-  width: 96vw;
+  width: 98vw;
 }
 
 
@@ -3664,7 +3663,7 @@ a[href*="shokoanime.com"] {
 .layout-desktop .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) .itemName.infoText.subtitle,
 .layout-tv .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) .itemName.infoText.subtitle {
   width: 20.2em;
-  top: -1em;
+  top: 5em;
 }
 
 .layout-desktop .cardImageContainer .language-overlay-container,
@@ -4237,7 +4236,7 @@ a[href*="shokoanime.com"] {
 @media (orientation: landscape) {
   .itemsContainer.padded-left.padded-right.padded-right-withalphapicker.vertical-wrap {
     margin-right: 0%;
-    margin-left: 1.5%;
+    margin-left: 3.5%;
     gap: 1.2%;
   }
 }
@@ -4477,6 +4476,7 @@ a[href*="shokoanime.com"] {
   padding-top: 0.25em;
   position: relative;
   padding-left: 2vw !important;
+  padding-right: 2vw !important;
 }
 
 @media (orientation: landscape) {
