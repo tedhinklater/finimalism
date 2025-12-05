@@ -396,7 +396,7 @@ p.overview.detail-clamp-text {
 .layout-tv #itemDetailPage .nameContainer {
   position: fixed;
   left: 2.75em;
-  top: 49.6em;
+  top: 49.7em;
   width: 26.4em;
   justify-content: center;
   text-align: center;
@@ -3462,8 +3462,8 @@ a[href*="shokoanime.com"] {
 .layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .itemDetailsGroup .detailsGroupItem.directorsGroup .directors.content.focuscontainer-x,
 .layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .itemDetailsGroup .detailsGroupItem.studiosGroup .studios.content.focuscontainer-x {
   text-align: center;
-  width: 41em;
-  margin-left: 0!important;
+  width: 35em !important;
+  margin-left: 1.5em !important;
 }
 
 .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .itemDetailsGroup .detailsGroupItem.genresGroup .genresLabel.label,
@@ -3531,7 +3531,7 @@ a[href*="shokoanime.com"] {
 .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .infoWrapper .nameContainer .itemName.infoText.subtitle.focuscontainer-x {
   top: 10.3em;
   left: 5.25em;
-  width: 27em;
+  width: 28em;
   font-weight: 600;
 }
 
