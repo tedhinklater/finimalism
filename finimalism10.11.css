@@ -1807,6 +1807,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
     margin-right: 1vw;
     border: 1px solid #62626287;
     margin-bottom: 1em;
+    background: #0a071559;
   }
 
   .headerTabs.sectionTabs .tabs-viewmenubar.emby-tabs.focusable.scrollX .emby-tab-button.emby-button.emby-tab-button-active {
@@ -2620,7 +2621,7 @@ a[href*="shokoanime.com"] {
 
 .layout-desktop [dir="ltr"] .trackSelections.focuscontainer-x .selectArrowContainer,
 .layout-tv [dir="ltr"] .trackSelections.focuscontainer-x .selectArrowContainer {
-  right: 1.7em;
+  right: 2em;
   top: 0;
 }
 
@@ -2884,22 +2885,23 @@ a[href*="shokoanime.com"] {
 
 .layout-desktop #scenesCollapsible .itemAction.chapterCard.overflowBackdropCard,
 .layout-tv #scenesCollapsiblecard .itemAction.chapterCard.overflowBackdropCard {
-  width: 15.5vw;
+  width: 14.05vw;
+  min-width: unset;
 }
 
 .layout-desktop #castCollapsible .card.overflowPortraitCard.personCard.card-hoverable.card-withuserdata,
 .layout-tv #castCollapsible .card.overflowPortraitCard.personCard.card-hoverable.card-withuserdata {
-  width: 8.3vw;
+  width: 7.65vw;
 }
 
 .layout-desktop #guestCastCollapsible .card.overflowPortraitCard.personCard.card-hoverable.card-withuserdata,
 .layout-tv #guestCastCollapsible .card.overflowPortraitCard.personCard.card-hoverable.card-withuserdata {
-  width: 8.3vw;
+  width: 7.65vw;
 }
 
 .layout-desktop #similarCollapsible .card.overflowPortraitCard,
 .layout-tv #similarCollapsible .card.overflowPortraitCard {
-  width: 8.3vw;
+  width: 7.65vw;
 }
 
 @media (max-height: 1000px) {
@@ -3032,7 +3034,7 @@ a[href*="shokoanime.com"] {
   top: 0;
   left: 0;
   height: 100%;
-  background: #0a0715d6;
+  background: #110d20de;
     background-size: auto;
   background-size: cover;
   z-index: -1;
@@ -3813,7 +3815,7 @@ a[href*="shokoanime.com"] {
 
 .layout-desktop .button-flat.btnPlay.detailButton.emby-button,
 .layout-tv .button-flat.btnPlay.detailButton.emby-button {
-  width: 22%;
+  width: 6.4em;
   height: 2em;
   background: #503eb3 !important;
   box-shadow: 0px 0px 13px #432b6f7a;
