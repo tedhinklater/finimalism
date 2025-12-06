@@ -734,7 +734,7 @@ progress {
 .layout-tv .itemsContainer.padded-left.padded-right.padded-right-withalphapicker.vertical-wrap {
   max-width: 93%;
   padding: 0;
-  gap: 1.35%;
+  gap: 1%;
 }
 
 #homeTab .emby-scroller {
