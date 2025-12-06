@@ -2846,9 +2846,10 @@ a[href*="shokoanime.com"] {
   width: 82%;
   margin-left: 16%;
   position: fixed;
-  top: 26em;
+  top: 28.5em;
   height: calc(100vh - 26em);
   overflow-y: scroll;
+  padding-top: 0.5em;
 }
 
 .layout-desktop .nowPlayingInfoContainer,
