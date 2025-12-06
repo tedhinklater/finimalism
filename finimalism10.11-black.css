@@ -583,3 +583,8 @@ color: #000;
 .layout-mobile .button-flat.btnPlay.detailButton.emby-button:focus .detailButton-content {
   transform: scale(1.25);
 }
+
+#itemDetailPage .button-link:hover {
+  color: var(--accentBlack) !important;
+  text-decoration: none;
+}
