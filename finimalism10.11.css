@@ -166,15 +166,19 @@ p.overview.detail-clamp-text {
   font-weight: 500;
   -webkit-line-clamp: unset;
   font-size: 1.17em;
+  min-height: 6em;
 }
 
 #itemDetailPage .tagline {
   font-weight: 600;
 }
 
-.layout-desktop #itemDetailPage .tagline {
-  margin-top: 1.7em;
+.layout-desktop #itemDetailPage .tagline,
+.layout-tv #itemDetailPage .tagline {
+  margin-top: 1.3em;
   margin-bottom: 2em;
+  font-size: 1.5em;
+  min-height: 2em;
 }
 
 .mdl-slider::-webkit-slider-thumb,
@@ -516,11 +520,13 @@ p.overview.detail-clamp-text {
 #divRunningTasks span {
   color: rgba(255,255,255,0.75) !important;
 }
+
 .itemsContainer > .card > .cardBox {
   margin-left: 0.6em !important;
   margin-right: 0.2em !important;
-  background: #0a071559;
+  background: #0a0715d6;
   border-radius: var(--rounding);
+  padding-bottom: 0.2em !important;
 }
 
 .button-flat:hover {
@@ -1300,7 +1306,6 @@ progress {
   font-weight: 700;
   text-transform: uppercase;
   text-align: left;
-  text-decoration: underline;
 }
 
 .mainDrawer-scrollContainer.scrollContainer .navMenuOption:hover,
@@ -3583,7 +3588,7 @@ a[href*="shokoanime.com"] {
 
 .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .itemName.infoText.originalTitle,
 .layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button.show-focus[data-type="Season"]) .itemName.infoText.originalTitle {
-  width: 34.7em !important;
+  width: 34em !important;
   margin-top: -2.43em !important;
   left: 4.3em;
 }
@@ -3827,7 +3832,7 @@ a[href*="shokoanime.com"] {
   height: 2em;
   background: #503eb3 !important;
   box-shadow: 0px 0px 13px #432b6f7a;
-  margin-left: -1em !important;
+  margin-left: -1.7em !important;
 }
 
 .layout-desktop .button-flat.btnPlay.detailButton.emby-button:hover,
@@ -3917,6 +3922,13 @@ a[href*="shokoanime.com"] {
     flex-wrap: wrap !important;
     white-space: normal !important;
     gap: 0.5%;
+}
+
+.layout-desktop #castContent.scrollSlider.focuscontainer-x.itemsContainer.animatedScrollX .card:nth-child(n+19),
+.layout-tv #castContent.scrollSlider.itemsContainer .card:nth-child(n+19),
+.layout-desktop #guestCastContent.scrollSlider.focuscontainer-x.itemsContainer.animatedScrollX .card:nth-child(n+19),
+.layout-tv #guestCastContent.scrollSlider.focuscontainer-x.itemsContainer.animatedScrollX .card:nth-child(n+19) {
+    display: none !important;
 }
 
 /* --------------- MOBILE --------------- */
