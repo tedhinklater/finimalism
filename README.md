@@ -14,16 +14,15 @@ Just paste an import line into your "Dashboard > Branding > CSS" section, or "Us
 
 ### Each version with [Home Screen Sections](https://github.com/IAmParadox27/jellyfin-plugin-home-sections) / [Featured Content Bar](https://github.com/tedhinklater/Jellyfin-Featured-Content-Bar) / [Jellyfin Enhanced](https://github.com/n00bcodr/Jellyfin-Enhanced)
 
-
-![1](https://github.com/user-attachments/assets/f8f9f433-09bd-4f40-8a38-9a5b00b00419)
-![2](https://github.com/user-attachments/assets/75749f9b-031e-4271-860b-026fbbe7cff4)
-![3](https://github.com/user-attachments/assets/645317b1-6f62-4315-99c3-c18f86adb916)
-![4](https://github.com/user-attachments/assets/85c07501-39d4-4df0-b79e-ad05d2307509)
-![5](https://github.com/user-attachments/assets/f3b7d1a7-8299-4f23-a66e-92f60ebfd3e7)
-![6](https://github.com/user-attachments/assets/e64661e0-7a4e-478c-8c23-7357c029313a)
-![7](https://github.com/user-attachments/assets/e1a041bb-0367-4062-a12c-8a1e5cb8ba09)
-![8](https://github.com/user-attachments/assets/f10519f6-1d00-47d1-a432-d7b7ab3f1f45)
-![player](https://github.com/user-attachments/assets/8ca8205f-c91b-41d8-b116-5810f17b319d)
+![1](https://github.com/user-attachments/assets/b2f5113a-e85a-47a6-b131-a3c24bf0efab)
+![2](https://github.com/user-attachments/assets/9fcaf027-b352-4fe6-be48-20c17927ca4b)
+![3](https://github.com/user-attachments/assets/ef792088-758f-4277-9da1-f78ca6256770)
+![4](https://github.com/user-attachments/assets/c0900737-be26-4134-83a9-34ce4b6d62f9)
+![5](https://github.com/user-attachments/assets/bb9c62cf-1375-45a3-b4c7-226d97a850ad)
+![6](https://github.com/user-attachments/assets/b70064b8-4154-409d-98c6-9b2930120e69)
+![7](https://github.com/user-attachments/assets/029ad527-1494-40e5-9bc2-0e2e9e926bff)
+![8](https://github.com/user-attachments/assets/dc87a0e2-b374-4325-ac04-5024c30a8ad7)
+![player](https://github.com/user-attachments/assets/4703ce3e-5efb-4d0c-a65c-f77f3c188db5)
 
 If you want it without the animations, add this line 
 
