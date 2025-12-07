@@ -1,4 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap');
+
+body {
+  font-family: "Cal Sans", sans-serif;
+  font-size: 12pt;
+}
 
 html {
   color: #fff;
@@ -64,11 +69,12 @@ html {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  background: #110e1ee0;
+  height: calc(100% + 4em);
+  background: linear-gradient(180deg, rgb(6.667% 5.49% 11.765% / 0.95) 0%, rgb(6.667% 5.49% 11.765% / 0.9497204350490196) 6.25%, rgb(6.667% 5.49% 11.765% / 0.9488817401960784) 12.5%, rgb(6.667% 5.49% 11.765% / 0.9474839154411764) 18.75%, rgb(6.667% 5.49% 11.765% / 0.9455269607843136) 25%, rgb(6.667% 5.49% 11.765% / 0.9430108762254902) 31.25%, rgb(6.667% 5.49% 11.765% / 0.9399356617647059) 37.5%, rgb(6.667% 5.49% 11.765% / 0.9363013174019608) 43.75%, rgb(6.667% 5.49% 11.765% / 0.9321078431372549) 50%, rgb(6.667% 5.49% 11.765% / 0.9273552389705882) 56.25%, rgb(6.667% 5.49% 11.765% / 0.9220435049019607) 62.5%, rgb(6.667% 5.49% 11.765% / 0.9161726409313725) 68.75%, rgb(6.667% 5.49% 11.765% / 0.9097426470588235) 75%, rgb(6.667% 5.49% 11.765% / 0.9027535232843137) 81.25%, rgb(6.667% 5.49% 11.765% / 0.8952052696078431) 87.5%, rgb(6.667% 5.49% 11.765% / 0.8870978860294118) 93.75%, rgb(6.667% 5.49% 11.765% / 0.8784313725490196) 100% );
   background-size: cover;
   opacity: 1;
   z-index: -1;
+  margin-top: -4em;
 }
 
 .layout-mobile .detailPagePrimaryContainer::before {
@@ -99,11 +105,6 @@ html {
 
 .headerTop {
   padding: 0.95em;
-}
-
-body {
-  font-family: "Sofia Sans", sans-serif;
-  font-size: 12pt;
 }
 
 h2 {
@@ -164,6 +165,7 @@ p.overview.detail-clamp-text {
   color: #fff;
   font-weight: 500;
   -webkit-line-clamp: unset;
+  font-size: 1.17em;
 }
 
 #itemDetailPage .tagline {
@@ -785,25 +787,25 @@ progress {
 
 .layout-desktop .overflowPortraitCard,
 .layout-desktop .overflowSquareCard {
-  width: 7.65vw;
+  width: 7.6vw;
   min-width: 9em;
 }
 
 .layout-tv .overflowPortraitCard,
 .layout-tv .overflowSquareCard {
-  width: 7.65vw;
+  width: 7.6vw;
   min-width: 9em;
 }
 
 .layout-desktop #itemDetailPage .overflowSquareCard,
 .layout-tv #itemDetailPage .overflowSquareCard {
-  width: 7.65vw;
+  width: 7.6vw;
   min-width: 9em;
 }
 
 .layout-desktop #itemDetailPage .overflowBackdropCard,
 .layout-tv #itemDetailPage .overflowBackdropCard {
-  width: 15.6vw;
+  width: 15.55vw;
   min-width: 18em;
 }
 
@@ -2886,23 +2888,23 @@ a[href*="shokoanime.com"] {
 
 .layout-desktop #scenesCollapsible .itemAction.chapterCard.overflowBackdropCard,
 .layout-tv #scenesCollapsiblecard .itemAction.chapterCard.overflowBackdropCard {
-  width: 15.655vw;
+  width: 15.55vw;
   min-width: unset;
 }
 
 .layout-desktop #castCollapsible .card.overflowPortraitCard.personCard.card-hoverable.card-withuserdata,
 .layout-tv #castCollapsible .card.overflowPortraitCard.personCard.card-hoverable.card-withuserdata {
-  width: 7.65vw;
+  width: 7.6vw;
 }
 
 .layout-desktop #guestCastCollapsible .card.overflowPortraitCard.personCard.card-hoverable.card-withuserdata,
 .layout-tv #guestCastCollapsible .card.overflowPortraitCard.personCard.card-hoverable.card-withuserdata {
-  width: 7.65vw;
+  width: 7.6vw;
 }
 
 .layout-desktop #similarCollapsible .card.overflowPortraitCard,
 .layout-tv #similarCollapsible .card.overflowPortraitCard {
-  width: 7.65vw;
+  width: 7.6vw;
 }
 
 @media (max-height: 1000px) {
