@@ -2851,7 +2851,7 @@ a[href*="shokoanime.com"] {
 .layout-desktop .playlistSection,
 .layout-tv .playlistSection {
   width: 82%;
-  margin-left: 16%;
+  margin-left: 0%;
   position: fixed;
   top: 28.5em;
   height: calc(100vh - 26em);
@@ -3890,6 +3890,13 @@ a[href*="shokoanime.com"] {
   margin-bottom: 1em;
   text-align: left;
   font-size: 1.3em;
+}
+
+.layout-desktop #nowPlayingPage .remoteControlContent.padded-left.padded-right.padded-bottom.hideVideoButtons,
+.layout-tv #nowPlayingPage .remoteControlContent.padded-left.padded-right.padded-bottom.hideVideoButtons {
+  margin-top: -4.4em;
+  width: 78.3vw;
+  margin-left: 17vw !important;
 }
 
 /* 720p resolution */
