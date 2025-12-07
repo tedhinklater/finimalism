@@ -785,25 +785,25 @@ progress {
 
 .layout-desktop .overflowPortraitCard,
 .layout-desktop .overflowSquareCard {
-  width: 8.5vw;
+  width: 7.81vw;
   min-width: 9em;
 }
 
 .layout-tv .overflowPortraitCard,
 .layout-tv .overflowSquareCard {
-  width: 8.5vw;
+  width: 7.81vw;
   min-width: 9em;
 }
 
 .layout-desktop #itemDetailPage .overflowSquareCard,
 .layout-tv #itemDetailPage .overflowSquareCard {
-  width: 8.5vw;
+  width: 7.81vw;
   min-width: 9em;
 }
 
 .layout-desktop #itemDetailPage .overflowBackdropCard,
 .layout-tv #itemDetailPage .overflowBackdropCard {
-  width: 15.5vw;
+  width: 15.9vw;
   min-width: 18em;
 }
 
@@ -2833,7 +2833,7 @@ a[href*="shokoanime.com"] {
 
 .layout-desktop #childrenContent .itemsContainer.padded-right.vertical-wrap .card.overflowPortraitCard.card-hoverable.card-withuserdata,
 .layout-tv #childrenContent .itemsContainer.padded-right.vertical-wrap .card.overflowPortraitCard.card-hoverable.card-withuserdata {
-  width: 10em;
+  width: 8.5vw;
 }
 
 .layout-desktop .listItem[data-type="Audio"] {
@@ -2886,23 +2886,23 @@ a[href*="shokoanime.com"] {
 
 .layout-desktop #scenesCollapsible .itemAction.chapterCard.overflowBackdropCard,
 .layout-tv #scenesCollapsiblecard .itemAction.chapterCard.overflowBackdropCard {
-  width: 14.05vw;
+  width: 15.925vw;
   min-width: unset;
 }
 
 .layout-desktop #castCollapsible .card.overflowPortraitCard.personCard.card-hoverable.card-withuserdata,
 .layout-tv #castCollapsible .card.overflowPortraitCard.personCard.card-hoverable.card-withuserdata {
-  width: 7.65vw;
+  width: 7.81vw;
 }
 
 .layout-desktop #guestCastCollapsible .card.overflowPortraitCard.personCard.card-hoverable.card-withuserdata,
 .layout-tv #guestCastCollapsible .card.overflowPortraitCard.personCard.card-hoverable.card-withuserdata {
-  width: 7.65vw;
+  width: 7.81vw;
 }
 
 .layout-desktop #similarCollapsible .card.overflowPortraitCard,
 .layout-tv #similarCollapsible .card.overflowPortraitCard {
-  width: 7.65vw;
+  width: 7.81vw;
 }
 
 @media (max-height: 1000px) {
@@ -3820,7 +3820,7 @@ a[href*="shokoanime.com"] {
   height: 2em;
   background: #503eb3 !important;
   box-shadow: 0px 0px 13px #432b6f7a;
-  margin-left: -1.6em !important;
+  margin-left: -1em !important;
 }
 
 .layout-desktop .button-flat.btnPlay.detailButton.emby-button:hover,
