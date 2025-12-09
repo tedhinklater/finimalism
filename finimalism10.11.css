@@ -526,7 +526,6 @@ p.overview.detail-clamp-text {
   margin-right: 0.2em !important;
   background: #0a0715d6;
   border-radius: var(--rounding);
-  padding-bottom: 0.2em !important;
 }
 
 .button-flat:hover {
@@ -832,6 +831,7 @@ progress {
   margin-left: 0em;
   font-weight: 400;
   padding-top: 0.25em;
+  padding-bottom: 0.2em;
 }
 
 .cardText.cardTextCentered.cardText-secondary {
@@ -1535,6 +1535,10 @@ button.is-emby-button emby-button {
 
 .layout-desktop .verticalSection.section2 .card.overflowBackdropCard,
 .layout-tv .verticalSection.section2 .card.overflowBackdropCard {
+}
+
+.verticalSection.section0 .cardBox {
+  background: transparent;
 }
 
 .verticalSection.section0 .textActionButton {
@@ -2485,8 +2489,8 @@ a[href*="shokoanime.com"] {
 .layout-tv .mainDetailButtons.focuscontainer-x {
   position: fixed;
   left: 4em;
-  width: 21.25em;
-  justify-content: space-evenly;
+  width: 20em;
+  justify-content: space-between;
   top: 22.75em;
   z-index: -1;
   border-top-right-radius: 1em;
@@ -2803,6 +2807,7 @@ a[href*="shokoanime.com"] {
 .layout-tv #itemDetailPage .itemDetailsGroup {
   opacity: 0;
   animation: fadeTitle 0.5s ease-out 0s forwards;
+  padding-left: 0.5em;
 }
 
 .layout-desktop .sections.homeSectionsContainer,
@@ -3378,7 +3383,7 @@ a[href*="shokoanime.com"] {
   -webkit-line-clamp: 2; 
   overflow: hidden; 
   text-overflow: ellipsis; 
-  font-weight: 700; 
+  font-weight: 400; 
 }
 
 .layout-desktop #indexPage 
@@ -3514,7 +3519,7 @@ a[href*="shokoanime.com"] {
 .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .mainDetailButtons.focuscontainer-x,
 .layout-tv #itemDetailPage:has(.button-link.itemAction.emby-button.show-focus[data-type="Season"]) .mainDetailButtons.focuscontainer-x {
   top: 8em !important;
-  width: 31.6em;
+  width: 28.6em;
   padding-top: 21.9em;
   padding-bottom: 0.3em;
 }
@@ -3533,7 +3538,6 @@ a[href*="shokoanime.com"] {
 
 .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .button-flat.btnPlay.detailButton.emby-button,
 .layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button.show-focus[data-type="Season"]) .button-flat.btnPlay.detailButton.emby-button { 
-  margin-left: -8% !important;
 }
 
 .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .infoWrapper .nameContainer .itemName.infoText.subtitle.focuscontainer-x {
@@ -3653,7 +3657,7 @@ a[href*="shokoanime.com"] {
 .layout-tv .itemDetailPage:has(.detailImageContainer .card.squareCard .cardImageContainer.coveredImage.cardContent.lazy.blurhashed.lazy-image-fadein-fast) .mainDetailButtons.focuscontainer-x,
 .layout-desktop .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) .mainDetailButtons.focuscontainer-x,
 .layout-tv .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) .mainDetailButtons.focuscontainer-x {
-  width: 21.3em !important;
+  width: 20.4em !important;
   left: 4em !important;
 }
 
@@ -3828,11 +3832,9 @@ a[href*="shokoanime.com"] {
 
 .layout-desktop .button-flat.btnPlay.detailButton.emby-button,
 .layout-tv .button-flat.btnPlay.detailButton.emby-button {
-  width: 6.4em;
   height: 2em;
   background: #503eb3 !important;
   box-shadow: 0px 0px 13px #432b6f7a;
-  margin-left: -1.7em !important;
 }
 
 .layout-desktop .button-flat.btnPlay.detailButton.emby-button:hover,
@@ -3845,6 +3847,7 @@ a[href*="shokoanime.com"] {
 .layout-desktop .button-flat.btnPlay.detailButton.emby-button .detailButton-content,
 .layout-tv .button-flat.btnPlay.detailButton.emby-button .detailButton-content {
   transform-origin: center;
+  width: 6.4em;
 }
 
 .layout-desktop .button-flat.btnPlay.detailButton.emby-button:hover .detailButton-content,
@@ -3856,7 +3859,7 @@ a[href*="shokoanime.com"] {
 .layout-desktop .itemDetailPage:has(.card.overflowSquareCard.card-hoverable) .mainDetailButtons.focuscontainer-x,
 .layout-tv .itemDetailPage:has(.nameContainer .parentName.musicParentName.focuscontainer-x) .mainDetailButtons.focuscontainer-x,
 .layout-tv .itemDetailPage:has(.card.overflowSquareCard.card-hoverable) .mainDetailButtons.focuscontainer-x {
-  width: 21.4em !important;
+  width: 20.4em !important;
   left: 3.9em !important;
 }
 
@@ -4367,7 +4370,7 @@ a[href*="shokoanime.com"] {
 
 .layout-mobile #itemDetailPage .tagline {
   text-align: center;
-  width: 93vw;
+  width: 96vw;
 }
 
 .layout-mobile .childrenItemsContainer.itemsContainer.padded-right.vertical-list {
@@ -4391,28 +4394,11 @@ a[href*="shokoanime.com"] {
   }
 }
 
-@media (orientation: portrait) {
-  .layout-mobile .itemDetailsGroup .directors.content.focuscontainer-x,
-  .layout-mobile .itemDetailsGroup .studios.content.focuscontainer-x,
-  .layout-mobile .itemDetailsGroup .writers.content.focuscontainer-x,
-  .layout-mobile .itemDetailsGroup .genres.content.focuscontainer-x {
-    margin-left: 44%;
-    transform: translateX(-50%);
-    width: 50%;
-    max-width: 50%;
+.layout-mobile .detailsGroupItem {
+  display: inline-block;
+  margin: 0 0.5em 1.5em !important;
+  width: 98%;
   }
-}
-
-@media (orientation: landscape) {
-  .layout-mobile .itemDetailsGroup .directors.content.focuscontainer-x,
-  .layout-mobile .itemDetailsGroup .studios.content.focuscontainer-x,
-  .layout-mobile .itemDetailsGroup .writers.content.focuscontainer-x,
-  .layout-mobile .itemDetailsGroup .genres.content.focuscontainer-x {
-    margin-left: 44%;
-    width: 50%;
-    max-width: 50%;
-  }
-}
 
 .layout-mobile .selectArrowContainer {
   top: 0;
@@ -4427,7 +4413,7 @@ a[href*="shokoanime.com"] {
   gap: 5%;
   display: flex;
   font-size: 0 !important;
-  width: 97%;
+  width: 100%;
   justify-content: center;
 }
 
