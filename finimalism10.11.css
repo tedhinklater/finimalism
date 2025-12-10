@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
 
 body {
-  font-family: "Cal Sans", sans-serif;
+  font-family: "Lexend Deca", sans-serif;
   font-size: 12pt;
 }
 
@@ -730,7 +730,7 @@ progress {
 .sectionTitle {
   margin-left: 0em !important;
   margin-top: 0.5em !important;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .itemsContainer.padded-left.padded-right.padded-right-withalphapicker.vertical-wrap {
@@ -831,12 +831,14 @@ progress {
   margin-left: 0em;
   font-weight: 400;
   padding-top: 0.25em;
-  padding-bottom: 0.2em;
+  padding-bottom: 0.25em;
+  line-height: 1.05em;
 }
 
 .cardText.cardTextCentered.cardText-secondary {
-  padding-top: 0.1em;
-  padding-bottom: 0.25em;
+  padding-top: 0;
+  padding-bottom: 0.5em;
+  margin-top: -0.1em;
 }
 
 .skinHeader-withBackground {
@@ -1132,7 +1134,7 @@ progress {
   text-align: center;
   padding-left: 1em;
   padding-right: 1.5em;
-  font-weight: 500;
+  font-weight: 400;
   margin-left: 0.5em;
   transform: translateX(-5.7%);
 }
@@ -1389,7 +1391,6 @@ button.is-emby-button emby-button {
 .layout-tv div:not(.sectionTitleContainer-cards) > .sectionTitle-cards {
   margin: 0;
   padding-top: 1.25em;
-  padding-left: 0.5em;
 }
   #albumsTab .itemsContainer.padded-left.padded-right.padded-right-withalphapicker.vertical-wrap {
     display: flex;
@@ -2557,8 +2558,8 @@ a[href*="shokoanime.com"] {
   text-overflow: ellipsis;
   white-space: normal;
   filter: drop-shadow(-2px 4px 1px #0005);
-  line-height: 1em;
-  font-weight: 700;
+  line-height: 1.2em;
+  font-weight: 600;
 }
 
 .layout-desktop #listChildrenCollapsible.verticalSection.detailVerticalSection.verticalSection-extrabottompadding #childrenContent .itemsContainer.padded-right.vertical-list .listItem.listItem-largeImage.listItem-withContentWrapper .listItem-content .listItemBody.itemAction .listItemBodyText,
@@ -2644,6 +2645,7 @@ a[href*="shokoanime.com"] {
   overflow: hidden;
   text-overflow: ellipsis;
   transition: transform 0s color 0.3s;
+  font-weight: 600;
 }
 
 .layout-tv #itemDetailPage .detailImageContainer.padded-left .card:hover {
