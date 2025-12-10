@@ -1,0 +1,58 @@
+.itemBackdrop {
+  display: inherit;
+  height: 53em !important;
+}
+
+.layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) #itemBackdrop,
+.layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button.show-focus[data-type="Season"]) #itemBackdrop {
+  height: 40.5em !important;
+}
+
+.layout-desktop .detailRibbon, 
+.layout-tv .detailRibbon {
+  height: 3em;
+  margin-top: -7em;
+}
+
+.layout-desktop div.itemMiscInfo.itemMiscInfo-primary, .layout-tv div.itemMiscInfo.itemMiscInfo-primary {
+  transform: none;
+}
+
+.layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .trackSelections, 
+.layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button.show-focus[data-type="Season"]) .trackSelections {
+  top: 37.8em !important;
+}
+
+.layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .itemName.infoText.originalTitle,
+.layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .itemName.infoText.originalTitle {
+  top: 4em;
+}
+
+.layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .nameContainer, .layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button.show-focus[data-type="Season"]) .nameContainer,
+.layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .nameContainer, .layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button.show-focus[data-type="Season"]) .nameContainer {
+  top: 36.5em !important;
+}
+
+.layout-desktop .itemName.infoText.subtitle, 
+.layout-tv .itemName.infoText.subtitle {
+  top: 6em;
+}
+
+.layout-desktop #itemDetailPage .itemExternalLinks,
+.layout-tv #itemDetailPage .itemExternalLinks,
+.itemName.infoText.originalTitle,
+.itemName.infoText.parentNameLast,
+.layout-desktop .parentName.musicParentName.focuscontainer-x,
+.layout-desktop .itemDetailPage:has(.itemName.parentNameLast) #itemBackdrop, .layout-desktop .itemDetailPage:has(.button-flat.mediaInfoItem.emby-button) #itemBackdrop,
+.layout-desktop .trackSelections,
+.layout-tv .trackSelections,
+.itemsContainer,
+.itemDetailsGroup {
+  animation: none !important;
+  opacity: 1 !important;
+}
+
+.layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .detailRibbon, 
+.layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button.show-focus[data-type="Season"]) .detailRibbon {
+  height: 3em !important;
+}
