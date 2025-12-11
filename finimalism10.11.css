@@ -646,6 +646,7 @@ progress::-webkit-progress-value {
 
 .ratingbutton-icon-withrating {
   color: #ff0060;
+  filter: drop-shadow(0px 0px 5px #ff666669)
 }
 
 .material-icons.detailButton-icon.favorite.ratingbutton-icon-withrating:hover {
@@ -1024,6 +1025,8 @@ progress {
 .cardOverlayContainer {
   border-radius: var(--rounding) !important;
 }
+
+
 
 .layout-desktop #itemDetailPage .listItemImage.listItemImage-large.itemAction.lazy.non-blurhashable.lazy-image-fadein-fast[data-action="link"] {
   border-bottom-left-radius: 0 !important;
@@ -2687,6 +2690,19 @@ a[href*="shokoanime.com"] {
   justify-content: space-between;
   width: 100%;
   background: transparent;
+}
+
+.layout-desktop #listChildrenCollapsible #childrenContent .itemsContainer:has(.listItem[data-type="Episode"]) .material-icons.check.playstatebutton-icon-played,
+.layout-tv #listChildrenCollapsible #childrenContent .itemsContainer:has(.listItem[data-type="Episode"]) .material-icons.check.playstatebutton-icon-played {
+  filter: drop-shadow(0px 0px 3px #9f93e4ab);
+}
+
+.layout-desktop #listChildrenCollapsible #childrenContent .itemsContainer:has(.listItem[data-type="Episode"]) .material-icons.check.playstatebutton-icon-unplayed,
+.layout-tv #listChildrenCollapsible #childrenContent .itemsContainer:has(.listItem[data-type="Episode"]) .material-icons.check.playstatebutton-icon-unplayed,
+.layout-desktop #listChildrenCollapsible #childrenContent .itemsContainer:has(.listItem[data-type="Episode"]) .listItemButton.paper-icon-button-light.emby-button[data-isfavorite="false"],
+.layout-tv #listChildrenCollapsible #childrenContent .itemsContainer:has(.listItem[data-type="Episode"]) .listItemButton.paper-icon-button-light.emby-button[data-isfavorite="false"] {
+  color: #ffffff2e;
+  border-radius: var(--rounding);
 }
 
 /*.dialogContainer .listItem:hover .listItemBody {
