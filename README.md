@@ -1,10 +1,10 @@
 # Finimalism for Jellyfin  ![jsDelivr](https://data.jsdelivr.com/v1/package/gh/tedhinklater/finimalism/badge) 
 
-### Colour
+### Purple/White
 ```css
 @import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/finimalism10.11.css");
 ```
-### Black
+### Black/Red
 ```css
 @import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/finimalism10.11-black.css");
 
