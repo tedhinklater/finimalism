@@ -3539,7 +3539,7 @@ a[href*="shokoanime.com"] {
 .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .detailLogo,
 .layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button.show-focus[data-type="Season"]) .detailLogo {
   top: 3.3em;
-  width: 32.75em;
+  width: 33.75em;
   height: 6em;
   transition: width 0.2s ease-in-out;
 }
