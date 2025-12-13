@@ -3478,6 +3478,15 @@ a[href*="shokoanime.com"] {
     display: none !important;
 }
 
+.layout-desktop #indexPage 
+.verticalSection .itemsContainer.scrollSlider.focuscontainer-x.animatedScrollX 
+.card[data-type="CollectionFolder"]:nth-child(n+15),
+.layout-tv #indexPage 
+.verticalSection .itemsContainer.scrollSlider.focuscontainer-x.animatedScrollX 
+.card[data-type="CollectionFolder"]:nth-child(n+15) {
+    display: revert !important;
+}
+
 .layout-desktop .padded-top-focusscale.padded-bottom-focusscale.emby-scroller.scrollX[data-centerfocus="true"] .padded-top.padded-bottom.scrollSlider.focuscontainer-x,
 .layout-tv .padded-top-focusscale.padded-bottom-focusscale.emby-scroller.scrollX[data-centerfocus="true"] .padded-top.padded-bottom.scrollSlider.focuscontainer-x {
   width: 96.25vw;
