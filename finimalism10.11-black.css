@@ -134,21 +134,8 @@
 
 .layout-desktop .mainDetailButtons.focuscontainer-x::before, 
 .layout-tv .mainDetailButtons.focuscontainer-x::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  width: 21.25em;
-  height: 2.557777em;
-  background-size: cover;
   background: #070707;
-  border-top-right-radius: 1em;
-  margin: 1.25em 0;
-  padding-top: 18.8em;
-  border-top-left-radius: 1em;
-  top: -1.25em;
   box-shadow: 0px 2px 8px #0005;
-  border-bottom-left-radius: 1em;
-  border-bottom-right-radius: 1em;
 }
 
 .layout-desktop .page.libraryPage.itemDetailPage.noSecondaryNavPage.selfBackdropPage.mainAnimatedPage::before, 
@@ -398,7 +385,6 @@
 }
 
 .layout-desktop .mainDetailButtons.focuscontainer-x {
-  background: #000000ba;
   background-size: auto;
   background-size: cover;
   opacity: 1;
