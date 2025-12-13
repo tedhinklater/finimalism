@@ -182,26 +182,68 @@ p.overview.detail-clamp-text {
 
 .mdl-slider::-webkit-slider-thumb,
 .mdl-slider .mdl-slider::-webkit-slider-thumb {
-  background: #8564ff !important;
+  background: var(--accent) !important;
   border: none !important;
   box-shadow: none !important;
 }
 
 .mdl-slider::-moz-range-thumb,
 .mdl-slider .mdl-slider::-moz-range-thumb {
-  background: #8564ff !important;
+  background: var(--accent) !important;
   border: none !important;
   box-shadow: none !important;
 }
 .mdl-slider::-ms-thumb,
 .mdl-slider .mdl-slider::-ms-thumb {
-  background: #8564ff !important;
+  background: var(--accent) !important;
   border: none !important;
 }
 
 .mdl-slider .mdl-slider-background-lower[style] {
-  background: #8564ff !important;
+  background: var(--accent) !important;
   background-color: #8564ff !important;
+}
+
+.mdl-slider-background-flex {
+  background: hsla(0,0%,100%,.3);
+  border: 0;
+  display: -webkit-flex;
+  display: flex;
+  height: .2em;
+  margin-top: -.1em;
+  overflow: hidden;
+  padding: 0;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  top: 50%;
+  width: 100%;
+  height: 0.85em;
+  padding-bottom: 0em;
+  padding-top: 0em;
+  margin-top: -0.44em;
+}
+
+.mdl-slider {
+  font-size: 0em;
+  width: 100%;
+  color: transparent;
+}
+
+.sliderMarker.watched {
+  background-color: #fff;
+  height: 0.85em;
+}
+
+.sliderMarker.unwatched {
+  background-color: hsla(0,0%,100%,.3);
+  height: 0.85em;
+}
+
+#pause-screen-progress-bar > span {
+  display: block;
+  height: 100%;
+  width: 0%;
+  background: var(--accent);
 }
 
 .layout-desktop .itemName.infoText.parentNameLast,
@@ -601,7 +643,8 @@ progress::-webkit-progress-value {
 }
 
 .mdl-slider-background-lower {
-  background-color: #8546ff;
+  background-color: #6414ffa8;
+  border-right: 3px solid #cfaeff;
 }
 .mdl-slider::-moz-range-thumb {
   background: #8546ff;
@@ -1386,7 +1429,10 @@ button.is-emby-button emby-button {
 }
 
 .mdl-slider-background-upper {
-  background: #92dcf499;
+  background: #fff;
+  border-radius: 0em !important;
+  height: 0.85em !important;
+  opacity: 0.2;
 }
 
 .layout-desktop div:not(.sectionTitleContainer-cards) > .sectionTitle-cards,
