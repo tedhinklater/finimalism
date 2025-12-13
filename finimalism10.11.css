@@ -232,6 +232,7 @@ p.overview.detail-clamp-text {
 .sliderMarker.watched {
   background-color: #fff;
   height: 0.85em;
+  z-index: 1;
 }
 
 .sliderMarker.unwatched {
@@ -643,8 +644,9 @@ progress::-webkit-progress-value {
 }
 
 .mdl-slider-background-lower {
-  background-color: #6414ffa8;
-  border-right: 3px solid #cfaeff;
+  background-color: var(--accent);
+  z-index: 0;
+  border-radius: 5em;
 }
 .mdl-slider::-moz-range-thumb {
   background: #8546ff;
