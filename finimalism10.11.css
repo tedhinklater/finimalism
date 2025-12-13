@@ -1149,7 +1149,7 @@ progress {
 .layout-tv .trackSelections.focuscontainer-x .selectAudio,
 .layout-tv .trackSelections.focuscontainer-x .selectSubtitles,
 .layout-tv .trackSelections.focuscontainer-x .selectSource {
-  margin-left: 4em;
+  margin-left: 3.2em;
 }
 
 #seriesScheduleSection {
@@ -1500,6 +1500,17 @@ button.is-emby-button emby-button {
 .layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .infoWrapper {
   width: 76%;
   max-width: 76%;
+}
+
+.layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .trackSelections.focuscontainer-x .selectVideo, 
+.layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .trackSelections.focuscontainer-x .selectAudio, 
+.layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .trackSelections.focuscontainer-x .selectSubtitles, 
+.layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .trackSelections.focuscontainer-x .selectSource, 
+.layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .trackSelections.focuscontainer-x .selectVideo, 
+.layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .trackSelections.focuscontainer-x .selectAudio, 
+.layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .trackSelections.focuscontainer-x .selectSubtitles, 
+.layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .trackSelections.focuscontainer-x .selectSource {
+  margin-left: 3.8em;
 }
 
 .layout-desktop .trackSelections .selectContainer {
@@ -2498,7 +2509,7 @@ a[href*="shokoanime.com"] {
   z-index: -1;
   border-top-right-radius: 1em;
   margin: 1.25em 0;
-  padding-top: 18.5em;
+  padding-top: 18.3em;
   border-top-left-radius: 0em;
   padding-bottom: 0.3em !important;
 }
@@ -2519,7 +2530,7 @@ a[href*="shokoanime.com"] {
   box-shadow: 0px 2px 8px #0005;
   border-bottom-left-radius: 1em;
   border-bottom-right-radius: 1em;
-  padding-bottom: 0.3em;
+  padding-bottom: 0em;
 }
 
 .layout-desktop #itemDetailPage .card.portraitCard .cardImageContainer.coveredImage.cardContent.lazy.blurhashed.lazy-image-fadein-fast,
@@ -3479,7 +3490,7 @@ a[href*="shokoanime.com"] {
 .layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button.show-focus[data-type="Season"]) .itemDetailsGroup {
   position: fixed;
   top: 49.7em;
-  left: 1.5em;
+  left: 1em;
   width: 38.4em;
 }
 
@@ -3537,7 +3548,7 @@ a[href*="shokoanime.com"] {
 .layout-tv #itemDetailPage:has(.button-link.itemAction.emby-button.show-focus[data-type="Season"]) .mainDetailButtons.focuscontainer-x {
   top: 8em !important;
   width: 28.6em;
-  padding-top: 21.9em;
+  padding-top: 21.7em;
   padding-bottom: 0.3em;
 }
 
@@ -3555,6 +3566,7 @@ a[href*="shokoanime.com"] {
 
 .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .button-flat.btnPlay.detailButton.emby-button,
 .layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button.show-focus[data-type="Season"]) .button-flat.btnPlay.detailButton.emby-button { 
+  margin-left: 0.8em !important;
 }
 
 .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .infoWrapper .nameContainer .itemName.infoText.subtitle.focuscontainer-x {
