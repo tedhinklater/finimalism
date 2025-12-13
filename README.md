@@ -14,15 +14,17 @@ Just paste an import line into your "Dashboard > Branding > CSS" section, or "Us
 
 ### Each version with [Home Screen Sections](https://github.com/IAmParadox27/jellyfin-plugin-home-sections) / [Featured Content Bar](https://github.com/tedhinklater/Jellyfin-Featured-Content-Bar) / [Jellyfin Enhanced](https://github.com/n00bcodr/Jellyfin-Enhanced)
 
-![1](https://github.com/user-attachments/assets/a63a8412-de65-4e4e-a447-b590bdf79d80)
-![2](https://github.com/user-attachments/assets/cc0bc80e-c718-4d1b-b5aa-bd971d7f13df)
-![3](https://github.com/user-attachments/assets/ac619837-3120-417c-b563-222a0ce295f8)
-![4](https://github.com/user-attachments/assets/0b573862-e5e0-46de-b133-7d72bfc2f558)
-![5](https://github.com/user-attachments/assets/090bfb2b-8c92-4bd6-b24c-69f408705444)
-![6](https://github.com/user-attachments/assets/dfd1091e-5e6b-44a8-9389-2f349f797b1d)
-![7](https://github.com/user-attachments/assets/25123943-fbe3-4fef-8469-c4ebb88e71fe)
-![8](https://github.com/user-attachments/assets/3f4c7d04-e41a-4499-82cf-11cbdaa882fe)
+<img width="1920" height="1080" alt="1" src="https://github.com/user-attachments/assets/dca9544b-6fdf-44a9-9d80-0aea4d95d3ad" />
+<img width="1920" height="1080" alt="2" src="https://github.com/user-attachments/assets/81407b6f-1c94-457d-ad52-f5f60de436d9" />
+<img width="1920" height="1080" alt="3" src="https://github.com/user-attachments/assets/8eb388ed-f413-45ea-ad5a-7cc2f65693cd" />
+<img width="1920" height="1080" alt="4" src="https://github.com/user-attachments/assets/110a64a6-d399-4ab8-a117-5a1e61905892" />
+<img width="1920" height="1080" alt="5" src="https://github.com/user-attachments/assets/e0bf658f-2644-4123-92a9-656a033cf93f" />
+<img width="1920" height="1080" alt="6" src="https://github.com/user-attachments/assets/912a1470-ad28-44dc-a3da-6c9823c53900" />
+<img width="1920" height="1080" alt="7" src="https://github.com/user-attachments/assets/95ee94a6-4ec3-48a4-970a-b812188822e9" />
+<img width="1920" height="1080" alt="8" src="https://github.com/user-attachments/assets/10003885-93ec-4a19-b55e-a29f8544124e" />
+
 ![player](https://github.com/user-attachments/assets/bb32d44f-6a96-45a3-b762-307368103506)
+
 
 If you want it without the animations, add this line 
 
