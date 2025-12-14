@@ -501,6 +501,10 @@ color: #000;
   border-radius: var(--rounding);
 }
 
+.verticalSection.section0 .cardBox {
+  background: transparent;
+}
+
 .defaultCardBackground1,
 .defaultCardBackground2,
 .defaultCardBackground3,
