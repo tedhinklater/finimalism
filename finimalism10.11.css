@@ -4003,15 +4003,42 @@ a[href*="shokoanime.com"] {
 
 /* 1440p resolution */
 @media (min-width: 2400px) {
-  .layout-desktop body, .layout-tv body {
+  .layout-desktop body {
     font-size: 133.333% !important;
+  }
+  .itemDetailsGroup .label::before,
+  .trackSelections .selectLabel::before {
+    font-size: 18pt;
+    line-height: 27px;
+  }
+}
+
+/* 1440p TV resolution */
+@media (min-width: 2400px) {
+  .layout-tv body {
+    font-size: 110% !important;
   }
 }
 
 /* 4k resolution */
 @media (min-width: 3000px) {
-  .layout-desktop body, .layout-tv body {
+  .layout-desktop body {
     font-size: 200% !important;
+  }
+  .spotlightiframe {
+    margin-top: -3.5em !important;
+  }
+  .itemDetailsGroup .label::before,
+  .trackSelections .selectLabel::before {
+    font-size: 22pt;
+    line-height: 39px;
+  }
+}
+
+/* 4k TV resolution */
+@media (min-width: 3000px) {
+  .layout-tv body {
+    font-size: 150% !important;
   }
   .spotlightiframe {
     margin-top: -3.5em !important;
