@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Geom:ital,wght@0,300..900;1,300..900&display=swap');
 body {
   font-family: "Geom", sans-serif;
@@ -407,6 +408,12 @@ p.overview.detail-clamp-text {
 
 #childrenContent .starRatingContainer {
   display: none;
+}
+
+@media (min-width: 100em) {
+    .portraitCard, .squareCard {
+        width: 11%;
+    }
 }
 
 @media (max-width: 62.5em) {
@@ -837,25 +844,25 @@ progress {
 
 .layout-desktop .overflowPortraitCard,
 .layout-desktop .overflowSquareCard {
-  width: 7.6vw;
+  width: 7.5vw;
   min-width: 9em;
 }
 
 .layout-tv .overflowPortraitCard,
 .layout-tv .overflowSquareCard {
-  width: 7.6vw;
+  width: 7.5vw;
   min-width: 9em;
 }
 
 .layout-desktop #itemDetailPage .overflowSquareCard,
 .layout-tv #itemDetailPage .overflowSquareCard {
-  width: 7.6vw;
+  width: 7.5vw;
   min-width: 9em;
 }
 
 .layout-desktop #itemDetailPage .overflowBackdropCard,
 .layout-tv #itemDetailPage .overflowBackdropCard {
-  width: 15.55vw;
+  width: 15.3vw;
   min-width: 18em;
 }
 
@@ -2974,23 +2981,23 @@ a[href*="shokoanime.com"] {
 
 .layout-desktop #scenesCollapsible .itemAction.chapterCard.overflowBackdropCard,
 .layout-tv #scenesCollapsiblecard .itemAction.chapterCard.overflowBackdropCard {
-  width: 15.55vw;
+  width: 15.3vw;
   min-width: unset;
 }
 
 .layout-desktop #castCollapsible .card.overflowPortraitCard.personCard.card-hoverable.card-withuserdata,
 .layout-tv #castCollapsible .card.overflowPortraitCard.personCard.card-hoverable.card-withuserdata {
-  width: 7.6vw;
+  width: 7.5vw;
 }
 
 .layout-desktop #guestCastCollapsible .card.overflowPortraitCard.personCard.card-hoverable.card-withuserdata,
 .layout-tv #guestCastCollapsible .card.overflowPortraitCard.personCard.card-hoverable.card-withuserdata {
-  width: 7.6vw;
+  width: 7.5vw;
 }
 
 .layout-desktop #similarCollapsible .card.overflowPortraitCard,
 .layout-tv #similarCollapsible .card.overflowPortraitCard {
-  width: 7.6vw;
+  width: 7.5vw;
 }
 
 @media (max-height: 1000px) {
@@ -3629,7 +3636,7 @@ a[href*="shokoanime.com"] {
 
 .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .button-flat.btnPlay.detailButton.emby-button,
 .layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button.show-focus[data-type="Season"]) .button-flat.btnPlay.detailButton.emby-button { 
-  margin-left: 0.8em !important;
+  margin-left: 0em !important;
 }
 
 .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .infoWrapper .nameContainer .itemName.infoText.subtitle.focuscontainer-x {
@@ -3736,7 +3743,7 @@ a[href*="shokoanime.com"] {
 
 .layout-desktop .itemDetailPage:has(.detailImageContainer .card.squareCard .cardImageContainer.coveredImage.cardContent.lazy.blurhashed.lazy-image-fadein-fast) .mainDetailButtons.focuscontainer-x,
 .layout-tv .itemDetailPage:has(.detailImageContainer .card.squareCard .cardImageContainer.coveredImage.cardContent.lazy.blurhashed.lazy-image-fadein-fast) .mainDetailButtons.focuscontainer-x {
-  width: 17.55em;
+  width: 16.75em;
   left: 11.15em;
 }
 
