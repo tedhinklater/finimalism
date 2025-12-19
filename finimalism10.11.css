@@ -707,7 +707,7 @@ progress::-webkit-progress-value {
 
 #itemDetailPage .button-link {
   color: inherit;
-  font-weight: 400;
+  font-weight: 600;
   transition: color 0.3s;
 }
 
@@ -880,7 +880,7 @@ progress {
   text-overflow: ellipsis;
   white-space: normal;
   margin-left: 0em;
-  font-weight: 400;
+  font-weight: 600;
   padding-top: 0.25em;
   padding-bottom: 0.25em;
   line-height: 1.05em;
@@ -888,8 +888,7 @@ progress {
 
 .cardText.cardTextCentered.cardText-secondary {
   padding-top: 0;
-  padding-bottom: 0.5em;
-  margin-top: -0.1em;
+  padding-bottom: 0.4em;
 }
 
 .skinHeader-withBackground {
@@ -1187,7 +1186,7 @@ progress {
   text-align: center;
   padding-left: 1em;
   padding-right: 1.5em;
-  font-weight: 400;
+  font-weight: 600;
   margin-left: 0.5em;
   transform: translateX(-5.7%);
 }
@@ -3955,7 +3954,7 @@ a[href*="shokoanime.com"] {
 .layout-desktop .button-flat.btnPlay.detailButton.emby-button .detailButton-content,
 .layout-tv .button-flat.btnPlay.detailButton.emby-button .detailButton-content {
   transform-origin: center;
-  width: 6.4em;
+  width: 7.1em;
 }
 
 .layout-desktop .button-flat.btnPlay.detailButton.emby-button:hover .detailButton-content,
