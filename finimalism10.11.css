@@ -1604,11 +1604,13 @@ button.is-emby-button emby-button {
 .layout-tv .verticalSection.section2 .card.overflowBackdropCard {
 }
 
-.verticalSection.section0 .cardBox {
+.verticalSection.section0 .card[data-type="CollectionFolder"] .cardBox {
   background: transparent;
 }
 
-.verticalSection.section0 .textActionButton {
+.verticalSection.section0 .textActionButton[data-type="CollectionFolder"],
+.verticalSection.section0 .textActionButton[data-type="UserView"]
+ {
   display: none;
 }
 
