@@ -23,8 +23,7 @@ Just paste an import line into your "Dashboard > Branding > CSS" section, or "Us
 <img width="1920" height="1080" alt="7" src="https://github.com/user-attachments/assets/95ee94a6-4ec3-48a4-970a-b812188822e9" />
 <img width="1920" height="1080" alt="8" src="https://github.com/user-attachments/assets/10003885-93ec-4a19-b55e-a29f8544124e" />
 
-![player](https://github.com/user-attachments/assets/bb32d44f-6a96-45a3-b762-307368103506)
-
+![player](https://github.com/user-attachments/assets/7353a321-1107-4198-b9a2-1519fc96ddc2)
 
 If you want it without the animations, add this line 
 
