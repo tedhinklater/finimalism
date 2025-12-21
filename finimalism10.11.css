@@ -1076,12 +1076,26 @@ progress {
   border-radius: var(--rounding) !important;
 }
 
+.layout-desktop .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) .listItemImageButton {
+  background: transparent;
+  color: transparent;
+}
 
+.layout-desktop .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) .listItem.listItem-largeImage.listItem-withContentWrapper:hover .paper-icon-button-light[data-action="resume"] {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+.layout-desktop .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) .paper-icon-button-light[data-action="resume"]:hover {
+  background-color: rgba(0, 0, 0, 0.86) !important;
+  color: var(--accent) !important;
+}
 
 .layout-desktop #itemDetailPage .listItemImage.listItemImage-large.itemAction.lazy.non-blurhashable.lazy-image-fadein-fast[data-action="link"] {
   border-bottom-left-radius: 0 !important;
   border-bottom-right-radius: 0 !important;
-  max-width: 22em;
+  max-width: 100%;
+  width: 100%;
 }
 
 /*hover zoom*/
@@ -2236,6 +2250,10 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
   background: #0a07159e;
 }
 
+.layout-desktop #itemDetailPage .listItem {
+  width: 27em;
+}
+
 .listItem:hover,
 .listItem:focus {
   transition: 0.2s;
@@ -3146,8 +3164,8 @@ a[href*="shokoanime.com"] {
 
 .layout-desktop #listChildrenCollapsible.verticalSection-extrabottompadding #childrenContent .itemsContainer.padded-right.vertical-list .listItem.listItem-largeImage.listItem-withContentWrapper .listItem-content .listItemBody.itemAction,
 .layout-tv #listChildrenCollapsible.verticalSection-extrabottompadding #childrenContent .itemsContainer.padded-right.vertical-list .listItem.listItem-largeImage.listItem-withContentWrapper .listItem-content .listItemBody.itemAction {
-  width: 16vw;
-  min-width: 16em;
+  width: 26em;
+  min-width: 26em;
   background: transparent;
   border-radius: 0;
 }
@@ -3394,10 +3412,7 @@ a[href*="shokoanime.com"] {
 }
 
 .layout-tv #childrenContent .itemsContainer.padded-right.itemsContainer-tv.vertical-list {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
   width: 70vw;
-  gap: 1%;
 }
 
 .layout-desktop .itemDetailPage:has(.itemName.parentNameLast) #itemBackdrop,
