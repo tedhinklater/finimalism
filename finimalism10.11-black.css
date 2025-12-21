@@ -579,3 +579,8 @@ color: #000;
   color: var(--accentBlack) !important;
   text-decoration: none;
 }
+
+.layout-desktop .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) .paper-icon-button-light[data-action="resume"]:hover {
+  background-color: rgba(0, 0, 0, 0.86) !important;
+  color: var(--accentBlack) !important;
+}
