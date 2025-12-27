@@ -1,0 +1,542 @@
+@import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/finimalism11.css");
+
+/* ---- Black ---- */
+
+:root {--accentBlack: #ca1414;}
+
+/* Backdrop */
+.backgroundContainer {
+  background: #000;
+  -webkit-background-size: cover;
+  background-size: cover;
+  opacity: 0;
+}
+
+@keyframes fadeContainer {
+    from { opacity: 0.5; }
+    to   { opacity: 1; }
+}
+
+.itemsContainer.padded-left {
+  position: top;
+  z-index: 1;
+}
+
+.itemsContainer.padded-left::before {
+  opacity: 1;
+  animation: fadeContainer 5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+.sectionTitleContainer.sectionTitleContainer-cards.padded-left::before {
+  backdrop-filter: saturate(0%) !important;
+}
+
+.detailPagePrimaryContainer {
+  position: relative;
+  z-index: 2;
+}
+
+.backgroundContainer.withBackdrop {
+  background-color: rgba(0, 0, 0, 0);
+  filter: saturate(0%);
+}
+
+@supports (backdrop-filter: blur(15px)) {
+  .dialog, .mainDrawer, .toast, .appfooter {
+    backdrop-filter: blur(15px);
+    background-color: #000a;
+  }
+}
+
+.raised, .fab, a[data-role="button"] {
+  background: #000;
+  transition: all 0.2s !important;
+  border: 1px solid white;
+  font-weight: 900;
+}
+
+
+.collapseContent, .formDialogFooter:not(.formDialogFooter-clear), .formDialogHeader:not(.formDialogHeader-clear), .paperList, .visualCardBox {
+  background-color: #000a;
+}
+
+.layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .itemsContainer.padded-left::before,
+.layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .itemsContainer.padded-left::before,
+.layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .detailPagePrimaryContainer::before,
+.layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .detailPagePrimaryContainer::before,
+.layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .detailPageSecondaryContainer::before,
+.layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .detailPageSecondaryContainer::before,
+.layout-desktop .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) .itemsContainer.padded-left::before,
+.layout-tv .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) .itemsContainer.padded-left::before,
+.layout-desktop .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) .detailPagePrimaryContainer::before,
+.layout-tv .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) .detailPagePrimaryContainer::before,
+.layout-desktop .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) .detailPageSecondaryContainer::before,
+.layout-tv .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) .detailPageSecondaryContainer::before {
+  animation: none !important;
+}
+
+.layout-desktop .detailRibbon::before, 
+.layout-tv .detailRibbon::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #070707;
+    background-size: auto;
+  background-size: auto;
+  background-size: cover;
+  z-index: -1;
+  width: 100vw;
+}
+
+.layout-desktop .mainDetailButtons.focuscontainer-x::before, 
+.layout-tv .mainDetailButtons.focuscontainer-x::before {
+  background: #070707;
+  box-shadow: 0px 2px 8px #0005;
+}
+
+.layout-desktop .page.libraryPage.itemDetailPage.noSecondaryNavPage.selfBackdropPage.mainAnimatedPage::before,
+.layout-tv .page.libraryPage.itemDetailPage.noSecondaryNavPage.selfBackdropPage.mainAnimatedPage::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(54deg, rgb(0% 0% 0%) 0%, rgb(0% 0% 0% / 0.998078528040323) 6.25%, rgb(0% 0% 0% / 0.9923879532511287) 12.5%, rgb(0% 0% 0% / 0.9831469612302546) 18.75%, rgb(0% 0% 0% / 0.9707106781186547) 25%, rgb(0% 0% 0% / 0.9555570233019602) 31.25%, rgb(0% 0% 0% / 0.938268343236509) 37.5%, rgb(0% 0% 0% / 0.9195090322016128) 43.75%, rgb(0% 0% 0% / 0.9) 50%, rgb(0% 0% 0% / 0.8804909677983872) 56.25%, rgb(0% 0% 0% / 0.8617316567634911) 62.5%, rgb(0% 0% 0% / 0.8444429766980398) 68.75%, rgb(0% 0% 0% / 0.8292893218813453) 75%, rgb(0% 0% 0% / 0.8168530387697455) 81.25%, rgb(0% 0% 0% / 0.8076120467488714) 87.5%, rgb(0% 0% 0% / 0.801921471959677) 93.75%, rgb(0% 0% 0% / 0.8) 100% );
+  background-size: cover;
+  opacity: 0.6;
+  z-index: -1;
+  background-attachment: fixed;
+  pointer-events: none;
+  animation: fadeBackdrop 1s ease-out 2s forwards;
+}
+
+.layout-desktop #itemDetailPage .infoWrapper .nameContainer .parentName.focuscontainer-x:hover {
+  color: var(--accentBlack) !important;
+}
+
+.layout-desktop #itemDetailPage .nameContainer .itemName.infoText.subtitle.focuscontainer-x .button-link.itemAction.emby-button[data-action="link"],
+.layout-tv #itemDetailPage .nameContainer .itemName.infoText.subtitle.focuscontainer-x .button-link.itemAction.emby-button[data-action="link"]  {
+  color: var(--accentBlack) !important;
+}
+
+.listItemImage:hover {
+  box-shadow: 0px 0px 350px #5b00ff6b;
+}
+
+.layout-desktop #itemDetailPage .listItem:hover, .layout-tv #itemDetailPage .listItem:hover {
+  box-shadow: 0px 0px 5px #fff9;
+  background: #07070785;
+}
+
+.raised.homeLibraryButton {
+  box-shadow: 0px 0px 1px rgb(255, 255, 255) !important;
+  border: solid 1px var(--accentBlack) !important;
+}
+
+.raised.homeLibraryButton:hover,.emby-tab-button:hover, .textareaLabelFocused, .buttonActive {
+  color: rgb(0, 0, 0) !important;
+  box-shadow: 0px 0px 5px rgb(255, 255, 255) !important;
+}
+
+.button-flat:hover, .paper-icon-button-light:hover { 
+  color: rgb(255, 255, 255) !important;
+}
+
+.cardOverlayContainer:hover, .dialog, .toast, .raised.homeLibraryButton:hover {
+  box-shadow: 0px 0px 5px rgb(255, 255, 255);
+  border: solid 1px #fff;
+}
+
+.mainDrawer-scrollContainer.scrollContainer .navMenuOption:hover, .mainDrawer-scrollContainer.scrollContainer .navMenuOption:hover emby-button, button.is-emby-button:hover emby-button {
+  background: #fff !important;
+  transition: background 0 !important;
+  color: #000 !important;
+}
+
+#myPreferencesMenuPage .verticalSection-extrabottompadding .emby-button:hover,
+#myPreferencesMenuPage .verticalSection-extrabottompadding .emby-button .listItemBody:hover,
+#myPreferencesMenuPage .verticalSection-extrabottompadding .emby-button .listItem:hover {
+  background: #fff !important;
+  transition: background 0.3s ease;
+  color: #000 !important;
+}
+
+.dialogContainer .listItem:hover .listItemBodyText {
+  color: #000;
+}
+
+.dialogContainer .listItem:hover .listItemAside {
+  color: #000d;
+}
+
+#myPreferencesMenuPage .verticalSection-extrabottompadding .emby-button:hover .listItemBodyText {
+  color: black !important;
+}
+
+.subtitleList .listItem:hover .listItemBody {
+  color: #fff;
+}
+
+.mdl-slider::-webkit-slider-thumb,
+.mdl-slider .mdl-slider::-webkit-slider-thumb {
+  background: var(--accentBlack) !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.mdl-slider::-moz-range-thumb,
+.mdl-slider .mdl-slider::-moz-range-thumb {
+  background: var(--accentBlack) !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+.mdl-slider::-ms-thumb,
+.mdl-slider .mdl-slider::-ms-thumb {
+  background: var(--accentBlack) !important;
+  border: none !important;
+}
+
+.mdl-slider .mdl-slider-background-lower[style] {
+  background: var(--accentBlack) !important;
+  background-color: var(--accentBlack) !important;
+}
+
+.mdlSpinnerActive .mdl-spinner__circleLeft {
+  -webkit-animation: mdl-spinner__left-spin 1333ms cubic-bezier(.4,0,.2,1) infinite both;
+  animation: mdl-spinner__left-spin 1333ms cubic-bezier(.4,0,.2,1) infinite both;
+  border: 0.5em solid: var(--accentBlack);
+}
+
+.button-flat:hover {
+  background: transparent !important;
+  color: var(--accentBlack) !important;
+}
+
+.paper-icon-button-light:hover,
+.raised.homeLibraryButton:hover,
+.button-flat:hover,
+.paper-icon-button-light:hover:not(:disabled),
+.emby-tab-button:hover,
+.selectLabelFocused,
+.inputLabelFocused,
+.textareaLabelFocused,
+.buttonActive,
+.button-link {
+  color: var(--accentBlack);
+}
+
+.cardOverlayButton-hover .playstatebutton-icon-played {
+  color: var(--accentBlack);
+  background: #fff !important;
+  border-radius: 9999em !important;
+  width: 1.098766666em !important;
+  height: 1.09876666666em !important;
+  margin-top: 0.19em;
+  margin-right: 0.05em;
+}
+
+.countIndicator, 
+.playedIndicator {
+  background: var(--accentBlack);
+}
+
+#scenesContent .innerCardFooter {
+    background: #000000bd !important;
+}
+
+.paper-icon-button-light:hover, .raised.homeLibraryButton:hover, .button-flat:hover, .playstatebutton-icon-played, .paper-icon-button-light:hover:not(:disabled), .emby-tab-button:hover, .selectLabelFocused, .inputLabelFocused, .textareaLabelFocused, .buttonActive, .button-link {
+  color: var(--accentBlack);
+}
+
+.material-icons.detailButton-icon.favorite.ratingbutton-icon-withrating:hover {
+    color: var(--accentBlack);
+    transition: color 1s;
+}
+
+.itemProgressBarForeground {
+  background: var(--accentBlack);
+}
+
+.upNextContainer .raised {
+  background: var(--accentBlack);
+  border: transparent;
+  padding: 0.8em;
+  padding-left: 2em;
+  padding-right: 2em;
+  margin-left: 0;
+}
+
+.layout-tv #itemDetailPage .emby-button.show-focus:focus {
+  border: solid 1px #fff;
+  background: transparent !important;
+  color: var(--accentBlack) !important;
+  width:auto;
+  height: auto;
+  transform: scale(1);
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  box-shadow: 0px 0px 5px #fff9;
+}
+
+.raised.homeLibraryButton:hover, .emby-tab-button:hover, .textareaLabelFocused, .buttonActive {
+  color: rgb(255, 255, 255) !important;
+  box-shadow: 0px 0px 5px rgb(255, 255, 255) !important;
+}
+
+.layout-desktop .headerTabs.sectionTabs .emby-tab-button-active:hover,
+.layout-tv .headerTabs.sectionTabs .emby-tab-button-active:focus {
+  color: #000 !important;
+}
+
+.subtitleResults .listItem:hover .listItemBodyText {
+  color: #fff;
+}
+.subtitleList .listItem:hover .secondary.listItemBodyText,
+.subtitleList .listItem.listItem-border:hover .secondary.listItemBodyText {
+        color: #fffa;
+}
+.actionSheetScroller .listItem.listItem-button:hover .listItemBodyText {
+        color: #000;
+}
+
+.verticalSection-extrabottompadding .emby-button {
+  transition: background 0.3s ease;
+}
+
+.mainDrawer-scrollContainer.scrollContainer .navMenuOption:hover .navMenuOptionText {
+  color: #000 !important;
+}
+
+.emby-select-withcolor > option {
+  color: inherit;
+  background: #000;
+}
+
+.layout-desktop .mainDetailButtons.focuscontainer-x .button-flat:hover, .layout-tv .mainDetailButtons.focuscontainer-x .button-flat:focus {
+}
+
+#loginPage {
+  background: url(https://i.ibb.co/xnWbbLm/bg.jpg) !important; 
+  background-size: cover !important;
+}
+
+.pageTabContent.is-active::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #000000db;
+  background-attachment: scroll;
+  background-size: auto;
+  background-size: cover;
+  opacity: 1;
+  backdrop-filter: saturate(0%);
+  z-index: -1;
+  background-attachment: fixed;
+}
+
+.layout-desktop .mainDetailButtons.focuscontainer-x {
+  background-size: auto;
+  background-size: cover;
+  opacity: 1;
+  z-index: -1;
+  border-radius: var(--rounding);
+}
+
+.backgroundContainer, .preload {
+  background-color: #000;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .paper-icon-button-light:hover:not(:disabled) {
+    color: var(--accentBlack) !important;
+    background-color: rgba(199, 199, 199, 0.2);
+  }
+}
+
+.alphaPickerButton-tv:focus,
+.emby-select-tv-withcolor:focus,
+.guide-channelHeaderCell:focus,
+.programCell:focus,
+.guide-date-tab-button.show-focus:focus,
+.emby-button.detailFloatingButton,
+.alphaPickerButton-tv:focus,
+.emby-select-tv-withcolor:focus,
+.emby-checkbox:checked + span + .checkboxOutline,
+.itemProgressBarForeground {
+  background-color: var(--accentBlack) !important;
+}
+
+.textActionButton:hover {
+  color: var(--accentBlack) !important;
+}
+
+.progressring-spiner,
+.emby-input:focus,
+.emby-textarea:focus,
+.emby-select-withcolor:focus,
+.emby-checkbox:checked + span + .checkboxOutline,
+.emby-checkbox:focus:not(:checked) + span + .checkboxOutline,
+.card:focus .cardBox.visualCardBox,
+.card:focus .cardBox:not(.visualCardBox) .cardScalable {
+  border-color: var(--accentBlack) !important;
+} 
+
+#nowPlayingPage .remoteControlContent.padded-left.padded-right.padded-bottom.hideVideoButtons::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000c;
+  z-index: 0;
+}
+
+.layout-desktop .headerLeft,
+.layout-tv .headerLeft {
+  background: #0008;
+}
+
+.layout-desktop .headerRight,
+.layout-tv .headerRight {
+  background: #0008;
+}
+
+.skip-button {
+  background: #000;
+}
+
+.layout-desktop .videoOsdBottom,
+.layout-tv .videoOsdBottom {
+  background: #000a;
+}
+
+@media (min-width: 70em) {
+  .headerTabs.sectionTabs .tabs-viewmenubar.emby-tabs.focusable.scrollX .emby-tab-button.emby-button.emby-tab-button-active.lastFocused {
+    background: #fff;
+    padding: 0.656em 1em 0.656em;
+    border-radius: 0.25em;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    border: 1px solid transparent;
+    color: #000;
+  }
+}
+
+@media (min-width: 70em) {
+  .headerTabs.sectionTabs .tabs-viewmenubar.emby-tabs.focusable.scrollX .emby-tab-button.emby-button {
+    padding: 0.656em 1em 0.656em;
+    border-radius: 0.25em;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    border: 1px solid #62626287;
+    margin-bottom: 1em;
+  }
+}
+
+.headerTabs.sectionTabs .tabs-viewmenubar.emby-tabs.focusable.scrollX .emby-tab-button.emby-button.emby-tab-button-active {
+background: #fff;
+padding: 0.656em 1em 0.656em;
+border-radius: 0.25em;
+margin-left: 1vw;
+margin-right: 1vw;
+border: 1px solid transparent;
+color: #000;
+}
+
+.itemsContainer > .card > .cardBox {
+  margin-left: 0.6em !important;
+  margin-right: 0.2em !important;
+  background: #00000059;
+  border-radius: var(--rounding);
+}
+
+.verticalSection.section0 .cardBox {
+  background: transparent;
+}
+
+.defaultCardBackground1,
+.defaultCardBackground2,
+.defaultCardBackground3,
+.defaultCardBackground4,
+.defaultCardBackground5 {
+  background-color: #2d0000ba;
+}
+
+.mdl-slider-background-lower {
+  background-color: var(--accentBlack);
+}
+
+.headerSelectedPlayer {
+  max-width: 10em;
+  white-space: nowrap;
+  color: #ff6767;
+  filter: drop-shadow(0px 0px 3px #f00);
+}
+
+.layout-desktop #itemDetailPage .listItem, .layout-tv #itemDetailPage .listItem {
+  background: #070707;
+}
+
+.layout-desktop .nowPlayingInfoContainer, 
+.layout-tv .nowPlayingInfoContainer {
+  position: fixed;
+  top: 4em;
+  left: 1vw;
+  width: 96.7vw;
+  border-radius: var(--rounding);
+  padding: 1em;
+  box-shadow: 0px 2px 12px #000;
+  background: #0d0d0dbd;
+}
+
+.layout-desktop .button-flat.btnPlay.detailButton.emby-button, 
+.layout-tv .button-flat.btnPlay.detailButton.emby-button {
+  background: var(--accentBlack) !important;
+  box-shadow: 0px 0px 13px #8200007a;
+}
+
+.layout-desktop .button-flat.btnPlay.detailButton.emby-button:hover, 
+.layout-tv .button-flat.btnPlay.detailButton.emby-button:focus {
+  background: #fff !important;
+  box-shadow: 0px 0px 11px #ffffff70;
+  color: var(--accentBlack) !important;
+}
+
+.layout-mobile .button-flat.btnPlay.detailButton.emby-button {
+  width: 22%;
+  height: 2em;
+  background: var(--accentBlack) !important;
+  box-shadow: 0px 0px 13px #432b6f7a;
+  margin-left: -0.9em !important;
+}
+
+.layout-mobile .button-flat.btnPlay.detailButton.emby-button:focus {
+  background: #fff !important;
+  box-shadow: 0px 0px 11px #ffffff70;
+  color: var(--accentBlack) !important;
+}
+
+.layout-mobile .button-flat.btnPlay.detailButton.emby-button .detailButton-content {
+  transform-origin: center;
+}
+
+.layout-mobile .button-flat.btnPlay.detailButton.emby-button:focus .detailButton-content {
+  transform: scale(1.25);
+}
+
+#itemDetailPage .button-link:hover {
+  color: var(--accentBlack) !important;
+  text-decoration: none;
+}
+
+.layout-desktop .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) .paper-icon-button-light[data-action="resume"]:hover {
+  background-color: rgba(0, 0, 0, 0.86) !important;
+  color: var(--accentBlack) !important;
+}
