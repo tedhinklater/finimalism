@@ -24,6 +24,9 @@ Just paste an import line into your "Dashboard > Branding > CSS" section, or "Us
 ```css
 @import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/finimalism11.css");
 ```
+```css
+@import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/Finimalism11-Black.css");
+```
 <img width="1920" height="1080" alt="11" src="https://i.ibb.co/Lh2hfkd1/Screenshot-from-2025-12-27-19-28-57.png" />
 
 If you want it without the animations, add this line 
