@@ -3076,6 +3076,10 @@ a[href*="shokoanime.com"] {
   position: fixed !important;
 }
 
+.layout-desktop .itemDetailPage:has(#scenesCollapsible #scenesContent .card.itemAction.chapterCard.overflowBackdropCard[data-isfolder="false"]) #specialsCollapsible {
+  top: 19em !important;
+}
+
 .layout-desktop .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) #specialsCollapsible.verticalSection.detailVerticalSection.emby-scroller-container,
 .layout-tv .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) #specialsCollapsible.verticalSection.detailVerticalSection {
   position: relative !important;
