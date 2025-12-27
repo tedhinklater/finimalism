@@ -5419,3 +5419,13 @@ a[href*="shokoanime.com"] {
 .layout-mobile .button-flat.btnPlay.detailButton.emby-button:focus .detailButton-content {
   transform: scale(1.25);
 }
+
+.layout-mobile .detailPagePrimaryContainer {
+  pointer-events: all;
+}
+
+.layout-mobile .itemDetailsGroup .label::before,
+.layout-mobile .trackSelections .selectLabel::before {
+  font-size: initial;
+  line-height: revert;
+}
