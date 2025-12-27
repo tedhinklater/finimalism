@@ -27,7 +27,8 @@ Just paste an import line into your "Dashboard > Branding > CSS" section, or "Us
 ```css
 @import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/Finimalism11-Black.css");
 ```
-<img width="1920" height="1080" alt="11" src="https://i.ibb.co/Lh2hfkd1/Screenshot-from-2025-12-27-19-28-57.png" />
+
+![output](https://github.com/user-attachments/assets/ce1bb9a0-f09e-46ab-ab56-2c82fba6b85d)
 
 If you want it without the animations, add this line 
 
