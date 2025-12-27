@@ -3030,6 +3030,11 @@ a[href*="shokoanime.com"] {
   height: 14.9em;
 }
 
+.layout-desktop .itemDetailPage:not(#guestCastCollapsible .cardText .itemAction.textActionButton[data-action="link"]) #castCollapsible.verticalSection.detailVerticalSection, 
+.layout-tv .itemDetailPage:not(#guestCastCollapsible .cardText .itemAction.textActionButton[data-action="link"]) #castCollapsible.verticalSection.detailVerticalSection {
+  max-width: 105.5vh;
+}
+
 .layout-desktop #itemDetailPage #castCollapsible #peopleHeader.sectionTitle,
 .layout-tv #itemDetailPage #castCollapsible #peopleHeader.sectionTitle {
   padding-top: 0 !important;
