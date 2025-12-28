@@ -4359,7 +4359,23 @@ a[href*="shokoanime.com"] {
   min-height: calc(100vh - 3em) !important;
   animation: fadeTitle 0.5s ease-out 2s forwards;
   opacity: 0;
+  backdrop-filter:
+}
+
+.detailPageWrapperContainer::before {
+  content: '';
+  position: absolute;
+  animation: fadeTitle 2s ease-out 2.5s forwards;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: transparent;
+  background-size: auto;
+  background-size: cover;
   backdrop-filter: var(--backdropBlur);
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
 }
 
 .detailPageWrapperContainer:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]),
@@ -4546,12 +4562,12 @@ a[href*="shokoanime.com"] {
 .layout-desktop #similarCollapsible.verticalSection.detailVerticalSection.verticalSection-extrabottompadding.emby-scroller-container,
 .layout-tv #similarCollapsible.verticalSection.detailVerticalSection.verticalSection-extrabottompadding {
   position: fixed;
-  top: 0em;
+  top: 2.5em;
   right: 0em;
   width: 6vw;
   overflow-y: scroll;
   max-height: calc(100vh - 0em);
-  height: calc(100vh - 7em);
+  height: calc(100vh - 4em);
   padding-top: 1em;
   padding-bottom: 3em;
 }
