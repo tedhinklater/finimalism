@@ -125,7 +125,7 @@ h2 {
 .textActionButton:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
-  color: #8564ff;
+  color: var(--accent);
 }
 
 .cardText-secondary, 
@@ -163,7 +163,7 @@ h2 {
 
 .layout-desktop #itemDetailPage .infoWrapper .nameContainer .parentName.focuscontainer-x:hover,
 .layout-tv #itemDetailPage .infoWrapper .nameContainer .parentName.focuscontainer-x:focus { 
-  color: #a086ff;
+  color: var(--accent);
 }
 
 .layout-desktop #itemDetailPage .infoWrapper .nameContainer .parentName.focuscontainer-x .button-link:hover,
@@ -273,7 +273,7 @@ h2 {
 
 .mdl-slider .mdl-slider-background-lower[style] {
   background: var(--accent) !important;
-  background-color: #8564ff !important;
+  background-color: var(--accent) !important;
 }
 
 .mdl-slider-background-flex {
@@ -366,19 +366,19 @@ h2 {
 }
 
 .defaultCardBackground1 {
-  background-color: #3d3479ba;
+  background-color: var(--tint2);
 }
 .defaultCardBackground2 {
-  background-color: #352b78ba;
+  background-color: var(--tint2);
 }
 .defaultCardBackground3 {
-  background-color: #2d2176ba;
+  background-color: var(--tint2);
 }
 .defaultCardBackground4 {
-  background-color: #352c67ba;
+  background-color: var(--tint2);
 }
 .defaultCardBackground5 {
-  background-color: #2c1f78ba;
+  background-color: var(--tint2);
 }
 
 .countIndicator {
@@ -841,7 +841,7 @@ progress::-webkit-progress-value {
 }
 
 .collapseContent, .formDialogFooter:not(.formDialogFooter-clear), .formDialogHeader:not(.formDialogHeader-clear), .paperList, .visualCardBox {
-  background-color: #070710a3;
+  background-color: var(--tint);
 }
 progress {
   background: rgba(0, 0, 0, 0.5) !important;
@@ -1846,7 +1846,7 @@ button.is-emby-button emby-button {
 }
 
 .css-4yt2of, .css-139vfv2 {
-  background-color: rgb(20, 16, 28);
+  background-color: var(--tint)
   color: rgb(255, 255, 255);
   background-image: none;
 }
@@ -2166,8 +2166,8 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 .headerSelectedPlayer {
   max-width: 10em;
   white-space: nowrap;
-  color: #df9aff;
-  filter: drop-shadow(0px 0px 4px var(--accent));
+  color: var(--accent);
+  filter: drop-shadow(0px 0px 4px #fff);
 }
 
 .navMenuOption {
@@ -3112,6 +3112,11 @@ a[href*="shokoanime.com"] {
   position: fixed !important;
 }
 
+.button-submit:focus {
+  background: var(--accent);
+  color: #fff;
+}
+
 .layout-desktop .itemDetailPage:has(#scenesCollapsible #scenesContent .card.itemAction.chapterCard.overflowBackdropCard[data-isfolder="false"]) #specialsCollapsible {
   top: 19em !important;
 }
@@ -3605,7 +3610,7 @@ a[href*="shokoanime.com"] {
 .layout-tv #itemDetailPage .emby-button.show-focus:focus {
   border: solid 1px #fff;
   background: transparent !important;
-  color:#8564ff !important;
+  color: var(--accent) !important;
   padding-left: 0.5em;
   padding-right: 0.5em;
   box-shadow: 0px 0px 5px #fff9;
@@ -3614,7 +3619,7 @@ a[href*="shokoanime.com"] {
 .layout-tv #itemDetailPage .button-flat.btnPlay.detailButton.emby-button.show-focus:focus {
   border: solid 1px #fff;
   background: #fff !important;
-  color:#8564ff !important;
+  color: var(--accent) !important;
 }
 
 .layout-tv .card.show-focus:focus {
@@ -3925,7 +3930,7 @@ a[href*="shokoanime.com"] {
 
 .layout-desktop #itemDetailPage .nameContainer .itemName.infoText.subtitle.focuscontainer-x .button-link.itemAction.emby-button[data-action="link"],
 .layout-tv #itemDetailPage .nameContainer .itemName.infoText.subtitle.focuscontainer-x .button-link.itemAction.emby-button[data-action="link"]  {
-  color: #7c64ff !important;
+  color: var(--accent) !important;
   font-weight: 800;
 }
 
@@ -4291,7 +4296,7 @@ a[href*="shokoanime.com"] {
   border-radius: 50%;
   box-shadow: 0 2px 5px rgba(0,0,0,0.4);
   overflow: hidden;
-  background-color: rgba(10, 10, 10, 0.8);
+  background-color: rgba(var(--tint), 0.8);
   color: #E0E0E0;
   border: 1px solid rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(10px);
@@ -4452,7 +4457,7 @@ a[href*="shokoanime.com"] {
 .layout-tv .button-flat.btnPlay.detailButton.emby-button:focus {
   background: #fff !important;
   box-shadow: 0px 0px 11px #ffffff70;
-  color: #39334f !important;
+  color: var(--tint2) !important;
 }
 
 .layout-desktop .button-flat.btnPlay.detailButton.emby-button .detailButton-content,
@@ -5465,7 +5470,7 @@ a[href*="shokoanime.com"] {
 .layout-mobile .button-flat.btnPlay.detailButton.emby-button:focus {
   background: #fff !important;
   box-shadow: 0px 0px 11px #ffffff70;
-  color: #39334f !important;
+  color: var(--tint2) !important;
 }
 
 .layout-mobile .button-flat.btnPlay.detailButton.emby-button .detailButton-content {
