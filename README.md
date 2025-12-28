@@ -28,7 +28,7 @@ Just paste an import line into your "Dashboard > Branding > CSS" section, or "Us
 @import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/Finimalism11-Black.css");
 ```
 
-![output](https://github.com/user-attachments/assets/ce1bb9a0-f09e-46ab-ab56-2c82fba6b85d)
+![output](https://github.com/user-attachments/assets/15847608-20d1-4b3c-b9f5-a885e8841c8e)
 
 If you want it without the animations, add this line 
 
