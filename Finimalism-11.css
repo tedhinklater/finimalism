@@ -171,17 +171,49 @@ h2 {
   text-decoration: none !important;
 }
 
-.layout-desktop p.overview.detail-clamp-text,
-.layout-tv p.overview.detail-clamp-text {
+.layout-desktop p.overview,
+.layout-tv p.overview {
   color: #fff;
   font-weight: 500;
-  -webkit-line-clamp: 4;
   font-size: 1.6vh;
-  min-height: unset;
+  padding-top: 0.4em;
+  margin-bottom: 0;
+  width: 60vh;
+  transition: width 0.2s ease-out 2s, background-color 1s ease-out 2s, border-color 0.5s ease-out 2s, padding-left 1s ease-out 1s, padding-right 1s ease-out 1s;
+  border-color: transparent;
+  border-radius: var(--rounding);
+}
+
+.layout-desktop p.overview.detail-clamp-text,
+.layout-tv p.overview.detail-clamp-text {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 6.6em;
   margin-top: 0.5em;
   margin-bottom: -1em;
-  width: 60vh !important;
+}
+
+.layout-desktop p.overview:hover,
+.layout-tv p.overview:focus {
+  width: 110vh;
+  height: auto;
+  background: var(--tint);
+  border: 0.5px solid;
+  border-color: #fff3;
+  margin-top: calc(0.5em - 1px);
+  margin-left: -1px;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
   height: 6.6em;
+  transition: width 0.2s ease-out 1s, background-color 1s ease-out 0s, border-color 0.5s ease-out 0s, padding-left 1s ease-out 0.25s, padding-right 1s ease-out 0.25s;
+}
+
+.overview-expand.emby-button {
+  opacity: 0;
+  pointer-events: none;
 }
 
 .layout-desktop .itemDetailPage:has(.listItem.listItem-largeImage[data-type="Episode"]) .overview.detail-clamp-text,
@@ -213,13 +245,6 @@ h2 {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
   overflow: hidden;
-}
-
-.layout-desktop .overview,
-.layout-tv .overview {
-  margin-bottom: 0;
-  max-width: 90vw !important;
-  width: calc(91vw - 43.5vh) !important;
 }
 
 .detailImageContainer:has(.cardImageIcon.material-icons.person) {
@@ -5417,6 +5442,7 @@ a[href*="shokoanime.com"] {
     margin-left: 0;
     max-width: 100%;
 }
+
 
 .layout-mobile .button-flat.btnPlay.detailButton.emby-button {
   width: 22%;
