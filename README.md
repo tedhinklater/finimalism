@@ -48,3 +48,13 @@ If you want it with the old emby scrollers, add this
 ```css
 @import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/scrollers-11.css");
 ```
+
+# Feedback
+
+Bug reports are hugely appreciated, but to save time, can you include this info
+
+- Screen resolution (1920x1080, 2560x1440 etc)
+- Screen ratio (16:9, 21:9 etc)
+- Device type (tablet, desktop)
+- Client (Jellyfin Media Player (does not work atm, JMP update soon), Chrome, Firefox etc)
+- Which version of the theme (10.11, 10.11-Black, 11)
