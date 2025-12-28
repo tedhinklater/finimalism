@@ -4815,10 +4815,10 @@ a[href*="shokoanime.com"] {
     width: 20vw;
   }
   .layout-mobile #itemDetailPage .card.backdropCard {
-    width: 65vh;
-    transform: translateY(-26%);
-    max-width: 65vh;
-    margin-top: -33vh;
+    width: 50vh;
+    transform: translateY(-50%);
+    max-width: 25vw;
+    margin-top: 0vh;
   }
 }
 
@@ -5353,7 +5353,7 @@ a[href*="shokoanime.com"] {
 @media (max-width: 100em) and (orientation: landscape) {
   .layout-mobile .detailImageContainer .card.backdropCard, 
   .layout-mobile .detailImageContainer .card.squareCard {
-    left: 1vw;
+    left: 4vw;
     bottom: unset;
     top: -1em !important;
     margin-top: -40vh;
