@@ -35,10 +35,10 @@ If you want it with the old emby scrollers, add this
 ## Experimental version
 
 ```css
-@import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@latest/Finimalism-11.css");
+@import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/Finimalism11.css");
 ```
 ```css
-@import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@latest/Finimalism11-Black.css");
+@import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/Finimalism11-Black.css");
 ```
 
 ![output](https://github.com/user-attachments/assets/15847608-20d1-4b3c-b9f5-a885e8841c8e)
