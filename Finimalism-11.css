@@ -3030,14 +3030,14 @@ a[href*="shokoanime.com"] {
   bottom: calc(9em - 49vh) !important;
 }
 
-.layout-desktop #itemDetailPage #castCollapsible.verticalSection.detailVerticalSection,
-.layout-tv #itemDetailPage #castCollapsible.verticalSection.detailVerticalSection {
+.layout-desktop #itemDetailPage:has(#guestCastCollapsible) #castCollapsible.verticalSection.detailVerticalSection,
+.layout-tv #itemDetailPage:has(#guestCastCollapsible) #castCollapsible.verticalSection.detailVerticalSection {
   max-width: 60vh;
   height: 14.9em;
 }
 
-.layout-desktop .itemDetailPage:not(#guestCastCollapsible .cardText .itemAction.textActionButton[data-action="link"]) #castCollapsible.verticalSection.detailVerticalSection, 
-.layout-tv .itemDetailPage:not(#guestCastCollapsible .cardText .itemAction.textActionButton[data-action="link"]) #castCollapsible.verticalSection.detailVerticalSection {
+.layout-desktop #itemDetailPage:not(:has(#guestCastCollapsible)) #castCollapsible.verticalSection.detailVerticalSection,
+.layout-tv #itemDetailPage:not(:has(#guestCastCollapsible)) #castCollapsible.verticalSection.detailVerticalSection {
   max-width: 105.5vh;
 }
 
@@ -4359,7 +4359,6 @@ a[href*="shokoanime.com"] {
   min-height: calc(100vh - 3em) !important;
   animation: fadeTitle 0.5s ease-out 2s forwards;
   opacity: 0;
-  backdrop-filter:
 }
 
 .detailPageWrapperContainer::before {
@@ -5418,7 +5417,6 @@ a[href*="shokoanime.com"] {
     margin-left: 0;
     max-width: 100%;
 }
-
 
 .layout-mobile .button-flat.btnPlay.detailButton.emby-button {
   width: 22%;
