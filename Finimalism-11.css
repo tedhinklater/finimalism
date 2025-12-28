@@ -1,4 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Geom:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+  --loginGradient: linear-gradient(180deg, rgb(10.98% 11.373% 22.353%) 0%, rgb(10.411% 10.755% 21.118%) 6.25%, rgb(9.877% 10.178% 19.963%) 12.5%, rgb(9.381% 9.64% 18.888%) 18.75%, rgb(8.922% 9.142% 17.892%) 25%, rgb(8.499% 8.684% 16.976%) 31.25%, rgb(8.113% 8.266% 16.14%) 37.5%, rgb(7.763% 7.888% 15.383%) 43.75%, rgb(7.451% 7.549% 14.706%) 50%, rgb(7.175% 7.25% 14.108%) 56.25%, rgb(6.936% 6.991% 13.591%) 62.5%, rgb(6.734% 6.772% 13.153%) 68.75%, rgb(6.569% 6.593% 12.794%) 75%, rgb(6.44% 6.454% 12.515%) 81.25%, rgb(6.348% 6.354% 12.316%) 87.5%, rgb(6.293% 6.294% 12.197%) 93.75%, rgb(6.275% 6.275% 12.157%) 100% );
+  --tint: #110e1eeb; 
+  --tint2: #473391;
+  --accent: #8564ff;
+  --detailGradient: linear-gradient(54deg, rgb(6.667% 5.49% 11.765%) 0%, rgb(6.667% 5.49% 11.765% / 0.99996337890625) 6.25%, rgb(6.667% 5.49% 11.765% / 0.9994140625) 12.5%, rgb(6.667% 5.49% 11.765% / 0.99703369140625) 18.75%, rgb(6.667% 5.49% 11.765% / 0.990625) 25%, rgb(6.667% 5.49% 11.765% / 0.97711181640625) 31.25%, rgb(6.667% 5.49% 11.765% / 0.9525390625) 37.5%, rgb(6.667% 5.49% 11.765% / 0.91207275390625) 43.75%, rgb(6.667% 5.49% 11.765% / 0.85) 50%, rgb(6.667% 5.49% 11.765% / 0.78792724609375) 56.25%, rgb(6.667% 5.49% 11.765% / 0.7474609375) 62.5%, rgb(6.667% 5.49% 11.765% / 0.72288818359375) 68.75%, rgb(6.667% 5.49% 11.765% / 0.709375) 75%, rgb(6.667% 5.49% 11.765% / 0.70296630859375) 81.25%, rgb(6.667% 5.49% 11.765% / 0.7005859375) 87.5%, rgb(6.667% 5.49% 11.765% / 0.70003662109375) 93.75%, rgb(6.667% 5.49% 11.765% / 0.7) 100% );
+  --rounding: 0.8em;
+}
+
 body {
   font-family: "Geom", sans-serif;
   font-size: 1.5vh;
@@ -9,12 +19,8 @@ html {
   color: rgba(255, 255, 255, 1);
 }
 
-:root {--accent: #8546ff;}
-
-:root {--rounding: 0.8em;}
-
 .backgroundContainer, .preload {
-  background-color: #110e1ebd;
+  background-color: var(--tint);
 }
 
 .itemsContainer {
@@ -36,7 +42,7 @@ html {
   left: 0;
   width: 100%;
   height: 100vh;
-  background: #110e1ebd;
+  background: var(--tint);
   background-size: cover;
   opacity: 0;
   z-index: -1;
@@ -51,7 +57,7 @@ html {
   left: 0;
   width: 100%;
   height: 100vh;
-  background: #110e1eeb;
+  background: var(--tint);
   background-size: cover;
   z-index: -1;
   background-attachment: fixed;
@@ -317,7 +323,7 @@ h2 {
 }
 
 .raised, .fab, a[data-role="button"] {
-  background: #111126;
+  background: var(--tint);
   transition: all 0.2s !important;
   border: 1px solid white;
   font-weight: 900;
@@ -385,7 +391,7 @@ h2 {
 #loginPage .padded-left.padded-right.padded-bottom-page {
   margin-left: 50%;
   margin-right: auto;
-  background: #0a041847;
+  background: var(--tint);
   border-radius: var(--rounding);
   transform: translateX(-50%);
   padding-left: 1em;
@@ -436,7 +442,7 @@ h2 {
   margin-right: auto !important;
 }
 #loginPage {
-  background: linear-gradient(180deg, rgb(10.98% 11.373% 22.353%) 0%, rgb(10.411% 10.755% 21.118%) 6.25%, rgb(9.877% 10.178% 19.963%) 12.5%, rgb(9.381% 9.64% 18.888%) 18.75%, rgb(8.922% 9.142% 17.892%) 25%, rgb(8.499% 8.684% 16.976%) 31.25%, rgb(8.113% 8.266% 16.14%) 37.5%, rgb(7.763% 7.888% 15.383%) 43.75%, rgb(7.451% 7.549% 14.706%) 50%, rgb(7.175% 7.25% 14.108%) 56.25%, rgb(6.936% 6.991% 13.591%) 62.5%, rgb(6.734% 6.772% 13.153%) 68.75%, rgb(6.569% 6.593% 12.794%) 75%, rgb(6.44% 6.454% 12.515%) 81.25%, rgb(6.348% 6.354% 12.316%) 87.5%, rgb(6.293% 6.294% 12.197%) 93.75%, rgb(6.275% 6.275% 12.157%) 100% ) !important;
+  background: var(--loginGradient) !important;
   background-size: cover !important;
 }
 
@@ -626,13 +632,13 @@ h2 {
 .itemsContainer > .card > .cardBox {
   margin-left: 0.6em !important;
   margin-right: 0.2em !important;
-  background: #0a0715d6;
+  background: var(--tint);
   border-radius: var(--rounding);
 }
 
 .button-flat:hover {
   background: transparent !important;
-  color: #8564ff !important;
+  color: var(--accent) !important;
 }
 .dashboardSection h3 {
   margin: .5em .0em .5em .5em;
@@ -709,21 +715,21 @@ progress::-webkit-progress-value {
   border-radius: 5em;
 }
 .mdl-slider::-moz-range-thumb {
-  background: #8546ff;
+  background: var(--accent);
 }
 .mdl-slider::-ms-thumb {
-  background: #8546ff;
+  background: var(--accent);
 }
 .mdl-slider::-webkit-slider-thumb {
-  background: #8546ff;
+  background: var(--accent);
 }
 .iconOsdProgressInner {
-  background: #8546ff;
+  background: var(--accent);
 }
 
 .countIndicator, 
 .playedIndicator {
-  background: #473391;
+  background: var(--tint2);
 }
 
 .paper-icon-button-light:hover,
@@ -737,7 +743,7 @@ progress::-webkit-progress-value {
 .textareaLabelFocused,
 .buttonActive,
 .button-link {
-  color: #8564ff;
+  color: var(--accent);
 }
 
 .cardOverlayButton-hover .playstatebutton-icon-played {
@@ -755,7 +761,7 @@ progress::-webkit-progress-value {
 }
 
 .material-icons.detailButton-icon.favorite.ratingbutton-icon-withrating:hover {
-    color: #8564ff;
+    color: var(--accent);
     transition: color 1s;
 }
 
@@ -766,7 +772,7 @@ progress::-webkit-progress-value {
 }
 
 #itemDetailPage .button-link:hover {
-  color: #8564ff !important;
+  color: var(--accent) !important;
   text-decoration: none;
 }
 
@@ -1032,7 +1038,7 @@ progress {
   .toast,
   .appfooter {
     backdrop-filter: blur(15px);
-    background-color: #110e1ebd;
+    background-color: var(--tint);
   }
   .paper-icon-button-light:hover,
   #itemDetailPage .itemProgressBar,
@@ -1326,7 +1332,7 @@ progress {
 }
 
 .itemProgressBarForeground {
-  background: #8564ff;
+  background: var(--accent);
 }
 
 .layout-desktop .detailImageContainer .card.portraitCard:hover,
@@ -1423,7 +1429,7 @@ progress {
 }
 
 .mainDrawer {
-  background-color: #110e1ebd;
+  background-color: var(--tint);
 }
 
 .layout-desktop .mainDrawer,
@@ -1658,7 +1664,7 @@ button.is-emby-button emby-button {
 }
 
 .programCell-active {
-  background: rgba(6, 161, 217, 0.05) !important;
+  background: rgba(var(--accent), 0.05) !important;
 }
 
 .programCell-movie {
@@ -1757,12 +1763,12 @@ button.is-emby-button emby-button {
 }
 
 .upNextContainer {
-  background: #140f22a3;
+  background: var(--tint);
   z-index: 50;
 }
 
 .upNextContainer .raised {
-  background: #8564ff69;
+  background: rgba(var(--accent), 0.41)
   border: transparent;
   padding: 0.8em;
   padding-left: 2em;
@@ -1827,7 +1833,7 @@ button.is-emby-button emby-button {
   bottom: 7.52em;
   right: 7.5em;
   color: #fff;
-  background: #1b0d3c8f;
+  background: rgba(var(--accent), 0.5);
   border: 1px solid white;
   border-radius: 0.8em;
   padding: 0.5em 1em;
@@ -1971,7 +1977,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
     margin-right: 1vw;
     border: 1px solid #62626287;
     margin-bottom: 1em;
-    background: #0a071559;
+    background: var(--tint);
   }
 
   .headerTabs.sectionTabs .tabs-viewmenubar.emby-tabs.focusable.scrollX .emby-tab-button.emby-button.emby-tab-button-active {
@@ -2108,10 +2114,9 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
   justify-content: flex-start;
   overflow: hidden;
   max-width: fit-content;
-  background: #0a0418b5;
   border-radius: 0.25em;
   z-index: 90;
-  background: #110e1ebd;
+  background: var(--tint);
   margin-left: 0.1em;
 }
 
@@ -2121,7 +2126,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
   align-items: center;
   display: -webkit-flex;
   display: flex;
-  background: #110e1ebd;
+  background: var(--tint);
   color: #000 !important;
   border-radius: 0.25em;
   transform: translateY(-11%);
@@ -2334,7 +2339,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
   backdrop-filter: blur(2px) brightness(81%);
   margin-bottom: 0.5%;
   box-shadow: 0px 0px 2px rgb(0, 0, 0);
-  background: #0a07159e;
+  background: var(--tint);
 }
 
 .layout-desktop #itemDetailPage .listItem,
@@ -2415,7 +2420,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 
 .layout-desktop #itemDetailPage .itemExternalLinks .button-link.emby-button, 
 .layout-tv #itemDetailPage .itemExternalLinks .button-link.emby-button {
-  background: #14152b45;
+  background: var(--tint);
   padding: 7px;
   border-radius: 8px;
   border-top-right-radius: 0;
@@ -2425,7 +2430,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 
 .layout-desktop #itemDetailPage .itemExternalLinks .button-link.emby-button:hover, 
 .layout-tv #itemDetailPage .itemExternalLinks .button-link.emby-button:focus {
-  background: #150c27b5;
+  background: var(--tint2);
 }
 
 a[href*="imdb.com"]::before {
@@ -2678,7 +2683,7 @@ a[href*="shokoanime.com"] {
   left: 0;
   width: 21.25em;
   height: 2.557777em;
-  background: #0a0715d6;
+  background: var(--tint);
   border-top-right-radius: 1em;
   margin: 1.25em 0;
   padding-top: 18.5em;
@@ -2938,7 +2943,7 @@ a[href*="shokoanime.com"] {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #0F031F91;
+  background: var(--tint);
   z-index: 0;
 }
 
@@ -3150,7 +3155,7 @@ a[href*="shokoanime.com"] {
 
 .layout-desktop #listChildrenCollapsible:hover,
 .layout-tv #listChildrenCollapsible:focus {
-  background: #110d2054 !important;
+  background: var(--tint) !important;
   transition-delay: 0s !important;
   max-width: 118vh !important;
 }
@@ -3286,7 +3291,7 @@ a[href*="shokoanime.com"] {
   border-radius: var(--rounding);
   padding: 1em;
   box-shadow: 0px 2px 12px #000;
-  background: #110e1ebd;
+  background: var(--tint);
 }
 
 .layout-desktop .playlistSectionButton, 
@@ -3306,7 +3311,7 @@ a[href*="shokoanime.com"] {
   width: 100%;
   display: inline-flex;
   justify-content: space-between;
-  background: #0d0a20bd;
+  background: var(--tint);
   border-bottom-left-radius: var(--rounding);
   border-bottom-right-radius: var(--rounding);
 }
@@ -3430,7 +3435,7 @@ a[href*="shokoanime.com"] {
 
 .layout-desktop .videoOsdBottom,
 .layout-tv .videoOsdBottom {
-  background: #0a0418b5;
+  background: var(--tint);
   padding-bottom: 0.5em;
   padding-top: 0.5em;
   border-top-right-radius: 1em;
@@ -3520,7 +3525,7 @@ a[href*="shokoanime.com"] {
   top: 0;
   left: 0;
   height: 100%;
-  background: #110d20de;
+  background: var(--tint);
     background-size: auto;
   background-size: cover;
   z-index: -1;
@@ -3693,7 +3698,7 @@ a[href*="shokoanime.com"] {
   left: 0;
   width: 100%;
   height: 100vh;
-  background: linear-gradient(54deg, rgb(6.667% 5.49% 11.765%) 0%, rgb(6.667% 5.49% 11.765% / 0.99996337890625) 6.25%, rgb(6.667% 5.49% 11.765% / 0.9994140625) 12.5%, rgb(6.667% 5.49% 11.765% / 0.99703369140625) 18.75%, rgb(6.667% 5.49% 11.765% / 0.990625) 25%, rgb(6.667% 5.49% 11.765% / 0.97711181640625) 31.25%, rgb(6.667% 5.49% 11.765% / 0.9525390625) 37.5%, rgb(6.667% 5.49% 11.765% / 0.91207275390625) 43.75%, rgb(6.667% 5.49% 11.765% / 0.85) 50%, rgb(6.667% 5.49% 11.765% / 0.78792724609375) 56.25%, rgb(6.667% 5.49% 11.765% / 0.7474609375) 62.5%, rgb(6.667% 5.49% 11.765% / 0.72288818359375) 68.75%, rgb(6.667% 5.49% 11.765% / 0.709375) 75%, rgb(6.667% 5.49% 11.765% / 0.70296630859375) 81.25%, rgb(6.667% 5.49% 11.765% / 0.7005859375) 87.5%, rgb(6.667% 5.49% 11.765% / 0.70003662109375) 93.75%, rgb(6.667% 5.49% 11.765% / 0.7) 100% );
+  background: var(--detailGradient);
   background-size: cover;
   opacity: 0.6;
   z-index: -1;
@@ -3709,7 +3714,7 @@ a[href*="shokoanime.com"] {
   left: 0;
   width: 100%;
   height: 100vh;
-  background: linear-gradient(54deg, rgb(6.667% 5.49% 11.765%) 0%, rgb(6.667% 5.49% 11.765% / 0.99996337890625) 6.25%, rgb(6.667% 5.49% 11.765% / 0.9994140625) 12.5%, rgb(6.667% 5.49% 11.765% / 0.99703369140625) 18.75%, rgb(6.667% 5.49% 11.765% / 0.990625) 25%, rgb(6.667% 5.49% 11.765% / 0.97711181640625) 31.25%, rgb(6.667% 5.49% 11.765% / 0.9525390625) 37.5%, rgb(6.667% 5.49% 11.765% / 0.91207275390625) 43.75%, rgb(6.667% 5.49% 11.765% / 0.85) 50%, rgb(6.667% 5.49% 11.765% / 0.78792724609375) 56.25%, rgb(6.667% 5.49% 11.765% / 0.7474609375) 62.5%, rgb(6.667% 5.49% 11.765% / 0.72288818359375) 68.75%, rgb(6.667% 5.49% 11.765% / 0.709375) 75%, rgb(6.667% 5.49% 11.765% / 0.70296630859375) 81.25%, rgb(6.667% 5.49% 11.765% / 0.7005859375) 87.5%, rgb(6.667% 5.49% 11.765% / 0.70003662109375) 93.75%, rgb(6.667% 5.49% 11.765% / 0.7) 100% );
+  background: var(--detailGradient);
   background-size: cover;
   opacity: 0.6;
   z-index: 0;
@@ -3944,7 +3949,7 @@ a[href*="shokoanime.com"] {
   justify-content: center;
   border-radius: var(--rounding) !important;
   margin: 0;
-  background: #19134287;
+  background: var(--tint2);
   font-weight: 700;
 }
 
@@ -4387,7 +4392,7 @@ a[href*="shokoanime.com"] {
 .layout-desktop .button-flat.btnPlay.detailButton.emby-button,
 .layout-tv .button-flat.btnPlay.detailButton.emby-button {
   height: 2em;
-  background: #503eb3 !important;
+  background: var(--accent) !important;
   box-shadow: 0px 0px 13px #432b6f7a;
 }
 
@@ -5127,7 +5132,7 @@ a[href*="shokoanime.com"] {
   top: 0;
   left: 0;
   height: 100%;
-  background: #0a071573;
+  background: var(--tint);
     background-size: auto;
   background-size: cover;
   z-index: -1;
@@ -5283,7 +5288,7 @@ a[href*="shokoanime.com"] {
 
 .layout-mobile #listChildrenCollapsible.verticalSection-extrabottompadding #childrenContent .itemsContainer.vertical-list .listItem.listItem-largeImage.listItem-withContentWrapper {
   box-shadow: 0px 1px 8px rgb(0, 0, 0);
-  background: #0f0c1a8c;
+  background: var(--tint);
 }
 
 .layout-mobile #listChildrenCollapsible.verticalSection-extrabottompadding #childrenContent .itemsContainer.vertical-list .listItem.listItem-largeImage.listItem-withContentWrapper .secondary.listItem-overview.listItemBodyText p {
@@ -5400,7 +5405,7 @@ a[href*="shokoanime.com"] {
 .layout-mobile .button-flat.btnPlay.detailButton.emby-button {
   width: 22%;
   height: 2em;
-  background: #503eb3 !important;
+  background: var(--tint) !important;
   box-shadow: 0px 0px 13px #432b6f7a;
   margin-left: -0.9em !important;
 }
