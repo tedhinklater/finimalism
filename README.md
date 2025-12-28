@@ -35,7 +35,7 @@ If you want it with the old emby scrollers, add this
 ## Experimental version
 
 ```css
-@import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/Finimalism11.css");
+@import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/Finimalism-11.css");
 ```
 ```css
 @import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/Finimalism11-Black.css");
