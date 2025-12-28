@@ -1,0 +1,4 @@
+.layout-desktop #indexPage .itemsContainer, .layout-tv #indexPage .itemsContainer {
+  display: flex !important; flex-wrap: nowrap !important; gap: unset;}
+#indexPage button[data-direction="left"], #indexPage button[data-direction="right"] {
+  opacity: 0.5; padding-right: 1em;}
