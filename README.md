@@ -19,6 +19,19 @@ Just paste an import line into your "Dashboard > Branding > CSS" section, or "Us
 
 ![player](https://github.com/user-attachments/assets/7353a321-1107-4198-b9a2-1519fc96ddc2)
 
+If you want it without the animations, add this line 
+
+```css
+@import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/no-animation.css");
+```
+
+If you want it with the old emby scrollers, add this
+
+```css
+@import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/horizontal-scrolling.css");
+```
+
+
 ## Experimental version
 
 ```css
@@ -30,14 +43,8 @@ Just paste an import line into your "Dashboard > Branding > CSS" section, or "Us
 
 ![output](https://github.com/user-attachments/assets/15847608-20d1-4b3c-b9f5-a885e8841c8e)
 
-If you want it without the animations, add this line 
+(Experimental mode only) Add this for horizontal scrollers on the homepage
 
 ```css
-@import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/no-animation.css");
-```
-
-If you want it with the old emby scrollers, add this
-
-```css
-@import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/horizontal-scrolling.css");
+@import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/scrollers-11.css");
 ```
