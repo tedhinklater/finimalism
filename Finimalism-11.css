@@ -4546,12 +4546,12 @@ a[href*="shokoanime.com"] {
 .layout-desktop #similarCollapsible.verticalSection.detailVerticalSection.verticalSection-extrabottompadding.emby-scroller-container,
 .layout-tv #similarCollapsible.verticalSection.detailVerticalSection.verticalSection-extrabottompadding {
   position: fixed;
-  top: 2.5em;
+  top: 0em;
   right: 0em;
   width: 6vw;
   overflow-y: scroll;
   max-height: calc(100vh - 0em);
-  height: calc(100vh - 4em);
+  height: calc(100vh - 7em);
   padding-top: 1em;
   padding-bottom: 3em;
 }
