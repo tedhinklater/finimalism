@@ -3150,8 +3150,7 @@ a[href*="shokoanime.com"] {
 .layout-desktop #listChildrenCollapsible,
 .layout-tv #listChildrenCollapsible {
   top: 17.5em !important;
-  transition: background 0.3s, max-width 0.5s !important;
-  transition-delay: 0.5s !important;
+  transition: max-width 0.2s ease-out 2s, background 1s ease-out 2s, border-color 0.5s ease-out 2s, padding-left 1s ease-out 1s, padding-right 1s ease-out 1s !important;
   border-radius: var(--rounding);
   max-width: 59vh !important;
   height: 16.2em !important;
@@ -3182,8 +3181,14 @@ a[href*="shokoanime.com"] {
 .layout-desktop #listChildrenCollapsible:hover,
 .layout-tv #listChildrenCollapsible:focus {
   background: var(--tint) !important;
-  transition-delay: 0s !important;
+  transition: max-width 0.2s ease-out 0s, background 1s ease-out 0s, border-color 0.5s ease-out 0s, padding-left 1s ease-out 0.25s, padding-right 1s ease-out 0.25s !important;
   max-width: 118vh !important;
+  border: 0.5px solid;
+  border-color: #fff3;
+  margin-top: -1px;
+  margin-left: -1px;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
 }
 
 .layout-desktop .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) #listChildrenCollapsible:hover,
@@ -3388,7 +3393,7 @@ a[href*="shokoanime.com"] {
 
 .layout-desktop #similarCollapsible .card.overflowPortraitCard,
 .layout-tv #similarCollapsible .card.overflowPortraitCard {
-  width: 5vw;
+  width: 7.5em;
   min-width: unset;
   padding-top: 0.5em;
 }
@@ -4588,7 +4593,7 @@ a[href*="shokoanime.com"] {
   position: fixed;
   top: 2.5em;
   right: 0em;
-  width: 6vw;
+  width: 9.5em;
   overflow-y: scroll;
   max-height: calc(100vh - 0em);
   height: calc(100vh - 4em);
@@ -5442,7 +5447,6 @@ a[href*="shokoanime.com"] {
     margin-left: 0;
     max-width: 100%;
 }
-
 
 .layout-mobile .button-flat.btnPlay.detailButton.emby-button {
   width: 22%;
