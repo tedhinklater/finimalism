@@ -3107,7 +3107,7 @@ a[href*="shokoanime.com"] {
 .layout-tv .detailPagePrimaryContent.padded-right:has(.nextUpSection .card.overflowBackdropCard.card-hoverable) #specialsCollapsible.verticalSection.detailVerticalSection {
   top: 4.5em;
   left: 55.5em;
-  mwidth: 54vh;
+  width: 54vh;
   height: 18em;
   position: fixed !important;
 }
@@ -3189,6 +3189,11 @@ a[href*="shokoanime.com"] {
   margin-left: -1px;
   padding-left: 0.5em;
   padding-right: 0.5em;
+}
+
+.layout-desktop .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) #listChildrenCollapsible:hover,
+.layout-tv .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) #listChildrenCollapsible:focus {
+  border: none !important;
 }
 
 .layout-desktop .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) #listChildrenCollapsible:hover,
@@ -5447,6 +5452,7 @@ a[href*="shokoanime.com"] {
     margin-left: 0;
     max-width: 100%;
 }
+
 
 .layout-mobile .button-flat.btnPlay.detailButton.emby-button {
   width: 22%;
