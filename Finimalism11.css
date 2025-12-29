@@ -209,11 +209,54 @@ h2 {
   padding-right: 0.5em;
   height: 6.6em;
   transition: width 0.2s ease-out 1s, background-color 1s ease-out 0s, border-color 0.5s ease-out 0s, padding-left 1s ease-out 0.25s, padding-right 1s ease-out 0.25s;
+  overflow-y: scroll;
 }
 
-.overview-expand.emby-button {
+.layout-desktop .overview-expand.emby-button,
+.layout-tv .overview-expand.emby-button {
   opacity: 0;
   pointer-events: none;
+}
+
+.layout-desktop .itemDetailPage:has(.detailImageContainer > .card .cardImageIcon.person) .detailSectionContent,
+.layout-tv .itemDetailPage:has(.detailImageContainer > .card .cardImageIcon.person) .detailSectionContent {
+  max-height: unset;
+  margin-top: 0;
+}
+
+.layout-desktop .itemDetailPage:has(.detailImageContainer > .card .cardImageIcon.person) p.overview:hover,
+.layout-tv .itemDetailPage:has(.detailImageContainer > .card .cardImageIcon.person) p.overview:hover {
+  width: 60vh;
+  padding-top: 0.4em;
+  border: none;
+  margin-left: 0px;
+  padding-left: 0em;
+  padding-right: 0em;
+}
+
+.layout-desktop .itemDetailPage:has(.detailImageContainer > .card .cardImageIcon.person) p.overview.detail-clamp-text,
+.layout-tv .itemDetailPage:has(.detailImageContainer > .card .cardImageIcon.person) p.overview.detail-clamp-text {
+  -webkit-line-clamp: unset;
+  display: block;
+  overflow: visible;
+  height: unset;
+}
+
+.layout-desktop .itemDetailPage:has(.detailImageContainer > .card .cardImageIcon.person) #listChildrenCollapsible,
+.layout-tv .itemDetailPage:has(.detailImageContainer > .card .cardImageIcon.person) #listChildrenCollapsible {
+  margin-top: -17em;
+  height: 17.2em !important;
+}
+
+.layout-desktop .itemDetailPage:has(.detailImageContainer > .card .cardImageIcon.person) #listChildrenCollapsible #childrenContent .itemsContainer.padded-right.vertical-wrap,
+.layout-tv .itemDetailPage:has(.detailImageContainer > .card .cardImageIcon.person) #listChildrenCollapsible #childrenContent .itemsContainer.padded-right.vertical-wrap {
+  height: 14.2em !important;
+}
+
+.layout-desktop .itemDetailPage:has(.detailImageContainer > .card .cardImageIcon.person) .detailPageWrapperContainer,
+.layout-tv .itemDetailPage:has(.detailImageContainer > .card .cardImageIcon.person) .detailPageWrapperContainer {
+  animation: none !important;
+  opacity: 1 !important;
 }
 
 .layout-desktop .itemDetailPage:has(.listItem.listItem-largeImage[data-type="Episode"]) .overview.detail-clamp-text,
