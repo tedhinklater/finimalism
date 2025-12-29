@@ -191,7 +191,7 @@ h2 {
   -webkit-line-clamp: 4;
   overflow: hidden;
   text-overflow: ellipsis;
-  height: 6.6em;
+  height: 6.3em;
   margin-top: 0.5em;
   margin-bottom: -1em;
 }
@@ -207,7 +207,7 @@ h2 {
   margin-left: -1px;
   padding-left: 0.5em;
   padding-right: 0.5em;
-  height: 6.6em;
+  height: 6.3em;
   transition: width 0.2s ease-out 1s, background-color 1s ease-out 0s, border-color 0.5s ease-out 0s, padding-left 1s ease-out 0.25s, padding-right 1s ease-out 0.25s;
   overflow-y: scroll;
 }
@@ -262,6 +262,8 @@ h2 {
 .layout-desktop .itemDetailPage:has(.listItem.listItem-largeImage[data-type="Episode"]) .overview.detail-clamp-text,
 .layout-tv .itemDetailPage:has(.listItem.listItem-largeImage[data-type="Episode"]) .overview.detail-clamp-text {
   width: 107vh !important;
+  transition: width 0s;
+  max-height: 5.2em !important;
 }
 
 #itemDetailPage .tagline {
@@ -2210,7 +2212,6 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
   max-width: 10em;
   white-space: nowrap;
   color: var(--accent);
-  filter: drop-shadow(0px 0px 4px #fff);
 }
 
 .navMenuOption {
@@ -3437,6 +3438,7 @@ a[href*="shokoanime.com"] {
 .layout-tv #castCollapsible .card.overflowPortraitCard.personCard.card-hoverable.card-withuserdata {
   width: 10.1em;
   margin: 0;
+  height: 11em;
 }
 
 .layout-desktop #scenesCollapsible:hover,
@@ -3564,7 +3566,11 @@ a[href*="shokoanime.com"] {
 }
 
 .layout-desktop .itemDetailPage:has(#childrenContent .verticalSection[data-type="Movie"]) #listChildrenCollapsible,
-.layout-tv .itemDetailPage:has(#childrenContent .verticalSection[data-type="Movie"]) #listChildrenCollapsible {
+.layout-tv .itemDetailPage:has(#childrenContent .verticalSection[data-type="Movie"]) #listChildrenCollapsible,
+.layout-desktop .itemDetailPage:has(#childrenContent .verticalSection[data-type="Series"]) #listChildrenCollapsible,
+.layout-tv .itemDetailPage:has(#childrenContent .verticalSection[data-type="Series"]) #listChildrenCollapsible,
+.layout-desktop .itemDetailPage:has(#childrenContent .verticalSection[data-type="Episode"]) #listChildrenCollapsible,
+.layout-tv .itemDetailPage:has(#childrenContent .verticalSection[data-type="Episode"]) #listChildrenCollapsible {
   position: relative !important;
 }
 
