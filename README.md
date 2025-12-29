@@ -31,10 +31,9 @@ If you want it with the old emby scrollers, add this
 @import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/horizontal-scrolling.css");
 ```
 
-
 ## Experimental version
 
-![output](https://github.com/user-attachments/assets/15847608-20d1-4b3c-b9f5-a885e8841c8e)
+![output](https://github.com/user-attachments/assets/9d7f5f52-3aeb-4911-b8b9-1a037b53fff7)
 
 ### Purple/White
 ```css
