@@ -34,14 +34,16 @@ If you want it with the old emby scrollers, add this
 
 ## Experimental version
 
+![output](https://github.com/user-attachments/assets/15847608-20d1-4b3c-b9f5-a885e8841c8e)
+
+### Purple/White
 ```css
 @import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/Finimalism11.css");
 ```
+### Black/Red
 ```css
 @import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/Finimalism11-Black.css");
 ```
-
-![output](https://github.com/user-attachments/assets/15847608-20d1-4b3c-b9f5-a885e8841c8e)
 
 (Experimental mode only) Add this for horizontal scrollers on the homepage
 
