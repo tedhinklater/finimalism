@@ -3098,14 +3098,17 @@ a[href*="shokoanime.com"] {
   bottom: calc(9em - 49vh) !important;
 }
 
-.layout-desktop #itemDetailPage:has(#guestCastCollapsible) #castCollapsible.verticalSection.detailVerticalSection,
-.layout-tv #itemDetailPage:has(#guestCastCollapsible) #castCollapsible.verticalSection.detailVerticalSection {
+.layout-desktop #itemDetailPage:has(#guestCastCollapsible:not(.hide)) #castCollapsible.verticalSection.detailVerticalSection,
+.layout-tv #itemDetailPage:has(#guestCastCollapsible:not(.hide)) #castCollapsible.verticalSection.detailVerticalSection {
+  flex: 0 0 60vh;
   max-width: 60vh;
   height: 14.9em;
 }
 
-.layout-desktop #itemDetailPage:not(:has(#guestCastCollapsible)) #castCollapsible.verticalSection.detailVerticalSection,
-.layout-tv #itemDetailPage:not(:has(#guestCastCollapsible)) #castCollapsible.verticalSection.detailVerticalSection {
+.layout-desktop #itemDetailPage:has(#guestCastCollapsible.hide) #castCollapsible.verticalSection.detailVerticalSection,
+.layout-tv #itemDetailPage:has(#guestCastCollapsible.hide) #castCollapsible.verticalSection.detailVerticalSection {
+  flex: 1 1 auto;
+  width: 100%;
   max-width: 105.5vh;
 }
 
@@ -3119,8 +3122,13 @@ a[href*="shokoanime.com"] {
 .layout-desktop #itemDetailPage #guestCastCollapsible.verticalSection.detailVerticalSection,
 .layout-tv #itemDetailPage #guestCastCollapsible.verticalSection.detailVerticalSection {
   margin-left: 65vh;
-  max-width: 46vh;
-  bottom: 2.3em;
+  max-width: 44.5vh;
+  bottom: 1.2em;
+}
+
+.layout-desktop #guestCastHeader.sectionTitle.sectionTitle-cards.padded-right,
+.layout-tv #guestCastHeader.sectionTitle.sectionTitle-cards.padded-right {
+  padding-top: 0 !important;
 }
 
 .layout-desktop #listChildrenCollapsible.verticalSection.detailVerticalSection.verticalSection-extrabottompadding,
