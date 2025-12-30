@@ -58,7 +58,7 @@ html {
   left: 0;
   width: 100%;
   height: 100vh;
-  background: rgb(var(--tint));
+  background: rgba(var(--tint), 0.86);
   background-size: cover;
   z-index: -1;
   background-attachment: fixed;
@@ -3906,11 +3906,11 @@ a[href*="shokoanime.com"] {
 }
 
 .layout-desktop #indexPage .itemsContainer .card.overflowBackdropCard.card-hoverable.card-withuserdata {
-  width: 13.5vw;
+  width: calc(16.5vw - 2vh);
 }
 
 .layout-tv #indexPage .itemsContainer .card.overflowBackdropCard {
-  width: 13.5vw;
+  width: calc(16.5vw - 2vh);
 }
 
 .layout-tv .itemsContainer.scrollSlider.focuscontainer-x.animatedScrollX.itemsContainer-tv {
@@ -4079,12 +4079,12 @@ a[href*="shokoanime.com"] {
 
 .layout-desktop #indexPage .overflowPortraitCard,
 .layout-tv #indexPage .overflowPortraitCard {
-  width: 13.5vw;
+  width: calc(16.5vw - 2vh);
 }
 
 .layout-desktop #indexPage .overflowSquareCard,
 .layout-tv #indexPage .overflowSquareCard {
-  width: 13.5vw;
+  width: calc(16.5vw - 2vh);
 }
 
 .layout-desktop .padded-top-focusscale.padded-bottom-focusscale.emby-scroller.scrollX[data-centerfocus="true"] .padded-top.padded-bottom.scrollSlider.focuscontainer-x .raised.emby-button,
