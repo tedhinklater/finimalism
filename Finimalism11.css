@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Geom:ital,wght@0,300..900;1,300..900&display=swap');
 
-:root {
-  --accent: #8564ff;
-  --backdropBlur: blur(0px);
-  --detailGradient: linear-gradient(54deg, rgb(6.667% 5.49% 11.765%) 0%, rgb(6.667% 5.49% 11.765% / 0.99996337890625) 6.25%, rgb(6.667% 5.49% 11.765% / 0.9994140625) 12.5%, rgb(6.667% 5.49% 11.765% / 0.99703369140625) 18.75%, rgb(6.667% 5.49% 11.765% / 0.990625) 25%, rgb(6.667% 5.49% 11.765% / 0.97711181640625) 31.25%, rgb(6.667% 5.49% 11.765% / 0.9525390625) 37.5%, rgb(6.667% 5.49% 11.765% / 0.91207275390625) 43.75%, rgb(6.667% 5.49% 11.765% / 0.85) 50%, rgb(6.667% 5.49% 11.765% / 0.78792724609375) 56.25%, rgb(6.667% 5.49% 11.765% / 0.7474609375) 62.5%, rgb(6.667% 5.49% 11.765% / 0.72288818359375) 68.75%, rgb(6.667% 5.49% 11.765% / 0.709375) 75%, rgb(6.667% 5.49% 11.765% / 0.70296630859375) 81.25%, rgb(6.667% 5.49% 11.765% / 0.7005859375) 87.5%, rgb(6.667% 5.49% 11.765% / 0.70003662109375) 93.75%, rgb(6.667% 5.49% 11.765% / 0.7) 100% );
-  --loginGradient: linear-gradient(180deg, rgb(10.98% 11.373% 22.353%) 0%, rgb(10.411% 10.755% 21.118%) 6.25%, rgb(9.877% 10.178% 19.963%) 12.5%, rgb(9.381% 9.64% 18.888%) 18.75%, rgb(8.922% 9.142% 17.892%) 25%, rgb(8.499% 8.684% 16.976%) 31.25%, rgb(8.113% 8.266% 16.14%) 37.5%, rgb(7.763% 7.888% 15.383%) 43.75%, rgb(7.451% 7.549% 14.706%) 50%, rgb(7.175% 7.25% 14.108%) 56.25%, rgb(6.936% 6.991% 13.591%) 62.5%, rgb(6.734% 6.772% 13.153%) 68.75%, rgb(6.569% 6.593% 12.794%) 75%, rgb(6.44% 6.454% 12.515%) 81.25%, rgb(6.348% 6.354% 12.316%) 87.5%, rgb(6.293% 6.294% 12.197%) 93.75%, rgb(6.275% 6.275% 12.157%) 100% );
-  --tint: #110e1eeb; 
-  --tint2: #473391;
+:root { 
+  --accent: #8564ff; 
+  --backdropBlur: blur(0px); 
+  --detailGradient: linear-gradient( 54deg, rgba(var(--tint), 1) 0%, rgba(var(--tint), 0.99996337890625) 6.25%, rgba(var(--tint), 0.9994140625) 12.5%, rgba(var(--tint), 0.99703369140625) 18.75%, rgba(var(--tint), 0.990625) 25%, rgba(var(--tint), 0.97711181640625) 31.25%, rgba(var(--tint), 0.9525390625) 37.5%, rgba(var(--tint), 0.91207275390625) 43.75%, rgba(var(--tint), 0.85) 50%, rgba(var(--tint), 0.78792724609375) 56.25%, rgba(var(--tint), 0.7474609375) 62.5%, rgba(var(--tint), 0.72288818359375) 68.75%, rgba(var(--tint), 0.709375) 75%, rgba(var(--tint), 0.70296630859375) 81.25%, rgba(var(--tint), 0.7005859375) 87.5%, rgba(var(--tint), 0.70003662109375) 93.75%, rgba(var(--tint), 0.7) 100%); 
+  --loginGradient: linear-gradient( 180deg, rgba(var(--tint), 1) 0%, rgba(var(--tint), 0.99996337890625) 6.25%, rgba(var(--tint), 0.9994140625) 12.5%, rgba(var(--tint), 0.99703369140625) 18.75%, rgba(var(--tint), 0.990625) 25%, rgba(var(--tint), 0.97711181640625) 31.25%, rgba(var(--tint), 0.9525390625) 37.5%, rgba(var(--tint), 0.91207275390625) 43.75%, rgba(var(--tint), 0.85) 50%, rgba(var(--tint), 0.78792724609375) 56.25%, rgba(var(--tint), 0.7474609375) 62.5%, rgba(var(--tint), 0.72288818359375) 68.75%, rgba(var(--tint), 0.709375) 75%, rgba(var(--tint), 0.70296630859375) 81.25%, rgba(var(--tint), 0.7005859375) 87.5%, rgba(var(--tint), 0.70003662109375) 93.75%, rgba(var(--tint), 0.7) 100%); 
+  --tint: 17, 14, 30; 
+  --tint2: 71, 51, 145; 
   --rounding: 0.8em;
 }
 
@@ -21,7 +21,7 @@ html {
 }
 
 .backgroundContainer, .preload {
-  background-color: var(--tint);
+  background-color: rgb(var(--tint));
 }
 
 .itemsContainer {
@@ -43,7 +43,7 @@ html {
   left: 0;
   width: 100%;
   height: 100vh;
-  background: var(--tint);
+  background: rgb(var(--tint));
   background-size: cover;
   opacity: 0;
   z-index: -1;
@@ -58,7 +58,7 @@ html {
   left: 0;
   width: 100%;
   height: 100vh;
-  background: var(--tint);
+  background: rgb(var(--tint));
   background-size: cover;
   z-index: -1;
   background-attachment: fixed;
@@ -200,8 +200,8 @@ h2 {
 
 .layout-desktop p.overview:hover,
 .layout-tv p.overview:focus {
-  width: 110vh;
-  background: var(--tint);
+  width: calc(93vw - 60vh);
+  background: rgb(var(--tint));
   border: 0.5px solid;
   border-color: #fff3;
   margin-top: calc(0.5em - 1px);
@@ -397,7 +397,7 @@ h2 {
 }
 
 .raised, .fab, a[data-role="button"] {
-  background: var(--tint);
+  background: rgb(var(--tint));
   transition: all 0.2s !important;
   border: 1px solid white;
   font-weight: 900;
@@ -414,19 +414,19 @@ h2 {
 }
 
 .defaultCardBackground1 {
-  background-color: var(--tint2);
+  background-color: rgb(var(--tint2));
 }
 .defaultCardBackground2 {
-  background-color: var(--tint2);
+  background-color: rgb(var(--tint2));
 }
 .defaultCardBackground3 {
-  background-color: var(--tint2);
+  background-color: rgb(var(--tint2));
 }
 .defaultCardBackground4 {
-  background-color: var(--tint2);
+  background-color: rgb(var(--tint2));
 }
 .defaultCardBackground5 {
-  background-color: var(--tint2);
+  background-color: rgb(var(--tint2));
 }
 
 .countIndicator {
@@ -465,7 +465,7 @@ h2 {
 #loginPage .padded-left.padded-right.padded-bottom-page {
   margin-left: 50%;
   margin-right: auto;
-  background: var(--tint);
+  background: rgb(var(--tint));
   border-radius: var(--rounding);
   transform: translateX(-50%);
   padding-left: 1em;
@@ -706,7 +706,7 @@ h2 {
 .itemsContainer > .card > .cardBox {
   margin-left: 0.6em !important;
   margin-right: 0.2em !important;
-  background: var(--tint);
+  background: rgb(var(--tint));
   border-radius: var(--rounding);
 }
 
@@ -803,7 +803,7 @@ progress::-webkit-progress-value {
 
 .countIndicator, 
 .playedIndicator {
-  background: var(--tint2);
+  background: rgb(var(--tint2));
 }
 
 .paper-icon-button-light:hover,
@@ -889,7 +889,7 @@ progress::-webkit-progress-value {
 }
 
 .collapseContent, .formDialogFooter:not(.formDialogFooter-clear), .formDialogHeader:not(.formDialogHeader-clear), .paperList, .visualCardBox {
-  background-color: var(--tint);
+  background-color: rgb(var(--tint));
 }
 progress {
   background: rgba(0, 0, 0, 0.5) !important;
@@ -1112,7 +1112,7 @@ progress {
   .toast,
   .appfooter {
     backdrop-filter: blur(15px);
-    background-color: var(--tint);
+    background-color: rgb(var(--tint));
   }
   .paper-icon-button-light:hover,
   #itemDetailPage .itemProgressBar,
@@ -1503,7 +1503,7 @@ progress {
 }
 
 .mainDrawer {
-  background-color: var(--tint);
+  background-color: rgb(var(--tint));
 }
 
 .layout-desktop .mainDrawer,
@@ -1837,7 +1837,7 @@ button.is-emby-button emby-button {
 }
 
 .upNextContainer {
-  background: var(--tint);
+  background: rgb(var(--tint));
   z-index: 50;
 }
 
@@ -1894,7 +1894,7 @@ button.is-emby-button emby-button {
 }
 
 .css-4yt2of, .css-139vfv2 {
-  background-color: var(--tint)
+  background-color: rgb(var(--tint))
   color: rgb(255, 255, 255);
   background-image: none;
 }
@@ -1977,7 +1977,7 @@ button.is-emby-button emby-button {
 .layout-tv div.itemMiscInfo.itemMiscInfo-primary:focus {
   width: 100vh;
   transition: width 0.2s ease-out 1s, background-color 1s ease-out 0s, border-color 0.5s ease-out 0s, padding-left 1s ease-out 0.25s, padding-right 1s ease-out 0.25s;
-  background-color: var(--tint);
+  background-color: rgb(var(--tint));
   border: 0.5px solid;
   border-color: #fff3;
   margin-top: calc(0vh - 1px);
@@ -2074,7 +2074,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
     margin-right: 1vw;
     border: 1px solid #62626287;
     margin-bottom: 1em;
-    background: var(--tint);
+    background: rgb(var(--tint));
   }
 
   .headerTabs.sectionTabs .tabs-viewmenubar.emby-tabs.focusable.scrollX .emby-tab-button.emby-button.emby-tab-button-active {
@@ -2213,7 +2213,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
   max-width: fit-content;
   border-radius: 0.25em;
   z-index: 90;
-  background: var(--tint);
+  background: rgb(var(--tint));
   margin-left: 0.1em;
 }
 
@@ -2223,7 +2223,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
   align-items: center;
   display: -webkit-flex;
   display: flex;
-  background: var(--tint);
+  background: rgb(var(--tint));
   color: #000 !important;
   border-radius: 0.25em;
   transform: translateY(-11%);
@@ -2435,7 +2435,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
   backdrop-filter: blur(2px) brightness(81%);
   margin-bottom: 0.5%;
   box-shadow: 0px 0px 2px rgb(0, 0, 0);
-  background: var(--tint);
+  background: rgb(var(--tint));
 }
 
 .layout-desktop #itemDetailPage .listItem,
@@ -2513,10 +2513,15 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
   animation: fadeTitle 0.5s ease-out 1.25s forwards;
 }
 
+.layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .itemExternalLinks,
+.layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .itemExternalLinks {
+  top: 35.75em !important;
+}
+
 
 .layout-desktop #itemDetailPage .itemExternalLinks .button-link.emby-button, 
 .layout-tv #itemDetailPage .itemExternalLinks .button-link.emby-button {
-  background: var(--tint);
+  background: rgb(var(--tint));
   padding: 0.7vh;
   border-radius: var(--rounding);
   border-top-right-radius: 0;
@@ -2526,7 +2531,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 
 .layout-desktop #itemDetailPage .itemExternalLinks .button-link.emby-button:hover, 
 .layout-tv #itemDetailPage .itemExternalLinks .button-link.emby-button:focus {
-  background: var(--tint2);
+  filter: brightness(110%);
 }
 
 a[href*="imdb.com"]::before {
@@ -2779,7 +2784,7 @@ a[href*="shokoanime.com"] {
   left: 0;
   width: 21.25em;
   height: 2.557777em;
-  background: var(--tint);
+  background: rgb(var(--tint));
   border-top-right-radius: 1em;
   margin: 1.25em 0;
   padding-top: 18.5em;
@@ -3039,7 +3044,7 @@ a[href*="shokoanime.com"] {
   left: 0;
   width: 100%;
   height: 100%;
-  background: var(--tint);
+  background: rgb(var(--tint));
   z-index: 0;
 }
 
@@ -3136,7 +3141,7 @@ a[href*="shokoanime.com"] {
 .layout-tv #itemDetailPage:has(#guestCastCollapsible.hide) #castCollapsible.verticalSection.detailVerticalSection {
   flex: 1 1 auto;
   width: 100%;
-  max-width: 105.5vh;
+  max-width: calc(93vw - 60vh);
 }
 
 .layout-desktop #itemDetailPage #castCollapsible #peopleHeader.sectionTitle,
@@ -3149,7 +3154,7 @@ a[href*="shokoanime.com"] {
 .layout-desktop #itemDetailPage #guestCastCollapsible.verticalSection.detailVerticalSection,
 .layout-tv #itemDetailPage #guestCastCollapsible.verticalSection.detailVerticalSection {
   margin-left: 65vh;
-  max-width: 44.5vh;
+  max-width: calc(93vw - 120vh);
   bottom: 1.2em;
 }
 
@@ -3175,8 +3180,7 @@ a[href*="shokoanime.com"] {
 .layout-desktop .itemDetailPage:has(.button-flat.btnShuffle.detailButton.emby-button) #specialsCollapsible.verticalSection.detailVerticalSection.emby-scroller-container, 
 .layout-tv .detailPagePrimaryContent.padded-right:has(.button-flat.btnShuffle.detailButton.emby-button) #specialsCollapsible.verticalSection.detailVerticalSection {
   top: 3.5em;
-  left: 30.5em;
-  mwidth: 54vh;
+  left: 31.5em;
   height: 18em;
   position: fixed !important;
 }
@@ -3263,7 +3267,7 @@ a[href*="shokoanime.com"] {
 
 .layout-desktop #listChildrenCollapsible:hover,
 .layout-tv #listChildrenCollapsible:focus {
-  background: var(--tint) !important;
+  background: rgb(var(--tint)) !important;
   transition: max-width 0.2s ease-out 0s, background 1s ease-out 0s, border-color 0.5s ease-out 0s, padding-left 1s ease-out 0.25s, padding-right 1s ease-out 0.25s !important;
   max-width: 118vh !important;
   border: 0.5px solid;
@@ -3318,7 +3322,7 @@ a[href*="shokoanime.com"] {
 
 .layout-desktop #specialsCollapsible:hover,
 .layout-tv #specialsCollapsible:focus {
-  max-width: 107vh !important;
+  max-width: calc(94.7vw - 61.5vh) !important;
   transition: max-width 0.5s;
   transition-delay: 0.5s;
 }
@@ -3410,7 +3414,7 @@ a[href*="shokoanime.com"] {
   border-radius: var(--rounding);
   padding: 1em;
   box-shadow: 0px 2px 12px #000;
-  background: var(--tint);
+  background: rgb(var(--tint));
 }
 
 .layout-desktop .playlistSectionButton, 
@@ -3430,7 +3434,7 @@ a[href*="shokoanime.com"] {
   width: 100%;
   display: inline-flex;
   justify-content: space-between;
-  background: var(--tint);
+  background: rgb(var(--tint));
   border-bottom-left-radius: var(--rounding);
   border-bottom-right-radius: var(--rounding);
 }
@@ -3444,7 +3448,7 @@ a[href*="shokoanime.com"] {
 .layout-desktop #scenesCollapsible,
 .layout-tv #scenesCollapsible {
   top: 4.5em;
-  left: 30.5em;
+  left: 31.5em;
   height: 16em;
   position: fixed !important;
 }
@@ -3469,7 +3473,7 @@ a[href*="shokoanime.com"] {
 
 .layout-desktop #scenesCollapsible:hover,
 .layout-tv #scenesCollapsible:focus {
-  max-width: 107vh !important;
+  max-width: calc(94.7vw - 61.5vh) !important;
   transition: max-width 0.5s;
   transition-delay: 0.5s;
 }
@@ -3555,7 +3559,7 @@ a[href*="shokoanime.com"] {
 
 .layout-desktop .videoOsdBottom,
 .layout-tv .videoOsdBottom {
-  background: var(--tint);
+  background: rgb(var(--tint));
   padding-bottom: 0.5em;
   padding-top: 0.5em;
   border-top-right-radius: 1em;
@@ -3649,7 +3653,7 @@ a[href*="shokoanime.com"] {
   top: 0;
   left: 0;
   height: 100%;
-  background: var(--tint);
+  background: rgb(var(--tint));
     background-size: auto;
   background-size: cover;
   z-index: -1;
@@ -4073,7 +4077,7 @@ a[href*="shokoanime.com"] {
   justify-content: center;
   border-radius: var(--rounding) !important;
   margin: 0;
-  background: var(--tint2);
+  background: rgb(var(--tint2));
   font-weight: 700;
 }
 
@@ -4375,7 +4379,7 @@ a[href*="shokoanime.com"] {
   border-radius: 50%;
   box-shadow: 0 2px 5px rgba(0,0,0,0.4);
   overflow: hidden;
-  background-color: rgba(var(--tint), 0.8);
+  background-color: rgba(rgb(var(--tint)), 0.8);
   color: #E0E0E0;
   border: 1px solid rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(10px);
@@ -4536,7 +4540,7 @@ a[href*="shokoanime.com"] {
 .layout-tv .button-flat.btnPlay.detailButton.emby-button:focus {
   background: #fff !important;
   box-shadow: 0px 0px 11px #ffffff70;
-  color: var(--tint2) !important;
+  color: rgb(var(--tint2)) !important;
 }
 
 .layout-desktop .button-flat.btnPlay.detailButton.emby-button .detailButton-content,
@@ -4607,14 +4611,6 @@ a[href*="shokoanime.com"] {
   margin-left: 1em;
 }
 
-/* 1440p resolution */
-@media (min-width: 2400px) {
-  .itemDetailsGroup .label::before,
-  .trackSelections .selectLabel::before {
-    font-size: 27pt;
-    line-height: 35px;
-  }
-}
 
 /* 1440p TV resolution */
 @media (min-width: 2400px) {
@@ -4627,11 +4623,6 @@ a[href*="shokoanime.com"] {
 @media (min-width: 3000px) {
   .spotlightiframe {
     margin-top: -3.5em !important;
-  }
-  .itemDetailsGroup .label::before,
-  .trackSelections .selectLabel::before {
-    font-size: 32pt;
-    line-height: 46px;
   }
 }
 
@@ -5268,7 +5259,7 @@ a[href*="shokoanime.com"] {
   top: 0;
   left: 0;
   height: 100%;
-  background: var(--tint);
+  background: rgb(var(--tint));
     background-size: auto;
   background-size: cover;
   z-index: -1;
@@ -5424,7 +5415,7 @@ a[href*="shokoanime.com"] {
 
 .layout-mobile #listChildrenCollapsible.verticalSection-extrabottompadding #childrenContent .itemsContainer.vertical-list .listItem.listItem-largeImage.listItem-withContentWrapper {
   box-shadow: 0px 1px 8px rgb(0, 0, 0);
-  background: var(--tint);
+  background: rgb(var(--tint));
 }
 
 .layout-mobile #listChildrenCollapsible.verticalSection-extrabottompadding #childrenContent .itemsContainer.vertical-list .listItem.listItem-largeImage.listItem-withContentWrapper .secondary.listItem-overview.listItemBodyText p {
@@ -5540,7 +5531,7 @@ a[href*="shokoanime.com"] {
 .layout-mobile .button-flat.btnPlay.detailButton.emby-button {
   width: 22%;
   height: 2em;
-  background: var(--tint) !important;
+  background: rgb(var(--tint)) !important;
   box-shadow: 0px 0px 13px #432b6f7a;
   margin-left: -0.9em !important;
 }
@@ -5548,7 +5539,7 @@ a[href*="shokoanime.com"] {
 .layout-mobile .button-flat.btnPlay.detailButton.emby-button:focus {
   background: #fff !important;
   box-shadow: 0px 0px 11px #ffffff70;
-  color: var(--tint2) !important;
+  color: rgb(var(--tint2)) !important;
 }
 
 .layout-mobile .button-flat.btnPlay.detailButton.emby-button .detailButton-content {
