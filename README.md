@@ -41,10 +41,6 @@ This version has all the latest features such as editable colours via variables 
 ```css
 @import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/Finimalism11.css");
 ```
-### Black/Red
-```css
-@import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/Finimalism11-Black.css");
-```
 
 (Experimental mode only) Add this for horizontal scrollers on the homepage
 
