@@ -33,7 +33,9 @@ If you want it with the old emby scrollers, add this
 
 ## Experimental version
 
-![output](https://github.com/user-attachments/assets/9d7f5f52-3aeb-4911-b8b9-1a037b53fff7)
+![output](https://github.com/user-attachments/assets/d367e301-864b-4b03-bb91-62340e4cd29a)
+
+This version has all the latest features such as editable colours via variables and ultrawide support etc
 
 ### Purple/White
 ```css
