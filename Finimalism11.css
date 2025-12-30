@@ -1976,10 +1976,10 @@ button.is-emby-button emby-button {
   font-size: 0.9em;
   justify-content: space-between;
   position: absolute;
-  top: 1.3em;
+  top: 1.8em;
   left: 47.9vh;
   margin-top: 0vh;
-  width: 20vh;
+  width: 21vh;
   max-height: 2.6vh;
   color: #fff;
   pointer-events: all;
@@ -3670,7 +3670,7 @@ a[href*="shokoanime.com"] {
   top: 0;
   left: 0;
   height: 100%;
-  background: rgb(var(--tint));
+  background: transparent;
     background-size: auto;
   background-size: cover;
   z-index: -1;
@@ -4279,6 +4279,7 @@ a[href*="shokoanime.com"] {
   font-size: 1.25em;
   margin-top: -0.3em;
   margin-bottom: 0.5em;
+  margin-right: 0.5em;
 }
 
 .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .nameContainer,
