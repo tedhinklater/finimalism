@@ -179,9 +179,9 @@ h2 {
   padding-top: 0.4em;
   margin-bottom: 0;
   width: 60vh;
-  transition: width 0.2s ease-out 2s, background-color 1s ease-out 2s, border-color 0.5s ease-out 2s, padding-left 1s ease-out 1s, padding-right 1s ease-out 1s;
+  transition: width 0.2s ease-out 1s, background-color 1s ease-out 2s, border-color 0.5s ease-out 2s, padding-left 1s ease-out 1s, padding-right 1s ease-out 1s;
   border-color: transparent;
-  border-radius: var(--rounding);
+  border-radius: var(--rounding) !important;
 }
 
 .layout-desktop p.overview.detail-clamp-text,
@@ -196,6 +196,22 @@ h2 {
   margin-bottom: -1em;
   padding-top: 0;
   border-radius: 0;
+}
+
+.layout-desktop .itemDetailPage:has(.card.overflowPortraitCard.card-hoverable.card-withuserdata[data-type="Season"]) p.overview:hover,
+.layout-tv .itemDetailPage:has(.card.overflowPortraitCard.card-hoverable.card-withuserdata[data-type="Season"]) p.overview:focus {
+  width: calc(93vw - 60vh);
+  background: rgb(var(--tint));
+  border: 0.5px solid;
+  border-color: #fff3;
+  margin-top: calc(0em + -1px);
+  margin-left: -1px;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  height: 6.6em;
+  transition: width 0.2s ease-out 1s, background-color 1s ease-out 0s, border-color 0.5s ease-out 0s, padding-left 1s ease-out 0.25s, padding-right 1s ease-out 0.25s;
+  border-radius: var(--rounding);
+  overflow-y: scroll;
 }
 
 .layout-desktop p.overview:hover,
@@ -1234,6 +1250,7 @@ progress {
   border-bottom-right-radius: 0 !important;
   max-width: 100%;
   width: 100%;
+  height: calc(31vh - 4vw);
 }
 
 /*hover zoom*/
@@ -1963,7 +1980,7 @@ button.is-emby-button emby-button {
   left: 47.9vh;
   margin-top: 0vh;
   width: 20vh;
-  max-height: 3vh;
+  max-height: 2.6vh;
   color: #fff;
   pointer-events: all;
   transition: width 0.2s ease-out 1s, background-color 1s ease-out 0s, border-color 0.5s ease-out 0s, padding-left 1s ease-out 0.25s, padding-right 1s ease-out 0.25s;
@@ -1975,7 +1992,7 @@ button.is-emby-button emby-button {
 
 .layout-desktop div.itemMiscInfo.itemMiscInfo-primary:hover,
 .layout-tv div.itemMiscInfo.itemMiscInfo-primary:focus {
-  width: 100vh;
+  width: calc(92vw - 65vh);
   transition: width 0.2s ease-out 1s, background-color 1s ease-out 0s, border-color 0.5s ease-out 0s, padding-left 1s ease-out 0.25s, padding-right 1s ease-out 0.25s;
   background-color: rgb(var(--tint));
   border: 0.5px solid;
@@ -3269,7 +3286,7 @@ a[href*="shokoanime.com"] {
 .layout-tv #listChildrenCollapsible:focus {
   background: rgb(var(--tint)) !important;
   transition: max-width 0.2s ease-out 0s, background 1s ease-out 0s, border-color 0.5s ease-out 0s, padding-left 1s ease-out 0.25s, padding-right 1s ease-out 0.25s !important;
-  max-width: 118vh !important;
+  max-width: calc(98vw - 60vh) !important;
   border: 0.5px solid;
   border-color: #fff3;
   margin-top: -1px;
@@ -3280,12 +3297,10 @@ a[href*="shokoanime.com"] {
 
 .layout-desktop .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) #listChildrenCollapsible:hover,
 .layout-tv .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) #listChildrenCollapsible:focus {
-  border: none !important;
-}
-
-.layout-desktop .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) #listChildrenCollapsible:hover,
-.layout-tv .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) #listChildrenCollapsible:focus {
   background: transparent !important;
+  border: none !important;
+  margin-left: 0px;
+  margin-top: 0px;
 }
 
 .layout-desktop #childrenContent .itemsContainer:hover,
@@ -3307,6 +3322,8 @@ a[href*="shokoanime.com"] {
 .layout-tv .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) #listChildrenCollapsible {
   top: 7em !important;
   height: unset !important;
+  max-width: calc(116vw - 89vh) !important;
+  width: calc(104vw - 66.5vh) !important;
 }
 
 .layout-desktop .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) .overview.detail-clamp-text,
@@ -4260,8 +4277,8 @@ a[href*="shokoanime.com"] {
 .layout-tv .itemMiscInfo.itemMiscInfo-primary .mediaInfoItem {
   margin: 0;
   font-size: 1.25em;
-  margin-top: -0.1em;
-  margin-bottom: 0.1em;
+  margin-top: -0.3em;
+  margin-bottom: 0.5em;
 }
 
 .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .nameContainer,
@@ -4518,7 +4535,7 @@ a[href*="shokoanime.com"] {
 
 .layout-desktop .verticalSection.detailVerticalSection.moreFromSeasonSection.emby-scroller-container:hover,
 .layout-tv .verticalSection.detailVerticalSection.moreFromSeasonSection:focus {
-  max-width: 107vh !important;
+  max-width: calc(93.5vw - 60vh) !important;
 }
 
 .layout-desktop .infoWrapper,
@@ -4586,7 +4603,7 @@ a[href*="shokoanime.com"] {
 .layout-desktop .itemDetailPage:has(.card.overflowSquareCard.card-hoverable) .detailImageContainer .card.backdropCard,
 .layout-tv .itemDetailPage:has(.nameContainer .parentName.musicParentName.focuscontainer-x) .detailImageContainer .card.backdropCard,
 .layout-tv .itemDetailPage:has(.card.overflowSquareCard.card-hoverable) .detailImageContainer .card.backdropCard {
-  top: 32em;
+  top: 25em;
 }
 
 .layout-desktop .card:hover .countIndicator,
