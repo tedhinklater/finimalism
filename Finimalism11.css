@@ -3906,11 +3906,11 @@ a[href*="shokoanime.com"] {
 }
 
 .layout-desktop #indexPage .itemsContainer .card.overflowBackdropCard.card-hoverable.card-withuserdata {
-  width: calc(16.5vw - 2vh);
+  width: 13.2vw;
 }
 
 .layout-tv #indexPage .itemsContainer .card.overflowBackdropCard {
-  width: calc(16.5vw - 2vh);
+  width: 13.2vw;
 }
 
 .layout-tv .itemsContainer.scrollSlider.focuscontainer-x.animatedScrollX.itemsContainer-tv {
@@ -4079,12 +4079,12 @@ a[href*="shokoanime.com"] {
 
 .layout-desktop #indexPage .overflowPortraitCard,
 .layout-tv #indexPage .overflowPortraitCard {
-  width: calc(16.5vw - 2vh);
+  width: 13.2vw;
 }
 
 .layout-desktop #indexPage .overflowSquareCard,
 .layout-tv #indexPage .overflowSquareCard {
-  width: calc(16.5vw - 2vh);
+  width: 13.2vw;
 }
 
 .layout-desktop .padded-top-focusscale.padded-bottom-focusscale.emby-scroller.scrollX[data-centerfocus="true"] .padded-top.padded-bottom.scrollSlider.focuscontainer-x .raised.emby-button,
@@ -4704,6 +4704,20 @@ a[href*="shokoanime.com"] {
   height: calc(100vh - 4em);
   padding-top: 1em;
   padding-bottom: 3em;
+}
+
+.layout-desktop #similarCollapsible.verticalSection.detailVerticalSection.verticalSection-extrabottompadding.emby-scroller-container::before,
+.layout-tv #similarCollapsible.verticalSection.detailVerticalSection.verticalSection-extrabottompadding::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 9.5em;
+  height: 100vh;
+  background: linear-gradient(90deg, rgb(6.667% 5.49% 11.765% / 0) 0%, rgb(6.667% 5.49% 11.765% / 0.0728076171875) 6.25%, rgb(6.667% 5.49% 11.765% / 0.132421875) 12.5%, rgb(6.667% 5.49% 11.765% / 0.1805419921875) 18.75%, rgb(6.667% 5.49% 11.765% / 0.21875) 25%, rgb(6.667% 5.49% 11.765% / 0.2485107421875) 31.25%, rgb(6.667% 5.49% 11.765% / 0.271171875) 37.5%, rgb(6.667% 5.49% 11.765% / 0.2879638671875) 43.75%, rgb(6.667% 5.49% 11.765% / 0.3) 50%, rgb(6.667% 5.49% 11.765% / 0.3082763671875) 56.25%, rgb(6.667% 5.49% 11.765% / 0.313671875) 62.5%, rgb(6.667% 5.49% 11.765% / 0.3169482421875) 68.75%, rgb(6.667% 5.49% 11.765% / 0.31875000000000003) 75%, rgb(6.667% 5.49% 11.765% / 0.31960449218750003) 81.25%, rgb(6.667% 5.49% 11.765% / 0.319921875) 87.5%, rgb(6.667% 5.49% 11.765% / 0.3199951171875) 93.75%, rgb(6.667% 5.49% 11.765% / 0.32) 100% );
+  background-size: cover;
+  z-index: -1;
+  background-attachment: fixed;
 }
 
 .layout-desktop #similarCollapsible .card.overflowPortraitCard,
