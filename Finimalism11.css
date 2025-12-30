@@ -4580,6 +4580,13 @@ a[href*="shokoanime.com"] {
   left: 3.9em !important;
 }
 
+.layout-desktop .itemDetailPage:has(.nameContainer .parentName.musicParentName.focuscontainer-x) #listChildrenCollapsible:hover,
+.layout-tv .itemDetailPage:has(.nameContainer .parentName.musicParentName.focuscontainer-x) #listChildrenCollapsible:focus {
+  border: none;
+  margin-top: 0;
+  margin-left: 0;
+}
+
 .layout-desktop .itemDetailPage:has(.nameContainer .parentName.musicParentName) .detailLogo,
 .layout-tv .itemDetailPage:has(.nameContainer .parentName.musicParentName) .detailLogo {
   display: none !important;
