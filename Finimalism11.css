@@ -33,7 +33,7 @@ html {
 .mdl-spinner__layer-2,
 .mdl-spinner__layer-3,
 .mdl-spinner__layer-4 {
-  border-color: var(--accent);
+  border-color: rgb(var(--accent));
 }
 
 .sections.homeSectionsContainer::before {
@@ -125,7 +125,7 @@ h2 {
 .textActionButton:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
-  color: var(--accent);
+  color: rgb(var(--accent));
 }
 
 .cardText-secondary, 
@@ -163,7 +163,7 @@ h2 {
 
 .layout-desktop #itemDetailPage .infoWrapper .nameContainer .parentName.focuscontainer-x:hover,
 .layout-tv #itemDetailPage .infoWrapper .nameContainer .parentName.focuscontainer-x:focus { 
-  color: var(--accent);
+  color: rgb(var(--accent));
 }
 
 .layout-desktop #itemDetailPage .infoWrapper .nameContainer .parentName.focuscontainer-x .button-link:hover,
@@ -318,26 +318,26 @@ h2 {
 
 .mdl-slider::-webkit-slider-thumb,
 .mdl-slider .mdl-slider::-webkit-slider-thumb {
-  background: var(--accent) !important;
+  background: rgb(var(--accent)) !important;
   border: none !important;
   box-shadow: none !important;
 }
 
 .mdl-slider::-moz-range-thumb,
 .mdl-slider .mdl-slider::-moz-range-thumb {
-  background: var(--accent) !important;
+  background: rgb(var(--accent)) !important;
   border: none !important;
   box-shadow: none !important;
 }
 .mdl-slider::-ms-thumb,
 .mdl-slider .mdl-slider::-ms-thumb {
-  background: var(--accent) !important;
+  background: rgb(var(--accent)) !important;
   border: none !important;
 }
 
 .mdl-slider .mdl-slider-background-lower[style] {
-  background: var(--accent) !important;
-  background-color: var(--accent) !important;
+  background: rgb(var(--accent)) !important;
+  background-color: rgb(var(--accent)) !important;
 }
 
 .mdl-slider-background-flex {
@@ -380,7 +380,7 @@ h2 {
   display: block;
   height: 100%;
   width: 0%;
-  background: var(--accent);
+  background: rgb(var(--accent));
 }
 
 .layout-desktop .itemName.infoText.parentNameLast,
@@ -728,7 +728,7 @@ h2 {
 
 .button-flat:hover {
   background: transparent !important;
-  color: var(--accent) !important;
+  color: rgb(var(--accent)) !important;
 }
 .dashboardSection h3 {
   margin: .5em .0em .5em .5em;
@@ -758,11 +758,11 @@ h2 {
   transform: scale(1);
 }
 .paper-icon-button-light.show-focus:focus {
-  color: rgba(var(--accent)) !important;
+  color: rgb(var(--accent)) !important;
 }
 
 button-flat:hover {
-  color: rgba(var(--accent)) !important;
+  color: rgb(var(--accent)) !important;
 }
 
 .raised:hover, .fab:hover, a[data-role="button"]:hover {
@@ -772,14 +772,14 @@ button-flat:hover {
 }
 
 .subtitleappearance-preview {
-  background: linear-gradient(140deg,rgb(var(--accent)),#111) !important;
+  background: linear-gradient(140deg,rgba(var(--accent)),#111) !important;
 }
 
 .navMenuOption-selected {
-  color: rgba(var(--accent));
+  color: rgb(var(--accent));
 }
 .mdl-slider-background-lower {
-  background-color: rgba(var(--accent));
+  background-color: rgb(var(--accent));
 }   
 
 progress::-moz-progress-bar {
@@ -800,21 +800,21 @@ progress::-webkit-progress-value {
 }
 
 .mdl-slider-background-lower {
-  background-color: var(--accent);
+  background-color: rgb(var(--accent));
   z-index: 0;
   border-radius: 5em;
 }
 .mdl-slider::-moz-range-thumb {
-  background: var(--accent);
+  background: rgb(var(--accent));
 }
 .mdl-slider::-ms-thumb {
-  background: var(--accent);
+  background: rgb(var(--accent));
 }
 .mdl-slider::-webkit-slider-thumb {
-  background: var(--accent);
+  background: rgb(var(--accent));
 }
 .iconOsdProgressInner {
-  background: var(--accent);
+  background: rgb(var(--accent));
 }
 
 .countIndicator, 
@@ -833,7 +833,7 @@ progress::-webkit-progress-value {
 .textareaLabelFocused,
 .buttonActive,
 .button-link {
-  color: var(--accent);
+  color: rgb(var(--accent));
 }
 
 .cardOverlayButton-hover .playstatebutton-icon-played {
@@ -851,7 +851,7 @@ progress::-webkit-progress-value {
 }
 
 .material-icons.detailButton-icon.favorite.ratingbutton-icon-withrating:hover {
-    color: var(--accent);
+    color: rgb(var(--accent));
     transition: color 1s;
 }
 
@@ -862,7 +862,7 @@ progress::-webkit-progress-value {
 }
 
 #itemDetailPage .button-link:hover {
-  color: var(--accent) !important;
+  color: rgb(var(--accent)) !important;
   text-decoration: none;
 }
 
@@ -1233,7 +1233,7 @@ progress {
 .layout-desktop .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) .paper-icon-button-light[data-action="resume"]:hover,
 .layout-tv .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) .paper-icon-button-light[data-action="resume"]:focus {
   background-color: rgba(0, 0, 0, 0.86) !important;
-  color: var(--accent) !important;
+  color: rgb(var(--accent)) !important;
 }
 
 .layout-desktop #itemDetailPage .listItemImage.listItemImage-large.itemAction.lazy.non-blurhashable.lazy-image-fadein-fast[data-action="link"],
@@ -1415,7 +1415,7 @@ progress {
 }
 
 .itemProgressBarForeground {
-  background: var(--accent);
+  background: rgb(var(--accent));
 }
 
 .layout-desktop .detailImageContainer .card.portraitCard:hover,
@@ -2239,7 +2239,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 .headerSelectedPlayer {
   max-width: 10em;
   white-space: nowrap;
-  color: var(--accent);
+  color: rgb(var(--accent));
 }
 
 .navMenuOption {
@@ -3202,7 +3202,7 @@ a[href*="shokoanime.com"] {
 }
 
 .button-submit:focus {
-  background: var(--accent);
+  background: rgb(var(--accent));
   color: #fff;
 }
 
@@ -3708,7 +3708,7 @@ a[href*="shokoanime.com"] {
 .layout-tv #itemDetailPage .emby-button.show-focus:focus {
   border: solid 1px #fff;
   background: transparent !important;
-  color: var(--accent) !important;
+  color: rgb(var(--accent)) !important;
   padding-left: 0.5em;
   padding-right: 0.5em;
   box-shadow: 0px 0px 5px #fff9;
@@ -3717,7 +3717,7 @@ a[href*="shokoanime.com"] {
 .layout-tv #itemDetailPage .button-flat.btnPlay.detailButton.emby-button.show-focus:focus {
   border: solid 1px #fff;
   background: #fff !important;
-  color: var(--accent) !important;
+  color: rgb(var(--accent)) !important;
 }
 
 .layout-tv .card.show-focus:focus {
@@ -4034,7 +4034,7 @@ a[href*="shokoanime.com"] {
 
 .layout-desktop #itemDetailPage .nameContainer .itemName.infoText.subtitle.focuscontainer-x .button-link.itemAction.emby-button[data-action="link"],
 .layout-tv #itemDetailPage .nameContainer .itemName.infoText.subtitle.focuscontainer-x .button-link.itemAction.emby-button[data-action="link"]  {
-  color: var(--accent) !important;
+  color: rgb(var(--accent)) !important;
   font-weight: 800;
 }
 
@@ -4550,7 +4550,7 @@ a[href*="shokoanime.com"] {
 .layout-desktop .button-flat.btnPlay.detailButton.emby-button,
 .layout-tv .button-flat.btnPlay.detailButton.emby-button {
   height: 2em;
-  background: var(--accent) !important;
+  background: rgb(var(--accent)) !important;
   box-shadow: 0px 0px 13px #432b6f7a;
 }
 
