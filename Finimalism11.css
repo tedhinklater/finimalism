@@ -3170,6 +3170,13 @@ a[href*="shokoanime.com"] {
   padding-top: 0 !important;
 }
 
+.layout-desktop #castCollapsible .cardPadder,
+.layout-tv #castCollapsible .cardPadder,
+.layout-desktop #guestCastCollapsible .cardPadder,
+.layout-tv #guestCastCollapsible .cardPadder {
+  pointer-events: none;
+}
+
 .layout-desktop #listChildrenCollapsible.verticalSection.detailVerticalSection.verticalSection-extrabottompadding,
 .layout-tv #listChildrenCollapsible.verticalSection.detailVerticalSection.verticalSection-extrabottompadding {
   position: relative;
@@ -3250,6 +3257,7 @@ a[href*="shokoanime.com"] {
   height: 16.2em !important;
   padding-right: 1em;
 }
+
 .layout-desktop .itemDetailPage:has(.nameContainer .parentName.musicParentName) #listChildrenCollapsible,
 .layout-tv .itemDetailPage:has(.nameContainer .parentName.musicParentName) #listChildrenCollapsible {
   top: -34em !important;
@@ -3288,6 +3296,12 @@ a[href*="shokoanime.com"] {
   padding-left: 0.5em;
   padding-right: 0.5em;
 }
+
+.layout-desktop .itemDetailPage:has(.detailImageContainer > .card .cardImageIcon.person) #listChildrenCollapsible:hover,
+.layout-tv .itemDetailPage:has(.detailImageContainer > .card .cardImageIcon.person) #listChildrenCollapsible:focus {
+  border: none !important;
+}
+
 
 .layout-desktop .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) #listChildrenCollapsible:hover,
 .layout-tv .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) #listChildrenCollapsible:focus {
