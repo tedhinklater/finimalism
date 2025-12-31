@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Geom:ital,wght@0,300..900;1,300..900&display=swap');
 
 :root { 
-  --accent: #8564ff; 
+  --accent: 133, 100, 255; 
   --backdropBlur: blur(0px); 
   --detailGradient: linear-gradient( 54deg, rgba(var(--tint), 1) 0%, rgba(var(--tint), 0.99996337890625) 6.25%, rgba(var(--tint), 0.9994140625) 12.5%, rgba(var(--tint), 0.99703369140625) 18.75%, rgba(var(--tint), 0.990625) 25%, rgba(var(--tint), 0.97711181640625) 31.25%, rgba(var(--tint), 0.9525390625) 37.5%, rgba(var(--tint), 0.91207275390625) 43.75%, rgba(var(--tint), 0.85) 50%, rgba(var(--tint), 0.78792724609375) 56.25%, rgba(var(--tint), 0.7474609375) 62.5%, rgba(var(--tint), 0.72288818359375) 68.75%, rgba(var(--tint), 0.709375) 75%, rgba(var(--tint), 0.70296630859375) 81.25%, rgba(var(--tint), 0.7005859375) 87.5%, rgba(var(--tint), 0.70003662109375) 93.75%, rgba(var(--tint), 0.7) 100%); 
   --loginGradient: linear-gradient( 180deg, rgba(var(--tint), 1) 0%, rgba(var(--tint), 0.99996337890625) 6.25%, rgba(var(--tint), 0.9994140625) 12.5%, rgba(var(--tint), 0.99703369140625) 18.75%, rgba(var(--tint), 0.990625) 25%, rgba(var(--tint), 0.97711181640625) 31.25%, rgba(var(--tint), 0.9525390625) 37.5%, rgba(var(--tint), 0.91207275390625) 43.75%, rgba(var(--tint), 0.85) 50%, rgba(var(--tint), 0.78792724609375) 56.25%, rgba(var(--tint), 0.7474609375) 62.5%, rgba(var(--tint), 0.72288818359375) 68.75%, rgba(var(--tint), 0.709375) 75%, rgba(var(--tint), 0.70296630859375) 81.25%, rgba(var(--tint), 0.7005859375) 87.5%, rgba(var(--tint), 0.70003662109375) 93.75%, rgba(var(--tint), 0.7) 100%); 
@@ -1755,7 +1755,7 @@ button.is-emby-button emby-button {
 }
 
 .programCell-active {
-  background: rgba(var(--accent), 0.05) !important;
+  background: rgba(var(--accent), 0.35) !important;
 }
 
 .programCell-movie {
