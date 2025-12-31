@@ -1841,20 +1841,8 @@ button.is-emby-button emby-button {
   filter: drop-shadow(1px -1px 1px rgba(2, 2, 2, 0.8));
 }
 
-#skipIntro .emby-button:hover, #skipIntro .emby-button:focus {
-
-}
-
-#skipIntro {
-
-}
-
-#skipIntro .emby-button {
-
-}
-
 .upNextContainer {
-  background: rgb(var(--tint));
+  background: rgba(var(--tint), 0.86);
   z-index: 50;
 }
 
@@ -1924,7 +1912,7 @@ button.is-emby-button emby-button {
   bottom: 7.52em;
   right: 7.5em;
   color: #fff;
-  background: rgba(var(--accent), 0.5);
+  background: rgba(var(--tint), 0.86);
   border: 1px solid white;
   border-radius: 0.8em;
   padding: 0.5em 1em;
@@ -1936,6 +1924,11 @@ button.is-emby-button emby-button {
   background: #fff;
   color: #000;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.layout-desktop .skip-button .material-icons.skip_next,
+.layout-tv .skip-button .material-icons.skip_next {
+  padding-top: 0.2em;
 }
 
 .skip-button-container {
@@ -3911,6 +3904,11 @@ a[href*="shokoanime.com"] {
 
 .layout-tv #indexPage .itemsContainer .card.overflowBackdropCard {
   width: 13.2vw;
+}
+
+.layout-desktop .card.overflowBackdropCard .cardOverlayButton-br .cardOverlayButton.cardOverlayButton-hover.itemAction.paper-icon-button-light.emby-button.playstatebutton-played,
+.layout-tv .card.overflowBackdropCard .cardOverlayButton-br .cardOverlayButton.cardOverlayButton-hover.itemAction.paper-icon-button-light.emby-button.playstatebutton-played {
+  padding-top: 0.3vh;
 }
 
 .layout-tv .itemsContainer.scrollSlider.focuscontainer-x.animatedScrollX.itemsContainer-tv {
