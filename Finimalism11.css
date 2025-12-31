@@ -991,17 +991,9 @@ progress {
   padding-left: 1em;
 }
 
-.layout-desktop .overflowPortraitCard {
-  width: 7.5vw;
-}
-
-.layout-tv .overflowPortraitCard {
-  width: 7.5vw;
-}
-
 .layout-desktop #itemDetailPage .overflowSquareCard,
 .layout-tv #itemDetailPage .overflowSquareCard {
-  width: 6vw;
+  width: 7.5em;
 }
 
 .layout-desktop #itemDetailPage .overflowBackdropCard,
@@ -2882,6 +2874,11 @@ a[href*="shokoanime.com"] {
   animation: fadeTitle 0.5s ease-out 1.25s forwards;
 }
 
+.layout-desktop .itemDetailPage:has(.nameContainer .parentName.musicParentName) .itemName.infoText.parentNameLast,
+.layout-tv .itemDetailPage:has(.nameContainer .parentName.musicParentName) .itemName.infoText.parentNameLast {
+  margin-top: -0.5em;
+}
+
 @keyframes fadeTitle {
     from { opacity: 0; }
     to   { opacity: 1; }
@@ -3130,7 +3127,7 @@ a[href*="shokoanime.com"] {
   pointer-events: all;
   position: absolute;
   bottom: 0em;
-  max-width: 118vh;
+  max-width: calc(90vw - 60vh);
   transition: max-width 0.5s;
   transition-delay: 0.5s;
   height: 13.8em;
@@ -3259,6 +3256,10 @@ a[href*="shokoanime.com"] {
   max-width: 45vh !important;
 }
 
+.layout-desktop .itemDetailPage:has(.nameContainer .parentName.musicParentName) #childrenContent .itemsContainer.padded-right.vertical-list {
+  padding-top: 0.3em;
+}
+
 .layout-desktop .itemDetailPage:has(.nameContainer .parentName.musicParentName) #listChildrenCollapsible:hover {
   background: transparent !important;
 }
@@ -3266,7 +3267,7 @@ a[href*="shokoanime.com"] {
 .layout-desktop .itemDetailPage:has(.nameContainer .parentName.musicParentName) #listChildrenCollapsible #childrenContent .itemsContainer.padded-right,
 .layout-tv .itemDetailPage:has(.nameContainer .parentName.musicParentName) #listChildrenCollapsible #childrenContent .itemsContainer.padded-right {
   max-width: 45vh !important;
-  height: 56.9vh !important;
+  height: 58.3vh !important;
   overflow-y: scroll;
 }
 
@@ -4277,7 +4278,7 @@ a[href*="shokoanime.com"] {
   margin: 0;
   font-size: 1.25em;
   margin-top: -0.3em;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.6em;
   margin-right: 0.5em;
 }
 
@@ -4718,7 +4719,9 @@ a[href*="shokoanime.com"] {
 }
 
 .layout-desktop #similarCollapsible .card.overflowPortraitCard,
-.layout-tv #similarCollapsible .card.overflowPortraitCard {
+.layout-tv #similarCollapsible .card.overflowPortraitCard,
+.layout-desktop #similarCollapsible .card.overflowSquareCard,
+.layout-tv #similarCollapsible .card.overflowSquareCard {
   transition: width 0.3s, transform 0.3s ease-in-out;
   transform: translateX(15%);
   transition-delay: 0.25s;
@@ -4726,13 +4729,17 @@ a[href*="shokoanime.com"] {
 }
 
 .layout-desktop #similarCollapsible .card.overflowPortraitCard:hover,
-.layout-tv #similarCollapsible .card.overflowPortraitCard:focus {
+.layout-tv #similarCollapsible .card.overflowPortraitCard:focus,
+.layout-desktop #similarCollapsible .card.overflowSquareCard:hover,
+.layout-tv #similarCollapsible .card.overflowSquareCard:focus {
   transform: translateX(15%) translateY(-3%) scale(1.125);
   transition-delay: 0s;
 }
 
 .layout-desktop #similarCollapsible .card.overflowPortraitCard:hover .cardOverlayButton,
-.layout-tv #similarCollapsible .card.overflowPortraitCard:focus .cardOverlayButton {
+.layout-tv #similarCollapsible .card.overflowPortraitCard:focus .cardOverlayButton,
+.layout-desktop #similarCollapsible .card.overflowPortraitCard:hover .overflowSquareCard,
+.layout-tv #similarCollapsible .card.overflowPortraitCard:focus .overflowSquareCard {
   opacity: 0;
 }
 
