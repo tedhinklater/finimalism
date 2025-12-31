@@ -31,15 +31,33 @@ If you want it with the old emby scrollers, add this
 @import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/horizontal-scrolling.css");
 ```
 
-## Experimental version
+# Experimental version
 
 ![output](https://github.com/user-attachments/assets/d367e301-864b-4b03-bb91-62340e4cd29a)
 
-This version has all the latest features such as editable colours via variables and ultrawide support etc
+This version has all the latest features such as custom colours via variables and ultrawide support etc
 
 ```css
 @import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/Finimalism11.css");
 ```
+
+### Custom colours
+
+Below is an example by [AllStar112](https://github.com/AllStar112)
+
+```css
+@import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/Finimalism11.css");
+/* Custom Colours */
+:root { 
+  --accent: 169, 23, 82; 
+  --backdropBlur: blur(7px);
+  --rounding: 0.8em; 
+  --tint: 36, 8, 20; 
+  --tint2: 117, 21, 60; 
+}
+```
+<img width="1920" height="1080" alt="pink" src="https://github.com/user-attachments/assets/be8dfe52-cbef-4728-a162-04b37528710a" />
+
 
 (Experimental mode only) Add this for horizontal scrollers on the homepage
 
