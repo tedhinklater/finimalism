@@ -498,12 +498,24 @@ h2 {
   margin: 0 !important;
 }
 
+.emby-checkbox:focus:not(:checked) + span + .checkboxOutline {
+  border-color: rgba(var(--accent));
+}
+
+#loginPage .raised {
+  font-weight: 500;
+}
+
+#loginPage .checkboxOutline {
+  border-radius: 999em;
+}
+
 #loginPage .visualLoginForm {
   margin-bottom: 2em;
 }
 
 #loginPage .readOnlyContent .emby-button {
-  width: max-content;
+  width: 16.7em;
   transform: translateX(-50%);
   margin-left: 50%;
   margin-right: 50%;
@@ -1016,11 +1028,11 @@ progress {
 
 .cardText.cardTextCentered.cardText-secondary {
   padding-top: 0;
-  padding-bottom: 0.2em;
+  padding-bottom: 0.4em;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
-  line-height: 1.3em;
+  line-height: 1em;
   max-height: 2.3em;
   margin-top: 0em;
 }
@@ -4808,6 +4820,11 @@ a[href*="shokoanime.com"] {
   margin-top: 0.1em;
 }
 
+.layout-desktop .personCard .cardText.cardTextCentered.cardText-secondary,
+.layout-tv .personCard .cardText.cardTextCentered.cardText-secondary {
+  max-height: 1.8em;
+}
+
 .layout-desktop .itemDetailPage:has(.parentName.focuscontainer-x .button-link.itemAction.emby-button[data-type="Series"]) .detailPageWrapperContainer,
 .layout-tv .itemDetailPage:has(.parentName.focuscontainer-x .button-link.itemAction.emby-button[data-type="Series"]) .detailPageWrapperContainer,
 .layout-desktop .itemDetailPage:has(.parentName.focuscontainer-x .button-link.itemAction.emby-button[data-type="Series"]) .trackSelections,
@@ -5607,4 +5624,30 @@ a[href*="shokoanime.com"] {
 .layout-mobile .trackSelections .selectLabel::before {
   font-size: initial;
   line-height: revert;
+}
+
+@media (orientation: portrait) {
+  .layout-mobile #loginPage .padded-left.padded-right.padded-bottom-page {
+    margin-left: 50%;
+    margin-right: auto;
+    background: rgb(var(--tint));
+    border-radius: var(--rounding);
+    transform: translateX(-50%);
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 90vw;
+    max-width: 90vw;
+  }
+
+  #loginPage .raised {
+    font-weight: 500;
+    width: 90vw;
+  }
+  #loginPage .readOnlyContent .emby-button {
+    width: 90vw;
+    transform: translateX(-50%);
+    margin-left: 50%;
+    margin-right: 50%;
+    margin-top: 1.5em;
+  } 
 }
