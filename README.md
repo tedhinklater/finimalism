@@ -37,7 +37,6 @@ If you want it with the old emby scrollers, add this
 
 This version has all the latest features such as editable colours via variables and ultrawide support etc
 
-### Purple/White
 ```css
 @import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/Finimalism11.css");
 ```
