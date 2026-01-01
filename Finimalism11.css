@@ -217,7 +217,7 @@ h2 {
   padding-left: 0.5em;
   padding-right: 0.5em;
   height: 6.6em;
-  transition: width 0.2s ease-out 1s, background-color 1s ease-out 0s, border-color 0.5s ease-out 0s, padding-left 1s ease-out 0.25s, padding-right 1s ease-out 0.25s;
+  transition: width 0.2s ease-out 1s, background-color 1s ease-out 0s, border-color 0.5s ease-out 0s, padding-left 1s ease-out 0.25s, padding-right 1s ease-out 0.25s !important;
   border-radius: var(--rounding);
   overflow-y: scroll;
 }
@@ -2446,7 +2446,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 
 .layout-desktop #itemDetailPage .listItem,
 .layout-tv #itemDetailPage .listItem {
-  width: 27em;
+  width: calc(28.3vw + -11vh);
 }
 
 .listItem:hover,
@@ -3692,8 +3692,8 @@ a[href*="shokoanime.com"] {
 
 .layout-desktop #listChildrenCollapsible.verticalSection-extrabottompadding #childrenContent .itemsContainer.padded-right.vertical-list .listItem.listItem-largeImage.listItem-withContentWrapper .listItem-content .listItemBody.itemAction,
 .layout-tv #listChildrenCollapsible.verticalSection-extrabottompadding #childrenContent .itemsContainer.padded-right.vertical-list .listItem.listItem-largeImage.listItem-withContentWrapper .listItem-content .listItemBody.itemAction {
-  width: 26em;
-  min-width: 26em;
+  width: calc(27.3vw + -11vh);
+  min-width: calc(27.3vw + -11vh);
   background: transparent;
   border-radius: 0;
 }
@@ -3711,6 +3711,10 @@ a[href*="shokoanime.com"] {
   background-size: cover;
   background-position: center;
   border-radius: 10px;
+}
+
+.layout-desktop #listChildrenCollapsible #childrenContent .itemsContainer .listItem.listItem-largeImage.listItem-withContentWrapper,
+.layout-tv #listChildrenCollapsible #childrenContent .itemsContainer .listItem.listItem-largeImage.listItem-withContentWrapper {
 }
 
 .layout-desktop #itemDetailPage .padded-top-focusscale.padded-bottom-focusscale.no-padding.emby-scroller,
@@ -3797,7 +3801,7 @@ a[href*="shokoanime.com"] {
   display: inline-flex;
   white-space: normal;
   gap: 0.5%;
-  width: calc(100vw - 32.5em);
+  width: calc(98vw - 48vh);
   opacity: 0;
   animation: fadeTitle 0.5s ease-out 0s forwards;
   flex-direction: row;
