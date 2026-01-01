@@ -172,7 +172,6 @@ h2 {
   margin-bottom: 0;
   width: 60vh;
   transition: width 0.2s ease-out 1s, background-color 1s ease-out 2s, border-color 0.5s ease-out 2s, padding-left 1s ease-out 1s, padding-right 1s ease-out 1s;
-  border-color: transparent;
   border-radius: var(--rounding) !important;
 }
 
@@ -180,13 +179,15 @@ h2 {
 .layout-tv p.overview.detail-clamp-text {
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 4;
+  -webkit-line-clamp: 6;
   overflow: hidden;
   text-overflow: ellipsis;
-  height: 6.3em;
+  height: fit-content;
+  max-height: 9.3em;
   margin-top: 0.5em;
   margin-bottom: -1em;
   padding-top: 0;
+  padding-left: 0em;
   border-radius: 0;
 }
 
@@ -198,10 +199,11 @@ h2 {
   border-color: #fff3;
   margin-top: calc(0em + -1px);
   margin-left: -1px;
-  padding-left: 0.5em;
+  padding-left: 0em;
   padding-right: 0.5em;
-  height: 6.6em;
-  transition: width 0.2s ease-out 1s, background-color 1s ease-out 0s, border-color 0.5s ease-out 0s, padding-left 1s ease-out 0.25s, padding-right 1s ease-out 0.25s;
+  height: fit-content;
+  max-height: 9.3em;
+  transition: width 0.2s ease-out 1s, background-color 1s ease-out 0s, border-color 0.5s ease-out 0s, padding-left 1s ease-out 0.25s, padding-right 1s ease-out 0.25s, height 1s ease-out 0.25s;
   border-radius: var(--rounding);
   overflow-y: scroll;
 }
@@ -216,8 +218,9 @@ h2 {
   margin-left: -1px;
   padding-left: 0.5em;
   padding-right: 0.5em;
-  height: 6.6em;
-  transition: width 0.2s ease-out 1s, background-color 1s ease-out 0s, border-color 0.5s ease-out 0s, padding-left 1s ease-out 0.25s, padding-right 1s ease-out 0.25s;
+  height: fit-content;
+  max-height: 9.3em;
+  transition: width 0.2s ease-out 1s, background-color 1s ease-out 0s, border-color 0.5s ease-out 0s, padding-left 1s ease-out 0.25s, padding-right 1s ease-out 0.25s, height 1s ease-out 0.25s;
   border-radius: var(--rounding);
   overflow-y: scroll;
 }
@@ -300,7 +303,7 @@ h2 {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
   overflow: hidden;
-  width: 120vh;
+  width: calc(93vw - 60vh);
 }
 
 .detailImageContainer:has(.cardImageIcon.material-icons.person) {
@@ -1973,7 +1976,6 @@ button.is-emby-button emby-button {
   pointer-events: all;
   transition: width 0.2s ease-out 1s, background-color 1s ease-out 0s, border-color 0.5s ease-out 0s, padding-left 1s ease-out 0.25s, padding-right 1s ease-out 0.25s;
   padding-top: 0.4em;
-  border-color: transparent;
   border-radius: var(--rounding);
   background-color: transparent;
 }
@@ -3152,6 +3154,17 @@ a[href*="shokoanime.com"] {
   flex: 1 1 auto;
   width: 100%;
   max-width: calc(93vw - 60vh);
+  border-radius: var(--rounding);
+  transition: max-width 0.2s ease-out 2s, background 1s ease-out 2s, border-color 0.5s ease-out 2s, padding-left 1s ease-out 1s, padding-right 1s ease-out 1s !important;
+}
+
+.layout-desktop #itemDetailPage:has(#guestCastCollapsible.hide) #castCollapsible.verticalSection.detailVerticalSection:hover,
+.layout-tv #itemDetailPage:has(#guestCastCollapsible.hide) #castCollapsible.verticalSection.detailVerticalSection:focus {
+  background: rgb(var(--tint)) !important;
+  transition: max-width 0.2s ease-out 0s, background 1s ease-out 0s, border-color 0.5s ease-out 0s, padding-left 1s ease-out 0.25s, padding-right 1s ease-out 0.25s !important;
+  border: 0.5px solid;
+  border-color: #fff3;
+  padding-right: 1em;
 }
 
 .layout-desktop #itemDetailPage #castCollapsible #peopleHeader.sectionTitle,
@@ -3297,7 +3310,7 @@ a[href*="shokoanime.com"] {
   margin-top: -1px;
   margin-left: -1px;
   padding-left: 0.5em;
-  padding-right: 0.5em;
+  padding-right: 1em;
 }
 
 .layout-desktop .itemDetailPage:has(.detailImageContainer > .card .cardImageIcon.person) #listChildrenCollapsible:hover,
