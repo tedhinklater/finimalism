@@ -33,7 +33,7 @@ If you want it with the old emby scrollers, add this
 
 # Experimental version
 
-![output](https://github.com/user-attachments/assets/d367e301-864b-4b03-bb91-62340e4cd29a)
+![output](https://github.com/user-attachments/assets/42f33772-477d-4fb5-b5d6-d341e133e888)
 
 This version has all the latest features such as custom colours via variables and ultrawide support etc
 
@@ -43,7 +43,7 @@ This version has all the latest features such as custom colours via variables an
 
 ### Custom colours
 
-Below is an example by [AllStar112](https://github.com/AllStar112)
+Below is an example of how to use custom colours by [AllStar112](https://github.com/AllStar112)
 
 ```css
 @import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/Finimalism11.css");
@@ -58,8 +58,7 @@ Below is an example by [AllStar112](https://github.com/AllStar112)
 ```
 <img width="1920" height="1080" alt="pink" src="https://github.com/user-attachments/assets/be8dfe52-cbef-4728-a162-04b37528710a" />
 
-
-(Experimental mode only) Add this for horizontal scrollers on the homepage
+Add this for horizontal scrollers on the homepage
 
 ```css
 @import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/scrollers-11.css");
