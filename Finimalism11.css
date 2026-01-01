@@ -1246,7 +1246,6 @@ progress {
   border-bottom-right-radius: 0 !important;
   max-width: 100%;
   width: 100%;
-  height: calc(31vh - 4vw);
 }
 
 /*hover zoom*/
