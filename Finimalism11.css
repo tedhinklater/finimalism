@@ -2945,9 +2945,9 @@ a[href*="shokoanime.com"] {
 .layout-tv #seriesAirTime {
   position: absolute;
   top: 48em;
-  left: 6em;
+  left: 5.2em;
   width: 21.3em;
-  text-align: left;
+  text-align: center;
   font-weight: 600;
 }
 
