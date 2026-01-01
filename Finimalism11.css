@@ -2445,7 +2445,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 
 .layout-desktop #itemDetailPage .listItem,
 .layout-tv #itemDetailPage .listItem {
-  width: 27em;
+  width: calc(28.3vw + -11vh);
 }
 
 .listItem:hover,
@@ -3691,8 +3691,8 @@ a[href*="shokoanime.com"] {
 
 .layout-desktop #listChildrenCollapsible.verticalSection-extrabottompadding #childrenContent .itemsContainer.padded-right.vertical-list .listItem.listItem-largeImage.listItem-withContentWrapper .listItem-content .listItemBody.itemAction,
 .layout-tv #listChildrenCollapsible.verticalSection-extrabottompadding #childrenContent .itemsContainer.padded-right.vertical-list .listItem.listItem-largeImage.listItem-withContentWrapper .listItem-content .listItemBody.itemAction {
-  width: 26em;
-  min-width: 26em;
+  width: calc(28vw + -11vh);
+  min-width: calc(28vw + -11vh);
   background: transparent;
   border-radius: 0;
 }
