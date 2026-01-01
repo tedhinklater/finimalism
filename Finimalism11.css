@@ -559,6 +559,16 @@ h2 {
     }
 }
 
+.layout-desktop .dialogContainer .availableImagesList .card,
+.layout-tv .dialogContainer .availableImagesList .card {
+  width: 20%;
+}
+
+.layout-desktop .dialogContentInner .card.scalableCard.imageEditorCard,
+.layout-tv .dialogContentInner .card.scalableCard.imageEditorCard {
+  width: 30%;
+}
+
 @media (max-width: 62.5em) {
   .layout-desktop .detailPageWrapperContainer, .layout-tv .detailPageWrapperContainer {
     margin-top: 0em !important;
@@ -1536,7 +1546,7 @@ progress {
 }
 
 .mainDrawer {
-  background-color: rgba(var(--tint), 0.4);
+  background-color: rgb(var(--tint));
 }
 
 .layout-desktop .mainDrawer,
