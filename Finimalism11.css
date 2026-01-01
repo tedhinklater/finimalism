@@ -1536,7 +1536,7 @@ progress {
 }
 
 .mainDrawer {
-  background-color: rgb(var(--tint));
+  background-color: rgba(var(--tint), 0.4);
 }
 
 .layout-desktop .mainDrawer,
