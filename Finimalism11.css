@@ -3199,6 +3199,7 @@ a[href*="shokoanime.com"] {
   border: 0.5px solid;
   border-color: #fff3;
   padding-right: 1em;
+  padding-left: 1em;
 }
 
 .layout-desktop #itemDetailPage #castCollapsible #peopleHeader.sectionTitle,
