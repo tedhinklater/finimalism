@@ -274,9 +274,10 @@ h2 {
 
 .layout-desktop .itemDetailPage:has(.listItem.listItem-largeImage[data-type="Episode"]) .overview.detail-clamp-text,
 .layout-tv .itemDetailPage:has(.listItem.listItem-largeImage[data-type="Episode"]) .overview.detail-clamp-text {
-  width: 107vh !important;
-  transition: width 0s;
-  max-height: 5.2em !important;
+  width: calc(90vw - 60vh);
+  transition: width 0.2s ease-out 1s, background-color 1s ease-out 0s, border-color 0.5s ease-out 2s, padding-left 1s ease-out 0s, padding-right 0s ease-out 1s;
+  max-height: 5em !important;
+  overflow-y: scroll !important;
 }
 
 #itemDetailPage .tagline {
@@ -2447,7 +2448,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 
 .layout-desktop #itemDetailPage .listItem,
 .layout-tv #itemDetailPage .listItem {
-  width: calc(28.3vw + -11vh);
+  width: calc(31.3vw + -16vh);
 }
 
 .listItem:hover,
@@ -3704,8 +3705,8 @@ a[href*="shokoanime.com"] {
 
 .layout-desktop #listChildrenCollapsible.verticalSection-extrabottompadding #childrenContent .itemsContainer.padded-right.vertical-list .listItem.listItem-largeImage.listItem-withContentWrapper .listItem-content .listItemBody.itemAction,
 .layout-tv #listChildrenCollapsible.verticalSection-extrabottompadding #childrenContent .itemsContainer.padded-right.vertical-list .listItem.listItem-largeImage.listItem-withContentWrapper .listItem-content .listItemBody.itemAction {
-  width: calc(28vw + -11vh);
-  min-width: calc(28vw + -11vh);
+  width: calc(31vw + -16vh);
+  min-width: calc(31vw + -16vh);
   background: transparent;
   border-radius: 0;
 }
