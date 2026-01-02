@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Geom:ital,wght@0,300..900;1,300..900&display=swap');
 
 :root { 
@@ -4474,7 +4475,9 @@ a[href*="shokoanime.com"] {
 }
 
 .layout-desktop #itemDetailPage .detailImageContainer .genre-overlay-container,
-.layout-tv #itemDetailPage .detailImageContainer .genre-overlay-container {
+.layout-tv #itemDetailPage .detailImageContainer .genre-overlay-container,
+.layout-desktop #itemDetailPage .nextUpSection .genre-overlay-container,
+.layout-tv #itemDetailPage .nextUpSection .genre-overlay-container {
   display: none !important;
 }
 
