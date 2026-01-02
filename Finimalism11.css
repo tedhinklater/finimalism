@@ -3194,9 +3194,24 @@ a[href*="shokoanime.com"] {
 .layout-desktop #itemDetailPage:has(#guestCastCollapsible:not(.hide)) #castCollapsible.verticalSection.detailVerticalSection,
 .layout-tv #itemDetailPage:has(#guestCastCollapsible:not(.hide)) #castCollapsible.verticalSection.detailVerticalSection {
   flex: 0 0 60vh;
-  max-width: 60vh;
+  max-width: calc(60vw + -54vh);
   height: 14.8em;
   margin-bottom: 0.2em;
+  transition: width 0.2s ease-out 1s, background-color 1s ease-out 2s, border-color 0.5s ease-out 2s, padding-left 1s ease-out 1s, padding-right 1s ease-out 1s;
+  border-radius: var(--rounding) !important;
+}
+
+.layout-desktop #itemDetailPage:has(#guestCastCollapsible:not(.hide)) #castCollapsible.verticalSection.detailVerticalSection:hover,
+.layout-tv #itemDetailPage:has(#guestCastCollapsible:not(.hide)) #castCollapsible.verticalSection.detailVerticalSection:focus {
+  background: rgb(var(--tint));
+  border: 0.5px solid;
+  border-color: #fff3;
+  margin-bottom: 2px;
+  margin-left: -1px;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  transition: width 0.2s ease-out 1s, background-color 1s ease-out 0s, border-color 0.5s ease-out 0s, padding-left 1s ease-out 0.25s, padding-right 1s ease-out 0.25s, height 1s ease-out 0.25s;
+  border-radius: var(--rounding);
 }
 
 .layout-desktop #itemDetailPage:has(#guestCastCollapsible.hide) #castCollapsible.verticalSection.detailVerticalSection,
@@ -3222,7 +3237,9 @@ a[href*="shokoanime.com"] {
 }
 
 .layout-desktop #itemDetailPage #castCollapsible #peopleHeader.sectionTitle,
-.layout-tv #itemDetailPage #castCollapsible #peopleHeader.sectionTitle {
+.layout-tv #itemDetailPage #castCollapsible #peopleHeader.sectionTitle,
+.layout-desktop #itemDetailPage #guestCastCollapsible #guestCastHeader.sectionTitle,
+.layout-tv #itemDetailPage #guestCastCollapsible #guestCastHeader.sectionTitle {
   padding-top: 0 !important;
   padding-bottom: 0.7em;
   margin-top: 0 !important;
@@ -3230,9 +3247,22 @@ a[href*="shokoanime.com"] {
 
 .layout-desktop #itemDetailPage #guestCastCollapsible.verticalSection.detailVerticalSection,
 .layout-tv #itemDetailPage #guestCastCollapsible.verticalSection.detailVerticalSection {
-  margin-left: 65vh;
-  max-width: calc(93vw - 120vh);
-  bottom: 1.2em;
+  margin-left: calc(63vw + -54vh);
+  max-width: 30vw;
+  border-radius: var(--rounding);
+  transition: max-width 0.2s ease-out 2s, background 1s ease-out 2s, border-color 0.5s ease-out 2s, padding-left 1s ease-out 1s, padding-right 1s ease-out 1s !important;
+  height: 14.8em;
+}
+
+.layout-desktop #itemDetailPage #guestCastCollapsible.verticalSection.detailVerticalSection:hover,
+.layout-tv #itemDetailPage #guestCastCollapsible.verticalSection.detailVerticalSection:focus {
+  background: rgb(var(--tint)) !important;
+  transition: max-width 0.2s ease-out 0s, background 1s ease-out 0s, border-color 0.5s ease-out 0s, padding-left 1s ease-out 0.25s, padding-right 1s ease-out 0.25s !important;
+  border: 0.5px solid;
+  border-color: #fff3;
+  margin-bottom: -1px;
+  padding-right: 1em;
+  padding-left: 1em;
 }
 
 .layout-desktop #guestCastHeader.sectionTitle.sectionTitle-cards.padded-right,
