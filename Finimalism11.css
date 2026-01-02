@@ -968,12 +968,12 @@ progress {
 
 .layout-desktop #homeTab .emby-scroller,
 .layout-tv #homeTab .emby-scroller {
-  padding-left: max(env(safe-area-inset-left),1.3%);
+  padding-left: max(env(safe-area-inset-left),0%);
 }
 
 .layout-desktop .sections.homeSectionsContainer, 
 .layout-tv .sections.homeSectionsContainer {
-  padding-left: max(env(safe-area-inset-left),1.2%);
+  padding-left: max(env(safe-area-inset-left),0.5%);
 }
 
 .layout-desktop #homeTab .sectionTitleContainer-cards,
@@ -4034,12 +4034,15 @@ a[href*="shokoanime.com"] {
   max-width: 96vw;
 }
 
-.layout-desktop #indexPage .itemsContainer .card.overflowBackdropCard.card-hoverable.card-withuserdata {
-  width: 13.2vw;
-}
-
-.layout-tv #indexPage .itemsContainer .card.overflowBackdropCard {
-  width: 13.2vw;
+.layout-desktop #indexPage .itemsContainer .card.overflowBackdropCard.card-hoverable.card-withuserdata,
+.layout-tv #indexPage .itemsContainer .card.overflowBackdropCard.card-hoverable.card-withuserdata,
+.layout-desktop #indexPage .itemsContainer .card.overflowSquareCard.card-hoverable.card-withuserdata,
+.layout-tv #indexPage .itemsContainer .card.overflowSquareCard.card-hoverable.card-withuserdata,
+.layout-tv #indexPage .itemsContainer .card.overflowBackdropCard,
+.layout-desktop #indexPage .itemsContainer .card.overflowBackdropCard,
+.layout-tv #indexPage .itemsContainer .card.overflowSquareCard,
+.layout-desktop #indexPage .itemsContainer .card.overflowSquareCard {
+  width: calc(13.9vw + -0.9vh);
 }
 
 .layout-desktop .card.overflowBackdropCard .cardOverlayButton-br .cardOverlayButton.cardOverlayButton-hover.itemAction.paper-icon-button-light.emby-button.playstatebutton-played,
@@ -4091,7 +4094,7 @@ a[href*="shokoanime.com"] {
 
 @supports (width:max(1px,1px)) {
   #homeTab .emby-scroller {
-    padding-right: max(env(safe-area-inset-right),1.3%);
+    padding-right: max(env(safe-area-inset-right),0%);
   }
 }
 
