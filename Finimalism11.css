@@ -3119,6 +3119,7 @@ a[href*="shokoanime.com"] {
   animation-direction: normal !important;
   animation-fill-mode: none !important;
   animation-play-state: running !important;
+  z-index: -1;
 }
 
 .content-primary {
@@ -3576,6 +3577,13 @@ a[href*="shokoanime.com"] {
   width: calc(11.6vw + -7.5vh);
   margin: 0;
   height: 12em;
+}
+
+.layout-desktop #castCollapsible .card.overflowPortraitCard.personCard.card-hoverable.card-withuserdata .cardText.cardTextCentered.cardText-secondary, 
+.layout-tv #castCollapsible .card.overflowPortraitCard.personCard.card-hoverable.card-withuserdata .cardText.cardTextCentered.cardText-secondary, 
+.layout-desktop #guestCastCollapsible .card.overflowPortraitCard.personCard.card-hoverable.card-withuserdata .cardText.cardTextCentered.cardText-secondary, 
+.layout-tv #guestCastCollapsible .card.overflowPortraitCard.personCard.card-hoverable.card-withuserdata .cardText.cardTextCentered.cardText-secondary {
+  max-height: 1.7em;
 }
 
 .layout-desktop #scenesCollapsible:hover,
