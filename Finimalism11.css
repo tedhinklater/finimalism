@@ -2310,6 +2310,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
  #musicVideosCollapsible .emby-scrollbuttons.padded-right,
  #scenesCollapsible .emby-scrollbuttons.padded-right {
   margin-top: -0.5em;
+  margin-right: calc(6.1vw + -8.7vh);
 }
 
 .layout-desktop .emby-scrollbuttons.padded-right {
@@ -3572,7 +3573,7 @@ a[href*="shokoanime.com"] {
 
 .layout-desktop #castCollapsible .card.overflowPortraitCard.personCard.card-hoverable.card-withuserdata,
 .layout-tv #castCollapsible .card.overflowPortraitCard.personCard.card-hoverable.card-withuserdata {
-  width: 10.1em;
+  width: calc(11.6vw + -7.5vh);
   margin: 0;
   height: 12em;
 }
@@ -3586,7 +3587,7 @@ a[href*="shokoanime.com"] {
 
 .layout-desktop #guestCastCollapsible .card.overflowPortraitCard.personCard.card-hoverable.card-withuserdata,
 .layout-tv #guestCastCollapsible .card.overflowPortraitCard.personCard.card-hoverable.card-withuserdata {
-  width: 10.1em;
+  width: calc(11.6vw + -7.5vh);
   margin: 0;
   height: 12em;
 }
@@ -4885,7 +4886,7 @@ a[href*="shokoanime.com"] {
   height: 6em;
   min-width: 6em;
   min-height: 6em;
-  margin-left: 2em;
+  margin-left: calc(5.8vw + -8.9vh);
 }
 
 .layout-desktop .personCard .cardImageContainer,
