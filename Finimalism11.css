@@ -269,7 +269,8 @@ h2 {
 }
 
 .layout-desktop .itemDetailPage:has(.detailImageContainer > .card .cardImageIcon.person) .detailPageWrapperContainer,
-.layout-tv .itemDetailPage:has(.detailImageContainer > .card .cardImageIcon.person) .detailPageWrapperContainer {
+.layout-tv .itemDetailPage:has(.detailImageContainer > .card .cardImageIcon.person) .detailPageWrapperContainer,
+.layout-mobile .itemDetailPage:has(.detailImageContainer > .card .cardImageIcon.person) .detailPageWrapperContainer {
   animation: none !important;
   opacity: 1 !important;
 }
@@ -1053,7 +1054,8 @@ progress {
   line-height: 1.15em;
 }
 
-.cardText.cardTextCentered.cardText-secondary {
+.layout-desktop .cardText.cardTextCentered.cardText-secondary,
+.layout-tv .cardText.cardTextCentered.cardText-secondary {
   padding-top: 0;
   padding-bottom: 0.4em;
   display: -webkit-box;
@@ -4937,8 +4939,16 @@ a[href*="shokoanime.com"] {
 .layout-mobile .card {
 }
 
-.layout-mobile body {
-  font-size: 10pt;
+@media (orientation: landscape) {
+  .layout-mobile body {
+    font-size: 3.5vh;
+  }
+}
+
+@media (orientation: portrait) {
+  .layout-mobile body {
+    font-size: 3.5vw;
+  }
 }
 
 .layout-mobile div.itemMiscInfo.itemMiscInfo-primary {
@@ -5592,11 +5602,11 @@ a[href*="shokoanime.com"] {
   .layout-mobile .detailImageContainer .card.portraitCard {
     position: absolute;
     left: 50%;
-    top: 4em;
+    top: 10vh;
     bottom: unset;
     right: unset;
     margin-top: -40vh;
-    width: 21vh;
+    width: 20vh;
     max-width: 50vw;
     transform: translateX(-50%);
   }
@@ -5631,14 +5641,25 @@ a[href*="shokoanime.com"] {
 
 @media (max-width: 100em) and (orientation: landscape) {
   .layout-mobile .detailImageContainer .card.portraitCard {
-    left: 3vw;
-    top: -5em !important;
-    bottom: unset;
+    left: 8vw;
+    top: unset !important;
+    bottom: 23vh;
     right: unset;
-    margin-top: -40vh;
     transform: none;
-    width: 37vh;
+    width: 30vh;
     max-width: 50vw;
+  }
+}
+
+@media (min-width: 800px) and (min-height: 1000px) and (orientation: portrait) {
+  .layout-mobile .detailImageContainer .card.portraitCard {
+    opacity: 0;
+  }
+  .layout-mobile .itemMiscInfo.itemMiscInfo-primary {
+    padding-left: 0vw;
+  }
+   .layout-mobile [dir="ltr"] .mainDetailButtons {
+    padding-left: 0vw;
   }
 }
 
@@ -5657,7 +5678,7 @@ a[href*="shokoanime.com"] {
 
 .layout-mobile p.overview.detail-clamp-text {
   color: #fff;
-  font-weight: 500;
+  font-weight: 400;
   -webkit-line-clamp: unset;
   text-align: center;
   margin-bottom: 2em;
@@ -5667,6 +5688,24 @@ a[href*="shokoanime.com"] {
   padding: 0vw;
   max-width: 100%;
   width: 100%;
+}
+
+.layout-mobile .genre-overlay-container {
+  opacity: 0;
+}
+
+.layout-mobile .quality-overlay-container {
+  opacity: 1;
+}
+
+.layout-mobile .quality-overlay-label {
+  border-radius: var(--rounding);
+  padding: 0.1rem 0.5rem;
+  font-size: 0.6rem;
+}
+
+.layout-mobile .trackSelections .selectContainer .selectLabel {
+  opacity: 0;
 }
 
 @media (orientation: landscape) {
@@ -5691,7 +5730,6 @@ a[href*="shokoanime.com"] {
 
 .layout-mobile .button-flat.btnPlay.detailButton.emby-button {
   width: 22%;
-  height: 2em;
   background: rgb(var(--accent)) !important;
   box-shadow: 0px 0px 13px #432b6f7a;
   margin-left: -0.9em !important;
@@ -5715,10 +5753,32 @@ a[href*="shokoanime.com"] {
   pointer-events: all;
 }
 
-.layout-mobile .itemDetailsGroup .label::before,
-.layout-mobile .trackSelections .selectLabel::before {
-  font-size: initial;
-  line-height: revert;
+@media (max-width: 1000px) and (max-height: 999px) {
+  .layout-mobile .itemDetailsGroup .label::before,
+  .layout-mobile .trackSelections .selectLabel::before {
+    font-size: 1.3rem;
+    line-height: revert;
+  }
+}
+
+@media (min-width: 1000px) and (min-height: 800px) {
+  .layout-mobile .itemDetailsGroup .label::before,
+  .layout-mobile .trackSelections .selectLabel::before {
+    font-size: 2rem;
+    line-height: revert;
+  }
+}
+
+@media (orientation: portrait) and (min-width: 800px) {
+  .layout-mobile body {
+    font-size: 3vw;
+  }
+}
+
+@media (orientation: landscape) and (min-height: 800px) {
+  .layout-mobile body {
+    font-size: 3.6vh;
+  }
 }
 
 @media (orientation: portrait) {
@@ -5745,4 +5805,172 @@ a[href*="shokoanime.com"] {
     margin-right: 50%;
     margin-top: 1.5em;
   } 
+}
+
+@media (max-width: 999px) and (max-height: 999px) {
+  .layout-mobile a[href*="imdb.com"]::before {
+    content: "";
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    background-image: url('https://i.ibb.co/WWKKmLcC/imdb.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    
+  }
+
+  .layout-mobile a[href*="trakt.tv"]::before {
+    content: "";
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    background-image: url('https://i.ibb.co/G6p74rm/trakt.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+  }
+
+  .layout-mobile a[href*="themoviedb.org"]::before {
+    content: "";
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    background-image: url('https://i.ibb.co/Mk9r3tqm/tmdb.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+  }
+
+  .layout-mobile a[href*="themoviedb.org/collection"]::before {
+    content: "";
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    background-image: url('https://i.ibb.co/9kvKdzj9/tmdbcollection.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+  }
+
+  .layout-mobile a[href*="thetvdb.com"]::before {
+    content: "";
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    background-image: url('https://i.ibb.co/0jKrJ38d/tvdb.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+  }
+
+  .layout-mobile a[href*="tvmaze.com"]::before {
+    content: "";
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    background-image: url('https://i.ibb.co/YTqbgfJc/tvmaze.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+  }
+
+  .layout-mobile a[href*="anidb.net"]::before {
+    content: "";
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    background-image: url('https://i.ibb.co/GNzTYhz/anidb.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+  }
+
+  .layout-mobile a[href*="anilist.co"]::before {
+    content: "";
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    background-image: url('https://i.ibb.co/tM2cNLZm/anilist.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+  }
+
+  .layout-mobile a[href*="kitsu.app"]::before {
+    content: "";
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    background-image: url('https://i.ibb.co/Ng8RmDFg/kitsu.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+  }
+
+  .layout-mobile a[href*="theaudiodb.com"]::before {
+    content: "";
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    background-image: url('https://i.ibb.co/TMqCZLtp/theaudiodb.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+  }
+
+  .layout-mobile a[href*="music.apple.com"]::before {
+    content: "";
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    background-image: url('https://i.ibb.co/wZq3Xw5K/applemusic.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+  }
+
+  .layout-mobile a[href*="musicbrainz.org"]::before {
+    content: "";
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    background-image: url('https://i.ibb.co/r2mW8XbQ/musicbrainz.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+  }
+
+  .layout-mobile a[href*="myanimelist.net"]::before {
+    content: "";
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    background-image: url('https://i.ibb.co/YFbTWhnQ/myanimelist.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+  }
+
+  .layout-mobile a[href*="kinopoisk.ru"]::before {
+    content: "";
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    background-image: url('https://i.ibb.co/N6TZ0yjZ/kinopoisk.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+  }
+
+  .layout-mobile a[href*="shokoanime.com"]::before {
+    content: "";
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    background-image: url('https://i.ibb.co/mChjxCk6/shokoanime.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+  }
 }
