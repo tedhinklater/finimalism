@@ -1623,11 +1623,11 @@ button.is-emby-button emby-button {
 
 .layout-desktop #myPreferencesMenuPage .verticalSection-extrabottompadding .emby-button,
 .layout-tv #myPreferencesMenuPage .verticalSection-extrabottompadding .emby-button {
-  width: calc(2.5vw + 32vh);
+  width: calc(1.5vw + 32vh);
   margin-left: 0 !important;
-  margin-bottom: 0.5em !important;
+  margin-bottom: 1em !important;
   border-radius: var(--rounding) !important;
-  background-color: rgba(var(--tint2), 0.3) !important;
+  background-color: rgba(var(--tint2), 0.1) !important;
   transition: background 0.3s ease;
   display: flex !important;
   justify-content: center;
@@ -1644,9 +1644,9 @@ button.is-emby-button emby-button {
 }
 
 @media (min-width: 50em) {
-  .layout-desktop .readOnlyContent, form,
-  .layout-tv .readOnlyContent, form {
-    max-width: calc(8.5vw + 32vh);
+  .layout-desktop #myPreferencesMenuPage .readOnlyContent,
+  .layout-tv #myPreferencesMenuPage .readOnlyContent {
+    max-width: calc(4.5vw + 32vh);
     background: rgba(var(--tint2), 0.1);
     border-radius: var(--rounding);
   }
