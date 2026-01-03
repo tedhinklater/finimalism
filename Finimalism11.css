@@ -3724,7 +3724,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 
 .layout-desktop .videoOsdBottom,
 .layout-tv .videoOsdBottom {
-  background: rgb(var(--tint));
+  background: rgba(var(--tint), 0.6);
   padding-bottom: 0.5em;
   padding-top: 0.5em;
   border-top-right-radius: 1em;
