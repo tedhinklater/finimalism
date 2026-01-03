@@ -2252,7 +2252,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
   max-width: fit-content;
   border-radius: 0.25em;
   z-index: 90;
-  background: rgb(var(--tint));
+  background: rgba(var(--tint), 0.6);
   margin-left: 0.1em;
 }
 
@@ -3351,6 +3351,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 .layout-tv .nextUpSection.verticalSection.detailVerticalSection {
   top: 0em !important;
   max-width: 107vh;
+  overflow-x: hidden;
 }
 
 .layout-desktop #listChildrenCollapsible,
@@ -3653,7 +3654,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 .layout-tv #similarCollapsible .card.overflowPortraitCard {
   width: 7.5em;
   min-width: unset;
-  padding-top: 0.5em;
+  padding-top: 0em;
 }
 
 .layout-desktop #similarCollapsible .cardOverlayButton,
@@ -4880,7 +4881,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
   position: fixed;
   top: 2.5em;
   right: 0em;
-  width: 9.5em;
+  width: 22em;
   overflow-y: scroll;
   max-height: calc(100vh - 0em);
   height: calc(100vh - 4em);
@@ -4904,18 +4905,21 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 .layout-tv #similarCollapsible .card.overflowPortraitCard,
 .layout-desktop #similarCollapsible .card.overflowSquareCard,
 .layout-tv #similarCollapsible .card.overflowSquareCard {
-  transition: width 0.3s, transform 0.3s ease-in-out;
+  transition: transform 0.5s ease-in-out 0.4s, margin-bottom 0.5s ease-out 0.5s;
   transform: translateX(15%);
-  transition-delay: 0.25s;
-  transform-origin: right;
+  transform-origin: top right;
+  margin-left: 13em;
 }
 
 .layout-desktop #similarCollapsible .card.overflowPortraitCard:hover,
 .layout-tv #similarCollapsible .card.overflowPortraitCard:focus,
 .layout-desktop #similarCollapsible .card.overflowSquareCard:hover,
 .layout-tv #similarCollapsible .card.overflowSquareCard:focus {
-  transform: translateX(15%) translateY(-3%) scale(1.125);
-  transition-delay: 0s;
+  transform: translateX(20%) translateY(-6%) scale(1.825);
+  transform-origin: top right;
+  transition: transform 0.3s ease-out 0s, margin-bottom 0.3s ease-out 0s;
+  z-index: 9999;
+  margin-bottom: 38%;
 }
 
 .layout-desktop #similarCollapsible .card.overflowPortraitCard:hover .cardOverlayButton,
@@ -4999,6 +5003,25 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 .layout-tv .itemDetailPage:has(.parentName.focuscontainer-x .button-link.itemAction.emby-button[data-type="Series"]) .itemDetailsGroup {
   animation: none !important;
   opacity: 1 !important;
+}
+
+.layout-desktop .videoOsdBottom.videoOsdBottom-maincontrols {
+  opacity: 0;
+  transition: opacity 1s ease-out 0.5s;
+}
+
+.layout-desktop .videoOsdBottom.videoOsdBottom-maincontrols.hide {
+  display: block !important;
+}
+
+.layout-desktop .videoOsdBottom.videoOsdBottom-maincontrols:hover {
+  opacity: 1;
+  transition: opacity 0.1s ease-out 0s;
+}
+
+.playerStats {
+  background: rgba(var(--tint), 0.8);
+  border-radius: var(--rounding);
 }
 
 /* --------------- MOBILE --------------- */
