@@ -3240,8 +3240,8 @@ a[href*="shokoanime.com"] {
 .layout-tv #itemDetailPage #castCollapsible #peopleHeader.sectionTitle,
 .layout-desktop #itemDetailPage #guestCastCollapsible #guestCastHeader.sectionTitle,
 .layout-tv #itemDetailPage #guestCastCollapsible #guestCastHeader.sectionTitle {
-  padding-top: 0 !important;
-  padding-bottom: 0.7em;
+  padding-top: 0.2em;
+  padding-bottom: 0.5em;
   margin-top: 0 !important;
 }
 
@@ -3289,6 +3289,10 @@ a[href*="shokoanime.com"] {
   max-width: 54vh;
   height: 18em;
   position: fixed !important;
+  color: #fff;
+  transition: max-width 0.2s ease-out 1s, background-color 1s ease-out 2s, border-color 0.5s ease-out 2s, padding-left 1s ease-out 1s, padding-right 1s ease-out 1s;
+  border-radius: var(--rounding) !important;
+  height: 19em !important;
 }
 
 .layout-desktop .itemDetailPage:has(.button-flat.btnShuffle.detailButton.emby-button) #specialsCollapsible.verticalSection.detailVerticalSection.emby-scroller-container, 
@@ -3302,10 +3306,11 @@ a[href*="shokoanime.com"] {
 .layout-desktop .itemDetailPage:has(.nextUpSection .card.overflowBackdropCard.card-hoverable) #specialsCollapsible.verticalSection.detailVerticalSection.emby-scroller-container, 
 .layout-tv .detailPagePrimaryContent.padded-right:has(.nextUpSection .card.overflowBackdropCard.card-hoverable) #specialsCollapsible.verticalSection.detailVerticalSection {
   top: 4.5em;
-  left: 55.5em;
+  left: 55vw;
   width: 54vh;
-  height: 18em;
+  height: 17.2em !important;
   position: fixed !important;
+  transition: max-width 0.2s ease-out 2s, background 1s ease-out 0s, border-color 0.5s ease-out 2s, padding-left 1s ease-out 1s, padding-right 1s ease-out 1s;
 }
 
 .button-submit:focus {
@@ -3445,11 +3450,16 @@ a[href*="shokoanime.com"] {
   font-size: 1.1em;
 }
 
-.layout-desktop #specialsCollapsible:hover,
+.layout-desktop #specialsCollapsible:hover, 
 .layout-tv #specialsCollapsible:focus {
-  max-width: calc(94.7vw - 61.5vh) !important;
-  transition: max-width 0.5s;
-  transition-delay: 0.5s;
+  max-width: calc(95.5vw - 61.5vh) !important;
+  background: rgb(var(--tint));
+  border: 0.5px solid;
+  border-color: #fff3;
+  margin-top: -1px;
+  margin-left: -1px;
+  transition: max-width 0.2s ease-out 1s, background-color 1s ease-out 0s, border-color 0.5s ease-out 0s, padding-left 1s ease-out 0.25s, padding-right 1s ease-out 0.25s, height 1s ease-out 0.25s !important;
+  border-radius: var(--rounding);
 }
 
 .layout-desktop #itemDetailPage .itemDetailsGroup,
@@ -3600,6 +3610,10 @@ a[href*="shokoanime.com"] {
 .layout-desktop #scenesCollapsible,
 .layout-tv #scenesCollapsible {
   max-width: 54vh !important;
+  color: #fff;
+  transition: max-width 0.2s ease-out 1s, background-color 1s ease-out 2s, border-color 0.5s ease-out 2s, padding-left 1s ease-out 1s, padding-right 1s ease-out 1s !important;
+  border-radius: var(--rounding) !important;
+  height: 14em !important;
 }
 
 .layout-desktop #castCollapsible .card.overflowPortraitCard.personCard.card-hoverable.card-withuserdata,
@@ -3618,9 +3632,14 @@ a[href*="shokoanime.com"] {
 
 .layout-desktop #scenesCollapsible:hover,
 .layout-tv #scenesCollapsible:focus {
-  max-width: calc(94.7vw - 61.5vh) !important;
-  transition: max-width 0.5s;
-  transition-delay: 0.5s;
+  max-width: calc(95.5vw - 61.5vh) !important;
+  background: rgb(var(--tint));
+  border: 0.5px solid;
+  border-color: #fff3;
+  margin-top: -1px;
+  margin-left: -1px;
+  transition: max-width 0.2s ease-out 1s, background-color 1s ease-out 0s, border-color 0.5s ease-out 0s, padding-left 1s ease-out 0.25s, padding-right 1s ease-out 0.25s, height 1s ease-out 0.25s !important;
+  border-radius: var(--rounding);
 }
 
 .layout-desktop #guestCastCollapsible .card.overflowPortraitCard.personCard.card-hoverable.card-withuserdata,
