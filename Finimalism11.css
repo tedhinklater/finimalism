@@ -4042,7 +4042,7 @@ a[href*="shokoanime.com"] {
 .layout-desktop #indexPage .itemsContainer .card.overflowBackdropCard,
 .layout-tv #indexPage .itemsContainer .card.overflowSquareCard,
 .layout-desktop #indexPage .itemsContainer .card.overflowSquareCard {
-  width: calc(13.9vw + -0.9vh);
+  width: 13.5vw;
 }
 
 .layout-desktop .card.overflowBackdropCard .cardOverlayButton-br .cardOverlayButton.cardOverlayButton-hover.itemAction.paper-icon-button-light.emby-button.playstatebutton-played,
@@ -4223,12 +4223,12 @@ a[href*="shokoanime.com"] {
 
 .layout-desktop #indexPage .overflowPortraitCard,
 .layout-tv #indexPage .overflowPortraitCard {
-  width: 13.2vw;
+  width: 13.5vw;
 }
 
 .layout-desktop #indexPage .overflowSquareCard,
 .layout-tv #indexPage .overflowSquareCard {
-  width: 13.2vw;
+  width: 13.5vw;
 }
 
 .layout-desktop .padded-top-focusscale.padded-bottom-focusscale.emby-scroller.scrollX[data-centerfocus="true"] .padded-top.padded-bottom.scrollSlider.focuscontainer-x .raised.emby-button,
@@ -4543,10 +4543,10 @@ a[href*="shokoanime.com"] {
   border-radius: 50%;
   box-shadow: 0 2px 5px rgba(0,0,0,0.4);
   overflow: hidden;
-  background-color: rgba(rgb(var(--tint)), 0.8);
+  background: rgba(var(--tint), 0.8);
   color: #E0E0E0;
   border: 1px solid rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(10px);
+  backdrop-filter: none;
   max-height: 1em;
   max-width: fit-content;
   padding: 0.2em;
@@ -4565,6 +4565,12 @@ a[href*="shokoanime.com"] {
   margin-left: 6px;
   margin-right: 10px;
   text-transform: capitalize;
+  font-size: 0.75em;
+}
+
+.layout-desktop .quality-overlay-label,
+.layout-tv .quality-overlay-label {
+  font-size: 0.75em;
 }
 
 .trackSelections .selectLabel {
