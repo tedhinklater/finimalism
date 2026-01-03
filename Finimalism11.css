@@ -2583,7 +2583,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
   filter: brightness(110%);
 }
 
-a[href*="imdb.com"]::before {
+.itemExternalLinks a[href*="imdb.com"]::before {
   content: "";
   display: inline-block;
   width: 4vh;
@@ -2595,11 +2595,11 @@ a[href*="imdb.com"]::before {
   
 }
 
-a[href*="imdb.com"] {
+.itemExternalLinks a[href*="imdb.com"] {
   font-size: 0;
 }
 
-a[href*="trakt.tv"]::before {
+.itemExternalLinks a[href*="trakt.tv"]::before {
   content: "";
   display: inline-block;
   width: 4vh;
@@ -2610,11 +2610,11 @@ a[href*="trakt.tv"]::before {
   vertical-align: middle;
 }
 
-a[href*="trakt.tv"] {
+.itemExternalLinks a[href*="trakt.tv"] {
   font-size: 0;
 }
 
-a[href*="themoviedb.org"]::before {
+.itemExternalLinks a[href*="themoviedb.org"]::before {
   content: "";
   display: inline-block;
   width: 4vh;
@@ -2625,11 +2625,11 @@ a[href*="themoviedb.org"]::before {
   vertical-align: middle;
 }
 
-a[href*="themoviedb.org"] {
+.itemExternalLinks a[href*="themoviedb.org"] {
   font-size: 0;
 }
 
-a[href*="themoviedb.org/collection"]::before {
+.itemExternalLinks a[href*="themoviedb.org/collection"]::before {
   content: "";
   display: inline-block;
   width: 4vh;
@@ -2640,7 +2640,7 @@ a[href*="themoviedb.org/collection"]::before {
   vertical-align: middle;
 }
 
-a[href*="thetvdb.com"]::before {
+.itemExternalLinks a[href*="thetvdb.com"]::before {
   content: "";
   display: inline-block;
   width: 4vh;
@@ -2651,11 +2651,11 @@ a[href*="thetvdb.com"]::before {
   vertical-align: middle;
 }
 
-a[href*="thetvdb.com"] {
+.itemExternalLinks a[href*="thetvdb.com"] {
   font-size: 0;
 }
 
-a[href*="tvmaze.com"]::before {
+.itemExternalLinks a[href*="tvmaze.com"]::before {
   content: "";
   display: inline-block;
   width: 4vh;
@@ -2666,11 +2666,11 @@ a[href*="tvmaze.com"]::before {
   vertical-align: middle;
 }
 
-a[href*="tvmaze.com"] {
+.itemExternalLinks a[href*="tvmaze.com"] {
   font-size: 0;
 }
 
-a[href*="anidb.net"]::before {
+.itemExternalLinks a[href*="anidb.net"]::before {
   content: "";
   display: inline-block;
   width: 4vh;
@@ -2681,11 +2681,11 @@ a[href*="anidb.net"]::before {
   vertical-align: middle;
 }
 
-a[href*="anidb.net"] {
+.itemExternalLinks a[href*="anidb.net"] {
   font-size: 0;
 }
 
-a[href*="anilist.co"]::before {
+.itemExternalLinks a[href*="anilist.co"]::before {
   content: "";
   display: inline-block;
   width: 4vh;
@@ -2696,11 +2696,11 @@ a[href*="anilist.co"]::before {
   vertical-align: middle;
 }
 
-a[href*="anilist.co"] {
+.itemExternalLinks a[href*="anilist.co"] {
   font-size: 0;
 }
 
-a[href*="kitsu.app"]::before {
+.itemExternalLinks a[href*="kitsu.app"]::before {
   content: "";
   display: inline-block;
   width: 4vh;
@@ -2711,11 +2711,11 @@ a[href*="kitsu.app"]::before {
   vertical-align: middle;
 }
 
-a[href*="kitsu.app"] {
+.itemExternalLinks a[href*="kitsu.app"] {
   font-size: 0;
 }
 
-a[href*="theaudiodb.com"]::before {
+.itemExternalLinks a[href*="theaudiodb.com"]::before {
   content: "";
   display: inline-block;
   width: 4vh;
@@ -2726,11 +2726,11 @@ a[href*="theaudiodb.com"]::before {
   vertical-align: middle;
 }
 
-a[href*="theaudiodb.com"] {
+.itemExternalLinks a[href*="theaudiodb.com"] {
   font-size: 0;
 }
 
-a[href*="music.apple.com"]::before {
+.itemExternalLinks a[href*="music.apple.com"]::before {
   content: "";
   display: inline-block;
   width: 4vh;
@@ -2741,11 +2741,11 @@ a[href*="music.apple.com"]::before {
   vertical-align: middle;
 }
 
-a[href*="music.apple.com"] {
+.itemExternalLinks a[href*="music.apple.com"] {
   font-size: 0;
 }
 
-a[href*="musicbrainz.org"]::before {
+.itemExternalLinks a[href*="musicbrainz.org"]::before {
   content: "";
   display: inline-block;
   width: 4vh;
@@ -2756,11 +2756,11 @@ a[href*="musicbrainz.org"]::before {
   vertical-align: middle;
 }
 
-a[href*="musicbrainz.org"] {
+.itemExternalLinks a[href*="musicbrainz.org"] {
   font-size: 0;
 }
 
-a[href*="myanimelist.net"]::before {
+.itemExternalLinks a[href*="myanimelist.net"]::before {
   content: "";
   display: inline-block;
   width: 4vh;
@@ -2771,11 +2771,11 @@ a[href*="myanimelist.net"]::before {
   vertical-align: middle;
 }
 
-a[href*="myanimelist.net"] {
+.itemExternalLinks a[href*="myanimelist.net"] {
   font-size: 0;
 }
 
-a[href*="kinopoisk.ru"]::before {
+.itemExternalLinks a[href*="kinopoisk.ru"]::before {
   content: "";
   display: inline-block;
   width: 4vh;
@@ -2786,11 +2786,11 @@ a[href*="kinopoisk.ru"]::before {
   vertical-align: middle;
 }
 
-a[href*="kinopoisk.ru"] {
+.itemExternalLinks a[href*="kinopoisk.ru"] {
   font-size: 0;
 }
 
-a[href*="shokoanime.com"]::before {
+.itemExternalLinks a[href*="shokoanime.com"]::before {
   content: "";
   display: inline-block;
   width: 4vh;
@@ -2801,7 +2801,7 @@ a[href*="shokoanime.com"]::before {
   vertical-align: middle;
 }
 
-a[href*="shokoanime.com"] {
+.itemExternalLinks a[href*="shokoanime.com"] {
   font-size: 0;
 }
 
