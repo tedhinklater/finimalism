@@ -1,49 +1,24 @@
-# Finimalism for Jellyfin  ![jsDelivr](https://data.jsdelivr.com/v1/package/gh/tedhinklater/finimalism/badge) 
-
-### Purple/White
-```css
-@import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/finimalism10.11.css");
-```
-### Black/Red
-```css
-@import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/finimalism10.11-black.css");
-
-```
-
-Just paste an import line into your "Dashboard > Branding > CSS" section, or "User Settings > Display > CSS" section.
-
-### Each version with [Home Screen Sections](https://github.com/IAmParadox27/jellyfin-plugin-home-sections) / [Featured Content Bar](https://github.com/tedhinklater/Jellyfin-Featured-Content-Bar) / [Jellyfin Enhanced](https://github.com/n00bcodr/Jellyfin-Enhanced)
-
-<img width="1920" height="1080" alt="1" src="https://github.com/user-attachments/assets/7f60a777-81fe-460b-b9df-f78f41e25596" />
-<img width="1920" height="1080" alt="3" src="https://github.com/user-attachments/assets/f2f10845-2ce0-4502-a579-3fd9bcc6d959" />
-
-![player](https://github.com/user-attachments/assets/7353a321-1107-4198-b9a2-1519fc96ddc2)
-
-If you want it without the animations, add this line 
-
-```css
-@import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/no-animation.css");
-```
-
-If you want it with the old emby scrollers, add this
-
-```css
-@import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/horizontal-scrolling.css");
-```
-
-# Experimental version
-
-![output](https://github.com/user-attachments/assets/42f33772-477d-4fb5-b5d6-d341e133e888)
-
-This version has all the latest features such as custom colours via variables and ultrawide support etc
+# Finimalism for Jellyfin v10.11.x  ![jsDelivr](https://data.jsdelivr.com/v1/package/gh/tedhinklater/finimalism/badge) 
 
 ```css
 @import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/Finimalism11.css");
 ```
 
-### Custom colours
+Just paste the import line into your "Dashboard > Branding > CSS" section, or "User Settings > Display > CSS" section.
 
-Below is an example of how to use custom colours by [AllStar112](https://github.com/AllStar112)
+```Note: Not currently working on Jellyfin Media Player - JMP update coming soon```
+
+### Example with [Home Screen Sections](https://github.com/IAmParadox27/jellyfin-plugin-home-sections) / [Featured Content Bar](https://github.com/tedhinklater/Jellyfin-Featured-Content-Bar) / [Jellyfin Enhanced](https://github.com/n00bcodr/Jellyfin-Enhanced)
+
+<img width="1920" height="1080" alt="1" src="https://github.com/user-attachments/assets/7f60a777-81fe-460b-b9df-f78f41e25596" />
+
+![output](https://github.com/user-attachments/assets/42f33772-477d-4fb5-b5d6-d341e133e888)
+
+![player](https://github.com/user-attachments/assets/7353a321-1107-4198-b9a2-1519fc96ddc2)
+
+## Custom colours
+
+Below is an example of how to use custom colours, and add blur to the wallpaper by [AllStar112](https://github.com/AllStar112)
 
 ```css
 @import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/Finimalism11.css");
