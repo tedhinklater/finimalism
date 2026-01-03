@@ -2262,7 +2262,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
   align-items: center;
   display: -webkit-flex;
   display: flex;
-  background: rgb(var(--tint));
+  background: rgba(var(--tint), 0.6);
   color: #000 !important;
   border-radius: 0.25em;
   transform: translateY(-11%);
@@ -3184,7 +3184,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
   max-width: calc(90vw - 60vh);
   transition: max-width 0.5s;
   transition-delay: 0.5s;
-  height: 13.8em;
+  height: 17.7em;
 }
 
 .layout-tv #castCollapsible {
@@ -3199,6 +3199,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
   margin-bottom: 0.2em;
   transition: width 0.2s ease-out 1s, background-color 1s ease-out 2s, border-color 0.5s ease-out 2s, padding-left 1s ease-out 1s, padding-right 1s ease-out 1s;
   border-radius: var(--rounding) !important;
+  z-index: 1;
 }
 
 .layout-desktop #itemDetailPage:has(#guestCastCollapsible:not(.hide)) #castCollapsible.verticalSection.detailVerticalSection:hover,
@@ -3223,6 +3224,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
   transition: max-width 0.2s ease-out 2s, background 1s ease-out 2s, border-color 0.5s ease-out 2s, padding-left 1s ease-out 1s, padding-right 1s ease-out 1s !important;
   height: 14.8em;
   margin-bottom: 0.2em;
+  z-index: 1;
 }
 
 .layout-desktop #itemDetailPage:has(#guestCastCollapsible.hide) #castCollapsible.verticalSection.detailVerticalSection:hover,
@@ -3293,6 +3295,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
   transition: max-width 0.2s ease-out 1s, background-color 1s ease-out 2s, border-color 0.5s ease-out 2s, padding-left 1s ease-out 1s, padding-right 1s ease-out 1s;
   border-radius: var(--rounding) !important;
   height: 19em !important;
+  z-index: 1;
 }
 
 .layout-desktop .itemDetailPage:has(.button-flat.btnShuffle.detailButton.emby-button) #specialsCollapsible.verticalSection.detailVerticalSection.emby-scroller-container, 
@@ -3351,13 +3354,13 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 .layout-tv .nextUpSection.verticalSection.detailVerticalSection {
   top: 0em !important;
   max-width: 107vh;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .layout-desktop #listChildrenCollapsible,
 .layout-tv #listChildrenCollapsible {
   top: 17.5em !important;
-  transition: max-width 0.2s ease-out 2s, background 1s ease-out 2s, border-color 0.5s ease-out 2s, padding-left 1s ease-out 1s, padding-right 1s ease-out 1s !important;
+  transition: max-width 0.2s ease-out 1s, background 1s ease-out 2s, border-color 0.5s ease-out 2s, padding-left 1s ease-out 1s, padding-right 1s ease-out 1s !important;
   border-radius: var(--rounding);
   max-width: 59vh !important;
   height: 16.2em !important;
@@ -3615,6 +3618,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
   transition: max-width 0.2s ease-out 1s, background-color 1s ease-out 2s, border-color 0.5s ease-out 2s, padding-left 1s ease-out 1s, padding-right 1s ease-out 1s !important;
   border-radius: var(--rounding) !important;
   height: 14em !important;
+  z-index: 1;
 }
 
 .layout-desktop #castCollapsible .card.overflowPortraitCard.personCard.card-hoverable.card-withuserdata,
@@ -4887,6 +4891,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
   height: calc(100vh - 4em);
   padding-top: 1em;
   padding-bottom: 3em;
+  z-index: 0;
 }
 
 .layout-desktop #similarCollapsible.verticalSection.detailVerticalSection.verticalSection-extrabottompadding.emby-scroller-container::before,
