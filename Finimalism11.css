@@ -1631,16 +1631,18 @@ button.is-emby-button emby-button {
   transition: background 0.3s ease;
   display: flex !important;
   justify-content: center;
-  transition: background-color 0.3s ease-out 0s;
+  transition: background-color 0.3s ease-out 0s, box-shadow 0.8s ease-out 0.1s;
+  box-shadow: 0px 0px 5px rgba(var(--tint), 1) !important;
 }
 
 .layout-desktop #myPreferencesMenuPage .verticalSection-extrabottompadding .emby-button:hover,
 .layout-tv #myPreferencesMenuPage .verticalSection-extrabottompadding .emby-button:hover {
-  transition: background-color 0.3s ease-out 0s;
+  transition: background-color 0s ease-out 0s, box-shadow 0.3s ease-out 0s;
   background-color: rgba(var(--tint2), 0.6) !important;
   transition: background 0.3s ease;
   display: flex !important;
   justify-content: center;
+  box-shadow: 0px 0px 5px rgba(var(--accent), 1) !important;
 }
 
 @media (min-width: 50em) {
@@ -5071,6 +5073,17 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
   background: rgba(var(--tint), 0.8);
   border-radius: var(--rounding);
 }
+
+* {
+  scrollbar-width: none;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
 
 /* --------------- MOBILE --------------- */
 
