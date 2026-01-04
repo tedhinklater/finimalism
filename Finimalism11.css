@@ -3566,6 +3566,13 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 .layout-tv #childrenContent .itemsContainer.padded-right.vertical-wrap .card.overflowPortraitCard.card-hoverable.card-withuserdata {
   width: 7.5em;
   min-width: unset;
+  transition: transform 0.3s ease-out 0.5s;
+}
+
+.layout-desktop #childrenContent .itemsContainer.padded-right.vertical-wrap .card.overflowPortraitCard.card-hoverable.card-withuserdata:hover, 
+.layout-tv #childrenContent .itemsContainer.padded-right.vertical-wrap .card.overflowPortraitCard.card-hoverable.card-withuserdata:focus {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-out 0s;
 }
 
 .layout-desktop .listItem[data-type="Audio"],
@@ -4965,11 +4972,11 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 .layout-tv #similarCollapsible .card.overflowPortraitCard:focus,
 .layout-desktop #similarCollapsible .card.overflowSquareCard:hover,
 .layout-tv #similarCollapsible .card.overflowSquareCard:focus {
-  transform: translateX(20%) translateY(-6%) scale(1.825);
+  transform: translateX(20%) translateY(-6%) scale(1.45);
   transform-origin: top right;
   transition: transform 0.3s ease-out 0s, margin-bottom 0.3s ease-out 0s;
-  z-index: 9999;
-  margin-bottom: 38%;
+  z-index: 9;
+  margin-bottom: 22%;
 }
 
 .layout-desktop #similarCollapsible .card.overflowPortraitCard:hover .cardOverlayButton,
