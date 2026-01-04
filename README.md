@@ -12,7 +12,7 @@ Just paste the import line into your "Dashboard > Branding > CSS" section, or "U
 
 <img width="1920" height="1080" alt="1" src="https://github.com/user-attachments/assets/7f60a777-81fe-460b-b9df-f78f41e25596" />
 
-![output](https://github.com/user-attachments/assets/a87520e2-4973-42c5-8a78-289422644ca8)
+![output](https://github.com/user-attachments/assets/f0cbd19c-e2d1-411d-a80d-92124be3c489)
 
 ![player](https://github.com/user-attachments/assets/7353a321-1107-4198-b9a2-1519fc96ddc2)
 
