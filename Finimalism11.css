@@ -5071,9 +5071,21 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
   display: block !important;
 }
 
-.layout-desktop .videoOsdBottom.videoOsdBottom-maincontrols:hover {
+.layout-desktop .videoOsdBottom.videoOsdBottom-maincontrols:hover,
+.layout-desktop .videoOsdBottom.videoOsdBottom-maincontrols:hover::before {
   opacity: 1;
   transition: opacity 0.1s ease-out 0s;
+}
+
+.layout-desktop .videoOsdBottom.videoOsdBottom-maincontrols::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 100%;
+  width: 100%;
+  height: 15vh;
+  pointer-events: auto;
+  background: transparent;
 }
 
 .playerStats {
