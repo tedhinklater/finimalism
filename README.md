@@ -18,20 +18,20 @@ Just paste the import line into your "Dashboard > Branding > CSS" section, or "U
 
 ## Custom colours
 
-Below is an example of how to use custom colours, and add blur to the wallpaper by [AllStar112](https://github.com/AllStar112)
+Below is an example of how to use custom colours
 
 ```css
 @import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/Finimalism11.css");
 /* Custom Colours */
 :root { 
-  --accent: 169, 23, 82; 
-  --backdropBlur: blur(7px);
+  --accent: 91, 194, 255; 
+  --backdropBlur: blur(0px);
   --rounding: 0.8em; 
-  --tint: 36, 8, 20; 
-  --tint2: 117, 21, 60; 
+  --tint: 3, 16, 41; 
+  --tint2: 16, 60, 143; 
 }
 ```
-<img width="1920" height="1080" alt="pink" src="https://github.com/user-attachments/assets/be8dfe52-cbef-4728-a162-04b37528710a" />
+<img width="1920" height="1080" alt="1" src="https://github.com/user-attachments/assets/c44da46f-d141-4a3d-9e9f-6bf6d06fe41c" />
 
 Add this for horizontal scrollers on the homepage
 
