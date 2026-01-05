@@ -260,12 +260,14 @@ h2 {
 .layout-desktop .itemDetailPage:has(.detailImageContainer > .card .cardImageIcon.person) #listChildrenCollapsible,
 .layout-tv .itemDetailPage:has(.detailImageContainer > .card .cardImageIcon.person) #listChildrenCollapsible {
   margin-top: -17em;
-  height: 17.2em !important;
+  height: unset;
+  position: relative;
+  max-width: calc(98vw - 60vh) !important;
 }
 
 .layout-desktop .itemDetailPage:has(.detailImageContainer > .card .cardImageIcon.person) #listChildrenCollapsible #childrenContent .itemsContainer.padded-right.vertical-wrap,
 .layout-tv .itemDetailPage:has(.detailImageContainer > .card .cardImageIcon.person) #listChildrenCollapsible #childrenContent .itemsContainer.padded-right.vertical-wrap {
-  height: 14.2em !important;
+  height: unset;
 }
 
 .layout-desktop .itemDetailPage:has(.detailImageContainer > .card .cardImageIcon.person) .detailPageWrapperContainer,
@@ -1063,7 +1065,7 @@ progress {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
   line-height: 1em;
-  max-height: 2.3em;
+  max-height: 2.2em;
   margin-top: 0em;
 }
 
@@ -3432,13 +3434,22 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 .layout-desktop .itemDetailPage:has(.nameContainer .parentName.musicParentName) #listChildrenCollapsible #childrenContent .itemsContainer.padded-right,
 .layout-tv .itemDetailPage:has(.nameContainer .parentName.musicParentName) #listChildrenCollapsible #childrenContent .itemsContainer.padded-right {
   max-width: 45vh !important;
-  height: 58.3vh !important;
+  height: 49.3vh !important;
   overflow-y: scroll;
 }
 
 .layout-desktop .verticalSection.detailVerticalSection.moreFromArtistSection,
 .layout-tv .verticalSection.detailVerticalSection.moreFromArtistSection {
-  bottom: calc(5vw - 3vh) !important;
+  bottom: 1em !important;
+  z-index: 9;
+  max-width: calc(91vw - 60vh) !important;
+}
+
+.layout-desktop .textActionButton,
+.layout-tv .textActionButton {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
 
 .layout-desktop #listChildrenCollapsible:hover,
@@ -3503,7 +3514,9 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 }
 
 .layout-desktop #specialsCollapsible:hover, 
-.layout-tv #specialsCollapsible:focus {
+.layout-tv #specialsCollapsible:focus,
+.layout-desktop .verticalSection.detailVerticalSection.moreFromArtistSection:hover,
+.layout-tv .verticalSection.detailVerticalSection.moreFromArtistSection:focus {
   max-width: calc(95.5vw - 61.5vh) !important;
   background: rgb(var(--tint));
   border: 0.5px solid;
@@ -4827,6 +4840,15 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
   border: none;
   margin-top: 0;
   margin-left: 0;
+  background: transparent !important;
+}
+
+.layout-desktop .itemDetailPage:has(.verticalSection[data-type="MusicAlbum"]) #listChildrenCollapsible:hover,
+.layout-tv .itemDetailPage:has(.verticalSection[data-type="MusicAlbum"]) #listChildrenCollapsible:focus {
+  border: none;
+  margin-top: 0;
+  margin-left: 0;
+  background: transparent !important;
 }
 
 .layout-desktop .itemDetailPage:has(.nameContainer .parentName.musicParentName) .detailLogo,
@@ -4980,6 +5002,15 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
   transition: transform 0.3s ease-out 0s, margin-bottom 0.3s ease-out 0s;
   z-index: 9;
   margin-bottom: 22%;
+}
+
+.layout-desktop .itemDetailPage:has(.nameContainer .parentName.musicParentName) #similarCollapsible .card.overflowSquareCard:hover,
+.layout-tv .itemDetailPage:has(.nameContainer .parentName.musicParentName) #similarCollapsible .card.overflowSquareCard:focus {
+  transform: translateX(20%) translateY(-6%) scale(1.45);
+  transform-origin: top right;
+  transition: transform 0.3s ease-out 0s, margin-bottom 0.3s ease-out 0s;
+  z-index: 9;
+  margin-bottom: 12%;
 }
 
 .layout-desktop #similarCollapsible .card.overflowPortraitCard:hover .cardOverlayButton,
