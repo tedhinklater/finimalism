@@ -4986,8 +4986,10 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 .layout-desktop #similarCollapsible .card.overflowPortraitCard,
 .layout-tv #similarCollapsible .card.overflowPortraitCard,
 .layout-desktop #similarCollapsible .card.overflowSquareCard,
-.layout-tv #similarCollapsible .card.overflowSquareCard {
-  transition: transform 0.5s ease-in-out 0.4s, margin-bottom 0.5s ease-out 0.5s;
+.layout-tv #similarCollapsible .card.overflowSquareCard,
+.layout-desktop #similarCollapsible .card.overflowBackdropCard,
+.layout-tv #similarCollapsible .card.overflowBackdropCard {
+  transition: transform 0.1s ease-in-out 0s, margin-bottom 0.1s ease-out 0s;
   transform: translateX(15%);
   transform-origin: top right;
   margin-left: 13em;
@@ -4996,10 +4998,12 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 .layout-desktop #similarCollapsible .card.overflowPortraitCard:hover,
 .layout-tv #similarCollapsible .card.overflowPortraitCard:focus,
 .layout-desktop #similarCollapsible .card.overflowSquareCard:hover,
-.layout-tv #similarCollapsible .card.overflowSquareCard:focus {
+.layout-tv #similarCollapsible .card.overflowSquareCard:focus,
+.layout-desktop #similarCollapsible .card.overflowBackdropCard:hover,
+.layout-tv #similarCollapsible .card.overflowBackdropCard:focus {
   transform: translateX(20%) translateY(-6%) scale(1.45);
   transform-origin: top right;
-  transition: transform 0.3s ease-out 0s, margin-bottom 0.3s ease-out 0s;
+  transition: transform 0.2s ease-out 0s, margin-bottom 0.2s ease-out 0s;
   z-index: 9;
   margin-bottom: 22%;
 }
@@ -5127,14 +5131,14 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
   border-radius: var(--rounding);
 }
 
-* {
+.mainAnimatedPages,
+.skinBody {
   scrollbar-width: none;
 }
 
-*::-webkit-scrollbar {
+.mainAnimatedPages::-webkit-scrollbar,
+.skinBody::-webkit-scrollbar {
   display: none;
-  width: 0;
-  height: 0;
 }
 
 .layout-desktop #itemDetailPage:has([data-type="BoxSet"]) .detailSectionContent,
