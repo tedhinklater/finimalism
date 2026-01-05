@@ -480,13 +480,13 @@ h2 {
 #loginPage .padded-left.padded-right.padded-bottom-page {
   margin-left: 50%;
   margin-right: auto;
-  background: rgb(var(--tint));
-  border-radius: var(--rounding);
   transform: translateX(-50%);
   padding-left: 1em;
   padding-right: 1em;
   width: fit-content;
-  max-width: 70vw;
+  max-width: calc(63.5vw + 32vh);
+  background: rgba(var(--tint2), 0.1);
+  border-radius: var(--rounding);
 }
 
 #loginPage .squareCard {
@@ -511,6 +511,7 @@ h2 {
 
 #loginPage .raised {
   font-weight: 500;
+  width: calc(1.5vw + 32vh);
 }
 
 #loginPage .checkboxOutline {
@@ -522,7 +523,7 @@ h2 {
 }
 
 #loginPage .readOnlyContent .emby-button {
-  width: 16.7em;
+  width: calc(1.5vw + 32vh);
   transform: translateX(-50%);
   margin-left: 50%;
   margin-right: 50%;
@@ -2025,8 +2026,10 @@ button.is-emby-button emby-button {
 
 .layout-desktop #myPreferencesMenuPage .verticalSection-extrabottompadding .emby-button .listItemBody,
 .layout-tv #myPreferencesMenuPage .verticalSection-extrabottompadding .emby-button .listItemBody,
+.layout-mobile #myPreferencesMenuPage .verticalSection-extrabottompadding .emby-button .listItemBody,
 .layout-desktop #myPreferencesMenuPage .verticalSection-extrabottompadding .emby-button .listItemIcon,
-.layout-tv #myPreferencesMenuPage .verticalSection-extrabottompadding .emby-button .listItemIcon {
+.layout-tv #myPreferencesMenuPage .verticalSection-extrabottompadding .emby-button .listItemIcon,
+.layout-mobile #myPreferencesMenuPage .verticalSection-extrabottompadding .emby-button .listItemIcon {
   transform: translateX(-0.7em);
 }
 
