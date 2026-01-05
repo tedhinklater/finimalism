@@ -682,7 +682,7 @@ h2 {
 .mdlSpinnerActive .mdl-spinner__circleLeft {
   -webkit-animation: mdl-spinner__left-spin 1333ms cubic-bezier(.4,0,.2,1) infinite both;
   animation: mdl-spinner__left-spin 1333ms cubic-bezier(.4,0,.2,1) infinite both;
-  border: 0.5em solid #8564ff;
+  border: 0.5em solid rgb(var(--accent));
 }
 
 .cardIndicators,
@@ -5103,6 +5103,17 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
   height: 0;
 }
 
+.layout-desktop #itemDetailPage:has([data-type="BoxSet"]) .detailSectionContent,
+.layout-tv #itemDetailPage:has([data-type="BoxSet"]) .detailSectionContent {
+  margin-top: unset;
+  max-height: unset;
+}
+
+.layout-desktop #itemDetailPage:has([data-type="BoxSet"]) .collectionItems,
+.layout-tv #itemDetailPage:has([data-type="BoxSet"]) .collectionItems {
+  position: relative;
+  max-height: unset;
+}
 
 /* --------------- MOBILE --------------- */
 
