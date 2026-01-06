@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Geom:ital,wght@0,300..900;1,300..900&display=swap');
 
 :root { 
@@ -3450,6 +3451,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
+  max-height: 3.3em;
 }
 
 .layout-desktop #listChildrenCollapsible:hover,
@@ -4202,6 +4204,59 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
   }
 }
 
+.layout-desktop .page.libraryPage.backdropPage .itemsContainer.padded-left.padded-right.padded-right-withalphapicker.vertical-list,
+.layout-tv .page.libraryPage.backdropPage .itemsContainer.padded-left.padded-right.padded-right-withalphapicker.vertical-list {
+  width: 90%;
+}
+
+.layout-desktop .itemDetailPage:has(.button-flat.btnPlaystate.detailButton.emby-button[data-type="Playlist"]) #listChildrenCollapsible.verticalSection.detailVerticalSection,
+.layout-tv .itemDetailPage:has(.button-flat.btnPlaystate.detailButton.emby-button[data-type="Playlist"]) #listChildrenCollapsible.verticalSection.detailVerticalSection,
+.layout-desktop .itemDetailPage:has(.button-flat.btnPlaystate.detailButton.emby-button[data-type="Playlist"]) #listChildrenCollapsible.verticalSection.detailVerticalSection .listItem,
+.layout-tv .itemDetailPage:has(.button-flat.btnPlaystate.detailButton.emby-button[data-type="Playlist"]) #listChildrenCollapsible.verticalSection.detailVerticalSection .listItem {
+  width: calc(93vw - 47vh) !important;
+  max-width: calc(93vw - 47vh) !important;
+}
+
+.layout-desktop .itemDetailPage:has(.button-flat.btnPlaystate.detailButton.emby-button[data-type="Playlist"]) .listViewUserDataButtons,
+.layout-tv .itemDetailPage:has(.button-flat.btnPlaystate.detailButton.emby-button[data-type="Playlist"]) .listViewUserDataButtons {
+  justify-content: end !important;
+}
+
+.layout-desktop .itemDetailPage:has(.button-flat.btnPlaystate.detailButton.emby-button[data-type="Playlist"]) .mainDetailButtons.focuscontainer-x, 
+.layout-tv .itemDetailPage:has(.button-flat.btnPlaystate.detailButton.emby-button[data-type="Playlist"]) .mainDetailButtons.focuscontainer-x {
+  width: 21.25em !important;
+  left: 4em !important;
+}
+
+.layout-desktop .itemDetailPage:has(.button-flat.btnPlaystate.detailButton.emby-button[data-type="Playlist"]) #listChildrenCollapsible .listItemBody.itemAction,
+.layout-tv .itemDetailPage:has(.button-flat.btnPlaystate.detailButton.emby-button[data-type="Playlist"]) #listChildrenCollapsible .listItemBody.itemAction {
+  width: 5000em;
+}
+
+.layout-desktop .itemDetailPage:has(.button-flat.btnPlaystate.detailButton.emby-button[data-type="Playlist"]) #listChildrenCollapsible .secondary.listItemMediaInfo,
+.layout-tv .itemDetailPage:has(.button-flat.btnPlaystate.detailButton.emby-button[data-type="Playlist"]) #listChildrenCollapsible .secondary.listItemMediaInfo {
+  width: 28em;
+  justify-content: center;
+}
+
+.layout-desktop .itemDetailPage:has(.button-flat.btnPlaystate.detailButton.emby-button[data-type="Playlist"]) #listChildrenCollapsible .listItemImage.itemAction[data-action="playallfromhere"] .genre-overlay-container,
+.layout-tv .itemDetailPage:has(.button-flat.btnPlaystate.detailButton.emby-button[data-type="Playlist"]) #listChildrenCollapsible .listItemImage.itemAction[data-action="playallfromhere"] .genre-overlay-container,
+.layout-desktop .itemDetailPage:has(.button-flat.btnPlaystate.detailButton.emby-button[data-type="Playlist"]) #listChildrenCollapsible .listItemImage.itemAction[data-action="playallfromhere"] .genre-overlay-container,
+.layout-tv .itemDetailPage:has(.button-flat.btnPlaystate.detailButton.emby-button[data-type="Playlist"]) #listChildrenCollapsible .listItemImage.itemAction[data-action="playallfromhere"] .genre-overlay-container {
+  opacity: 0;
+}
+
+.layout-desktop .itemDetailPage:has(.button-flat.btnPlaystate.detailButton.emby-button[data-type="Playlist"]) .detailPageWrapperContainer,
+.layout-tv .itemDetailPage:has(.button-flat.btnPlaystate.detailButton.emby-button[data-type="Playlist"]) .detailPageWrapperContainer {
+  animation: none;
+  opacity: 1;
+}
+
+.layout-desktop .itemDetailPage:has(.button-flat.btnPlaystate.detailButton.emby-button[data-type="Playlist"]) #listChildrenCollapsible:hover,
+.layout-tv .itemDetailPage:has(.button-flat.btnPlaystate.detailButton.emby-button[data-type="Playlist"]) #listChildrenCollapsible:focus {
+  border: none !important;
+}
+
 .layout-tv #childrenContent .itemsContainer.padded-right.itemsContainer-tv.vertical-list {
   width: 70vw;
 }
@@ -4514,8 +4569,9 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
   margin: 0;
   font-size: 1.25em;
   margin-top: -0.3em;
-  margin-bottom: 0.6em;
+  margin-bottom: 1em;
   margin-right: 0.5em;
+  padding-top: 0.1em;
 }
 
 .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .nameContainer,
