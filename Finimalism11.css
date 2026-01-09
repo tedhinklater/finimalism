@@ -5496,10 +5496,6 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
   margin-bottom: 0em;
 }
 
-.layout-mobile .sectionTitle.sectionTitle-cards.padded-left + .itemsContainer {
-  display: grid;
-}
-
 .layout-mobile .mediaInfoItem {
   justify-content: center;
   display: flex;
