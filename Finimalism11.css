@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Geom:ital,wght@0,300..900;1,300..900&display=swap');
 
 :root { 
@@ -610,7 +611,7 @@ h2 {
 }
 
 .layout-desktop .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) .detailLogo,
-.layout-tv .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) .detailLogo {
+.layout-tv .itemDetailPage:has(.listItem.itemAction.listItem-button.listItem-focusscale.listItem-largeImage[data-type="Episode"]) .detailLogo {
   display: none;
 }
 
@@ -1255,19 +1256,19 @@ progress {
 }
 
 .layout-desktop .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) .listItemImageButton,
-.layout-tv .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) .listItemImageButton {
+.layout-tv .itemDetailPage:has(.listItem.itemAction.listItem-button.listItem-focusscale.listItem-largeImage[data-type="Episode"]) .listItemImageButton {
   background: transparent;
   color: transparent;
 }
 
 .layout-desktop .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) .listItem.listItem-largeImage.listItem-withContentWrapper:hover .paper-icon-button-light[data-action="resume"],
-.layout-tv .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) .listItem.listItem-largeImage.listItem-withContentWrapper:focus .paper-icon-button-light[data-action="resume"] {
+.layout-tv .itemDetailPage:has(.listItem.itemAction.listItem-button.listItem-focusscale.listItem-largeImage[data-type="Episode"]) .listItem.listItem-largeImage.listItem-withContentWrapper:focus .paper-icon-button-light[data-action="resume"] {
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
 }
 
 .layout-desktop .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) .paper-icon-button-light[data-action="resume"]:hover,
-.layout-tv .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) .paper-icon-button-light[data-action="resume"]:focus {
+.layout-tv .itemDetailPage:has(.listItem.itemAction.listItem-button.listItem-focusscale.listItem-largeImage[data-type="Episode"]) .paper-icon-button-light[data-action="resume"]:focus {
   background-color: rgba(0, 0, 0, 0.86) !important;
   color: rgb(var(--accent)) !important;
 }
@@ -1282,7 +1283,7 @@ progress {
 }
 
 .layout-desktop .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) .listItem,
-.layout-tv .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) .listItem {
+.layout-tv .itemDetailPage:has(.listItem.itemAction.listItem-button.listItem-focusscale.listItem-largeImage[data-type="Episode"]) .listItem {
   padding: 0;
 }
 
@@ -2537,8 +2538,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
   background: rgba(var(--tint), 0.6);
 }
 
-.layout-desktop #itemDetailPage .listItem,
-.layout-tv #itemDetailPage .listItem {
+.layout-desktop #itemDetailPage .listItem {
   width: calc(31.3vw + -16vh);
 }
 
@@ -2546,6 +2546,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 .listItem:focus {
   transition: 0.2s;
   background: rgba(0, 0, 0, 0.34);
+  transform: scale(1.01);
 }
 
 .layout-desktop #itemDetailPage .listItem:hover,
@@ -3307,6 +3308,11 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
   bottom: 0.1em;
 }
 
+.layout-tv #itemDetailPage #guestCastCollapsible.verticalSection.detailVerticalSection {
+  position: fixed;
+  bottom: -2em;
+}
+
 .layout-desktop #itemDetailPage #guestCastCollapsible.verticalSection.detailVerticalSection:hover,
 .layout-tv #itemDetailPage #guestCastCollapsible.verticalSection.detailVerticalSection:focus {
   background: rgb(var(--tint)) !important;
@@ -3358,7 +3364,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 }
 
 .layout-desktop .itemDetailPage:has(.nextUpSection .card.overflowBackdropCard.card-hoverable) #specialsCollapsible.verticalSection.detailVerticalSection.emby-scroller-container, 
-.layout-tv .detailPagePrimaryContent.padded-right:has(.nextUpSection .card.overflowBackdropCard.card-hoverable) #specialsCollapsible.verticalSection.detailVerticalSection {
+.layout-tv .itemDetailPage:has(.nextUpSection .card.overflowBackdropCard.show-focus.show-animation.card-withuserdata.itemAction) #specialsCollapsible.verticalSection.detailVerticalSection {
   top: 4.5em;
   left: 55vw;
   width: 54vh;
@@ -3377,7 +3383,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 }
 
 .layout-desktop .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) #specialsCollapsible.verticalSection.detailVerticalSection.emby-scroller-container,
-.layout-tv .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) #specialsCollapsible.verticalSection.detailVerticalSection {
+.layout-tv .itemDetailPage:has(.listItem.itemAction.listItem-button.listItem-focusscale.listItem-largeImage[data-type="Episode"]) #specialsCollapsible.verticalSection.detailVerticalSection {
   position: relative !important;
   left: 0 !important;
   top: unset;
@@ -3386,7 +3392,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 }
 
 .layout-desktop .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) #specialsCollapsible .sectionTitle,
-.layout-tv .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) #specialsCollapsible .sectionTitle,
+.layout-tv .itemDetailPage:has(.listItem.itemAction.listItem-button.listItem-focusscale.listItem-largeImage[data-type="Episode"]) #specialsCollapsible .sectionTitle,
 .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) #scenesCollapsible .sectionTitle,
 .layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) #scenesCollapsible .sectionTitle,
 .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .verticalSection.detailVerticalSection.moreFromSeasonSection .sectionTitle,
@@ -3397,7 +3403,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 }
 
 .layout-desktop .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) #specialsCollapsible .emby-scrollbuttons.padded-right,
-.layout-tv .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) #specialsCollapsible .emby-scrollbuttons.padded-right {
+.layout-tv .itemDetailPage:has(.listItem.itemAction.listItem-button.listItem-focusscale.listItem-largeImage[data-type="Episode"]) #specialsCollapsible .emby-scrollbuttons.padded-right {
   margin-top: 0em;
 }
 
@@ -3474,7 +3480,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 
 
 .layout-desktop .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) #listChildrenCollapsible:hover,
-.layout-tv .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) #listChildrenCollapsible:focus {
+.layout-tv .itemDetailPage:has(.listItem.itemAction.listItem-button.listItem-focusscale.listItem-largeImage[data-type="Episode"]) #listChildrenCollapsible:focus {
   background: transparent !important;
   border: none !important;
   margin-left: 0px;
@@ -3497,7 +3503,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 }
 
 .layout-desktop .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) #listChildrenCollapsible,
-.layout-tv .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) #listChildrenCollapsible {
+.layout-tv .itemDetailPage:has(.listItem.itemAction.listItem-button.listItem-focusscale.listItem-largeImage[data-type="Episode"]) #listChildrenCollapsible {
   top: 7em !important;
   height: unset !important;
   max-width: calc(116vw - 89vh) !important;
@@ -3505,7 +3511,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 }
 
 .layout-desktop .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) .overview.detail-clamp-text,
-.layout-tv .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) .overview.detail-clamp-text {
+.layout-tv .itemDetailPage:has(.listItem.itemAction.listItem-button.listItem-focusscale.listItem-largeImage[data-type="Episode"]) .overview.detail-clamp-text {
   -webkit-line-clamp: 3;
   max-height: 5.3em;
   overflow: hidden;
@@ -3581,7 +3587,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 }
 
 .layout-desktop #childrenContent .itemsContainer.padded-right.vertical-wrap .card.overflowPortraitCard.card-hoverable.card-withuserdata,
-.layout-tv #childrenContent .itemsContainer.padded-right.vertical-wrap .card.overflowPortraitCard.card-hoverable.card-withuserdata {
+.layout-tv #childrenContent .itemsContainer.padded-right.vertical-wrap .card.overflowPortraitCard.show-focus {
   width: 7.5em;
   min-width: unset;
   transition: transform 0.3s ease-out 0.5s;
@@ -3692,7 +3698,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 }
 
 .layout-desktop #castCollapsible .card.overflowPortraitCard.personCard.card-hoverable.card-withuserdata,
-.layout-tv #castCollapsible .card.overflowPortraitCard.personCard.card-hoverable.card-withuserdata {
+.layout-tv #castCollapsible .card.overflowPortraitCard.personCard.show-focus {
   width: calc(11.6vw + -7.5vh);
   margin: 0;
   height: 12em;
@@ -3845,12 +3851,12 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 }
 
 .layout-desktop .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) .detailSectionContent,
-.layout-tv .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) .detailSectionContent {
+.layout-tv .itemDetailPage:has(.listItem.itemAction.listItem-button.listItem-focusscale.listItem-largeImage[data-type="Episode"]) .detailSectionContent {
   margin-top: 0em;
 }
 
 .layout-desktop .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) #castCollapsible,
-.layout-tv .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) #castCollapsible {
+.layout-tv .itemDetailPage:has(.listItem.itemAction.listItem-button.listItem-focusscale.listItem-largeImage[data-type="Episode"]) #castCollapsible {
   display: none;
 }
 
@@ -3902,7 +3908,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 
 
 .layout-desktop #listChildrenCollapsible.verticalSection-extrabottompadding #childrenContent .itemsContainer.padded-right.vertical-list .listItem.listItem-largeImage.listItem-withContentWrapper .listItem-content .listItemBody.itemAction,
-.layout-tv #listChildrenCollapsible.verticalSection-extrabottompadding #childrenContent .itemsContainer.padded-right.vertical-list .listItem.listItem-largeImage.listItem-withContentWrapper .listItem-content .listItemBody.itemAction {
+.layout-tv #listChildrenCollapsible.verticalSection-extrabottompadding #childrenContent .itemsContainer.padded-right.itemsContainer-tv.vertical-list .listItem.itemAction.listItem-button .listItemBody {
   width: calc(30.5vw + -16vh);
   min-width: calc(30.5vw + -16vh);
   background: transparent;
@@ -3917,7 +3923,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 }
 
 .layout-desktop #childrenContent .listItemImage,
-.layout-tv #childrenContent .listItemImage {
+.layout-tv #childrenContent .listItemImage.listItemImage-large.listItemImage-large-tv {
   aspect-ratio: unset;
   background-size: cover;
   background-position: center;
@@ -3980,8 +3986,8 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 }
 
 .listItemImage-large-tv {
-  height: 10.98em !important;
-  width: 19.52em !important;
+  width: calc(31.3vw + -16vh) !important;
+  height: 22vh !important
 }
 
 .layout-tv .overflowBackdropCard {
@@ -4098,6 +4104,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 }
 
 .mainAnimatedPages:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) .page.libraryPage.itemDetailPage.noSecondaryNavPage.selfBackdropPage.mainAnimatedPage::before,
+.mainAnimatedPages:has(.listItem.itemAction.listItem-button.listItem-focusscale.listItem-largeImage[data-type="Episode"]) .page.libraryPage.itemDetailPage.noSecondaryNavPage.selfBackdropPage.mainAnimatedPage::before,
 .mainAnimatedPages:has(.button-link.itemAction.emby-button[data-type="Season"]) .page.libraryPage.itemDetailPage.noSecondaryNavPage.selfBackdropPage.mainAnimatedPage::before {
   animation: none !important;
   opacity: 1;
@@ -4610,7 +4617,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 .layout-desktop .itemDetailPage:has(.itemAction.textActionButton[data-type="Season"]) .mainDetailButtons.focuscontainer-x,
 .layout-tv .itemDetailPage:has(.detailImageContainer .card.squareCard .cardImageContainer.coveredImage.cardContent.lazy.blurhashed.lazy-image-fadein-fast) .mainDetailButtons.focuscontainer-x,
 .layout-desktop .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) .mainDetailButtons.focuscontainer-x,
-.layout-tv .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) .mainDetailButtons.focuscontainer-x {
+.layout-tv .itemDetailPage:has(.listItem.itemAction.listItem-button.listItem-focusscale.listItem-largeImage[data-type="Episode"]) .mainDetailButtons.focuscontainer-x {
   width: 20.4em !important;
   left: 4em !important;
 }
@@ -4618,7 +4625,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 .layout-desktop .itemDetailPage:has(.itemAction.textActionButton[data-type="Season"]) .mainDetailButtons.focuscontainer-x::before,
 .layout-tv .itemDetailPage:has(.detailImageContainer .card.squareCard .cardImageContainer.coveredImage.cardContent.lazy.blurhashed.lazy-image-fadein-fast) .mainDetailButtons.focuscontainer-x::before,
 .layout-desktop .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) .mainDetailButtons.focuscontainer-x::before,
-.layout-tv .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) .mainDetailButtons.focuscontainer-x::before {
+.layout-tv .itemDetailPage:has(.listItem.itemAction.listItem-button.listItem-focusscale.listItem-largeImage[data-type="Episode"]) .mainDetailButtons.focuscontainer-x::before {
   width: 21.3em !important;
 }
 
@@ -4629,7 +4636,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 }
 
 .layout-desktop .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) .itemName.infoText.subtitle,
-.layout-tv .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) .itemName.infoText.subtitle {
+.layout-tv .itemDetailPage:has(.listItem.itemAction.listItem-button.listItem-focusscale.listItem-largeImage[data-type="Episode"]) .itemName.infoText.subtitle {
   width: 20.2em;
   top: 5em;
 }
@@ -4819,6 +4826,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 }
 
 .detailPageWrapperContainer:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]),
+.detailPageWrapperContainer:has(.listItem.itemAction.listItem-button.listItem-focusscale.listItem-largeImage[data-type="Episode"]),
 .detailPageWrapperContainer:has(.button-link.itemAction.emby-button[data-type="Season"]) {
   animation: none !important;
   opacity: 1;
