@@ -5242,6 +5242,11 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
   width: 24.15%;
 }
 
+.noBackdropTransparency .detailPagePrimaryContainer, 
+.noBackdropTransparency .detailPageSecondaryContainer {
+  background-color: transparent;
+}
+
 /* --------------- MOBILE --------------- */
 
 .layout-mobile .card {
