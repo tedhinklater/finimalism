@@ -6,9 +6,9 @@
 
 Just paste the import line into your "Dashboard > Branding > CSS" section, or "User Settings > Display > CSS" section.
 
-```Note: Not currently working on Jellyfin Media Player - JMP update coming soon```
+### Note: For Jellyfin Media Player, you need the latest [Jellyfin Desktop 2.0.0](https://flathub.org/en/apps/org.jellyfin.JellyfinDesktop)
 
-### Example with [Home Screen Sections](https://github.com/IAmParadox27/jellyfin-plugin-home-sections) / [Featured Content Bar](https://github.com/tedhinklater/Jellyfin-Featured-Content-Bar) / [Jellyfin Enhanced](https://github.com/n00bcodr/Jellyfin-Enhanced)
+# Example with [Home Screen Sections](https://github.com/IAmParadox27/jellyfin-plugin-home-sections) / [Featured Content Bar](https://github.com/tedhinklater/Jellyfin-Featured-Content-Bar) / [Jellyfin Enhanced](https://github.com/n00bcodr/Jellyfin-Enhanced)
 
 <img width="1920" height="1080" alt="1" src="https://github.com/user-attachments/assets/7f60a777-81fe-460b-b9df-f78f41e25596" />
 
