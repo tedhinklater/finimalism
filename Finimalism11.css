@@ -5317,9 +5317,11 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
   backdrop-filter: blur(20px) brightness(50%);
   font-size: 100%;
   border-radius: var(--rounding);
-  border: 1px solid white;
-  opacity: 0;
-  transition: opacity 0.2s;
+  height: 40%;
+  width: 66%;
+  top: unset;
+  bottom: 1px;
+  left: 1px;
 }
 
 .je-more-info-modal .modal-container {
@@ -5342,7 +5344,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 }
 
 .jellyseerr-overview .content {
-  -webkit-line-clamp: 6;
+  -webkit-line-clamp: 5;
 }
 
 .layout-desktop .verticalSection.emby-scroller-container.jellyseerr-details-section .focuscontainer-x.itemsContainer.scrollSlider.animatedScrollX {
