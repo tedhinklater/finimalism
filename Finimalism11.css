@@ -5253,9 +5253,11 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
   position: relative;
   left: calc(61vw + -47vh);
   top: -48.6em;
-  max-width: 55vh;
+  max-width: 21.7vh;
   font-size: 75%;
-  transition: max-width 0.2s ease-out 2s, background 1s ease-out 0s, border-color 0.5s ease-out 2s, padding-left 1s ease-out 1s, padding-right 1s ease-out 1s;
+  transition: max-width 0.2s ease-out 2s, background 1s ease-out 0s, border-color 0.5s ease-out 2s, padding-left 1s ease-out 1s, padding-right 1s ease-out 1s, max-height 0.2s ease-out 0.25s;
+  max-height: 2.2em;
+  overflow: hidden;
 }
 
 .layout-desktop .verticalSection.emby-scroller-container.jellyseerr-details-section:hover {
@@ -5265,12 +5267,16 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
   margin-top: -1px;
   margin-left: -1px;
   margin-bottom: -1px;
-  transition: max-width 0.2s ease-out 1s, background-color 1s ease-out 0s, border-color 0.5s ease-out 0s, padding-left 1s ease-out 0.25s, padding-right 1s ease-out 0.25s, height 1s ease-out 0.25s !important;
+  transition: max-width 0.2s ease-out 0.3s, background-color 1s ease-out 0s, border-color 0.5s ease-out 0s, padding-left 1s ease-out 0.25s, padding-right 1s ease-out 0.25s, max-height 0.2s ease-out 0.25s !important;
   border-radius: var(--rounding);
+  max-height: 30.6em;
+  overflow: hidden;
+  max-width: 43.4vh;
 }
 
 .layout-desktop .verticalSection.emby-scroller-container.jellyseerr-details-section .card {
-  width: 9.75em;
+  width: 19em;
+  scroll-snap-align: start;
 }
 
 .layout-desktop .verticalSection.emby-scroller-container.jellyseerr-details-section .cardText,
@@ -5285,7 +5291,18 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 }
 
 .layout-desktop .verticalSection.emby-scroller-container.jellyseerr-details-section .sectionTitle {
-  
+}
+
+.jellyseerr-icon-on-card {
+  display: none;
+}
+
+.jellyseerr-rating {
+  display: none;
+}
+
+.cardText.cardTextCentered.cardText-secondary.jellyseerr-meta {
+  font-size: 1em;
 }
 
 .layout-desktop .itemDetailPage:has(#specialsCollapsible .card.overflowBackdropCard.card-hoverable.card-withuserdata) .verticalSection.emby-scroller-container.jellyseerr-details-section {
@@ -5298,9 +5315,11 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 
 .layout-desktop .jellyseerr-overview {
   backdrop-filter: blur(20px) brightness(50%);
-  font-size: 95%;
+  font-size: 100%;
   border-radius: var(--rounding);
   border: 1px solid white;
+  opacity: 0;
+  transition: opacity 0.2s;
 }
 
 .je-more-info-modal .modal-container {
@@ -5310,7 +5329,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 .je-more-info-modal .je-modal-backdrop-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to bottom, transparent 0%, rgba(var(--accent),0.25) 100%);
+  background: linear-gradient(to bottom, transparent 0%, rgba(var(--tint),1) 100%);
 }
 
 .layout-desktop .itemDetailPage:has(.detailImageContainer > .card .cardImageIcon.person) .verticalSection.jellyseerr-person-discovery-section,
@@ -5324,6 +5343,17 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 
 .jellyseerr-overview .content {
   -webkit-line-clamp: 6;
+}
+
+.layout-desktop .verticalSection.emby-scroller-container.jellyseerr-details-section .focuscontainer-x.itemsContainer.scrollSlider.animatedScrollX {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  white-space: normal !important;
+  gap: 0.5%;
+  overflow-y: scroll;
+  max-height: 29em;
+  scroll-snap-type: y mandatory;
+  scroll-padding-top: 0em;
 }
 
 /* --------------- MOBILE --------------- */
