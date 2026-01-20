@@ -26,11 +26,11 @@ Below is an example of how to use custom colours
 @import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/Finimalism11.css");
 /* Custom Colours */
 :root { 
-  --accent: 91, 194, 255; 
+  --accent: 202, 20, 20; 
   --backdropBlur: blur(0px);
   --rounding: 0.8em; 
-  --tint: 3, 16, 41; 
-  --tint2: 16, 60, 143; 
+  --tint: 0, 0, 0; 
+  --tint2: 176, 34, 7; 
 }
 ```
 <img width="1920" height="1080" alt="1" src="https://github.com/user-attachments/assets/c44da46f-d141-4a3d-9e9f-6bf6d06fe41c" />
