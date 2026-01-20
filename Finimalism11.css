@@ -5276,7 +5276,6 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 
 .layout-desktop .verticalSection.emby-scroller-container.jellyseerr-details-section .card {
   width: 19em;
-  scroll-snap-align: start;
 }
 
 .layout-desktop .verticalSection.emby-scroller-container.jellyseerr-details-section .cardText,
@@ -5349,13 +5348,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 
 .layout-desktop .verticalSection.emby-scroller-container.jellyseerr-details-section .focuscontainer-x.itemsContainer.scrollSlider.animatedScrollX {
   display: flex !important;
-  flex-wrap: wrap !important;
-  white-space: normal !important;
-  gap: 0.5%;
-  overflow-y: scroll;
   max-height: 29em;
-  scroll-snap-type: y mandatory;
-  scroll-padding-top: 0em;
 }
 
 /* --------------- MOBILE --------------- */
