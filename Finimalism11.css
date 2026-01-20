@@ -107,7 +107,7 @@ html {
 }
 
 h2 {
-  font-size: 1.3em;
+  font-size: 1.5vh;
 }
 
 .textActionButton {
@@ -1689,7 +1689,7 @@ button.is-emby-button emby-button {
 .layout-desktop div:not(.sectionTitleContainer-cards) > .sectionTitle-cards,
 .layout-tv div:not(.sectionTitleContainer-cards) > .sectionTitle-cards {
   margin: 0;
-  padding-top: 1.25em;
+  padding-top: 0.5em;
 }
   #albumsTab .itemsContainer.padded-left.padded-right.padded-right-withalphapicker.vertical-wrap {
     display: flex;
@@ -3364,8 +3364,8 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 
 .layout-desktop .itemDetailPage:has(.nextUpSection .card.overflowBackdropCard.card-hoverable) #specialsCollapsible.verticalSection.detailVerticalSection.emby-scroller-container, 
 .layout-tv .itemDetailPage:has(.nextUpSection .card.overflowBackdropCard.show-focus.show-animation.card-withuserdata.itemAction) #specialsCollapsible.verticalSection.detailVerticalSection {
-  top: 4.5em;
-  left: 55vw;
+  top: 3.5em;
+  left: 61vw;
   width: 54vh;
   height: 17.2em !important;
   position: fixed !important;
@@ -4573,7 +4573,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 .layout-desktop .itemMiscInfo.itemMiscInfo-primary .mediaInfoItem,
 .layout-tv .itemMiscInfo.itemMiscInfo-primary .mediaInfoItem {
   margin: 0;
-  font-size: 1.25em;
+  font-size: 1.5vh;
   margin-top: -0.3em;
   margin-bottom: 1em;
   margin-right: 0.5em;
@@ -5023,12 +5023,12 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 .layout-desktop #similarCollapsible.verticalSection.detailVerticalSection.verticalSection-extrabottompadding.emby-scroller-container,
 .layout-tv #similarCollapsible.verticalSection.detailVerticalSection.verticalSection-extrabottompadding {
   position: fixed;
-  top: 2.5em;
+  top: 4em;
   right: 0em;
   width: 22em;
   overflow-y: scroll;
   max-height: calc(100vh - 0em);
-  height: calc(100vh - 4em);
+  height: calc(100vh - 5.5em);
   padding-top: 1em;
   padding-bottom: 3em;
   z-index: 0;
@@ -5064,7 +5064,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 .layout-tv #similarCollapsible .card.overflowSquareCard:focus,
 .layout-desktop #similarCollapsible .card.overflowBackdropCard:hover,
 .layout-tv #similarCollapsible .card.overflowBackdropCard:focus {
-  transform: translateX(20%) translateY(-6%) scale(1.45);
+  transform: translateX(20%) translateY(-6%) scale(1.35);
   transform-origin: top right;
   transition: transform 0.2s ease-out 0s, margin-bottom 0.2s ease-out 0s;
   z-index: 9;
@@ -5245,6 +5245,85 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 .noBackdropTransparency .detailPagePrimaryContainer, 
 .noBackdropTransparency .detailPageSecondaryContainer {
   background-color: transparent;
+}
+
+/* Jellyseerr */
+
+.layout-desktop .verticalSection.emby-scroller-container.jellyseerr-details-section {
+  position: relative;
+  left: calc(61vw + -47vh);
+  top: -48.6em;
+  max-width: 55vh;
+  font-size: 75%;
+  transition: max-width 0.2s ease-out 2s, background 1s ease-out 0s, border-color 0.5s ease-out 2s, padding-left 1s ease-out 1s, padding-right 1s ease-out 1s;
+}
+
+.layout-desktop .verticalSection.emby-scroller-container.jellyseerr-details-section:hover {
+  background: rgb(var(--tint));
+  border: 0.5px solid;
+  border-color: #fff3;
+  margin-top: -1px;
+  margin-left: -1px;
+  margin-bottom: -1px;
+  transition: max-width 0.2s ease-out 1s, background-color 1s ease-out 0s, border-color 0.5s ease-out 0s, padding-left 1s ease-out 0.25s, padding-right 1s ease-out 0.25s, height 1s ease-out 0.25s !important;
+  border-radius: var(--rounding);
+}
+
+.layout-desktop .verticalSection.emby-scroller-container.jellyseerr-details-section .card {
+  width: 9.75em;
+}
+
+.layout-desktop .verticalSection.emby-scroller-container.jellyseerr-details-section .cardText,
+.layout-tv .verticalSection.emby-scroller-container.jellyseerr-details-section {
+  display: none;
+}
+
+.layout-desktop .verticalSection.emby-scroller-container.jellyseerr-details-section .sectionTitle.sectionTitle-cards.focuscontainer-x.padded-right {
+  height: 1.3em;
+  margin-top: 0 !important;
+  padding-top: 0.3em;
+}
+
+.layout-desktop .verticalSection.emby-scroller-container.jellyseerr-details-section .sectionTitle {
+  
+}
+
+.layout-desktop .itemDetailPage:has(#specialsCollapsible .card.overflowBackdropCard.card-hoverable.card-withuserdata) .verticalSection.emby-scroller-container.jellyseerr-details-section {
+  top: -25.6em;
+}
+
+.layout-desktop .padded-bottom-page {
+  padding-bottom: 1.3em !important;
+}
+
+.layout-desktop .jellyseerr-overview {
+  backdrop-filter: blur(20px) brightness(50%);
+  font-size: 95%;
+  border-radius: var(--rounding);
+  border: 1px solid white;
+}
+
+.je-more-info-modal .modal-container {
+  background: rgba(var(--accent), 0.25);
+}
+
+.je-more-info-modal .je-modal-backdrop-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, transparent 0%, rgba(var(--accent),0.25) 100%);
+}
+
+.layout-desktop .itemDetailPage:has(.detailImageContainer > .card .cardImageIcon.person) .verticalSection.jellyseerr-person-discovery-section,
+.layout-tv .itemDetailPage:has(.detailImageContainer > .card .cardImageIcon.person) .verticalSection.jellyseerr-person-discovery-section {
+  display: none;
+}
+
+.jellyseerr-media-badge {
+  opacity: 0;
+}
+
+.jellyseerr-overview .content {
+  -webkit-line-clamp: 6;
 }
 
 /* --------------- MOBILE --------------- */
