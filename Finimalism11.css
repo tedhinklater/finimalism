@@ -3342,7 +3342,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 
 .layout-desktop #specialsCollapsible.verticalSection.detailVerticalSection.emby-scroller-container,
 .layout-tv #specialsCollapsible.verticalSection.detailVerticalSection {
-  top: 18.5em;
+  top: 19.5em;
   left: 30.5em;
   max-width: 54vh;
   height: 18em;
@@ -3350,7 +3350,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
   color: #fff;
   transition: max-width 0.2s ease-out 1s, background-color 1s ease-out 2s, border-color 0.5s ease-out 2s, padding-left 1s ease-out 1s, padding-right 1s ease-out 1s;
   border-radius: var(--rounding) !important;
-  height: 19em !important;
+  height: 18em !important;
   z-index: 1;
 }
 
@@ -3657,7 +3657,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 
 .layout-desktop #scenesCollapsible,
 .layout-tv #scenesCollapsible {
-  top: 4.5em;
+  top: 3.5em;
   left: 31.5em;
   height: 16em;
   position: fixed !important;
