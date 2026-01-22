@@ -3378,7 +3378,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 }
 
 .layout-desktop .itemDetailPage:has(#scenesCollapsible #scenesContent .card.itemAction.chapterCard.overflowBackdropCard[data-isfolder="false"]) #specialsCollapsible {
-  top: 19em !important;
+  top: 20.6em !important;
 }
 
 .layout-desktop .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) #specialsCollapsible.verticalSection.detailVerticalSection.emby-scroller-container,
@@ -5350,6 +5350,24 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
   display: flex !important;
   max-height: 29em;
 }
+
+.layout-desktop .itemDetailPage:not(:has(.nextUpSection .card.overflowBackdropCard[data-type="Episode"]))
+:not(:has(#childrenContent .card.overflowPortraitCard.card-hoverable.card-withuserdata[data-type="Season"][data-isfolder="true"]))
+:not(:has(#scenesCollapsible .card[data-type="Movie"]))
+:not(:has(#specialsCollapsible .card[data-type="Video"]))
+.verticalSection.emby-scroller-container.jellyseerr-details-section {
+  left: 1em !important;
+}
+
+.layout-desktop .itemDetailPage:not(:has(.nextUpSection .card.overflowBackdropCard[data-type="Episode"]))
+:not(:has(#childrenContent .card.overflowPortraitCard.card-hoverable.card-withuserdata[data-type="Season"][data-isfolder="true"]))
+:not(:has(#scenesCollapsible .card[data-type="Movie"]))
+:not(:has(#specialsCollapsible .card[data-type="Video"]))
+.verticalSection.emby-scroller-container.jellyseerr-details-section:hover {
+  left: 1em !important;
+  max-width: 107.1vh;
+}
+
 
 /* --------------- MOBILE --------------- */
 
