@@ -5247,6 +5247,14 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
   background-color: transparent;
 }
 
+#indexPage h2 {
+  font-size: 1.2em;
+}
+
+#indexPage .cardText.itemAction.textActionButton.emby-button {
+  margin: 0;
+}
+
 /* Jellyseerr */
 
 .layout-desktop .verticalSection.emby-scroller-container.jellyseerr-details-section {
