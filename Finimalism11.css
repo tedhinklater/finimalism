@@ -2018,6 +2018,7 @@ button.is-emby-button emby-button {
 #myPreferencesMenuPage .verticalSection-extrabottompadding .emby-button .listItem {
   justify-content: center;
   overflow: visible;
+  width: 70%;
 }
 
 #myPreferencesMenuPage .verticalSection-extrabottompadding .emby-button .listItemBody {
