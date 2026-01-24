@@ -5280,7 +5280,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 
 .layout-desktop .verticalSection.emby-scroller-container.jellyseerr-details-section {
   position: relative;
-  left: calc(61vw + -47vh);
+  left: calc(59vw + -47vh);
   top: -40.33em;
   max-width: 20.2vh;
   font-size: 75%;
@@ -5335,12 +5335,8 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
   font-size: 1em;
 }
 
-.layout-desktop .itemDetailPage:has(#specialsCollapsible .card.overflowBackdropCard.card-hoverable.card-withuserdata) .verticalSection.emby-scroller-container.jellyseerr-details-section {
-  top: -22.136em;
-}
-
-.layout-desktop .itemDetailPage:has(#scenesCollapsible .itemAction.chapterCard.overflowBackdropCard) .verticalSection.emby-scroller-container.jellyseerr-details-section {
-  top: -22.136em;
+.layout-desktop .itemDetailPage:has(.streaming-lookup-container) .verticalSection.emby-scroller-container.jellyseerr-details-section:hover {
+  max-width: 34.4vh;
 }
 
 .layout-desktop .padded-bottom-page {
@@ -5349,7 +5345,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 
 .layout-desktop .jellyseerr-overview {
   backdrop-filter: blur(20px) brightness(50%);
-  font-size: 100%;
+  font-size: 83%;
   border-radius: var(--rounding);
   height: 40%;
   width: 66%;
