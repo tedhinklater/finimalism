@@ -14,6 +14,7 @@ Just paste the import line into your "Dashboard > Branding > CSS" section, or "U
 
 ![movie](https://github.com/user-attachments/assets/dfd42d2a-d539-47c2-a277-ba3be2b83635)
 
+<img width="1280" height="720" alt="movie" src="https://i.postimg.cc/SRddKgkm/output.webp" />
 
 ![player](https://github.com/user-attachments/assets/7353a321-1107-4198-b9a2-1519fc96ddc2)
 
