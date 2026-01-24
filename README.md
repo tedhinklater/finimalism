@@ -10,11 +10,9 @@ Just paste the import line into your "Dashboard > Branding > CSS" section, or "U
 
 # Example with [Home Screen Sections](https://github.com/IAmParadox27/jellyfin-plugin-home-sections) / [Featured Content Bar](https://github.com/tedhinklater/Jellyfin-Featured-Content-Bar) / [Jellyfin Enhanced](https://github.com/n00bcodr/Jellyfin-Enhanced)
 
-<img width="1920" height="1080" alt="1" src="https://github.com/user-attachments/assets/7f60a777-81fe-460b-b9df-f78f41e25596" />
+<img width="1920" height="1080" alt="1" src="https://github.com/user-attachments/assets/1bddd972-c664-48ed-a940-2123afafa9f7" />
 
-![output](https://github.com/user-attachments/assets/f0cbd19c-e2d1-411d-a80d-92124be3c489)
-
-![output2](https://github.com/user-attachments/assets/eb76cbbe-22d4-462d-8033-fd3b6a07a6a6)
+<img width="1920" height="1080" alt="2" src="https://github.com/user-attachments/assets/28df0063-d507-4adc-8b1c-65b012a286f6" />
 
 ![player](https://github.com/user-attachments/assets/7353a321-1107-4198-b9a2-1519fc96ddc2)
 
