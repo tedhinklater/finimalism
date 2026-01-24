@@ -621,7 +621,7 @@ h2 {
 .layout-tv #itemDetailPage .nameContainer {
   position: fixed;
   left: 2.75em;
-  top: 36.18em;
+  top: 35.78em;
   width: 22.1em;
   justify-content: center;
   text-align: center;
@@ -1356,7 +1356,7 @@ progress {
 .layout-desktop .trackSelections {
   position: fixed;
   left: 2.5em;
-  bottom: 8.881em;
+  bottom: 9.381em;
   width: 21.66em;
   font-weight: 500;
   opacity: 0;
@@ -2936,6 +2936,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
   filter: drop-shadow(-2px 4px 1px #0005);
   line-height: 1.1em;
   font-weight: 600;
+  font-size: 151%;
 }
 
 .layout-desktop #listChildrenCollapsible.verticalSection.detailVerticalSection.verticalSection-extrabottompadding #childrenContent .itemsContainer.padded-right.vertical-list .listItem.listItem-largeImage.listItem-withContentWrapper .listItem-content .listItemBody.itemAction .listItemBodyText,
@@ -3548,7 +3549,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
   padding-left: 0.5em;
   pointer-events: all;
   position: fixed;
-  bottom: 1.4em;
+  bottom: 1.5em;
   left: 2em;
   width: 25em;
 }
@@ -3607,8 +3608,8 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 
 .layout-desktop .listItem[data-type="Audio"],
 .layout-tv .listItem[data-type="Audio"] {
-  width: 97%;
-  margin-left: 0.25vw;
+  width: 96%;
+  margin-left: 0.5vw;
 }
 
 .layout-desktop .playlistSection,
@@ -3616,8 +3617,8 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
   width: 82%;
   margin-left: 0%;
   position: fixed;
-  top: 28.5em;
-  height: calc(100vh - 26em);
+  top: calc(16vw + 9vh);
+  height: calc(100vh - 30.65em);
   overflow-y: scroll;
   padding-top: 0.5em;
 }
@@ -3625,7 +3626,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 .layout-desktop .nowPlayingInfoContainer,
 .layout-tv .nowPlayingInfoContainer {
   position: fixed;
-  top: 4em;
+  top: 3.32em;
   left: 1vw;
   width: 96.7vw;
   border-radius: var(--rounding);
@@ -3638,11 +3639,11 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 .layout-tv .playlistSectionButton {
   background: none;
   color: inherit;
-  width: 19.6em;
+  width: 16%;
   justify-content: space-evenly;
   position: fixed;
   left: 2vw;
-  top: 27.1em;
+  top: calc(16.5vw + 9vh);
 }
 
 .layout-desktop #scenesContent .innerCardFooter,
@@ -4508,6 +4509,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
   left: 4.3575em;
   width: 23.24em;
   font-weight: 600;
+  font-size: revert;
 }
 
 .layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button.show-focus[data-type="Season"]) .infoWrapper .nameContainer .parentName.focuscontainer-x {
@@ -4799,7 +4801,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 
 .layout-desktop .itemDetailsGroup .detailsGroupItem .focuscontainer-x,
 .layout-tv  .itemDetailsGroup .detailsGroupItem .focuscontainer-x {
-  margin-left: 1.8em;
+  margin-left: 1.9em;
   width: 20em;
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -5151,6 +5153,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 .layout-desktop .personCard .cardText,
 .layout-tv .personCard .cardText {
   margin-top: 0.1em;
+  font-size: 90%;
 }
 
 .layout-desktop .personCard .cardText.cardTextCentered.cardText-secondary,
