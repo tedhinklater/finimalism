@@ -5431,8 +5431,6 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
     overflow-y: scroll;
 }
 
-
-
 .streaming-lookup-container div[style*="backdrop-filter: blur"] {
     background: rgba(var(--tint), 0.5) !important;
 }
@@ -5455,11 +5453,14 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 }
 
 .layout-desktop .tmdb-review-swipe-container .tmdb-review-card {
-  border-left: 0.3em solid rgba(var(--accent));
   max-height: 15.8em;
   overflow-y: scroll;
-  background: rgba(var(--tint), 0.96);
   scroll-snap-align: start;
+}
+
+.tmdb-review-swipe-container .tmdb-review-card {
+  border-left: 0.3em solid rgba(var(--accent));
+  background: rgba(var(--tint), 0.96);
 }
 
 .layout-desktop .tmdb-review-swipe-container .tmdb-review-card .tmdb-review-text {
