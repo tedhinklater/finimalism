@@ -3542,6 +3542,11 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
   border-radius: var(--rounding);
 }
 
+.layout-desktop .itemDetailPage:has(.streaming-lookup-container) #specialsCollapsible:hover,
+.layout-tv .itemDetailPage:has(.streaming-lookup-container) #specialsCollapsible:focus {
+  max-width: 54vh !important;
+}
+
 .layout-desktop #itemDetailPage .itemDetailsGroup,
 .layout-tv #itemDetailPage .itemDetailsGroup {
   opacity: 0;
@@ -3658,7 +3663,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 }
 
 .layout-desktop #scenesCollapsible .itemAction.chapterCard.overflowBackdropCard,
-.layout-tv #scenesCollapsiblecard .itemAction.chapterCard.overflowBackdropCard {
+.layout-tv #scenesCollapsible .itemAction.chapterCard.overflowBackdropCard {
   width: 14.94em;
   min-width: unset;
 }
@@ -3720,7 +3725,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 
 .layout-desktop #scenesCollapsible:hover,
 .layout-tv #scenesCollapsible:focus {
-  max-width: calc(95.5vw - 61.5vh) !important;
+  max-width: calc(75.5vw - 57.1vh) !important;
   background: rgb(var(--tint));
   border: 0.5px solid;
   border-color: #fff3;
@@ -3728,6 +3733,11 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
   margin-left: -1px;
   transition: max-width 0.2s ease-out 1s, background-color 1s ease-out 0s, border-color 0.5s ease-out 0s, padding-left 1s ease-out 0.25s, padding-right 1s ease-out 0.25s, height 1s ease-out 0.25s !important;
   border-radius: var(--rounding);
+}
+
+.layout-desktop .itemDetailPage:has(.streaming-lookup-container) #scenesCollapsible:hover,
+.layout-tv .itemDetailPage:has(.streaming-lookup-container) #scenesCollapsible:focus {
+  max-width: 54vh !important;
 }
 
 .layout-desktop #guestCastCollapsible .card.overflowPortraitCard.personCard.card-hoverable.card-withuserdata,
@@ -5073,11 +5083,11 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 .layout-tv #similarCollapsible .card.overflowSquareCard:focus,
 .layout-desktop #similarCollapsible .card.overflowBackdropCard:hover,
 .layout-tv #similarCollapsible .card.overflowBackdropCard:focus {
-  transform: translateX(20%) translateY(-6%) scale(1.35);
+  transform: translateX(20%) translateY(-6%) scale(1.2);
   transform-origin: top right;
   transition: transform 0.2s ease-out 0s, margin-bottom 0.2s ease-out 0s;
   z-index: 9;
-  margin-bottom: 12%;
+  margin-bottom: 5%;
 }
 
 .layout-desktop .itemDetailPage:has(.nameContainer .parentName.musicParentName) #similarCollapsible .card.overflowSquareCard:hover,
@@ -5328,6 +5338,10 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
   top: -22.136em;
 }
 
+.layout-desktop .itemDetailPage:has(#scenesCollapsible .itemAction.chapterCard.overflowBackdropCard) .verticalSection.emby-scroller-container.jellyseerr-details-section {
+  top: -22.136em;
+}
+
 .layout-desktop .padded-bottom-page {
   padding-bottom: 1.3em !important;
 }
@@ -5384,9 +5398,81 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 :not(:has(#scenesCollapsible .card[data-type="Movie"]))
 :not(:has(#specialsCollapsible .card[data-type="Video"]))
 .verticalSection.emby-scroller-container.jellyseerr-details-section:hover {
-  max-width: 107.1vh;
+  max-width: 59.9em;
 }
 
+/* ---- Jellyfin Enhanced TMDB ---- */
+
+.layout-desktop .streaming-lookup-container {
+  position: fixed;
+  top: calc(10em + -9vh);
+  right: 8em;
+  max-width: 13em;
+  z-index: -21;
+}
+
+.layout-desktop .streaming-lookup-container .elsewhere-link-reset {
+  font-size: 1.3vh !important;
+}
+
+.layout-desktop .streaming-lookup-container div[style*= "inline-flex"] {
+  font-size: 1.4vh !important;
+  border: none !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  white-space: wrap !important;
+}
+
+.layout-desktop .streaming-lookup-container div[style*="flex-wrap: wrap"] {
+    max-height: 12vh;
+    overflow-y: scroll;
+}
+
+.layout-desktop .streaming-lookup-container div[style*="flex-wrap: wrap"] {
+    max-height: 12vh;
+    overflow-y: scroll;
+}
+
+
+
+.streaming-lookup-container div[style*="backdrop-filter: blur"] {
+    background: rgba(var(--tint), 0.5) !important;
+}
+
+.layout-desktop .detailSection.tmdb-reviews-section {
+  position: fixed;
+  top: 1.5em;
+  right: 7.5em;
+}
+
+.layout-desktop .tmdb-review-swipe-container {
+  max-height: 31vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  max-width: 20em;
+  scroll-snap-type: y mandatory;
+  scroll-padding-top: 0em;
+}
+
+.layout-desktop .tmdb-review-swipe-container .tmdb-review-card {
+  border-left: 0.3em solid rgba(var(--accent));
+  max-height: 15.8em;
+  overflow-y: scroll;
+  background: rgba(var(--tint), 0.96);
+  scroll-snap-align: start;
+}
+
+.layout-desktop .tmdb-review-swipe-container .tmdb-review-card .tmdb-review-text {
+  line-height: 1.8vh;
+  font-size: 90%;
+}
+
+.layout-desktop .tmdb-review-swipe-container .tmdb-review-card .tmdb-review-content-wrapper {
+  overflow: hidden;
+}
 
 /* --------------- MOBILE --------------- */
 
