@@ -12,6 +12,9 @@ Just paste the import line into your "Dashboard > Branding > CSS" section, or "U
 
 <img width="1920" height="1080" alt="1" src="https://github.com/user-attachments/assets/979bf451-53f6-43f9-8032-fc0093ec1736" />
 
+![movie](https://github.com/user-attachments/assets/2f8d44f1-2a02-42ff-ba08-fc9ee63a7aef)
+
+
 ![player](https://github.com/user-attachments/assets/7353a321-1107-4198-b9a2-1519fc96ddc2)
 
 ## Custom colours
