@@ -3436,47 +3436,6 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
   padding-right: 1em;
 }
 
-.layout-desktop .detailPagePrimaryContent
-:not(:has(.nextUpSection .card.overflowBackdropCard.card-hoverable.card-withuserdata[data-type="Episode"]))
-:not(:has(.detailImageContainer > .card .cardImageIcon.person))
-#listChildrenCollapsible,
-.layout-tv .detailPagePrimaryContent
-:not(:has(.nextUpSection .card.overflowBackdropCard[data-type="Episode"]))
-:not(:has(.detailImageContainer > .card .cardImageIcon.person))
-#listChildrenCollapsible {
-  top: 0em !important;
-  max-width: 45vh !important;
-  height: fit-content !important;
-  min-height: 16em;
-  max-height: 29.346em !important;
-}
-
-.layout-desktop .detailPagePrimaryContent
-:not(:has(.nextUpSection .card.overflowBackdropCard.card-hoverable.card-withuserdata[data-type="Episode"]))
-:not(:has(.detailImageContainer > .card .cardImageIcon.person))
-#childrenContent .itemsContainer.padded-right.vertical-wrap, 
-.layout-tv .detailPagePrimaryContent
-:not(:has(.nextUpSection .card.overflowBackdropCard.card-hoverable.card-withuserdata[data-type="Episode"]))
-:not(:has(.detailImageContainer > .card .cardImageIcon.person))
-#childrenContent .itemsContainer.padded-right.vertical-wrap {
-  min-height: 15em;
-  max-height: 27.3em;
-  height: min-content;
-}
-
-.layout-desktop .detailPagePrimaryContent
-:not(:has(.nextUpSection .card.overflowBackdropCard.card-hoverable.card-withuserdata[data-type="Episode"]))
-:not(:has(.detailImageContainer > .card .cardImageIcon.person))
-#childrenContent .itemsContainer.padded-right.vertical-wrap .card.overflowPortraitCard.card-hoverable.card-withuserdata, 
-.layout-tv .detailPagePrimaryContent
-:not(:has(.nextUpSection .card.overflowBackdropCard.card-hoverable.card-withuserdata[data-type="Episode"]))
-:not(:has(.detailImageContainer > .card .cardImageIcon.person))
-#childrenContent .itemsContainer.padded-right.vertical-wrap .card.overflowPortraitCard.show-focus {
-  width: 8.2em;
-}
-
-
-
 .layout-desktop .itemDetailPage:has(.nameContainer .parentName.musicParentName) #listChildrenCollapsible,
 .layout-tv .itemDetailPage:has(.nameContainer .parentName.musicParentName) #listChildrenCollapsible {
   top: -28.2em !important;
