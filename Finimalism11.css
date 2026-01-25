@@ -3428,7 +3428,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 
 .layout-desktop #listChildrenCollapsible,
 .layout-tv #listChildrenCollapsible {
-  top: 13.925em !important;
+  top: 13.925em;
   transition: max-width 0.2s ease-out 1s, background 1s ease-out 2s, border-color 0.5s ease-out 2s, padding-left 1s ease-out 1s, padding-right 1s ease-out 1s !important;
   border-radius: var(--rounding);
   max-width: 55vh !important;
@@ -5400,6 +5400,31 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 :not(:has(#specialsCollapsible .card[data-type="Video"]))
 .verticalSection.emby-scroller-container.jellyseerr-details-section:hover {
   max-width: 59.9em;
+}
+
+.layout-desktop .detailPagePrimaryContent:not(:has(.nextUpSection .card.overflowBackdropCard.card-hoverable.card-withuserdata[data-type="Episode"])) #listChildrenCollapsible,
+.layout-tv .detailPagePrimaryContent:not(:has(.nextUpSection .card.overflowBackdropCard[data-type="Episode"])) #listChildrenCollapsible {
+  top: 0em;
+  max-width: 45vh !important;
+  height:fit-content !important;
+  min-height: 16em;
+  max-height: 29.346em !important;
+}
+
+.layout-desktop .detailPagePrimaryContent:not(:has(.nextUpSection .card.overflowBackdropCard.card-hoverable.card-withuserdata[data-type="Episode"])) #childrenContent .itemsContainer.padded-right.vertical-wrap, 
+.layout-tv .detailPagePrimaryContent:not(:has(.nextUpSection .card.overflowBackdropCard.card-hoverable.card-withuserdata[data-type="Episode"])) #childrenContent .itemsContainer.padded-right.vertical-wrap {
+  min-height: 15em;
+  max-height: 27.3em;
+  height: min-content;
+}
+
+.layout-desktop .detailPagePrimaryContent:not(:has(.nextUpSection .card.overflowBackdropCard.card-hoverable.card-withuserdata[data-type="Episode"])) #childrenContent .itemsContainer.padded-right.vertical-wrap .card.overflowPortraitCard.card-hoverable.card-withuserdata, 
+.layout-tv .detailPagePrimaryContent:not(:has(.nextUpSection .card.overflowBackdropCard.card-hoverable.card-withuserdata[data-type="Episode"])) #childrenContent .itemsContainer.padded-right.vertical-wrap .card.overflowPortraitCard.show-focus {
+  width: 8.2em;
+}
+
+.layout-desktop body:has(#itemBirthday:not(.hide)) #listChildrenCollapsible {
+  top: 15.925em !important;
 }
 
 /* ---- Jellyfin Enhanced TMDB ---- */
