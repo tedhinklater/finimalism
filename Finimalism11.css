@@ -110,6 +110,10 @@ h2 {
   font-size: 1.8vh;
 }
 
+h1 {
+  font-size: 1.3em;
+}
+
 .textActionButton {
   transition: color 0.3s, font-weight 0.3s;
 }
@@ -3013,7 +3017,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
   position: absolute;
   top: 38.92em;
   left: 4.316em;
-  width: 17.67em;
+  width: 19.07em;
   text-align: center;
   font-weight: 600;
 }
@@ -3424,13 +3428,40 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 
 .layout-desktop #listChildrenCollapsible,
 .layout-tv #listChildrenCollapsible {
-  top: 14.525em !important;
+  top: 13.925em !important;
   transition: max-width 0.2s ease-out 1s, background 1s ease-out 2s, border-color 0.5s ease-out 2s, padding-left 1s ease-out 1s, padding-right 1s ease-out 1s !important;
   border-radius: var(--rounding);
   max-width: 55vh !important;
   height: 15.346em !important;
   padding-right: 1em;
 }
+
+.layout-desktop .detailPagePrimaryContent:not(:has(.nextUpSection .card.overflowBackdropCard.card-hoverable.card-withuserdata[data-type="Episode"])) #listChildrenCollapsible,
+.layout-tv .detailPagePrimaryContent:not(:has(.nextUpSection .card.overflowBackdropCard[data-type="Episode"])) #listChildrenCollapsible {
+  top: 0em !important;
+  max-width: 45vh !important;
+  height:fit-content !important;
+  min-height: 16em;
+  max-height: 29.346em !important;
+}
+
+.layout-desktop .detailPagePrimaryContent:not(:has(.nextUpSection .card.overflowBackdropCard.card-hoverable.card-withuserdata[data-type="Episode"])) #listChildrenCollapsible:hover,
+.layout-tv .detailPagePrimaryContent:not(:has(.nextUpSection .card.overflowBackdropCard[data-type="Episode"])) #listChildrenCollapsible:focus {
+ 
+}
+
+.layout-desktop .detailPagePrimaryContent:not(:has(.nextUpSection .card.overflowBackdropCard.card-hoverable.card-withuserdata[data-type="Episode"])) #childrenContent .itemsContainer.padded-right.vertical-wrap, 
+.layout-tv .detailPagePrimaryContent:not(:has(.nextUpSection .card.overflowBackdropCard.card-hoverable.card-withuserdata[data-type="Episode"])) #childrenContent .itemsContainer.padded-right.vertical-wrap {
+  min-height: 15em;
+  max-height: 27.3em;
+  height: min-content;
+}
+
+.layout-desktop .detailPagePrimaryContent:not(:has(.nextUpSection .card.overflowBackdropCard.card-hoverable.card-withuserdata[data-type="Episode"])) #childrenContent .itemsContainer.padded-right.vertical-wrap .card.overflowPortraitCard.card-hoverable.card-withuserdata, 
+.layout-tv .detailPagePrimaryContent:not(:has(.nextUpSection .card.overflowBackdropCard.card-hoverable.card-withuserdata[data-type="Episode"])) #childrenContent .itemsContainer.padded-right.vertical-wrap .card.overflowPortraitCard.show-focus {
+  width: 8.2em;
+}
+
 
 .layout-desktop .itemDetailPage:has(.nameContainer .parentName.musicParentName) #listChildrenCollapsible,
 .layout-tv .itemDetailPage:has(.nameContainer .parentName.musicParentName) #listChildrenCollapsible {
@@ -4656,7 +4687,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 
 .layout-desktop .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) .itemName.infoText.subtitle,
 .layout-tv .itemDetailPage:has(.listItem.itemAction.listItem-button.listItem-focusscale.listItem-largeImage[data-type="Episode"]) .itemName.infoText.subtitle {
-  width: 16.766em;
+  width: 12.516em;
   top: 4.15em;
 }
 
@@ -4861,7 +4892,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
   color: #fff;
   transition: max-width 0.2s ease-out 1s, background-color 1s ease-out 2s, border-color 0.5s ease-out 2s, padding-left 1s ease-out 1s, padding-right 1s ease-out 1s !important;
   border-radius: var(--rounding) !important;
-  height: 14.94em !important;
+  height: 13.3em !important;
 }
 
 
