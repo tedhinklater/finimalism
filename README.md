@@ -14,6 +14,7 @@ Just paste the import line into your "Dashboard > Branding > CSS" section, or "U
 
 ![movie](https://github.com/user-attachments/assets/2f8d44f1-2a02-42ff-ba08-fc9ee63a7aef)
 
+![output](https://github.com/user-attachments/assets/cbe36753-e4d5-4dac-8041-9c5369e02174)
 
 ![player](https://github.com/user-attachments/assets/7353a321-1107-4198-b9a2-1519fc96ddc2)
 
