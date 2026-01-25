@@ -5469,7 +5469,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 }
 
 .layout-desktop .tmdb-review-swipe-container .tmdb-review-card .tmdb-review-content-wrapper {
-  overflow: hidden;
+  overflow-y: scroll;
 }
 
 /* --------------- MOBILE --------------- */
