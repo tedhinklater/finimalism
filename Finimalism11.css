@@ -356,16 +356,23 @@ h1 {
     padding-bottom: 0px;
   top: 50%;
   width: 100%;
-  height: 0.85em;
+  height: 0.75em;
   padding-bottom: 0em;
   padding-top: 0em;
   margin-top: -0.44em;
+  border-radius: var(--rounding);
 }
 
 .mdl-slider {
-  font-size: 0em;
+  font-size: 0.5em;
   width: 100%;
   color: transparent;
+  margin-left: 0em;
+  margin-top: -0.2em;
+  border-top-left-radius: 0em;
+  border-top-right-radius: var(--rounding);
+  border-bottom-left-radius: 0em;
+  border-bottom-right-radius: var(--rounding);
 }
 
 .sliderMarker.watched {
@@ -829,6 +836,7 @@ progress::-webkit-progress-value {
   background-color: rgb(var(--accent));
   z-index: 0;
   border-radius: 5em;
+  padding-right: 0.4vw;
 }
 .mdl-slider::-moz-range-thumb {
   background: rgb(var(--accent));
@@ -839,6 +847,15 @@ progress::-webkit-progress-value {
 .mdl-slider::-webkit-slider-thumb {
   background: rgb(var(--accent));
 }
+
+.mdl-slider-background-flex-container {
+  box-sizing: border-box;
+  padding: 0px 0em;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+
 .iconOsdProgressInner {
   background: rgb(var(--accent));
 }
@@ -1685,10 +1702,10 @@ button.is-emby-button emby-button {
 }
 
 .mdl-slider-background-upper {
-  background: #fff;
-  border-radius: 0em !important;
-  height: 0.85em !important;
-  opacity: 0.2;
+  background: rgba(var(--tint));
+  border-radius: var(--rounding);
+  height: 0.75em !important;
+  opacity: 0.25;
 }
 
 .layout-desktop div:not(.sectionTitleContainer-cards) > .sectionTitle-cards,
@@ -5219,6 +5236,13 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
   height: 15vh;
   pointer-events: auto;
   background: transparent;
+}
+
+@media (min-width: 100em) {
+  .libraryPage:not(.noSecondaryNavPage) {
+    padding-top: 4.6em !important;
+    width: 99%;
+  }
 }
 
 .playerStats {
