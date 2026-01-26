@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap');
 
 #txtCustomCss, #txtLocalCustomCss {
@@ -2673,7 +2672,7 @@ button.is-emby-button emby-button {
 
 .skip-button-container {
     bottom: 7%;
-    right: -24em;
+    right: 0em;
 }
 
 .layout-mobile .backgroundContainer { background-color: transparent;}
