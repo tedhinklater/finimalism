@@ -5287,7 +5287,11 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
   margin: 0;
 }
 
-/* Jellyseerr */
+.recordingFields {
+  pointer-events: all;
+}
+
+/* ------ Jellyseerr ------ */
 
 .layout-desktop .verticalSection.emby-scroller-container.jellyseerr-details-section {
   position: relative;
