@@ -265,7 +265,7 @@ h1 {
   margin-top: -17em;
   height: unset;
   position: relative;
-  max-width: calc(98vw - 60vh) !important;
+  max-width: calc(98vw - 60vh);
 }
 
 .layout-desktop .itemDetailPage:has(.detailImageContainer > .card .cardImageIcon.person) #listChildrenCollapsible #childrenContent .itemsContainer.padded-right.vertical-wrap,
@@ -2095,8 +2095,8 @@ button.is-emby-button emby-button {
   text-align: center;
   position: fixed;
   top: 30.3em;
-  left: 5em;
-  width: 22em;
+  left: 3.5em;
+  width: 13.4em;
   filter: drop-shadow(-1px 1px 2px black);
   line-height: unset;
   transform: translateY(-50%);
@@ -3426,12 +3426,12 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
   overflow: hidden;
 }
 
-.layout-desktop #listChildrenCollapsible,
-.layout-tv #listChildrenCollapsible {
+.layout-desktop #listChildrenCollapsible.detailVerticalSection,
+.layout-tv #listChildrenCollapsible.detailVerticalSection {
   top: 13.925em;
   transition: max-width 0.2s ease-out 1s, background 1s ease-out 2s, border-color 0.5s ease-out 2s, padding-left 1s ease-out 1s, padding-right 1s ease-out 1s !important;
   border-radius: var(--rounding);
-  max-width: 55vh !important;
+  max-width: 55vh;
   height: 15.346em !important;
   padding-right: 1em;
 }
@@ -3476,7 +3476,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 .layout-tv #listChildrenCollapsible:focus {
   background: rgb(var(--tint)) !important;
   transition: max-width 0.2s ease-out 0s, background 1s ease-out 0s, border-color 0.5s ease-out 0s, padding-left 1s ease-out 0.25s, padding-right 1s ease-out 0.25s !important;
-  max-width: calc(90vw - 25.845em) !important;
+  max-width: calc(90vw - 25.845em);
   border: 0.5px solid;
   border-color: #fff3;
   margin-top: -1px;
@@ -3730,7 +3730,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 
 .layout-desktop #scenesCollapsible:hover,
 .layout-tv #scenesCollapsible:focus {
-  max-width: calc(75.5vw - 57.1vh) !important;
+  max-width: calc(95.5vw - 61.5vh) !important;
   background: rgb(var(--tint));
   border: 0.5px solid;
   border-color: #fff3;
@@ -3743,6 +3743,11 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 .layout-desktop .itemDetailPage:has(.streaming-lookup-container) #scenesCollapsible:hover,
 .layout-tv .itemDetailPage:has(.streaming-lookup-container) #scenesCollapsible:focus {
   max-width: 54vh !important;
+}
+
+.layout-desktop .itemDetailPage:has(.nameContainer .parentName.musicParentName) .detailSection,
+.layout-tv .itemDetailPage:has(.nameContainer .parentName.musicParentName) .detailSection {
+  height: 0;
 }
 
 .layout-desktop #guestCastCollapsible .card.overflowPortraitCard.personCard.card-hoverable.card-withuserdata,
@@ -4310,6 +4315,8 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 .layout-tv .itemDetailPage:has(.button-flat.mediaInfoItem.emby-button) .itemMiscInfo.itemMiscInfo-secondary {
   position: absolute;
   top: 37em;
+  pointer-events: all;
+  left: 26.7em;
 }
 
 .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .trackSelections.focuscontainer-x,
@@ -5402,13 +5409,30 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
   max-width: 59.9em;
 }
 
-.layout-desktop .detailPagePrimaryContent:not(:has(.nextUpSection .card.overflowBackdropCard.card-hoverable.card-withuserdata[data-type="Episode"])) #listChildrenCollapsible,
-.layout-tv .detailPagePrimaryContent:not(:has(.nextUpSection .card.overflowBackdropCard[data-type="Episode"])) #listChildrenCollapsible {
+.layout-desktop
+  :has(#listChildrenCollapsible)
+  :not(:has(.parentName.focuscontainer-x .button-link.itemAction.emby-button[data-type="Series"]))
+  :not(:has(.verticalSection[data-type="MusicAlbum"]))
+  .detailPagePrimaryContent
+  :not(:has(.nextUpSection .card.overflowBackdropCard.card-hoverable.card-withuserdata[data-type="Episode"]))
+  #listChildrenCollapsible,
+.layout-tv
+  :has(#listChildrenCollapsible)
+  :not(:has(.parentName.focuscontainer-x .button-link.itemAction.emby-button[data-type="Series"]))
+  :not(:has(.verticalSection[data-type="MusicAlbum"]))
+  .detailPagePrimaryContent
+  :not(:has(.nextUpSection .card.overflowBackdropCard[data-type="Episode"]))
+  #listChildrenCollapsible {
   top: 0em;
-  max-width: 45vh !important;
-  height:fit-content !important;
+  max-width: 45vh;
+  height: fit-content !important;
   min-height: 16em;
-  max-height: 29.346em !important;
+  max-height: 29.346em;
+}
+
+.layout-desktop body:has(#itemBirthday:not(.hide)) #listChildrenCollapsible,
+.layout-tv body:has(#itemBirthday:not(.hide)) #listChildrenCollapsible {
+  max-width: 90vh !important;
 }
 
 .layout-desktop .detailPagePrimaryContent:not(:has(.nextUpSection .card.overflowBackdropCard.card-hoverable.card-withuserdata[data-type="Episode"])) #childrenContent .itemsContainer.padded-right.vertical-wrap, 
@@ -5418,12 +5442,18 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
   height: min-content;
 }
 
+.layout-desktop body:has(#itemBirthday:not(.hide)) #childrenContent .itemsContainer.padded-right.vertical-wrap, 
+.layout-tv body:has(#itemBirthday:not(.hide)) #childrenContent .itemsContainer.padded-right.vertical-wrap {
+  max-height: fit-content !important;
+}
+
 .layout-desktop .detailPagePrimaryContent:not(:has(.nextUpSection .card.overflowBackdropCard.card-hoverable.card-withuserdata[data-type="Episode"])) #childrenContent .itemsContainer.padded-right.vertical-wrap .card.overflowPortraitCard.card-hoverable.card-withuserdata, 
 .layout-tv .detailPagePrimaryContent:not(:has(.nextUpSection .card.overflowBackdropCard.card-hoverable.card-withuserdata[data-type="Episode"])) #childrenContent .itemsContainer.padded-right.vertical-wrap .card.overflowPortraitCard.show-focus {
   width: 8.2em;
 }
 
-.layout-desktop body:has(#itemBirthday:not(.hide)) #listChildrenCollapsible {
+.layout-desktop body:has(#itemBirthday:not(.hide)) #listChildrenCollapsible,
+.layout-tv body:has(#itemBirthday:not(.hide)) #listChildrenCollapsible {
   top: 15.925em !important;
 }
 
