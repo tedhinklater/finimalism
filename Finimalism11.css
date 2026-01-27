@@ -377,13 +377,13 @@ h1 {
 
 .sliderMarker.watched {
   background-color: #fff;
-  height: 0.85em;
+  height: 0.75em;
   z-index: 1;
 }
 
 .sliderMarker.unwatched {
   background-color: hsla(0,0%,100%,.3);
-  height: 0.85em;
+  height: 0.75em;
 }
 
 #pause-screen-progress-bar > span {
