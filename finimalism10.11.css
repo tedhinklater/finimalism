@@ -3040,7 +3040,7 @@ a[href*="shokoanime.com"] {
   }
 }
 
-@media (max-height: 900px) and (max-width: 1500px) {
+@media (max-height: 900px) {
   .layout-desktop body {
     font-size: 80% !important;
   }
