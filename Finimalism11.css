@@ -3269,11 +3269,12 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 .layout-tv #itemDetailPage:has(#guestCastCollapsible:not(.hide)) #castCollapsible.verticalSection.detailVerticalSection {
   flex: 0 0 60vh;
   max-width: calc(60vw + -54vh);
-  height: 12.284em;
   margin-bottom: 0.2em;
   transition: width 0.2s ease-out 1s, background-color 1s ease-out 2s, border-color 0.5s ease-out 2s, padding-left 1s ease-out 1s, padding-right 1s ease-out 1s;
   border-radius: var(--rounding) !important;
   z-index: 1;
+  height: 22vh;
+  bottom: 1.6em;
 }
 
 .layout-desktop #itemDetailPage:has(#guestCastCollapsible:not(.hide)) #castCollapsible.verticalSection.detailVerticalSection:hover,
@@ -3327,8 +3328,8 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
   max-width: 30vw;
   border-radius: var(--rounding);
   transition: max-width 0.2s ease-out 2s, background 1s ease-out 2s, border-color 0.5s ease-out 2s, padding-left 1s ease-out 1s, padding-right 1s ease-out 1s !important;
-  height: 12.284em;
-  bottom: 0.1em;
+  height: 22vh;
+  bottom: 1.6em;
 }
 
 .layout-tv #itemDetailPage #guestCastCollapsible.verticalSection.detailVerticalSection {
@@ -3345,6 +3346,11 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
   margin-bottom: -1px;
   padding-right: 1em;
   padding-left: 1em;
+}
+
+.layout-desktop .overview-controls,
+.layout-tv .overview-controls {
+  display: none;
 }
 
 .layout-desktop #guestCastHeader.sectionTitle.sectionTitle-cards.padded-right,
@@ -4505,7 +4511,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) div.itemMiscInfo.itemMiscInfo-primary,
 .layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) div.itemMiscInfo.itemMiscInfo-primary {
     left: 60.7vh;
-    top: 2.2vh;
+    top: 1.8em;
     height: 1.6em;
     max-width: 84vh;
 }
@@ -4986,7 +4992,18 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 .layout-desktop .itemDetailPage:has(.card.overflowSquareCard.card-hoverable) .detailImageContainer .card.backdropCard,
 .layout-tv .itemDetailPage:has(.nameContainer .parentName.musicParentName.focuscontainer-x) .detailImageContainer .card.backdropCard,
 .layout-tv .itemDetailPage:has(.card.overflowSquareCard.card-hoverable) .detailImageContainer .card.backdropCard {
-  top: 25em;
+  top: 21.35em;
+  width: 18.6em;
+}
+
+.layout-desktop .itemDetailPage:has(.nameContainer .parentName.musicParentName.focuscontainer-x) .detailLogo,
+.layout-desktop .itemDetailPage:has(.card.overflowSquareCard.card-hoverable) .detailLogo,
+.layout-tv .itemDetailPage:has(.nameContainer .parentName.musicParentName.focuscontainer-x) .detailLogo,
+.layout-tv .itemDetailPage:has(.card.overflowSquareCard.card-hoverable) .detailLogo {
+  top: 80vh;
+  right: 20vw;
+  bottom: unset;
+  left: unset;
 }
 
 .layout-desktop .card:hover .countIndicator,
