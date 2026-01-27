@@ -14,9 +14,9 @@ Just paste the import line into your "Dashboard > Branding > CSS" section, or "U
 
 ![movie](https://github.com/user-attachments/assets/2f8d44f1-2a02-42ff-ba08-fc9ee63a7aef)
 
-![output](https://github.com/user-attachments/assets/f7f01b87-d3e4-43b8-814b-d44f5adf6c80)
+![show](https://github.com/user-attachments/assets/f7f01b87-d3e4-43b8-814b-d44f5adf6c80)
 
-![player](https://github.com/user-attachments/assets/7353a321-1107-4198-b9a2-1519fc96ddc2)
+![player](https://github.com/user-attachments/assets/e50a50aa-c020-4c66-893f-d7b6e0c0a6b3)
 
 ## Custom colours
 
