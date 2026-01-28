@@ -1410,6 +1410,7 @@ progress {
   margin-left: 0.5em;
   transform: translateX(-5.7%);
   max-height: 1.5em;
+  font-size: 95%;
 }
 
 .layout-desktop .trackSelections.focuscontainer-x .selectVideo,
@@ -3651,7 +3652,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
   margin-left: 0%;
   position: fixed;
   top: calc(16vw + 9vh);
-  height: calc(100vh - 30.65em);
+  height: calc(83vh + -12vw);
   overflow-y: scroll;
   padding-top: 0.5em;
 }
@@ -4853,6 +4854,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
   -webkit-line-clamp: 1;
   max-height: 1.5em;
   overflow: hidden;
+  font-size: 95%;
 }
 
 
@@ -5330,6 +5332,14 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 
 .recordingFields {
   pointer-events: all;
+}
+
+.layout-desktop .remoteControlSection, 
+.layout-tv .remoteControlSection {
+  position: absolute;
+  width: 14%;
+  top: calc(20.5vw + 9vh);
+  left: 2vw;
 }
 
 /* ------ Jellyseerr ------ */
