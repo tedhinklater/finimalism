@@ -234,6 +234,24 @@ h1 {
   pointer-events: none;
 }
 
+@media (min-width: 75em) {
+  .portraitCard {
+    width: 11%;
+  }
+}
+
+@media (min-width: 43.75em) {
+  .portraitCard, .squareCard {
+    width: 24%;
+  }
+}
+
+@media (min-width: 50em) {
+  .portraitCard {
+    width: 11%;
+  }
+}
+
 .layout-desktop .itemDetailPage:has(.detailImageContainer > .card .cardImageIcon.person) .detailSectionContent,
 .layout-tv .itemDetailPage:has(.detailImageContainer > .card .cardImageIcon.person) .detailSectionContent {
   max-height: unset;
