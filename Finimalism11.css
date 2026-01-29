@@ -228,6 +228,16 @@ h1 {
   overflow-y: scroll;
 }
 
+.layout-desktop .emby-tabs-slider {
+  opacity: 0;
+  transition: opacity 2s ease-out 2s;
+}
+
+.layout-desktop .emby-tabs-slider:hover {
+  opacity: 1;
+  transition: opacity 2s ease-out 0s;
+}
+
 .layout-desktop .overview-expand.emby-button,
 .layout-tv .overview-expand.emby-button {
   opacity: 0;
@@ -4271,6 +4281,12 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 @supports (width:max(1px,1px)) {
   .emby-scroller {
     padding-right: 0;
+  }
+}
+
+@supports (width:max(1px,1px)) {
+  .layout-desktop #favoritesTab .emby-scroller {
+    padding-left: max(env(safe-area-inset-left),0.3%);
   }
 }
 
