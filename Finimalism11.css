@@ -226,6 +226,7 @@ h1 {
   transition: width 0.2s ease-out 1s, background-color 1s ease-out 0s, border-color 0.5s ease-out 0s, padding-left 1s ease-out 0.25s, padding-right 1s ease-out 0.25s, height 1s ease-out 0.25s, border-radius 0.2s ease-out 0s;
   border-radius: var(--rounding) !important;
   overflow-y: scroll;
+  -webkit-line-clamp: unset;
 }
 
 .layout-desktop .emby-tabs-slider {
