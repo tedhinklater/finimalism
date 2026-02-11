@@ -201,7 +201,7 @@ h1 {
 
 .layout-desktop .emby-tabs-slider:hover {
   opacity: 1;
-  transition: opacity 2s ease-out 0s;
+  transition: opacity 0.3s ease-out 0s;
 }
 
 .layout-desktop .overview-expand.emby-button,
@@ -224,7 +224,7 @@ h1 {
 
 @media (min-width: 50em) {
   .portraitCard {
-    width: 11%;
+    width: 13.5vw;
   }
 }
 
@@ -3295,13 +3295,11 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 
 .layout-desktop .itemDetailPage:has(.nextUpSection .card.overflowBackdropCard.card-hoverable) #specialsCollapsible.verticalSection.detailVerticalSection.emby-scroller-container, 
 .layout-tv .itemDetailPage:has(.nextUpSection .card.overflowBackdropCard.show-focus.show-animation.card-withuserdata.itemAction) #specialsCollapsible.verticalSection.detailVerticalSection {
-  position: fixed !important;
-  overflow: hidden;
 }
 
 .layout-desktop #specialsCollapsible.verticalSection .card .cardText.cardTextCentered.cardText-secondary,
 .layout-tv #specialsCollapsible.verticalSection .card .cardText.cardTextCentered.cardText-secondary {
-  display: none;
+
 }
 
 .button-submit:focus {
@@ -3499,24 +3497,16 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 
 .layout-desktop .listItem[data-type="Audio"],
 .layout-tv .listItem[data-type="Audio"] {
-  width: 96%;
-  margin-left: 0.5vw;
+  width: 99%;
 }
 
 .layout-desktop .playlistSection,
 .layout-tv .playlistSection {
-  width: 82%;
-  margin-left: 0%;
-  position: fixed;
-  top: calc(16vw + 9vh);
-  height: calc(83vh + -12vw);
-  overflow-y: scroll;
-  padding-top: 0.5em;
+
 }
 
 .layout-desktop .nowPlayingInfoContainer,
 .layout-tv .nowPlayingInfoContainer {
-  position: fixed;
   top: 3.32em;
   left: 1vw;
   width: 96.7vw;
@@ -3530,11 +3520,6 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 .layout-tv .playlistSectionButton {
   background: none;
   color: inherit;
-  width: 16%;
-  justify-content: space-evenly;
-  position: fixed;
-  left: 2vw;
-  top: calc(16.5vw + 9vh);
 }
 
 .layout-desktop #scenesContent .innerCardFooter,
