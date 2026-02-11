@@ -2549,7 +2549,6 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 }
 
 .layout-desktop #itemDetailPage .listItem {
-  width: calc(31.3vw + -16vh);
 }
 
 .listItem:hover,
@@ -3343,11 +3342,6 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 
 .layout-desktop .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) #specialsCollapsible.verticalSection.detailVerticalSection.emby-scroller-container,
 .layout-tv .itemDetailPage:has(.listItem.itemAction.listItem-button.listItem-focusscale.listItem-largeImage[data-type="Episode"]) #specialsCollapsible.verticalSection.detailVerticalSection {
-  position: relative !important;
-  left: 0 !important;
-  top: unset;
-  max-width: 107vh !important;
-  margin-top: 4em;
 }
 
 .layout-desktop .itemDetailPage:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]) #specialsCollapsible .sectionTitle,
@@ -3368,9 +3362,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 
 .layout-desktop .nextUpSection.verticalSection.detailVerticalSection,
 .layout-tv .nextUpSection.verticalSection.detailVerticalSection {
-  top: 0em !important;
-  max-width: 107vh;
-  overflow: hidden;
+
 }
 
 .layout-desktop #listChildrenCollapsible.detailVerticalSection,
@@ -3380,8 +3372,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 
 .layout-desktop .itemDetailPage:has(.nameContainer .parentName.musicParentName) #listChildrenCollapsible,
 .layout-tv .itemDetailPage:has(.nameContainer .parentName.musicParentName) #listChildrenCollapsible {
-  top: -28.2em !important;
-  max-width: 45vh !important;
+
 }
 
 .layout-desktop .itemDetailPage:has(.nameContainer .parentName.musicParentName) #childrenContent .itemsContainer.padded-right.vertical-list {
@@ -3394,16 +3385,11 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 
 .layout-desktop .itemDetailPage:has(.nameContainer .parentName.musicParentName) #listChildrenCollapsible #childrenContent .itemsContainer.padded-right,
 .layout-tv .itemDetailPage:has(.nameContainer .parentName.musicParentName) #listChildrenCollapsible #childrenContent .itemsContainer.padded-right {
-  max-width: 45vh !important;
-  height: 52vh !important;
-  overflow-y: scroll;
+
 }
 
 .layout-desktop .verticalSection.detailVerticalSection.moreFromArtistSection,
 .layout-tv .verticalSection.detailVerticalSection.moreFromArtistSection {
-  bottom: 1em !important;
-  z-index: 9;
-  max-width: calc(91vw - 60vh) !important;
 }
 
 .layout-desktop .textActionButton,
@@ -3645,7 +3631,6 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 
 .layout-desktop .itemDetailPage:has(.nameContainer .parentName.musicParentName) .detailSection,
 .layout-tv .itemDetailPage:has(.nameContainer .parentName.musicParentName) .detailSection {
-  height: 0;
 }
 
 .layout-desktop #guestCastCollapsible .card.overflowPortraitCard.personCard.card-hoverable.card-withuserdata,
@@ -4570,12 +4555,8 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 
 .layout-desktop .collectionItems,
 .layout-tv .collectionItems {
-  width: 94vh !important;
   pointer-events: all;
-  top: 0;
-  position: absolute;
-  max-height: 50vh;
-  overflow-y: scroll;
+
 }
 
 .layout-desktop .itemDetailPage:has(.collectionItems) .overview.detail-clamp-text {
@@ -4809,7 +4790,8 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 .layout-desktop .itemDetailPage:has(.card.overflowSquareCard.card-hoverable) .mainDetailButtons.focuscontainer-x,
 .layout-tv .itemDetailPage:has(.nameContainer .parentName.musicParentName.focuscontainer-x) .mainDetailButtons.focuscontainer-x,
 .layout-tv .itemDetailPage:has(.card.overflowSquareCard.card-hoverable) .mainDetailButtons.focuscontainer-x {
-
+  width: 17.3em !important;
+  left: 3.9em !important;
 }
 
 .layout-desktop .itemDetailPage:has(.nameContainer .parentName.musicParentName.focuscontainer-x) #listChildrenCollapsible:hover,
@@ -4854,10 +4836,11 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 
 }
 
-.layout-desktop .itemDetailPage:has(.nameContainer .parentName.musicParentName.focuscontainer-x) .detailLogo,
-.layout-desktop .itemDetailPage:has(.card.overflowSquareCard.card-hoverable) .detailLogo,
-.layout-tv .itemDetailPage:has(.nameContainer .parentName.musicParentName.focuscontainer-x) .detailLogo,
-.layout-tv .itemDetailPage:has(.card.overflowSquareCard.card-hoverable) .detailLogo {
+.layout-desktop .itemDetailPage:has(.nameContainer .parentName.musicParentName.focuscontainer-x) .mainDetailButtons.focuscontainer-x::before,
+.layout-desktop .itemDetailPage:has(.card.overflowSquareCard.card-hoverable) .mainDetailButtons.focuscontainer-x::before,
+.layout-tv .itemDetailPage:has(.nameContainer .parentName.musicParentName.focuscontainer-x) .mainDetailButtons.focuscontainer-x::before,
+.layout-tv .itemDetailPage:has(.card.overflowSquareCard.card-hoverable) .mainDetailButtons.focuscontainer-x::before  {
+  width: 17.8em !important;
 }
 
 .layout-desktop .card:hover .countIndicator,
