@@ -1,14 +1,22 @@
 # Finimalism for Jellyfin v10.11.x  ![jsDelivr](https://data.jsdelivr.com/v1/package/gh/tedhinklater/finimalism/badge) 
 
-```css
-@import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/Finimalism11.css");
-```
-
 Just paste the import line into your "Dashboard > Branding > CSS" section, or "User Settings > Display > CSS" section.
 
-### Note: For Jellyfin Media Player, you need the latest [Jellyfin Desktop 2.0.0](https://flathub.org/en/apps/org.jellyfin.JellyfinDesktop)
+Note: For Jellyfin Media Player, you need the latest [Jellyfin Desktop 2.0.0](https://flathub.org/en/apps/org.jellyfin.JellyfinDesktop)
 
-# Example with [Home Screen Sections](https://github.com/IAmParadox27/jellyfin-plugin-home-sections) / [Featured Content Bar](https://github.com/tedhinklater/Jellyfin-Featured-Content-Bar) / [Jellyfin Enhanced](https://github.com/n00bcodr/Jellyfin-Enhanced)
+### Examples with [Home Screen Sections](https://github.com/IAmParadox27/jellyfin-plugin-home-sections) / [Featured Content Bar](https://github.com/tedhinklater/Jellyfin-Featured-Content-Bar) / [Jellyfin Enhanced](https://github.com/n00bcodr/Jellyfin-Enhanced)
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+## Modded UI & animations (v11)
+```css
+@import url(
+"https://cdn.jsdelivr.net/gh/tedhinklater/
+finimalism@main/Finimalism11.css"
+);
+```
 
 <img width="1920" height="1080" alt="1" src="https://github.com/user-attachments/assets/979bf451-53f6-43f9-8032-fc0093ec1736" />
 
@@ -17,6 +25,29 @@ Just paste the import line into your "Dashboard > Branding > CSS" section, or "U
 ![show](https://github.com/user-attachments/assets/f7f01b87-d3e4-43b8-814b-d44f5adf6c80)
 
 ![player](https://github.com/user-attachments/assets/e50a50aa-c020-4c66-893f-d7b6e0c0a6b3)
+
+</td>
+<td width="50%" valign="top">
+
+## Classic Jellyfin layout (v12)
+```css
+@import url(
+"https://cdn.jsdelivr.net/gh/tedhinklater/
+finimalism@main/Finimalism12.css"
+);
+```
+
+<img width="1920" height="1080" alt="Screenshot from 2026-02-12 10-24-32" src="https://github.com/user-attachments/assets/2d2ed4b8-1c2b-4f90-865d-feb96d5f53fc" />
+
+<img width="1920" height="1080" alt="Screenshot from 2026-02-12 10-25-00" src="https://github.com/user-attachments/assets/de99a0b0-3287-4942-9019-0cf202f8cfe1" />
+
+<img width="1920" height="1080" alt="Screenshot from 2026-02-12 10-37-05" src="https://github.com/user-attachments/assets/b637ac97-0434-4429-9383-4b28b6389fc5" />
+
+<img width="1920" height="1080" alt="Screenshot from 2026-02-12 10-37-15" src="https://github.com/user-attachments/assets/83e40bce-e37e-4228-9dbe-96b4f3ff3a51" />
+
+</td>
+</tr>
+</table>
 
 ## Custom colours
 
