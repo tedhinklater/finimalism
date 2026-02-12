@@ -6,17 +6,21 @@ Note: For Jellyfin Media Player, you need the latest [Jellyfin Desktop 2.0.0](ht
 
 ### Examples with [Home Screen Sections](https://github.com/IAmParadox27/jellyfin-plugin-home-sections) / [Featured Content Bar](https://github.com/tedhinklater/Jellyfin-Featured-Content-Bar) / [Jellyfin Enhanced](https://github.com/n00bcodr/Jellyfin-Enhanced)
 
+## V11
+```css
+@import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/Finimalism11.css");
+```
+
+## V12
+```css
+@import url("https://cdn.jsdelivr.net/gh/tedhinklater/finimalism@main/Finimalism12.css");
+```
+
 <table>
 <tr>
 <td width="50%" valign="top">
 
 ## Modded UI & animations (v11)
-```css
-@import url(
-"https://cdn.jsdelivr.net/gh/tedhinklater/
-finimalism@main/Finimalism11.css"
-);
-```
 
 <img width="1920" height="1080" alt="1" src="https://github.com/user-attachments/assets/979bf451-53f6-43f9-8032-fc0093ec1736" />
 
@@ -30,12 +34,6 @@ finimalism@main/Finimalism11.css"
 <td width="50%" valign="top">
 
 ## Classic Jellyfin layout (v12)
-```css
-@import url(
-"https://cdn.jsdelivr.net/gh/tedhinklater/
-finimalism@main/Finimalism12.css"
-);
-```
 
 <img width="1920" height="1080" alt="Screenshot from 2026-02-12 10-24-32" src="https://github.com/user-attachments/assets/2d2ed4b8-1c2b-4f90-865d-feb96d5f53fc" />
 
@@ -43,7 +41,7 @@ finimalism@main/Finimalism12.css"
 
 <img width="1920" height="1080" alt="Screenshot from 2026-02-12 10-37-05" src="https://github.com/user-attachments/assets/b637ac97-0434-4429-9383-4b28b6389fc5" />
 
-<img width="1920" height="1080" alt="Screenshot from 2026-02-12 10-37-15" src="https://github.com/user-attachments/assets/83e40bce-e37e-4228-9dbe-96b4f3ff3a51" />
+<img width="1920" height="1080" alt="Screenshot from 2026-02-12 10-45-53" src="https://github.com/user-attachments/assets/746c3b70-4d82-40da-8d68-b5741bd34a1f" />
 
 </td>
 </tr>
