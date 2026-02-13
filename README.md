@@ -39,7 +39,7 @@ Note: For Jellyfin Media Player, you need the latest [Jellyfin Desktop 2.0.0](ht
 
 <img width="1920" height="1080" alt="2" src="https://github.com/user-attachments/assets/cf8ea55e-104e-41a8-ad57-b264517b35af" />
 
-<img width="1920" height="1080" alt="3" src="https://github.com/user-attachments/assets/397ce120-7935-4637-878f-d5a5e2968c8a" />
+<img width="1920" height="1080" alt="3" src="https://github.com/user-attachments/assets/98a441d1-8e48-4868-9194-3187c9cadf7f" />
 
 <img width="1920" height="1080" alt="4" src="https://github.com/user-attachments/assets/9b0e43d9-701d-4fce-819c-6418a27f7fa8" />
 
