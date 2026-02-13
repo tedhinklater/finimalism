@@ -4162,7 +4162,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 .layout-desktop .itemDetailPage:has(.button-flat.mediaInfoItem.emby-button) .itemMiscInfo.itemMiscInfo-secondary,
 .layout-tv .itemDetailPage:has(.button-flat.mediaInfoItem.emby-button) .itemMiscInfo.itemMiscInfo-secondary {
   position: absolute;
-  top: 37em;
+  top: 3.5em;
   pointer-events: all;
   left: 26.7em;
 }
