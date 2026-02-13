@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Geom:ital,wght@0,300..900;1,300..900&display=swap');
 
 :root { 
-  --accent: 133, 100, 255; 
+  --accent: 91, 194, 255; 
   --backdropBlur: blur(0px); 
   --detailGradient: linear-gradient( 54deg, rgba(var(--tint), 1) 0%, rgba(var(--tint), 0.99996337890625) 6.25%, rgba(var(--tint), 0.9994140625) 12.5%, rgba(var(--tint), 0.99703369140625) 18.75%, rgba(var(--tint), 0.990625) 25%, rgba(var(--tint), 0.97711181640625) 31.25%, rgba(var(--tint), 0.9525390625) 37.5%, rgba(var(--tint), 0.91207275390625) 43.75%, rgba(var(--tint), 0.85) 50%, rgba(var(--tint), 0.78792724609375) 56.25%, rgba(var(--tint), 0.7474609375) 62.5%, rgba(var(--tint), 0.72288818359375) 68.75%, rgba(var(--tint), 0.709375) 75%, rgba(var(--tint), 0.70296630859375) 81.25%, rgba(var(--tint), 0.7005859375) 87.5%, rgba(var(--tint), 0.70003662109375) 93.75%, rgba(var(--tint), 0.7) 100%); 
   --loginGradient: linear-gradient( 180deg, rgba(var(--tint), 1) 0%, rgba(var(--tint), 0.99996337890625) 6.25%, rgba(var(--tint), 0.9994140625) 12.5%, rgba(var(--tint), 0.99703369140625) 18.75%, rgba(var(--tint), 0.990625) 25%, rgba(var(--tint), 0.97711181640625) 31.25%, rgba(var(--tint), 0.9525390625) 37.5%, rgba(var(--tint), 0.91207275390625) 43.75%, rgba(var(--tint), 0.85) 50%, rgba(var(--tint), 0.78792724609375) 56.25%, rgba(var(--tint), 0.7474609375) 62.5%, rgba(var(--tint), 0.72288818359375) 68.75%, rgba(var(--tint), 0.709375) 75%, rgba(var(--tint), 0.70296630859375) 81.25%, rgba(var(--tint), 0.7005859375) 87.5%, rgba(var(--tint), 0.70003662109375) 93.75%, rgba(var(--tint), 0.7) 100%); 
-  --tint: 17, 14, 30; 
-  --tint2: 71, 51, 145; 
+  --tint: 3, 16, 41; 
+  --tint2: 16, 60, 143; 
   --rounding: 0.8em;
 }
 
@@ -232,16 +232,6 @@ h1 {
 .layout-tv .itemDetailPage:has(.detailImageContainer > .card .cardImageIcon.person) .detailSectionContent {
   max-height: unset;
   margin-top: 0;
-}
-
-.layout-desktop .itemDetailPage:has(.detailImageContainer > .card .cardImageIcon.person) p.overview:hover,
-.layout-tv .itemDetailPage:has(.detailImageContainer > .card .cardImageIcon.person) p.overview:hover {
-  width: 60vh;
-  padding-top: 0.4em;
-  border: none;
-  margin-left: 0px;
-  padding-left: 0em;
-  padding-right: 0em;
 }
 
 .layout-desktop .itemDetailPage:has(.detailImageContainer > .card .cardImageIcon.person) p.overview.detail-clamp-text,
@@ -875,6 +865,32 @@ progress::-webkit-progress-value {
   transition: color 1s;
 }
 
+.material-icons {
+  font-size: 2em;
+}
+
+.cardScalable .cardImageContainer {
+  -webkit-mask-image: 
+    linear-gradient(180deg,
+    rgb(0% 0% 0%) 0%,
+    rgb(0% 0% 0% / 0.98) 40%,
+    rgb(0% 0% 0% / 0.9) 60%,
+    rgb(0% 0% 0% / 0.7) 75%,
+    rgb(0% 0% 0% / 0.4) 85%,
+    rgb(0% 0% 0% / 0.25) 93%,
+    rgb(0% 0% 0% / 0) 100%
+  );
+}
+
+.card:hover .cardScalable .cardImageContainer,
+.card:focus .cardScalable .cardImageContainer {
+  -webkit-mask-image: none;
+}
+
+.personCard .cardImageContainer {
+  -webkit-mask-image: none;
+}
+
 .ratingbutton-icon-withrating {
   color: #ff0060;
   filter: drop-shadow(0px 0px 5px #ff666669)
@@ -1039,7 +1055,7 @@ progress {
 
 .layout-desktop #itemDetailPage .overflowBackdropCard,
 .layout-tv #itemDetailPage .overflowBackdropCard {
-  width: 20.3em;
+  width: 13.3vw;
 }
 
 .skinHeader {
@@ -1457,16 +1473,16 @@ progress {
 }
 
 .itemProgressBar {
-  background: rgba(0, 0, 0, 0.25);
-  height: 0.5em;
-  position: absolute;
-  bottom: 0em;
+  height: 100%;
   left: 0;
   width: 100%;
+  background: rgba(51, 51, 51, 0);
+  position: relative;
 }
 
 .itemProgressBarForeground {
-  background: rgb(var(--accent));
+  background: linear-gradient( 270deg, rgba(var(--accent), 1) 0%, rgba(var(--accent), 0.9) 10%, rgba(var(--accent), 0.8) 20%, rgba(var(--accent), 0.7) 30%, rgba(var(--accent), 0.6) 40%, rgba(var(--accent), 0.5) 50%, rgba(var(--accent), 0.4) 60%, rgba(var(--accent), 0.3) 70%, rgba(var(--accent), 0.2) 80%, rgba(var(--accent), 0.1) 90%, rgba(var(--accent), 0) 100% );
+  filter: drop-shadow(6px 0px 6px rgba(var(--tint2), 0.9)) !important;
 }
 
 .layout-desktop .detailImageContainer .card.portraitCard:hover,
@@ -1870,6 +1886,7 @@ button.is-emby-button emby-button {
 
 .layout-desktop .verticalSection-extrabottompadding,
 .layout-tv .verticalSection-extrabottompadding {
+  margin-bottom: 1.8vh;
 }
 
 .content-primary, .padded-bottom-page, .page, .pageWithAbsoluteTabs .pageTabContent {
@@ -2375,6 +2392,16 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 
 .layout-desktop .emby-scrollbuttons.padded-right {
   transition: opacity 0.3s ease-out 0.5s;
+  padding-top: 1.5em;
+}
+
+.layout-desktop #scenesCollapsible .emby-scrollbuttons.padded-right,
+.layout-desktop #specialsCollapsible .emby-scrollbuttons.padded-right,
+.layout-desktop #castCollapsible .emby-scrollbuttons.padded-right,
+.layout-desktop #guestCastCollapsible .emby-scrollbuttons.padded-right,
+.layout-desktop #scenesCollapsible .emby-scrollbuttons.padded-right,
+.layout-desktop .verticalSection.detailVerticalSection.moreFromSeasonSection.emby-scroller-container .emby-scrollbuttons.padded-right {
+  padding-top: 1em;
 }
 
 .layout-desktop .emby-scroller-container:hover .emby-scrollbuttons.padded-right {
@@ -3535,7 +3562,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 
 .layout-desktop #scenesCollapsible .itemAction.chapterCard.overflowBackdropCard,
 .layout-tv #scenesCollapsible .itemAction.chapterCard.overflowBackdropCard {
-  width: 20.3em;
+  width: 13.3vw;
   min-width: unset;
 }
 
@@ -3563,8 +3590,10 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 }
 
 .layout-desktop #castCollapsible .card.overflowPortraitCard.personCard.card-hoverable.card-withuserdata,
-.layout-tv #castCollapsible .card.overflowPortraitCard.personCard.show-focus {
-  width: calc(13.4vw + -7.5vh);
+.layout-tv #castCollapsible .card.overflowPortraitCard.personCard.show-focus,
+.layout-desktop #guestCastCollapsible .card.overflowPortraitCard.personCard.card-hoverable.card-withuserdata,
+.layout-tv #guestCastCollapsible .card.overflowPortraitCard.personCard.show-focus {
+  width: 10.3vw;
   margin: 0;
 }
 
@@ -3580,20 +3609,13 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 
 }
 
-.layout-desktop .itemDetailPage:has(.streaming-lookup-container) #scenesCollapsible:hover,
-.layout-tv .itemDetailPage:has(.streaming-lookup-container) #scenesCollapsible:focus {
-  max-width: 54vh !important;
-}
-
 .layout-desktop .itemDetailPage:has(.nameContainer .parentName.musicParentName) .detailSection,
 .layout-tv .itemDetailPage:has(.nameContainer .parentName.musicParentName) .detailSection {
 }
 
 .layout-desktop #guestCastCollapsible .card.overflowPortraitCard.personCard.card-hoverable.card-withuserdata,
 .layout-tv #guestCastCollapsible .card.overflowPortraitCard.personCard.card-hoverable.card-withuserdata {
-  width: calc(13.4vw + -7.5vh);
-  margin: 0;
-  height: 12em;
+  width: 10.3vw;
 }
 
 .layout-desktop #similarCollapsible .card.overflowPortraitCard,
@@ -3685,7 +3707,6 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 .layout-desktop [dir="ltr"] .detailPagePrimaryContent,
 .layout-tv [dir="ltr"] .detailPagePrimaryContent {
   padding-left: 26.25em;
-  max-width: calc(86vw - 24em);
 }
 
 .layout-desktop [dir="ltr"] .detailPagePrimaryContent .detailSectionContent,
@@ -3728,6 +3749,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 
 [dir="ltr"] .detailPageContent {
   padding-left: 26.2em;
+  padding-right: 0%;
 }
 
 
@@ -4289,7 +4311,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .itemDetailsGroup,
 .layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button.show-focus[data-type="Season"]) .itemDetailsGroup {
   position: fixed;
-  top: 47.2em;
+  top: 47em;
   left: 1em !important;
   width: 29.4em !important;
 }
@@ -4923,11 +4945,11 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 .layout-tv .personCard .cardScalable,
 .layout-tv .personCard .cardImageContainer,
 .layout-tv .personCard .cardPadder {
-  width: 7em;
-  height: 7em;
-  min-width: 7em;
-  min-height: 7em;
-  margin-left: calc(5.8vw + -8.9vh);
+  width: 6.65vw;
+  height: 6.65vw;
+  min-width: 6.65vw;
+  min-height: 6.65vw;
+  margin-left: 1.5vw;
 }
 
 .layout-desktop .personCard .cardImageContainer,
@@ -5086,7 +5108,6 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 /* ------ Jellyseerr ------ */
 
 .layout-desktop .verticalSection.emby-scroller-container.jellyseerr-details-section {
-  font-size: 75%;
   transition: max-width 0.2s ease-out 2s, background 1s ease-out 0s, border-color 0.5s ease-out 2s, padding-left 1s ease-out 1s, padding-right 1s ease-out 1s, max-height 0.2s ease-out 0.15s;
   overflow: hidden;
   border-radius: var(--rounding);
@@ -5102,7 +5123,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 
 .layout-desktop .verticalSection.emby-scroller-container.jellyseerr-details-section .cardText,
 .layout-tv .verticalSection.emby-scroller-container.jellyseerr-details-section {
-  display: none;
+
 }
 
 .layout-desktop .verticalSection.emby-scroller-container.jellyseerr-details-section .sectionTitle.sectionTitle-cards.focuscontainer-x.padded-right {
