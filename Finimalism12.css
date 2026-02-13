@@ -887,6 +887,8 @@ progress::-webkit-progress-value {
   -webkit-mask-image: none;
 }
 
+.detailImageContainer.hide-mobile .cardImageContainer,
+.card[data-type="CollectionFolder"] .cardImageContainer,
 .personCard .cardImageContainer {
   -webkit-mask-image: none;
 }
