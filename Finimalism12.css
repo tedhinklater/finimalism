@@ -2082,7 +2082,7 @@ button.is-emby-button emby-button {
   top: 1.8em;
   left: 47.9vh;
   margin-top: 0vh;
-  width: 21vh;
+  width: calc(50vw - 1vh);
   max-height: 2.6vh;
   color: #fff;
   pointer-events: all;
@@ -2090,19 +2090,6 @@ button.is-emby-button emby-button {
   padding-top: 0.4em;
   border-radius: var(--rounding);
   background-color: transparent;
-}
-
-.layout-desktop div.itemMiscInfo.itemMiscInfo-primary:hover,
-.layout-tv div.itemMiscInfo.itemMiscInfo-primary:focus {
-  width: calc(91vw - 65vh);
-  transition: width 0.2s ease-out 1s, background-color 1s ease-out 0s, border-color 0.5s ease-out 0s, padding-left 1s ease-out 0.25s, padding-right 1s ease-out 0.25s;
-  background-color: rgb(var(--tint));
-  border: 0.5px solid;
-  border-color: #fff3;
-  margin-top: calc(0vh - 1px);
-  margin-left: -1px;
-  padding-left: 0.5em;
-  padding-right: 0.5em;
 }
 
 .layout-desktop .itemName.originalTitle,
