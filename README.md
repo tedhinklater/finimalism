@@ -35,13 +35,13 @@ Note: For Jellyfin Media Player, you need the latest [Jellyfin Desktop 2.0.0](ht
 
 ## Classic Jellyfin layout (v12)
 
-<img width="1920" height="1080" alt="Screenshot from 2026-02-12 10-24-32" src="https://github.com/user-attachments/assets/2d2ed4b8-1c2b-4f90-865d-feb96d5f53fc" />
+<img width="1920" height="1080" alt="1" src="https://github.com/user-attachments/assets/d6c2cf92-a68c-48fa-9613-f64c573d5794" />
 
-<img width="1920" height="1080" alt="Screenshot from 2026-02-12 10-25-00" src="https://github.com/user-attachments/assets/de99a0b0-3287-4942-9019-0cf202f8cfe1" />
+<img width="1920" height="1080" alt="2" src="https://github.com/user-attachments/assets/cf8ea55e-104e-41a8-ad57-b264517b35af" />
 
-<img width="1920" height="1080" alt="Screenshot from 2026-02-12 10-37-05" src="https://github.com/user-attachments/assets/b637ac97-0434-4429-9383-4b28b6389fc5" />
+<img width="1920" height="1080" alt="3" src="https://github.com/user-attachments/assets/397ce120-7935-4637-878f-d5a5e2968c8a" />
 
-<img width="1920" height="1080" alt="Screenshot from 2026-02-12 10-45-53" src="https://github.com/user-attachments/assets/746c3b70-4d82-40da-8d68-b5741bd34a1f" />
+<img width="1920" height="1080" alt="4" src="https://github.com/user-attachments/assets/9b0e43d9-701d-4fce-819c-6418a27f7fa8" />
 
 </td>
 </tr>
