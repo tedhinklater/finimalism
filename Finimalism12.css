@@ -4812,7 +4812,9 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 .layout-desktop .itemDetailPage:has(.card.overflowSquareCard.card-hoverable) .detailImageContainer .card.backdropCard,
 .layout-tv .itemDetailPage:has(.nameContainer .parentName.musicParentName.focuscontainer-x) .detailImageContainer .card.backdropCard,
 .layout-tv .itemDetailPage:has(.card.overflowSquareCard.card-hoverable) .detailImageContainer .card.backdropCard {
-
+  top: 20.9em;
+  width: 18.7em;
+  min-width: unset;
 }
 
 .layout-desktop .itemDetailPage:has(.nameContainer .parentName.musicParentName.focuscontainer-x) .mainDetailButtons.focuscontainer-x::before,
@@ -5132,6 +5134,14 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 
 }
 
+.tmdb-review-toggle {
+  color: rgba(var(--accent), 1);
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: underline;
+  margin-left: 0.3em;
+}
+
 .layout-desktop .verticalSection.emby-scroller-container.jellyseerr-details-section .emby-scrollbuttons {
 
 }
@@ -5292,11 +5302,11 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 .tmdb-review-swipe-container .tmdb-review-card {
   border-left: 0.3em solid rgba(var(--accent));
   background: rgba(var(--tint), 0.96);
+  max-width: 19.5vw;
 }
 
 .layout-desktop .tmdb-review-swipe-container .tmdb-review-card .tmdb-review-text {
   line-height: 1.8vh;
-  font-size: 90%;
 }
 
 .layout-desktop .tmdb-review-swipe-container .tmdb-review-card .tmdb-review-content-wrapper {
